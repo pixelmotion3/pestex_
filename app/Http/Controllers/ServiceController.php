@@ -38,9 +38,10 @@ class ServiceController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Service $service)
+    public function show(Service $service, $id)
     {
-        //
+        dd($id);
+        return view('services.show');
     }
 
     /**

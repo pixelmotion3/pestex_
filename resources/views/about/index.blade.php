@@ -198,7 +198,7 @@
             <div class="image-layer" style="background-image: url(assets/images/background/service-1.jpg);"></div>
             <div class="auto-container">
                 <div class="sec-title text-center light">
-                    <h6>Our Services</h6>
+                    <h6 >Our Services</h6>
                     <h2>Delivering a Higher Standard Cleaning Services</h2>
                     <p class="text-white mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, velit! Placeat atque impedit qui accusantium, ipsa voluptas vero? <br/>Eum explicabo accusamus voluptatem voluptatum ipsa repudiandae est, ipsam ea obcaecati pariatur</p>
                 </div>
@@ -209,8 +209,8 @@
                 <div class="container">
                     <div class="row ">
                         <div class="col-xl-6">
-                            <div class="why-choose-five__image wow slideInLeft">
-                                <img src="assets/images/resources/why-choose-5-1.jpg" alt="tolak">
+                            <div class="wow slideInLeft">
+                                <img src="assets/images/resources/why-choose-5-1.jpg" alt="tolak" style="border-radius: 30px">
                             </div><!-- /.why-choose-five__image -->
                         </div><!-- /.col-lg-6 -->
                         <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
@@ -276,7 +276,7 @@
         </div>
         
         <!-- service-section end -->
-        <h2 class="text-center h2" style="margin-top:50px;">We Preparing for your success <br/>Choose Best Options</h2>
+        <h2 class="text-center h2 text-body" style="margin-top:50px;">We Preparing for your success <br/>Choose Best Options</h2>
         <p class="text-center p mt-5 mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, nesciunt atque. Iure, labore voluptatum quia<br/> omnis molestias tempora similique doloribus nisi temporibus veniam. Natus minus amet repellat vitae autem iste.</p>
         <section class="cta-four mt-5">
             <div class="container mt-5">
@@ -324,12 +324,12 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="testimonials-three__image">
-                            <img src="assets/images/resources/testimonial-3-1.jpg" alt="tolak">
-                            <img class="testimonials-three__image__left" src="assets/images/resources/testimonial-3-2.png" alt="tolak">
+                            <img src="assets/images/resources/testimonial-3-1.jpg" alt="tolak" style="border-radius:30px;">
+                            <img class="testimonials-three__image__left" src="assets/images/resources/testimonial-3-2.png" alt="tolak" style="border-radius:30px;">
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="testimonials-three__content">
+                        <div class="testimonials-three__content" style="border-radius:30px;">
                             <h3 class="testimonials-three__content__title">
                                 Highly Skilled Busines Client Defense Solution
                             </h3>
@@ -350,6 +350,7 @@
                                             simperative that you.
                                         </div><!-- /.testimonials-card-three__content -->
                                         <div class="testimonials-card-three__author">
+                                            <!--
                                             <div class="testimonials-card-three__image">
                                                 <img src="assets/images/resources/testi-1-4.jpg" alt="Lataro Marsena">
                                             </div><!-- /.testimonials-card-three__image -->
@@ -367,6 +368,7 @@
                                             simperative that you.
                                         </div><!-- /.testimonials-card-three__content -->
                                         <div class="testimonials-card-three__author">
+                                            <!--
                                             <div class="testimonials-card-three__image">
                                                 <img src="assets/images/resources/testi-1-5.jpg" alt="Marsena Baran">
                                             </div><!-- /.testimonials-card-three__image -->
@@ -384,6 +386,7 @@
                                             simperative that you.
                                         </div><!-- /.testimonials-card-three__content -->
                                         <div class="testimonials-card-three__author">
+                                            <!--
                                             <div class="testimonials-card-three__image">
                                                 <img src="assets/images/resources/testi-1-3.jpg" alt="David Cooper">
                                             </div><!-- /.testimonials-card-three__image -->

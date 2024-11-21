@@ -124,11 +124,7 @@
                     <div class="row">
                         <div class="col-md-7">
                             <div class="page-header__content">
-                                <h2 class="page-header__title">Login</h2>
-                                <ul class="tolak-breadcrumb list-unstyled">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><span>Login</span></li>
-                                </ul><!-- /.thm-breadcrumb list-unstyled -->
+                                <h2 class="page-header__title">Service page</h2>
                             </div>
                         </div>
                         <div class="col-md-5">
@@ -141,9 +137,9 @@
                     </div>
                 </div><!-- /.container -->
             </section><!-- /.page-header -->
-            <div class="sec-title text-center">
-                <h1 class="text-center h1">We preparing for your <br>success Choose best options</h1>
-                <p class="text-center mt-5 p">We preparing for your siccess hoose best options We preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsWe preparing for your siccess hoose best options</p>
+            <div class="sec-title text-center" style="margin-top:200px;">
+                <h1 class="text-center h1 text-body">We preparing for your <br>success Choose best options</h1>
+                <p class="text-center mt-5 p-5">We preparing for your siccess hoose best options We preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsWe preparing for your siccess hoose best options  We preparing for your siccess hoose best options We preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsWe preparing for your siccess hoose best options We preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsWe preparing for your siccess hWe preparing for your siccess hoose best options We preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsWe preparing for your siccess hoose best options We preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsoose best options</p>
             </div>
                 <section class="service-one">
                 <div class="container">
@@ -553,7 +549,7 @@
                     <div class="row d-flex align-items-center">
                         <div class="col-lg-7 wow fadeInLeft" data-wow-delay="100ms">
                             <div class="cta-one__image">
-                                <img src="assets/images/resources/cta-1-1.jpg" alt="tolak">
+                                <img src="assets/images/resources/cta-1-1.jpg" alt="tolak" style="border-radius:30px;">
                             </div>
                         </div>
                         <div class="col-lg-5 wow fadeInUp" data-wow-delay="100ms">
@@ -563,6 +559,7 @@
                                     <h3 class="cta-one__box__title">Solution System Design</h3>
                                     <p class="cta-one__box__text">Every team has a culture and set of ct ations that have either been aed orsve naturally evolved.</p>
                                 </div>
+                                <!--
                                 <div class="cta-one__author">
                                     <img src="assets/images/resources/cta-1-author-1.jpg" alt="tolak">
                                     <img src="assets/images/resources/cta-1-author-2.jpg" alt="tolak">
@@ -570,6 +567,7 @@
                                     <a class="cta-one__author__rm" href="contact.html">More <span class="fas fa-arrow-right"></span></a>
                                 </div>
                                 <p class="cta-one__content__text">29,0000 customers with our services <a href="contact.html">( Let’s Started )</a></p>
+                            -->
                             </div>
                         </div>
                     </div>
@@ -594,11 +592,11 @@
                     </div>
                 </div><!-- /.container -->
                 <div class="container contact-one__container wow fadeInUp" data-wow-delay="100ms">
-                    <div class="contact-one__wrapper" style="background-image: url(assets/images/shapes/contact-1-shape-1.png);">
+                    <div class="contact-one__wrapper" style="background-image: url(assets/images/shapes/contact-1-shape-1.png);" >
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="contact-one__image-two">
-                                    <img src="assets/images/resources/contact-1-2.jpg" alt="tolak">
+                                    <img src="assets/images/resources/contact-1-2.jpg" alt="tolak" style="border-radius:30px;">
                                 </div>
                             </div>
                             <div class="col-lg-6">

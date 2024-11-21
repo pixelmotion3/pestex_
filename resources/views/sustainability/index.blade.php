@@ -128,17 +128,25 @@
                 <!-- /.page-header__bg -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-7">
+                        <div class="col-md-12">
                             <div class="page-header__content">
-                                <h2 class="page-header__title">Service Page</h2>
+                                <h2 class="page-header__title text-center">Service Page</h2>
                             </div>
-                        </div>
-                        <div class="col-md-5">
-                    
                         </div>
                     </div>
                 </div><!-- /.container -->
             </section><!-- /.page-header -->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="h1 mt-5 text-center text-body">we preparing for your success <br/>choose best option</h1>
+                            <p class="p mt-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab soluta, fugit doloribus praesentium delectus illo est eaque commodi distinctio exercitationem mollitia quas sunt beatae saepe autem cumque eveniet voluptatem nisi!</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
             <section class="tab-one">
                 <div class="container tabs-box">
                     <div class="sec-title-four text-center">
