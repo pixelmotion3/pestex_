@@ -113,30 +113,30 @@
             }'>
                 <div class="item">
                     <div class="main-slider-three__item">
-                        <div class="main-slider-three__bg" style="background-image: url({{ asset('assets/images/backgrounds/slider-3-1.jpg') }});"></div><!-- slider-bg -->
-                        <div class="main-slider-three__shape-one" style="background-image: url({{ asset('assets/images/shapes/slider-3-shape-1.png') }});"></div><!-- slider-shape -->
-                        <div class="main-slider-three__shape-two" style="background-image: url({{ asset('assets/images/shapes/slider-3-shape-2.png') }});"></div><!-- slider-shape -->
-                        <div class="main-slider-three__shape-three" style="background-image: url({{ asset('assets/images/shapes/slider-3-shape-3.png') }});"></div><!-- slider-shape -->
-                        <div class="main-slider-three__shape-four" style="background-image: url({{ asset('©assets/images/shapes/slider-3-shape-4.png') }});"></div><!-- slider-shape -->
+                        <div class="main-slider-three__bg" style="background-image: url({{ $main[0]['bg-1'] }});"></div><!-- slider-bg -->
+                        <div class="main-slider-three__shape-one" style="background-image: url({{ $main[0]['shape-one-1'] }});"></div><!-- slider-shape -->
+                        <div class="main-slider-three__shape-two" style="background-image: url({{ $main[0]['shape-two-1'] }});"></div><!-- slider-shape -->
+                        <div class="main-slider-three__shape-three" style="background-image: url({{ $main[0]['shape-three-1'] }});"></div><!-- slider-shape -->
+                        <div class="main-slider-three__shape-four" style="background-image: url({{ $main[0]['shape-four-1'] }});"></div><!-- slider-shape -->
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="main-slider-three__thumb">
-                                        <img src="{{ asset('assets/images/backgrounds/slider-3-layer.png') }}" alt="tolak" />
+                                        <img src="{{ $main[0]['thumb-1'] }}" alt="tolak" />
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="main-slider-three__content">
                                         <h2 class="main-slider-three__title">
-                                            <span class="main-slider-three__title__anim">Best IT Solution</span>
-                                            <span class="main-slider-three__title__anim">Services Team</span>
-                                            <span class="main-slider-three__title__anim">Technology.</span>
+                                            <span class="main-slider-three__title__anim">{{ $main[0]['h2-span-1'] }}</span>
+                                            <span class="main-slider-three__title__anim">{{ $main[0]['h2-span-2'] }}</span>
+                                            <span class="main-slider-three__title__anim">{{ $main[0]['h2-span-3'] }}</span>
                                         </h2><!-- slider-title -->
                                         <p class="main-slider-three__text">
-                                            Business a soluion and emirate in the Arab known <br>for luxury city for Company.
+                                            {{ $main[0]['p-1'] }}
                                         </p><!-- slider-text -->
                                         <div class="main-slider-three__btn">
-                                            <a href="https://pestex.pixeldev05.com/services" class="tolak-btn"><b>Service Work</b><span></span></a><!-- slider-btn -->
+                                            <a href="https://pestex.pixeldev05.com/services" class="tolak-btn"><b>{{ $main[0]['div-a-b'] }}</b><span></span></a><!-- slider-btn -->
                                             <div class="main-slider-three__btn__video">
                                                 <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
                                                     <i class="icon-play-button"></i>

@@ -13,7 +13,11 @@ class AboutController extends Controller
      */
     public function index()
     {
-        return view('about.index');
+        $about_main = About::where('id',1)->get()->toArray();
+        dd($about_main);
+        return view('about.index', [
+            'main' => $about_main
+        ]);
     }
 
     /**
