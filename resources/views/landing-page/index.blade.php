@@ -149,12 +149,13 @@
                     <div data-i18n="Landing">Landing</div>
                   </a>
                 </li>
-                <!--
+                
                 <li class="menu-item">
-                  <a href="../front-pages/pricing-page.html" class="menu-link" target="_blank">
-                    <div data-i18n="Pricing">Pricing</div>
+                  <a href="/about/1" class="menu-link" target="_blank">
+                    <div data-i18n="about">About</div>
                   </a>
                 </li>
+                <!--
                 <li class="menu-item">
                   <a href="../front-pages/payment-page.html" class="menu-link" target="_blank">
                     <div data-i18n="Payment">Payment</div>
@@ -1169,6 +1170,7 @@
         <!-- Layout container -->
         <div class="layout-page">
           <!-- Navbar -->
+          
           <nav
             class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
             id="layout-navbar">

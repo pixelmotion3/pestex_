@@ -2,21 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreAboutRequest;
-use App\Http\Requests\UpdateAboutRequest;
+use Illuminate\Http\Request;
 use App\Models\About;
-use App\Models\About_service;
-use App\Models\About_video;
-use App\Models\Testimonial;
-use App\Models\ContactInfo;
 
-class AboutController extends Controller
+class BackAboutController extends Controller
 {
-    /**
+     /**
      * Display a listing of the resource.
      */
     public function index()
     {
+        /*
         $about_main = About::where('id',1)->get()->toArray();
         $service = About_service::where('id',1)->get()->toArray();
         $video = About_video::where('id',1)->get()->toArray();
@@ -30,6 +26,9 @@ class AboutController extends Controller
             'testimonial' => $testimonial,
             'contact_info' => $contact_info
         ]);
+        */
+        $main_screen = About::where('id',1)->get()->toArray();   
+        //dd($main_screen);
+        return view('about-page.index');
     }
-
 }

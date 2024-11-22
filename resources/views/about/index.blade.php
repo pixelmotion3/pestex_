@@ -152,30 +152,30 @@
                 </div>
                 <div class="item">
                     <div class="main-slider-three__item">
-                        <div class="main-slider-three__bg" style="background-image: url({{ asset('assets/images/backgrounds/slider-3-2.jpg') }});"></div><!-- slider-bg -->
-                        <div class="main-slider-three__shape-one" style="background-image: url({{ asset('assets/images/shapes/slider-3-shape-1.png') }});"></div><!-- slider-shape -->
-                        <div class="main-slider-three__shape-two" style="background-image: url({{ asset('assets/images/shapes/slider-3-shape-2.png') }});"></div><!-- slider-shape -->
-                        <div class="main-slider-three__shape-three" style="background-image: url({{ asset('assets/images/shapes/slider-3-shape-3.png') }});"></div><!-- slider-shape -->
-                        <div class="main-slider-three__shape-four" style="background-image: url({{ asset('assets/images/shapes/slider-3-shape-4.png') }});"></div><!-- slider-shape -->
+                        <div class="main-slider-three__bg" style="background-image: url({{ $main[0]['bg-2'] }});"></div><!-- slider-bg -->
+                        <div class="main-slider-three__shape-one" style="background-image: url({{ $main[0]['shape-one-2'] }});"></div><!-- slider-shape -->
+                        <div class="main-slider-three__shape-two" style="background-image: url({{ $main[0]['shape-two-2'] }});"></div><!-- slider-shape -->
+                        <div class="main-slider-three__shape-three" style="background-image: url({{ $main[0]['shape-three-2'] }});"></div><!-- slider-shape -->
+                        <div class="main-slider-three__shape-four" style="background-image: url({{ $main[0]['shape-four-2'] }});"></div><!-- slider-shape -->
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="main-slider-three__thumb">
-                                        <img src="{{ asset('assets/images/backgrounds/slider-3-layer-2.png') }}" alt="tolak" />
+                                        <img src="{{ $main[0]['thumb-2'] }}" alt="tolak" />
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="main-slider-three__content">
                                         <h2 class="main-slider-three__title">
-                                            <span class="main-slider-three__title__anim">Best IT Solution</span>
-                                            <span class="main-slider-three__title__anim">Services Team</span>
-                                            <span class="main-slider-three__title__anim">Technology.</span>
+                                            <span class="main-slider-three__title__anim">{{ $main[0]['h2-span-1-1'] }}</span>
+                                            <span class="main-slider-three__title__anim">{{ $main[0]['h2-span-2-1'] }}</span>
+                                            <span class="main-slider-three__title__anim">{{ $main[0]['h2-span-3-1'] }}</span>
                                         </h2><!-- slider-title -->
                                         <p class="main-slider-three__text">
-                                            Business a soluion and emirate in the Arab known <br>for luxury city for Company.
+                                            {{ $main[0]['p-1-1'] }}
                                         </p><!-- slider-text -->
                                         <div class="main-slider-three__btn">
-                                            <a href="https://pestex.pixeldev05.com/services" class="tolak-btn"><b>Service Work</b><span></span></a><!-- slider-btn -->
+                                            <a href="https://pestex.pixeldev05.com/services" class="tolak-btn"><b>{{ $main[0]['div-a-b-1'] }}</b><span></span></a><!-- slider-btn -->
                                             <div class="main-slider-three__btn__video">
                                                 <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
                                                     <i class="icon-play-button"></i>
@@ -195,12 +195,12 @@
              
         <!-- service-section -->
         <section class="service-section fadeInUp">
-            <div class="image-layer" style="background-image: url(assets/images/background/service-1.jpg);"></div>
+            <div class="image-layer" style="background-image: url({{ $service[0]['image-layer-path'] }});"></div>
             <div class="auto-container">
                 <div class="sec-title text-center light">
-                    <h6 >Our Services</h6>
-                    <h2>Delivering a Higher Standard Cleaning Services</h2>
-                    <p class="text-white mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, velit! Placeat atque impedit qui accusantium, ipsa voluptas vero? <br/>Eum explicabo accusamus voluptatem voluptatum ipsa repudiandae est, ipsam ea obcaecati pariatur</p>
+                    <h6 >{{ $service[0]['h6'] }}</h6>
+                    <h2>{{ $service[0]['h2'] }}</h2>
+                    <p class="text-white mt-5">{{ $service[0]['p'] }}</p>
                 </div>
             </div>
         </section>
@@ -210,62 +210,61 @@
                     <div class="row ">
                         <div class="col-xl-6">
                             <div class="wow slideInLeft">
-                                <img src="assets/images/resources/why-choose-5-1.jpg" alt="tolak" style="border-radius: 30px">
+                                <img src="{{ $service[0]['img-path'] }}" alt="tolak" style="border-radius: 30px">
                             </div><!-- /.why-choose-five__image -->
                         </div><!-- /.col-lg-6 -->
                         <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
                             <div class="why-choose-five__content">
                                 <div class="sec-title-four text-left">
 
-                                    <h6 class="sec-title-four__tagline"><span class="sec-title-four__tagline__left-border"></span>OUR CHOOSE MORE<span class="sec-title-four__tagline__right-border"></span></h6><!-- /.sec-title-four__tagline -->
+                                    <h6 class="sec-title-four__tagline"><span class="sec-title-four__tagline__left-border"></span>{{ $service[0]['h6-span'] }}<span class="sec-title-four__tagline__right-border"></span></h6><!-- /.sec-title-four__tagline -->
 
-                                    <h3 class="sec-title-four__title">We Preparing For Your Success Choose Best Solutions.</h3><!-- /.sec-title-four__title -->
+                                    <h3 class="sec-title-four__title">{{ $service[0]['h3'] }}</h3><!-- /.sec-title-four__title -->
                                 </div><!-- /.sec-title-four -->
                                 <p class="why-choose-five__content__text">
-                                    Business tailored design, management & support services Business business agency e lit, sed do eiusmod tempor
-                                    majority have in some we form, by injected humour solution.
+                                    B{{ $service[0]['p-1'] }}
                                 </p>
                                 <div class="row gutter-y-30">
                                     <div class="col-md-4">
                                         <div class="why-choose-five__box">
                                             <div class="why-choose-five__box__icon"><i class="tolak-icons-two-deal"></i></div>
-                                            <h3 class="why-choose-five__box__title">Technological Solutions</h3>
+                                            <h3 class="why-choose-five__box__title">{{ $service[0]['h3-1'] }}</h3>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="why-choose-five__box">
                                             <div class="why-choose-five__box__icon"><i class="tolak-icons-two-solutions-three"></i></div>
-                                            <h3 class="why-choose-five__box__title">Financial Management</h3>
+                                            <h3 class="why-choose-five__box__title">{{ $service[0]['h3-2'] }}</h3>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="why-choose-five__box">
                                             <div class="why-choose-five__box__icon"><i class="tolak-icons-two-smart-grid"></i></div>
-                                            <h3 class="why-choose-five__box__title">Product Development</h3>
+                                            <h3 class="why-choose-five__box__title">{{ $service[0]['h3-3'] }}</h3>
                                         </div>
                                     </div>
                                 </div>
                                 <ul class="why-choose-five__list">
                                     <li>
                                         <i class="tolak-icons-two-arrow-circle-right"></i>
-                                        <span>Team Support</span>
+                                        <span>{{ $service[0]['li-i-1'] }}</span>
                                     </li>
                                     <li>
                                         <i class="tolak-icons-two-arrow-circle-right"></i>
-                                        <span>Business Management</span>
+                                        <span>{{ $service[0]['li-i-2'] }}</span>
                                     </li>
                                     <li>
                                         <i class="tolak-icons-two-arrow-circle-right"></i>
-                                        <span>Business tailored</span>
+                                        <span>{{ $service[0]['li-i-3'] }}</span>
                                     </li>
                                     <li>
                                         <i class="tolak-icons-two-arrow-circle-right"></i>
-                                        <span>Consultancy & solution</span>
+                                        <span>{{ $service[0]['li-i-4'] }}</span>
                                     </li>
                                 </ul>
                                 <a href="about.html" class="tolak-btn-two tolak-btn-two--home-seven">
                                     <span class="tolak-btn-two__left-star"></span>
-                                    <span>Read More<i class="tolak-icons-two-arrow-right-short"></i></span>
+                                    <span>{{ $service[0]['a-span'] }}<i class="tolak-icons-two-arrow-right-short"></i></span>
                                     <span class="tolak-btn-two__right-star"></span>
                                 </a>
                             </div><!-- /.why-choose-five__content -->
@@ -276,13 +275,13 @@
         </div>
         
         <!-- service-section end -->
-        <h2 class="text-center h2 text-body" style="margin-top:50px;">We Preparing for your success <br/>Choose Best Options</h2>
-        <p class="text-center p mt-5 mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, nesciunt atque. Iure, labore voluptatum quia<br/> omnis molestias tempora similique doloribus nisi temporibus veniam. Natus minus amet repellat vitae autem iste.</p>
+        <h2 class="text-center h2 text-body" style="margin-top:50px;">{{ $video[0]['h2'] }}</h2>
+        <p class="text-center p mt-5 mb-5">L{{ $video[0]['p'] }}</p>
         <section class="cta-four mt-5">
             <div class="container mt-5">
-                <div class="cta-four__bg" style="background-image: url(assets/images/resources/cta-4-bg.jpg);">
-                    <div class="cta-four__shape" style="background-image: url(assets/images/shapes/cta-4-border.png);"></div>
-                    <div class="cta-four__overlay" style="background-image: url(assets/images/shapes/cta-4-bg-overlay.png);"></div>
+                <div class="cta-four__bg" style="background-image: url({{ $video[0]['bg-img'] }});">
+                    <div class="cta-four__shape" style="background-image: url({{ $video[0]['shape-img'] }});"></div>
+                    <div class="cta-four__overlay" style="background-image: url({{ $video[0]['overlay-img'] }});"></div>
                     <div class="row">
                         <div class="col-lg-6 wow fadeInUp" data-wow-delay="00ms">
                             <div class="cta-four__content">
@@ -290,24 +289,24 @@
                                     <i class="icon-play-button"></i>
                                 </a>
                                 <div class="sec-title-two text-left">
-                                    <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span>Our Watch Video<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
-                                    <h3 class="sec-title-two__title">Want to learn to Video idea Business</h3><!-- /.sec-title-two__title -->
+                                    <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span>{{ $video[0]['h6-span'] }}<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
+                                    <h3 class="sec-title-two__title">{{ $video[0]['h3'] }}</h3><!-- /.sec-title-two__title -->
                                 </div><!-- /.sec-title-two -->
                                 <p class="cta-four__content__text">
-                                    Business tailored it design, management & support services business agency elit, sed do eiusmod tempor.
+                                    {{ $video[0]['p-1'] }}
                                 </p>
                                 <div class="cta-four__content__bar"></div>
                                 <div class="cta-four__content__info">
                                     <div class="cta-four__content__info__icon"><i class="icofont-speech-comments"></i></div>
                                     <p class="cta-four__content__info__text">
-                                        Collaborate Consulting exists to find the place where business interests <a href="contact.html">Meet.</a>
+                                        {{ $video[0]['div-p'] }} <a href="contact.html">Meet.</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 wow fadeInUp" data-wow-delay="200ms">
                             <div class="cta-four__image mt-5">
-                                <img src="assets/images/resources/cta-4-1.png" alt="tolak">
+                                <img src="{{ $video[0]['img-path'] }}" alt="tolak">
                             </div>
                         </div>
                     </div>
@@ -315,23 +314,23 @@
             </div>
         </section>
         <section class="testimonials-three">
-            <div class="testimonials-three__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%" style="background-image: url(assets/images/backgrounds/testimonial-bg-3.jpg);"></div>
+            <div class="testimonials-three__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%" style="background-image: url({{ $testimonial[0]['img-path'] }});"></div>
             <div class="container">
                 <div class="sec-title-two text-center">
-                    <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span>Our testimonial say<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
-                    <h3 class="sec-title-two__title">What Customers Awesome Reviews</h3><!-- /.sec-title-two__title -->
+                    <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span>ytjnwrhjnrhth<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
+                    <h3 class="sec-title-two__title">{{ $testimonial[0]['h3'] }}</h3><!-- /.sec-title-two__title -->
                 </div><!-- /.sec-title-two -->
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="testimonials-three__image">
-                            <img src="assets/images/resources/testimonial-3-1.jpg" alt="tolak" style="border-radius:30px;">
-                            <img class="testimonials-three__image__left" src="assets/images/resources/testimonial-3-2.png" alt="tolak" style="border-radius:30px;">
+                            <img src="{{ $testimonial[0]['img-path-1'] }}" alt="tolak" style="border-radius:30px;">
+                            <img class="testimonials-three__image__left" src="{{ $testimonial[0]['img-path-2'] }}" alt="tolak" style="border-radius:30px;">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="testimonials-three__content" style="border-radius:30px;">
                             <h3 class="testimonials-three__content__title">
-                                Highly Skilled Busines Client Defense Solution
+                                {{ $testimonial[0]['h3-1'] }}
                             </h3>
                             <div class="testimonials-three__carousel tolak-owl__carousel tolak-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
                         "items": 1,
@@ -346,8 +345,8 @@
                                 <div class="item">
                                     <div class="testimonials-card-three">
                                         <div class="testimonials-card-three__content">
-                                            <span class="testimonials-card-three__content__quote">“</span>If you are accused of committing a crime, you will need the very best criminal defense attorneys in Fresno. We are especially skilled in the following practice area
-                                            simperative that you.
+                                            <span class="testimonials-card-three__content__quote">“ </span>
+                                            {{ $testimonial[0]['span'] }}
                                         </div><!-- /.testimonials-card-three__content -->
                                         <div class="testimonials-card-three__author">
                                             <!--
@@ -355,17 +354,17 @@
                                                 <img src="assets/images/resources/testi-1-4.jpg" alt="Lataro Marsena">
                                             </div><!-- /.testimonials-card-three__image -->
                                             <h3 class="testimonials-card-three__name">
-                                                Lataro Marsena
+                                                {{ $testimonial[0]['h3-2'] }}
                                             </h3><!-- /.testimonials-card-three__name -->
-                                            <p class="testimonials-card-three__designation">Founder Ceo</p><!-- /.testimonials-card-three__designation -->
+                                            <p class="testimonials-card-three__designation">{{ $testimonial[0]['p'] }}</p><!-- /.testimonials-card-three__designation -->
                                         </div>
                                     </div><!-- /.testimonials-card-three -->
                                 </div><!-- /.item -->
                                 <div class="item">
                                     <div class="testimonials-card-three">
                                         <div class="testimonials-card-three__content">
-                                            <span class="testimonials-card-three__content__quote">“</span>If you are accused of committing a crime, you will need the very best criminal defense attorneys in Fresno. We are especially skilled in the following practice area
-                                            simperative that you.
+                                            <span class="testimonials-card-three__content__quote">“</span>
+                                            {{ $testimonial[0]['span-1'] }}
                                         </div><!-- /.testimonials-card-three__content -->
                                         <div class="testimonials-card-three__author">
                                             <!--
@@ -373,17 +372,17 @@
                                                 <img src="assets/images/resources/testi-1-5.jpg" alt="Marsena Baran">
                                             </div><!-- /.testimonials-card-three__image -->
                                             <h3 class="testimonials-card-three__name">
-                                                Marsena Baran
+                                                {{ $testimonial[0]['h3-3'] }}
                                             </h3><!-- /.testimonials-card-three__name -->
-                                            <p class="testimonials-card-three__designation">Founder</p><!-- /.testimonials-card-three__designation -->
+                                            <p class="testimonials-card-three__designation">{{ $testimonial[0]['p-1'] }}</p><!-- /.testimonials-card-three__designation -->
                                         </div>
                                     </div><!-- /.testimonials-card-three -->
                                 </div><!-- /.item -->
                                 <div class="item">
                                     <div class="testimonials-card-three">
                                         <div class="testimonials-card-three__content">
-                                            <span class="testimonials-card-three__content__quote">“</span>If you are accused of committing a crime, you will need the very best criminal defense attorneys in Fresno. We are especially skilled in the following practice area
-                                            simperative that you.
+                                            <span class="testimonials-card-three__content__quote">“</span>
+                                            {{ $testimonial[0]['span-2'] }}
                                         </div><!-- /.testimonials-card-three__content -->
                                         <div class="testimonials-card-three__author">
                                             <!--
@@ -391,9 +390,9 @@
                                                 <img src="assets/images/resources/testi-1-3.jpg" alt="David Cooper">
                                             </div><!-- /.testimonials-card-three__image -->
                                             <h3 class="testimonials-card-three__name">
-                                                David Cooper
+                                                {{ $testimonial[0]['h3-4'] }}
                                             </h3><!-- /.testimonials-card-three__name -->
-                                            <p class="testimonials-card-three__designation">Manager</p><!-- /.testimonials-card-three__designation -->
+                                            <p class="testimonials-card-three__designation">{{ $testimonial[0]['p-2'] }}</p><!-- /.testimonials-card-three__designation -->
                                         </div>
                                     </div><!-- /.testimonials-card-three -->
                                 </div><!-- /.item -->
@@ -409,26 +408,26 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="contact-two__info">
-                                <div class="contact-two__info__shape" style="background-image: url(assets/images/shapes/contact-2-shape-1.png);"></div>
-                                <h4 class="contact-two__info__title">Contact Information :</h4>
+                                <div class="contact-two__info__shape" style="background-image: url({{ $contact_info[0]['bg-img'] }});"></div>
+                                <h4 class="contact-two__info__title">{{ $contact_info[0]['h4'] }}</h4>
                                 <p class="contact-two__info__text">
-                                    Business tailored it design, management & support business agency elit, sed do eiusmod tempor.
+                                    {{ $contact_info[0]['p'] }}
                                 </p>
                                 <ul class="contact-two__info__box-wrapper">
                                     <li class="contact-two__info__box">
                                         <div class="contact-two__info__box__icon"><i class="icon-phone-call"></i></div>
-                                        <h4 class="contact-two__info__box__title">Call This Now</h4>
-                                        <p class="contact-two__info__box__text"><a href="tel:025461556695">+025461556695</a></p>
+                                        <h4 class="contact-two__info__box__title">{{ $contact_info[0]['h4-1'] }}</h4>
+                                        <p class="contact-two__info__box__text"><a href="tel:025461556695">{{ $contact_info[0]['p-1'] }}</a></p>
                                     </li>
                                     <li class="contact-two__info__box">
                                         <div class="contact-two__info__box__icon"><i class="icon-open-mail"></i></div>
-                                        <h4 class="contact-two__info__box__title">Your Message</h4>
-                                        <p class="contact-two__info__box__text"><a href="mailto:amar@mail.com">amar@mail.com</a></p>
+                                        <h4 class="contact-two__info__box__title">{{ $contact_info[0]['h4-1'] }}</h4>
+                                        <p class="contact-two__info__box__text"><a href="mailto:{{ $contact_info[0]['p-1'] }}">{{ $contact_info[0]['p-1'] }}</a></p>
                                     </li>
                                     <li class="contact-two__info__box">
                                         <div class="contact-two__info__box__icon"><i class="icon-pin"></i></div>
-                                        <h4 class="contact-two__info__box__title">Your location</h4>
-                                        <p class="contact-two__info__box__text">Dhaka ,56 Besta</p>
+                                        <h4 class="contact-two__info__box__title">{{ $contact_info[0]['h4-2'] }}</h4>
+                                        <p class="contact-two__info__box__text">{{ $contact_info[0]['p-2'] }}</p>
                                     </li>
                                 </ul>
                                 <div class="contact-two__info__social">
@@ -457,25 +456,25 @@
                         <div class="col-lg-6">
                             <div class="contact-two__content">
                                 <div class="sec-title-two text-left">
-                                    <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span>Our COntact Us<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
-                                    <h3 class="sec-title-two__title">Get free Business touch Customers me.</h3><!-- /.sec-title-two__title -->
+                                    <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span>{{ $contact_info[0]['h-6'] }}<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
+                                    <h3 class="sec-title-two__title">{{ $contact_info[0]['h-3'] }}</h3><!-- /.sec-title-two__title -->
                                 </div><!-- /.sec-title-two -->
                                 <p class="contact-two__content__text">
-                                    Business tailored it design, management & support services<br> business agency elit, sed do eiusmod tempor.
+                                    {{ $contact_info[0]['p-3'] }}
                                 </p>
                                 <form class="contact-two__form contact-form-validated form-one" action="inc/sendemail.php">
                                     <div class="form-one__group">
                                         <div class="form-one__control">
-                                            <input type="text" name="name" placeholder="Your Name">
+                                            <input type="text" name="name" placeholder="Nome">
                                         </div><!-- /.form-one__control -->
                                         <div class="form-one__control">
-                                            <input type="email" name="email" placeholder="Email address">
+                                            <input type="email" name="email" placeholder="Email">
                                         </div><!-- /.form-one__control -->
                                         <div class="form-one__control form-one__control--full">
-                                            <textarea name="message" placeholder="Message"></textarea><!-- /# -->
+                                            <textarea name="message" placeholder="Mensagem"></textarea><!-- /# -->
                                         </div><!-- /.form-one__control -->
                                         <div class="form-one__control form-one__control--full">
-                                            <button type="submit" class="tolak-btn"><b>Send Request</b><span></span></button>
+                                            <button type="submit" class="tolak-btn"><b>enviar</b><span></span></button>
                                         </div><!-- /.form-one__control -->
                                     </div><!-- /.form-one__group -->
                                 </form>

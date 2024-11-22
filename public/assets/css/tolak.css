@@ -12404,8 +12404,9 @@ body.megamenu-popup-active .mobile-nav__content {
   top: 48px;
   z-index: 1;
   background-color: var(--tolak-base, #3d72fc);
-  border-radius: 50px;
-  max-width: 300px;
+  border-radius: 30px;
+  max-width: 400px;
+  min-width: 150px;
 }
 
 .main-slider-one__project__icon {

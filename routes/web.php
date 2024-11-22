@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BackAboutController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\FrontPageController;
 use App\Http\Controllers\HardwareController;
@@ -18,7 +19,10 @@ Route::post('/contacts', [FrontPageController::class, 'store'])->name('FrontPage
 Route::post('/quote-form', [FrontPageController::class, 'QuoteForm'])->name('FrontPage.QuoteForm');
 Route::post('/contact-form', [FrontPageController::class, 'ContactForm'])->name('FrontPage.ContactForm');
 Route::resource('/services', ServiceController::class);
-Route::resource('/about', AboutController::class);
+//Route::resource('/about', AboutController::class);
+
+Route::get('/about', [AboutController::class, 'index'])->name('About.index');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -30,6 +34,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 #    Route::resource('/dashboard', DashboardController::class);
     Route::resource('/landing-page', LandingPageController::class);
+    Route::resource('/about-page', BackAboutController::class);
 });
 
 
