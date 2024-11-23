@@ -152,7 +152,7 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="/about/1" class="menu-link">
+                  <a href="/about-page" class="menu-link">
                     <div data-i18n="About">About</div>
                   </a>
                 </li>

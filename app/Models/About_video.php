@@ -17,6 +17,5 @@ class About_video extends Model
         'p-1',
         'div-p',
         'img-path'
-
     ];
 }

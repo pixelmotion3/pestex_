@@ -151,7 +151,7 @@
                 </li>
                 
                 <li class="menu-item">
-                  <a href="/about/1" class="menu-link" target="_blank">
+                  <a href="/about-page" class="menu-link">
                     <div data-i18n="about">About</div>
                   </a>
                 </li>
