@@ -103,14 +103,7 @@
                                 <img src="assets/images/logo-dark.png" alt="Tolak HTML" width="184">
                             </a>
                         </div><!-- /.main-header__logo -->
-                        <nav class="main-header__nav main-menu">
-                            <ul class="main-menu__list one-page-scroll-menu">
-                                <li class="megamenu scrollToLink current"><a href="https://pestex.pixeldev05.com/">Home</a></li>
-                                <li class="scrollToLink"><a href="https://pestex.pixeldev05.com/about">About</a></li>
-                                <li class="scrollToLink"><a href="https://pestex.pixeldev05.com/services">Services</a></li>
-                                <li class="scrollToLink"><a href="https://pestex.pixeldev05.com/sustainability">Sustainability</a></li>
-                            </ul>
-                        </nav><!-- /.main-header__nav -->                       
+                        @include('includes.nav')                      
                     </div><!-- /.main-header__inner -->
                 </div><!-- /.container-fluid -->
             </header><!-- /.main-header -->
@@ -124,7 +117,11 @@
                     <div class="row">
                         <div class="col-md-7">
                             <div class="page-header__content">
-                                <h2 class="page-header__title">Service page</h2>
+                                <h2 class="page-header__title">{{ $main_screen[0]['h2'] }}</h2>
+                                <ul class="tolak-breadcrumb list-unstyled">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><span>Services</span></li>
+                                </ul><!-- /.thm-breadcrumb list-unstyled -->
                             </div>
                         </div>
                         <div class="col-md-5">
@@ -138,15 +135,11 @@
                 </div><!-- /.container -->
             </section><!-- /.page-header -->
             <div class="sec-title text-center" style="margin-top:200px;">
-                <h1 class="text-center h1 text-body">We preparing for your <br>success Choose best options</h1>
-                <p class="text-center mt-5 p-5">We preparing for your siccess hoose best options We preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsWe preparing for your siccess hoose best options  We preparing for your siccess hoose best options We preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsWe preparing for your siccess hoose best options We preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsWe preparing for your siccess hWe preparing for your siccess hoose best options We preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsWe preparing for your siccess hoose best options We preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsWe preparing for your siccess hoose best optionsoose best options</p>
+                <h1 class="text-center h1 text-body">{{ $main_screen[0]['h1'] }}</h1>
+                <p class="text-center mt-5" style="padding-left: 250px;padding-right: 250px;">{{ $main_screen[0]['p'] }}</p>
             </div>
-                <section class="service-one">
-                <div class="container">
-                    <div class="sec-title text-center">
-                        <h6 class="sec-title__tagline"><span class="sec-title__tagline__left"></span>{{ $best_service[0]['best-service-h6-1'] }}<span class="sec-title__tagline__right"></span></h6><!-- /.sec-title__tagline -->
-                        <h3 class="sec-title__title">{{ $best_service[0]['best-service-h3-1'] }}</h3><!-- /.sec-title__title -->
-                    </div><!-- /.sec-title -->
+            <section class="service-one">
+                <div class="container" style="margin-top:-150px;">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="100ms">
                             <div class="service-one__item text-center">
@@ -542,22 +535,22 @@
             <!-- CTA Start -->
             <section class="cta-one">
                 <div class="cta-one__bg">
-                    <div class="cta-one__bg__shape-left" style="background-image: url(assets/images/shapes/cta-shape-1.png);"></div>
-                    <div class="cta-one__bg__shape" style="background-image: url(assets/images/shapes/cta-bg-1.png);"></div>
+                    <div class="cta-one__bg__shape-left" style="background-image: url({{ $main_screen[0]['bg-img'] }});"></div>
+                    <div class="cta-one__bg__shape" style="background-image: url({{ $main_screen[0]['bg-img-1'] }});"></div>
                 </div>
                 <div class="container">
                     <div class="row d-flex align-items-center">
                         <div class="col-lg-7 wow fadeInLeft" data-wow-delay="100ms">
                             <div class="cta-one__image">
-                                <img src="assets/images/resources/cta-1-1.jpg" alt="tolak" style="border-radius:30px;">
+                                <img src="{{ $main_screen[0]['bg-img-2'] }}" alt="tolak" style="border-radius:30px;">
                             </div>
                         </div>
                         <div class="col-lg-5 wow fadeInUp" data-wow-delay="100ms">
                             <div class="cta-one__content">
                                 <div class="cta-one__box">
                                     <div class="cta-one__box__icon"><span class="icon-best-price"></span></div>
-                                    <h3 class="cta-one__box__title">Solution System Design</h3>
-                                    <p class="cta-one__box__text">Every team has a culture and set of ct ations that have either been aed orsve naturally evolved.</p>
+                                    <h3 class="cta-one__box__title">{{ $main_screen[0]['h3'] }}</h3>
+                                    <p class="cta-one__box__text">{{ $main_screen[0]['p'] }}</p>
                                 </div>
                                 <!--
                                 <div class="cta-one__author">
@@ -567,7 +560,7 @@
                                     <a class="cta-one__author__rm" href="contact.html">More <span class="fas fa-arrow-right"></span></a>
                                 </div>
                                 <p class="cta-one__content__text">29,0000 customers with our services <a href="contact.html">( Let’s Started )</a></p>
-                            -->
+                                -->
                             </div>
                         </div>
                     </div>
@@ -581,7 +574,7 @@
                             <div class="contact-one__info wow fadeInLeft" data-wow-delay="100ms">
                                 <div class="contact-one__info__icon"><span class="icon-customer-service"></span></div>
                                 <h3 class="contact-one__info__title">Let’s call together just <span>contact</span> line</h3>
-                                <p class="contact-one__info__text"><a href="tel:255225551">++255225551</a>, <a href="tel:6544144444">+6544144444</a></p>
+                                <p class="contact-one__info__text"><a href="tel:255225551">{{ $main_screen[0]['p-a'] }}</a>, <a href="tel:6544144444">+6544144444</a></p>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -611,16 +604,16 @@
                                     <form class="contact-one__form contact-form-validated form-one" action="inc/sendemail.php">
                                         <div class="form-one__group">
                                             <div class="form-one__control">
-                                                <input type="text" name="name" placeholder="Your Name">
+                                                <input type="text" name="name" placeholder="Nome">
                                             </div><!-- /.form-one__control -->
                                             <div class="form-one__control">
-                                                <input type="email" name="email" placeholder="Email address">
+                                                <input type="email" name="email" placeholder="Email">
                                             </div><!-- /.form-one__control -->
                                             <div class="form-one__control form-one__control--full">
-                                                <textarea name="message" placeholder="Message"></textarea><!-- /# -->
+                                                <textarea name="message" placeholder="Mensagem"></textarea><!-- /# -->
                                             </div><!-- /.form-one__control -->
                                             <div class="form-one__control form-one__control--full">
-                                                <button type="submit" class="tolak-btn"><b>Send Request</b><span></span></button>
+                                                <button type="submit" class="tolak-btn"><b>Contacte-nos Agora!</b><span></span></button>
                                             </div><!-- /.form-one__control -->
                                         </div><!-- /.form-one__group -->
                                     </form>
@@ -630,33 +623,7 @@
                     </div>
                 </div><!-- /.container -->
             </section><!-- /.contact -->
-            <footer class="footer" style="max-height:200px; mt-5">
-              <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-3 bg-dark" style="background-color: black;height:200px;">
-                        <img class="pull-right mt-5 mr-5" src="assets/images/footer-logo.png" style="max-width: 200px;max-height: 200px;"/>
-                    </div>
-                    <div class="col-md-9" style="height:200px;">
-                        <h3 class="h3 mt-5">Titulo</h3>
-                        <p>Paragrafo We are dolor sit amet caadwdjqdq</p>
-                    </div>
-                </div>
-                <div class="row" style="height:50px;z-index:10;background-color:darkblue;color:white;">
-                    <div class="col-md-3" style="background-color: darkblue;margin-top:-50px;height:50px;">
-                        <p class="text-center text-white mt-3">Copyright</p>
-                    </div>
-                    <div class="col-md-3 text-white" style="background-color: darkblue;color:white;margin-top:-50px;height:50px;">
-                        <p class="text-white"> ©2024 <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos direitos reservados</p>
-                    </div>
-                    <div class="col-md-3 text-white" style="background-color: darkblue;color:white;margin-top:-50px;height:50px;">
-                        <p class="mt-3 text-white">Politica de publicidade</p>
-                    </div>
-                    <div class="col-md-3 text-white" style="background-color: darkblue;color:white;margin-top:-50px;height:50px;">
-                        <p class="mt-3 text-white">Desenvolvido por Pixel in Motion</p>
-                    </div>
-                </div>
-              </div>
-            </footer>
+            @include('includes.footer')
             <!--
         <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
             <span class="scroll-to-top__text">back top</span>

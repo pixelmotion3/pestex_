@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ServicesMainScreen;
 use Illuminate\Http\Request;
 
 class ServicePageController extends Controller
@@ -11,6 +12,8 @@ class ServicePageController extends Controller
      */
     public function index()
     {
+        $main_screen = ServicesMainScreen::where('id', 1)->get()->toArray();
+        dd($main_screen);
         return view('services-page.index');
     }
 

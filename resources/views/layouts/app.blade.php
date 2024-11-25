@@ -65,25 +65,13 @@
   </head>
 
   <body>
-    <!-- Layout wrapper 
-    <div class="layout-wrapper layout-content-navbar">
-        <div class="layout-container">
+    
             
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
-        <!--
-        </div>
-
-      <!-- Overlay 
-      <div class="layout-overlay layout-menu-toggle"></div>
-
-      <!-- Drag Target Area To SlideIn Menu On Small Screens 
-      <div class="drag-target"></div>
-      
-    </div>
-    <!-- / Layout wrapper -->
+        <!-- Page Content -->
+        <main>
+            {{ $slot }}
+        </main>
+   
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->

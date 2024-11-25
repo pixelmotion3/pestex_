@@ -6,6 +6,7 @@ use App\Http\Requests\StoreServiceRequest;
 use App\Http\Requests\UpdateServiceRequest;
 use App\Models\Service;
 use App\Models\landing_3page;
+use App\Models\ServicesMainScreen;
 
 class ServiceController extends Controller
 {
@@ -15,8 +16,12 @@ class ServiceController extends Controller
     public function index()
     {
         $best_service = landing_3page::where('id',1)->get()->toArray();
+        $main_screen = ServicesMainScreen::where('id', 1)->get()->toArray();
+       // dd($main_screen);
      
-        return view('services.index', ['best_service' => $best_service]);
+        return view('services.index', [
+            'main_screen' => $main_screen,
+            'best_service' => $best_service]);
     }
 
     /**
