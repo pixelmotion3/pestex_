@@ -126,7 +126,7 @@
                         </div>
                         <div class="col-md-5">
                             <div class="page-header__layer wow fadeInUp" data-wow-delay="100ms">
-                                <img src="assets/images/backgrounds/page-banner-layer.png" alt="tolak">
+                                <img src="{{ $main_screen[0]['bg-img-path'] }}" alt="tolak">
                                 <div class="page-header__layer__shape"></div>
                                 <div class="page-header__layer__bg wow fadeInRight" data-wow-delay="200ms"></div>
                             </div>
@@ -549,8 +549,8 @@
                             <div class="cta-one__content">
                                 <div class="cta-one__box">
                                     <div class="cta-one__box__icon"><span class="icon-best-price"></span></div>
-                                    <h3 class="cta-one__box__title">{{ $main_screen[0]['h3'] }}</h3>
-                                    <p class="cta-one__box__text">{{ $main_screen[0]['p'] }}</p>
+                                    <h3 class="cta-one__box__title">{{ $main_screen[0]['h3-a'] }}</h3>
+                                    <p class="cta-one__box__text">{{ $main_screen[0]['p-a-1'] }}</p>
                                 </div>
                                 <!--
                                 <div class="cta-one__author">
@@ -573,33 +573,33 @@
                         <div class="col-lg-8">
                             <div class="contact-one__info wow fadeInLeft" data-wow-delay="100ms">
                                 <div class="contact-one__info__icon"><span class="icon-customer-service"></span></div>
-                                <h3 class="contact-one__info__title">Let’s call together just <span>contact</span> line</h3>
+                                <h3 class="contact-one__info__title">{{ $main_screen[0]['h3'] }}</h3>
                                 <p class="contact-one__info__text"><a href="tel:255225551">{{ $main_screen[0]['p-a'] }}</a>, <a href="tel:6544144444">+6544144444</a></p>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="contact-one__image wow fadeInRight" data-wow-delay="200ms">
-                                <img src="assets/images/resources/contact-1-1.png" alt="tolak">
+                                <img src="{{ $main_screen[0]['bg-img-3'] }}" alt="tolak">
                             </div>
                         </div>
                     </div>
                 </div><!-- /.container -->
                 <div class="container contact-one__container wow fadeInUp" data-wow-delay="100ms">
-                    <div class="contact-one__wrapper" style="background-image: url(assets/images/shapes/contact-1-shape-1.png);" >
+                    <div class="contact-one__wrapper" style="background-image: url({{ $main_screen[0]['bg-img-4'] }});" >
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="contact-one__image-two">
-                                    <img src="assets/images/resources/contact-1-2.jpg" alt="tolak" style="border-radius:30px;">
+                                    <img src="{{ $main_screen[0]['bg-img-5'] }}" alt="tolak" style="border-radius:30px;">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="contact-one__content">
-                                    <div class="sec-title text-left">
-                                        <h6 class="sec-title__tagline"><span class="sec-title__tagline__left"></span>Get In Contact<span class="sec-title__tagline__right"></span></h6><!-- /.sec-title__tagline -->
-                                        <h3 class="sec-title__title">Get free Business touch Customers me.</h3><!-- /.sec-title__title -->
+                                    <div>
+                                        <h6 class="sec-title__tagline"><span class="sec-title__tagline__left"></span>{{ $main_screen[0]['h6'] }}<span class="sec-title__tagline__right"></span></h6><!-- /.sec-title__tagline -->
+                                        <h3 class="sec-title__title">{{ $main_screen[0]['h3-1'] }}</h3><!-- /.sec-title__title -->
                                     </div><!-- /.sec-title -->
                                     <p class="contact-one__content__text">
-                                        Business tailored it design, management & support services <br>business agency elit, sed do eiusmod tempor.
+                                        {{ $main_screen[0]['p-1'] }}
                                     </p>
                                     <form class="contact-one__form contact-form-validated form-one" action="inc/sendemail.php">
                                         <div class="form-one__group">
