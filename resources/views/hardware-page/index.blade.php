@@ -1722,33 +1722,206 @@
                           <nav>
                             <div class="nav nav-tabs overflow-scroll" id="nav-tab" role="tablist">
                               <button class="nav-link active" id="main-screen-tab" data-bs-toggle="tab" data-bs-target="#main-screen" type="button" role="tab" aria-controls="main-screen" aria-selected="false"><small>Main screen</small></button>
-                              <button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="false"><small>Services</small></button>
-                              <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video" type="button" role="tab" aria-controls="video" aria-selected="false"><small>Video</small></button>
-                              <button class="nav-link" id="testimonial-tab" data-bs-toggle="tab" data-bs-target="#testimonial" type="button" role="tab" aria-controls="testimonial" aria-selected="false"><small>Testimonial</small></button>
-                              <button class="nav-link" id="contact-info-tab" data-bs-toggle="tab" data-bs-target="#contact-info" type="button" role="tab" aria-controls="contact-info" aria-selected="false"><small>Contact Info</small></button>
                             </div>
                           </nav>
                           <div class="tab-content mt-5" id="nav-tabContent">
                             <!-- main screen -->
                             <div class="tab-pane fade show active" id="main-screen" role="tabpanel" aria-labelledby="main-screen-tab">
-                              <form class="row g-3 needs-validation" novalidate action="{{ route('services-page.update', 1) }}" method="post" enctype="multipart/form-data">
+                              <form class="row g-3 needs-validation" novalidate action="{{ route('hardware-page.update', 1) }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 @method('PUT')
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['h1'] }}" name="h1" required>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['h6'] }}" name="h6" required>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['h3'] }}" name="h3" required>
+                                </div>
                                 <div class="col-12 mt-5 form-group">   
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                   </div>                                       
                                   <div class="card">
-                                    <img src="" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                    <img src="{{ $main[0]['img'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
                                     <div class="card-body">                                              
                                       <label for="exampleFormControlFile1">Example file input</label>
-                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="">                        
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img">                        
                                     </div>
                                   </div>
                                 </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
-                                  <input type="text" class="form-control" id="validationCustom01" value="" name="" required>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['h3-0'] }}" name="h3-0" required>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['a'] }}" name="a" required>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['p'] }}" name="p" required>
+                                </div>
+                                <div class="col-12 mt-5 form-group">   
+                                  <div class="card-header">
+                                    <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
+                                  </div>                                       
+                                  <div class="card">
+                                    <img src="{{ $main[0]['img-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                    <div class="card-body">                                              
+                                      <label for="exampleFormControlFile1">Example file input</label>
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-1">                        
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['h3-1'] }}" name="h3-1" required>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['a-1'] }}" name="a-1" required>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['p-1'] }}" name="p-1" required>
+                                </div>
+                                <div class="col-12 mt-5 form-group">   
+                                  <div class="card-header">
+                                    <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
+                                  </div>                                       
+                                  <div class="card">
+                                    <img src="{{ $main[0]['img-2'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                    <div class="card-body">                                              
+                                      <label for="exampleFormControlFile1">Example file input</label>
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-2">                        
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['h3-2'] }}" name="h3-2" required>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['a-3'] }}" name="a-3" required>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['p-2'] }}" name="p-2" required>
+                                </div>
+                                <div class="col-12 mt-5 form-group">   
+                                  <div class="card-header">
+                                    <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
+                                  </div>                                       
+                                  <div class="card">
+                                    <img src="{{ $main[0]['img-3'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                    <div class="card-body">                                              
+                                      <label for="exampleFormControlFile1">Example file input</label>
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-3">                        
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['h3-4'] }}" name="h3-4" required>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['a-4'] }}" name="a-4" required>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['p-3'] }}" name="p-3" required>
+                                </div>
+                                <div class="col-12 mt-5 form-group">   
+                                  <div class="card-header">
+                                    <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
+                                  </div>                                       
+                                  <div class="card">
+                                    <img src="{{ $main[0]['img-4'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                    <div class="card-body">                                              
+                                      <label for="exampleFormControlFile1">Example file input</label>
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-4">                        
+                                    </div>
+                                  </div>
+                                </div>                            
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['h3-4'] }}" name="h3-4" required>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['a-5'] }}" name="a-5" required>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['p-4'] }}" name="p-4" required>
+                                </div>
+                                <div class="col-12 mt-5 form-group">   
+                                  <div class="card-header">
+                                    <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
+                                  </div>                                       
+                                  <div class="card">
+                                    <img src="{{ $main[0]['img-5'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                    <div class="card-body">                                              
+                                      <label for="exampleFormControlFile1">Example file input</label>
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-5">                        
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['h3-5'] }}" name="h3-5" required>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['h3-a'] }}" name="h3-a" required>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['p-5-0'] }}" name="p-5-0" required>
+                                </div>
+                                <div class="col-12 mt-5 form-group">   
+                                  <div class="card-header">
+                                    <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
+                                  </div>                                       
+                                  <div class="card">
+                                    <img src="{{ $main[0]['img-6'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                    <div class="card-body">                                              
+                                      <label for="exampleFormControlFile1">Example file input</label>
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-6">                        
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['div'] }}" name="div" required>
+                                </div> <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['h6-2'] }}" name="h6-2" required>
+                                </div> <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['h3-6'] }}" name="h3-6" required>
+                                </div> <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['p-5'] }}" name="p-5" required>
+                                </div> <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['li-h3'] }}" name="li-h3" required>
+                                </div> <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['li-p'] }}" name="li-p" required>
+                                </div> <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['li-h3-1'] }}" name="li-h3-1" required>
+                                </div> <div class="col-12 mt-5">
+                                  <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['li-p-1'] }}" name="li-p-1" required>
                                 </div>
                                
                                 <div class="col-12">
@@ -1756,14 +1929,6 @@
                                 </div>
                               </form>
                             </div>
-                             <!-- Services -->
-                            <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">gegerg</div>
-                            <!-- video -->
-                            <div class="tab-pane fade show" id="video" role="tabpanel" aria-labelledby="video-tab">grg</div>
-                            <!-- Testimonial -->
-                            <div class="tab-pane fade show" id="testimonial" role="tabpanel" aria-labelledby="testimonial-tab">dfsd</div>
-                            <!-- Contact Info -->
-                            <div class="tab-pane fade show" id="contact-info" role="tabpanel" aria-labelledby="contact-info-tab">dgf</div>
                         </div>
                       </div>
                     </div>

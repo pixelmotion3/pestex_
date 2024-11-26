@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HardwarePageController;
 use App\Http\Controllers\ServicePageController;
 use App\Http\Controllers\AboutPageController;
 use App\Http\Controllers\ProfileController;
@@ -34,6 +35,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('/landing-page', LandingPageController::class);
     Route::resource('/about-page', AboutPageController::class);
     Route::resource('/services-page', ServicePageController::class);
+    Route::resource('/hardware-page', HardwarePageController::class);
 });
 
 

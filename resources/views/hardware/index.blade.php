@@ -116,13 +116,10 @@
                 <!-- /.page-header__bg -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-7">
-                            <div class="page-header__content">
-                                <h2 class="page-header__title">Service Page</h2>
+                        <div class="col-md-12">
+                            <div class="page-header__content text-center">
+                                <h1 class="text-white h1"><b>{{ $main[0]['h1'] }}</b></h1>
                             </div>
-                        </div>
-                        <div class="col-md-5">
-                    
                         </div>
                     </div>
                 </div><!-- /.container -->
@@ -131,120 +128,120 @@
             <section class="service-two service-two--page">
                 <div class="container">
                     <div class="sec-title-two text-center">
-                        <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span>Our Best Service<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
-                        <h3 class="sec-title-two__title">We Leadership This Service</h3><!-- /.sec-title-two__title -->
+                        <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span>{{ $main[0]['h6'] }}<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
+                        <h3 class="sec-title-two__title">{{ $main[0]['h3'] }}</h3><!-- /.sec-title-two__title -->
                     </div><!-- /.sec-title-two -->
                     <div class="row gutter-y-30">
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6" style="border-radius:30px;">
                             <div class="service-two__item wow fadeInUp" data-wow-delay="100ms">
                                 <div class="service-two__item__thumb">
-                                    <img src="assets/images/resources/service-2-1.jpg" alt="tolak">
+                                    <img src="{{ $main[0]['img'] }}" alt="tolak">
                                 </div>
                                 <div class="service-two__item__normal">
                                     <div class="service-two__item__normal__icon"><span class="icon-cooperation"></span></div>
-                                    <h3 class="service-two__item__normal__title">Business of Growth</h3>
+                                    <h3 class="service-two__item__normal__title">{{ $main[0]['h3-0'] }}</h3>
                                 </div><!-- normal-content -->
                                 <div class="service-two__item__hover">
                                     <div class="service-two__item__normal__icon"><span class="icon-cooperation"></span></div>
                                     <h3 class="service-two__item__hover__title">
-                                        <a href="business-growth.html">Business of Growth</a>
+                                        <a href="business-growth.html">{{ $main[0]['a'] }}</a>
                                     </h3>
-                                    <p class="service-two__item__hover__text">We businesss standard chunk of Ipsum used since...</p>
+                                    <p class="service-two__item__hover__text">{{ $main[0]['p'] }}</p>
                                     <a class="service-two__item__hover__btn" href="business-growth.html"><span class="icon-right-arrow"></span></a>
                                 </div><!-- hover-content -->
                             </div><!-- /.service-card-two -->
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6" style="border-radius:30px;">
                             <div class="service-two__item wow fadeInUp" data-wow-delay="150ms">
                                 <div class="service-two__item__thumb">
-                                    <img src="assets/images/resources/service-2-2.jpg" alt="tolak">
+                                    <img src="{{ $main[0]['img-1'] }}" alt="tolak">
                                 </div>
                                 <div class="service-two__item__normal">
                                     <div class="service-two__item__normal__icon"><span class="icon-ads-campaign"></span></div>
-                                    <h3 class="service-two__item__normal__title">Solution to Business</h3>
+                                    <h3 class="service-two__item__normal__title">{{ $main[0]['h3-1'] }}</h3>
                                 </div><!-- normal-content -->
                                 <div class="service-two__item__hover">
                                     <div class="service-two__item__normal__icon"><span class="icon-ads-campaign"></span></div>
                                     <h3 class="service-two__item__hover__title">
-                                        <a href="business-solution.html">Solution to Business</a>
+                                        <a href="business-solution.html">{{ $main[0]['a-1'] }}</a>
                                     </h3>
-                                    <p class="service-two__item__hover__text">We businesss standard chunk of Ipsum used since...</p>
+                                    <p class="service-two__item__hover__text">{{ $main[0]['p-1'] }}</p>
                                     <a class="service-two__item__hover__btn" href="business-solution.html"><span class="icon-right-arrow"></span></a>
                                 </div><!-- hover-content -->
                             </div><!-- /.service-card-two -->
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6" style="border-radius:30px;">
                             <div class="service-two__item wow fadeInUp" data-wow-delay="200ms">
                                 <div class="service-two__item__thumb">
-                                    <img src="assets/images/resources/service-2-3.jpg" alt="tolak">
+                                    <img src="{{ $main[0]['img-2'] }}" alt="tolak">
                                 </div>
                                 <div class="service-two__item__normal">
                                     <div class="service-two__item__normal__icon"><span class="icon-headhunter"></span></div>
-                                    <h3 class="service-two__item__normal__title">Markting of Solution</h3>
+                                    <h3 class="service-two__item__normal__title">{{ $main[0]['h3-2'] }}</h3>
                                 </div><!-- normal-content -->
                                 <div class="service-two__item__hover">
                                     <div class="service-two__item__normal__icon"><span class="icon-headhunter"></span></div>
                                     <h3 class="service-two__item__hover__title">
-                                        <a href="marketing-solution.html">Markting of Solution</a>
+                                        <a href="marketing-solution.html">{{ $main[0]['a-3'] }}</a>
                                     </h3>
-                                    <p class="service-two__item__hover__text">We businesss standard chunk of Ipsum used since...</p>
+                                    <p class="service-two__item__hover__text">{{ $main[0]['p-2'] }}</p>
                                     <a class="service-two__item__hover__btn" href="marketing-solution.html"><span class="icon-right-arrow"></span></a>
                                 </div><!-- hover-content -->
                             </div><!-- /.service-card-two -->
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6" style="border-radius:30px;">
                             <div class="service-two__item wow fadeInUp" data-wow-delay="250ms">
                                 <div class="service-two__item__thumb">
-                                    <img src="assets/images/resources/service-2-4.jpg" alt="tolak">
+                                    <img src="{{ $main[0]['img-3'] }}" alt="tolak">
                                 </div>
                                 <div class="service-two__item__normal">
                                     <div class="service-two__item__normal__icon"><span class="icon-agency"></span></div>
-                                    <h3 class="service-two__item__normal__title">Technology Services</h3>
+                                    <h3 class="service-two__item__normal__title">{{ $main[0]['h3-3'] }}</h3>
                                 </div><!-- normal-content -->
                                 <div class="service-two__item__hover">
                                     <div class="service-two__item__normal__icon"><span class="icon-agency"></span></div>
                                     <h3 class="service-two__item__hover__title">
-                                        <a href="technology-services.html">Technology Services</a>
+                                        <a href="technology-services.html">{{ $main[0]['a-4'] }}</a>
                                     </h3>
-                                    <p class="service-two__item__hover__text">We businesss standard chunk of Ipsum used since...</p>
+                                    <p class="service-two__item__hover__text">{{ $main[0]['p-3'] }}</p>
                                     <a class="service-two__item__hover__btn" href="technology-services.html"><span class="icon-right-arrow"></span></a>
                                 </div><!-- hover-content -->
                             </div><!-- /.service-card-two -->
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6" style="border-radius:30px;">
                             <div class="service-two__item wow fadeInUp" data-wow-delay="300ms">
                                 <div class="service-two__item__thumb">
-                                    <img src="assets/images/resources/service-2-5.jpg" alt="tolak">
+                                    <img src="{{ $main[0]['img-4'] }}" alt="tolak">
                                 </div>
                                 <div class="service-two__item__normal">
                                     <div class="service-two__item__normal__icon"><span class="icon-advertisig-agency"></span></div>
-                                    <h3 class="service-two__item__normal__title">Marketing Business</h3>
+                                    <h3 class="service-two__item__normal__title">{{ $main[0]['h3-4'] }}</h3>
                                 </div><!-- normal-content -->
                                 <div class="service-two__item__hover">
                                     <div class="service-two__item__normal__icon"><span class="icon-advertisig-agency"></span></div>
                                     <h3 class="service-two__item__hover__title">
-                                        <a href="business-marketing.html">Marketing Business</a>
+                                        <a href="business-marketing.html">{{ $main[0]['a-5'] }}</a>
                                     </h3>
-                                    <p class="service-two__item__hover__text">We businesss standard chunk of Ipsum used since...</p>
+                                    <p class="service-two__item__hover__text">{{ $main[0]['p-4'] }}</p>
                                     <a class="service-two__item__hover__btn" href="business-marketing.html"><span class="icon-right-arrow"></span></a>
                                 </div><!-- hover-content -->
                             </div><!-- /.service-card-two -->
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6" style="border-radius:30px;">
                             <div class="service-two__item wow fadeInUp" data-wow-delay="350ms">
                                 <div class="service-two__item__thumb">
-                                    <img src="assets/images/resources/service-2-6.jpg" alt="tolak">
+                                    <img src="{{ $main[0]['img-5'] }}" alt="tolak">
                                 </div>
                                 <div class="service-two__item__normal">
                                     <div class="service-two__item__normal__icon"><span class="icon-management"></span></div>
-                                    <h3 class="service-two__item__normal__title">Support of Business</h3>
+                                    <h3 class="service-two__item__normal__title">{{ $main[0]['h3-5'] }}</h3>
                                 </div><!-- normal-content -->
                                 <div class="service-two__item__hover">
                                     <div class="service-two__item__normal__icon"><span class="icon-management"></span></div>
                                     <h3 class="service-two__item__hover__title">
-                                        <a href="business-support.html">Support of Business</a>
+                                        <a href="business-support.html">{{ $main[0]['h3-a'] }}</a>
                                     </h3>
-                                    <p class="service-two__item__hover__text">We businesss standard chunk of Ipsum used since...</p>
+                                    <p class="service-two__item__hover__text">{{ $main[0]['p-5-0'] }}</p>
                                     <a class="service-two__item__hover__btn" href="business-support.html"><span class="icon-right-arrow"></span></a>
                                 </div><!-- hover-content -->
                             </div><!-- /.service-card-two -->
@@ -259,12 +256,12 @@
                         <div class="col-lg-6">
                             <div class="about-six__image count-box wow fadeInLeft" data-wow-delay="00ms">
                                 <div class="about-six__image__one wow fadeInUp" data-wow-delay="200ms">
-                                    <img src="assets/images/resources/about-6-1.jpg" alt="tolak">
+                                    <img src="{{ $main[0]['img-6'] }}" alt="tolak">
                                 </div>
                                 <div class="about-six__image__bg-shape"></div>
                                 <div class="about-six__image__experiance">
                                     <h3 class="about-six__image__experiance__count"><span class="count-text" data-stop="25" data-speed="1500"></span>+</h3><!-- /.about-six__image__experiance__number -->
-                                    years experience
+                                    {{ $main[0]['div'] }}
                                 </div>
                             </div>
                         </div><!-- /.col-lg-6 -->
@@ -272,31 +269,30 @@
                             <div class="about-six__content">
                                 <div class="sec-title-three text-left">
 
-                                    <h6 class="sec-title-three__tagline"><span class="sec-title-three__tagline__left-border"></span>OUR ABOUT COMPANY<span class="sec-title-three__tagline__right-border"></span></h6><!-- /.sec-title-three__tagline -->
+                                    <h6 class="sec-title-three__tagline"><span class="sec-title-three__tagline__left-border"></span>{{ $main[0]['h6-2'] }}<span class="sec-title-three__tagline__right-border"></span></h6><!-- /.sec-title-three__tagline -->
 
-                                    <h3 class="sec-title-three__title">Our Experience About 29+ Years Experience And Challenge!</h3><!-- /.sec-title-three__title -->
+                                    <h3 class="sec-title-three__title">{{ $main[0]['h3-6'] }}</h3><!-- /.sec-title-three__title -->
                                 </div><!-- /.sec-title-three -->
                                 <p class="about-six__content__text">
-                                    Business tailored design, management & support services Business business agency elit, sed do eiusmod tempor
-                                    majority have in some we form, by injected humour solution.
+                                    {{ $main[0]['p-5'] }}
                                 </p>
                                 <ul class="about-six__content__list">
                                     <li>
                                         <h3 class="about-six__content__list__title">
                                             <i class="tolak-icons-two-sign-in-alt1"></i>
-                                            Network Infrastructure software
+                                            {{ $main[0]['li-h3'] }}
                                         </h3>
                                         <p class="about-six__content__list__text">
-                                            Technology is a broad category encompassing all aspec of information technology and the application of technology.
+                                            {{ $main[0]['li-p'] }}
                                         </p>
                                     </li>
                                     <li>
                                         <h3 class="about-six__content__list__title">
                                             <i class="tolak-icons-two-sign-in-alt1"></i>
-                                            Solution Expert Team Support
+                                            {{ $main[0]['li-h3-1'] }}
                                         </h3>
                                         <p class="about-six__content__list__text">
-                                            Technology is a broad category encompassing all aspec of information technology and the application of technology.
+                                            {{ $main[0]['li-p-1'] }}
                                         </p>
                                     </li>
                                 </ul>

@@ -19642,7 +19642,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
   display: flex;
   align-items: center;
   background-color: var(--tolak-base, #3d72fc);
-  border-radius: 80px;
+  border-radius: 10px;
   border: 3px solid var(--tolak-white, #fff);
   padding: 39px 18px;
 }

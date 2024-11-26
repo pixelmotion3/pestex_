@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreHardwareRequest;
 use App\Http\Requests\UpdateHardwareRequest;
-use App\Models\Hardware;
+use App\Models\HardwareMainScreen;
 
 class HardwareController extends Controller
 {
@@ -13,8 +13,11 @@ class HardwareController extends Controller
      */
     public function index()
     {
+        $main = HardwareMainScreen::where('id',1)->get()->toArray();
         
-        return view('hardware.index');
+        return view('hardware.index', [
+            'main' => $main
+        ]);
     }
 
     /**
