@@ -130,7 +130,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="page-header__content">
-                                <h2 class="page-header__title text-center">Service Page</h2>
+                                <h2 class="page-header__title text-center">{{ $main[0]['h2']}}</h2>
                             </div>
                         </div>
                     </div>
@@ -139,9 +139,9 @@
             <section>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="h1 mt-5 text-center text-body">we preparing for your success <br/>choose best option</h1>
-                            <p class="p mt-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab soluta, fugit doloribus praesentium delectus illo est eaque commodi distinctio exercitationem mollitia quas sunt beatae saepe autem cumque eveniet voluptatem nisi!</p>
+                        <div class="col-md-12" style="margin-bottom: 150px">
+                            <h1 class="h1 mt-5 text-center text-body">{{ $main[0]['h1']}}</h1>
+                            <p class="p mt-3 text-center">{{ $main[0]['p']}}</p>
                         </div>
                     </div>
                 </div>
@@ -151,34 +151,34 @@
                 <div class="container tabs-box">
                     <div class="sec-title-four text-center">
 
-                        <h6 class="sec-title-four__tagline"><span class="sec-title-four__tagline__left-border"></span>Best Of Skill Tab<span class="sec-title-four__tagline__right-border"></span></h6><!-- /.sec-title-four__tagline -->
+                        <h6 class="sec-title-four__tagline"><span class="sec-title-four__tagline__left-border"></span>{{ $main[0]['h6']}}<span class="sec-title-four__tagline__right-border"></span></h6><!-- /.sec-title-four__tagline -->
 
-                        <h3 class="sec-title-four__title">These are Specific Teachable Skill Defined</h3><!-- /.sec-title-four__title -->
+                        <h3 class="sec-title-four__title">{{ $main[0]['h3']}}</h3><!-- /.sec-title-four__title -->
                     </div><!-- /.sec-title-four -->
                     <ul class="list-unstyled tab-buttons tab-one__tab-title">
                         <li data-tab="#technological-solutions" class="tab-btn active-btn technological-solutions">
                             <div class="tab-one__tab-title__trinagle"></div>
                             <div class="tab-one__tab-title__icon"><i class="tolak-icons-two-solutions-three"></i></div>
-                            <h3 class="tab-one__tab-title__text">Technological Solutions</h3>
-                            <div class="tab-one__tab-title__shape" style="background-image: url(assets/images/shapes/tab-one-title.png);"></div>
+                            <h3 class="tab-one__tab-title__text">{{ $main[0]['h3-1']}}</h3>
+                            <div class="tab-one__tab-title__shape" style="background-image: url({{ $main[0]['img']}});"></div>
                         </li>
                         <li data-tab="#competitor-research" class="tab-btn competitor-research">
                             <div class="tab-one__tab-title__trinagle"></div>
                             <div class="tab-one__tab-title__icon"><i class=" tolak-icons-two-lightbulb-dollar"></i></div>
-                            <h3 class="tab-one__tab-title__text">Competitor Research</h3>
-                            <div class="tab-one__tab-title__shape" style="background-image: url(assets/images/shapes/tab-one-title.png);"></div>
+                            <h3 class="tab-one__tab-title__text">{{ $main[0]['h3-2']}}</h3>
+                            <div class="tab-one__tab-title__shape" style="background-image: url({{ $main[0]['img-1']}});"></div>
                         </li>
                         <li data-tab="#consulting-planning" class="tab-btn consulting-planning">
                             <div class="tab-one__tab-title__trinagle"></div>
                             <div class="tab-one__tab-title__icon"><i class="tolak-icons-two-solution-1"></i></div>
-                            <h3 class="tab-one__tab-title__text">Consulting Planning</h3>
-                            <div class="tab-one__tab-title__shape" style="background-image: url(assets/images/shapes/tab-one-title.png);"></div>
+                            <h3 class="tab-one__tab-title__text">{{ $main[0]['h3-3']}}</h3>
+                            <div class="tab-one__tab-title__shape" style="background-image: url({{ $main[0]['img-2']}});"></div>
                         </li>
                         <li data-tab="#management-solutions" class="tab-btn management-solutions">
                             <div class="tab-one__tab-title__trinagle"></div>
                             <div class="tab-one__tab-title__icon"><i class=" tolak-icons-two-cybersecurity"></i></div>
-                            <h3 class="tab-one__tab-title__text">Management Solutions</h3>
-                            <div class="tab-one__tab-title__shape" style="background-image: url(assets/images/shapes/tab-one-title.png);"></div>
+                            <h3 class="tab-one__tab-title__text">{{ $main[0]['h3-4']}}</h3>
+                            <div class="tab-one__tab-title__shape" style="background-image: url({{ $main[0]['img-3']}});"></div>
                         </li>
                     </ul><!-- /.list-unstyl tab-title -->
                     <div class="tabs-content">
@@ -186,33 +186,33 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="tab-one__thumb">
-                                        <img src="assets/images/resources/tab-1-1.jpg" alt="toalk">
+                                        <img src="{{ $main[0]['img-4-1']}}" alt="toalk">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="tab-one__content">
                                         <h3 class="tab-one__content__title">
-                                            The Bestd23d32d Subjective Interpersonal Skills That Business.
+                                            {{ $main[0]['h3-5-1']}}
                                         </h3>
                                         <p class="tab-one__content__text">
-                                            Business tailored design, management & support services Business business agency elit, sed do eiusmod tempor majority have in some we form, by injected humour solution.
+                                            {{ $main[0]['p-1']}}
                                         </p>
                                         <ul class="tab-one__content__list">
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Team Support</span>
+                                                <span>{{ $main[0]['span']}}t</span>
                                             </li>
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Business Management</span>
+                                                <span>{{ $main[0]['span-1']}}</span>
                                             </li>
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Business tailored</span>
+                                                <span>{{ $main[0]['span-2']}}</span>
                                             </li>
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Consultancy &amp; solution</span>
+                                                <span>{{ $main[0]['span-3']}}</span>
                                             </li>
                                         </ul>
                                         <!--
@@ -236,33 +236,33 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="tab-one__thumb">
-                                        <img src="assets/images/resources/tab-1-2.jpg" alt="toalk">
+                                        <img src="{{ $main[0]['img-5']}}" alt="toalk">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="tab-one__content">
                                         <h3 class="tab-one__content__title">
-                                            d2d23d2The Best Subjective Interpersonal Skills That Business.
+                                            {{ $main[0]['h3-6']}}
                                         </h3>
                                         <p class="tab-one__content__text">
-                                            Business tailored design, management & support services Business business agency elit, sed do eiusmod tempor majority have in some we form, by injected humour solution.
+                                            {{ $main[0]['p-2']}}
                                         </p>
                                         <ul class="tab-one__content__list">
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Team Support</span>
+                                                <span>{{ $main[0]['span-4']}}</span>
                                             </li>
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Business Management</span>
+                                                <span>{{ $main[0]['span-5']}}</span>
                                             </li>
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Business tailored</span>
+                                                <span>{{ $main[0]['span-6']}}</span>
                                             </li>
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Consultancy &amp; solution</span>
+                                                <span>{{ $main[0]['span-6-a']}}</span>
                                             </li>
                                         </ul>
                                        <!--
@@ -286,33 +286,33 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="tab-one__thumb">
-                                        <img src="assets/images/resources/tab-1-3.jpg" alt="toalk">
+                                        <img src="{{ $main[0]['img-6']}}" alt="toalk">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="tab-one__content">
                                         <h3 class="tab-one__content__title">
-                                            The Best Subjective Interpersonal Skills That Business.
+                                            {{ $main[0]['h3-7']}}
                                         </h3>
                                         <p class="tab-one__content__text">
-                                            Business tailored design, management & support services Business business agency elit, sed do eiusmod tempor majority have in some we form, by injected humour solution.
+                                            {{ $main[0]['p-3']}}
                                         </p>
                                         <ul class="tab-one__content__list">
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Team Support</span>
+                                                <span>{{ $main[0]['span-7']}}</span>
                                             </li>
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Business Management</span>
+                                                <span>{{ $main[0]['span-8']}}</span>
                                             </li>
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Business tailored</span>
+                                                <span>{{ $main[0]['span-9']}}</span>
                                             </li>
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Consultancy &amp; solution</span>
+                                                <span>{{ $main[0]['span-9-a']}}</span>
                                             </li>
                                         </ul>
                                         <!--
@@ -336,33 +336,33 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="tab-one__thumb">
-                                        <img src="assets/images/resources/tab-1-4.jpg" alt="toalk">
+                                        <img src="{{ $main[0]['img-7']}}" alt="toalk">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="tab-one__content">
                                         <h3 class="tab-one__content__title">
-                                            The Best Subjective Interpersonal Skills That Business.
+                                            {{ $main[0]['h3-8']}}
                                         </h3>
                                         <p class="tab-one__content__text">
-                                            Business tailored design, management & support services Business business agency elit, sed do eiusmod tempor majority have in some we form, by injected humour solution.
+                                            {{ $main[0]['p-4']}}
                                         </p>
                                         <ul class="tab-one__content__list">
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Team Support</span>
+                                                <span>{{ $main[0]['span-10']}}</span>
                                             </li>
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Business Management</span>
+                                                <span>{{ $main[0]['span-11']}}</span>
                                             </li>
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Business tailored</span>
+                                                <span>{{ $main[0]['span-12']}}</span>
                                             </li>
                                             <li>
                                                 <i class="tolak-icons-two-arrow-circle-right"></i>
-                                                <span>Consultancy &amp; solution</span>
+                                                <span>{{ $main[0]['span-13']}}</span>
                                             </li>
                                         </ul>
                                         <!--
@@ -392,9 +392,9 @@
                     <div class="container">
                         <div class="sec-title-three text-center">
 
-                            <h6 class="sec-title-three__tagline"><span class="sec-title-three__tagline__left-border"></span>OUR BEST SERVICE<span class="sec-title-three__tagline__right-border"></span></h6><!-- /.sec-title-three__tagline -->
+                            <h6 class="sec-title-three__tagline"><span class="sec-title-three__tagline__left-border"></span>{{ $main[0]['h6-span']}}<span class="sec-title-three__tagline__right-border"></span></h6><!-- /.sec-title-three__tagline -->
 
-                            <h3 class="sec-title-three__title">We Are Service Your Business</h3><!-- /.sec-title-three__title -->
+                            <h3 class="sec-title-three__title">{{ $main[0]['h3-9']}}</h3><!-- /.sec-title-three__title -->
                         </div><!-- /.sec-title-three -->
                         <div class="row" data-owl-options='{
                             "items": 1,
@@ -420,17 +420,17 @@
                             <div class="col-md-4 item">
                                 <div class="service-five__item text-center">
                                     <div class="service-five__item__image">
-                                        <img src="assets/images/resources/service-5-1.jpg" alt="tolak">
+                                        <img src="{{ $main[0]['img-8']}}" alt="tolak">
                                     </div>
                                     <div class="service-five__item__content">
                                         <div class="service-five__item__icon">
                                             <span class="tolak-icons-two-solution-1"></span>
                                         </div><!-- /.service-icon -->
                                         <h3 class="service-five__item__title">
-                                            <a href="business-marketing.html">Operational Efficiency</a>
+                                            <a href="business-marketing.html">{{ $main[0]['h3-a']}}</a>
                                         </h3><!-- /.service-title -->
                                         <p class="service-five__item__text">
-                                            Solution the we create this business Solution
+                                            {{ $main[0]['p-5']}}
                                         </p><!-- /.service-text -->
                                     </div>
                                 </div><!-- /.service-card-one -->
@@ -438,17 +438,17 @@
                             <div class="col-md-4 item">
                                 <div class="service-five__item text-center">
                                     <div class="service-five__item__image">
-                                        <img src="assets/images/resources/service-5-2.jpg" alt="tolak">
+                                        <img src="{{ $main[0]['img-9']}}" alt="tolak">
                                     </div>
                                     <div class="service-five__item__content">
                                         <div class="service-five__item__icon">
                                             <span class=" tolak-icons-two-solutions-three"></span>
                                         </div><!-- /.service-icon -->
                                         <h3 class="service-five__item__title">
-                                            <a href="business-solution.html">Business Solutions</a>
+                                            <a href="business-solution.html">{{ $main[0]['h3-a-1']}}</a>
                                         </h3><!-- /.service-title -->
                                         <p class="service-five__item__text">
-                                            Solution the we create this business Solution
+                                            {{ $main[0]['p-6']}}
                                         </p><!-- /.service-text -->
                                     </div>
                                 </div><!-- /.service-card-one -->
@@ -456,17 +456,17 @@
                             <div class="col-md-4 item">
                                 <div class="service-five__item text-center">
                                     <div class="service-five__item__image">
-                                        <img src="assets/images/resources/service-5-3.jpg" alt="tolak">
+                                        <img src=" {{ $main[0]['img-10']}}" alt="tolak">
                                     </div>
                                     <div class="service-five__item__content">
                                         <div class="service-five__item__icon">
                                             <span class="tolak-icons-two-cybersecurity"></span>
                                         </div><!-- /.service-icon -->
                                         <h3 class="service-five__item__title">
-                                            <a href="technology-services.html">Digital Of Agency</a>
+                                            <a href="technology-services.html"> {{ $main[0]['h3-a-2']}}</a>
                                         </h3><!-- /.service-title -->
                                         <p class="service-five__item__text">
-                                            Solution the we create this business Solution
+                                            {{ $main[0]['p-7']}}
                                         </p><!-- /.service-text -->
                                     </div>
                                 </div><!-- /.service-card-one -->

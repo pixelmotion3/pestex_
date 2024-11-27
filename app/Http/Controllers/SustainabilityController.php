@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreSustainabilityRequest;
 use App\Http\Requests\UpdateSustainabilityRequest;
 use App\Models\Sustainability;
+use App\Models\SustainabilityPage;
 
 class SustainabilityController extends Controller
 {
@@ -13,54 +14,11 @@ class SustainabilityController extends Controller
      */
     public function index()
     {
-        return view('sustainability.index');
+        $main = SustainabilityPage::where('id', 1)->get()->toArray();
+        //dd($main);
+        return view('sustainability.index', [
+            'main' => $main
+        ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StoreSustainabilityRequest $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(Sustainability $sustainability)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Sustainability $sustainability)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(UpdateSustainabilityRequest $request, Sustainability $sustainability)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Sustainability $sustainability)
-    {
-        //
-    }
 }
