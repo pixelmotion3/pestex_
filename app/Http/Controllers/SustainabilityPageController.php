@@ -32,9 +32,9 @@ class SustainabilityPageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreSustainabilityPageRequest $request)
+    public function store(Request $request)
     {
-        //
+        dd('ok');
     }
 
     /**
@@ -56,7 +56,7 @@ class SustainabilityPageController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, SustainabilityPage $sustainabilityPage)
+    public function update(Request $request, $id)
     {
         if ($request->has('form0')) {
 
@@ -176,9 +176,8 @@ class SustainabilityPageController extends Controller
                 'h3-a-2' => $request->input('h3-a-2'),
                 'p-7' => $request->input('p-7'),
             ]);
-
             if($query){
-                return redirect()->route('index');
+                return redirect()->route('sustainability-page.index');
             }
         }
         return back();

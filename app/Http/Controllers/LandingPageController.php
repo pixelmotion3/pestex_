@@ -107,7 +107,6 @@ class LandingPageController extends Controller
         }
 
         if ($request->has('form2')) {
-            //dd($request->all());
             $query = LandingPage::where('id',1)->update([
                 'carrousel-h5' => $request->input('carrousel-h5'),
                 'carrousel-h2' => $request->input('carrousel-h2'),
@@ -123,21 +122,18 @@ class LandingPageController extends Controller
                 'carrousel-a-1-2' => $request->input('carrousel-a-1-2'),
             ]);
             if ($request->hasFile('carrousel-bg-img-path')) {
-                //$filename = $request->file('carrousel-bg-img-path');
                 $path = $request->file('carrousel-bg-img-path')->store('assets/images');     
                 $query = LandingPage::where('id',1)->update([
                     'carrousel-bg-img-path' => 'storage/' . $path 
                 ]);                 
             }
             if ($request->hasFile('carrousel-bg-img-path-1')) {
-                //$filename = $request->file('carrousel-bg-img-path-1');
                 $path = $request->file('carrousel-bg-img-path-1')->store('assets/images');     
                 $query = LandingPage::where('id',1)->update([
                     'carrousel-bg-img-path-1' => 'storage/' . $path 
                 ]);                 
             }
             if ($request->hasFile('carrousel-bg-img-path-2')) {
-                //$filename = $request->file('carrousel-bg-img-path-2');
                 $path = $request->file('carrousel-bg-img-path-2')->store('assets/images');     
                 $query = LandingPage::where('id',1)->update([
                     'carrousel-bg-img-path-2' => 'storage/' . $path 

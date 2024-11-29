@@ -221,7 +221,7 @@
                                                     <p class="mb-5">{{ $main_screen[0]['quote-form-tab-2-p'] }}</p>
                                                     <div class="input-container mt-3" style="width: 92%;">
                                                         <i class="far fa-smile icon"></i>
-                                                        <input class="input-field rounded" type="text" placeholder="name" name="name">
+                                                        <input class="input-field rounded" type="text" placeholder="Nome" name="name">
                                                         @error('name')
                                                             <span class="invalid-feedback" role="alert">
                                                                 <strong>{{ $message }}</strong>
@@ -230,7 +230,7 @@
                                                     </div>
                                                     <div class="input-container" style="width: 92%;">
                                                         <i class="far fa-envelope icon"></i>
-                                                        <input class="input-field rounded" type="email" placeholder="email" name="email">
+                                                        <input class="input-field rounded" type="email" placeholder="Email" name="email">
                                                         @error('email')
                                                             <span class="invalid-feedback" role="alert">
                                                                 <strong>{{ $message }}</strong>
@@ -240,7 +240,7 @@
 
                                                     <div class="input-container" style="width: 92%;">
                                                         <i class="fa fa-phone icon"></i>
-                                                        <input class="input-field rounded" type="text" placeholder="Telefone" name="usrnm">
+                                                        <input class="input-field rounded" type="text" placeholder="Telefone" name="phone">
                                                         @error('phone')
                                                             <span class="invalid-feedback" role="alert">
                                                                 <strong>{{ $message }}</strong>
@@ -604,22 +604,22 @@
                                             <p class="mb-5">{{ $main_screen[0]['quote-form-tab-2-p'] }}</p>
                                             <div class="input-container mt-3" style="width: 92%;">
                                                 <i class="far fa-smile icon"></i>
-                                                <input class="input-field rounded" type="text" placeholder="name" name="name">
+                                                <input class="input-field rounded" type="text" placeholder="Nome" name="name" required>
                                             </div>
 
                                             <div class="input-container" style="width: 92%;">
                                                 <i class="far fa-envelope icon"></i>
-                                                <input class="input-field rounded" type="email" placeholder="email" name="email">
+                                                <input class="input-field rounded" type="email" placeholder="Email" name="email" required>
                                             </div>
 
                                             <div class="input-container" style="width: 92%;">
                                                 <i class="fa fa-phone icon"></i>
-                                                <input class="input-field rounded" type="text" placeholder="Phone" name="usrnm">
+                                                <input class="input-field rounded" type="text" placeholder="Telefone" name="phone" required>
                                             </div>
                                             <div class="col-md-12 form-check">
-                                                <input class="form-check-input form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <input class="form-check-input form-check-input" type="checkbox" id="flexCheckDefault" required>
                                                 <label class="form-check-label" for="flexCheckDefault">
-                                                    I agree to the terms of service
+                                                    Concordo com os termos de utilizaçao
                                                 </label>
                                             </div>
                                             <div class="col-md-12 ml-4" style="max-width: 92%;">

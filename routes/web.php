@@ -11,6 +11,8 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\SustainabilityController;
 use App\Http\Controllers\SustainabilityPageController;
+use App\Http\Controllers\ServiceDetailsController;
+use App\Http\Controllers\MethodController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -42,6 +44,11 @@ Route::middleware('auth')->group(function () {
     Route::resource('/hardware-page', HardwarePageController::class);
 
     Route::resource('/sustainability-page', SustainabilityPageController::class);
+    Route::resource('/ServiceDetails', ServiceDetailsController::class);
+    Route::resource('/methods', MethodController::class);
+    // Route::post('/service-details', [ServiceDetailsController::class,'store'])->middleware(['auth', 'verified'])->name('ServiceDetails.store');
+    // Route::put('/service-details/{id}', [ServiceDetailsController::class,'update'])->middleware(['auth', 'verified'])->name('ServiceDetails.update');
+    //Route::post('/contacts', [FrontPageController::class, 'store'])->name('FrontPage.store');
 });
 
 require __DIR__.'/auth.php';

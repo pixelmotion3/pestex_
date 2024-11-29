@@ -141,395 +141,44 @@
             <section class="service-one">
                 <div class="container" style="margin-top:-150px;">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="100ms">
-                            <div class="service-one__item text-center">
-                                <div class="service-one__item__image">
-                                    <img src="{{ $best_service[0]['best-service-img-path-1'] }}" alt="tolak">
-                                </div>
-                                <div class="service-one__item__content">
-                                    <div class="service-one__item__icon">
-                                        <span class="icon-cooperation"></span>
-                                    </div><!-- /.service-icon -->
-                                    <h3 class="service-one__item__title">
-                                        <a href="business-growth.html">{{ $best_service[0]['best-service-a-1'] }}</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-one__item__text">
-                                        {{ $best_service[0]['best-service-p-1'] }}
-                                    </p><!-- /.service-text -->
-                                </div>
-                                <div class="service-one__item__bottom">
-                                    <div class="service-one__item__bottom__number"></div>
-                                    <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
-                                </div>
-                            </div><!-- /.service-card-one -->
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="150ms">
-                            <div class="service-one__item text-center">
-                                <div class="service-one__item__image">
-                                    <img src="{{ $best_service[0]['best-service-img-path-2'] }}" alt="tolak">
-                                </div>
-                                <div class="service-one__item__content">
-                                    <div class="service-one__item__icon">
-                                        <span class="icon-ads-campaign"></span>
-                                    </div><!-- /.service-icon -->
-                                    <h3 class="service-one__item__title">
-                                        <a href="business-solution.html">{{ $best_service[0]['best-service-a-2'] }}</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-one__item__text">
-                                        {{ $best_service[0]['best-service-p-2'] }}
-                                    </p><!-- /.service-text -->
-                                </div>
-                                <div class="service-one__item__bottom">
-                                    <div class="service-one__item__bottom__number"></div>
-                                    <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
-                                </div>
-                            </div><!-- /.service-card-one -->
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="200ms">
-                            <div class="service-one__item text-center">
-                                <div class="service-one__item__image">
-                                    <img src="{{ $best_service[0]['best-service-img-path-3'] }}" alt="tolak">
-                                </div>
-                                <div class="service-one__item__content">
-                                    <div class="service-one__item__icon">
-                                        <span class="icon-headhunter"></span>
-                                    </div><!-- /.service-icon -->
-                                    <h3 class="service-one__item__title">
-                                        <a href="marketing-solution.html">{{ $best_service[0]['best-service-a-3'] }}</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-one__item__text">
-                                       {{ $best_service[0]['best-service-p-3'] }}
-                                    </p><!-- /.service-text -->
-                                </div>
-                                <div class="service-one__item__bottom">
-                                    <div class="service-one__item__bottom__number"></div>
-                                    <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
-                                </div>
-                            </div><!-- /.service-card-one -->
-                        </div>
+                        @isset($services)
+                            @foreach ($services as $service)                                
+                                <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="100ms">
+                                    <a href="/services/{{ $service->id }}">  
+                                    <div class="service-one__item text-center">
+                                        <div class="service-one__item__image">
+                                            <img src="{{ $service['img'] }}" alt="tolak">
+                                        </div>
+                                        <div class="service-one__item__content">
+                                            <div class="service-one__item__icon">
+                                                <span class="icon-cooperation"></span>
+                                            </div><!-- /.service-icon -->
+                                            <h3 class="service-one__item__title">
+                                                <a href="business-growth.html">{{ $service['a'] }}</a>
+                                            </h3><!-- /.service-title -->
+                                            <p class="service-one__item__text">
+                                                {{ $service['p'] }}
+                                            </p><!-- /.service-text -->
+                                        </div>
+                                        <div class="service-one__item__bottom">
+                                            <div class="service-one__item__bottom__number"></div>
+                                            <!--
+                                                <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
+                                            -->
+                                        </div>
+                                    </div><!-- /.service-card-one -->
+                                    </a> 
+                                </div>                               
+                            @endforeach                            
+                        @endisset
+                        
+                        
                         
                          <!-- <div class="col-lg-12 col-md-12 text-center text-white mt-5">
                             <a class="btn btn-primary w-25" href="#myTab"><small>Abrir formulario</small></a> 
                         </div> -->
                     </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="100ms">
-                            <div class="service-one__item text-center">
-                                <div class="service-one__item__image">
-                                    <img src="{{ $best_service[0]['best-service-img-path-1'] }}" alt="tolak">
-                                </div>
-                                <div class="service-one__item__content">
-                                    <div class="service-one__item__icon">
-                                        <span class="icon-cooperation"></span>
-                                    </div><!-- /.service-icon -->
-                                    <h3 class="service-one__item__title">
-                                        <a href="business-growth.html">{{ $best_service[0]['best-service-a-1'] }}</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-one__item__text">
-                                        {{ $best_service[0]['best-service-p-1'] }}
-                                    </p><!-- /.service-text -->
-                                </div>
-                                <div class="service-one__item__bottom">
-                                    <div class="service-one__item__bottom__number"></div>
-                                    <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
-                                </div>
-                            </div><!-- /.service-card-one -->
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="150ms">
-                            <div class="service-one__item text-center">
-                                <div class="service-one__item__image">
-                                    <img src="{{ $best_service[0]['best-service-img-path-2'] }}" alt="tolak">
-                                </div>
-                                <div class="service-one__item__content">
-                                    <div class="service-one__item__icon">
-                                        <span class="icon-ads-campaign"></span>
-                                    </div><!-- /.service-icon -->
-                                    <h3 class="service-one__item__title">
-                                        <a href="business-solution.html">{{ $best_service[0]['best-service-a-2'] }}</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-one__item__text">
-                                        {{ $best_service[0]['best-service-p-2'] }}
-                                    </p><!-- /.service-text -->
-                                </div>
-                                <div class="service-one__item__bottom">
-                                    <div class="service-one__item__bottom__number"></div>
-                                    <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
-                                </div>
-                            </div><!-- /.service-card-one -->
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="200ms">
-                            <div class="service-one__item text-center">
-                                <div class="service-one__item__image">
-                                    <img src="{{ $best_service[0]['best-service-img-path-3'] }}" alt="tolak">
-                                </div>
-                                <div class="service-one__item__content">
-                                    <div class="service-one__item__icon">
-                                        <span class="icon-headhunter"></span>
-                                    </div><!-- /.service-icon -->
-                                    <h3 class="service-one__item__title">
-                                        <a href="marketing-solution.html">{{ $best_service[0]['best-service-a-3'] }}</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-one__item__text">
-                                       {{ $best_service[0]['best-service-p-3'] }}
-                                    </p><!-- /.service-text -->
-                                </div>
-                                <div class="service-one__item__bottom">
-                                    <div class="service-one__item__bottom__number"></div>
-                                    <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
-                                </div>
-                            </div><!-- /.service-card-one -->
-                        </div>
-                        
-                         <!-- <div class="col-lg-12 col-md-12 text-center text-white mt-5">
-                            <a class="btn btn-primary w-25" href="#myTab"><small>Abrir formulario</small></a> 
-                        </div> -->
-                    </div>        
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="100ms">
-                            <div class="service-one__item text-center">
-                                <div class="service-one__item__image">
-                                    <img src="{{ $best_service[0]['best-service-img-path-1'] }}" alt="tolak">
-                                </div>
-                                <div class="service-one__item__content">
-                                    <div class="service-one__item__icon">
-                                        <span class="icon-cooperation"></span>
-                                    </div><!-- /.service-icon -->
-                                    <h3 class="service-one__item__title">
-                                        <a href="business-growth.html">{{ $best_service[0]['best-service-a-1'] }}</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-one__item__text">
-                                        {{ $best_service[0]['best-service-p-1'] }}
-                                    </p><!-- /.service-text -->
-                                </div>
-                                <div class="service-one__item__bottom">
-                                    <div class="service-one__item__bottom__number"></div>
-                                    <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
-                                </div>
-                            </div><!-- /.service-card-one -->
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="150ms">
-                            <div class="service-one__item text-center">
-                                <div class="service-one__item__image">
-                                    <img src="{{ $best_service[0]['best-service-img-path-2'] }}" alt="tolak">
-                                </div>
-                                <div class="service-one__item__content">
-                                    <div class="service-one__item__icon">
-                                        <span class="icon-ads-campaign"></span>
-                                    </div><!-- /.service-icon -->
-                                    <h3 class="service-one__item__title">
-                                        <a href="business-solution.html">{{ $best_service[0]['best-service-a-2'] }}</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-one__item__text">
-                                        {{ $best_service[0]['best-service-p-2'] }}
-                                    </p><!-- /.service-text -->
-                                </div>
-                                <div class="service-one__item__bottom">
-                                    <div class="service-one__item__bottom__number"></div>
-                                    <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
-                                </div>
-                            </div><!-- /.service-card-one -->
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="200ms">
-                            <div class="service-one__item text-center">
-                                <div class="service-one__item__image">
-                                    <img src="{{ $best_service[0]['best-service-img-path-3'] }}" alt="tolak">
-                                </div>
-                                <div class="service-one__item__content">
-                                    <div class="service-one__item__icon">
-                                        <span class="icon-headhunter"></span>
-                                    </div><!-- /.service-icon -->
-                                    <h3 class="service-one__item__title">
-                                        <a href="marketing-solution.html">{{ $best_service[0]['best-service-a-3'] }}</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-one__item__text">
-                                       {{ $best_service[0]['best-service-p-3'] }}
-                                    </p><!-- /.service-text -->
-                                </div>
-                                <div class="service-one__item__bottom">
-                                    <div class="service-one__item__bottom__number"></div>
-                                    <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
-                                </div>
-                            </div><!-- /.service-card-one -->
-                        </div>
-                        
-                         <!-- <div class="col-lg-12 col-md-12 text-center text-white mt-5">
-                            <a class="btn btn-primary w-25" href="#myTab"><small>Abrir formulario</small></a> 
-                        </div> -->
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="100ms">
-                            <div class="service-one__item text-center">
-                                <div class="service-one__item__image">
-                                    <img src="{{ $best_service[0]['best-service-img-path-1'] }}" alt="tolak">
-                                </div>
-                                <div class="service-one__item__content">
-                                    <div class="service-one__item__icon">
-                                        <span class="icon-cooperation"></span>
-                                    </div><!-- /.service-icon -->
-                                    <h3 class="service-one__item__title">
-                                        <a href="business-growth.html">{{ $best_service[0]['best-service-a-1'] }}</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-one__item__text">
-                                        {{ $best_service[0]['best-service-p-1'] }}
-                                    </p><!-- /.service-text -->
-                                </div>
-                                <div class="service-one__item__bottom">
-                                    <div class="service-one__item__bottom__number"></div>
-                                    <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
-                                </div>
-                            </div><!-- /.service-card-one -->
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="150ms">
-                            <div class="service-one__item text-center">
-                                <div class="service-one__item__image">
-                                    <img src="{{ $best_service[0]['best-service-img-path-2'] }}" alt="tolak">
-                                </div>
-                                <div class="service-one__item__content">
-                                    <div class="service-one__item__icon">
-                                        <span class="icon-ads-campaign"></span>
-                                    </div><!-- /.service-icon -->
-                                    <h3 class="service-one__item__title">
-                                        <a href="business-solution.html">{{ $best_service[0]['best-service-a-2'] }}</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-one__item__text">
-                                        {{ $best_service[0]['best-service-p-2'] }}
-                                    </p><!-- /.service-text -->
-                                </div>
-                                <div class="service-one__item__bottom">
-                                    <div class="service-one__item__bottom__number"></div>
-                                    <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
-                                </div>
-                            </div><!-- /.service-card-one -->
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="200ms">
-                            <div class="service-one__item text-center">
-                                <div class="service-one__item__image">
-                                    <img src="{{ $best_service[0]['best-service-img-path-3'] }}" alt="tolak">
-                                </div>
-                                <div class="service-one__item__content">
-                                    <div class="service-one__item__icon">
-                                        <span class="icon-headhunter"></span>
-                                    </div><!-- /.service-icon -->
-                                    <h3 class="service-one__item__title">
-                                        <a href="marketing-solution.html">{{ $best_service[0]['best-service-a-3'] }}</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-one__item__text">
-                                       {{ $best_service[0]['best-service-p-3'] }}
-                                    </p><!-- /.service-text -->
-                                </div>
-                                <div class="service-one__item__bottom">
-                                    <div class="service-one__item__bottom__number"></div>
-                                    <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
-                                </div>
-                            </div><!-- /.service-card-one -->
-                        </div>
-                        
-                         <!-- <div class="col-lg-12 col-md-12 text-center text-white mt-5">
-                            <a class="btn btn-primary w-25" href="#myTab"><small>Abrir formulario</small></a> 
-                        </div> -->
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="100ms">
-                            <div class="service-one__item text-center">
-                                <div class="service-one__item__image">
-                                    <img src="{{ $best_service[0]['best-service-img-path-1'] }}" alt="tolak">
-                                </div>
-                                <div class="service-one__item__content">
-                                    <div class="service-one__item__icon">
-                                        <span class="icon-cooperation"></span>
-                                    </div><!-- /.service-icon -->
-                                    <h3 class="service-one__item__title">
-                                        <a href="business-growth.html">{{ $best_service[0]['best-service-a-1'] }}</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-one__item__text">
-                                        {{ $best_service[0]['best-service-p-1'] }}
-                                    </p><!-- /.service-text -->
-                                </div>
-                                <div class="service-one__item__bottom">
-                                    <div class="service-one__item__bottom__number"></div>
-                                    <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
-                                </div>
-                            </div><!-- /.service-card-one -->
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="150ms">
-                            <div class="service-one__item text-center">
-                                <div class="service-one__item__image">
-                                    <img src="{{ $best_service[0]['best-service-img-path-2'] }}" alt="tolak">
-                                </div>
-                                <div class="service-one__item__content">
-                                    <div class="service-one__item__icon">
-                                        <span class="icon-ads-campaign"></span>
-                                    </div><!-- /.service-icon -->
-                                    <h3 class="service-one__item__title">
-                                        <a href="business-solution.html">{{ $best_service[0]['best-service-a-2'] }}</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-one__item__text">
-                                        {{ $best_service[0]['best-service-p-2'] }}
-                                    </p><!-- /.service-text -->
-                                </div>
-                                <div class="service-one__item__bottom">
-                                    <div class="service-one__item__bottom__number"></div>
-                                    <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
-                                </div>
-                            </div><!-- /.service-card-one -->
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="200ms">
-                            <div class="service-one__item text-center">
-                                <div class="service-one__item__image">
-                                    <img src="{{ $best_service[0]['best-service-img-path-3'] }}" alt="tolak">
-                                </div>
-                                <div class="service-one__item__content">
-                                    <div class="service-one__item__icon">
-                                        <span class="icon-headhunter"></span>
-                                    </div><!-- /.service-icon -->
-                                    <h3 class="service-one__item__title">
-                                        <a href="marketing-solution.html">{{ $best_service[0]['best-service-a-3'] }}</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-one__item__text">
-                                       {{ $best_service[0]['best-service-p-3'] }}
-                                    </p><!-- /.service-text -->
-                                </div>
-                                <div class="service-one__item__bottom">
-                                    <div class="service-one__item__bottom__number"></div>
-                                    <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
-                                </div>
-                            </div><!-- /.service-card-one -->
-                        </div>
-                        
-                         <!-- <div class="col-lg-12 col-md-12 text-center text-white mt-5">
-                            <a class="btn btn-primary w-25" href="#myTab"><small>Abrir formulario</small></a> 
-                        </div> -->
-                    </div>
+                   
                 </div>
             </section>
             <!-- CTA Start -->

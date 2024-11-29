@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\ServicesMainScreen;
+use App\Models\ServiceDetails;
+use App\Models\Method;
 use Illuminate\Http\Request;
 
 class ServicePageController extends Controller
@@ -13,8 +15,13 @@ class ServicePageController extends Controller
     public function index()
     {
         $main_screen = ServicesMainScreen::where('id', 1)->get()->toArray();
+        $services = ServiceDetails::all();
+        $methods = Method::all();
+        //dd($services);
         return view('services-page.index', [
-            'services_page' => $main_screen
+            'services_page' => $main_screen,
+            'services' => $services,
+            'methods' => $methods
         ]);
     }
 
@@ -55,10 +62,6 @@ class ServicePageController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //dd($request->all());
-        // falta criar crud de services 
-        // criar ao mesmo tempo q criares a services detail
-
         if ($request->has('form0')) {
 
             if ($request->hasFile('bg-img-path')) { ;
