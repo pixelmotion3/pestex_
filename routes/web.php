@@ -19,16 +19,16 @@ use Illuminate\Support\Facades\Route;
 Route::resource('/', FrontPageController::class);
 Route::get('/home', [FrontPageController::class, 'Home'])->name('FrontPage.Home');
 
-Route::resource('/sustainability', SustainabilityController::class);
+Route::resource('/sustentabilidade', SustainabilityController::class);
 
-Route::resource('/hardware', HardwareController::class);
+Route::resource('/equipamento', HardwareController::class);
 Route::post('/contacts', [FrontPageController::class, 'store'])->name('FrontPage.store');
 Route::post('/quote-form', [FrontPageController::class, 'QuoteForm'])->name('FrontPage.QuoteForm');
 Route::post('/contact-form', [FrontPageController::class, 'ContactForm'])->name('FrontPage.ContactForm');
 
-Route::resource('/services', ServiceController::class);
+Route::resource('/servicos', ServiceController::class);
 
-Route::get('/about', [AboutController::class, 'index'])->name('About.index');
+Route::get('/sobre', [AboutController::class, 'index'])->name('About.index');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

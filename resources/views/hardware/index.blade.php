@@ -104,9 +104,7 @@
                             </a>
                         </div><!-- /.main-header__logo -->
 
-                        <nav class="main-header__nav main-menu">
-                            <p>Tudo Joia</p>    
-                        </nav><!-- /.main-header__nav -->
+                        @include('includes.nav') 
                        
                     </div><!-- /.main-header__inner -->
                 </div><!-- /.container-fluid -->

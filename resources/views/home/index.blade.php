@@ -45,10 +45,6 @@
 
         <!-- Styles -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-        <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
-
-        <!-- Styles -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
         <style>
             .input-container { display: flex; width: 60%; margin-bottom: 15px; margin-left: 20px;margin-right: 20px;}
             .icon { padding: 10px; color: black; min-width: 50px; text-align: center; }
@@ -280,17 +276,7 @@
                             </a>
                         </div><!-- /.main-header__logo -->
                         
-                        <nav class="main-header__nav main-menu">
-                            <!--
-                            <ul class="main-menu__list one-page-scroll-menu">
-                                <li class="megamenu scrollToLink current"><a href="https://pestex.pixeldev05.com/">Home</a></li>
-                                <li class="scrollToLink"><a href="https://pestex.pixeldev05.com/about">About</a></li>
-                                <li class="scrollToLink"><a href="https://pestex.pixeldev05.com/services">Services</a></li>
-                                <li class="scrollToLink"><a href="https://pestex.pixeldev05.com/sustainability">Sustainability</a></li>
-                            </ul>
-                            -->
-                            <p>Fazemos desaparecer os seus problemas de insectos</p>
-                        </nav><!-- /.main-header__nav -->
+                        @include('includes.nav')
                     </div><!-- /.main-header__inner -->
                 </div><!-- /.container-fluid -->
             </header><!-- /.main-header -->

@@ -8,6 +8,7 @@ use App\Models\Service;
 use App\Models\landing_3page;
 use App\Models\ServicesMainScreen;
 use App\Models\ServiceDetails;
+use Request;
 
 class ServiceController extends Controller
 {
@@ -19,7 +20,7 @@ class ServiceController extends Controller
         $best_service = landing_3page::where('id',1)->get()->toArray();
         $main_screen = ServicesMainScreen::where('id', 1)->get()->toArray();
         $services = ServiceDetails::all();
-       //dd($services );
+        //dd($services);
      
         return view('services.index', [
             'main_screen' => $main_screen,
@@ -47,9 +48,10 @@ class ServiceController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Service $service, $id)
+    public function show(Request $request, $id)
     {
-        dd($id);
+        $service = ServiceDetails::findOrFail($id);
+        //dd($service);
         return view('services.show');
     }
 

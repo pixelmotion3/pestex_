@@ -136,7 +136,7 @@
                                             {{ $main[0]['p-1'] }}
                                         </p><!-- slider-text -->
                                         <div class="main-slider-three__btn">
-                                            <a href="https://pestex.pixeldev05.com/services" class="tolak-btn"><b>{{ $main[0]['div-a-b'] }}</b><span></span></a><!-- slider-btn -->
+                                            <a href="/servicos" class="tolak-btn"><b>{{ $main[0]['div-a-b'] }}</b><span></span></a><!-- slider-btn -->
                                             <div class="main-slider-three__btn__video">
                                                 <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
                                                     <i class="icon-play-button"></i>
@@ -175,7 +175,7 @@
                                             {{ $main[0]['p-1-1'] }}
                                         </p><!-- slider-text -->
                                         <div class="main-slider-three__btn">
-                                            <a href="https://pestex.pixeldev05.com/services" class="tolak-btn"><b>{{ $main[0]['div-a-b-1'] }}</b><span></span></a><!-- slider-btn -->
+                                            <a href="/servicos" class="tolak-btn"><b>{{ $main[0]['div-a-b-1'] }}</b><span></span></a><!-- slider-btn -->
                                             <div class="main-slider-three__btn__video">
                                                 <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
                                                     <i class="icon-play-button"></i>
