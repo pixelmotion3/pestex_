@@ -455,11 +455,11 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="faq-one__accordion tolak-accrodion" data-grp-name="tolak-accrodion">
-                        <div class="accrodion">
+                        <div class="accrodion active collapse-1">
                             <div class="accrodion-title">
                                 <h4>
                                     What happens to my data if I cancel?
-                                    <span class="accrodion-title__icon"></span>
+                                    <span class="accrodion-title__icon" id="collapse-1-icon"></span>
                                 </h4>
                             </div>
                             <div class="accrodion-content">
@@ -472,11 +472,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accrodion active">
-                            <div class="accrodion-title">
+                        <div class="accrodion collapse-2">
+                            <div class="accrodion-title" >
                                 <h4>
                                     What are the different types of marketing solutions?
-                                    <span class="accrodion-title__icon"></span>
+                                    <span class="accrodion-title__icon" id="collapse-2-icon"></span>
                                 </h4>
                             </div>
                             <div class="accrodion-content">
@@ -489,11 +489,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accrodion">
+                        <div class="accrodion collapse-3">
                             <div class="accrodion-title">
                                 <h4>
                                     How often should i work on the digital marketing?
-                                    <span class="accrodion-title__icon"></span>
+                                    <span class="accrodion-title__icon" id="collapse-3-icon"></span>
                                 </h4>
                             </div>
                             <div class="accrodion-content">
@@ -506,11 +506,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accrodion">
+                        <div class="accrodion collapse-4">
                             <div class="accrodion-title">
                                 <h4>
                                     Are social media good for the business growth?
-                                    <span class="accrodion-title__icon"></span>
+                                    <span class="accrodion-title__icon" id="collapse-4-icon"></span>
                                 </h4>
                             </div>
                             <div class="accrodion-content">
@@ -663,6 +663,53 @@
             $('#collapse-2').hide();
             $('#collapse-3').hide();
             $('#collapse-4').hide();
+
+            $('#collapse-1-icon').click(function(){
+                $('#collapse-1').show();                
+                $('#collapse-2').hide();
+                $('#collapse-3').hide();
+                $('#collapse-4').hide();
+                $('.collapse-1').addClass('active');
+                $('.collapse-2').removeClass('active');
+                $('.collapse-3').removeClass('active');
+                $('.collapse-4').removeClass('active');
+            });
+
+            $('#collapse-2-icon').click(function(){
+                $('#collapse-1').hide();
+                $('#collapse-2').show();
+                $('#collapse-3').hide();
+                $('#collapse-4').hide();
+
+                $('.collapse-1').removeClass('active');
+                $('.collapse-2').addClass('active');
+                $('.collapse-3').removeClass('active');
+                $('.collapse-4').removeClass('active');
+            });
+
+            $('#collapse-3-icon').click(function(){
+                $('#collapse-1').hide();
+                $('#collapse-2').hide();
+                $('#collapse-3').show();
+                $('#collapse-4').hide();
+
+                $('.collapse-1').removeClass('active');
+                $('.collapse-2').removeClass('active');
+                $('.collapse-3').addClass('active');
+                $('.collapse-4').removeClass('active');
+            });
+
+            $('#collapse-4-icon').click(function(){
+                $('#collapse-1').hide();
+                $('#collapse-2').hide();
+                $('#collapse-3').hide();
+                $('#collapse-4').show();
+
+                $('.collapse-1').removeClass('active');
+                $('.collapse-2').removeClass('active');
+                $('.collapse-3').removeClass('active');
+                $('.collapse-4').addClass('active');
+            });
         });
     </script>
     @include('includes.footer')

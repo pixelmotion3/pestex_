@@ -8,10 +8,10 @@ class Method extends Model
 {
     protected $fillable = [
         'img',
-        'title-1',
+        'title1',
         'p',
-        'title-2',
-        'p-1',
+        'title2',
+        'p1',
         'service_id'
     ];
 

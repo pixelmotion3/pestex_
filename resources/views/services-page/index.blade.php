@@ -1,49 +1,49 @@
 <x-app-layout>
-  <!-- Layout wrapper -->
-  <div class="layout-wrapper layout-content-navbar">
-    <div class="layout-container">
-        <!-- Menu -->
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+            <!-- Menu -->
 
-        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-            <div class="app-brand demo">
-                <a href="/dashboard" class="app-brand-link">
-                    <span class="app-brand-logo demo">
-                        <svg width="32" height="22" viewBox="0 0 32 22" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z"
-                                fill="#7367F0" />
-                            <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
-                                d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z"
-                                fill="#161616" />
-                            <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
-                                d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z"
-                                fill="#161616" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z"
-                                fill="#7367F0" />
-                        </svg>
-                    </span>
-                    <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
-                </a>
-
-                <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
-                    <i class="ti menu-toggle-icon d-none d-xl-block align-middle"></i>
-                    <i class="ti ti-x d-block d-xl-none ti-md align-middle"></i>
-                </a>
-            </div>
-
-            <div class="menu-inner-shadow"></div>
-
-            <ul class="menu-inner py-1">
-                <!-- Dashboards -->
-                <li class="menu-item">
-
-                    <a href="/dashboard" class="menu-link">
-                        <i class="menu-icon tf-icons ti ti-smart-home"></i>
-                        <div data-i18n="Dashboards">Dashboards</div>
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <div class="app-brand demo">
+                    <a href="/dashboard" class="app-brand-link">
+                        <span class="app-brand-logo demo">
+                            <svg width="32" height="22" viewBox="0 0 32 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z"
+                                    fill="#7367F0" />
+                                <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z"
+                                    fill="#161616" />
+                                <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z"
+                                    fill="#161616" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z"
+                                    fill="#7367F0" />
+                            </svg>
+                        </span>
+                        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
                     </a>
-                    <!--
+
+                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+                        <i class="ti menu-toggle-icon d-none d-xl-block align-middle"></i>
+                        <i class="ti ti-x d-block d-xl-none ti-md align-middle"></i>
+                    </a>
+                </div>
+
+                <div class="menu-inner-shadow"></div>
+
+                <ul class="menu-inner py-1">
+                    <!-- Dashboards -->
+                    <li class="menu-item">
+
+                        <a href="/dashboard" class="menu-link">
+                            <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                            <div data-i18n="Dashboards">Dashboards</div>
+                        </a>
+                        <!--
                     <ul class="menu-sub">
                       <li class="menu-item active">
                         <a href="index.html" class="menu-link">
@@ -57,10 +57,11 @@
                       </li>
                     </ul>
                     
-                  --></li>
-      
-        <!-- Layouts -->
-        <!--
+                  -->
+                    </li>
+
+                    <!-- Layouts -->
+                    <!--
         <li class="menu-item">
           <a href="javascript:void(0);" class="menu-link menu-toggle">
             <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
@@ -77,49 +78,49 @@
               <a href="layouts-content-navbar.html" class="menu-link">
                 <div data-i18n="Content navbar">Content navbar</div>
               </a>
-            </li>       
+            </li>
          
           </ul>
         </li>
 
         <!-- Front Pages -->
-                <li class="menu-item open">
-                    <a href="javascript:void(0);" class="menu-link">
-                        <i class="menu-icon tf-icons ti ti-files"></i>
-                        <div data-i18n="Front Pages">Front Pages</div>
-                    </a>
-                    <ul class="menu-sub">
-                        <li class="menu-item">
-                            <a href="{{ url('landing-page') }}" class="menu-link">
-                                <div data-i18n="Landing / Home">Landing / Home</div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/about-page" class="menu-link">
-                                <div data-i18n="About">About</div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/services-page" class="menu-link">
-                                <div data-i18n="Services">Services</div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/sustainability-page" class="menu-link">
-                                <div data-i18n="Sustainability">Sustainability</div>
-                            </a>
-                        </li>
+                    <li class="menu-item open">
+                        <a href="javascript:void(0);" class="menu-link">
+                            <i class="menu-icon tf-icons ti ti-files"></i>
+                            <div data-i18n="Front Pages">Front Pages</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="{{ url('landing-page') }}" class="menu-link">
+                                    <div data-i18n="Landing / Home">Landing / Home</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/about-page" class="menu-link">
+                                    <div data-i18n="About">About</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/services-page" class="menu-link">
+                                    <div data-i18n="Services">Services</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/sustainability-page" class="menu-link">
+                                    <div data-i18n="Sustainability">Sustainability</div>
+                                </a>
+                            </li>
 
-                        <li class="menu-item">
-                            <a href="/hardware-page" class="menu-link">
-                                <div data-i18n="Hardware">Hardware</div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </aside>
-        <!-- / Menu -->
+                            <li class="menu-item">
+                                <a href="/hardware-page" class="menu-link">
+                                    <div data-i18n="Hardware">Hardware</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <!-- / Menu -->
 
             <!-- Layout container -->
             <div class="layout-page">
@@ -265,8 +266,7 @@
                                         <div class="row row-bordered overflow-visible g-0">
                                             <div class="dropdown-shortcuts-item col">
                                                 <span class="dropdown-shortcuts-icon rounded-circle mb-3">
-                                                    <i
-                                                        class="ti ti-device-desktop-analytics ti-26px text-heading"></i>
+                                                    <i class="ti ti-device-desktop-analytics ti-26px text-heading"></i>
                                                 </span>
                                                 <a href="index.html" class="stretched-link">Dashboard</a>
                                                 <small>User Dashboard</small>
@@ -304,8 +304,8 @@
                             <!-- Notification -->
                             <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-2">
                                 <a class="nav-link btn btn-text-secondary btn-icon rounded-pill dropdown-toggle hide-arrow"
-                                    href="javascript:void(0);" data-bs-toggle="dropdown"
-                                    data-bs-auto-close="outside" aria-expanded="false">
+                                    href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                    aria-expanded="false">
                                     <span class="position-relative">
                                         <i class="ti ti-bell ti-md"></i>
                                         <span
@@ -676,11 +676,10 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <nav>
-                                            <div class="nav nav-tabs overflow-scroll" id="nav-tab"
-                                                role="tablist">
+                                            <div class="nav nav-tabs overflow-scroll" id="nav-tab" role="tablist">
                                                 <button class="nav-link active" id="main-screen-tab"
-                                                    data-bs-toggle="tab" data-bs-target="#main-screen"
-                                                    type="button" role="tab" aria-controls="main-screen"
+                                                    data-bs-toggle="tab" data-bs-target="#main-screen" type="button"
+                                                    role="tab" aria-controls="main-screen"
                                                     aria-selected="false"><small>Main screen</small></button>
                                                 <button class="nav-link" id="services-tab" data-bs-toggle="tab"
                                                     data-bs-target="#services" type="button" role="tab"
@@ -694,8 +693,8 @@
                                         </nav>
                                         <div class="tab-content mt-5" id="nav-tabContent">
                                             <!-- main screen -->
-                                            <div class="tab-pane fade show active" id="main-screen"
-                                                role="tabpanel" aria-labelledby="main-screen-tab">
+                                            <div class="tab-pane fade show active" id="main-screen" role="tabpanel"
+                                                aria-labelledby="main-screen-tab">
                                                 <form class="row g-3 needs-validation" novalidate
                                                     action="{{ route('services-page.update', 1) }}" method="post"
                                                     enctype="multipart/form-data">
@@ -903,16 +902,18 @@
                                                 <div class="container">
                                                     <div class="row">
                                                         @isset($services)
-                                                            @foreach ($services as $service)
+                                                            @foreach ($services as $index => $service)
                                                                 <!-- Modal  edit-->
-                                                                <div class="modal fade" id="exampleModal"
-                                                                    tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                                <div class="modal fade"
+                                                                    id="exampleModal{{ $index + 1 }}" tabindex="-1"
+                                                                    aria-labelledby="exampleModalLabel"
                                                                     aria-hidden="true">
                                                                     <div class="modal-dialog">
                                                                         <div class="modal-content">
                                                                             <div class="modal-header">
                                                                                 <h5 class="modal-title"
                                                                                     id="exampleModalLabel">Modal title
+                                                                                    {{ $service['id'] }}
                                                                                 </h5>
                                                                                 <button type="button" class="btn-close"
                                                                                     data-bs-dismiss="modal"
@@ -920,15 +921,14 @@
                                                                             </div>
                                                                             <div class="modal-body">
                                                                                 <form class="row g-3 needs-validation"
-                                                                                    action="{{ route('ServiceDetails.update', [$service->id]) }}"
+                                                                                    action="{{ route('ServiceDetails.update', [$service['id']]) }}"
                                                                                     method="post"
                                                                                     enctype="multipart/form-data">
                                                                                     @csrf
                                                                                     @method('put')
                                                                                     <div class="col-12 mt-5 form-group">
                                                                                         <div class="card-header">
-                                                                                            <label
-                                                                                                for="validationCustom01"
+                                                                                            <label for="validationCustom01"
                                                                                                 class="form-label"
                                                                                                 style="float:left;margin-left:-22px;">Background
                                                                                                 Image</label>
@@ -1026,23 +1026,23 @@
                                                                     </div>
                                                                 </div>
                                                                 <!-- Modal all method-->
-                                                                <div class="modal fade" id="exampleModal2"
-                                                                    tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                                <div class="modal fade" id="allMethodsModal"
+                                                                    tabindex="-1" aria-labelledby="allmethodmodal"
                                                                     aria-hidden="true">
                                                                     <div class="modal-dialog">
                                                                         <div class="modal-content">
                                                                             <div class="modal-header">
                                                                                 <h5 class="modal-title"
-                                                                                    id="exampleModalLabel">Edite ou apague
+                                                                                    id="allmethodmodal">Edite ou apague
                                                                                     metodos.</h5>
                                                                                 <button type="button" class="btn-close"
                                                                                     data-bs-dismiss="modal"
                                                                                     aria-label="Close"></button>
                                                                             </div>
                                                                             <div class="modal-body">
-                                                                                <ol
-                                                                                    class="list-group list-group-numbered">
-                                                                                    @isset($methods)
+                                                                                <ol class="list-group list-group-numbered methods"
+                                                                                    id="methods">
+                                                                                    {{-- @if ($methods)
                                                                                         @foreach ($methods as $key => $method)
                                                                                             <li
                                                                                                 class="list-group-item d-flex justify-content-between align-items-start">
@@ -1061,16 +1061,16 @@
                                                                                                     <a href="#"
                                                                                                         class="text-white"
                                                                                                         onclick="
-                                                          let result = confirm('Tem a certeza que quer apagar o metodo ?');
-                                                          if(result){
-                                                              event.preventDefault();
-                                                              document.getElementById('delete-form').submit();
-                                                          }
-                                                          ">
+                                                                                                            let result = confirm('Tem a certeza que quer apagar o metodo ?');
+                                                                                                            if(result){
+                                                                                                                event.preventDefault();
+                                                                                                                document.getElementById('delete-form').submit();
+                                                                                                            }
+                                                                                                            ">
                                                                                                         Apagar serviço
                                                                                                     </a>
                                                                                                     <form id="delete-form"
-                                                                                                        action="{{ route('methods.destroy', [$method->id]) }}"
+                                                                                                        action="{{ route('methods.destroy', [$method['id']]) }}"
                                                                                                         method="post"
                                                                                                         style="display: none">
                                                                                                         <input type="hidden"
@@ -1081,19 +1081,18 @@
                                                                                                 </span>
                                                                                             </li>
                                                                                         @endforeach
-                                                                                    @endisset
+                                                                                    @endif --}}
                                                                                 </ol>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <!-- Modal edit method-->
-                                                                @isset($methods)
+                                                                {{-- @isset($methods)
                                                                     @foreach ($methods as $key => $method)
                                                                         <div class="modal fade"
                                                                             id="methodModal{{ $key + 1 }}"
-                                                                            tabindex="-1"
-                                                                            aria-labelledby="exampleModalLabel"
+                                                                            tabindex="-1" aria-labelledby="exampleModalLabel"
                                                                             aria-hidden="true">
                                                                             <div class="modal-dialog">
                                                                                 <div class="modal-content">
@@ -1139,8 +1138,7 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                             <div class="col-12 mt-5">
-                                                                                                <label
-                                                                                                    for="validationCustom01"
+                                                                                                <label for="validationCustom01"
                                                                                                     class="form-label"
                                                                                                     style="float:left;">H1</label>
                                                                                                 <input
@@ -1152,8 +1150,7 @@
                                                                                             </div>
 
                                                                                             <div class="col-12 mt-5">
-                                                                                                <label
-                                                                                                    for="validationCustom01"
+                                                                                                <label for="validationCustom01"
                                                                                                     class="form-label"
                                                                                                     style="float:left;">P</label>
                                                                                                 <input
@@ -1164,8 +1161,7 @@
                                                                                                     name="p" required>
                                                                                             </div>
                                                                                             <div class="col-12 mt-5">
-                                                                                                <label
-                                                                                                    for="validationCustom01"
+                                                                                                <label for="validationCustom01"
                                                                                                     class="form-label"
                                                                                                     style="float:left;">Title</label>
                                                                                                 <input
@@ -1176,8 +1172,7 @@
                                                                                                     name="title-2" required>
                                                                                             </div>
                                                                                             <div class="col-12 mt-5">
-                                                                                                <label
-                                                                                                    for="validationCustom01"
+                                                                                                <label for="validationCustom01"
                                                                                                     class="form-label"
                                                                                                     style="float:left;">P-1</label>
                                                                                                 <input
@@ -1191,13 +1186,12 @@
                                                                                                 <input type="hidden"
                                                                                                     class="form-control"
                                                                                                     id="validationCustom01"
-                                                                                                    value="{{ $service->id }}"
-                                                                                                    name="service_id"
-                                                                                                    required>
+                                                                                                    value="{{ $service['id'] }}"
+                                                                                                    name="service_id" required>
                                                                                                 <input type="hidden"
                                                                                                     class="form-control"
                                                                                                     id="validationCustom01"
-                                                                                                    value="{{ $method->id }}"
+                                                                                                    value="{{ $method['id'] }}"
                                                                                                     name="method_id" required>
                                                                                             </div>
                                                                                             <div class="modal-footer">
@@ -1215,16 +1209,18 @@
                                                                             </div>
                                                                         </div>
                                                                     @endforeach
-                                                                @endisset
+                                                                @endisset --}}
+                                                                <div id="edit_method"></div>
                                                                 <!-- Modal create method-->
-                                                                <div class="modal fade" id="exampleModal1"
-                                                                    tabindex="-1" aria-labelledby="exampleModalLabel"
+                                                                <div class="modal fade"
+                                                                    id="createMethodModal{{ $index + 1 }}"
+                                                                    tabindex="-1" aria-labelledby="createMethodModal"
                                                                     aria-hidden="true">
                                                                     <div class="modal-dialog">
                                                                         <div class="modal-content">
                                                                             <div class="modal-header">
                                                                                 <h5 class="modal-title"
-                                                                                    id="exampleModalLabel">Criar metodo.
+                                                                                    id="createMethodModal">Criar metodo.
                                                                                 </h5>
                                                                                 <button type="button" class="btn-close"
                                                                                     data-bs-dismiss="modal"
@@ -1232,7 +1228,8 @@
                                                                             </div>
                                                                             <div class="modal-body">
                                                                                 <form class="row g-3 needs-validation"
-                                                                                    action="" method="post"
+                                                                                    action="{{ route('methods.store') }}"
+                                                                                    method="post"
                                                                                     enctype="multipart/form-data">
                                                                                     @csrf
                                                                                     @method('post')
@@ -1289,8 +1286,7 @@
                                                                                     </div>
                                                                                     <div class="col-12 mt-5">
                                                                                         <input type="hidden"
-                                                                                            class="form-control"
-                                                                                            id="validationCustom01"
+                                                                                            class="form-control service_id"
                                                                                             value="{{ $service->id }}"
                                                                                             name="service_id" required>
                                                                                     </div>
@@ -1335,10 +1331,11 @@
                                                                             <p class="service-one__item__text">
                                                                                 {{ $service['p-3'] }}
                                                                             </p><!-- /.service-text -->
+                                                                            <p>{{ $service['id'] }}</p>
                                                                             <div class="btn-group" role="group"
                                                                                 aria-label="Basic mixed styles example">
                                                                                 <a data-bs-toggle="modal"
-                                                                                    data-bs-target="#exampleModal"
+                                                                                    data-bs-target="#exampleModal{{ $index + 1 }}"
                                                                                     class="btn btn-danger text-white">Edit</a>
                                                                                 <a href="#"
                                                                                     class="btn btn-danger p-2 rounded"
@@ -1353,8 +1350,7 @@
                                                                                 </a>
                                                                                 <form id="delete-form"
                                                                                     action="{{ route('ServiceDetails.destroy', [$service->id]) }}"
-                                                                                    method="post"
-                                                                                    style="display: none">
+                                                                                    method="post" style="display: none">
                                                                                     <input type="hidden" name="_method"
                                                                                         value="delete" />
                                                                                     @csrf
@@ -1362,7 +1358,7 @@
                                                                                 <a href="#"
                                                                                     class="btn btn-danger p-2 rounded"
                                                                                     data-bs-toggle="modal"
-                                                                                    data-bs-target="#exampleModal1"
+                                                                                    data-bs-target="#createMethodModal{{ $index + 1 }}"
                                                                                     onclick="
                                                   let result = confirm('Are you sure you wanna create a method ?');
                                                   if(result){
@@ -1372,9 +1368,10 @@
                                                   ">
                                                                                     Criar metodo
                                                                                 </a>
-                                                                                <a data-bs-toggle="modal"
-                                                                                    data-bs-target="#exampleModal2"
-                                                                                    class="btn btn-danger text-white">Metodos</a>
+                                                                                <button data-bs-toggle="modal"
+                                                                                    data-bs-target="#allMethodsModal"
+                                                                                    class="btn btn-danger text-white all_methods"
+                                                                                    onclick="all_methods({{ $service->id }})">Metodos</button>
                                                                             </div>
                                                                         </div>
                                                                     </div><!-- /.service-card-one -->
@@ -1493,5 +1490,176 @@
             <!-- Drag Target Area To SlideIn Menu On Small Screens -->
             <div class="drag-target"></div>
         </div>
+        <script>
+            function all_methods(arg) {
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+                    }
+                });
+                $.ajax({
+                    url: "{{ route('MethodController.fetch') }}",
+                    method: "POST",
+                    data: {
+                        service_id: arg
+                    },
+                    dataType: 'json',
+                    success: function(result) {
+                        function sanitizeData(data) {
+                            if (typeof data !== 'object' || data === null) {
+                                return data;
+                            }
+                            if (Array.isArray(data)) {
+                                return data.map(sanitizeData);
+                            }
+                            const sanitizedObject = {};
+                            for (const key in data) {
+                                if (data.hasOwnProperty(key)) {
+                                    sanitizedObject[key] = (typeof data[key] === 'number' && isNaN(data[key])) ?
+                                        null : sanitizeData(data[key]);
+                                }
+                            }
+                            return sanitizedObject;
+                        }
+                        const sanitizedResult = sanitizeData(result)
+                        $('#methods').empty();
+                        $('#edit_method').empty();
+                        JSON.parse(JSON.stringify(sanitizedResult)).forEach((element, index) => {
+                            let route_destroy = `{{ route('methods.destroy', ':id') }}`.replace(':id',
+                                element.id);
+                            let route_update = `{{ route('methods.update', ':id') }}`.replace(':id',
+                                element.id);
+                            let methods =
+                                `<li class="list-group-item d-flex justify-content-between align-items-start"> <div class="ms-2 me-auto"> <div class="fw-bold">Metodo</div> </div> <span class="badge text-bg-primary rounded-pill"> <a data-bs-toggle="modal" data-bs-target="#edit_methodModal${index}">edit</a> </span> <span class="badge text-bg-primary rounded-pill"> <a href="#" class="text-white" onclick="let result = confirm('Tem a certeza que quer apagar o metodo ?');if(result){ event.preventDefault();document.getElementById('delete-form').submit();}">Apagar serviço</a> <form id="delete-form" action="${route_destroy}" method="post" style="display: none"> <input type="hidden" name="_method" value="delete" /> @csrf @('post')</form> </span> </li>`;
+                            $('#methods').append(methods);
+                            let edit_method = `<div class="modal fade"
+                                    id="edit_methodModal${index}"
+                                    tabindex="-1" aria-labelledby="editMethodModal"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">
+                                                    Edit metodo.
+                                                </h5>
+                                                <button type="button"
+                                                    class="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="row g-3 needs-validation"
+                                                    action="${route_update}"
+                                                    method="post"
+                                                    enctype="multipart/form-data">
+                                                    @csrf
+                                                    @method('put')
+                                                    <div
+                                                        class="col-12 mt-5 form-group">
+                                                        <div class="card-header">
+                                                            <label
+                                                                for="validationCustom01"
+                                                                class="form-label"
+                                                                style="float:left;margin-left:-22px;">Background
+                                                                Image</label>
+                                                        </div>
+                                                        <div class="card">
+                                                            <img src="{{ '${element.img}' }}"
+                                                                class="img-fluid"
+                                                                alt="..."
+                                                                style="max-height:885px;max-width:1920px;">
+                                                            <div class="card-body">
+                                                                <label
+                                                                    for="exampleFormControlFile1">Example
+                                                                    file input</label>
+                                                                <input type="file"
+                                                                    class="form-control-file"
+                                                                    id="exampleFormControlFile1"
+                                                                    name="img">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mt-5">
+                                                        <label for="validationCustom01"
+                                                            class="form-label"
+                                                            style="float:left;">H1</label>
+                                                        <input
+                                                            value="{{ '${element.title1}' }}"
+                                                            type="text"
+                                                            class="form-control"
+                                                            id="validationCustom01"
+                                                            name="title-1" required>
+                                                    </div>
+
+                                                    <div class="col-12 mt-5">
+                                                        <label for="validationCustom01"
+                                                            class="form-label"
+                                                            style="float:left;">P</label>
+                                                        <input
+                                                            value="{{ '${element.p}' }}"
+                                                            type="text"
+                                                            class="form-control"
+                                                            id="validationCustom01"
+                                                            name="p" required>
+                                                    </div>
+                                                    <div class="col-12 mt-5">
+                                                        <label for="validationCustom01"
+                                                            class="form-label"
+                                                            style="float:left;">Title</label>
+                                                        <input
+                                                            value="{{ '${element.title2}' }}"
+                                                            type="text"
+                                                            class="form-control"
+                                                            id="validationCustom01"
+                                                            name="title-2" required>
+                                                    </div>
+                                                    <div class="col-12 mt-5">
+                                                        <label for="validationCustom01"
+                                                            class="form-label"
+                                                            style="float:left;">P-1</label>
+                                                        <input
+                                                            value="{{ '${element.p1}' }}"
+                                                            type="text"
+                                                            class="form-control"
+                                                            id="validationCustom01"
+                                                            name="p-1" required>
+                                                    </div>
+                                                    <div class="col-12 mt-5">
+                                                        <input type="hidden"
+                                                            class="form-control"
+                                                            id="validationCustom01"
+                                                            value="{{ '${element.service_id}' }}"
+                                                            name="service_id" required>
+                                                        <input type="hidden"
+                                                            class="form-control"
+                                                            id="validationCustom01"
+                                                            value="{{ '${element.id}' }}"
+                                                            name="method_id" required>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button"
+                                                            class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <button type="submit"
+                                                            class="btn btn-primary"
+                                                            name="form0">Save
+                                                            changes</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>`;
+                            $('#edit_method').append(edit_method);
+
+                        })
+
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        console.error('AJAX request failed:', textStatus, errorThrown);
+                    }
+                })
+            }
+        </script>
         <!-- / Layout wrapper -->
 </x-app-layout>

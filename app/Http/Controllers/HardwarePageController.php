@@ -106,7 +106,7 @@ class HardwarePageController extends Controller
                     'img-6' => 'storage/' . $path 
                 ]);                 
             }
-            
+            //dd($request->all());
             $query = HardwareMainScreen::where('id',1)->update([
                 'h1' => $request->input('h1'),
                 'h6' => $request->input('h6'),
@@ -127,11 +127,11 @@ class HardwarePageController extends Controller
                 'a-5' => $request->input('a-5'),
                 'p-4' => $request->input('p-4'),
                 'h3-5' => $request->input('h3-5'),
+                'h3-6' => $request->input('h3-6'),
                 'h3-a' => $request->input('h3-a'),
                 'p-5-0' => $request->input('p-5-0'),
                 'div' => $request->input('div'),
                 'h6-2' => $request->input('h6-2'),
-                'h-3-6' => $request->input('h-3-6'),
                 'p-5' => $request->input('p-5'),
                 'li-h3' => $request->input('li-h3'),
                 'li-p' => $request->input('li-p'),
@@ -140,7 +140,7 @@ class HardwarePageController extends Controller
             ]);
 
             if($query){
-                return redirect()->route('index');
+                return redirect()->route('hardware-page.index');
             }
         }
         return back();

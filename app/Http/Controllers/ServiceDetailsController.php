@@ -70,9 +70,9 @@ class ServiceDetailsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, ServiceDetails $serviceDetails, $id)
+    public function update(Request $request, $id)
     {
-        //dd($request->all());
+        //dd($id);
         if ($request->has('form0')) {
 
             if ($request->hasFile('img')) { ;

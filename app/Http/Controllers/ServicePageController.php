@@ -6,6 +6,7 @@ use App\Models\ServicesMainScreen;
 use App\Models\ServiceDetails;
 use App\Models\Method;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class ServicePageController extends Controller
 {
@@ -14,14 +15,13 @@ class ServicePageController extends Controller
      */
     public function index()
     {
-        $main_screen = ServicesMainScreen::where('id', 1)->get()->toArray();
-        $services = ServiceDetails::all();
-        $methods = Method::all();
-        //dd($services);
+        //$main_screen = ServicesMainScreen::where('id', 1)->get()->toArray();
+        //$services = ServiceDetails::all();
+        //dd(Session::get('result'));
         return view('services-page.index', [
-            'services_page' => $main_screen,
-            'services' => $services,
-            'methods' => $methods
+            'services_page' => ServicesMainScreen::where('id', 1)->get()->toArray(),
+            'services' => ServiceDetails::all(),
+            'methods' => Session::get('result')
         ]);
     }
 
