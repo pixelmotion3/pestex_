@@ -144,35 +144,5 @@ class FrontPageController extends Controller
         }         
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(FrontPage $frontPage)
-    {
-        //
-    }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(FrontPage $frontPage)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(UpdateFrontPageRequest $request, FrontPage $frontPage)
-    {
-        return redirect()->route('index');
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(FrontPage $frontPage)
-    {
-        //
-    }
 }

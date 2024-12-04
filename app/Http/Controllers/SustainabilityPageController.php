@@ -22,38 +22,6 @@ class SustainabilityPageController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        dd('ok');
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(SustainabilityPage $sustainabilityPage)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(SustainabilityPage $sustainabilityPage)
-    {
-        //
-    }
-
-    /**
      * Update the specified resource in storage.
      */
     public function update(Request $request, $id)
@@ -181,13 +149,5 @@ class SustainabilityPageController extends Controller
             }
         }
         return back();
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(SustainabilityPage $sustainabilityPage)
-    {
-        //
     }
 }

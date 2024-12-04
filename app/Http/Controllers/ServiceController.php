@@ -8,7 +8,9 @@ use App\Models\Service;
 use App\Models\landing_3page;
 use App\Models\ServicesMainScreen;
 use App\Models\ServiceDetails;
-use Request;
+use App\Models\ServiceDetailsShow;
+use App\Models\Method;
+use Illuminate\Http\Request;
 
 class ServiceController extends Controller
 {
@@ -20,8 +22,6 @@ class ServiceController extends Controller
         $best_service = landing_3page::where('id',1)->get()->toArray();
         $main_screen = ServicesMainScreen::where('id', 1)->get()->toArray();
         $services = ServiceDetails::all();
-        //dd($services);
-     
         return view('services.index', [
             'main_screen' => $main_screen,
             'best_service' => $best_service,
@@ -30,29 +30,21 @@ class ServiceController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StoreServiceRequest $request)
-    {
-        //
-    }
-
-    /**
      * Display the specified resource.
      */
     public function show(Request $request, $id)
     {
-        $service = ServiceDetails::findOrFail($id);
-        //dd($service);
-        return view('services.show');
+        $service_detail = ServiceDetails::findOrFail($id)->toArray();
+        $service_detail_show = ServiceDetailsShow::findOrFail(1)->toArray();
+        $methods = Method::where('service_id',$id)->get();
+        $services = ServiceDetails::all();
+        //dd($service_detail);
+        return view('services.show', [
+            'services' => $services,
+            'service_detail' => $service_detail,
+            'methods' => $methods,
+            'service_detail_show'=> $service_detail_show 
+        ]);
     }
 
     /**

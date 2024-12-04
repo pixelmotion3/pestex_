@@ -49,6 +49,9 @@ Route::middleware('auth')->group(function () {
 
     Route::post('MethodController/fetch',[MethodController::class,'fetch'])
             ->name('MethodController.fetch');
+
+    Route::post('ServiceDetailsController/fetch',[ServiceDetailsController::class,'fetch'])
+            ->name('ServiceDetailsController.fetch');
     // Route::post('/service-details', [ServiceDetailsController::class,'store'])->middleware(['auth', 'verified'])->name('ServiceDetails.store');
     // Route::put('/service-details/{id}', [ServiceDetailsController::class,'update'])->middleware(['auth', 'verified'])->name('ServiceDetails.update');
     //Route::post('/contacts', [FrontPageController::class, 'store'])->name('FrontPage.store');

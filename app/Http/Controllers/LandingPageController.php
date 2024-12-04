@@ -54,38 +54,6 @@ class LandingPageController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StoreLandingPageRequest $request)
-    {
-        //dd($request->all());
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(LandingPage $landingPage)
-    {
-        
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(LandingPage $landingPage)
-    {
-        //
-    }
-
-    /**
      * Update the specified resource in storage.
      */
     public function update(UpdateLandingPageRequest $request, LandingPage $landingPage)
@@ -402,13 +370,5 @@ class LandingPageController extends Controller
         }
 
         return redirect()->route('landing-page.index');
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(LandingPage $landingPage)
-    {
-        //
     }
 }

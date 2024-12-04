@@ -137,12 +137,12 @@
                                         </p><!-- slider-text -->
                                         <div class="main-slider-three__btn">
                                             <a href="/servicos" class="tolak-btn"><b>{{ $main[0]['div-a-b'] }}</b><span></span></a><!-- slider-btn -->
-                                            <div class="main-slider-three__btn__video">
+                                            {{-- <div class="main-slider-three__btn__video">
                                                 <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
                                                     <i class="icon-play-button"></i>
                                                     <span class="video-popup__btn-ripple"></span>
                                                 </a>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>

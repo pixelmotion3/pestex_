@@ -77,14 +77,6 @@
                     </a>
                 </div><!-- /.main-header__logo -->
                 @include('includes.nav')
-                {{-- <nav class="main-header__nav main-menu">
-                        <ul class="main-menu__list one-page-scroll-menu">
-                            <li class="megamenu scrollToLink current"><a href="https://pestex.pixeldev05.com/">Home</a></li>
-                            <li class="scrollToLink"><a href="https://pestex.pixeldev05.com/about">About</a></li>
-                            <li class="scrollToLink"><a href="https://pestex.pixeldev05.com/services">Services</a></li>
-                            <li class="scrollToLink"><a href="https://pestex.pixeldev05.com/sustainability">Sustainability</a></li>
-                        </ul>
-                    </nav><!-- /.main-header__nav -->                        --}}
             </div><!-- /.main-header__inner -->
         </div><!-- /.container-fluid -->
     </header><!-- /.main-header -->
@@ -94,9 +86,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12"
-                    style="background-image: url(../assets/images/backgrounds/faq-bg-2.jpg);border-bottom-left-radius:150px;">
+                    style="background-image: url(../{{$service_detail_show['bg-img'] }});border-bottom-left-radius:150px;">
                     <div class="page-header__content text-center">
-                        <h1 class="text-white h1"><b>Our company</b></h1>
+                        <h1 class="text-white h1"><b>{{$service_detail_show['h1']}}</b></h1>
                     </div>
                 </div>
             </div>
@@ -107,20 +99,17 @@
             <div class="row gutter-y-30">
                 <div class="col-md-12 col-xl-4">
                     <div class="service-details__sidebar">
-                        <h3 class="service-details__sidebar__title">All Services:</h3><!-- /.service-sidebar__title -->
+                        <h3 class="service-details__sidebar__title">{{$service_detail_show['h3']}}</h3><!-- /.service-sidebar__title -->
                         <ul class="list-unstyled service-details__sidebar__nav">
-                            <li><a href="business-growth.html">Business of Growth</a></li>
-                            <li><a href="business-solution.html">Solution to Business</a></li>
-                            <li><a href="marketing-solution.html">Markting of Solution</a></li>
-                            <li><a href="technology-services.html">Technology Services</a></li>
-                            <li><a href="business-marketing.html">Marketing Business</a></li>
-                            <li><a href="business-support.html">Support of Business</a></li>
+                            @foreach ($services as $service)
+                                <li><a href="/servicos/{{ $service['id']}}">{{ $service['a']}}</a></li>
+                            @endforeach
                         </ul><!-- /.list-unstyled service-sidebar__nav -->
                     </div><!-- /.sidebar -->
                 </div><!-- /.col-md-12 col-lg-4 -->
                 <div class="col-md-12 col-xl-8">
                     <div class="service-details__thumbnail">
-                        <img src="../assets/images/resources/service-d-1.jpg" alt="tolak">
+                        <img src="../{{ $service_detail_show['img'] }}" alt="tolak">
                     </div><!-- /.service-details__thumbnail -->
                 </div><!-- /.col-md-12 col-lg-8 -->
             </div><!-- /.row -->
@@ -135,27 +124,27 @@
                     <div class="service-sidebar">
                         <div class="sidebar-widget banner-widget">
                             <div class="widget-content"
-                                style="background-image: url(../assets/images/resource/sidebar-banner-1.jpg);">
-                                <div class="shape" style="background-image: url(../assets/images/shape/shape-10.png);">
+                                style="background-image: url(../{{ $service_detail_show['img-1'] }});">
+                                <div class="shape" style="background-image: url(../{{ $service_detail_show['img-2'] }});">
                                 </div>
                                 <div class="content-box">
                                     <div class="icon-box">
                                         <i class="flaticon-cleaning"></i>
                                         <div class="icon-shape"
-                                            style="background-image: url(../assets/images/icons/star-7.png);"></div>
+                                            style="background-image: url(../{{ $service_detail_show['img-3'] }});"></div>
                                     </div>
-                                    <h3>Start Your Service Today Itself...</h3>
-                                    <a href="contact.html" class="theme-btn-two">Get in Touch</a>
+                                    <h3>{{ $service_detail_show['h3-1'] }}</h3>
+                                    <a href="contact.html" class="theme-btn-two">{{ $service_detail_show['a'] }}</a>
                                 </div>
                             </div>
                             <div class="form-inner">
-                                <h3>Consult With Expert</h3>
+                                <h3>{{ $service_detail_show['h3-2'] }}</h3>
                                 <form action="contact.html" method="post">
                                     <div class="form-group">
-                                        <input type="text" name="name" placeholder="Your Name" required="">
+                                        <input type="text" name="name" placeholder="Nome" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" name="email" placeholder="Email Address"
+                                        <input type="email" name="email" placeholder="Email"
                                             required="">
                                     </div>
                                     <div class="form-group">
@@ -183,17 +172,11 @@
                         <div class="content-one">
                             <figure class="image-box"><img src="../assets/images/service/service-11.jpg"
                                     alt=""></figure>
-                            <h3>Cleaning Services That We Provide</h3>
+                            <h3>{{ $service_detail['title'] }}</h3>
                             <div class="text">
-                                <p>Beguiled and demoralized by the charms of pleasure the moment, so blinded by desire
-                                    that they cannot foresee the pain and trouble that are bound to ensue; and equal
-                                    blame belongs to those who fail in their which is the same as saying through
-                                    shrinking.</p>
-                                <p>Foresee the pain and trouble that are bound to ensue; and equal blame belongs to
-                                    those who fail.</p>
-                                <p>Charms of pleasure the moment, so blinded by desire that they cannot foresee the pain
-                                    and trouble that are bound to ensue; and equal blame belongs to those who fail in
-                                    their.</p>
+                                <p>{{ $service_detail['p-1'] }}</p>
+                                <p>{{ $service_detail['p-2'] }}</p>
+                                <p>{{ $service_detail['p-3'] }}</p>
                             </div>
                         </div>
                         <h3 class="h3" style="color:black;"><b>Métodos</b></h3>
@@ -219,126 +202,28 @@
                                     }
                                 }
                                 }'>
-                            <div class="item col-md-4">
-                                <div class="feature-three__item wow fadeInUp" data-wow-delay="100ms">
-                                    <div class="feature-three__item__image rounded-box">
-                                        <img src="../assets/images/resources/feature-3-1.jpg" alt="tolak">
-                                        <a href="about.html" class="feature-three__item__link"><i
-                                                class="icon-right-arrow"></i></a>
-                                    </div>
-                                    <div class="feature-three__item__normal">
-                                        <h4 class="feature-three__item__normal__title">Commited to Delive</h4>
-                                        <p class="feature-three__item__normal__text">Business</p>
-                                    </div>
-                                    <div class="feature-three__item__hover">
-                                        <div class="feature-three__item__icon">
-                                            <span class="icon-cooperation"></span>
+                            @foreach ($methods as $method)
+                                <div class="item col-md-4">
+                                    <div class="feature-three__item wow fadeInUp" data-wow-delay="100ms">
+                                        <div class="feature-three__item__image rounded-box">
+                                            <img src="../{{ $method['img'] }}" alt="tolak">
+                                            <a href="about.html" class="feature-three__item__link"><i
+                                                    class="icon-right-arrow"></i></a>
                                         </div>
-                                        <h4 class="feature-three__item__title">Commited to Delive</h4>
-                                        <p class="feature-three__item__text">We businesss standard chunk </p>
-                                    </div>
-                                </div><!-- feature-item -->
-                            </div>
-                            <div class="item col-md-4">
-                                <div class="feature-three__item wow fadeInUp" data-wow-delay="200ms">
-                                    <div class="feature-three__item__image rounded-box">
-                                        <img src="../assets/images/resources/feature-3-2.jpg" alt="tolak">
-                                        <a href="about.html" class="feature-three__item__link"><i
-                                                class="icon-right-arrow"></i></a>
-                                    </div>
-                                    <div class="feature-three__item__normal">
-                                        <h4 class="feature-three__item__normal__title">Business Of Growth</h4>
-                                        <p class="feature-three__item__normal__text">Growth</p>
-                                    </div>
-                                    <div class="feature-three__item__hover">
-                                        <div class="feature-three__item__icon">
-                                            <span class="icon-ads-campaign"></span>
+                                        <div class="feature-three__item__normal">
+                                            <h4 class="feature-three__item__normal__title">{{ $method['title1'] }}</h4>
+                                            <p class="feature-three__item__normal__text">{{ $method['p'] }}</p>
                                         </div>
-                                        <h4 class="feature-three__item__title">Business Of Growth</h4>
-                                        <p class="feature-three__item__text">We businesss standard chunk of .</p>
-                                    </div>
-                                </div><!-- feature-item -->
-                            </div>
-                            <div class="item col-md-4">
-                                <div class="feature-three__item wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="feature-three__item__image rounded-box">
-                                        <img src="../assets/images/resources/feature-3-3.jpg" alt="tolak">
-                                        <a href="about.html" class="feature-three__item__link"><i
-                                                class="icon-right-arrow"></i></a>
-                                    </div>
-                                    <div class="feature-three__item__normal">
-                                        <h4 class="feature-three__item__normal__title">Business Projects</h4>
-                                        <p class="feature-three__item__normal__text">Marketing</p>
-                                    </div>
-                                    <div class="feature-three__item__hover">
-                                        <div class="feature-three__item__icon">
-                                            <span class="icon-advertisig-agency"></span>
+                                        <div class="feature-three__item__hover">
+                                            <div class="feature-three__item__icon">
+                                                <span class="icon-cooperation"></span>
+                                            </div>
+                                            <h4 class="feature-three__item__title">{{ $method['title2'] }}</h4>
+                                            <p class="feature-three__item__text">{{ $method['p1'] }}</p>
                                         </div>
-                                        <h4 class="feature-three__item__title">Business Projects</h4>
-                                        <p class="feature-three__item__text">We businesss standard chunk o</p>
-                                    </div>
-                                </div><!-- feature-item -->
-                            </div>
-                            <div class="item col-md-4">
-                                <div class="feature-three__item wow fadeInUp" data-wow-delay="100ms">
-                                    <div class="feature-three__item__image rounded-box">
-                                        <img src="../assets/images/resources/feature-3-1.jpg" alt="tolak">
-                                        <a href="about.html" class="feature-three__item__link"><i
-                                                class="icon-right-arrow"></i></a>
-                                    </div>
-                                    <div class="feature-three__item__normal">
-                                        <h4 class="feature-three__item__normal__title">Commited to Delive</h4>
-                                        <p class="feature-three__item__normal__text">Business</p>
-                                    </div>
-                                    <div class="feature-three__item__hover">
-                                        <div class="feature-three__item__icon">
-                                            <span class="icon-cooperation"></span>
-                                        </div>
-                                        <h4 class="feature-three__item__title">Commited to Delive</h4>
-                                        <p class="feature-three__item__text">We businesss standard chunk .</p>
-                                    </div>
-                                </div><!-- feature-item -->
-                            </div>
-                            <div class="item col-md-4">
-                                <div class="feature-three__item wow fadeInUp" data-wow-delay="200ms">
-                                    <div class="feature-three__item__image rounded-box">
-                                        <img src="../assets/images/resources/feature-3-2.jpg" alt="tolak">
-                                        <a href="about.html" class="feature-three__item__link"><i
-                                                class="icon-right-arrow"></i></a>
-                                    </div>
-                                    <div class="feature-three__item__normal">
-                                        <h4 class="feature-three__item__normal__title">Business Of Growth</h4>
-                                        <p class="feature-three__item__normal__text">Growth</p>
-                                    </div>
-                                    <div class="feature-three__item__hover">
-                                        <div class="feature-three__item__icon">
-                                            <span class="icon-ads-campaign"></span>
-                                        </div>
-                                        <h4 class="feature-three__item__title">Business Of Growth</h4>
-                                        <p class="feature-three__item__text">We businesss standard chunk of .</p>
-                                    </div>
-                                </div><!-- feature-item -->
-                            </div>
-                            <div class="item col-md-4">
-                                <div class="feature-three__item wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="feature-three__item__image rounded-box">
-                                        <img src="../assets/images/resources/feature-3-3.jpg" alt="tolak">
-                                        <a href="about.html" class="feature-three__item__link"><i
-                                                class="icon-right-arrow"></i></a>
-                                    </div>
-                                    <div class="feature-three__item__normal">
-                                        <h4 class="feature-three__item__normal__title">Business Projects</h4>
-                                        <p class="feature-three__item__normal__text">Marketing</p>
-                                    </div>
-                                    <div class="feature-three__item__hover">
-                                        <div class="feature-three__item__icon">
-                                            <span class="icon-advertisig-agency"></span>
-                                        </div>
-                                        <h4 class="feature-three__item__title">Business Projects</h4>
-                                        <p class="feature-three__item__text">We businesss standard chunk </p>
-                                    </div>
-                                </div><!-- feature-item -->
-                            </div>
+                                    </div><!-- feature-item -->
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -350,27 +235,26 @@
     <!-- Work Process Start -->
     <section class="work-process-two">
         <div class="work-process-two__shape"
-            style="background-image: url(../assets/images/shapes/work-process-bg-2.png);"></div>
+            style="background-image: url(../{{ $service_detail_show['img-4'] }});"></div>
         <div class="container">
             <div class="sec-title-four text-center">
 
-                <h6 class="sec-title-four__tagline"><span class="sec-title-four__tagline__left-border"></span>Our Work
-                    Process<span class="sec-title-four__tagline__right-border"></span></h6>
+                <h6 class="sec-title-four__tagline"><span class="sec-title-four__tagline__left-border"></span>{{ $service_detail_show['h6'] }}<span class="sec-title-four__tagline__right-border"></span></h6>
                 <!-- /.sec-title-four__tagline -->
 
-                <h3 class="sec-title-four__title">Over The Solution Work Experiences</h3>
+                <h3 class="sec-title-four__title">{{ $service_detail_show['h3-3'] }}</h3>
                 <!-- /.sec-title-four__title -->
             </div><!-- /.sec-title-four -->
             <div class="row gutter-y-30">
                 <div class="col-xl-3 col-md-6">
                     <div class="work-process-two__item text-center wow fadeInUp" data-wow-delay="00ms">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
-                        <h4 class="work-process-two__item__title">Creative Solutions</h4><!-- /.work-process-title -->
+                        <h4 class="work-process-two__item__title">{{ $service_detail_show['h4'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text">
-                            Best of the Solution
+                            {{ $service_detail_show['p'] }}
                         </p><!-- /.work-process-text -->
                         <div class="work-process-two__item__thumb">
-                            <img src="../assets/images/resources/work-process-2-1.jpg" alt="tolak">
+                            <img src="../{{ $service_detail_show['img-5'] }}" alt="tolak">
                         </div><!-- /.work-process-image -->
                     </div><!-- /.work-process-item -->
                 </div>
@@ -378,24 +262,24 @@
                     <div class="work-process-two__item work-process-two__item--reverse text-center wow fadeInUp"
                         data-wow-delay="100ms">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
-                        <h4 class="work-process-two__item__title">Agency Business</h4><!-- /.work-process-title -->
+                        <h4 class="work-process-two__item__title">{{ $service_detail_show['h4'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text">
-                            Best of the Solution
+                            {{ $service_detail_show['p-1'] }}
                         </p><!-- /.work-process-text -->
                         <div class="work-process-two__item__thumb">
-                            <img src="../assets/images/resources/work-process-2-2.jpg" alt="tolak">
+                            <img src="../{{ $service_detail_show['img-6'] }}" alt="tolak">
                         </div><!-- /.work-process-image -->
                     </div><!-- /.work-process-item -->
                 </div>
                 <div class="col-xl-3 col-md-6">
                     <div class="work-process-two__item text-center wow fadeInUp" data-wow-delay="200ms">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
-                        <h4 class="work-process-two__item__title">Data Network</h4><!-- /.work-process-title -->
+                        <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-2'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text">
-                            Best of the Solution
+                            {{ $service_detail_show['p-2'] }}
                         </p><!-- /.work-process-text -->
                         <div class="work-process-two__item__thumb">
-                            <img src="../assets/images/resources/work-process-2-3.jpg" alt="tolak">
+                            <img src="../{{ $service_detail_show['img-7'] }}" alt="tolak">
                         </div><!-- /.work-process-image -->
                     </div><!-- /.work-process-item -->
                 </div>
@@ -403,12 +287,12 @@
                     <div class="work-process-two__item work-process-two__item--reverse text-center wow fadeInUp"
                         data-wow-delay="300ms">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
-                        <h4 class="work-process-two__item__title">Cyber Security</h4><!-- /.work-process-title -->
+                        <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-3'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text">
-                            Best of the Solution
+                            {{ $service_detail_show['p-3'] }}
                         </p><!-- /.work-process-text -->
                         <div class="work-process-two__item__thumb">
-                            <img src="../assets/images/resources/work-process-2-4.jpg" alt="tolak">
+                            <img src="../{{ $service_detail_show['img-8'] }}" alt="tolak">
                         </div><!-- /.work-process-image -->
                     </div><!-- /.work-process-item -->
                 </div>
@@ -423,31 +307,29 @@
                     <div class="faq-one__content">
                         <div class="sec-title-two text-left">
                             <h6 class="sec-title-two__tagline"><span
-                                    class="sec-title-two__tagline__left icofont-rounded-double-left"></span>See our
-                                faqs<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span>
+                                    class="sec-title-two__tagline__left icofont-rounded-double-left"></span>{{ $service_detail_show['h6-1'] }}<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span>
                             </h6><!-- /.sec-title-two__tagline -->
-                            <h3 class="sec-title-two__title">We Fast Frequently Asked The Questions Now</h3>
+                            <h3 class="sec-title-two__title">{{ $service_detail_show['h3-4'] }}</h3>
                             <!-- /.sec-title-two__title -->
                         </div><!-- /.sec-title-two -->
                         <div class="row">
                             <div class="col-md-5">
                                 <div class="faq-one__image tolak-tilt"
                                     data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
-                                    <img src="../assets/images/resources/faq-1-1.jpg" alt="tolak">
+                                    <img src="../{{ $service_detail_show['img-9'] }}" alt="tolak">
                                 </div>
                             </div>
                             <div class="col-md-7">
                                 <div class="faq-one__right">
                                     <div class="faq-one__experiance count-box">
                                         <h3 class="faq-one__experiance__count"><span class="count-text"
-                                                data-stop="36" data-speed="1500">5</span>+</h3>
+                                                data-stop="36" data-speed="1500">{{ $service_detail_show['span'] }}</span>+</h3>
                                         <!-- /.experiance-count -->
-                                        <h5 class="faq-one__experiance__title">Years<br> Experience</h5>
+                                        <h5 class="faq-one__experiance__title">{{ $service_detail_show['h5'] }}</h5>
                                         <!-- /.experiance-title -->
                                     </div><!-- /.experiance -->
-                                    <h4 class="faq-one__right__title">Donec Quis felis Commodo</h4>
-                                    <p class="faq-one__right__text">Lorem ipsum is simply free text dol amet, passage
-                                        of consectetur notted.</p>
+                                    <h4 class="faq-one__right__title">{{ $service_detail_show['h4-4'] }}</h4>
+                                    <p class="faq-one__right__text">{{ $service_detail_show['p-4'] }}</p>
                                 </div>
                             </div>
                         </div>
@@ -458,16 +340,14 @@
                         <div class="accrodion active collapse-1">
                             <div class="accrodion-title">
                                 <h4>
-                                    What happens to my data if I cancel?
+                                    {{ $service_detail_show['h4-5-1'] }}
                                     <span class="accrodion-title__icon" id="collapse-1-icon"></span>
                                 </h4>
                             </div>
                             <div class="accrodion-content">
                                 <div class="inner" id="collapse-1">
                                     <p>
-                                        There are many variations of passages of available but the have suffered
-                                        alteration in that some form by injected randomised words which don’t
-                                        look even as slightly believable now.
+                                        {{ $service_detail_show['p-5'] }}
                                     </p>
                                 </div>
                             </div>
@@ -475,16 +355,14 @@
                         <div class="accrodion collapse-2">
                             <div class="accrodion-title" >
                                 <h4>
-                                    What are the different types of marketing solutions?
+                                    {{ $service_detail_show['h4-5'] }}
                                     <span class="accrodion-title__icon" id="collapse-2-icon"></span>
                                 </h4>
                             </div>
                             <div class="accrodion-content">
                                 <div class="inner" id="collapse-2">
                                     <p>
-                                        There are many variations of passages of available but the have suffered
-                                        alteration in that some form by injected randomised words which don’t
-                                        look even as slightly believable now.
+                                        {{ $service_detail_show['p-6'] }}
                                     </p>
                                 </div>
                             </div>
@@ -492,16 +370,14 @@
                         <div class="accrodion collapse-3">
                             <div class="accrodion-title">
                                 <h4>
-                                    How often should i work on the digital marketing?
+                                    {{ $service_detail_show['h4-7'] }}
                                     <span class="accrodion-title__icon" id="collapse-3-icon"></span>
                                 </h4>
                             </div>
                             <div class="accrodion-content">
                                 <div class="inner" id="collapse-3">
                                     <p>
-                                        There are many variations of passages of available but the have suffered
-                                        alteration in that some form by injected randomised words which don’t
-                                        look even as slightly believable now.
+                                        {{ $service_detail_show['p-7'] }}
                                     </p>
                                 </div>
                             </div>
@@ -509,16 +385,14 @@
                         <div class="accrodion collapse-4">
                             <div class="accrodion-title">
                                 <h4>
-                                    Are social media good for the business growth?
+                                    {{ $service_detail_show['h4-8'] }}
                                     <span class="accrodion-title__icon" id="collapse-4-icon"></span>
                                 </h4>
                             </div>
                             <div class="accrodion-content">
                                 <div class="inner" id="collapse-4">
                                     <p>
-                                        There are many variations of passages of available but the have suffered
-                                        alteration in that some form by injected randomised words which don’t
-                                        look even as slightly believable now.
+                                        {{ $service_detail_show['p-8'] }}
                                     </p>
                                 </div>
                             </div>
@@ -537,11 +411,11 @@
                 <div class="sec-title-three text-center">
 
                     <h6 class="sec-title-three__tagline"><span
-                            class="sec-title-three__tagline__left-border"></span>OUR Latest blog<span
+                            class="sec-title-three__tagline__left-border"></span>{{ $service_detail_show['h6-span-2'] }}<span
                             class="sec-title-three__tagline__right-border"></span></h6>
                     <!-- /.sec-title-three__tagline -->
 
-                    <h3 class="sec-title-three__title">The Best Solution News And Blog</h3>
+                    <h3 class="sec-title-three__title">{{ $service_detail_show['h3-5'] }}</h3>
                     <!-- /.sec-title-three__title -->
                 </div><!-- /.sec-title-three -->
                 <div class="blog-two__carousel tolak-owl__carousel tolak-owl__carousel--basic-nav tolak-owl__carousel--with-shadow row  owl-theme"
@@ -569,27 +443,24 @@
                     <div class="item col-md-4">
                         <div class="blog-card-four wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='00ms'>
                             <div class="blog-card-four__image">
-                                <img src="../assets/images/blog/blog-4-1.png"
+                                <img src="../{{ $service_detail_show['img-10'] }}"
                                     alt="We Solution For This Consulting Blog">
-                                <img src="../assets/images/blog/blog-4-1.png"
+                                <img src="../{{ $service_detail_show['img-11'] }}"
                                     alt="We Solution For This Consulting Blog">
                                 <div class="blog-card-four__date">
-                                    <i class="icofont-calendar"></i>15 Nov 2023
+                                    <i class="icofont-calendar"></i>{{ $service_detail_show['div-1'] }}
                                 </div><!-- /.blog-card-four__date -->
                                 <a href="blog-details-right.html" class="blog-card-four__image__link"><span
-                                        class="sr-only">We Solution For This Consulting
-                                        Blog</span><!-- /.sr-only --></a>
+                                        class="sr-only">{{ $service_detail_show['a-1'] }}</span><!-- /.sr-only --></a>
                             </div><!-- /.blog-card-four__image -->
                             <div class="blog-card-four__content">
                                 <ul class="list-unstyled blog-card-four__meta">
-                                    <li><i class="tolak-icons-two-user"></i>By: <a
-                                            href="blog-list-right.html">Admin</a></li>
-                                    <li><i class="tolak-icons-two-comments"></i>Comments (2)</li>
+                                    <li><i class="tolak-icons-two-user"></i>{{ $service_detail_show['li'] }} <a
+                                            href="blog-list-right.html">{{ $service_detail_show['a-2'] }}</a></li>
+                                    <li><i class="tolak-icons-two-comments"></i>{{ $service_detail_show['li-1'] }}</li>
                                 </ul>
-                                <h3 class="blog-card-four__title"><a href="blog-details-right.html">We Solution For
-                                        This Consulting Blog</a></h3><!-- /.blog-card-four__title -->
-                                <p class="blog-card-four__text">Business tailored design of this in some we form
-                                    solution.</p><!-- /.blog-card-four__text -->
+                                <h3 class="blog-card-four__title"><a href="blog-details-right.html">{{ $service_detail_show['a-3'] }}</a></h3><!-- /.blog-card-four__title -->
+                                <p class="blog-card-four__text">{{ $service_detail_show['p-9'] }}</p><!-- /.blog-card-four__text -->
                                 <a class="blog-card-four__rm" href="blog-details-right.html"><span
                                         class="tolak-icons-two-arrow-right-short"></span></a>
                             </div><!-- /.blog-card-four__content -->
@@ -598,27 +469,24 @@
                     <div class="item col-md-4">
                         <div class="blog-card-four wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
                             <div class="blog-card-four__image">
-                                <img src="../assets/images/blog/blog-4-2.png"
+                                <img src="../{{ $service_detail_show['img-12'] }}"
                                     alt="Are you Looking For a Solution Related">
-                                <img src="../assets/images/blog/blog-4-2.png"
+                                <img src="../{{ $service_detail_show['img-13'] }}"
                                     alt="Are you Looking For a Solution Related">
                                 <div class="blog-card-four__date">
-                                    <i class="icofont-calendar"></i>20 Nov 2023
+                                    <i class="icofont-calendar"></i>{{ $service_detail_show['div-2'] }}
                                 </div><!-- /.blog-card-four__date -->
                                 <a href="blog-details-right.html" class="blog-card-four__image__link"><span
-                                        class="sr-only">Are you Looking For a Solution
-                                        Related</span><!-- /.sr-only --></a>
+                                        class="sr-only">{{ $service_detail_show['span-1'] }}</span><!-- /.sr-only --></a>
                             </div><!-- /.blog-card-four__image -->
                             <div class="blog-card-four__content">
                                 <ul class="list-unstyled blog-card-four__meta">
-                                    <li><i class="tolak-icons-two-user"></i>By: <a
-                                            href="blog-list-right.html">Admin</a></li>
-                                    <li><i class="tolak-icons-two-comments"></i>Comments (2)</li>
+                                    <li><i class="tolak-icons-two-user"></i>{{ $service_detail_show['li-2'] }} <a
+                                            href="blog-list-right.html">{{ $service_detail_show['a-4'] }}</a></li>
+                                    <li><i class="tolak-icons-two-comments"></i>{{ $service_detail_show['li-3'] }}</li>
                                 </ul>
-                                <h3 class="blog-card-four__title"><a href="blog-details-right.html">Are you Looking
-                                        For a Solution Related</a></h3><!-- /.blog-card-four__title -->
-                                <p class="blog-card-four__text">Business tailored design of this in some we form
-                                    solution.</p><!-- /.blog-card-four__text -->
+                                <h3 class="blog-card-four__title"><a href="blog-details-right.html">{{ $service_detail_show['h3-6'] }}</a></h3><!-- /.blog-card-four__title -->
+                                <p class="blog-card-four__text">{{ $service_detail_show['p-9-1'] }}</p><!-- /.blog-card-four__text -->
                                 <a class="blog-card-four__rm" href="blog-details-right.html"><span
                                         class="tolak-icons-two-arrow-right-short"></span></a>
                             </div><!-- /.blog-card-four__content -->
@@ -627,27 +495,24 @@
                     <div class="item col-md-4">
                         <div class="blog-card-four wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
                             <div class="blog-card-four__image">
-                                <img src="../assets/images/blog/blog-4-3.png"
+                                <img src="../{{ $service_detail_show['img-14'] }}"
                                     alt="This Specific IT Issue as Network Security">
-                                <img src="../assets/images/blog/blog-4-3.png"
+                                <img src="../{{ $service_detail_show['img-15'] }}"
                                     alt="This Specific IT Issue as Network Security">
                                 <div class="blog-card-four__date">
-                                    <i class="icofont-calendar"></i>25 Nov 2023
+                                    <i class="icofont-calendar"></i>{{ $service_detail_show['div-3'] }}
                                 </div><!-- /.blog-card-four__date -->
                                 <a href="blog-details-right.html" class="blog-card-four__image__link"><span
-                                        class="sr-only">This Specific IT Issue as Network
-                                        Security</span><!-- /.sr-only --></a>
+                                        class="sr-only">{{ $service_detail_show['span-2'] }}</span><!-- /.sr-only --></a>
                             </div><!-- /.blog-card-four__image -->
                             <div class="blog-card-four__content">
                                 <ul class="list-unstyled blog-card-four__meta">
-                                    <li><i class="tolak-icons-two-user"></i>By: <a
-                                            href="blog-list-right.html">Admin</a></li>
-                                    <li><i class="tolak-icons-two-comments"></i>Comments (2)</li>
+                                    <li><i class="tolak-icons-two-user"></i>{{ $service_detail_show['li-3-1'] }} <a
+                                            href="blog-list-right.html">{{ $service_detail_show['a-5'] }}</a></li>
+                                    <li><i class="tolak-icons-two-comments"></i>{{ $service_detail_show['li-4'] }}</li>
                                 </ul>
-                                <h3 class="blog-card-four__title"><a href="blog-details-right.html">This Specific IT
-                                        Issue as Network Security</a></h3><!-- /.blog-card-four__title -->
-                                <p class="blog-card-four__text">Business tailored design of this in some we form
-                                    solution.</p><!-- /.blog-card-four__text -->
+                                <h3 class="blog-card-four__title"><a href="blog-details-right.html">{{ $service_detail_show['h3-7'] }}</a></h3><!-- /.blog-card-four__title -->
+                                <p class="blog-card-four__text">{{ $service_detail_show['p-10'] }}</p><!-- /.blog-card-four__text -->
                                 <a class="blog-card-four__rm" href="blog-details-right.html"><span
                                         class="tolak-icons-two-arrow-right-short"></span></a>
                             </div><!-- /.blog-card-four__content -->
@@ -712,7 +577,7 @@
             });
         });
     </script>
-    @include('includes.footer')
+    @include('includes.footer_aux')
     <!--
         <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
             <span class="scroll-to-top__text">back top</span>

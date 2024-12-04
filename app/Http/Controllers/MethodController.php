@@ -8,25 +8,13 @@ use App\Models\Method;
 use Illuminate\Http\Request;
 use App\Models\ServicesMainScreen;
 use App\Models\ServiceDetails;
-use Illuminate\Support\Facades\Session;
+use App\Models\ServiceDetailsShow;
 
 class MethodController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-
-        return view('methods.index');
-    }
-
-
     public function fetch(Request $request)
     {
-        
         $query = Method::where('service_id', $request->input('service_id'))->get();
-        \Log::info($query);
         return response()->json($query);
     }
 
@@ -49,7 +37,8 @@ class MethodController extends Controller
             $services = ServiceDetails::all();
             return view('services-page.index', [
                 'services_page' => $main_screen,
-                'services' => $services
+                'services' => $services,
+                'service_details_page' => ServiceDetailsShow::where('id', 1)->get()->toArray(),
             ]);
         }
         return back();

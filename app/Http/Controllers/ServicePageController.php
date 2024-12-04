@@ -4,9 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\ServicesMainScreen;
 use App\Models\ServiceDetails;
-use App\Models\Method;
+use App\Models\ServiceDetailsShow;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Session;
 
 class ServicePageController extends Controller
 {
@@ -15,46 +14,11 @@ class ServicePageController extends Controller
      */
     public function index()
     {
-        //$main_screen = ServicesMainScreen::where('id', 1)->get()->toArray();
-        //$services = ServiceDetails::all();
-        //dd(Session::get('result'));
         return view('services-page.index', [
             'services_page' => ServicesMainScreen::where('id', 1)->get()->toArray(),
-            'services' => ServiceDetails::all(),
-            'methods' => Session::get('result')
+            'service_details_page' => ServiceDetailsShow::where('id', 1)->get()->toArray(),
+            'services' => ServiceDetails::all()
         ]);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
     }
 
     /**
@@ -136,11 +100,4 @@ class ServicePageController extends Controller
         return back();
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
-    }
 }
