@@ -63,6 +63,25 @@
             text-align: center;
         }
 
+        .input-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .input-icon {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            transform: translateY(-50%);
+            max-width: 50px;
+            max-height: 50px;
+            fill: black; /* Adjust color as needed */
+        }
+
+        .input-with-inline-icon {
+            padding-left: 10px; /* Adjust to make space for the icon */
+        }
+
         .input-field {
             width: 100%;
             padding: 10px;
@@ -74,7 +93,7 @@
         }
 
         .btn {
-            background-color: dodgerblue;
+            background-color: #ff6600;
             color: white;
             padding: 15px 20px;
             border: none;
@@ -85,6 +104,8 @@
 
         .btn:hover {
             opacity: 1;
+            background-color: #002255;
+            color: white;
         }
 
         .custom-select {
@@ -107,6 +128,19 @@
         .quote_border_inbox {
             border-top-right-radius: 30px;
         }
+
+        .search-input {
+            width: 100%;
+            height: 48px;
+            padding: 12px 8px 12px 36px;
+            border-radius: 4px;
+            border: 1px solid gray;
+            /* replace this svg with the one you like */
+            background-image: url('assets/images/icons/Telefone.svg');
+            background-repeat: no-repeat;
+            /* update the position so it shows */
+            background-position: -33px -30px;
+            }
     </style>
     <!-- jequery plugins -->
 
@@ -176,14 +210,31 @@
                                     <div class="row text-center" style="border-radius:50%;">
                                         <div class="col mt-3 border" style="margin-left:30px;margin-right:15px;"
                                             id="modal-home">
-                                            <i class="fa fa-home mt-3" aria-hidden="true"
-                                                style="font-size:4rem;"></i>
+                                            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 63.2 64">
+                                                <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+                                                <path d="M31.6,16.2c.3,0,.6.1.8.3l26.1,20.6c.6.5.7,1.4.2,2-.4.6-1.4.7-2,.2l-25.2-19.9L6.3,39.3c-.6.4-1.5.4-1.9-.2-.4-.6-.4-1.5.2-2l9.8-7.7v-11.8c0-.8.6-1.4,1.4-1.4h5.5c.8,0,1.4.6,1.4,1.4v5.3l8.1-6.4c.3-.2.6-.3.9-.3h0ZM19.9,19h-2.7v8.2l2.7-2.2v-6.1ZM48.7,34.7l2.7,2.2v21.9c0,.8-.6,1.4-1.4,1.4h-11.7c-.8,0-1.4-.6-1.4-1.4v-6.9c0-3.1-2.4-5.5-5.5-5.5s-5.5,2.4-5.5,5.5v6.9c0,.8-.6,1.4-1.4,1.4h-11.7c-.8,0-1.4-.6-1.4-1.4v-21.9l2.7-2.2v22.7h8.9v-5.5c0-4.5,3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2v5.5h8.9v-22.7h0Z"/>
+                                            </svg>
                                             <p>Casa</p>
                                         </div>
                                         <div class="col border mt-3" style="margin-right:30px;margin-left:15px;"
                                             id="modal-company">
-                                            <i class="far fa-building mt-3" aria-hidden="true"
-                                                style="font-size:4rem;"></i>
+                                            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 63.2 64">
+                                                <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+                                                <defs>
+                                                  <style>
+                                                    .st0 {
+                                                      stroke: #000;
+                                                      stroke-miterlimit: 10;
+                                                    }
+                                                  </style>
+                                                </defs>
+                                                <g id="Layer_38">
+                                                  <path class="st0" d="M26.4,38.2h10.4c.6,0,1-.4,1-1s-.4-1-1-1h-10.4c-.6,0-1,.4-1,1s.4,1,1,1Z"/>
+                                                  <path class="st0" d="M26.4,30.6h10.4c.6,0,1-.4,1-1s-.4-1-1-1h-10.4c-.6,0-1,.4-1,1s.4,1,1,1Z"/>
+                                                  <path class="st0" d="M26.4,23h10.4c.6,0,1-.4,1-1s-.4-1-1-1h-10.4c-.6,0-1,.4-1,1s.4,1,1,1Z"/>
+                                                  <path class="st0" d="M59.9,57.7h-4.2v-20.4c0-.6-.4-1-1-1h-9.4V15.8c0-.4-.2-.8-.6-.9L19.3,4.4c-.3-.1-.7,0-.9,0-.3.2-.4.5-.4.8v17.9h-9.4c-.6,0-1,.4-1,1v33.4h-3.4c-.6,0-1,.4-1,1s.4,1,1,1h55.7c.6,0,1-.4,1-1s-.4-1-1-1ZM9.5,25.3h8.4v32.4h-8.4V25.3ZM19.9,6.8l23.3,9.6v41.2h-5.5v-9.7c0-.6-.4-1-1-1h-10.4c-.6,0-1,.4-1,1v9.7h-5.4V6.8ZM27.4,57.7v-8.7h8.4v8.7h-8.4ZM45.2,57.7v-19.4h8.4v19.4h-8.4Z"/>
+                                                </g>
+                                              </svg>
                                             <p>Empresa</p>
                                         </div>
                                         <input class="input-field rounded" type="hidden" name="customer_type"
@@ -198,7 +249,7 @@
                                         </div>
 
                                         <div class="input-container mt-3" style="width: 92%;">
-                                            <i class="far fa-smile icon"></i>
+                                            <i class="far fa-map-marker-alt icon"></i>
                                             <input class="input-field rounded" type="text"
                                                 placeholder="Localidade" name="locality" required>
                                             @error('locality')
@@ -208,7 +259,7 @@
                                             @enderror
                                         </div>
                                         <div class="input-container mt-1" style="width: 92%;">
-                                            <i class="far fa-smile icon"></i>
+                                            <i class="far fa-user icon"></i>
                                             <input class="input-field rounded" type="text" placeholder="Nome"
                                                 name="name" required>
                                             @error('name')
@@ -290,7 +341,6 @@
                                                     </span>
                                                 @enderror
                                             </div>
-
                                             <div class="input-container" style="width: 92%;">
                                                 <i class="fa fa-phone icon"></i>
                                                 <input class="input-field rounded" type="text"
@@ -334,19 +384,10 @@
                     <a href="https://pestex.pixeldev05.com/">
                         <img src="assets/images/logo-dark.png" alt="Tolak HTML" width="184">
                     </a>
+                    <nav class="main-header__nav main-menu">
+                        <p>Fazemos desaparecer os seus problemas de insectos</p>
+                    </nav><!-- /.main-header__nav -->
                 </div><!-- /.main-header__logo -->
-
-                <nav class="main-header__nav main-menu">
-                    <!--
-                            <ul class="main-menu__list one-page-scroll-menu">
-                                <li class="megamenu scrollToLink current"><a href="https://pestex.pixeldev05.com/">Home</a></li>
-                                <li class="scrollToLink"><a href="https://pestex.pixeldev05.com/about">About</a></li>
-                                <li class="scrollToLink"><a href="https://pestex.pixeldev05.com/services">Services</a></li>
-                                <li class="scrollToLink"><a href="https://pestex.pixeldev05.com/sustainability">Sustainability</a></li>
-                            </ul>
-                            -->
-                    <p>Fazemos desaparecer os seus problemas de insectos</p>
-                </nav><!-- /.main-header__nav -->
             </div><!-- /.main-header__inner -->
         </div><!-- /.container-fluid -->
     </header><!-- /.main-header -->
@@ -600,27 +641,46 @@
                             <div class="row" style="border-radius:50%;">
                                 <div class="col mt-3 border" style="margin-left:30px;margin-right:15px;"
                                     id="home"">
-                                    <i class="fa fa-home mt-3" aria-hidden="true" style="font-size:4rem;"></i>
+                                    {{-- <i class="fa fa-home mt-3" aria-hidden="true" style="font-size:4rem;"></i> --}}
+                                    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 63.2 64">
+                                        <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+                                        <path d="M31.6,16.2c.3,0,.6.1.8.3l26.1,20.6c.6.5.7,1.4.2,2-.4.6-1.4.7-2,.2l-25.2-19.9L6.3,39.3c-.6.4-1.5.4-1.9-.2-.4-.6-.4-1.5.2-2l9.8-7.7v-11.8c0-.8.6-1.4,1.4-1.4h5.5c.8,0,1.4.6,1.4,1.4v5.3l8.1-6.4c.3-.2.6-.3.9-.3h0ZM19.9,19h-2.7v8.2l2.7-2.2v-6.1ZM48.7,34.7l2.7,2.2v21.9c0,.8-.6,1.4-1.4,1.4h-11.7c-.8,0-1.4-.6-1.4-1.4v-6.9c0-3.1-2.4-5.5-5.5-5.5s-5.5,2.4-5.5,5.5v6.9c0,.8-.6,1.4-1.4,1.4h-11.7c-.8,0-1.4-.6-1.4-1.4v-21.9l2.7-2.2v22.7h8.9v-5.5c0-4.5,3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2v5.5h8.9v-22.7h0Z"/>
+                                    </svg>
                                     <p>Casa</p>
                                 </div>
                                 <div class="col border mt-3" style="margin-right:30px;margin-left:15px;"
                                     id="company">
-                                    <i class="far fa-building mt-3" aria-hidden="true" style="font-size:4rem;"></i>
+                                    {{-- <i class="far fa-building mt-3" aria-hidden="true" style="font-size:4rem;"></i> --}}
+                                    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 63.2 64">
+                                        <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+                                        <defs>
+                                          <style>
+                                            .st0 {
+                                              stroke: #000;
+                                              stroke-miterlimit: 10;
+                                            }
+                                          </style>
+                                        </defs>
+                                        <g id="Layer_38">
+                                          <path class="st0" d="M26.4,38.2h10.4c.6,0,1-.4,1-1s-.4-1-1-1h-10.4c-.6,0-1,.4-1,1s.4,1,1,1Z"/>
+                                          <path class="st0" d="M26.4,30.6h10.4c.6,0,1-.4,1-1s-.4-1-1-1h-10.4c-.6,0-1,.4-1,1s.4,1,1,1Z"/>
+                                          <path class="st0" d="M26.4,23h10.4c.6,0,1-.4,1-1s-.4-1-1-1h-10.4c-.6,0-1,.4-1,1s.4,1,1,1Z"/>
+                                          <path class="st0" d="M59.9,57.7h-4.2v-20.4c0-.6-.4-1-1-1h-9.4V15.8c0-.4-.2-.8-.6-.9L19.3,4.4c-.3-.1-.7,0-.9,0-.3.2-.4.5-.4.8v17.9h-9.4c-.6,0-1,.4-1,1v33.4h-3.4c-.6,0-1,.4-1,1s.4,1,1,1h55.7c.6,0,1-.4,1-1s-.4-1-1-1ZM9.5,25.3h8.4v32.4h-8.4V25.3ZM19.9,6.8l23.3,9.6v41.2h-5.5v-9.7c0-.6-.4-1-1-1h-10.4c-.6,0-1,.4-1,1v9.7h-5.4V6.8ZM27.4,57.7v-8.7h8.4v8.7h-8.4ZM45.2,57.7v-19.4h8.4v19.4h-8.4Z"/>
+                                        </g>
+                                      </svg>
                                     <p>Empresa</p>
                                 </div>
                                 <input class="input-field rounded" type="hidden" name="customer_type"
                                     id="customer_type" value="home" required>
-
                                 <div class="input-container mt-3" style="width: 92%;" required>
                                     <select name="products">
                                         <option value="ratos" selected class="text-white">Ratos</option>
                                         <option value="baratas" class="text-muted">Baratas</option>
                                         <option value="percevejos" class="text-muted">Percevejos</option>
                                     </select>
-                                </div>
-
+                                </div>                                  
                                 <div class="input-container mt-3" style="width: 92%;">
-                                    <i class="far fa-smile icon"></i>
+                                    <i class="far fa-map-marker-alt icon" aria-hidden="true"></i> 
                                     <input class="input-field rounded" type="text" placeholder="Localidade"
                                         name="locality" required>
                                     @error('locality')
@@ -630,7 +690,7 @@
                                     @enderror
                                 </div>
                                 <div class="input-container mt-1" style="width: 92%;">
-                                    <i class="far fa-smile icon"></i>
+                                    <i class="far fa-user icon"></i>
                                     <input class="input-field rounded" type="text" placeholder="Nome"
                                         name="name" required>
                                     @error('name')
@@ -674,7 +734,7 @@
                                     @enderror
                                 </div>
                                 <div class="col-md-12 ml-4 mb-5" style="max-width: 92%">
-                                    <button class="btn btn-dark mt-2" type="submit" name="quote_form">Obter
+                                    <button class="btn mt-2 theme-btn-three thm-btn" type="submit" name="quote_form">Obter
                                         Orçamento Grátis</button>
                                 </div>
                             </div>
@@ -693,7 +753,7 @@
                                     <h2 class="h2 mt-5">{{ $main_screen[0]['quote-form-tab-2-h2'] }}</h2>
                                     <p class="mb-5">{{ $main_screen[0]['quote-form-tab-2-p'] }}</p>
                                     <div class="input-container mt-3" style="width: 92%;">
-                                        <i class="far fa-smile icon"></i>
+                                        <i class="far fa-user icon"></i>
                                         <input class="input-field rounded" type="text" placeholder="Nome"
                                             name="name" required>
                                     </div>
@@ -717,7 +777,7 @@
                                         </label>
                                     </div>
                                     <div class="col-md-12 ml-4" style="max-width: 92%;">
-                                        <button class="btn btn-dark w-100 mt-2" type="submit"
+                                        <button class="btn theme-btn-three thm-btn w-100 mt-2" type="submit"
                                             name="form_contact">Contacte-nos Agora!</button>
                                     </div>
                                 </div>
@@ -733,8 +793,8 @@
     <!-- Feature Start -->
     <section class="feature-one">
         <div class="container">
-            <div class="sec-title text-center mb-5">
-                <h6 class="sec-title__tagline"><span
+            <div class="text-center mb-5">
+                <h6 class="sec-title__tagline text-titles"><span
                         class="sec-title__tagline__left"></span>{{ $company_status[0]['company-status-h6'] }}<span
                         class="sec-title__tagline__right"></span></h6><!-- /.sec-title__tagline -->
                 <h3 class="sec-title__title">{{ $company_status[0]['company-status-h3'] }}</h3>
@@ -784,14 +844,14 @@
     <!-- Service Start -->
     <section class="service-one">
         <div class="container">
-            <div class="sec-title text-center">
-                <h6 class="sec-title__tagline"><span
+            <div class="text-center">
+                <h6 class="sec-title__tagline text-titles"><span
                         class="sec-title__tagline__left"></span>{{ $best_service[0]['best-service-h6-1'] }}<span
                         class="sec-title__tagline__right"></span></h6><!-- /.sec-title__tagline -->
-                <h3 class="sec-title__title">{{ $best_service[0]['best-service-h3-1'] }}</h3>
+                <h3 class="sec-title__title mt-5">{{ $best_service[0]['best-service-h3-1'] }}</h3>
                 <!-- /.sec-title__title -->
             </div><!-- /.sec-title -->
-            <div class="row" style="margin-top: 150px">
+            <div class="row mt-5">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                     <div class="service-one__item text-center">
                         <div class="service-one__item__image">
@@ -867,7 +927,7 @@
 
                 <div class="col-lg-12 col-md-12 text-center text-white mt-5"
                     style="max-width:250px;margin-left:auto;margin-right:auto;">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    <button type="button" class="btn theme-btn-three thm-btn" data-toggle="modal" data-target="#exampleModal">
                         Abrir formulario
                     </button>
                 </div>
@@ -882,11 +942,11 @@
         <div class="container">
             <div class="sec-title text-center light">
                 <h6>{{ $our_service_1[0]['our-services-h6-1'] }}</h6>
-                <h2>{{ $our_service_1[0]['our-services-h2-1'] }}<br />{{ $our_service_1[0]['our-services-h2-2'] }}
-                </h2>
+                <h2>{{ $our_service_1[0]['our-services-h2-1'] }}</h2>
+                <p class="text-white mt-3">{{ $our_service_1[0]['our-services-h2-2'] }}</p>
             </div>
 
-            <div class="tabs-box" style="margin-top:140px;">
+            <div class="tabs-box" style="margin-top:100px;">
                 <div class="tab-btn-one">
                     <ul class="tab-btns tab-buttons clearfix">
                         <li class="tab-btn active-btn" data-tab="#tab-1">
@@ -898,7 +958,7 @@
                     <div class="tab bg-light active-tab p-5" id="tab-1"
                         style="border-bottom:1px solid lightgray;">
                         <div class="mt-5">
-                            <h2 class="h2"><strong>{{ $our_service_1[0]['our-services-tab-1-h2'] }}</strong></h2>
+                            {{-- <h2 class="h2"><strong>{{ $our_service_1[0]['our-services-tab-1-h2'] }}</strong></h2>
                             <div class="text mt-3">
                                 <p>{{ $our_service_1[0]['our-services-tab-1-p'] }}<br />{{ $our_service_1[0]['our-services-tab-1-p-1'] }}
                                 </p>
@@ -910,7 +970,7 @@
                             </ul>
                             <div class="btn-box mt-5">
                                 <a data-toggle="modal" data-target="#exampleModal"
-                                    class="theme-btn-three thm-btn">Contacte-nos Agora!</a>
+                                    class="btn theme-btn-three thm-btn w-25 text-white">Contacte-nos Agora!</a>
                             </div>
                             <div class="other-text">
                                 <p>{{ $our_service_1[0]['our-services-tab-1-p-2'] }}, <a data-toggle="modal"
@@ -918,12 +978,49 @@
                                 </p>
                                 <div class="arrow" style="background-image: url(assets/images/icons/arrow-1.png);">
                                 </div>
+                            </div> --}}
+
+                            <div class="row clearfix">
+                                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                                    <div class="content_block_2">
+                                        <div class="content-box">
+                                            <h2>{{ $our_service_1[0]['our-services-tab-1-h2'] }}</h2>
+                                            <div class="text">
+                                                <p>{{ $our_service_1[0]['our-services-tab-1-p'] }}<br />{{ $our_service_1[0]['our-services-tab-1-p-1'] }}</p>
+                                            </div>
+                                            <ul class="list-item clearfix"> 
+                                                <li>{{ $our_service_1[0]['our-services-tab-1-li-1'] }}</li>
+                                                <li>{{ $our_service_1[0]['our-services-tab-1-li-2'] }}</li>
+                                                <li>{{ $our_service_1[0]['our-services-tab-1-li-3'] }}</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a data-toggle="modal" data-target="#exampleModal" class="theme-btn-three thm-btn">Contacte-nos agora.</a>
+                                            </div>
+                                            <div class="other-text">
+                                                <p>{{ $our_service_1[0]['our-services-tab-1-a-2'] }} <a data-toggle="modal"
+                                                    data-target="#exampleModal">Make an Appointment</a></p>
+                                                <div class="arrow" style="background-image: url(assets/images/icons/arrow-1.png);"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                                    <div class="image_block_2">
+                                        <div class="image-box">
+                                            <figure class="image"><img src="assets/images/service/service-1.jpg" alt=""></figure>
+                                            <div class="image-content">
+                                                <h6>Price From</h6>
+                                                <h2>$49</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab bg-light p-5" id="tab-2" style="border-bottom:1px solid lightgray;">
                         <div class="mt-5">
-                            <h2 class="h2"><strong>{{ $our_service_2[0]['our-services-tab-2-h2'] }}</strong></h2>
+                            {{-- <h2 class="h2"><strong>{{ $our_service_2[0]['our-services-tab-2-h2'] }}</strong></h2>
                             <div class="text mt-3">
                                 <p>{{ $our_service_2[0]['our-services-tab-2-p'] }}<br />{{ $our_service_2[0]['our-services-tab-2-p-1'] }}
                                 </p>
@@ -935,13 +1032,50 @@
                             </ul>
                             <div class="btn-box mt-5">
                                 <a data-toggle="modal" data-target="#exampleModal"
-                                    class="theme-btn-three thm-btn">Contacte-nos Agora!</a>
+                                    class="btn theme-btn-three thm-btn w-25 text-white">Contacte-nos Agora!</a>
                             </div>
                             <div class="other-text">
                                 <p>{{ $our_service_2[0]['our-services-tab-2-p-2'] }}, <a data-toggle="modal"
                                         data-target="#exampleModal">{{ $our_service_2[0]['our-services-tab-2-a'] }}</a>
                                 </p>
                                 <div class="arrow" style="background-image: url(assets/images/icons/arrow-1.png);">
+                                </div>
+                            </div> --}}
+
+                            <div class="row clearfix">
+                                <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                                    <div class="content_block_2">
+                                        <div class="content-box">
+                                            <h2>{{ $our_service_2[0]['our-services-tab-2-h2'] }}</h2>
+                                            <div class="text">
+                                                <p>{{ $our_service_2[0]['our-services-tab-2-p'] }}<br />{{ $our_service_2[0]['our-services-tab-2-p-1'] }}</p>
+                                            </div>
+                                            <ul class="list-item clearfix"> 
+                                                <li>{{ $our_service_2[0]['our-services-tab-2-li-1'] }}</li>
+                                                <li>{{ $our_service_2[0]['our-services-tab-2-li-2'] }}</li>
+                                                <li>{{ $our_service_2[0]['our-services-tab-2-li-3'] }}</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a data-toggle="modal" data-target="#exampleModal" class="theme-btn-three thm-btn">Contacte-nos agora.</a>
+                                            </div>
+                                            <div class="other-text">
+                                                <p>{{ $our_service_2[0]['our-services-tab-2-p-2'] }} <a data-toggle="modal"
+                                                    data-target="#exampleModal">Make an Appointment</a></p>
+                                                <div class="arrow" style="background-image: url(assets/images/icons/arrow-1.png);"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                                    <div class="image_block_2">
+                                        <div class="image-box">
+                                            <figure class="image"><img src="assets/images/service/service-1.jpg" alt=""></figure>
+                                            <div class="image-content">
+                                                <h6>Price From</h6>
+                                                <h2>$49</h2>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -951,70 +1085,6 @@
 
         </div>
     </section>
-    <!-- Service End
-            <section class="about-one" id="about">
-                <div class="about-one__bg" style="background-image: url({{ $about_now[0]['about-now-1-bg-img-path'] }});"></div>
-                <div class="about-one__shape" style="background-image: url({{ $about_now[0]['about-now-2-img-path'] }});"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 wow fadeInLeft" data-wow-delay="300ms">
-                            <div class="about-one__content">
-                                <div>
-                                    <h6 class="sec-title__tagline">{{ $about_now[0]['about-now-h6'] }}</h6><!-- /.sec-title__tagline
-                                    <h3 class="sec-title__title">{{ $about_now[0]['about-now-h3'] }}</h3><!-- /.sec-title__title
-                                </div><!-- /.sec-title
-                                <p class="about-one__content__text">
-                                    {{ $about_now[0]['about-now-p'] }}
-                                </p>
-                                <ul class="about-one__content__list">
-                                    <li><span class="icofont-checked"></span>
-                                        <p>{{ $about_now[0]['about-now-li-1'] }}</p>
-                                    </li>
-                                    <li><span class="icofont-checked"></span>
-                                        <p>{{ $about_now[0]['about-now-li-2'] }}</p>
-                                    </li>
-                                    <li><span class="icofont-checked"></span>
-                                        <p>{{ $about_now[0]['about-now-li-3'] }}</p>
-                                    </li>
-                                    <li><span class="icofont-checked"></span>
-                                        <p>{{ $about_now[0]['about-now-li-4'] }}</p>
-                                    </li>
-                                    <li><span class="icofont-checked"></span>
-                                        <p>{{ $about_now[0]['about-now-li-5'] }}</p>
-                                    </li>
-                                    <li><span class="icofont-checked"></span>
-                                        <p>{{ $about_now[0]['about-now-li-6'] }}</p>
-                                    </li>
-                                </ul>
-                                <div class="clearfix"></div>
-                                <!--
-                                <div class="about-one__content__btn">
-                                    <a href="about.html" class="tolak-btn"><b>About More</b><span></span></a>
-                                    <h5 class="about-one__content__btn__text">Watching video</h5>
-                                    <img class="about-one__content__btn__arrow" src="assets/images/shapes/arrow.png" alt="tolak">
-                                </div>
-                                <div class="about-one__video-btn">
-                                    <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                                        <i class="fa fa-play"></i>
-                                        <span class="video-popup__btn-ripple"></span>
-                                    </a>
-                                </div>
-                                
-                            </div><!-- /.about__content
-                        </div><!-- /.col-xl-6
-                        <div class="col-xl-6">
-                            <div class="tolak-stretch-element-inside-column">
-                                <div class="about-one__image wow slideInRight">
-                                    <img src="assets/images/resources/about-1-1.jpg" alt="tolak">
-                                    <div class="about-one__image__text">
-                                        <span></span>36+ expressions challenge
-                                    </div>
-                                </div><!-- /.about__image
-                            </div><!-- /.tolak-stretch-element-inside-column
-                        </div><!-- /.col-lg-6
-                    </div><!-- /.row
-                </div><!-- /.container
-            </section><!-- /.about-one
             <!-- service-section -->
     <section class="about-one">
 
@@ -1027,8 +1097,8 @@
             <div class="row">
                 <div class="col-xl-6 wow fadeInLeft" data-wow-delay="300ms">
                     <div class="about-one__content">
-                        <div class="">
-                            <h6 class="sec-title__tagline">{{ $about_now[0]['about-now-h6'] }}</h6>
+                        <div class="text-titles">
+                            <h6 class="sec-title__tagline text-titles">{{ $about_now[0]['about-now-h6'] }}</h6>
                             <!-- /.sec-title__tagline -->
                             <h3 class="sec-title__title">{{ $about_now[0]['about-now-h3'] }}</h3>
                             <!-- /.sec-title__title -->
@@ -1095,7 +1165,7 @@
                 <div class="col-lg-5">
                     <div class="why-choose-two__content">
                         <div class="sec-title-two text-left">
-                            <h6 class="sec-title-two__tagline"><span
+                            <h6 class="sec-title-two__tagline text-titles"><span
                                     class="sec-title-two__tagline__left icofont-rounded-double-left"></span>{{ $choose_us[0]['choose-us-p-1'] }}<span
                                     class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6>
                             <!-- /.sec-title-two__tagline -->
@@ -1157,7 +1227,7 @@
     <section>
         <div class="container" style="margin-top:50px;">
             <div class="sec-title-two text-center">
-                <h6 class="sec-title-two__tagline"><span
+                <h6 class="sec-title-two__tagline text-titles"><span
                         class="sec-title-two__tagline__left icofont-rounded-double-left"></span>{{ $testimonial_say[0]['testimonial-say-p-strong'] }}<span
                         class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6>
                 <!-- /.sec-title-two__tagline -->
@@ -1168,14 +1238,14 @@
                 <div class="col-sm-12 col-md-3 testimonial-boxes text-center text-primary bg-dark w-100">
                     <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;"></i>
                     <blockquote>
-                        <p class="text-center text-white-50 mt-2">
+                        <p class="text-center text-white-50 mt-5">
                             <i>
                                 {{ $testimonial_say[0]['testimonial-say-p-i-1'] }}
                                 <br />
                                 {{ $testimonial_say[0]['testimonial-say-p-i-1-1'] }}
                             </i>
                         </p>
-                        <h3 class="h3 text-white"><strong>{{ $testimonial_say[0]['testimonial-say-h3-1'] }}</strong>
+                        <h3 class="h3 text-white mt-3"><strong>{{ $testimonial_say[0]['testimonial-say-h3-1'] }}</strong>
                         </h3>
                         <h5 class="h5 text-white-50">
                             <strong>{{ $testimonial_say[0]['testimonial-say-h5-1'] }}</strong></h5>
@@ -1191,14 +1261,14 @@
                 <div class="col-sm-12 col-md-3 testimonial-boxes text-center text-primary bg-dark w-100">
                     <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;"></i>
                     <blockquote>
-                        <p class="text-center text-white-50 mt-2">
+                        <p class="text-center text-white-50 mt-5">
                             <i>
                                 {{ $testimonial_say[0]['testimonial-say-p-i-2'] }}
                                 <br />
                                 {{ $testimonial_say[0]['testimonial-say-p-i-2-1'] }}
                             </i>
                         </p>
-                        <h3 class="h3 text-white"><strong>{{ $testimonial_say[0]['testimonial-say-h3-2'] }}</strong>
+                        <h3 class="h3 text-white mt-3"><strong>{{ $testimonial_say[0]['testimonial-say-h3-2'] }}</strong>
                         </h3>
                         <h5 class="h5 text-white-50">
                             <strong>{{ $testimonial_say[0]['testimonial-say-h5-2'] }}</strong></h5>
@@ -1214,14 +1284,14 @@
                 <div class="col-sm-12 col-md-3 testimonial-boxes text-center text-primary bg-dark w-100">
                     <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;"></i>
                     <blockquote>
-                        <p class="text-center text-white-50 mt-2">
+                        <p class="text-center text-white-50 mt-5">
                             <i>
                                 {{ $testimonial_say[0]['testimonial-say-p-i-3'] }}
                                 <br />
                                 {{ $testimonial_say[0]['testimonial-say-p-i-3-1'] }}
                             </i>
                         </p>
-                        <h3 class="h3 text-white"><strong>{{ $testimonial_say[0]['testimonial-say-h3-3'] }}</strong>
+                        <h3 class="h3 text-white mt-3"><strong>{{ $testimonial_say[0]['testimonial-say-h3-3'] }}</strong>
                         </h3>
                         <h5 class="h5 text-white-50">
                             <strong>{{ $testimonial_say[0]['testimonial-say-h5-3'] }}</strong></h5>
@@ -1707,7 +1777,6 @@
                 $('#customer_type').val('company');
                 $("#company").val("company");
             })
-
 
 
 

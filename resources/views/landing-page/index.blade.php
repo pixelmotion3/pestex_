@@ -967,7 +967,7 @@
                                 <!-- Three Icon Images Boxes-->
                                 <div class="tab-pane fade" id="image-tabs-text" role="tabpanel" aria-labelledby="image-tabs-text-tab">
                                     
-                                    <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post">
+                                    <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
                                       @csrf
                                       @method('PUT')
                                       <div class="col-12 mt-5">
@@ -1075,7 +1075,7 @@
                                  <!-- background-images+text -->
                                  <div class="tab-pane fade" id="background-images+text" role="tabpanel" aria-labelledby="background-images+text-tab">
                                     
-                                    <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post">
+                                    <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
                                       @csrf
                                       @method('PUT')  
                                       <div class="col-12 mt-5">
@@ -1098,7 +1098,7 @@
                                             <img src="{{ $about_now[0]['about-now-1-bg-img-path'] }}" class="img-fluid" alt="..." style="max-width:1026px;max-height:798px;">
                                             <div class="card-body">                                              
                                               <label for="exampleFormControlFile1">Example file input</label>
-                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="carrousel-bg-img-path">                        
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="about-now-1-bg-img-path">                        
                                             </div>
                                           </div>
                                       </div>
@@ -1110,7 +1110,7 @@
                                             <img src="{{ $about_now[0]['about-now-2-img-path'] }}" class="img-fluid" alt="..." style="max-width:1026px;max-height:798px;">
                                             <div class="card-body">                                              
                                               <label for="exampleFormControlFile1">Example file input</label>
-                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="carrousel-bg-img-path">                        
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="about-now-2-img-path">                        
                                             </div>
                                           </div>
                                       </div>
@@ -1145,7 +1145,7 @@
                                 </div>
                                 <!-- three-images+six-icons+three-paragraphs -->
                                 <div class="tab-pane fade" id="three-images+six-icons+three-paragraphs" role="tabpanel" aria-labelledby="three-images+six-icons+three-paragraphs-tab">
-                                  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post">
+                                  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
                                       @csrf
                                       @method('PUT') 
                                       <div class="col-12 mt-5">
@@ -1221,14 +1221,14 @@
                                           </div>
                                       </div>
                                       <div class="col-12">
-                                        <button class="btn btn-primary w-100" type="submit" name="form">Submit</button>
+                                        <button class="btn btn-primary w-100" type="submit" name="form7">Submit</button>
                                       </div>
                                     </form>                               
                                 </div>
                                 <!-- three-images+six-icons+three-paragraphs -->
                                 <div class="tab-pane fade" id="three-dark-bg-boxes" role="tabpanel" aria-labelledby="three-dark-bg-boxes-tab">
                                     
-                                <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post">
+                                <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
                                       @csrf
                                       @method('PUT') 
                                       <div class="col-12 mt-5">
@@ -1295,7 +1295,7 @@
                                 </div>
                                 <!-- four-images+collapse-box -->
                                 <div class="tab-pane fade" id="four-images+collapse-box" role="tabpanel" aria-labelledby="four-images+collapse-box-tab">                                    
-                                    <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post">
+                                    <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
                                       @csrf
                                       @method('PUT')
                                       <div class="col-12 mt-5 form-group">   
@@ -1306,7 +1306,7 @@
                                             <img src="{{ $collapse[0]['collapse-bg-img'] }}" class="img-fluid" alt="..." style="max-height:150px;">
                                             <div class="card-body">                                              
                                               <label for="exampleFormControlFile1">Example file input</label>
-                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="carrousel-bg-img-path">                        
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="collapse-bg-img">                        
                                             </div>
                                           </div>
                                       </div>

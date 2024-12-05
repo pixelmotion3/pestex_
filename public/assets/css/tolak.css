@@ -801,7 +801,7 @@ h6 {
   display: inline-block;
   width: 30px;
   height: 2px;
-  background-color: var(--tolak-base, #3d72fc);
+  background-color: #ff6600;
   margin-right: 10px;
 }
 .sec-title__tagline__right {
@@ -810,7 +810,7 @@ h6 {
   display: inline-block;
   width: 30px;
   height: 2px;
-  background-color: var(--tolak-base, #3d72fc);
+  background-color: #ff6600;
   margin-left: 10px;
 }
 .sec-title__title {
@@ -25828,7 +25828,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
 }
     
 .active-tab{
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid #ff6600;
   border-top: 1px solid lightgray;
   border-right: 1px solid lightgray;
   border-left: 1px solid lightgray;
@@ -25836,4 +25836,8 @@ body.boxed-wrapper .main-slider-one__floating-text {
 
 .rounded-box{
   border-radius: 30px;
+}
+
+.text-titles {
+  color:#ff6600;
 }

@@ -24,7 +24,7 @@
                                     fill="#7367F0" />
                             </svg>
                         </span>
-                        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
+                        <span class="app-brand-text demo menu-text fw-bold">sos pragas</span>
                     </a>
 
                     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
@@ -668,7 +668,7 @@
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
                     <!-- Content -->
-                    <div class="container-fluid">
+                    <div class="container">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card">
@@ -686,7 +686,7 @@
                                             <div class="tab-pane fade show active" id="main-screen" role="tabpanel"
                                                 aria-labelledby="main-screen-tab">
                                                 <form method="post"
-                                                    action="{{ route('sustainability-page.update', 1) }}">
+                                                    action="{{ route('sustainability-page.update', 1) }}" enctype="multipart/form-data">
                                                     @csrf
                                                     @method('put')
                                                     <div class="col-12 mt-5">

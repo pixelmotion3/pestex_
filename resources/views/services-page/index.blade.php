@@ -1281,7 +1281,7 @@
                                                 aria-labelledby="detail-services-tab">        
                                                 <div class="container">
                                                     <div class="row">                                                        
-                                                        <form action="{{ route('ServiceDetails.update', 1) }}" method="post">
+                                                        <form action="{{ route('ServiceDetails.update', 1) }}" method="post" enctype="multipart/form-data">
                                                             @csrf
                                                             @method('put')
                                                             <div class="col-12 mt-5 form-group">
