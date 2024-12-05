@@ -381,10 +381,10 @@
         <div class="container-fluid">
             <div class="main-header__inner">
                 <div class="main-header__logo">
-                    <a href="https://pestex.pixeldev05.com/">
+                    <a href="/">
                         <img src="assets/images/logo-dark.png" alt="Tolak HTML" width="184">
                     </a>
-                    <nav class="main-header__nav main-menu">
+                    <nav class="main-header__nav main-menu" style="height: 80px">
                         <p>Fazemos desaparecer os seus problemas de insectos</p>
                     </nav><!-- /.main-header__nav -->
                 </div><!-- /.main-header__logo -->
