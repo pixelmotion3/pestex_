@@ -18,5 +18,6 @@ class landing_6page extends Model
         'about-now-li-4',
         'about-now-li-5',
         'about-now-li-6',
+        'about-now-img-path'
     ];
 }

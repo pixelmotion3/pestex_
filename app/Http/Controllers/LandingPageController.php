@@ -169,10 +169,22 @@ class LandingPageController extends Controller
                 'our-services-tab-1-a-2' => $request->input('our-services-tab-1-a-2'),
             ]);
             if ($request->hasFile('our-services-bg-img-path-1')) {
-                $filename = $request->file('our-services-bg-img-path-1');
                 $path = $request->file('our-services-bg-img-path-1')->store('assets/images');     
-                $query = landing_3page::where('id',1)->update([
+                $query = landing_4page::where('id',1)->update([
                     'our-services-bg-img-path-1' => 'storage/' . $path 
+                ]);                 
+            } 
+            if ($request->hasFile('img-1')) {
+                $path = $request->file('img-1')->store('assets/images');     
+                $query = landing_4page::where('id',1)->update([
+                    'img-1' => 'storage/' . $path 
+                ]);                 
+            } 
+
+            if ($request->hasFile('img-2')) {
+                $path = $request->file('img-2')->store('assets/images');     
+                $query = landing_5page::where('id',1)->update([
+                    'img-2' => 'storage/' . $path 
                 ]);                 
             } 
             $query = landing_5page::where('id',1)->update([
@@ -210,6 +222,13 @@ class LandingPageController extends Controller
                 $path = $request->file('about-now-2-img-path')->store('assets/images');     
                 $query = landing_6page::where('id',1)->update([
                     'about-now-2-img-path' => 'storage/' . $path 
+                ]);                 
+            } 
+
+            if ($request->hasFile('about-now-img-path')) {
+                $path = $request->file('about-now-img-path')->store('assets/images');     
+                $query = landing_6page::where('id',1)->update([
+                    'about-now-img-path' => 'storage/' . $path 
                 ]);                 
             } 
         }

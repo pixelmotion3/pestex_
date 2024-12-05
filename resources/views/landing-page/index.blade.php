@@ -1030,6 +1030,18 @@
                                         <label for="validationCustom01" class="form-label" style="float:left;">Tab 1 a 2</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_1[0]['our-services-tab-1-a-2'] }}" name="our-services-tab-1-a-2" required>
                                       </div>
+                                      <div class="col-12 mt-5 form-group">   
+                                        <div class="card-header">
+                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
+                                        </div>                                       
+                                          <div class="card">
+                                            <img src="{{ $our_service_1[0]['img-1'] }}" class="img-fluid" alt="..." style="max-height:515px;max-width:1920px;">
+                                            <div class="card-body">                                              
+                                              <label for="exampleFormControlFile1">Example file input</label>
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-1">                        
+                                            </div>
+                                          </div>
+                                      </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">Tab 2</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_2[0]['our-services-tab-2'] }}" name="our-services-tab-2" required>
@@ -1065,6 +1077,18 @@
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">Tab 2 a 2</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_2[0]['our-services-tab-2-a'] }}" name="our-services-tab-2-a" required>
+                                      </div>
+                                      <div class="col-12 mt-5 form-group">   
+                                        <div class="card-header">
+                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
+                                        </div>                                       
+                                          <div class="card">
+                                            <img src="{{ $our_service_2[0]['img-2'] }}" class="img-fluid" alt="..." style="max-height:515px;max-width:1920px;">
+                                            <div class="card-body">                                              
+                                              <label for="exampleFormControlFile1">Example file input</label>
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-2">                        
+                                            </div>
+                                          </div>
                                       </div>
                                       <div class="col-12">
                                         <button class="btn btn-primary w-100" type="submit" name="form5">Submit</button>
@@ -1137,6 +1161,18 @@
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">Li 6</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $about_now[0]['about-now-li-6'] }}" name="about-now-li-6" required>
+                                      </div>
+                                      <div class="col-12 mt-5 form-group">   
+                                        <div class="card-header">
+                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
+                                        </div>                                       
+                                          <div class="card">
+                                            <img src="{{ $about_now[0]['about-now-img-path'] }}" class="img-fluid" alt="..." style="max-width:1026px;max-height:798px;">
+                                            <div class="card-body">                                              
+                                              <label for="exampleFormControlFile1">Example file input</label>
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="about-now-img-path">                        
+                                            </div>
+                                          </div>
                                       </div>
                                       <div class="col-12">
                                         <button class="btn btn-primary w-100" type="submit" name="form6">Submit</button>

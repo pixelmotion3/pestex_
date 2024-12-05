@@ -322,7 +322,7 @@
                                             <h2 class="h2 mt-5">{{ $main_screen[0]['quote-form-tab-2-h2'] }}</h2>
                                             <p class="mb-5">{{ $main_screen[0]['quote-form-tab-2-p'] }}</p>
                                             <div class="input-container mt-3" style="width: 92%;">
-                                                <i class="far fa-smile icon"></i>
+                                                <i class="far fa-user icon"></i>
                                                 <input class="input-field rounded" type="text" placeholder="Nome"
                                                     name="name">
                                                 @error('name')
@@ -417,7 +417,7 @@
                     </div>
                     <div class="main-slider-one__bg"
                         style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path'] }});"></div>
-                    <!--
+                    
                             <svg class="main-slider-one__bg-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <rect class='circle0 steap' x="5.2%" y="0" rx="0" ry="0" width="100%" height="100%" />
                                 <rect class='circle1 steap' x="15.6%" y="0" rx="0" ry="0" width="100%" height="100%" />
@@ -430,7 +430,7 @@
                                 <rect class='circle8 steap' x="88.5%" y="0" rx="0" ry="0" width="100%" height="100%" />
                                 <rect class='circle9 steap' x="100%" y="0" rx="0" ry="0" width="100%" height="100%" />
                             </svg>
-                            -->
+                            
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -471,7 +471,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main-slider-one__floating-text">Tolak</div>
+                    <div class="main-slider-one__floating-text">SOS PRAGAS</div>
                 </div>
             </div><!-- item -->
             <div class="item">
@@ -539,7 +539,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main-slider-one__floating-text">Tolak</div>
+                    <div class="main-slider-one__floating-text">SOS PRAGAS</div>
                 </div>
             </div><!-- item -->
             <div class="item">
@@ -607,7 +607,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main-slider-one__floating-text">Pestex</div>
+                    <div class="main-slider-one__floating-text">SOS PRAGAS</div>
                 </div>
             </div><!-- item -->
         </div>
@@ -946,7 +946,7 @@
                 <p class="text-white mt-3">{{ $our_service_1[0]['our-services-h2-2'] }}</p>
             </div>
 
-            <div class="tabs-box" style="margin-top:100px;">
+            <div class="tabs-box">
                 <div class="tab-btn-one">
                     <ul class="tab-btns tab-buttons clearfix">
                         <li class="tab-btn active-btn" data-tab="#tab-1">
@@ -958,28 +958,6 @@
                     <div class="tab bg-light active-tab p-5" id="tab-1"
                         style="border-bottom:1px solid lightgray;">
                         <div class="mt-5">
-                            {{-- <h2 class="h2"><strong>{{ $our_service_1[0]['our-services-tab-1-h2'] }}</strong></h2>
-                            <div class="text mt-3">
-                                <p>{{ $our_service_1[0]['our-services-tab-1-p'] }}<br />{{ $our_service_1[0]['our-services-tab-1-p-1'] }}
-                                </p>
-                            </div>
-                            <ul class="list-item clearfix mt-5">
-                                <li>{{ $our_service_1[0]['our-services-tab-1-li-1'] }}</li>
-                                <li>{{ $our_service_1[0]['our-services-tab-1-li-2'] }}</li>
-                                <li>{{ $our_service_1[0]['our-services-tab-1-li-3'] }}</li>
-                            </ul>
-                            <div class="btn-box mt-5">
-                                <a data-toggle="modal" data-target="#exampleModal"
-                                    class="btn theme-btn-three thm-btn w-25 text-white">Contacte-nos Agora!</a>
-                            </div>
-                            <div class="other-text">
-                                <p>{{ $our_service_1[0]['our-services-tab-1-p-2'] }}, <a data-toggle="modal"
-                                        data-target="#exampleModal">{{ $our_service_1[0]['our-services-tab-1-a-2'] }}</a>
-                                </p>
-                                <div class="arrow" style="background-image: url(assets/images/icons/arrow-1.png);">
-                                </div>
-                            </div> --}}
-
                             <div class="row clearfix">
                                 <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                                     <div class="content_block_2">
@@ -1007,7 +985,7 @@
                                 <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                                     <div class="image_block_2">
                                         <div class="image-box">
-                                            <figure class="image"><img src="assets/images/service/service-1.jpg" alt=""></figure>
+                                            <figure class="image"><img src="{{ $our_service_1[0]['img-1'] }}" alt=""></figure>
                                             <div class="image-content">
                                                 <h6>Price From</h6>
                                                 <h2>$49</h2>
@@ -1020,28 +998,6 @@
                     </div>
                     <div class="tab bg-light p-5" id="tab-2" style="border-bottom:1px solid lightgray;">
                         <div class="mt-5">
-                            {{-- <h2 class="h2"><strong>{{ $our_service_2[0]['our-services-tab-2-h2'] }}</strong></h2>
-                            <div class="text mt-3">
-                                <p>{{ $our_service_2[0]['our-services-tab-2-p'] }}<br />{{ $our_service_2[0]['our-services-tab-2-p-1'] }}
-                                </p>
-                            </div>
-                            <ul class="list-item clearfix mt-5">
-                                <li>{{ $our_service_2[0]['our-services-tab-2-li-1'] }}</li>
-                                <li>{{ $our_service_2[0]['our-services-tab-2-li-2'] }}</li>
-                                <li>{{ $our_service_2[0]['our-services-tab-2-li-3'] }}</li>
-                            </ul>
-                            <div class="btn-box mt-5">
-                                <a data-toggle="modal" data-target="#exampleModal"
-                                    class="btn theme-btn-three thm-btn w-25 text-white">Contacte-nos Agora!</a>
-                            </div>
-                            <div class="other-text">
-                                <p>{{ $our_service_2[0]['our-services-tab-2-p-2'] }}, <a data-toggle="modal"
-                                        data-target="#exampleModal">{{ $our_service_2[0]['our-services-tab-2-a'] }}</a>
-                                </p>
-                                <div class="arrow" style="background-image: url(assets/images/icons/arrow-1.png);">
-                                </div>
-                            </div> --}}
-
                             <div class="row clearfix">
                                 <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                                     <div class="content_block_2">
@@ -1069,7 +1025,7 @@
                                 <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                                     <div class="image_block_2">
                                         <div class="image-box">
-                                            <figure class="image"><img src="assets/images/service/service-1.jpg" alt=""></figure>
+                                            <figure class="image"><img src="{{ $our_service_2[0]['img-2'] }}" alt=""></figure>
                                             <div class="image-content">
                                                 <h6>Price From</h6>
                                                 <h2>$49</h2>
@@ -1152,7 +1108,7 @@
                 <div class="col-xl-6">
                     <div class="tolak-stretch-element-inside-column">
                         <div class="about-one__image wow slideInRight">
-                            <img src="assets/images/resources/about-1-1.jpg" alt="tolak">
+                            <img src="{{ $about_now[0]['about-now-img-path'] }}" alt="tolak">
                         </div><!-- /.about__image -->
                     </div><!-- /.tolak-stretch-element-inside-column  -->
                 </div><!-- /.col-lg-6 -->
@@ -1504,10 +1460,9 @@
     <section class="cta-four mt-5">
         <div class="container" style="margin-top:150px;">
             <div class="cta-four__bg" style="background-image: url(assets/images/resources/cta-4-bg.jpg);">
-                <!--
+
                         <div class="cta-four__shape" style="background-image: url(assets/images/shapes/cta-4-border.png);"></div>
-                        <div class="cta-four__overlay" style="background-image: url(assets/images/shapes/cta-4-bg-overlay.png);"></div>
-        -->
+   
                 <div class="row">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="00ms">
                         <div class="cta-four__content">
@@ -1545,28 +1500,6 @@
         </div>
     </section>
 
-    <!-- <section>
-                <div class="container mt-5 mb-5">
-                    <div class="row">
-                        <div class="col-md-12 services-background-image p-5" style="background-image: url({{ $video_contact[0]['watch-video-bg-img'] }});">
-                            <p class="text-primary mt-5 ml-5"><strong> << {{ $video_contact[0]['watch-video-p-strong-1'] }} >></strong></p>
-                            <h2 class="text-white h2 mt-5">{{ $video_contact[0]['watch-video-h2'] }} </h2>
-                            <p class="text-white mt-5">{{ $video_contact[0]['watch-video-p-2'] }}<br/>{{ $video_contact[0]['watch-video-p-2-1'] }}</p>
-                            <div class="progress mt-5 w-25">
-                              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <div class="d-flex flex-row bd-highlight mb-3">
-                              <div class="p-2 bd-highlight">
-                                  <i class="fa fa-comments mt-5" aria-hidden="true" style="font-size: 4rem;"></i>
-                              </div>
-                              <div class="p-2 bd-highlight">
-                                <p class="text-white mt-5">{{ $video_contact[0]['watch-video-p-3'] }}<br/>{{ $video_contact[0]['watch-video-p-3-1'] }}</p>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
     <section>
         <div class="container mt-5 mb-5">
             <div class="row">
@@ -1625,70 +1558,6 @@
             </div>
         </div>
     </section>
-    <!--
-            <section class="contact-three" id="contact">
-            <div class="container">
-                <div class="contact-three__wrapper" style="background-image: url({{ $video_contact[0]['contact-us-bg-img'] }});">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-4"></div>
-                        <div class="col-lg-6 col-md-8 wow fadeInUp">
-                            <div class="contact-three__content">
-                                <div class="sec-title-four text-center">
-                                    <h6 class="sec-title-four__tagline"><span class="sec-title-four__tagline__left-border"></span>CONTACT US<span class="sec-title-four__tagline__right-border"></span></h6>
-                                    <h3 class="sec-title-four__title">{{ $video_contact[0]['contact-us-h2-part-1'] }} </br>{{ $video_contact[0]['contact-us-h2-part-2'] }}</h3>
-                                </div>
-                                <form class="contact-three__form contact-form-validated form-one" method="POST" action="{{ route('FrontPage.store') }}">
-                                    @csrf
-                                    @method('POST')
-                                    <div class="form-one__group">
-                                        <div class="form-one__control form-one__control--full">
-                                            <input type="text" name="name" placeholder="Your Name *">
-                                        </div>
-                                        <div class="form-one__control">
-                                            <input type="text" name="phone" placeholder="Your Phone">
-                                        </div>
-                                        <div class="form-one__control">
-                                            <input type="email" name="email" placeholder="Your Email *">
-                                        </div>
-                                        <!--
-                                        <div class="form-one__control">
-                                            <input type="text" name="phone" placeholder="Your Subjects *">
-                                        </div>
-                                        <!--
-                                        <div class="form-one__control">
-                                            <div class="form-one__control__select">
-                                                <select class="selectpicker" aria-label="Default select example">
-                                                    <option selected="">Select Service</option>
-                                                    <option value="1">Website Development</option>
-                                                    <option value="2">App Development</option>
-                                                    <option value="3">IT Counsultant</option>
-                                                </select>
-                                            </div><!-- /.main-menu__language -->
-    <!--
-                                        </div><!-- /.form-one__control
-                                        <div class="form-one__control form-one__control--full">
-                                            <textarea name="message" placeholder="Your Message *"></textarea>
-                                        </div>
-                                        <div class="form-one__control form-one__control--full">
-                                            <button type="submit" class="tolak-btn-two tolak-btn-two--home-six">
-                                                <span class="tolak-btn-two__left-star"></span>
-                                                <span>Send Request<i class="tolak-icons-two-arrow-right-short"></i></span>
-                                                <span class="tolak-btn-two__right-star"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                                <div class="contact-three__content__info wow fadeInUp" data-wow-delay="200ms">
-                                    <div class="contact-three__content__info__icon"><i class="tolak-icons-two-phone-call"></i></div>
-                                    <h5 class="contact-three__content__info__title">Get Contact Now</h5>
-                                    <p class="contact-three__content__info__text"><a href="tel:+11234751328">+11234 751 328</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- /.container -->
-    </section><!-- /.contact-three -->
     <!-- footer -->
     <footer class="footer mt-5">
         <div class="container-fluid" style="max-height:200px;margin-top:150px;">
