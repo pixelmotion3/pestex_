@@ -130,6 +130,7 @@ class LandingPageController extends Controller
                 'best-service-p-2' => $request->input('best-service-p-2'),
                 'best-service-a-3' => $request->input('best-service-a-3'),
                 'best-service-p-3' => $request->input('best-service-p-3'),
+                'best-service-a-1' => $request->input('best-service-a-1'),
             ]);         
             if ($request->hasFile('best-service-img-path-1')) {
                 $filename = $request->file('best-service-img-path-1');
@@ -180,7 +181,7 @@ class LandingPageController extends Controller
                     'img-1' => 'storage/' . $path 
                 ]);                 
             } 
-
+        
             if ($request->hasFile('img-2')) {
                 $path = $request->file('img-2')->store('assets/images');     
                 $query = landing_5page::where('id',1)->update([
@@ -361,6 +362,13 @@ class LandingPageController extends Controller
                 $path = $request->file('watch-video-bg-img')->store('assets/images');     
                 $query = landing_11page::where('id',1)->update([
                     'watch-video-bg-img' => 'storage/' . $path 
+                ]);                 
+            } 
+
+            if ($request->hasFile('watch-video-bg-img-1')) {
+                $path = $request->file('watch-video-bg-img-1')->store('assets/images');     
+                $query = landing_11page::where('id',1)->update([
+                    'watch-video-bg-img-1' => 'storage/' . $path 
                 ]);                 
             } 
         }

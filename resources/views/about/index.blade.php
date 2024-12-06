@@ -97,6 +97,20 @@
         <script src="{{ asset('assets/js/script.js') }}"></script>
     </head>
     <body class="custom-cursor">  
+        <header class="main-header sticky-header sticky-header--normal">
+            <div class="container-fluid">
+                <div class="main-header__inner">
+                    <div class="main-header__logo">
+                        <a href="/">
+                            <img src="assets/images/logo-dark.png" alt="Tolak HTML" width="184">
+                        </a>
+                    </div><!-- /.main-header__logo -->
+
+                    @include('includes.nav') 
+                   
+                </div><!-- /.main-header__inner -->
+            </div><!-- /.container-fluid -->
+        </header><!-- /.main-header -->
         <section class="main-slider-three" id="home">
             <div class="main-slider-three__carousel tolak-owl__carousel owl-carousel" data-owl-options='{
             "loop": true,

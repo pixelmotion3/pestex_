@@ -133,11 +133,11 @@
         <div class="container-fluid">
             <div class="main-header__inner">
                 <div class="main-header__logo">
-                    <a href="index.html">
+                    <a href="/">
                         <img src="assets/images/logo-dark.png" alt="Tolak HTML" width="184">
                     </a>
                 </div><!-- /.main-header__logo -->
-                @include('includes.nav')
+                @include('includes.nav')                
             </div><!-- /.main-header__inner -->
         </div><!-- /.container-fluid -->
     </header><!-- /.main-header -->
@@ -153,14 +153,14 @@
                     <div class="page-header__content">
                         <h2 class="page-header__title">{{ $main_screen[0]['h2'] }}</h2>
                         <ul class="tolak-breadcrumb list-unstyled">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="/">Home</a></li>
                             <li><span>Services</span></li>
                         </ul><!-- /.thm-breadcrumb list-unstyled -->
                     </div>
                 </div>
                 <div class="col-md-5">
                     <div class="page-header__layer wow fadeInUp" data-wow-delay="100ms">
-                        <img src="{{ $main_screen[0]['bg-img-path'] }}" alt="tolak">
+                        <img src="../{{ $main_screen[0]['bg-img-path'] }}" alt="tolak">
                         <div class="page-header__layer__shape"></div>
                         <div class="page-header__layer__bg wow fadeInRight" data-wow-delay="200ms"></div>
                     </div>
@@ -181,7 +181,7 @@
                             <a href="/servicos/{{ $service->id }}">
                                 <div class="service-one__item text-center">
                                     <div class="service-one__item__image">
-                                        <img src="{{ $service['img'] }}" alt="tolak">
+                                        <img src="../{{ $service['img'] }}" alt="tolak">
                                     </div>
                                     <div class="service-one__item__content">
                                         <div class="service-one__item__icon">
@@ -215,15 +215,15 @@
     <!-- CTA Start -->
     <section class="cta-one">
         <div class="cta-one__bg">
-            <div class="cta-one__bg__shape-left" style="background-image: url({{ $main_screen[0]['bg-img'] }});">
+            <div class="cta-one__bg__shape-left" style="background-image: url(../{{ $main_screen[0]['bg-img'] }});">
             </div>
-            <div class="cta-one__bg__shape" style="background-image: url({{ $main_screen[0]['bg-img-1'] }});"></div>
+            <div class="cta-one__bg__shape" style="background-image: url(../{{ $main_screen[0]['bg-img-1'] }});"></div>
         </div>
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-lg-7 wow fadeInLeft" data-wow-delay="100ms">
                     <div class="cta-one__image">
-                        <img src="{{ $main_screen[0]['bg-img-2'] }}" alt="tolak" style="border-radius:30px;">
+                        <img src="../{{ $main_screen[0]['bg-img-2'] }}" alt="tolak" style="border-radius:30px;">
                     </div>
                 </div>
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay="100ms">
@@ -262,7 +262,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="contact-one__image wow fadeInRight" data-wow-delay="200ms">
-                        <img src="{{ $main_screen[0]['bg-img-3'] }}" alt="tolak">
+                        <img src="../{{ $main_screen[0]['bg-img-3'] }}" alt="tolak">
                     </div>
                 </div>
             </div>
@@ -272,7 +272,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="contact-one__image-two">
-                            <img src="{{ $main_screen[0]['bg-img-5'] }}" alt="tolak" style="border-radius:30px;">
+                            <img src="../{{ $main_screen[0]['bg-img-5'] }}" alt="tolak" style="border-radius:30px;">
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -311,7 +311,7 @@
             </div>
         </div><!-- /.container -->
     </section><!-- /.contact -->
-    @include('includes.footer')
+    @include('includes.footer_aux')
     <!--
         <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
             <span class="scroll-to-top__text">back top</span>

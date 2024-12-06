@@ -108,6 +108,23 @@
             color: white;
         }
 
+
+        .btn1:hover {
+            opacity: 1;
+            background-color: #ff6600;
+            color: white;
+        }
+
+        .btn1 {
+            background-color: #002255;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
         .custom-select {
             background-color: #A9A9A9;
             width: 100%;
@@ -118,29 +135,9 @@
             border: 2px solid dodgerblue;
         }
 
-        @media screen and (max-width: 770px) {
-            .apointement-box {
-                margin-left: 0px;
-                margin-top: 0px
-            }
-        }
-
         .quote_border_inbox {
             border-top-right-radius: 30px;
         }
-
-        .search-input {
-            width: 100%;
-            height: 48px;
-            padding: 12px 8px 12px 36px;
-            border-radius: 4px;
-            border: 1px solid gray;
-            /* replace this svg with the one you like */
-            background-image: url('assets/images/icons/Telefone.svg');
-            background-repeat: no-repeat;
-            /* update the position so it shows */
-            background-position: -33px -30px;
-            }
     </style>
     <!-- jequery plugins -->
 
@@ -385,7 +382,7 @@
                         <img src="assets/images/logo-dark.png" alt="Tolak HTML" width="184">
                     </a>
                     <nav class="main-header__nav main-menu" style="height: 80px">
-                        <p>Fazemos desaparecer os seus problemas de insectos</p>
+                        <p>{{ $main_screen[0]['nav-paragraph'] }}</p>
                     </nav><!-- /.main-header__nav -->
                 </div><!-- /.main-header__logo -->
             </div><!-- /.main-header__inner -->
@@ -410,10 +407,7 @@
             <div class="item">
                 <div class="main-slider-one__item">
                     <div class="main-slider-one__shape tolak-tilt"
-                        data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
-                        <!--
-                                <img src="assets/images/shapes/slider-1-shape-1.png" alt="tolak">
-                                -->
+                        data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>                            
                     </div>
                     <div class="main-slider-one__bg"
                         style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path'] }});"></div>
@@ -437,35 +431,34 @@
                                 <div class="main-slider-one__content">
                                     <h5 class="main-slider-one__sub-title">{{ $main_screen[0]['carrousel-h5'] }}</h5>
                                     <!-- slider-sub-title -->
-                                    <h2 class="main-slider-one__title">Get Our Business<br> This It
-                                        Soluti<span>o</span>n</h2><!-- slider-title -->
+                                    <h2 class="main-slider-one__title">{{ $main_screen[0]['carrousel-h2'] }}</h2><!-- slider-title -->
                                     <div class="main-slider-one__text">
                                         <p class="main-slider-one__text__one">{{ $main_screen[0]['carrousel-p'] }}</p>
                                     </div><!-- slider-text -->
                                     <div class="main-slider-one__bottom">
                                         <div class="main-slider-one__btn">
-                                            <a href="services.html"
-                                                class="tolak-btn tolak-btn--base"><b>{{ $main_screen[0]['carrousel-a-1'] }}</b><span></span></a><!-- slider-btn -->
+                                            <a href="/servicos"
+                                                class="btn1 theme-btn-three thm-btn"><b>{{ $main_screen[0]['carrousel-a-1'] }}</b><span></span></a><!-- slider-btn -->
                                         </div>
                                         <!--
-                                                <div class="main-slider-one__social">
-                                                    <a href="https://facebook.com">
-                                                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                                        <span class="sr-only">Facebook</span>
-                                                    </a>
-                                                    <a href="https://pinterest.com">
-                                                        <i class="fab fa-pinterest-p" aria-hidden="true"></i>
-                                                        <span class="sr-only">Pinterest</span>
-                                                    </a>
-                                                    <a href="https://twitter.com">
-                                                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                                                        <span class="sr-only">Twitter</span>
-                                                    </a>
-                                                    <a href="https://instagram.com">
-                                                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                                                        <span class="sr-only">Instagram</span>
-                                                    </a>
-                                                </div><!-- slider-social -->
+                                            <div class="main-slider-one__social">
+                                                <a href="https://facebook.com">
+                                                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                                    <span class="sr-only">Facebook</span>
+                                                </a>
+                                                <a href="https://pinterest.com">
+                                                    <i class="fab fa-pinterest-p" aria-hidden="true"></i>
+                                                    <span class="sr-only">Pinterest</span>
+                                                </a>
+                                                <a href="https://twitter.com">
+                                                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                                                    <span class="sr-only">Twitter</span>
+                                                </a>
+                                                <a href="https://instagram.com">
+                                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                                    <span class="sr-only">Instagram</span>
+                                                </a>
+                                            </div><!-- slider-social -->
                                     </div>
                                 </div>
                             </div>
@@ -478,13 +471,10 @@
                 <div class="main-slider-one__item">
                     <div class="main-slider-one__shape tolak-tilt"
                         data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
-                        <!--
-                                <img src="assets/images/shapes/slider-1-shape-1.png" alt="tolak">
-                                -->
                     </div>
                     <div class="main-slider-one__bg"
                         style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path-1'] }});"></div>
-                    <!--
+                    
                             <svg class="main-slider-one__bg-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <rect class='circle0 steap' x="5.2%" y="0" rx="0" ry="0" width="100%" height="100%" />
                                 <rect class='circle1 steap' x="15.6%" y="0" rx="0" ry="0" width="100%" height="100%" />
@@ -497,23 +487,22 @@
                                 <rect class='circle8 steap' x="88.5%" y="0" rx="0" ry="0" width="100%" height="100%" />
                                 <rect class='circle9 steap' x="100%" y="0" rx="0" ry="0" width="100%" height="100%" />
                             </svg>
-                            -->
+                        
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="main-slider-one__content">
                                     <h5 class="main-slider-one__sub-title">{{ $main_screen[0]['carrousel-h5-1'] }}
                                     </h5><!-- slider-sub-title -->
-                                    <h2 class="main-slider-one__title">Get Our Business<br> This It
-                                        Soluti<span>o</span>n</h2><!-- slider-title -->
+                                    <h2 class="main-slider-one__title">{{ $main_screen[0]['carrousel-h2-1'] }}</h2><!-- slider-title -->
                                     <div class="main-slider-one__text">
                                         <p class="main-slider-one__text__one">{{ $main_screen[0]['carrousel-p-1'] }}.
                                         </p>
                                     </div><!-- slider-text -->
                                     <div class="main-slider-one__bottom">
                                         <div class="main-slider-one__btn">
-                                            <a href="services.html"
-                                                class="tolak-btn tolak-btn--base"><b>{{ $main_screen[0]['carrousel-a-1-1'] }}</b><span></span></a><!-- slider-btn -->
+                                            <a href="/servicos"
+                                                class="btn1 theme-btn-three thm-btn"><b>{{ $main_screen[0]['carrousel-a-1-1'] }}</b><span></span></a><!-- slider-btn -->
                                         </div>
                                         <!--
                                                 <div class="main-slider-one__social">
@@ -552,7 +541,7 @@
                     </div>
                     <div class="main-slider-one__bg"
                         style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path-2'] }});"></div>
-                    <!--
+                    
                             <svg class="main-slider-one__bg-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <rect class='circle0 steap' x="5.2%" y="0" rx="0" ry="0" width="100%" height="100%" />
                                 <rect class='circle1 steap' x="15.6%" y="0" rx="0" ry="0" width="100%" height="100%" />
@@ -565,23 +554,22 @@
                                 <rect class='circle8 steap' x="88.5%" y="0" rx="0" ry="0" width="100%" height="100%" />
                                 <rect class='circle9 steap' x="100%" y="0" rx="0" ry="0" width="100%" height="100%" />
                             </svg>
-                            -->
+                        
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="main-slider-one__content">
                                     <h5 class="main-slider-one__sub-title">{{ $main_screen[0]['carrousel-h5-2'] }}
                                     </h5><!-- slider-sub-title -->
-                                    <h2 class="main-slider-one__title">Get Our Business<br> This It
-                                        Soluti<span>o</span>n</h2><!-- slider-title -->
+                                    <h2 class="main-slider-one__title">{{ $main_screen[0]['carrousel-h2-2'] }}</h2><!-- slider-title -->
                                     <div class="main-slider-one__text">
                                         <p class="main-slider-one__text__one">{{ $main_screen[0]['carrousel-p-2'] }}
                                         </p>
                                     </div><!-- slider-text -->
                                     <div class="main-slider-one__bottom">
                                         <div class="main-slider-one__btn">
-                                            <a href="services.html"
-                                                class="tolak-btn tolak-btn--base"><b>{{ $main_screen[0]['carrousel-a-1-2'] }}</b><span></span></a><!-- slider-btn -->
+                                            <a href="/servicos"
+                                                class="btn1 theme-btn-three thm-btn"><b>{{ $main_screen[0]['carrousel-a-1-2'] }}</b><span></span></a><!-- slider-btn -->
                                         </div>
                                         <!--
                                                 <div class="main-slider-one__social">
@@ -613,7 +601,7 @@
         </div>
         <!-- formulario -->
         <div class="main-slider-one__project fadeInUp text-center shadow-lg bg-light" data-wow-delay="200ms"
-            style="min-width: 400px;z-index:100;border-radius:30px;background-color: black;">
+            style="min-width: 400px;z-index:100;border-radius:30px;">
             <ul class="nav nav-tabs " id="myTab" role="tablist">
                 <li class="nav-item w-50 rounded-top-lg" role="presentation">
                     <button class="nav-link active w-100 text-muted p-4" id="quote-tab" data-bs-toggle="tab"
@@ -634,7 +622,7 @@
             </ul>
             <div class="tab-content p-2 bg-white" id="myTabContent" style="border-radius:30px;">
                 <div class="tab-pane fade show active" id="quote" role="tabpanel" aria-labelledby="quote-tab">
-                    <div class="container bg-white">
+                    <div class="container-fluid bg-white">
                         <form method="POST" action="{{ route('FrontPage.QuoteForm') }}">
                             @csrf
                             @method('post')
@@ -710,22 +698,22 @@
                                         </span>
                                     @enderror
                                 </div>
-
                                 <div class="input-container" style="width: 92%;">
                                     <i class="fa fa-phone icon"></i>
                                     <input class="input-field rounded" type="number" placeholder="Telefone"
-                                        name="phone">
+                                        name="phone" required>
                                     @error('phone')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
                                     @enderror
                                 </div>
-                                <div class="col-md-12 form-check">
-                                    <input class="form-check-input form-check-input float-left" type="checkbox"
+
+                                <div class="form-check col-md-12">
+                                    <input class="form-check-input" type="checkbox"
                                         name="confirmed" id="flexCheckDefault" required>
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Concordo com os termos de utilizaçao
+                                    <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;">
+                                        Aceito os Termos de Utilizaçao
                                     </label>
                                     @error('confirmed')
                                         <span class="invalid-feedback" role="alert">
@@ -733,7 +721,23 @@
                                         </span>
                                     @enderror
                                 </div>
-                                <div class="col-md-12 ml-4 mb-5" style="max-width: 92%">
+                                
+                                <div class="form-check col-md-12">
+                                    <input class="form-check-input"
+                                        type="checkbox" id="flexCheckDefault" required>
+                                    <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;">
+                                        Tenho conhecimento e aceito a Politica de Privacidade
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                        type="checkbox" id="flexCheckDefault" required>
+                                    <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;">
+                                        Autorizo tratamento de dados pessoais para marketting de produtos e serviços
+                                    </label>
+                                </div>
+
+                                <div class="ml-4 mb-5" style="max-width: 92%">
                                     <button class="btn mt-2 theme-btn-three thm-btn" type="submit" name="quote_form">Obter
                                         Orçamento Grátis</button>
                                 </div>
@@ -745,13 +749,13 @@
                     aria-labelledby="contact-tab">
                     <div class="tab-pane fade show active quote_border_inbox" id="home" role="tabpanel"
                         aria-labelledby="home-tab">
-                        <div class="container">
+                        <div class="container-fluid">
                             <form method="post" action="{{ route('FrontPage.ContactForm') }}">
                                 @csrf
                                 @method('POST')
                                 <div class="row">
                                     <h2 class="h2 mt-5">{{ $main_screen[0]['quote-form-tab-2-h2'] }}</h2>
-                                    <p class="mb-5">{{ $main_screen[0]['quote-form-tab-2-p'] }}</p>
+                                    <p>{{ $main_screen[0]['quote-form-tab-2-p'] }}</p>
                                     <div class="input-container mt-3" style="width: 92%;">
                                         <i class="far fa-user icon"></i>
                                         <input class="input-field rounded" type="text" placeholder="Nome"
@@ -769,11 +773,31 @@
                                         <input class="input-field rounded" type="text" placeholder="Telefone"
                                             name="phone" required>
                                     </div>
-                                    <div class="col-md-12 form-check">
-                                        <input class="form-check-input form-check-input" type="checkbox"
-                                            id="flexCheckDefault" required>
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Concordo com os termos de utilizaçao
+                                    <div class="form-check col-md-12">
+                                        <input class="form-check-input" type="checkbox"
+                                            name="confirmed" id="flexCheckDefault" required>
+                                        <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;">
+                                            Aceito os Termos de Utilizaçao
+                                        </label>
+                                        @error('confirmed')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                    
+                                    <div class="form-check col-md-12">
+                                        <input class="form-check-input"
+                                            type="checkbox" id="flexCheckDefault" required>
+                                        <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;">
+                                            Tenho conhecimento e aceito a Politica de Privacidade
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                            type="checkbox" id="flexCheckDefault" required>
+                                        <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;">
+                                            Autorizo tratamento de dados pessoais para marketting de produtos e serviços
                                         </label>
                                     </div>
                                     <div class="col-md-12 ml-4" style="max-width: 92%;">
@@ -886,7 +910,7 @@
                                 <span class="icon-ads-campaign"></span>
                             </div><!-- /.service-icon -->
                             <h3 class="service-one__item__title">
-                                <a href="business-solution.html">{{ $best_service[0]['best-service-a-2'] }}</a>
+                                <a href="/service">{{ $best_service[0]['best-service-a-2'] }}</a>
                             </h3><!-- /.service-title -->
                             <p class="service-one__item__text">
                                 {{ $best_service[0]['best-service-p-2'] }}
@@ -940,13 +964,15 @@
         <div class="image-layer"
             style="background-image: url({{ $our_service_1[0]['our-services-bg-img-path-1'] }});"></div>
         <div class="container">
-            <div class="sec-title text-center light">
-                <h6>{{ $our_service_1[0]['our-services-h6-1'] }}</h6>
-                <h2>{{ $our_service_1[0]['our-services-h2-1'] }}</h2>
+            <div class="text-center light text-white">
+                <h6 class="sec-title__tagline text-white"><span
+                    class="sec-title__tagline__left1"></span><b>{{ $best_service[0]['best-service-h6-1'] }}</b><span
+                    class="sec-title__tagline__right1"></span></h6>
+                <h2 class="h2 text-white"><b>{{ $our_service_1[0]['our-services-h2-1'] }}</b></h2>
                 <p class="text-white mt-3">{{ $our_service_1[0]['our-services-h2-2'] }}</p>
             </div>
 
-            <div class="tabs-box">
+            <div class="tabs-box" style="margin-top: 30px;">
                 <div class="tab-btn-one">
                     <ul class="tab-btns tab-buttons clearfix">
                         <li class="tab-btn active-btn" data-tab="#tab-1">
@@ -1062,24 +1088,24 @@
                         <p class="about-one__content__text">
                             {{ $about_now[0]['about-now-p'] }}.
                         </p>
-                        <ul class="about-one__content__list">
+                        <ul class="about-one__content__list text-white">
                             <li><span class="icofont-checked"></span>
-                                <p>{{ $about_now[0]['about-now-li-1'] }}</p>
+                                <p class="text-white">{{ $about_now[0]['about-now-li-1'] }}</p>
                             </li>
                             <li><span class="icofont-checked"></span>
-                                <p>{{ $about_now[0]['about-now-li-2'] }}</p>
+                                <p class="text-white">{{ $about_now[0]['about-now-li-2'] }}</p>
                             </li>
                             <li><span class="icofont-checked"></span>
-                                <p>{{ $about_now[0]['about-now-li-3'] }}</p>
+                                <p class="text-white">{{ $about_now[0]['about-now-li-3'] }}</p>
                             </li>
                             <li><span class="icofont-checked"></span>
-                                <p>{{ $about_now[0]['about-now-li-4'] }}</p>
+                                <p class="text-white">{{ $about_now[0]['about-now-li-4'] }}</p>
                             </li>
                             <li><span class="icofont-checked"></span>
-                                <p>{{ $about_now[0]['about-now-li-5'] }}</p>
+                                <p class="text-white">{{ $about_now[0]['about-now-li-5'] }}</p>
                             </li>
                             <li><span class="icofont-checked"></span>
-                                <p>{{ $about_now[0]['about-now-li-6'] }}</p>
+                                <p class="text-white">{{ $about_now[0]['about-now-li-6'] }}</p>
                             </li>
                         </ul>
                         <div class="clearfix"></div>
@@ -1122,7 +1148,7 @@
                     <div class="why-choose-two__content">
                         <div class="sec-title-two text-left">
                             <h6 class="sec-title-two__tagline text-titles"><span
-                                    class="sec-title-two__tagline__left icofont-rounded-double-left"></span>{{ $choose_us[0]['choose-us-p-1'] }}<span
+                                    class="sec-title-two__tagline__left icofont-rounded-double-left"></span><i>{{ $choose_us[0]['choose-us-p-1'] }}</i><span
                                     class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6>
                             <!-- /.sec-title-two__tagline -->
                             <h3 class="sec-title-two__title">{{ $choose_us[0]['choose-us-h3'] }}</h3>
@@ -1416,7 +1442,7 @@
         </div><!-- /.container -->
     </section><!-- /.funfact-one -->
     <!-- CTA Start -->
-    <section class="cta-two">
+    <section class="cta-two" style="margin-top: 200px;">
         <div class="cta-two__shape"
             style="background-image: url({{ $call_now[0]['call-now-bg-image-1-path'] }});"></div>
         <div class="container">
@@ -1459,7 +1485,7 @@
 
     <section class="cta-four mt-5">
         <div class="container" style="margin-top:150px;">
-            <div class="cta-four__bg" style="background-image: url(assets/images/resources/cta-4-bg.jpg);">
+            <div class="cta-four__bg" style="background-image: url({{ $video_contact[0]['watch-video-bg-img'] }});">
 
                         <div class="cta-four__shape" style="background-image: url(assets/images/shapes/cta-4-border.png);"></div>
    
@@ -1492,7 +1518,7 @@
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="cta-four__image">
-                            <img src="assets/images/resources/cta-4-1.png" alt="tolak">
+                            <img src="{{ $video_contact[0]['watch-video-bg-img-1'] }}" alt="tolak">
                         </div>
                     </div>
                 </div>
@@ -1538,7 +1564,7 @@
                                     <textarea name="message" placeholder="Mensagem *"></textarea><!-- /# -->
                                 </div><!-- /.form-one__control -->
                                 <div class="form-one__control form-one__control--full">
-                                    <button type="submit" class="tolak-btn-two tolak-btn-two--home-six pull-left">
+                                    <button type="submit" class="tolak-btn-two tolak-btn-two--home-six pull-left" style="border-radius: 10px;">
                                         <span class="tolak-btn-two__left-star"></span>
                                         <span>Send Request<i class="tolak-icons-two-arrow-right-short"></i></span>
                                         <span class="tolak-btn-two__right-star"></span>
@@ -1559,35 +1585,64 @@
         </div>
     </section>
     <!-- footer -->
-    <footer class="footer mt-5">
+    {{-- <footer class="footer mt-5">
         <div class="container-fluid" style="max-height:200px;margin-top:150px;">
             <div class="row">
-                <div class="col-md-3 bg-dark" style="background-color: black;height:200px;">
-                    <img class="pull-right mt-5 mr-5" src="assets/images/footer-logo.png"
-                        style="max-width: 200px;max-height: 200px;" />
+                <div class="col-md-3">
+                    <img class="pull-left" src="assets/images/footer-logo.png" />
                 </div>
                 <div class="col-md-9" style="height:200px;">
-                    <h3 class="h3 mt-5">Titulo</h3>
-                    <p>Paragrafo We are dolor sit amet caadwdjqdq</p>
+                    <h3 class="h3 mt-5">SOS PRAGAS</h3>
+                    <p>Eliminamos todo o tipo de pargas.</p>
                 </div>
             </div>
-            <div class="row" style="height:50px;z-index:10;background-color:darkblue;color:white;">
-                <div class="col-md-3" style="background-color: darkblue;margin-top:-50px;height:50px;">
+            <div class="row" style="height:50px;z-index:10;background-color:#002255;color:white;border-color:#002255;">
+                <div class="col-md-3" style="background-color: #002255;margin-top:-50px;height:50px;">
                     <p class="text-center text-white mt-3">Copyright</p>
                 </div>
                 <div class="col-md-3 text-white"
-                    style="background-color: darkblue;color:white;margin-top:-50px;height:50px;">
+                    style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
                     <p class="text-white"> ©2024 <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
                         direitos reservados</p>
                 </div>
                 <div class="col-md-3 text-white"
-                    style="background-color: darkblue;color:white;margin-top:-50px;height:50px;">
+                    style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
                     <p class="mt-3 text-white">Politica de publicidade</p>
                 </div>
                 <div class="col-md-3 text-white"
-                    style="background-color: darkblue;color:white;margin-top:-50px;height:50px;">
+                    style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
                     <p class="mt-3 text-white">Desenvolvido por Pixel in Motion</p>
                 </div>
+            </div>
+        </div>
+    </footer> --}}
+
+    <footer class="container-fluid footer mt-5" style="max-height:200px;margin-top:150px;">
+        <div class="row">
+            <div class="col-md-3">
+                <img class="pull-left" src="assets/images/footer-logo.png" style="margin-left: -20px;"/>
+            </div>
+            <div class="col-md-9" style="height:200px;">
+                <h3 class="h3 mt-5">SOS PRAGAS</h3>
+                <p>Eliminamos todo o tipo de pargas.</p>
+            </div>
+        </div>
+        <div class="row" style="height:50px;z-index:10;background-color:#002255;color:white;border-color:#002255;">
+            <div class="col-md-3" style="background-color: #002255;margin-top:-50px;height:50px;">
+                <p class="text-center text-white mt-3">Copyright</p>
+            </div>
+            <div class="col-md-3 text-white"
+                style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
+                <p class="text-white"> ©2024 <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
+                    direitos reservados</p>
+            </div>
+            <div class="col-md-3 text-white"
+                style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
+                <p class="mt-3 text-white">Politica de publicidade</p>
+            </div>
+            <div class="col-md-3 text-white"
+                style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
+                <p class="mt-3 text-white">Desenvolvido por Pixel in Motion</p>
             </div>
         </div>
     </footer>

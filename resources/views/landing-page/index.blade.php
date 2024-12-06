@@ -892,7 +892,7 @@
                                             <img src="{{ $best_service[0]['best-service-img-path-1'] }}" class="img-fluid" alt="..." style="max-height:239px;max-width:370px;">
                                             <div class="card-body">                                              
                                               <label for="exampleFormControlFile1">Example file input</label>
-                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="carrousel-bg-img-path-1">                        
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="best-service-img-path-1">                        
                                             </div>
                                           </div>
                                       </div>
@@ -932,7 +932,7 @@
                                             <img src="{{ $best_service[0]['best-service-img-path-3'] }}" class="img-fluid" alt="..." style="max-height:239px;max-width:370px;">
                                             <div class="card-body">                                              
                                               <label for="exampleFormControlFile1">Example file input</label>
-                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="best-service-img-path-2">                        
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="best-service-img-path-3">                        
                                             </div>
                                           </div>
                                       </div>
@@ -1599,6 +1599,19 @@
                                             <div class="card-body">                                              
                                               <label for="exampleFormControlFile1">Example file input</label>
                                               <input type="file" class="form-control-file" id="exampleFormControlFile1" name="watch-video-bg-img">                        
+                                            </div>
+                                          </div>
+                                      </div>
+
+                                      <div class="col-12 mt-5 form-group">   
+                                        <div class="card-header">
+                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
+                                        </div>                                       
+                                          <div class="card">
+                                            <img src="{{ $video_contact[0]['watch-video-bg-img-1'] }}" class="img-fluid" alt="..." style="max-height:150px;">
+                                            <div class="card-body">                                              
+                                              <label for="exampleFormControlFile1">Example file input</label>
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="watch-video-bg-img-1">                        
                                             </div>
                                           </div>
                                       </div>

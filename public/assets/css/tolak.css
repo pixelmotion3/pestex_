@@ -383,7 +383,7 @@ h6 {
   -webkit-appearance: none;
   border: none;
   outline: none !important;
-  background-color: var(--tolak-base, #3d72fc);
+  background-color: var(--tolak-base, #ff6600);
   color: var(--tolak-white, #fff);
   font-size: 17px;
   font-weight: 500;
@@ -811,6 +811,25 @@ h6 {
   width: 30px;
   height: 2px;
   background-color: #ff6600;
+  margin-left: 10px;
+}
+
+.sec-title__tagline__left1 {
+  position: relative;
+  bottom: 6px;
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  margin-right: 10px;
+}
+.sec-title__tagline__right1 {
+  position: relative;
+  bottom: 6px;
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: white;
   margin-left: 10px;
 }
 .sec-title__title {
@@ -12236,6 +12255,7 @@ body.megamenu-popup-active .mobile-nav__content {
   transform-origin: bottom;
   transition: all 1500ms ease;
 }
+
 .main-slider-one__social {
   position: relative;
   display: flex;
@@ -12636,7 +12656,8 @@ body.megamenu-popup-active .mobile-nav__content {
   padding: 12.7px 39.5px;
 }
 .main-slider-two__btn .tolak-btn:hover {
-  color: var(--tolak-white, #fff);
+  color: var(--tolak-white,  #ff6600);
+  background-color: ;
 }
 .main-slider-two__carousel {
   position: relative;
@@ -25621,13 +25642,13 @@ body.boxed-wrapper .main-slider-one__floating-text {
 .quote-form{
   width:300px;
   height:300px;
-  min-width:300px;
+  min-width:350px;
   min-height:300px;
   max-width:300px;
   max-height:300px;
   z-index: 10;
   position:absolute;
-  top:-350;
+  top:-400px;
 }
 
 /* Style the input container */

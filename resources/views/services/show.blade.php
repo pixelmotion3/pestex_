@@ -340,7 +340,7 @@
                         <div class="accrodion active collapse-1">
                             <div class="accrodion-title">
                                 <h4>
-                                    {{ $service_detail_show['h4-5-1'] }}
+                                    {{ $service_detail_show['h4-5'] }}
                                     <span class="accrodion-title__icon" id="collapse-1-icon"></span>
                                 </h4>
                             </div>
