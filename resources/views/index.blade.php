@@ -293,17 +293,32 @@
                                                 </span>
                                             @enderror
                                         </div>
-                                        <div class="col-md-12 form-check">
-                                            <input class="form-check-input form-check-input float-left"
-                                                type="checkbox" name="confirmed" id="flexCheckDefault" required>
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Concordo com os termos de utilizaçao
+                                        <div class="form-check col-md-12">
+                                            <input class="form-check-input" type="checkbox"
+                                                name="confirmed" id="flexCheckDefault" required>
+                                            <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;">
+                                                Aceito os Termos de Utilizaçao
                                             </label>
                                             @error('confirmed')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
                                                 </span>
                                             @enderror
+                                        </div>
+                                        
+                                        <div class="form-check col-md-12">
+                                            <input class="form-check-input"
+                                                type="checkbox" id="flexCheckDefault" required>
+                                            <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;">
+                                                Tenho conhecimento e aceito a Politica de Privacidade
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input"
+                                                type="checkbox" id="flexCheckDefault" required>
+                                            <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;">
+                                                Autorizo tratamento de dados pessoais para marketting de produtos e serviços
+                                            </label>
                                         </div>
                                         <div class="col-md-12 ml-4 mb-5" style="max-width: 92%">
                                             <button class="btn btn-dark mt-2" type="submit" name="quote_form">Obter
@@ -322,8 +337,8 @@
                                         @csrf
                                         @method('POST')
                                         <div class="row text-center">
-                                            <h2 class="h2 mt-5">{{ $main_screen[0]['quote-form-tab-2-h2'] }}</h2>
-                                            <p class="mb-5">{{ $main_screen[0]['quote-form-tab-2-p'] }}</p>
+                                            <h2 class="h2 mt-5 text-muted">{{ $main_screen[0]['quote-form-tab-2-h2'] }}</h2>
+                                            <p class="mb-5 text-muted">{{ $main_screen[0]['quote-form-tab-2-p'] }}</p>
                                             <div class="input-container mt-3" style="width: 92%;">
                                                 <i class="far fa-user icon"></i>
                                                 <input class="input-field rounded" type="text" placeholder="Nome"
@@ -354,17 +369,42 @@
                                                     </span>
                                                 @enderror
                                             </div>
-                                            <div class="col-md-12 form-check">
-                                                <input class="form-check-input form-check-input float-left"
-                                                    type="checkbox" name="confirmed" id="flexCheckDefault" required>
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Concordo com os termos de utilizaçao
+                                            <div class="input-container" style="width: 92%;">
+                                                <i class="fa fa-phone icon"></i>
+                                                <input class="input-field rounded" type="number" placeholder="Telefone"
+                                                    name="phone">
+                                                @error('phone')
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $message }}</strong>
+                                                    </span>
+                                                @enderror
+                                            </div>
+                                            <div class="form-check col-md-12">
+                                                <input class="form-check-input" type="checkbox"
+                                                    name="confirmed" id="flexCheckDefault" required>
+                                                <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;">
+                                                    Aceito os Termos de Utilizaçao
                                                 </label>
                                                 @error('confirmed')
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $message }}</strong>
                                                     </span>
                                                 @enderror
+                                            </div>
+                                            
+                                            <div class="form-check col-md-12">
+                                                <input class="form-check-input"
+                                                    type="checkbox" id="flexCheckDefault" required>
+                                                <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;">
+                                                    Tenho conhecimento e aceito a Politica de Privacidade
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input"
+                                                    type="checkbox" id="flexCheckDefault" required>
+                                                <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;">
+                                                    Autorizo tratamento de dados pessoais para marketting de produtos e serviços
+                                                </label>
                                             </div>
                                             <div class="col-md-12 ml-4" style="max-width: 92%;">
                                                 <button class="btn btn-dark w-100 mt-2" type="submit"
@@ -718,7 +758,7 @@
                                 <div class="form-check col-md-12">
                                     <input class="form-check-input" type="checkbox"
                                         name="confirmed" id="flexCheckDefault" required>
-                                    <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;">
+                                    <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;">
                                         Aceito os Termos de Utilizaçao
                                     </label>
                                     @error('confirmed')
@@ -731,14 +771,14 @@
                                 <div class="form-check col-md-12">
                                     <input class="form-check-input"
                                         type="checkbox" id="flexCheckDefault" required>
-                                    <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;">
+                                    <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;">
                                         Tenho conhecimento e aceito a Politica de Privacidade
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input"
                                         type="checkbox" id="flexCheckDefault" required>
-                                    <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;">
+                                    <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;">
                                         Autorizo tratamento de dados pessoais para marketting de produtos e serviços
                                     </label>
                                 </div>
@@ -760,7 +800,7 @@
                                 @csrf
                                 @method('POST')
                                 <div class="row">
-                                    <h2 class="h2 mt-5">{{ $main_screen[0]['quote-form-tab-2-h2'] }}</h2>
+                                    <h2 class="h2 mt-5 text-muted">{{ $main_screen[0]['quote-form-tab-2-h2'] }}</h2>
                                     <p>{{ $main_screen[0]['quote-form-tab-2-p'] }}</p>
                                     <div class="input-container mt-3" style="width: 92%;">
                                         <i class="far fa-user icon"></i>
@@ -782,7 +822,7 @@
                                     <div class="form-check col-md-12">
                                         <input class="form-check-input" type="checkbox"
                                             name="confirmed" id="flexCheckDefault" required>
-                                        <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;">
+                                        <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;color:grey;">
                                             Aceito os Termos de Utilizaçao
                                         </label>
                                         @error('confirmed')
@@ -795,14 +835,14 @@
                                     <div class="form-check col-md-12">
                                         <input class="form-check-input"
                                             type="checkbox" id="flexCheckDefault" required>
-                                        <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;">
+                                        <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;color:grey;">
                                             Tenho conhecimento e aceito a Politica de Privacidade
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input"
                                             type="checkbox" id="flexCheckDefault" required>
-                                        <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;">
+                                        <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;color:grey;">
                                             Autorizo tratamento de dados pessoais para marketting de produtos e serviços
                                         </label>
                                     </div>
