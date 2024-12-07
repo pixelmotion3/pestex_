@@ -17,7 +17,6 @@ class About extends Model
     'h2-span-2',
     'h2-span-3',
     'p-1',
-
     'bg-2',
     'shape-one-2',
     'shape-two-2',
@@ -27,7 +26,6 @@ class About extends Model
     'h2-span-1-1',
     'h2-span-2-1',
     'h2-span-3-1',
-    'p-1-1'
-    
+    'p-1-1'    
     ];
 }

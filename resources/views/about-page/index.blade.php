@@ -763,18 +763,13 @@
                                     <input type="text" class="form-control" name="h2-span-3" id="validationCustom01" value="{{ $main_screen[0]['h2-span-3'] }}" required>
                                   </div>
                                   <div class="col-12 mt-5">
-                                    <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
+                                    <label for="validationCustom01" class="form-label" style="float:left;">P</label>
                                     <input type="text" class="form-control" name="p-1" id="validationCustom01" value="{{ $main_screen[0]['p-1'] }}" required>
                                   </div>
                                   <div class="col-12 mt-5">
-                                    <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
+                                    <label for="validationCustom01" class="form-label" style="float:left;">Div a b</label>
                                     <input type="text" class="form-control" name="div-a-b" id="validationCustom01" value="{{ $main_screen[0]['div-a-b'] }}" required>
                                   </div>
-                                  
-
-
-
-
                                   <div class="col-12 mt-5 form-group">   
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
@@ -925,8 +920,6 @@
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="p-1" id="validationCustom01" value="{{ $service[0]['p-1'] }}" required>
                                 </div> 
-
-
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="h3-1" id="validationCustom01" value="{{ $service[0]['h3-1'] }}" required>
@@ -938,10 +931,7 @@
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="h3-3" id="validationCustom01" value="{{ $service[0]['h3-3'] }}" required>
-                                </div> 
-                                
-
-
+                                </div>                          
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="li-i-1" id="validationCustom01" value="{{ $service[0]['li-i-1'] }}" required>
@@ -964,7 +954,7 @@
                                 </div> 
 
                                 <div class="col-12">
-                                  <button type="submit" class="btn btn-primary w-100" name="form0">Submit</button>
+                                  <button type="submit" class="btn btn-primary w-100" name="form1">Submit</button>
                                 </div>
                               </form>  
                             </div>

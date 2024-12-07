@@ -839,7 +839,7 @@
                                             Tenho conhecimento e aceito a Politica de Privacidade
                                         </label>
                                     </div>
-                                    <div class="form-check">
+                                    <div class="form-check col-md-12">
                                         <input class="form-check-input"
                                             type="checkbox" id="flexCheckDefault" required>
                                         <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;color:grey;">

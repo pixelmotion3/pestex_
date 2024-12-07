@@ -76,7 +76,7 @@ class AboutPageController extends Controller
                     'thumb-1' => 'storage/' . $path 
                 ]);                 
             }
-
+            //dd($request->all());
             $query = About::where('id',1)->update([
                 'h2-span-1' => $request->input('h2-span-1'),
                 'h2-span-2' => $request->input('h2-span-2'),
@@ -255,7 +255,7 @@ class AboutPageController extends Controller
 
             if ($request->hasFile('bg-img')) {
                 $path = $request->file('bg-img')->store('assets/images');  
-                $query = Testimonial::where('id',1)->update([
+                $query = ContactInfo::where('id',1)->update([
                     'bg-img' => 'storage/' . $path 
                 ]);                 
             }

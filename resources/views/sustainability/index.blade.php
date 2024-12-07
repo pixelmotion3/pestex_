@@ -166,9 +166,9 @@
         <!-- /.page-header__bg -->
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" style="background-image:url({{ $main[0]['bg-img'] }});">
                     <div class="page-header__content">
-                        <h2 class="page-header__title text-center">{{ $main[0]['h2'] }}</h2>
+                        <h1 class="page-header__title text-center">{{ $main[0]['h2'] }}</h1>
                     </div>
                 </div>
             </div>
@@ -523,7 +523,7 @@
             </div>
         </section>
         <div style="margin-left:auto;margin-right:auto;" class="text-center mb-5">
-            <button class="btn btn-warning " style="width:15%;">Ver todos os serviços</button>
+            <a href="/servicos" class="btn btn-warning " style="width:15%;">Ver todos os serviços</a>
         </div>
     </div>
     <section class="mail-section">

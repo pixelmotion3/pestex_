@@ -114,7 +114,7 @@
                 <!-- /.page-header__bg -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12"  style="background-image:url({{ $main[0]['bg-img'] }});">
                             <div class="page-header__content text-center">
                                 <h1 class="text-white h1"><b>{{ $main[0]['h1'] }}</b></h1>
                             </div>

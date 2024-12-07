@@ -72,6 +72,13 @@ class ServiceDetailsController extends Controller
                 ]);                 
             }
 
+            if ($request->hasFile('img')) {
+                $path = $request->file('img')->store('assets/images');     
+                $query = ServiceDetailsShow::where('id',1)->update([
+                    'img' => 'storage/' . $path 
+                ]);                 
+            }
+
             if ($request->hasFile('img-1')) {
                 $path = $request->file('img-1')->store('assets/images');     
                 $query = ServiceDetailsShow::where('id',1)->update([
@@ -148,6 +155,20 @@ class ServiceDetailsController extends Controller
                 $path = $request->file('img-13')->store('assets/images');     
                 $query = ServiceDetailsShow::where('id',1)->update([
                     'img-13' => 'storage/' . $path 
+                ]);                 
+            }
+
+            if ($request->hasFile('img-14')) {
+                $path = $request->file('img-14')->store('assets/images');     
+                $query = ServiceDetailsShow::where('id',1)->update([
+                    'img-14' => 'storage/' . $path 
+                ]);                 
+            }
+
+            if ($request->hasFile('img-15')) {
+                $path = $request->file('img-15')->store('assets/images');     
+                $query = ServiceDetailsShow::where('id',1)->update([
+                    'img-15' => 'storage/' . $path 
                 ]);                 
             }
 

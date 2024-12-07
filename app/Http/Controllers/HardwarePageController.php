@@ -26,6 +26,13 @@ class HardwarePageController extends Controller
     {
         if ($request->has('form0')) {
 
+            if ($request->hasFile('bg-img')) {
+                $path = $request->file('bg-img')->store('assets/images');     
+                $query = HardwareMainScreen::where('id',1)->update([
+                    'bg-img' => 'storage/' . $path 
+                ]);                 
+            }
+
             if ($request->hasFile('img')) {
                 $path = $request->file('img')->store('assets/images');     
                 $query = HardwareMainScreen::where('id',1)->update([

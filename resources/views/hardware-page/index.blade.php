@@ -673,6 +673,18 @@
                               <form class="row g-3 needs-validation" novalidate action="{{ route('hardware-page.update', 1) }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 @method('PUT')
+                                <div class="col-12 mt-5 form-group">   
+                                  <div class="card-header">
+                                    <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
+                                  </div>                                       
+                                  <div class="card">
+                                    <img src="{{ $main[0]['bg-img'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                    <div class="card-body">                                              
+                                      <label for="exampleFormControlFile1">Example file input</label>
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="bg-img">                        
+                                    </div>
+                                  </div>
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H1</label>
                                   <input type="text" class="form-control" id="validationCustom01" value="{{ $main[0]['h1'] }}" name="h1" required>

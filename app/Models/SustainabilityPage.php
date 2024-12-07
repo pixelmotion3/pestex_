@@ -8,6 +8,7 @@ class SustainabilityPage extends Model
 {
     protected $fillable = [
         'h2',
+        'bg-img',
         'h1',
         'p',
         'h6',

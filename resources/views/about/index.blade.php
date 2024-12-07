@@ -211,9 +211,11 @@
         <section class="service-section fadeInUp">
             <div class="image-layer" style="background-image: url({{ $service[0]['image-layer-path'] }});"></div>
             <div class="auto-container">
-                <div class="sec-title text-center light">
-                    <h6 >{{ $service[0]['h6'] }}</h6>
-                    <h2>{{ $service[0]['h2'] }}</h2>
+                <div class="text-center light">
+                    <h6 class="sec-title__tagline h6 text-white"><span
+                        class="sec-title__tagline__left"></span>{{ $service[0]['h6'] }}<span
+                        class="sec-title__tagline__right"></span></h6>
+                    <h2 class="h3 text-white">{{ $service[0]['h2'] }}</h2>
                     <p class="text-white mt-5">{{ $service[0]['p'] }}</p>
                 </div>
             </div>
@@ -230,13 +232,14 @@
                         <div class="col-xl-6 wow fadeInUp" data-wow-delay="200ms">
                             <div class="why-choose-five__content">
                                 <div class="sec-title-four text-left">
-
-                                    <h6 class="sec-title-four__tagline"><span class="sec-title-four__tagline__left-border"></span>{{ $service[0]['h6-span'] }}<span class="sec-title-four__tagline__right-border"></span></h6><!-- /.sec-title-four__tagline -->
+                                    <h6 class="sec-title__tagline text-titles"><span
+                                        class="sec-title__tagline__left"></span>{{ $service[0]['h6-span'] }}<span
+                                        class="sec-title__tagline__right"></span></h6>
 
                                     <h3 class="sec-title-four__title">{{ $service[0]['h3'] }}</h3><!-- /.sec-title-four__title -->
                                 </div><!-- /.sec-title-four -->
                                 <p class="why-choose-five__content__text">
-                                    B{{ $service[0]['p-1'] }}
+                                    {{ $service[0]['p-1'] }}
                                 </p>
                                 <div class="row gutter-y-30">
                                     <div class="col-md-4">
@@ -289,8 +292,8 @@
         </div>
         
         <!-- service-section end -->
-        <h2 class="text-center h2 text-body" style="margin-top:50px;">{{ $video[0]['h2'] }}</h2>
-        <p class="text-center p mt-5 mb-5">L{{ $video[0]['p'] }}</p>
+        <h2 class="text-center h2 text-body">{{ $video[0]['h2'] }}</h2>
+        <p class="text-center p mt-5 mb-5 p-5">{{ $video[0]['p'] }}</p>
         <section class="cta-four mt-5">
             <div class="container mt-5">
                 <div class="cta-four__bg" style="background-image: url({{ $video[0]['bg-img'] }});">
@@ -331,7 +334,7 @@
             <div class="testimonials-three__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%" style="background-image: url({{ $testimonial[0]['img-path'] }});"></div>
             <div class="container">
                 <div class="sec-title-two text-center">
-                    <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span>ytjnwrhjnrhth<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
+                    <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span>{{ $testimonial[0]['h6'] }}<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
                     <h3 class="sec-title-two__title">{{ $testimonial[0]['h3'] }}</h3><!-- /.sec-title-two__title -->
                 </div><!-- /.sec-title-two -->
                 <div class="row">
