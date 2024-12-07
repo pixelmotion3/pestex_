@@ -1454,7 +1454,7 @@
                                         <label for="validationCustom01" class="form-label" style="float:left;">DIV P5</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $collapse[0]['collapse-div-p-5-2'] }}" name="collapse-div-p-5-2" required>
                                       </div>
-                                      <div class="col-12">
+                                      <div class="col-md-12">
                                         <button class="btn btn-primary w-100" type="submit" name="form9">Submit</button>
                                       </div>
                                     </form>
@@ -1536,7 +1536,7 @@
                                       </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">A3</label>
-                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $call_now[0]['call-now-a-3'] }}" name="call-now-a-2" required>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $call_now[0]['call-now-a-3'] }}" name="call-now-a-3" required>
                                       </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">P</label>
@@ -1546,9 +1546,17 @@
                                         <label for="validationCustom01" class="form-label" style="float:left;">A2</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $call_now[0]['call-now-a-2'] }}" name="call-now-a-2" required>
                                       </div>
-                                      <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">IMG4</label>
-                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $call_now[0]['call-now-bg-image-4-path'] }}" required>
+                                      <div class="col-12 mt-5 form-group">   
+                                        <div class="card-header">
+                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
+                                        </div>                                       
+                                          <div class="card">
+                                            <img src="{{ $call_now[0]['call-now-bg-image-4-path'] }}" class="img-fluid" alt="..." style="max-height:150px;">
+                                            <div class="card-body">                                              
+                                              <label for="exampleFormControlFile1">Example file input</label>
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="call-now-bg-image-4-path">                        
+                                            </div>
+                                          </div>
                                       </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">A3</label>
@@ -1602,7 +1610,6 @@
                                             </div>
                                           </div>
                                       </div>
-
                                       <div class="col-12 mt-5 form-group">   
                                         <div class="card-header">
                                           <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>

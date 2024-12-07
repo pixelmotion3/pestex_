@@ -275,13 +275,15 @@ class LandingPageController extends Controller
                 'testimonial-say-p-strong' => $request->input('testimonial-say-p-strong'),
                 'testimonial-say-h2' => $request->input('testimonial-say-h2'),
                 'testimonial-say-p-i-1' => $request->input('testimonial-say-p-i-1'),
+                'testimonial-say-p-i-1-1' => $request->input('testimonial-say-p-i-1-1'),
                 'testimonial-say-h3-1' => $request->input('testimonial-say-h3-1'),
                 'testimonial-say-h5-1' => $request->input('testimonial-say-h5-1'),
                 'testimonial-say-p-i-2' => $request->input('testimonial-say-p-i-2'),
-
+                'testimonial-say-p-i-2-1' => $request->input('testimonial-say-p-i-2-1'),
                 'testimonial-say-h3-2' => $request->input('testimonial-say-h3-2'),
                 'testimonial-say-h5-2' => $request->input('testimonial-say-h5-2'),
                 'testimonial-say-p-i-3' => $request->input('testimonial-say-p-i-3'),
+                'testimonial-say-p-i-3-1' => $request->input('testimonial-say-p-i-3-1'),
                 'testimonial-say-h3-3' => $request->input('testimonial-say-h3-3'),
                 'testimonial-say-h5-3' => $request->input('testimonial-say-h5-3'),
             ]);
@@ -297,14 +299,24 @@ class LandingPageController extends Controller
                 'collapse-p-3' => $request->input('collapse-p-3'),
                 'collapse-h4-1' => $request->input('collapse-h4-1'),
                 'collapse-div-p-1' => $request->input('collapse-div-p-1'),
+                'collapse-div-p-1-1' => $request->input('collapse-div-p-1-1'),
+                'collapse-div-p-1-2' => $request->input('collapse-div-p-1-2'),
                 'collapse-h4-2' => $request->input('collapse-h4-2'),
                 'collapse-div-p-2' => $request->input('collapse-div-p-2'),
+                'collapse-div-p-2-1' => $request->input('collapse-div-p-2-1'),
+                'collapse-div-p-2-2' => $request->input('collapse-div-p-2-2'),
                 'collapse-h4-3' => $request->input('collapse-h4-3'),
                 'collapse-div-p-3' => $request->input('collapse-div-p-3'),
+                'collapse-div-p-3-1' => $request->input('collapse-div-p-3-1'),
+                'collapse-div-p-3-2' => $request->input('collapse-div-p-3-2'),
                 'collapse-h4-4' => $request->input('collapse-h4-4'),
                 'collapse-div-p-4' => $request->input('collapse-div-p-4'),
+                'collapse-div-p-4-1' => $request->input('collapse-div-p-4-1'),
+                'collapse-div-p-4-2' => $request->input('collapse-div-p-4-2'),
                 'collapse-h4-5' => $request->input('collapse-h4-5'),
-                'collapse-div-p-5' => $request->input('collapse-div-p-5')
+                'collapse-div-p-5' => $request->input('collapse-div-p-5'),
+                'collapse-div-p-5-1' => $request->input('collapse-div-p-5-1'),
+                'collapse-div-p-5-2' => $request->input('collapse-div-p-5-2'),
             ]);
             if ($request->hasFile('collapse-bg-img')) {
                 $path = $request->file('collapse-bg-img')->store('assets/images');     
@@ -357,6 +369,9 @@ class LandingPageController extends Controller
                 'watch-video-h2' => $request->input('watch-video-h2'),
                 'watch-video-p-2' => $request->input('watch-video-p-2'),
                 'watch-video-p-3' => $request->input('watch-video-p-3'),
+                'watch-video-p-2-1' => $request->input('watch-video-p-2-1'),
+                'watch-video-p-3-1' => $request->input('watch-video-p-3-1'),
+                
             ]);
             if ($request->hasFile('watch-video-bg-img')) {
                 $path = $request->file('watch-video-bg-img')->store('assets/images');     

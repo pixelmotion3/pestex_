@@ -5623,9 +5623,9 @@ body.megamenu-popup-active .mobile-nav__content {
   flex-shrink: 0;
   width: 104px;
   height: 100px;
-  background-color: var(--tolak-base, #3d72fc);
+  background-color: #ff6600;
   font-size: 72px;
-  color: var(--tolak-white, #fff);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5686,7 +5686,7 @@ body.megamenu-popup-active .mobile-nav__content {
   position: absolute;
   right: 10px;
   top: 10px;
-  border: 6px solid var(--tolak-base, #3d72fc);
+  border: 6px solid #ff6600;
   border-radius: 50%;
   overflow: hidden;
   width: 154px;
@@ -5707,7 +5707,7 @@ body.megamenu-popup-active .mobile-nav__content {
   position: absolute;
   left: -45px;
   top: 60px;
-  border: 4px solid var(--tolak-base, #3d72fc);
+  border: 4px solid #ff6600;
   border-radius: 50%;
   overflow: hidden;
   width: 185px;
@@ -5728,7 +5728,7 @@ body.megamenu-popup-active .mobile-nav__content {
   position: absolute;
   left: -27px;
   bottom: -17px;
-  border: 4px solid var(--tolak-base, #3d72fc);
+  border: 4px solid  #ff6600;
   overflow: hidden;
   width: 202px;
   height: 135px;
@@ -5943,12 +5943,13 @@ body.megamenu-popup-active .mobile-nav__content {
 .funfact-one__accordion .accrodion-title h4 i {
   display: inline-block;
   font-size: 20px;
-  color: var(--tolak-base, #3d72fc);
+  color: #ff6600 !important;
   margin-right: 14px;
   position: relative;
   top: 1px;
   transition: all 500ms ease;
 }
+
 .funfact-one__accordion .accrodion-title__icon {
   width: 15px;
   height: 15px;
@@ -5964,7 +5965,7 @@ body.megamenu-popup-active .mobile-nav__content {
   top: 50%;
   left: 50%;
   font-size: 20px;
-  color: var(--tolak-base, #3d72fc);
+  color:  #ff6600;
   content: "\ea86";
   font-family: IcoFont !important;
   transform: translate(-50%, -50%);
@@ -7200,7 +7201,6 @@ body.megamenu-popup-active .mobile-nav__content {
   right: 0;
   bottom: -55px;
   margin: 0 auto;
-  content: "";
   width: 0px;
   height: 0px;
   border-style: solid;
@@ -10265,7 +10265,7 @@ body.megamenu-popup-active .mobile-nav__content {
   background-color: var(--tolak-white, #fff);
 }
 .faq-one__accordion .active .accrodion-title__icon::after, .faq-one__accordion .active .accrodion-title__icon::before {
-  background-color: var(--tolak-white, #fff);
+  background-color: #ff6600;
   opacity: 0;
 }
 .faq-one__accordion .active .accrodion-title__icon::after {
@@ -13471,7 +13471,7 @@ body.megamenu-popup-active .mobile-nav__content {
   font-size: 60px;
   font-weight: 700;
   display: block;
-  color: var(--tolak-gray, #ecf2fc);
+  color: #002255;
 }
 .feature-one__item__number::after {
   content: counters(count, ".", decimal-leading-zero);
@@ -15264,14 +15264,18 @@ body.megamenu-popup-active .mobile-nav__content {
   transition-timing-function: linear;
 }
 .service-one__item:hover .service-one__item__icon {
-  color: var(--tolak-white, #fff);
+  color: white;
+  background-color: #002255;
 }
 .service-one__item:hover .service-one__item__icon::after {
   height: 100%;
+  border-color: #002255;
+  background-color: #002255;
 }
 .service-one__item:hover .service-one__item__bottom {
-  border-color: var(--tolak-black, #051d1f);
-  background-color: var(--tolak-black, #051d1f);
+  border-color: #002255;
+  background-color: #002255;
+  color: white;
 }
 .service-one__item:hover .service-one__item__bottom::after {
   width: 8px;
@@ -15312,7 +15316,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .service-one__item__icon {
   width: 90px;
   height: 90px;
-  background-color: var(--tolak-base, #3d72fc);
+  background-color: #002255;
   border: 4px solid var(--tolak-white, #fff);
   border-radius: 50%;
   display: flex;
@@ -15322,7 +15326,7 @@ body.megamenu-popup-active .mobile-nav__content {
   line-height: 1;
   position: relative;
   z-index: 1;
-  color: var(--tolak-white, #fff);
+  color: white;
   margin: -46px auto 15px;
   overflow: hidden;
   transition: 100ms ease;
@@ -15339,6 +15343,7 @@ body.megamenu-popup-active .mobile-nav__content {
   transform: translate(-50%, -50%) rotate(-45deg);
   z-index: -1;
   transition: all 500ms ease;
+  color: white;
 }
 .service-one__item__icon span {
   position: relative;
@@ -15388,7 +15393,7 @@ body.megamenu-popup-active .mobile-nav__content {
   opacity: 0;
   height: calc(100% + 20px);
   content: "";
-  background-color: var(--tolak-base, #3d72fc);
+  background-color: #ff6600;
   transition: all 500ms linear;
   transform: rotate(32deg);
   margin: 0 auto;
@@ -25609,7 +25614,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
 }
 
 .testimonial-boxes{
-    background-color:black;
+    background-color: #002255;
     height:450px;
     width:auto;
     margin:30px;
@@ -25778,18 +25783,10 @@ body.boxed-wrapper .main-slider-one__floating-text {
       top: 0px;
       z-index: 1;
       background-color: white;
-      height: 650px;
-      
+      height: 650px;      
   }
 }
-/*
-@media screen and (max-width: 770px) {
-    .apointement-box {
-        margin-left:50px;
-        margin-top:50px
-    }
-}
-*/
+
 @media screen and (min-width: 770px) {
     .margin-tab-box {
         margin:-200px;
@@ -25806,13 +25803,15 @@ body.boxed-wrapper .main-slider-one__floating-text {
   overflow: hidden;
   border: 2px solid transparent; 
   transition: border-color 0.3s ease;
+  background-color: #ff6600;
 }
 
 .service-one__item__icon:hover {
-  border-color: var(--tolak-black, #051d1f);
+  border-color: white;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+  color: white;
 }
 
 .service-one__item__icon::before {
@@ -25822,8 +25821,8 @@ body.boxed-wrapper .main-slider-one__floating-text {
   left: 50%;
   width: 0;
   height: 0;
-  background-color: var(--tolak-black, #051d1f);
-  
+  background-color: #002255;
+  color: white;
   transform: translate(-50%, -50%);
   transition: width 0.3s ease, height 0.3s ease;
   z-index: -1;
@@ -25832,6 +25831,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
 .service-one__item__icon:hover::before {
   width: 200%;
   height: 200%;
+  color: white;
 }
 
 .margin-tab-box{
@@ -25855,6 +25855,9 @@ body.boxed-wrapper .main-slider-one__floating-text {
   border-left: 1px solid lightgray;
 }
 
+.active-collapse{
+  background-color: #ff6600 !important;
+}
 .rounded-box{
   border-radius: 30px;
 }

@@ -138,6 +138,12 @@
         .quote_border_inbox {
             border-top-right-radius: 30px;
         }
+
+        .active{
+            color: white !important;
+        }
+
+       
     </style>
     <!-- jequery plugins -->
 
@@ -374,7 +380,7 @@
             </div>
         </div>
     </div>
-    <header class="main-header sticky-header sticky-header--normal">
+    <header class="main-header sticky-header">
         <div class="container-fluid">
             <div class="main-header__inner">
                 <div class="main-header__logo">
@@ -815,7 +821,7 @@
     <!-- main-slider-end -->
 
     <!-- Feature Start -->
-    <section class="feature-one">
+    <section class="feature-one" style="margin-top:220px;">
         <div class="container">
             <div class="text-center mb-5">
                 <h6 class="sec-title__tagline text-titles"><span
@@ -1159,33 +1165,24 @@
                             <br />
                             {{ $choose_us[0]['choose-us-p-2-1'] }}
                         </p>
-                        <div class="why-choose-two__item wow fadeInUp" data-wow-delay="00ms">
-                            <div class="why-choose-two__item__icon">
+                        <div class="why-choose-two__item wow fadeInUp rounded-lg" data-wow-delay="00ms">
+                            <div class="why-choose-two__item__icon rounded-lg">
                                 <span class="icon-family"></span>
                             </div>
                             <h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-1'] }}</h4>
-                            <!--
-                                    <i class="why-choose-two__item__rm"><span class="icon-right-arrow"></span></i>
-                                    -->
                         </div><!-- why-choose-two__item -->
-                        <div class="why-choose-two__item why-choose-two__item--reverse wow fadeInUp"
+                        <div class="why-choose-two__item why-choose-two__item--reverse wow fadeInUp rounded-lg"
                             data-wow-delay="100ms">
-                            <div class="why-choose-two__item__icon">
+                            <div class="why-choose-two__item__icon rounded-lg">
                                 <span class="icon-agency"></span>
                             </div>
                             <h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-2'] }}</h4>
-                            <!--
-                                    <i class="why-choose-two__item__rm"><span class="icon-right-arrow"></span></i>
-                                    -->
                         </div><!-- why-choose-two__item -->
-                        <div class="why-choose-two__item wow fadeInUp" data-wow-delay="200ms">
-                            <div class="why-choose-two__item__icon">
+                        <div class="why-choose-two__item wow fadeInUp rounded-lg" data-wow-delay="200ms">
+                            <div class="why-choose-two__item__icon rounded-lg">
                                 <span class="icon-management"></span>
                             </div>
                             <h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-3'] }}</h4>
-                            <!--
-                                    <i  class="why-choose-two__item__rm"><span class="icon-right-arrow"></span></i>
-                                    -->
                         </div><!-- why-choose-two__item -->
                     </div><!-- /.why-choose-two__content -->
                 </div><!-- /.col-lg-5 -->
@@ -1210,15 +1207,15 @@
         <div class="container" style="margin-top:50px;">
             <div class="sec-title-two text-center">
                 <h6 class="sec-title-two__tagline text-titles"><span
-                        class="sec-title-two__tagline__left icofont-rounded-double-left"></span>{{ $testimonial_say[0]['testimonial-say-p-strong'] }}<span
+                        class="sec-title-two__tagline__left icofont-rounded-double-left"></span><i>{{ $testimonial_say[0]['testimonial-say-p-strong'] }}</i><span
                         class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6>
                 <!-- /.sec-title-two__tagline -->
                 <h3 class="sec-title-two__title">{{ $testimonial_say[0]['testimonial-say-h2'] }}</h3>
                 <!-- /.sec-title-two__title -->
             </div>
             <div class="row text-center">
-                <div class="col-sm-12 col-md-3 testimonial-boxes text-center text-primary bg-dark w-100">
-                    <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;"></i>
+                <div class="col-sm-12 col-md-3 testimonial-boxes text-center text-primary w-100">
+                    <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;color:#ff6600;"></i>
                     <blockquote>
                         <p class="text-center text-white-50 mt-5">
                             <i>
@@ -1240,8 +1237,8 @@
                         </div>
                     </blockquote>
                 </div>
-                <div class="col-sm-12 col-md-3 testimonial-boxes text-center text-primary bg-dark w-100">
-                    <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;"></i>
+                <div class="col-sm-12 col-md-3 testimonial-boxes text-center text-primary w-100">
+                    <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;color:#ff6600;"></i>
                     <blockquote>
                         <p class="text-center text-white-50 mt-5">
                             <i>
@@ -1263,8 +1260,8 @@
                         </div>
                     </blockquote>
                 </div>
-                <div class="col-sm-12 col-md-3 testimonial-boxes text-center text-primary bg-dark w-100">
-                    <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;"></i>
+                <div class="col-sm-12 col-md-3 testimonial-boxes text-center text-primary w-100">
+                    <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;color:#ff6600;"></i>
                     <blockquote>
                         <p class="text-center text-white-50 mt-5">
                             <i>
@@ -1299,7 +1296,7 @@
                         <img class="funfact-one__image__shape" src="assets/images/shapes/counter-border-1.png"
                             alt="tolak">
                         <div class="funfact-one__item count-box tolak-tilt"
-                            data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 9, "speed": 700, "scale": 1 }'>
+                            data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 9, "speed": 700, "scale": 1 }' style="background-color: #ff6600;">
                             <h3 class="funfact-one__item__count"><span class="count-text" data-stop="63"
                                     data-speed="1500"></span>{{ $collapse[0]['collapse-h3-1'] }}</h3>
                             <!-- /.funfact-one__number -->
@@ -1307,7 +1304,7 @@
                             <!-- /.funfact-one__title -->
                         </div><!-- /.funfact-one__item -->
                         <div class="funfact-one__item funfact-one__item--two count-box tolak-tilt"
-                            data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 9, "speed": 700, "scale": 1 }'>
+                            data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 9, "speed": 700, "scale": 1 }' style="background-color: #002255;">
                             <h3 class="funfact-one__item__count"><span class="count-text" data-stop="26"
                                     data-speed="1500"></span>{{ $collapse[0]['collapse-h3-2'] }}</h3>
                             <!-- /.funfact-one__number -->
@@ -1315,7 +1312,7 @@
                             <!-- /.funfact-one__title -->
                         </div><!-- /.funfact-one__item -->
                         <div class="funfact-one__item funfact-one__item--three count-box tolak-tilt"
-                            data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 9, "speed": 700, "scale": 1 }'>
+                            data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 9, "speed": 700, "scale": 1 }' style="background-color: #ff6600;">
                             <h3 class="funfact-one__item__count"><span class="count-text" data-stop="34"
                                     data-speed="1500"></span>{{ $collapse[0]['collapse-h3-3'] }}</h3>
                             <!-- /.funfact-one__number -->
@@ -1327,11 +1324,11 @@
                 <div class="col-lg-6">
                     <div class="funfact-one__accordion tolak-accrodion" data-grp-name="tolak-accrodion">
                         <div class="accrodion active">
-                            <div class="accrodion-title">
-                                <h4>
+                            <div class="accrodion-title" id="accordion-1">
+                                <h4 id="accordion-icon-1">
                                     <i class="fa fa-check-circle"></i>
                                     {{ $collapse[0]['collapse-h4-1'] }}
-                                    <span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+                                    <span class="accrodion-title__icon" style="color: #ff6600"></span><!-- /.accrodion-title__icon -->
                                 </h4>
                             </div><!-- /.accordian-title -->
                             <div class="accrodion-content">
@@ -1349,9 +1346,9 @@
                             </div>
                         </div><!-- /.accordian-item -->
                         <div class="accrodion">
-                            <div class="accrodion-title">
+                            <div class="accrodion-title" id="accordion-2">
                                 <h4>
-                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-check-circle" id="accordion-icon-2"></i>
                                     {{ $collapse[0]['collapse-h4-2'] }}
                                     <span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
                                 </h4>
@@ -1371,9 +1368,9 @@
                             </div>
                         </div><!-- /.accordian-item -->
                         <div class="accrodion">
-                            <div class="accrodion-title">
+                            <div class="accrodion-title" id="accordion-3">
                                 <h4>
-                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-check-circle" id="accordion-icon-3"></i>
                                     {{ $collapse[0]['collapse-h4-3'] }}
                                     <span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
                                 </h4>
@@ -1393,9 +1390,9 @@
                             </div>
                         </div><!-- /.accordian-item -->
                         <div class="accrodion">
-                            <div class="accrodion-title">
+                            <div class="accrodion-title" id="accordion-4">
                                 <h4>
-                                    <i class="fa fa-check-circle"></i>
+                                    <i class="fa fa-check-circle" id="accordion-icon-4"></i>
                                     {{ $collapse[0]['collapse-h4-4'] }}
                                     <span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
                                 </h4>
@@ -1415,7 +1412,7 @@
                             </div>
                         </div><!-- /.accordian-item -->
                         <div class="accrodion">
-                            <div class="accrodion-title">
+                            <div class="accrodion-title" id="accordion-5">
                                 <h4>
                                     <i class="fa fa-check-circle"></i>
                                     {{ $collapse[0]['collapse-h4-5'] }}
@@ -1484,21 +1481,19 @@
     </section>
 
     <section class="cta-four mt-5">
-        <div class="container" style="margin-top:150px;">
+        <div class="container" style="margin-top:100px;">
             <div class="cta-four__bg" style="background-image: url({{ $video_contact[0]['watch-video-bg-img'] }});">
-
-                        <div class="cta-four__shape" style="background-image: url(assets/images/shapes/cta-4-border.png);"></div>
-   
+                    <div class="cta-four__shape" style="background-image: url(assets/images/shapes/cta-4-border.png);"></div>   
                 <div class="row">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="00ms">
                         <div class="cta-four__content">
-                            <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
+                            <a class="video-popup" style="color: white;background-color:#ff6600;">
                                 <i class="icon-play-button"></i>
                             </a>
                             <div class="sec-title-two text-left">
                                 <h6 class="sec-title-two__tagline"><span
-                                        class="sec-title-two__tagline__left icofont-rounded-double-left"></span>{{ $video_contact[0]['watch-video-p-strong-1'] }}<span
-                                        class="sec-title-two__tagline__right icofont-rounded-double-right"></span>
+                                        class="sec-title-two__tagline__left icofont-rounded-double-left" style="color:#ff6600;"></span><i style="color:#ff6600;">{{ $video_contact[0]['watch-video-p-strong-1'] }}</i><span
+                                        class="sec-title-two__tagline__right icofont-rounded-double-right" style="color:#ff6600;"></span>
                                 </h6><!-- /.sec-title-two__tagline -->
                                 <h3 class="sec-title-two__title">{{ $video_contact[0]['watch-video-h2'] }}</h3>
                                 <!-- /.sec-title-two__title -->
@@ -1506,9 +1501,9 @@
                             <p class="cta-four__content__text">
                                 {{ $video_contact[0]['watch-video-p-2'] }}<br />{{ $video_contact[0]['watch-video-p-2-1'] }}
                             </p>
-                            <div class="cta-four__content__bar"></div>
+                            <div class="cta-four__content__bar" style="background-color: #ff6600;"></div>
                             <div class="cta-four__content__info">
-                                <div class="cta-four__content__info__icon"><i class="icofont-speech-comments"></i>
+                                <div class="cta-four__content__info__icon" style="color:#ff6600;"><i class="icofont-speech-comments"></i>
                                 </div>
                                 <p class="cta-four__content__info__text">
                                     {{ $video_contact[0]['watch-video-p-3'] }}<br />{{ $video_contact[0]['watch-video-p-3-1'] }}
@@ -1527,7 +1522,7 @@
     </section>
 
     <section>
-        <div class="container mt-5 mb-5">
+        <div class="container mt-3 mb-5">
             <div class="row">
                 <div class="col-md-6 services-background-image w-100 h-75"
                     style="background-image: url({{ $video_contact[0]['contact-us-bg-img'] }});border-radius:30px;">
@@ -1585,37 +1580,6 @@
         </div>
     </section>
     <!-- footer -->
-    {{-- <footer class="footer mt-5">
-        <div class="container-fluid" style="max-height:200px;margin-top:150px;">
-            <div class="row">
-                <div class="col-md-3">
-                    <img class="pull-left" src="assets/images/footer-logo.png" />
-                </div>
-                <div class="col-md-9" style="height:200px;">
-                    <h3 class="h3 mt-5">SOS PRAGAS</h3>
-                    <p>Eliminamos todo o tipo de pargas.</p>
-                </div>
-            </div>
-            <div class="row" style="height:50px;z-index:10;background-color:#002255;color:white;border-color:#002255;">
-                <div class="col-md-3" style="background-color: #002255;margin-top:-50px;height:50px;">
-                    <p class="text-center text-white mt-3">Copyright</p>
-                </div>
-                <div class="col-md-3 text-white"
-                    style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
-                    <p class="text-white"> ©2024 <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
-                        direitos reservados</p>
-                </div>
-                <div class="col-md-3 text-white"
-                    style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
-                    <p class="mt-3 text-white">Politica de publicidade</p>
-                </div>
-                <div class="col-md-3 text-white"
-                    style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
-                    <p class="mt-3 text-white">Desenvolvido por Pixel in Motion</p>
-                </div>
-            </div>
-        </div>
-    </footer> --}}
 
     <footer class="container-fluid footer mt-5" style="max-height:200px;margin-top:150px;">
         <div class="row">
@@ -1666,7 +1630,10 @@
 
             $('#customer_type').val('home');
             $('#modal-customer_type').val('home');
-            //$("#myTabContent").css("border-top-right-radius", "30px");
+            $("#accordion-1").addClass('active-collapse');
+
+            $(".accordion-1").addClass('text-white');
+
             $("#contact-tab").click(function() {
                 $('#quote-tab').removeClass('bg-white');
                 $('#quote-tab').addClass('bg-light');
@@ -1702,8 +1669,6 @@
                 $("#company").val("company");
             })
 
-
-
             $("#modal-contact-tab").click(function() {
                 $('#modal-quote-tab').removeClass('bg-white');
                 $('#modal-quote-tab').addClass('bg-light');
@@ -1737,6 +1702,47 @@
                 $('#modal-company').addClass('active-tab');
                 $('#modal-customer_type').val('company');
                 $("#modal-company").val("company");
+            })
+
+
+            $("#accordion-1").click(function() {
+                $("#accordion-1").addClass('active-collapse');
+                $('#accordion-2').removeClass('active-collapse');
+                $('#accordion-3').removeClass('active-collapse');
+                $('#accordion-4').removeClass('active-collapse');
+                $('#accordion-5').removeClass('active-collapse');
+            })
+
+            $("#accordion-2").click(function() {
+                $("#accordion-1").removeClass('active-collapse');
+                $('#accordion-2').addClass('active-collapse');
+                $('#accordion-3').removeClass('active-collapse');
+                $('#accordion-4').removeClass('active-collapse');
+                $('#accordion-5').removeClass('active-collapse');
+            })
+
+            $("#accordion-3").click(function() {
+                $("#accordion-1").removeClass('active-collapse');
+                $('#accordion-2').removeClass('active-collapse');
+                $('#accordion-3').addClass('active-collapse');
+                $('#accordion-4').removeClass('active-collapse');
+                $('#accordion-5').removeClass('active-collapse');
+            })
+
+            $("#accordion-4").click(function() {
+                $("#accordion-1").removeClass('active-collapse');
+                $('#accordion-2').removeClass('active-collapse');
+                $('#accordion-3').removeClass('active-collapse');
+                $('#accordion-4').addClass('active-collapse');
+                $('#accordion-5').removeClass('active-collapse');
+            })
+
+            $("#accordion-5").click(function() {
+                $("#accordion-1").removeClass('active-collapse');
+                $('#accordion-2').removeClass('active-collapse');
+                $('#accordion-3').removeClass('active-collapse');
+                $('#accordion-4').removeClass('active-collapse');
+                $('#accordion-5').addClass('active-collapse');
             })
         });
     </script>

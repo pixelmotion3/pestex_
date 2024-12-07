@@ -17,13 +17,6 @@ return [
 
     'default' => env('DB_CONNECTION', 'mysql'),
 
-    'connections' => [
-
-        'sqlite' => [
-            'driver' => 'sqlite',
-            'database' => 'absolute\path\database\database.sqlite', 
-            'prefix' => '',
-        ]
     /*
     |--------------------------------------------------------------------------
     | Database Connections
