@@ -750,8 +750,12 @@
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h5'] }}" name="carrousel-h5" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">H2 part 1</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h2'] }}" name="carrousel-h2" required>
+                                      </div>
+                                      <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">H2 part 2</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h2-a'] }}" name="carrousel-h2-a" required>
                                       </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">1 H4</label>
@@ -780,8 +784,12 @@
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h5-1'] }}" name="carrousel-h5-1" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">H2 part 1</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h2-1'] }}" name="carrousel-h2-1" required>
+                                      </div>
+                                      <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">H2 part 2</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h2-b'] }}" name="carrousel-h2-b" required>
                                       </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">1 H4</label>
@@ -812,6 +820,10 @@
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h2-2'] }}" name="carrousel-h2-2" required>
+                                      </div>
+                                      <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h2-c'] }}" name="carrousel-h2-c" required>
                                       </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">1 H4</label>

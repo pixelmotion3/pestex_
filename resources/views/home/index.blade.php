@@ -1259,7 +1259,7 @@
 
             <section class="cta-four mt-5" >
                 <div class="container" style="margin-top:150px;">                      
-                    <div class="cta-four__bg" style="background-image: url(assets/images/resources/cta-4-bg.jpg);">   
+                    <div class="cta-four__bg" style="background-image: url({{ $video_contact[0]['watch-video-bg-img'] }});">   
                         <!--                
                         <div class="cta-four__shape" style="background-image: url(assets/images/shapes/cta-4-border.png);"></div>                        
                         <div class="cta-four__overlay" style="background-image: url(assets/images/shapes/cta-4-bg-overlay.png);"></div>   

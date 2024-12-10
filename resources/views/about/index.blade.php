@@ -164,7 +164,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
+                {{-- <div class="item">
                     <div class="main-slider-three__item">
                         <div class="main-slider-three__bg" style="background-image: url({{ $main[0]['bg-2'] }});"></div><!-- slider-bg -->
                         <div class="main-slider-three__shape-one" style="background-image: url({{ $main[0]['shape-one-2'] }});"></div><!-- slider-shape -->
@@ -202,7 +202,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </section>
         <!-- Feature -->
@@ -279,11 +279,11 @@
                                         <span>{{ $service[0]['li-i-4'] }}</span>
                                     </li>
                                 </ul>
-                                <a href="about.html" class="tolak-btn-two tolak-btn-two--home-seven">
+                                {{-- <a href="about.html" class="tolak-btn-two tolak-btn-two--home-seven">
                                     <span class="tolak-btn-two__left-star"></span>
                                     <span>{{ $service[0]['a-span'] }}<i class="tolak-icons-two-arrow-right-short"></i></span>
                                     <span class="tolak-btn-two__right-star"></span>
-                                </a>
+                                </a> --}}
                             </div><!-- /.why-choose-five__content -->
                         </div><!-- /.col-lg-6 -->
                     </div><!-- /.row -->
@@ -293,7 +293,7 @@
         
         <!-- service-section end -->
         <h2 class="text-center h2 text-body">{{ $video[0]['h2'] }}</h2>
-        <p class="text-center p mt-5 mb-5 p-5">{{ $video[0]['p'] }}</p>
+        <p class="text-center p mt-3 mb-5 p-5">{{ $video[0]['p'] }}</p>
         <section class="cta-four mt-5">
             <div class="container mt-5">
                 <div class="cta-four__bg" style="background-image: url({{ $video[0]['bg-img'] }});">
@@ -316,7 +316,7 @@
                                 <div class="cta-four__content__info">
                                     <div class="cta-four__content__info__icon"><i class="icofont-speech-comments"></i></div>
                                     <p class="cta-four__content__info__text">
-                                        {{ $video[0]['div-p'] }} <a href="contact.html">Meet.</a>
+                                        {{ $video[0]['div-p'] }} <a href="contact.html">Saiba mais.</a>
                                     </p>
                                 </div>
                             </div>
@@ -334,7 +334,7 @@
             <div class="testimonials-three__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%" style="background-image: url({{ $testimonial[0]['img-path'] }});"></div>
             <div class="container">
                 <div class="sec-title-two text-center">
-                    <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span>{{ $testimonial[0]['h6'] }}<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
+                    <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span><b>{{ $testimonial[0]['h6'] }}</b><span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
                     <h3 class="sec-title-two__title">{{ $testimonial[0]['h3'] }}</h3><!-- /.sec-title-two__title -->
                 </div><!-- /.sec-title-two -->
                 <div class="row">
@@ -426,7 +426,7 @@
                         <div class="col-lg-6">
                             <div class="contact-two__info">
                                 <div class="contact-two__info__shape" style="background-image: url({{ $contact_info[0]['bg-img'] }});"></div>
-                                <h4 class="contact-two__info__title">{{ $contact_info[0]['h4'] }}</h4>
+                                <h4 class="contact-two__info__title"><b>{{ $contact_info[0]['h4'] }}</b></h4>
                                 <p class="contact-two__info__text">
                                     {{ $contact_info[0]['p'] }}
                                 </p>
@@ -448,7 +448,7 @@
                                     </li>
                                 </ul>
                                 <div class="contact-two__info__social">
-                                    <h5 class="contact-two__info__social__title">Follow Social:</h5>
+                                    <h5 class="contact-two__info__social__title">Siga-nos:</h5>
                                     <div class="contact-two__info__social__wrap">
                                         <a href="https://facebook.com">
                                             <i class="fab fa-facebook-f" aria-hidden="true"></i>
@@ -473,8 +473,8 @@
                         <div class="col-lg-6">
                             <div class="contact-two__content">
                                 <div class="sec-title-two text-left">
-                                    <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span>{{ $contact_info[0]['h-6'] }}<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
-                                    <h3 class="sec-title-two__title">{{ $contact_info[0]['h-3'] }}</h3><!-- /.sec-title-two__title -->
+                                    <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span><b>{{ $contact_info[0]['h-6'] }}</b><span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
+                                    <h3 class="sec-title-two__title"><b>{{ $contact_info[0]['h-3'] }}</b></h3><!-- /.sec-title-two__title -->
                                 </div><!-- /.sec-title-two -->
                                 <p class="contact-two__content__text">
                                     {{ $contact_info[0]['p-3'] }}

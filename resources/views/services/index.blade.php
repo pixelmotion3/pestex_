@@ -143,7 +143,7 @@
     </header><!-- /.main-header -->
 
     <section class="page-header">
-        <div class="page-header__bg"></div>
+        <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg-1-1.png)"></div>
         <div class="page-header__shape"></div>
         <div class="page-header__shape-two"></div>
         <!-- /.page-header__bg -->

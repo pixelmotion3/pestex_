@@ -126,7 +126,7 @@
             <section class="service-two service-two--page">
                 <div class="container">
                     <div class="sec-title-two text-center">
-                        <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span>{{ $main[0]['h6'] }}<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
+                        <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span><b>{{ $main[0]['h6'] }}</b><span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
                         <h3 class="sec-title-two__title">{{ $main[0]['h3'] }}</h3><!-- /.sec-title-two__title -->
                     </div><!-- /.sec-title-two -->
                     <div class="row gutter-y-30">
@@ -294,9 +294,9 @@
                                         </p>
                                     </li>
                                 </ul>
-                                <a href="about.html" class="tolak-btn-two tolak-btn-two--home-six">
+                                <a href="/sobre" class="tolak-btn-two tolak-btn-two--home-six">
                                     <span class="tolak-btn-two__left-star"></span>
-                                    <span>About More<i class="tolak-icons-two-arrow-right-short"></i></span>
+                                    <span>Sobre mais<i class="tolak-icons-two-arrow-right-short"></i></span>
                                     <span class="tolak-btn-two__right-star"></span>
                                 </a>
                             </div><!-- /.about__content -->

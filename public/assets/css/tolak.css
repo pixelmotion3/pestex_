@@ -11597,7 +11597,6 @@ body.megamenu-popup-active .mobile-nav__content {
   background-repeat: no-repeat;
   background-position: right center;
   background-size: cover;
-  background-image: url(../images/backgrounds/page-header-bg-1-1.png);
 }
 @media (max-width: 1199px) {
   .page-header__bg {
@@ -12093,7 +12092,6 @@ body.megamenu-popup-active .mobile-nav__content {
   width: 100%;
   height: 100%;
   content: "";
-  background-image: url(../images/shapes/slider-1-overlay.png);
   background-position: top left;
   background-repeat: no-repeat;
   background-size: auto;
@@ -12304,12 +12302,12 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 .main-slider-one__floating-text {
   position: absolute;
-  left: 15%;
+  left: 7%;
   bottom: 0;
   top: 0;
   margin: auto;
   transform: rotate(-90deg) translateX(-200px);
-  font-size: 178px;
+  font-size: 100px;
   font-weight: 400;
   line-height: 1;
   display: block;
@@ -12425,7 +12423,7 @@ body.megamenu-popup-active .mobile-nav__content {
   background-color: var(--tolak-base, #3d72fc);
   border-radius: 30px;
   max-width: 400px;
-  min-width: 150px;
+  min-width: 250px;
 }
 
 .main-slider-one__project__icon {
@@ -25614,13 +25612,19 @@ body.boxed-wrapper .main-slider-one__floating-text {
 
 .testimonial-boxes{
     background-color: #002255;
-    height:450px;
-    width:auto;
+    max-height:650px;
+    min-width:250px;
     margin:30px;
     max-width:450px;
     border-top-left-radius: 70px;
     border-top-right-radius: 70px;
     overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 770px) {
+  .testimonial-boxes{
+    margin:0px;
+}
 }
 
 
@@ -25744,8 +25748,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
       top: 78px;
       z-index: 1;
       background-color: white;
-      height: 650px;
-      
+      height: 650px;      
   }
 }
 
@@ -25863,4 +25866,25 @@ body.boxed-wrapper .main-slider-one__floating-text {
 
 .text-titles {
   color:#ff6600;
+}
+
+.space_between{
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 770px) {
+  .space_between{
+    margin-top: 200px;
+  }
+}
+
+.contact_us{
+  margin-left: -30px;
+}
+
+@media screen and (max-width: 770px) {
+  .apointement-box {
+      margin-left: 0px;
+      margin-top:10px;
+  }
 }

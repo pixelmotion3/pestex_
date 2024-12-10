@@ -77,6 +77,9 @@ class LandingPageController extends Controller
             $query = LandingPage::where('id',1)->update([
                 'carrousel-h5' => $request->input('carrousel-h5'),
                 'carrousel-h2' => $request->input('carrousel-h2'),
+                'carrousel-h2-a' => $request->input('carrousel-h2-a'),
+                'carrousel-h2-b' => $request->input('carrousel-h2-b'),
+                'carrousel-h2-c' => $request->input('carrousel-h2-c'),
                 'carrousel-p' => $request->input('carrousel-p'),
                 'carrousel-a-1' => $request->input('carrousel-a-1'),
                 'carrousel-h5-1' => $request->input('carrousel-h5-1'),

@@ -97,11 +97,15 @@
 }
 
 .main-header .menu-right-content .cart-box a:hover{
-  color: #3133d0;
+  color: #002255;
 }
 
 .thm-btn:before{
-	background: #3133d0;
+	background: #002255;
+}
+
+.thm-btn1:before{
+	background: #ff6600;
 }
 
 .banner-section .owl-nav .owl-next:hover,
@@ -1347,7 +1351,7 @@
 }
 
 .theme-btn-three{
-	background: #0a267a;
+	background: #002255;
 }
 
 .footer-social li a:hover{

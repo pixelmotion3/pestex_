@@ -17,18 +17,21 @@ class LandingPage extends Model
         
         'carrousel-h5',
         'carrousel-h2',
+        'carrousel-h2-a',
         'carrousel-p',
         'carrousel-a-1',
         'carrousel-bg-img-path',
 
         'carrousel-h5-1',
         'carrousel-h2-1',
+        'carrousel-h2-b',
         'carrousel-p-1',
         'carrousel-a-1-1',
         'carrousel-bg-img-path-1',
 
         'carrousel-h5-2',
         'carrousel-h2-2',
+        'carrousel-h2-c',
         'carrousel-p-2',
         'carrousel-a-1-2',
         'carrousel-bg-img-path-2',

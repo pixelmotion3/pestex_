@@ -86,10 +86,12 @@
             width: 100%;
             padding: 10px;
             outline: none;
+            color: grey;
         }
 
         .input-field:focus {
             border: 2px solid dodgerblue;
+            color: grey;
         }
 
         .btn {
@@ -99,20 +101,18 @@
             border: none;
             cursor: pointer;
             width: 100%;
-            opacity: 0.9;
         }
 
         .btn:hover {
-            opacity: 1;
             background-color: #002255;
             color: white;
         }
 
 
         .btn1:hover {
-            opacity: 1;
             background-color: #ff6600;
             color: white;
+            transition: all 500ms ease;
         }
 
         .btn1 {
@@ -122,8 +122,25 @@
             border: none;
             cursor: pointer;
             width: 100%;
-            opacity: 0.9;
         }
+
+        .theme-btn-three1{
+            position: relative;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+            color: white;
+            text-transform: uppercase;
+            padding: 16px 54px;
+            border-radius: 5px;
+            transition: all 500ms ease;
+        }
+
+        .theme-btn-three1:hover{
+            color: white !important;
+        }
+
 
         .custom-select {
             background-color: #A9A9A9;
@@ -143,6 +160,9 @@
             color: white !important;
         }
 
+        svg{
+            transform: scale(0.7)
+        }
        
     </style>
     <!-- jequery plugins -->
@@ -296,7 +316,7 @@
                                         <div class="form-check col-md-12">
                                             <input class="form-check-input" type="checkbox"
                                                 name="confirmed" id="flexCheckDefault" required>
-                                            <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;">
+                                            <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
                                                 Aceito os Termos de Utilizaçao
                                             </label>
                                             @error('confirmed')
@@ -309,15 +329,15 @@
                                         <div class="form-check col-md-12">
                                             <input class="form-check-input"
                                                 type="checkbox" id="flexCheckDefault" required>
-                                            <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;">
+                                            <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
                                                 Tenho conhecimento e aceito a Politica de Privacidade
                                             </label>
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input"
                                                 type="checkbox" id="flexCheckDefault" required>
-                                            <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;">
-                                                Autorizo tratamento de dados pessoais para marketting de produtos e serviços
+                                            <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
+                                                Autorizo tratamento de dados pessoais para marketing de produtos e serviços
                                             </label>
                                         </div>
                                         <div class="col-md-12 ml-4 mb-5" style="max-width: 92%">
@@ -382,7 +402,7 @@
                                             <div class="form-check col-md-12">
                                                 <input class="form-check-input" type="checkbox"
                                                     name="confirmed" id="flexCheckDefault" required>
-                                                <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;">
+                                                <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
                                                     Aceito os Termos de Utilizaçao
                                                 </label>
                                                 @error('confirmed')
@@ -395,14 +415,14 @@
                                             <div class="form-check col-md-12">
                                                 <input class="form-check-input"
                                                     type="checkbox" id="flexCheckDefault" required>
-                                                <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;">
+                                                <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
                                                     Tenho conhecimento e aceito a Politica de Privacidade
                                                 </label>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input"
                                                     type="checkbox" id="flexCheckDefault" required>
-                                                <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;">
+                                                <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
                                                     Autorizo tratamento de dados pessoais para marketting de produtos e serviços
                                                 </label>
                                             </div>
@@ -447,7 +467,7 @@
                     "smartSpeed": 1000,
                     "nav": false,
                     "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
-                    "dots": false,
+                    "dots": true,
                     "margin": 0
                     }'>
             <div class="item">
@@ -456,35 +476,21 @@
                         data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>                            
                     </div>
                     <div class="main-slider-one__bg"
-                        style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path'] }});"></div>
-                    
-                            <svg class="main-slider-one__bg-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <rect class='circle0 steap' x="5.2%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle1 steap' x="15.6%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle2 steap' x="26%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle3 steap' x="36.4%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle4 steap' x="46.8%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle5 steap' x="57%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle6 steap' x="67.7%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle7 steap' x="78.1%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle8 steap' x="88.5%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle9 steap' x="100%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            </svg>
-                            
+                        style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path'] }});"></div>                            
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="main-slider-one__content">
-                                    <h5 class="main-slider-one__sub-title">{{ $main_screen[0]['carrousel-h5'] }}</h5>
+                                    <h5 class="main-slider-one__sub-title text-titles">{{ $main_screen[0]['carrousel-h5'] }}</h5>
                                     <!-- slider-sub-title -->
-                                    <h2 class="main-slider-one__title">{{ $main_screen[0]['carrousel-h2'] }}</h2><!-- slider-title -->
+                                    <h2 class="main-slider-one__title">{{ $main_screen[0]['carrousel-h2'] }} <br/> {{ $main_screen[0]['carrousel-h2-a'] }}</h2><!-- slider-title -->
                                     <div class="main-slider-one__text">
                                         <p class="main-slider-one__text__one">{{ $main_screen[0]['carrousel-p'] }}</p>
                                     </div><!-- slider-text -->
                                     <div class="main-slider-one__bottom">
                                         <div class="main-slider-one__btn">
                                             <a href="/servicos"
-                                                class="btn1 theme-btn-three thm-btn"><b>{{ $main_screen[0]['carrousel-a-1'] }}</b><span></span></a><!-- slider-btn -->
+                                                class="btn1 theme-btn-three1 thm-btn1"><b>{{ $main_screen[0]['carrousel-a-1'] }}</b><span></span></a><!-- slider-btn -->
                                         </div>
                                         <!--
                                             <div class="main-slider-one__social">
@@ -520,27 +526,14 @@
                     </div>
                     <div class="main-slider-one__bg"
                         style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path-1'] }});"></div>
-                    
-                            <svg class="main-slider-one__bg-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <rect class='circle0 steap' x="5.2%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle1 steap' x="15.6%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle2 steap' x="26%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle3 steap' x="36.4%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle4 steap' x="46.8%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle5 steap' x="57%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle6 steap' x="67.7%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle7 steap' x="78.1%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle8 steap' x="88.5%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle9 steap' x="100%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            </svg>
                         
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="main-slider-one__content">
-                                    <h5 class="main-slider-one__sub-title">{{ $main_screen[0]['carrousel-h5-1'] }}
+                                    <h5 class="main-slider-one__sub-title text-titles">{{ $main_screen[0]['carrousel-h5-1'] }}
                                     </h5><!-- slider-sub-title -->
-                                    <h2 class="main-slider-one__title">{{ $main_screen[0]['carrousel-h2-1'] }}</h2><!-- slider-title -->
+                                    <h2 class="main-slider-one__title">{{ $main_screen[0]['carrousel-h2-1'] }}<br/> {{ $main_screen[0]['carrousel-h2-b'] }}</h2><!-- slider-title -->
                                     <div class="main-slider-one__text">
                                         <p class="main-slider-one__text__one">{{ $main_screen[0]['carrousel-p-1'] }}.
                                         </p>
@@ -548,7 +541,7 @@
                                     <div class="main-slider-one__bottom">
                                         <div class="main-slider-one__btn">
                                             <a href="/servicos"
-                                                class="btn1 theme-btn-three thm-btn"><b>{{ $main_screen[0]['carrousel-a-1-1'] }}</b><span></span></a><!-- slider-btn -->
+                                                class="btn1 theme-btn-three1 thm-btn1"><b>{{ $main_screen[0]['carrousel-a-1-1'] }}</b><span></span></a><!-- slider-btn -->
                                         </div>
                                         <!--
                                                 <div class="main-slider-one__social">
@@ -587,27 +580,14 @@
                     </div>
                     <div class="main-slider-one__bg"
                         style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path-2'] }});"></div>
-                    
-                            <svg class="main-slider-one__bg-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <rect class='circle0 steap' x="5.2%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle1 steap' x="15.6%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle2 steap' x="26%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle3 steap' x="36.4%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle4 steap' x="46.8%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle5 steap' x="57%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle6 steap' x="67.7%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle7 steap' x="78.1%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle8 steap' x="88.5%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                                <rect class='circle9 steap' x="100%" y="0" rx="0" ry="0" width="100%" height="100%" />
-                            </svg>
                         
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="main-slider-one__content">
-                                    <h5 class="main-slider-one__sub-title">{{ $main_screen[0]['carrousel-h5-2'] }}
+                                    <h5 class="main-slider-one__sub-title text-titles">{{ $main_screen[0]['carrousel-h5-2'] }}
                                     </h5><!-- slider-sub-title -->
-                                    <h2 class="main-slider-one__title">{{ $main_screen[0]['carrousel-h2-2'] }}</h2><!-- slider-title -->
+                                    <h2 class="main-slider-one__title">{{ $main_screen[0]['carrousel-h2-2'] }}<br/> {{ $main_screen[0]['carrousel-h2-c'] }}</h2><!-- slider-title -->
                                     <div class="main-slider-one__text">
                                         <p class="main-slider-one__text__one">{{ $main_screen[0]['carrousel-p-2'] }}
                                         </p>
@@ -615,7 +595,7 @@
                                     <div class="main-slider-one__bottom">
                                         <div class="main-slider-one__btn">
                                             <a href="/servicos"
-                                                class="btn1 theme-btn-three thm-btn"><b>{{ $main_screen[0]['carrousel-a-1-2'] }}</b><span></span></a><!-- slider-btn -->
+                                                class="btn1 theme-btn-three1 thm-btn1"><b>{{ $main_screen[0]['carrousel-a-1-2'] }}</b><span></span></a><!-- slider-btn -->
                                         </div>
                                         <!--
                                                 <div class="main-slider-one__social">
@@ -666,7 +646,7 @@
                     </button>
                 </li>
             </ul>
-            <div class="tab-content p-2 bg-white" id="myTabContent" style="border-radius:30px;">
+            <div class="tab-content p-2 bg-white mb-5" id="myTabContent" style="border-radius:30px;">
                 <div class="tab-pane fade show active" id="quote" role="tabpanel" aria-labelledby="quote-tab">
                     <div class="container-fluid bg-white">
                         <form method="POST" action="{{ route('FrontPage.QuoteForm') }}">
@@ -708,7 +688,7 @@
                                     id="customer_type" value="home" required>
                                 <div class="input-container mt-3" style="width: 92%;" required>
                                     <select name="products">
-                                        <option value="ratos" selected class="text-white">Ratos</option>
+                                        <option value="ratos" selected class="text-muted">Ratos</option>
                                         <option value="baratas" class="text-muted">Baratas</option>
                                         <option value="percevejos" class="text-muted">Percevejos</option>
                                     </select>
@@ -758,7 +738,7 @@
                                 <div class="form-check col-md-12">
                                     <input class="form-check-input" type="checkbox"
                                         name="confirmed" id="flexCheckDefault" required>
-                                    <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;">
+                                    <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
                                         Aceito os Termos de Utilizaçao
                                     </label>
                                     @error('confirmed')
@@ -771,15 +751,15 @@
                                 <div class="form-check col-md-12">
                                     <input class="form-check-input"
                                         type="checkbox" id="flexCheckDefault" required>
-                                    <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;">
+                                    <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
                                         Tenho conhecimento e aceito a Politica de Privacidade
                                     </label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input"
                                         type="checkbox" id="flexCheckDefault" required>
-                                    <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;">
-                                        Autorizo tratamento de dados pessoais para marketting de produtos e serviços
+                                    <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
+                                        Autorizo tratamento de dados pessoais para marketing de produtos e serviços
                                     </label>
                                 </div>
 
@@ -822,7 +802,7 @@
                                     <div class="form-check col-md-12">
                                         <input class="form-check-input" type="checkbox"
                                             name="confirmed" id="flexCheckDefault" required>
-                                        <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;color:grey;">
+                                        <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;color:grey;font-size:12px;">
                                             Aceito os Termos de Utilizaçao
                                         </label>
                                         @error('confirmed')
@@ -835,15 +815,15 @@
                                     <div class="form-check col-md-12">
                                         <input class="form-check-input"
                                             type="checkbox" id="flexCheckDefault" required>
-                                        <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;color:grey;">
+                                        <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;color:grey;font-size:12px;">
                                             Tenho conhecimento e aceito a Politica de Privacidade
                                         </label>
                                     </div>
                                     <div class="form-check col-md-12">
                                         <input class="form-check-input"
                                             type="checkbox" id="flexCheckDefault" required>
-                                        <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;color:grey;">
-                                            Autorizo tratamento de dados pessoais para marketting de produtos e serviços
+                                        <label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 250px;max-width:250px;color:grey;font-size:12px;">
+                                            Autorizo tratamento de dados pessoais para marketing de produtos e serviços
                                         </label>
                                     </div>
                                     <div class="col-md-12 ml-4" style="max-width: 92%;">
@@ -861,23 +841,23 @@
     <!-- main-slider-end -->
 
     <!-- Feature Start -->
-    <section class="feature-one" style="margin-top:220px;">
+    <section class="feature-one space_between">
         <div class="container">
-            <div class="text-center mb-5">
-                <h6 class="sec-title__tagline text-titles"><span
-                        class="sec-title__tagline__left"></span>{{ $company_status[0]['company-status-h6'] }}<span
+            <div class="text-center">
+                <h6 class="sec-title__tagline text-titles mt-5"><span
+                        class="sec-title__tagline__left"></span><b>{{ $company_status[0]['company-status-h6'] }}</b><span
                         class="sec-title__tagline__right"></span></h6><!-- /.sec-title__tagline -->
-                <h3 class="sec-title__title">{{ $company_status[0]['company-status-h3'] }}</h3>
+                <h3 class="sec-title__title mt-5"><b>{{ $company_status[0]['company-status-h3'] }}</b></h3>
                 <!-- /.sec-title__title -->
             </div><!-- /.sec-title -->
-            <div class="row gutter-y-30">
+            <div class="row gutter-y-30 mt-5">
                 <div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="00ms">
                     <div class="feature-one__item text-center">
                         <div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
                         <div class="service-one__item__icon">
                             <span class="icon-social-care"></span>
                         </div>
-                        <h4 class="feature-one__item__title">{{ $company_status[0]['company-status-1h4'] }}</h4>
+                        <h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-1h4'] }}</b></h4>
                         <p class="feature-one__item__text">{{ $company_status[0]['company-status-1p'] }}</p>
                         <div class="feature-one__item__arrow"
                             style="background-image: url(assets/images/shapes/feature-1-shape-1.png);margin-top:-40px;">
@@ -890,7 +870,7 @@
                         <div class="service-one__item__icon">
                             <span class="icon-note-pad"></span>
                         </div>
-                        <h4 class="feature-one__item__title">{{ $company_status[0]['company-status-2h4'] }}</h4>
+                        <h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-2h4'] }}</b></h4>
                         <p class="feature-one__item__text">{{ $company_status[0]['company-status-2p'] }}</p>
                         <div class="feature-one__item__arrow feature-one__item__arrow--sm-hide"
                             style="background-image: url(assets/images/shapes/feature-1-shape-2.png);margin-top:-40px;">
@@ -903,7 +883,7 @@
                         <div class="service-one__item__icon">
                             <span class="icon-advertisement"></span>
                         </div>
-                        <h4 class="feature-one__item__title">{{ $company_status[0]['company-status-3h4'] }}</h4>
+                        <h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-3h4'] }}</b></h4>
                         <p class="feature-one__item__text">{{ $company_status[0]['company-status-3p'] }}</p>
                     </div><!-- feature-item -->
                 </div>
@@ -916,9 +896,9 @@
         <div class="container">
             <div class="text-center">
                 <h6 class="sec-title__tagline text-titles"><span
-                        class="sec-title__tagline__left"></span>{{ $best_service[0]['best-service-h6-1'] }}<span
+                        class="sec-title__tagline__left"></span><b>{{ $best_service[0]['best-service-h6-1'] }}</b><span
                         class="sec-title__tagline__right"></span></h6><!-- /.sec-title__tagline -->
-                <h3 class="sec-title__title mt-5">{{ $best_service[0]['best-service-h3-1'] }}</h3>
+                <h3 class="sec-title__title mt-5"><b>{{ $best_service[0]['best-service-h3-1'] }}</b></h3>
                 <!-- /.sec-title__title -->
             </div><!-- /.sec-title -->
             <div class="row mt-5">
@@ -932,7 +912,7 @@
                                 <span class="icon-cooperation"></span>
                             </div><!-- /.service-icon -->
                             <h3 class="service-one__item__title">
-                                <a href="business-growth.html">{{ $best_service[0]['best-service-a-1'] }}</a>
+                                <a href="/"><b>{{ $best_service[0]['best-service-a-1'] }}</b></a>
                             </h3><!-- /.service-title -->
                             <p class="service-one__item__text">
                                 {{ $best_service[0]['best-service-p-1'] }}
@@ -956,7 +936,7 @@
                                 <span class="icon-ads-campaign"></span>
                             </div><!-- /.service-icon -->
                             <h3 class="service-one__item__title">
-                                <a href="/service">{{ $best_service[0]['best-service-a-2'] }}</a>
+                                <a href="/servicos"><b>{{ $best_service[0]['best-service-a-2'] }}</b></a>
                             </h3><!-- /.service-title -->
                             <p class="service-one__item__text">
                                 {{ $best_service[0]['best-service-p-2'] }}
@@ -980,7 +960,7 @@
                                 <span class="icon-headhunter"></span>
                             </div><!-- /.service-icon -->
                             <h3 class="service-one__item__title">
-                                <a href="marketing-solution.html">{{ $best_service[0]['best-service-a-3'] }}</a>
+                                <a href="/servicos"><b>{{ $best_service[0]['best-service-a-3'] }}</b></a>
                             </h3><!-- /.service-title -->
                             <p class="service-one__item__text">
                                 {{ $best_service[0]['best-service-p-3'] }}
@@ -1194,10 +1174,10 @@
                     <div class="why-choose-two__content">
                         <div class="sec-title-two text-left">
                             <h6 class="sec-title-two__tagline text-titles"><span
-                                    class="sec-title-two__tagline__left icofont-rounded-double-left"></span><i>{{ $choose_us[0]['choose-us-p-1'] }}</i><span
+                                    class="sec-title-two__tagline__left icofont-rounded-double-left"></span><i><b>{{ $choose_us[0]['choose-us-p-1'] }}</b></i><span
                                     class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6>
                             <!-- /.sec-title-two__tagline -->
-                            <h3 class="sec-title-two__title">{{ $choose_us[0]['choose-us-h3'] }}</h3>
+                            <h3 class="sec-title-two__title"><b>{{ $choose_us[0]['choose-us-h3'] }}</b></h3>
                             <!-- /.sec-title-two__title -->
                         </div><!-- /.sec-title-two -->
                         <p class="why-choose-two__content__text">
@@ -1247,14 +1227,14 @@
         <div class="container" style="margin-top:50px;">
             <div class="sec-title-two text-center">
                 <h6 class="sec-title-two__tagline text-titles"><span
-                        class="sec-title-two__tagline__left icofont-rounded-double-left"></span><i>{{ $testimonial_say[0]['testimonial-say-p-strong'] }}</i><span
+                        class="sec-title-two__tagline__left icofont-rounded-double-left"></span><i><b>{{ $testimonial_say[0]['testimonial-say-p-strong'] }}</b></i><span
                         class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6>
                 <!-- /.sec-title-two__tagline -->
-                <h3 class="sec-title-two__title">{{ $testimonial_say[0]['testimonial-say-h2'] }}</h3>
+                <h3 class="sec-title-two__title"><b>{{ $testimonial_say[0]['testimonial-say-h2'] }}</b></h3>
                 <!-- /.sec-title-two__title -->
             </div>
             <div class="row text-center">
-                <div class="col-sm-12 col-md-3 testimonial-boxes text-center text-primary w-100">
+                <div class="col-sm-12 col-md-4 testimonial-boxes text-center text-primary w-100">
                     <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;color:#ff6600;"></i>
                     <blockquote>
                         <p class="text-center text-white-50 mt-5">
@@ -1277,7 +1257,7 @@
                         </div>
                     </blockquote>
                 </div>
-                <div class="col-sm-12 col-md-3 testimonial-boxes text-center text-primary w-100">
+                <div class="col-sm-12 col-md-4 testimonial-boxes text-center text-primary w-100">
                     <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;color:#ff6600;"></i>
                     <blockquote>
                         <p class="text-center text-white-50 mt-5">
@@ -1300,7 +1280,7 @@
                         </div>
                     </blockquote>
                 </div>
-                <div class="col-sm-12 col-md-3 testimonial-boxes text-center text-primary w-100">
+                <div class="col-sm-12 col-md-4 testimonial-boxes text-center text-primary w-100">
                     <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;color:#ff6600;"></i>
                     <blockquote>
                         <p class="text-center text-white-50 mt-5">
@@ -1599,7 +1579,7 @@
                                     <textarea name="message" placeholder="Mensagem *"></textarea><!-- /# -->
                                 </div><!-- /.form-one__control -->
                                 <div class="form-one__control form-one__control--full">
-                                    <button type="submit" class="tolak-btn-two tolak-btn-two--home-six pull-left" style="border-radius: 10px;">
+                                    <button type="submit" class="tolak-btn-two tolak-btn-two--home-six pull-left" style="border-radius: 5px;">
                                         <span class="tolak-btn-two__left-star"></span>
                                         <span>Send Request<i class="tolak-icons-two-arrow-right-short"></i></span>
                                         <span class="tolak-btn-two__right-star"></span>
