@@ -855,7 +855,9 @@
                     <div class="feature-one__item text-center">
                         <div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
                         <div class="service-one__item__icon">
-                            <span class="icon-social-care"></span>
+                            <span>
+                              <img src="assets/images/Ratos.png" />  
+                            </span>
                         </div>
                         <h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-1h4'] }}</b></h4>
                         <p class="feature-one__item__text">{{ $company_status[0]['company-status-1p'] }}</p>
@@ -868,7 +870,9 @@
                     <div class="feature-one__item text-center">
                         <div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
                         <div class="service-one__item__icon">
-                            <span class="icon-note-pad"></span>
+                            <span>
+                                <img src="assets/images/Percevejos.png" />  
+                              </span>
                         </div>
                         <h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-2h4'] }}</b></h4>
                         <p class="feature-one__item__text">{{ $company_status[0]['company-status-2p'] }}</p>
@@ -881,7 +885,9 @@
                     <div class="feature-one__item text-center">
                         <div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
                         <div class="service-one__item__icon">
-                            <span class="icon-advertisement"></span>
+                            <span>
+                                <img src="assets/images/Baratas.png" />  
+                              </span>
                         </div>
                         <h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-3h4'] }}</b></h4>
                         <p class="feature-one__item__text">{{ $company_status[0]['company-status-3p'] }}</p>
