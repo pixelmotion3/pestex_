@@ -18,6 +18,8 @@ class landing_4page extends Model
         'our-services-tab-1-li-1',
         'our-services-tab-1-li-2',
         'our-services-tab-1-li-3',
+        'our-services-tab-1-li-4',
+        'our-services-tab-1-li-5',
         'our-services-tab-1-p-2',
         'our-services-tab-1-a-2',
         'img-1',

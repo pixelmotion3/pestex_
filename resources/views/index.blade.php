@@ -1032,6 +1032,8 @@
                                                 <li>{{ $our_service_1[0]['our-services-tab-1-li-1'] }}</li>
                                                 <li>{{ $our_service_1[0]['our-services-tab-1-li-2'] }}</li>
                                                 <li>{{ $our_service_1[0]['our-services-tab-1-li-3'] }}</li>
+                                                <li>{{ $our_service_1[0]['our-services-tab-1-li-4'] }}</li>
+                                                <li>{{ $our_service_1[0]['our-services-tab-1-li-5'] }}</li>
                                             </ul>
                                             <div class="btn-box">
                                                 <a data-toggle="modal" data-target="#exampleModal" class="theme-btn-three thm-btn">Contacte-nos agora.</a>
@@ -1048,7 +1050,7 @@
                                     <div class="image_block_2">
                                         <div class="image-box">
                                             <figure class="image"><img src="{{ $our_service_1[0]['img-1'] }}" alt=""></figure>
-                                            <div class="image-content">
+                                            <div class="image-content" style="background-color: #002255">
                                                 <h6>Price From</h6>
                                                 <h2>$49</h2>
                                             </div>
@@ -1072,6 +1074,8 @@
                                                 <li>{{ $our_service_2[0]['our-services-tab-2-li-1'] }}</li>
                                                 <li>{{ $our_service_2[0]['our-services-tab-2-li-2'] }}</li>
                                                 <li>{{ $our_service_2[0]['our-services-tab-2-li-3'] }}</li>
+                                                <li>{{ $our_service_2[0]['our-services-tab-2-li-4'] }}</li>
+                                                <li>{{ $our_service_2[0]['our-services-tab-2-li-5'] }}</li>
                                             </ul>
                                             <div class="btn-box">
                                                 <a data-toggle="modal" data-target="#exampleModal" class="theme-btn-three thm-btn">Contacte-nos agora.</a>
@@ -1088,7 +1092,7 @@
                                     <div class="image_block_2">
                                         <div class="image-box">
                                             <figure class="image"><img src="{{ $our_service_2[0]['img-2'] }}" alt=""></figure>
-                                            <div class="image-content">
+                                            <div class="image-content" style="background-color: #002255">
                                                 <h6>Price From</h6>
                                                 <h2>$49</h2>
                                             </div>

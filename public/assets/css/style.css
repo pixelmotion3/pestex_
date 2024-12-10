@@ -2219,7 +2219,9 @@ div#mCSB_1_container{
   font-weight: 600;
 }
 
-
+.image-content{
+  background-color: #002255;
+}
 /** works-section **/
 
 .works-section{

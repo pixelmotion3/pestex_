@@ -1035,6 +1035,14 @@
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_1[0]['our-services-tab-1-li-3'] }}" name="our-services-tab-1-li-3" required>
                                       </div>
                                       <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Tab 1 li 4</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_1[0]['our-services-tab-1-li-4'] }}" name="our-services-tab-1-li-4" required>
+                                      </div>
+                                      <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Tab 1 li 5</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_1[0]['our-services-tab-1-li-5'] }}" name="our-services-tab-1-li-5" required>
+                                      </div>
+                                      <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">Tab 1 p 2</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_1[0]['our-services-tab-1-p-2'] }}" name="our-services-tab-1-p-2" required>
                                       </div>
@@ -1081,6 +1089,14 @@
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">Tab 2 li 3</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_2[0]['our-services-tab-2-li-3'] }}" name="our-services-tab-2-li-3" required>
+                                      </div>
+                                      <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Tab 1 li 4</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_1[0]['our-services-tab-2-li-4'] }}" name="our-services-tab-2-li-4" required>
+                                      </div>
+                                      <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Tab 1 li 5</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_1[0]['our-services-tab-2-li-5'] }}" name="our-services-tab-2-li-5" required>
                                       </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">Tab 2 p 2</label>
