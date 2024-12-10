@@ -304,7 +304,9 @@
                                         </div>
 
                                         <div class="input-container" style="width: 92%;">
-                                            <i class="fa fa-phone icon"></i>
+                                            <i class="icon">
+                                                <img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"/>
+                                            </i>
                                             <input class="input-field rounded" type="number" placeholder="Telefone"
                                                 name="phone">
                                             @error('phone')
@@ -380,19 +382,11 @@
                                                 @enderror
                                             </div>
                                             <div class="input-container" style="width: 92%;">
-                                                <i class="fa fa-phone icon"></i>
+                                                <i class="icon">
+                                                    <img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"/>
+                                                </i>
                                                 <input class="input-field rounded" type="text"
                                                     placeholder="Telefone" name="phone">
-                                                @error('phone')
-                                                    <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
-                                                    </span>
-                                                @enderror
-                                            </div>
-                                            <div class="input-container" style="width: 92%;">
-                                                <i class="fa fa-phone icon"></i>
-                                                <input class="input-field rounded" type="number" placeholder="Telefone"
-                                                    name="phone">
                                                 @error('phone')
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $message }}</strong>
@@ -725,7 +719,9 @@
                                     @enderror
                                 </div>
                                 <div class="input-container" style="width: 92%;">
-                                    <i class="fa fa-phone icon"></i>
+                                    <i class="icon" style="color:black;">
+                                        <img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"/>
+                                    </i>
                                     <input class="input-field rounded" type="number" placeholder="Telefone"
                                         name="phone" required>
                                     @error('phone')
@@ -795,7 +791,9 @@
                                     </div>
 
                                     <div class="input-container" style="width: 92%;">
-                                        <i class="fa fa-phone icon"></i>
+                                        <i class="icon">
+                                            <img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"/>
+                                        </i>
                                         <input class="input-field rounded" type="text" placeholder="Telefone"
                                             name="phone" required>
                                     </div>
@@ -856,7 +854,7 @@
                         <div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
                         <div class="service-one__item__icon">
                             <span>
-                              <img src="assets/images/Ratos.png" />  
+                              <img src="assets/images/DiagnosticoPreciso.png" />  
                             </span>
                         </div>
                         <h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-1h4'] }}</b></h4>
@@ -871,8 +869,8 @@
                         <div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
                         <div class="service-one__item__icon">
                             <span>
-                                <img src="assets/images/Percevejos.png" />  
-                              </span>
+                                <img src="assets/images/MetodosSegurosEficazes.png" />  
+                            </span>
                         </div>
                         <h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-2h4'] }}</b></h4>
                         <p class="feature-one__item__text">{{ $company_status[0]['company-status-2p'] }}</p>
@@ -886,7 +884,7 @@
                         <div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
                         <div class="service-one__item__icon">
                             <span>
-                                <img src="assets/images/Baratas.png" />  
+                                <img src="assets/images/PrevencaoContinua.png" />  
                               </span>
                         </div>
                         <h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-3h4'] }}</b></h4>
@@ -915,7 +913,9 @@
                         </div>
                         <div class="service-one__item__content">
                             <div class="service-one__item__icon">
-                                <span class="icon-cooperation"></span>
+                                <span>
+                                    <img src="assets/images/Ratos.png" />  
+                                </span>
                             </div><!-- /.service-icon -->
                             <h3 class="service-one__item__title">
                                 <a href="/"><b>{{ $best_service[0]['best-service-a-1'] }}</b></a>
@@ -939,7 +939,9 @@
                         </div>
                         <div class="service-one__item__content">
                             <div class="service-one__item__icon">
-                                <span class="icon-ads-campaign"></span>
+                                <span>
+                                    <img src="assets/images/Baratas.png" />  
+                                </span>
                             </div><!-- /.service-icon -->
                             <h3 class="service-one__item__title">
                                 <a href="/servicos"><b>{{ $best_service[0]['best-service-a-2'] }}</b></a>
@@ -963,7 +965,9 @@
                         </div>
                         <div class="service-one__item__content">
                             <div class="service-one__item__icon">
-                                <span class="icon-headhunter"></span>
+                                <span>
+                                    <img src="assets/images/Percevejos.png" />  
+                                </span>
                             </div><!-- /.service-icon -->
                             <h3 class="service-one__item__title">
                                 <a href="/servicos"><b>{{ $best_service[0]['best-service-a-3'] }}</b></a>

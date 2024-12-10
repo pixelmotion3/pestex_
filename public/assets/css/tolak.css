@@ -25671,7 +25671,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
   left: 10px; /* Adjust this based on desired icon position */
   top: 50%;
   transform: translateY(-50%);
-  color: #888; /* Change color as needed */
+  color: black; /* Change color as needed */
   font-size: 1.2em; /* Adjust icon size as needed */
 }
 
