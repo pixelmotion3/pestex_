@@ -13,6 +13,7 @@ use App\Http\Controllers\SustainabilityController;
 use App\Http\Controllers\SustainabilityPageController;
 use App\Http\Controllers\ServiceDetailsController;
 use App\Http\Controllers\MethodController;
+use App\Http\Controllers\ReviewController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -46,6 +47,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('/sustainability-page', SustainabilityPageController::class);
     Route::resource('/ServiceDetails', ServiceDetailsController::class);
     Route::resource('/methods', MethodController::class);
+    Route::resource('/review', ReviewController::class);
 
     Route::post('MethodController/fetch',[MethodController::class,'fetch'])
             ->name('MethodController.fetch');

@@ -15,6 +15,7 @@ use App\Models\landing_8page;
 use App\Models\landing_9page;
 use App\Models\landing_10page;
 use App\Models\landing_11page;
+use App\Models\Review;
 use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
@@ -35,6 +36,7 @@ class LandingPageController extends Controller
         $landing_9page = landing_9page::where('id',1)->get()->toArray();
         $landing_10page = landing_10page::where('id',1)->get()->toArray();
         $landing_11page = landing_11page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
 
        //dd($landing_3page);
 
@@ -50,13 +52,14 @@ class LandingPageController extends Controller
             'collapse' => $landing_9page,
             'call_now' => $landing_10page,
             'video_contact' => $landing_11page,
+            'reviews' => $reviews
         ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateLandingPageRequest $request, LandingPage $landingPage)
+    public function update(Request $request, $id)
     {
         if ($request->has('form0')) {
             $query = LandingPage::where('id',1)->update([
@@ -166,6 +169,7 @@ class LandingPageController extends Controller
                 'our-services-tab-1' => $request->input('our-services-tab-1'),
                 'our-services-tab-1-h2' => $request->input('our-services-tab-1-h2'),
                 'our-services-tab-1-p' => $request->input('our-services-tab-1-p'),
+                'our-services-tab-1-p-1' => $request->input('our-services-tab-1-p-1'),
                 'our-services-tab-1-li-1' => $request->input('our-services-tab-1-li-1'),
                 'our-services-tab-1-li-2' => $request->input('our-services-tab-1-li-2'),
                 'our-services-tab-1-li-3' => $request->input('our-services-tab-1-li-3'),
@@ -197,6 +201,7 @@ class LandingPageController extends Controller
                 'our-services-tab-2' => $request->input('our-services-tab-2'),
                 'our-services-tab-2-h2' => $request->input('our-services-tab-2-h2'),
                 'our-services-tab-2-p' => $request->input('our-services-tab-2-p'),
+                'our-services-tab-2-p-1' => $request->input('our-services-tab-2-p-1'),
                 'our-services-tab-2-li-1' => $request->input('our-services-tab-2-li-1'),
                 'our-services-tab-2-li-2' => $request->input('our-services-tab-2-li-2'),
                 'our-services-tab-2-li-3' => $request->input('our-services-tab-2-li-3'),
@@ -408,6 +413,27 @@ class LandingPageController extends Controller
             } 
         }
 
+        if ($request->has('form13')) {
+            $query = Review::where('id',$id)->update([
+                'p' => $request->input('p'),
+                'name' => $request->input('name'),
+                'rating' => $request->input('rating'),
+            ]); 
+        }
+
         return redirect()->route('landing-page.index');
+    }
+
+    public function store(Request $request){
+        $query = Review::create([
+            'p' => $request->input('p'),
+            'name' => $request->input('name'),
+            'rating' => $request->input('rating'),
+        ]);  
+        
+        if ($query) {
+            return redirect()->route('landing-page.index');
+        }
+        return back();
     }
 }

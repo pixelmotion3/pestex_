@@ -15274,6 +15274,7 @@ body.megamenu-popup-active .mobile-nav__content {
   background-color: #002255;
   color: white;
 }
+
 .service-one__item:hover .service-one__item__bottom::after {
   width: 8px;
   opacity: 1;
@@ -25612,7 +25613,8 @@ body.boxed-wrapper .main-slider-one__floating-text {
 
 .testimonial-boxes{
     background-color: #002255;
-    max-height:650px;
+    max-height:750px;
+    min-height: 400px;
     min-width:250px;
     margin:30px;
     max-width:450px;

@@ -735,7 +735,7 @@
                                       @method('PUT')
                                       <div class="col-12 mt-5 form-group">   
                                         <div class="card-header">
-                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
+                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Carrousel Image 1</label>
                                         </div>                                       
                                         <div class="card">
                                           <img src="{{ $main_screen[0]['carrousel-bg-img-path'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
@@ -746,7 +746,7 @@
                                         </div>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">H6</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">H5</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h5'] }}" name="carrousel-h5" required>
                                       </div>
                                       <div class="col-12 mt-5">
@@ -758,11 +758,11 @@
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h2-a'] }}" name="carrousel-h2-a" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">1 H4</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Carrousel p parte 1</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-p'] }}" name="carrousel-p" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">1 P</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Carrousel p parte 2</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-a-1'] }}" name="carrousel-a-1" required>
                                       </div>
 
@@ -780,23 +780,23 @@
                                         </div>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">H6</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Carrousel H5</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h5-1'] }}" name="carrousel-h5-1" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">H2 part 1</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Carrousel h2 part 1</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h2-1'] }}" name="carrousel-h2-1" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">H2 part 2</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Carrousel h2 part 2</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h2-b'] }}" name="carrousel-h2-b" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">1 H4</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Carrousel p</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-p-1'] }}" name="carrousel-p-1" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">1 P</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Carrousel a</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-a-1-1'] }}" name="carrousel-a-1-1" required>
                                       </div>
 
@@ -814,23 +814,23 @@
                                         </div>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">H6</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Carrousel h5</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h5-2'] }}" name="carrousel-h5-2" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Carrousel h2 part 1</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h2-2'] }}" name="carrousel-h2-2" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">H3</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Carrousel h2 part 2</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-h2-c'] }}" name="carrousel-h2-c" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">1 H4</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Carrousel p</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-p-2'] }}" name="carrousel-p-2" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">1 P</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Carrousel a</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['carrousel-a-1-2'] }}" name="carrousel-a-1-2" required>
                                       </div>
 
@@ -853,27 +853,27 @@
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $company_status[0]['company-status-h3'] }}" name="company-status-h3" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">1 H4</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">H4</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $company_status[0]['company-status-1h4'] }}" name="company-status-1h4" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">1 P</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">P</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $company_status[0]['company-status-1p'] }}" name="company-status-1p" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">2 H4</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">H4</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $company_status[0]['company-status-2h4'] }}" name="company-status-2h4" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">2 P</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">P</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $company_status[0]['company-status-2p'] }}" name="company-status-2p" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">4 H4</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">H4</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $company_status[0]['company-status-3h4'] }}" name="company-status-3h4" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">3 P</label>
+                                        <label for="validationCustom01" class="form-label" style="float:left;">P</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $company_status[0]['company-status-3p'] }}" name="company-status-3p" required>
                                       </div>
                                       <div class="col-12">
@@ -918,7 +918,7 @@
                                       </div>
                                       <div class="col-12 mt-5 form-group">   
                                         <div class="card-header">
-                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Navbar Paragraph</label>
+                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Image</label>
                                         </div>                                       
                                           <div class="card">
                                             <img src="{{ $best_service[0]['best-service-img-path-2'] }}" class="img-fluid" alt="..." style="max-height:239px;max-width:370px;">
@@ -938,7 +938,7 @@
                                       </div>
                                       <div class="col-12 mt-5 form-group">   
                                         <div class="card-header">
-                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Navbar Paragraph</label>
+                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Image</label>
                                         </div>                                       
                                           <div class="card">
                                             <img src="{{ $best_service[0]['best-service-img-path-3'] }}" class="img-fluid" alt="..." style="max-height:239px;max-width:370px;">
@@ -956,8 +956,7 @@
                                         <label for="validationCustom01" class="form-label" style="float:left;">P3</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-p-3'] }}" name="best-service-p-3" required>
                                       </div>
-                                      <!--
-                                      <div class="col-12 mt-5 form-group">   
+                                      {{-- <div class="col-12 mt-5 form-group">   
                                         <div class="card-header">
                                           <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Navbar Paragraph</label>
                                         </div>                                       
@@ -968,8 +967,7 @@
                                               <input type="file" class="form-control-file" id="exampleFormControlFile1" name="best-service-img-path-3">                        
                                             </div>
                                           </div>
-                                      </div>
-                                      -->
+                                      </div> --}}
                                       <div class="col-12">
                                         <button class="btn btn-primary w-100" type="submit" name="form4">Submit</button>
                                       </div>
@@ -996,7 +994,7 @@
                                       </div>
                                       <div class="col-12 mt-5 form-group">   
                                         <div class="card-header">
-                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
+                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Image</label>
                                         </div>                                       
                                           <div class="card">
                                             <img src="{{ $our_service_1[0]['our-services-bg-img-path-1'] }}" class="img-fluid" alt="..." style="max-height:515px;max-width:1920px;">
@@ -1125,8 +1123,7 @@
                                 
                                 </div>
                                  <!-- background-images+text -->
-                                 <div class="tab-pane fade" id="background-images+text" role="tabpanel" aria-labelledby="background-images+text-tab">
-                                    
+                                 <div class="tab-pane fade" id="background-images+text" role="tabpanel" aria-labelledby="background-images+text-tab">                                    
                                     <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
                                       @csrf
                                       @method('PUT')  
@@ -1291,11 +1288,122 @@
                                 </div>
                                 <!-- three-images+six-icons+three-paragraphs -->
                                 <div class="tab-pane fade" id="three-dark-bg-boxes" role="tabpanel" aria-labelledby="three-dark-bg-boxes-tab">
-                                    
-                                <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
-                                      @csrf
-                                      @method('PUT') 
-                                      <div class="col-12 mt-5">
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                              </div>
+                                              <div class="modal-body">
+                                                <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.store') }}" method="post" enctype="multipart/form-data">
+                                                  @csrf
+                                                  @method('POST') 
+                                                  <div class="col-12 mt-5">
+                                                    <label for="validationCustom01" class="form-label" style="float:left;">Paragrafo</label>
+                                                    <input type="text" class="form-control" id="validationCustom01" name="p" required>
+                                                  </div>
+                                                  <div class="col-12 mt-5">
+                                                    <label for="validationCustom01" class="form-label" style="float:left;">Nome</label>
+                                                    <input type="text" class="form-control" id="validationCustom01" name="name" required>
+                                                  </div>
+                                                  <div class="col-12 mt-5">
+                                                    <label for="validationCustom01" class="form-label" style="float:left;">Ratings</label>
+                                                    <input type="number" class="form-control" id="validationCustom01" name="rating" min="0" max="5" required>
+                                                  </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                  <button type="submit" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </form>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="container">
+                                        <div class="row">
+                                          @foreach ($reviews as $review)
+                                            <div class="col-sm-12 col-md-4 testimonial-boxes text-center text-primary bg-dark">
+                                                <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;color:#ff6600;"></i>
+                                                <blockquote>
+                                                    <p class="text-center mt-5">
+                                                        <i>
+                                                            {{ $review['p'] }}
+                                                        </i>
+                                                    </p>
+                                                    <h3 class="h3 mt-3"><strong>{{ $review['name'] }}</strong>
+                                                    </h3>
+                                                    <h5 class="h5 text-white-50">
+                                                    <div class="d-flex justify-content-around m-5">
+                                                      @for ($i = 0; $i < 5; $i++)
+                                                        @if ($i < $review['rating'])
+                                                          <i class="fa fa-star text-primary" aria-hidden="true"></i>   
+                                                        @else
+                                                          <i class="fa fa-star text-white" aria-hidden="true"></i>
+                                                        @endif  
+                                                      @endfor
+                                                    </div>
+                                                </blockquote>
+                                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal{{ $review['id'] }}">edit review</button>
+                                                <a href="#"
+                                                    class="btn btn-danger p-2 rounded"
+                                                    onclick="
+                                                    let result = confirm('Tem a certeza que quer apagar o review ?');
+                                                    if(result){
+                                                        event.preventDefault();
+                                                        document.getElementById('delete-form').submit();
+                                                    }
+                                                    ">
+                                                    Apagar serviço
+                                                </a>
+                                                <form id="delete-form"
+                                                    action="{{ route('review.destroy', [$review['id']]) }}"
+                                                    method="post" style="display: none">
+                                                    <input type="hidden" name="_method"
+                                                        value="delete" />
+                                                    @csrf
+                                                </form>
+                                                <form method="post" action="{{ route('landing-page.update', $review['id']) }}">
+                                                  @csrf
+                                                  @method('put') 
+                                                  <div class="modal fade" id="exampleModal{{ $review['id'] }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          <div class="col-12 mt-5">
+                                                            <label for="validationCustom01" class="form-label" style="float:left;">Paragrafo</label>
+                                                            <input type="text" class="form-control" id="validationCustom01" name="p" value="{{ $review['p'] }}" required>
+                                                          </div>
+                                                          <div class="col-12 mt-5">
+                                                            <label for="validationCustom01" class="form-label" style="float:left;">Nome</label>
+                                                            <input type="text" class="form-control" id="validationCustom01" name="name" value="{{ $review['name'] }}" required>
+                                                          </div>
+                                                          <div class="col-12 mt-5">
+                                                            <label for="validationCustom01" class="form-label" style="float:left;">Ratings</label>
+                                                            <input type="number" class="form-control" id="validationCustom01" name="rating" min="0" max="5" value="{{ $review['rating'] }}" required>
+                                                          </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                          <button type="submit" class="btn btn-primary" name="form13">Save changes</button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </form>
+                                            </div>  
+                                          @endforeach
+                                        </div>
+                                      </div>
+                                      <button type="button" class="btn btn-primary w-100 mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Criar review
+                                      </button>
+                                      {{-- <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">P strong</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $testimonial_say[0]['testimonial-say-p-strong'] }}" name="testimonial-say-p-strong" required>
                                       </div>
@@ -1350,12 +1458,7 @@
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">H5 3</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $testimonial_say[0]['testimonial-say-h5-3'] }}" name="testimonial-say-h5-3" required>
-                                      </div>
-                                      <div class="col-12">
-                                        <button class="btn btn-primary w-100" type="submit" name="form8">Submit</button>
-                                      </div>
-                                    </form>
-                                
+                                      </div> --}}                                
                                 </div>
                                 <!-- four-images+collapse-box -->
                                 <div class="tab-pane fade" id="four-images+collapse-box" role="tabpanel" aria-labelledby="four-images+collapse-box-tab">                                    

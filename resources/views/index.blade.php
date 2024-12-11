@@ -978,9 +978,9 @@
                         </div>
                         <div class="service-one__item__bottom">
                             <div class="service-one__item__bottom__number"></div>
-                            <!--
-                                        <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
-                                    -->
+                            {{-- 
+                                <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
+                            --}}
                         </div>
                     </div><!-- /.service-card-one -->
                 </div>
@@ -997,7 +997,7 @@
 
     <!-- services -->
     <section class="service-section">
-        <div class="image-layer"
+        <div class="image-layer" 
             style="background-image: url({{ $our_service_1[0]['our-services-bg-img-path-1'] }});"></div>
         <div class="container">
             <div class="text-center light text-white">
@@ -1036,11 +1036,11 @@
                                                 <li>{{ $our_service_1[0]['our-services-tab-1-li-5'] }}</li>
                                             </ul>
                                             <div class="btn-box">
-                                                <a data-toggle="modal" data-target="#exampleModal" class="theme-btn-three thm-btn">Contacte-nos agora.</a>
+                                                <a data-toggle="modal" data-target="#exampleModal" class="theme-btn-three thm-btn">“Ligue já e solicite uma avaliação gratuita!”</a>
                                             </div>
                                             <div class="other-text">
                                                 <p>{{ $our_service_1[0]['our-services-tab-1-a-2'] }} <a data-toggle="modal"
-                                                    data-target="#exampleModal">Make an Appointment</a></p>
+                                                    data-target="#exampleModal">Faça a sua marcação</a></p>
                                                 <div class="arrow" style="background-image: url(assets/images/icons/arrow-1.png);"></div>
                                             </div>
                                         </div>
@@ -1082,7 +1082,7 @@
                                             </div>
                                             <div class="other-text">
                                                 <p>{{ $our_service_2[0]['our-services-tab-2-p-2'] }} <a data-toggle="modal"
-                                                    data-target="#exampleModal">Make an Appointment</a></p>
+                                                    data-target="#exampleModal">Agende vistoria gratis</a></p>
                                                 <div class="arrow" style="background-image: url(assets/images/icons/arrow-1.png);"></div>
                                             </div>
                                         </div>
@@ -1104,7 +1104,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
             <!-- service-section -->
@@ -1237,8 +1236,9 @@
             </div><!-- /.row -->
         </div><!-- /.container -->
     </section><!-- /.why-choose-two -->
-    <section>
-        <div class="container" style="margin-top:50px;">
+   
+    <section class="testimonials-one testimonials-one--page">
+        <div class="container">
             <div class="sec-title-two text-center">
                 <h6 class="sec-title-two__tagline text-titles"><span
                         class="sec-title-two__tagline__left icofont-rounded-double-left"></span><i><b>{{ $testimonial_say[0]['testimonial-say-p-strong'] }}</b></i><span
@@ -1247,79 +1247,54 @@
                 <h3 class="sec-title-two__title"><b>{{ $testimonial_say[0]['testimonial-say-h2'] }}</b></h3>
                 <!-- /.sec-title-two__title -->
             </div>
-            <div class="row text-center">
+            <div class="testimonials-one__carousel tolak-owl__carousel tolak-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+        "items": 1,
+        "margin": 0,
+        "loop": false,
+        "smartSpeed": 700,
+        "nav": false,
+        "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+        "dots": true,
+        "autoplay": false,
+        "responsive": {
+            "0": {
+                "items": 1
+            },
+            "768": {
+                "items": 2,
+                "margin": 30
+            },
+            "1200": {
+                "items": 3,
+                "margin": 30
+            }
+        }
+        }'>
+        @isset($reviews)
+            @foreach ($reviews as $review)          
                 <div class="col-sm-12 col-md-4 testimonial-boxes text-center text-primary w-100">
                     <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;color:#ff6600;"></i>
                     <blockquote>
-                        <p class="text-center text-white-50 mt-5">
+                        <p class="text-center text-white-50 mt-3">
                             <i>
-                                {{ $testimonial_say[0]['testimonial-say-p-i-1'] }}
-                                <br />
-                                {{ $testimonial_say[0]['testimonial-say-p-i-1-1'] }}
+                                {{ $review['p'] }}
                             </i>
                         </p>
-                        <h3 class="h3 text-white mt-3"><strong>{{ $testimonial_say[0]['testimonial-say-h3-1'] }}</strong>
-                        </h3>
-                        <h5 class="h5 text-white-50">
-                            <strong>{{ $testimonial_say[0]['testimonial-say-h5-1'] }}</strong></h5>
+                        <h3 class="h3 text-white mt-2"><strong>{{ $review['name'] }}</strong></h3>
                         <div class="d-flex justify-content-around m-5">
-                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                            <i class="fa fa-star text-white" aria-hidden="true"></i>
+                            @for ($i = 0; $i < 5; $i++)
+                                @if ($i < $review['rating'])
+                                    <i class="fa fa-star text-primary" aria-hidden="true"></i>   
+                                @else
+                                    <i class="fa fa-star text-white" aria-hidden="true"></i>
+                                @endif  
+                            @endfor
                         </div>
                     </blockquote>
                 </div>
-                <div class="col-sm-12 col-md-4 testimonial-boxes text-center text-primary w-100">
-                    <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;color:#ff6600;"></i>
-                    <blockquote>
-                        <p class="text-center text-white-50 mt-5">
-                            <i>
-                                {{ $testimonial_say[0]['testimonial-say-p-i-2'] }}
-                                <br />
-                                {{ $testimonial_say[0]['testimonial-say-p-i-2-1'] }}
-                            </i>
-                        </p>
-                        <h3 class="h3 text-white mt-3"><strong>{{ $testimonial_say[0]['testimonial-say-h3-2'] }}</strong>
-                        </h3>
-                        <h5 class="h5 text-white-50">
-                            <strong>{{ $testimonial_say[0]['testimonial-say-h5-2'] }}</strong></h5>
-                        <div class="d-flex justify-content-around m-5">
-                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                            <i class="fa fa-star text-white" aria-hidden="true"></i>
-                        </div>
-                    </blockquote>
-                </div>
-                <div class="col-sm-12 col-md-4 testimonial-boxes text-center text-primary w-100">
-                    <i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;color:#ff6600;"></i>
-                    <blockquote>
-                        <p class="text-center text-white-50 mt-5">
-                            <i>
-                                {{ $testimonial_say[0]['testimonial-say-p-i-3'] }}
-                                <br />
-                                {{ $testimonial_say[0]['testimonial-say-p-i-3-1'] }}
-                            </i>
-                        </p>
-                        <h3 class="h3 text-white mt-3"><strong>{{ $testimonial_say[0]['testimonial-say-h3-3'] }}</strong>
-                        </h3>
-                        <h5 class="h5 text-white-50">
-                            <strong>{{ $testimonial_say[0]['testimonial-say-h5-3'] }}</strong></h5>
-                        <div class="d-flex justify-content-around m-5">
-                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                            <i class="fa fa-star text-white" aria-hidden="true"></i>
-                        </div>
-                    </blockquote>
-                </div>
-            </div>
+            @endforeach
+        @endisset
         </div>
-
     </section>
     <section class="funfact-one">
         <div class="container">
