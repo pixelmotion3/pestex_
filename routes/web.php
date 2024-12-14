@@ -26,7 +26,8 @@ Route::resource('/equipamento', HardwareController::class);
 Route::post('/contacts', [FrontPageController::class, 'store'])->name('FrontPage.store');
 Route::post('/quote-form', [FrontPageController::class, 'QuoteForm'])->name('FrontPage.QuoteForm');
 Route::post('/contact-form', [FrontPageController::class, 'ContactForm'])->name('FrontPage.ContactForm');
-
+Route::get('/termos-servico', [FrontPageController::class, 'TermoServicos'])->name('FrontPage.TermoServicos');
+Route::get('/politica-privacidade', [FrontPageController::class, 'PoliticaPrivacidade'])->name('FrontPage.PoliticaPrivacidade');
 Route::resource('/servicos', ServiceController::class);
 
 Route::get('/sobre', [AboutController::class, 'index'])->name('About.index');
