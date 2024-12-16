@@ -15,6 +15,8 @@ use App\Models\landing_8page;
 use App\Models\landing_9page;
 use App\Models\landing_10page;
 use App\Models\landing_11page;
+use App\Models\landing_12page;
+use App\Models\landing_13page;
 use App\Models\Review;
 use Illuminate\Http\Request;
 
@@ -36,6 +38,8 @@ class LandingPageController extends Controller
         $landing_9page = landing_9page::where('id',1)->get()->toArray();
         $landing_10page = landing_10page::where('id',1)->get()->toArray();
         $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
         $reviews = Review::all();
 
        //dd($landing_3page);
@@ -52,7 +56,9 @@ class LandingPageController extends Controller
             'collapse' => $landing_9page,
             'call_now' => $landing_10page,
             'video_contact' => $landing_11page,
-            'reviews' => $reviews
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page
         ]);
     }
 
@@ -67,7 +73,7 @@ class LandingPageController extends Controller
             ]);
         }
 
-        if ($request->has('form1')) {            
+        if ($request->has('form1')) {
             $query = LandingPage::where('id',1)->update([
                 'quote-form-tab-title-1' => $request->input('quote-form-tab-title-1'),
                 'quote-form-tab-title-2' => $request->input('quote-form-tab-title-2'),
@@ -95,22 +101,22 @@ class LandingPageController extends Controller
                 'carrousel-a-1-2' => $request->input('carrousel-a-1-2'),
             ]);
             if ($request->hasFile('carrousel-bg-img-path')) {
-                $path = $request->file('carrousel-bg-img-path')->store('assets/images');     
+                $path = $request->file('carrousel-bg-img-path')->store('assets/images');
                 $query = LandingPage::where('id',1)->update([
-                    'carrousel-bg-img-path' => 'storage/' . $path 
-                ]);                 
+                    'carrousel-bg-img-path' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('carrousel-bg-img-path-1')) {
-                $path = $request->file('carrousel-bg-img-path-1')->store('assets/images');     
+                $path = $request->file('carrousel-bg-img-path-1')->store('assets/images');
                 $query = LandingPage::where('id',1)->update([
-                    'carrousel-bg-img-path-1' => 'storage/' . $path 
-                ]);                 
+                    'carrousel-bg-img-path-1' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('carrousel-bg-img-path-2')) {
-                $path = $request->file('carrousel-bg-img-path-2')->store('assets/images');     
+                $path = $request->file('carrousel-bg-img-path-2')->store('assets/images');
                 $query = LandingPage::where('id',1)->update([
-                    'carrousel-bg-img-path-2' => 'storage/' . $path 
-                ]);                 
+                    'carrousel-bg-img-path-2' => 'storage/' . $path
+                ]);
             }
         }
 
@@ -130,35 +136,35 @@ class LandingPageController extends Controller
         if ($request->has('form4')) {
             $query = landing_3page::where('id',1)->update([
                 'best-service-h6-1' => $request->input('best-service-h6-1'),
-                'best-service-h3-1' => $request->input('best-service-h3-1'),                
+                'best-service-h3-1' => $request->input('best-service-h3-1'),
                 'best-service-p-1' => $request->input('best-service-p-1'),
                 'best-service-a-2' => $request->input('best-service-a-2'),
                 'best-service-p-2' => $request->input('best-service-p-2'),
                 'best-service-a-3' => $request->input('best-service-a-3'),
                 'best-service-p-3' => $request->input('best-service-p-3'),
                 'best-service-a-1' => $request->input('best-service-a-1'),
-            ]);         
+            ]);
             if ($request->hasFile('best-service-img-path-1')) {
                 $filename = $request->file('best-service-img-path-1');
-                $path = $request->file('best-service-img-path-1')->store('assets/images');     
+                $path = $request->file('best-service-img-path-1')->store('assets/images');
                 $query = landing_3page::where('id',1)->update([
-                    'best-service-img-path-1' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'best-service-img-path-1' => 'storage/' . $path
+                ]);
+            }
             if ($request->hasFile('best-service-img-path-2')) {
                 $filename = $request->file('best-service-img-path-2');
-                $path = $request->file('best-service-img-path-2')->store('assets/images');     
+                $path = $request->file('best-service-img-path-2')->store('assets/images');
                 $query = landing_3page::where('id',1)->update([
-                    'best-service-img-path-2' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'best-service-img-path-2' => 'storage/' . $path
+                ]);
+            }
             if ($request->hasFile('best-service-img-path-3')) {
                 $filename = $request->file('best-service-img-path-3');
-                $path = $request->file('best-service-img-path-3')->store('assets/images');     
+                $path = $request->file('best-service-img-path-3')->store('assets/images');
                 $query = landing_3page::where('id',1)->update([
-                    'best-service-img-path-3' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'best-service-img-path-3' => 'storage/' . $path
+                ]);
+            }
         }
 
         if ($request->has('form5')) {
@@ -179,24 +185,24 @@ class LandingPageController extends Controller
                 'our-services-tab-1-a-2' => $request->input('our-services-tab-1-a-2'),
             ]);
             if ($request->hasFile('our-services-bg-img-path-1')) {
-                $path = $request->file('our-services-bg-img-path-1')->store('assets/images');     
+                $path = $request->file('our-services-bg-img-path-1')->store('assets/images');
                 $query = landing_4page::where('id',1)->update([
-                    'our-services-bg-img-path-1' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'our-services-bg-img-path-1' => 'storage/' . $path
+                ]);
+            }
             if ($request->hasFile('img-1')) {
-                $path = $request->file('img-1')->store('assets/images');     
+                $path = $request->file('img-1')->store('assets/images');
                 $query = landing_4page::where('id',1)->update([
-                    'img-1' => 'storage/' . $path 
-                ]);                 
-            } 
-        
+                    'img-1' => 'storage/' . $path
+                ]);
+            }
+
             if ($request->hasFile('img-2')) {
-                $path = $request->file('img-2')->store('assets/images');     
+                $path = $request->file('img-2')->store('assets/images');
                 $query = landing_5page::where('id',1)->update([
-                    'img-2' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'img-2' => 'storage/' . $path
+                ]);
+            }
             $query = landing_5page::where('id',1)->update([
                 'our-services-tab-2' => $request->input('our-services-tab-2'),
                 'our-services-tab-2-h2' => $request->input('our-services-tab-2-h2'),
@@ -226,24 +232,24 @@ class LandingPageController extends Controller
                 'about-now-li-6' => $request->input('about-now-li-6'),
             ]);
             if ($request->hasFile('about-now-1-bg-img-path')) {
-                $path = $request->file('about-now-1-bg-img-path')->store('assets/images');     
+                $path = $request->file('about-now-1-bg-img-path')->store('assets/images');
                 $query = landing_6page::where('id',1)->update([
-                    'about-now-1-bg-img-path' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'about-now-1-bg-img-path' => 'storage/' . $path
+                ]);
+            }
             if ($request->hasFile('about-now-2-img-path')) {
-                $path = $request->file('about-now-2-img-path')->store('assets/images');     
+                $path = $request->file('about-now-2-img-path')->store('assets/images');
                 $query = landing_6page::where('id',1)->update([
-                    'about-now-2-img-path' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'about-now-2-img-path' => 'storage/' . $path
+                ]);
+            }
 
             if ($request->hasFile('about-now-img-path')) {
-                $path = $request->file('about-now-img-path')->store('assets/images');     
+                $path = $request->file('about-now-img-path')->store('assets/images');
                 $query = landing_6page::where('id',1)->update([
-                    'about-now-img-path' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'about-now-img-path' => 'storage/' . $path
+                ]);
+            }
         }
         if ($request->has('form7')) {
             $query = landing_7page::where('id',1)->update([
@@ -255,31 +261,31 @@ class LandingPageController extends Controller
                 'choose-us-h4-3' => $request->input('choose-us-h4-3')
             ]);
             if ($request->hasFile('choose-us-img')) {
-                $path = $request->file('choose-us-img')->store('assets/images');     
+                $path = $request->file('choose-us-img')->store('assets/images');
                 $query = landing_7page::where('id',1)->update([
-                    'choose-us-img' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'choose-us-img' => 'storage/' . $path
+                ]);
+            }
             if ($request->hasFile('choose-us-img-1')) {
-                $path = $request->file('choose-us-img-1')->store('assets/images');     
+                $path = $request->file('choose-us-img-1')->store('assets/images');
                 $query = landing_7page::where('id',1)->update([
-                    'choose-us-img-1' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'choose-us-img-1' => 'storage/' . $path
+                ]);
+            }
             if ($request->hasFile('choose-us-img-2')) {
                 $filename = $request->file('choose-us-img-2');
-                $path = $request->file('choose-us-img-2')->store('assets/images');     
+                $path = $request->file('choose-us-img-2')->store('assets/images');
                 $query = landing_7page::where('id',1)->update([
-                    'choose-us-img-2' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'choose-us-img-2' => 'storage/' . $path
+                ]);
+            }
             if ($request->hasFile('choose-us-img-3')) {
                 $filename = $request->file('choose-us-img-3');
-                $path = $request->file('choose-us-img-3')->store('assets/images');     
+                $path = $request->file('choose-us-img-3')->store('assets/images');
                 $query = landing_7page::where('id',1)->update([
-                    'choose-us-img-3' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'choose-us-img-3' => 'storage/' . $path
+                ]);
+            }
         }
 
         if ($request->has('form8')) {
@@ -331,11 +337,11 @@ class LandingPageController extends Controller
                 'collapse-div-p-5-2' => $request->input('collapse-div-p-5-2'),
             ]);
             if ($request->hasFile('collapse-bg-img')) {
-                $path = $request->file('collapse-bg-img')->store('assets/images');     
+                $path = $request->file('collapse-bg-img')->store('assets/images');
                 $query = landing_9page::where('id',1)->update([
-                    'collapse-bg-img' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'collapse-bg-img' => 'storage/' . $path
+                ]);
+            }
         }
 
         if ($request->has('form10')) {
@@ -350,29 +356,29 @@ class LandingPageController extends Controller
                 'call-now-a-3' => $request->input('call-now-a-3'),
             ]);
             if ($request->hasFile('call-now-bg-image-1-path')) {
-                $path = $request->file('call-now-bg-image-1-path')->store('assets/images');   
+                $path = $request->file('call-now-bg-image-1-path')->store('assets/images');
                 $query = landing_10page::where('id',1)->update([
-                    'call-now-bg-image-1-path' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'call-now-bg-image-1-path' => 'storage/' . $path
+                ]);
+            }
             if ($request->hasFile('call-now-bg-image-2-path')) {
-                $path = $request->file('call-now-bg-image-2-path')->store('assets/images');     
+                $path = $request->file('call-now-bg-image-2-path')->store('assets/images');
                 $query = landing_10page::where('id',1)->update([
-                    'call-now-bg-image-2-path' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'call-now-bg-image-2-path' => 'storage/' . $path
+                ]);
+            }
             if ($request->hasFile('call-now-bg-image-3-path')) {
-                $path = $request->file('call-now-bg-image-3-path')->store('assets/images');     
+                $path = $request->file('call-now-bg-image-3-path')->store('assets/images');
                 $query = landing_10page::where('id',1)->update([
-                    'call-now-bg-image-3-path' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'call-now-bg-image-3-path' => 'storage/' . $path
+                ]);
+            }
             if ($request->hasFile('call-now-bg-image-4-path')) {
-                $path = $request->file('call-now-bg-image-4-path')->store('assets/images');     
+                $path = $request->file('call-now-bg-image-4-path')->store('assets/images');
                 $query = landing_10page::where('id',1)->update([
-                    'call-now-bg-image-4-path' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'call-now-bg-image-4-path' => 'storage/' . $path
+                ]);
+            }
         }
 
         if ($request->has('form11')) {
@@ -383,21 +389,21 @@ class LandingPageController extends Controller
                 'watch-video-p-3' => $request->input('watch-video-p-3'),
                 'watch-video-p-2-1' => $request->input('watch-video-p-2-1'),
                 'watch-video-p-3-1' => $request->input('watch-video-p-3-1'),
-                
+
             ]);
             if ($request->hasFile('watch-video-bg-img')) {
-                $path = $request->file('watch-video-bg-img')->store('assets/images');     
+                $path = $request->file('watch-video-bg-img')->store('assets/images');
                 $query = landing_11page::where('id',1)->update([
-                    'watch-video-bg-img' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'watch-video-bg-img' => 'storage/' . $path
+                ]);
+            }
 
             if ($request->hasFile('watch-video-bg-img-1')) {
-                $path = $request->file('watch-video-bg-img-1')->store('assets/images');     
+                $path = $request->file('watch-video-bg-img-1')->store('assets/images');
                 $query = landing_11page::where('id',1)->update([
-                    'watch-video-bg-img-1' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'watch-video-bg-img-1' => 'storage/' . $path
+                ]);
+            }
         }
 
         if ($request->has('form12')) {
@@ -406,11 +412,11 @@ class LandingPageController extends Controller
                 'contact-us-h2-part-2' => $request->input('contact-us-h2-part-2'),
             ]);
             if ($request->hasFile('contact-us-bg-img')) {
-                $path = $request->file('contact-us-bg-img')->store('assets/images');     
+                $path = $request->file('contact-us-bg-img')->store('assets/images');
                 $query = landing_11page::where('id',1)->update([
-                    'contact-us-bg-img' => 'storage/' . $path 
-                ]);                 
-            } 
+                    'contact-us-bg-img' => 'storage/' . $path
+                ]);
+            }
         }
 
         if ($request->has('form13')) {
@@ -418,7 +424,21 @@ class LandingPageController extends Controller
                 'p' => $request->input('p'),
                 'name' => $request->input('name'),
                 'rating' => $request->input('rating'),
-            ]); 
+            ]);
+        }
+
+		if ($request->has('form14')) {
+            $query = landing_12page::where('id',$id)->update([
+                'terms-title' => $request->input('terms-title'),
+                'terms-p-text-1' => $request->input('terms-p-text-1')
+            ]);
+        }
+
+		if ($request->has('form15')) {
+            $query = landing_13page::where('id',$id)->update([
+                'privacy-policy-title' => $request->input('privacy-policy-title'),
+                'privacy-policy-p-text-1' => $request->input('privacy-policy-p-text-1')
+            ]);
         }
 
         return redirect()->route('landing-page.index');
@@ -429,8 +449,8 @@ class LandingPageController extends Controller
             'p' => $request->input('p'),
             'name' => $request->input('name'),
             'rating' => $request->input('rating'),
-        ]);  
-        
+        ]);
+
         if ($query) {
             return redirect()->route('landing-page.index');
         }
