@@ -98,18 +98,10 @@
 
 @media only screen and (max-width: 1200px){
 
-  /* .main-menu,
+  .main-menu,
   .sticky-header,
   .main-header.style-one .outer-container:before{
     display: none !important;
-  } */
-
-  .contactenos-link {
-	display: block !important;
-  }
-
-  .contactenos-btn {
-	display: none;
   }
 
   .main-header.style-five .page-header-mobile-info,
@@ -350,7 +342,7 @@
     display: none;
   }
 
-
+  
 
 
 }
@@ -1003,7 +995,7 @@
     margin-bottom: 10px;
   }
 
-  .clients-section .upper-title .sec-title,
+  .clients-section .upper-title .sec-title, 
   .clients-section .upper-title .text{
     width: 100%;
   }
@@ -1046,7 +1038,7 @@
     padding-bottom: 40px;
   }
 
-  .project-details-content .single-discription .title-inner,
+  .project-details-content .single-discription .title-inner, 
   .project-details-content .single-discription .text-inner{
     width: 100%;
   }
