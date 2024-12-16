@@ -203,7 +203,7 @@
     <div class="custom-cursor__cursor-two"></div>
 
     <div class="preloader">
-        <div class="preloader__image" style="background-image: url(assets/images/loader.png);"></div>
+        <div class="preloader__image" style="background-image: url(assets/images/logo-dark.png);"></div>
     </div>
     <!-- Modal -->
     <div class="modal fade rounded-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -1274,7 +1274,6 @@
 												<figure class="image"><img src="{{ $our_service_1[0]['img-1'] }}" alt=""></figure>
 												<div class="image-content" style="background-color: #002255">
 													<h6>VISTORIA GRÁTIS</h6>
-													<h2>$49</h2>
 												</div>
 											</div>
 										</div>
@@ -1568,16 +1567,16 @@
 							</div><!-- /.funfact-one__item -->
 							<div class="funfact-one__item funfact-one__item--two count-box tolak-tilt"
 								data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 9, "speed": 700, "scale": 1 }' style="background-color: #002255;">
-								<h3 class="funfact-one__item__count"><span class="count-text" data-stop="26"
-										data-speed="1500"></span>{{ $collapse[0]['collapse-h3-2'] }}</h3>
+								<h3 class="funfact-one__item__count"><span class="count-text" data-stop="{{ $collapse[0]['collapse-h3-2'] }}"
+										data-speed="1500"></span></h3>
 								<!-- /.funfact-one__number -->
 								<p class="funfact-one__item__text">{{ $collapse[0]['collapse-p-2'] }}</p>
 								<!-- /.funfact-one__title -->
 							</div><!-- /.funfact-one__item -->
 							<div class="funfact-one__item funfact-one__item--three count-box tolak-tilt"
 								data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 9, "speed": 700, "scale": 1 }' style="background-color: #ff6600;">
-								<h3 class="funfact-one__item__count"><span class="count-text" data-stop="34"
-										data-speed="1500"></span>{{ $collapse[0]['collapse-h3-3'] }}</h3>
+								<h3 class="funfact-one__item__count"><span class="count-text" data-stop="{{ $collapse[0]['collapse-h3-3'] }}"
+										data-speed="1500"></span></h3>
 								<!-- /.funfact-one__number -->
 								<p class="funfact-one__item__text">{{ $collapse[0]['collapse-p-3'] }}</p>
 								<!-- /.funfact-one__title -->
@@ -1826,20 +1825,22 @@
 									<div class="form-one__control form-one__control--full">
 										<textarea name="message" placeholder="Mensagem *"></textarea><!-- /# -->
 									</div><!-- /.form-one__control -->
-									<div class="form-one__control form-one__control--full">
-										<div class="pull-left" style="margin-left: 20px;">
-											<input class="form-check-input" type="checkbox" name="confirmed" id="flexCheckDefault" required="">
-											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:580px; color:grey;font-size:12px;">
-												Aceito os <a href="/termos-servico"  target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
-											</label>
+									<div style="max-width: 280px;width: 280px !important;">
+										<div class="form-one__control form-one__control--full">
+											<div class="pull-left" style="margin-left: 20px;">
+												<input class="form-check-input" type="checkbox" name="confirmed" id="flexCheckDefault" required="">
+												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;width: 280px;max-width:580px; color:grey;font-size:12px;">
+													Aceito os <a href="/termos-servico"  target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+												</label>
+											</div>
 										</div>
-									</div>
-									<div class="form-one__control form-one__control--full">
-										<div class="pull-left" style="margin-left: 20px;">
-											<input class="form-check-input" type="checkbox" id="flexCheckDefault" required="">
-											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:580px;color:grey;font-size:12px;">
-												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
-											</label>
+										<div class="form-one__control form-one__control--full">
+											<div class="pull-left" style="margin-left: 20px;">
+												<input class="form-check-input" type="checkbox" id="flexCheckDefault" required="">
+												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;width: 280px;max-width:580px;color:grey;font-size:12px;">
+													Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+												</label>
+											</div>
 										</div>
 									</div>
 									<div class="form-one__control form-one__control--full">
@@ -1871,7 +1872,7 @@
 					<img class="pull-left" src="assets/images/footer-logo.png" style="margin-left: -20px;"/>
 				</div>
 				<div class="col-md-9" style="height:200px;">
-					<h3 class="h3 mt-5">Cuidamos do seu bem-estar, eliminamos pragas</h3>
+					<h3 class="h3 mt-5" style="font-weight: 600;color: #000;">Cuidamos do seu bem-estar, eliminamos pragas</h3>
 					<p style="color: #ff6600">Solicite um orçamento sem compromisso</p>
 				</div>
 			</div>
@@ -1879,20 +1880,20 @@
 
 				<div class="col-md-3 text-white"
 					style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
-					<p class="text-white">Copyright sospragas <span id="year"></span> <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
+					<p class="text-white copy-hover">Copyright sospragas <span id="year"></span> <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
 						direitos reservados</p>
 				</div>
 				<div class="col-md-3 text-white"
 					style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
-					<p class="mt-3 text-white"><a href="/politica-privacidade" target="_blank">Política de Privacidade</a></p>
+					<p class="mt-3 text-white copy-hover"><a href="/politica-privacidade" target="_blank">Política de Privacidade</a></p>
 				</div>
 				<div class="col-md-3 text-white"
 					style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
-					<p class="mt-3 text-white"><a href="/termos-servico" target="_blank">Termos de Serviços</a></p>
+					<p class="mt-3 text-white copy-hover"><a href="/termos-servico" target="_blank">Termos de Serviços</a></p>
 				</div>
 				<div class="col-md-3 text-white"
 					style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
-					<p class="mt-3 text-white"><a href="https://pixelinmotion.pt">Desenvolvido por Pixel in Motion</a></p>
+					<p class="mt-3 text-white copy-hover"><a href="https://pixelinmotion.pt" target="_blank">Desenvolvido por Pixel in Motion</a></p>
 				</div>
 			</div>
 		</footer>

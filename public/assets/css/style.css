@@ -2155,7 +2155,7 @@ div#mCSB_1_container{
 
 .content_block_2 .content-box .other-text .arrow{
   position: absolute;
-  bottom: 35px;
+  bottom: 90px;
   right: -23px;
   width: 166px;
   height: 107px;
@@ -2199,6 +2199,8 @@ div#mCSB_1_container{
   text-align: center;
   border-radius: 50%;
   padding: 20px 15px;
+  display: flex;
+  align-items: center;
 }
 
 .image_block_2 .image-box .image-content h6{
@@ -2406,6 +2408,14 @@ div#mCSB_1_container{
 
 .content_block_4 .content-box .inner-box a:hover{
   text-decoration: underline;
+}
+
+.copy-hover:hover {
+	color: #ff650c !important;
+}
+
+.copy-hover a:hover{
+	color: #ff650c !important;
 }
 
 .content_block_4 .content-box .inner-box .step-list{
