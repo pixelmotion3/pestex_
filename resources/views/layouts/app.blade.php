@@ -66,18 +66,20 @@
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="{{ asset('assets/js/config.js') }}"></script>
 
+	{{-- <script src="{{ asset('tinymce/tinymce.min.js') }}"></script> --}}
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   </head>
 
   <body>
-    
-            
+
+
         <!-- Page Content -->
         <main>
             {{ $slot }}
         </main>
-   
+
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
@@ -106,4 +108,3 @@
     <script src="{{ asset('assets/js/dashboards-analytics.js') }}"></script>
   </body>
 </html>
-

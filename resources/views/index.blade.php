@@ -1256,6 +1256,9 @@
 													<li>{{ $our_service_1[0]['our-services-tab-1-li-3'] }}</li>
 													<li>{{ $our_service_1[0]['our-services-tab-1-li-4'] }}</li>
 													<li>{{ $our_service_1[0]['our-services-tab-1-li-5'] }}</li>
+													<li>{{ $our_service_1[0]['our-services-tab-1-li-6'] }}</li>
+													<li>{{ $our_service_1[0]['our-services-tab-1-li-7'] }}</li>
+													<li>{{ $our_service_1[0]['our-services-tab-1-li-8'] }}</li>
 												</ul>
 												<div class="btn-box">
 													<a data-toggle="modal" data-target="#exampleModal" class="btn2 theme-btn-three thm-btn">CONTACTE-NOS</a>
@@ -1297,6 +1300,9 @@
 													<li>{{ $our_service_2[0]['our-services-tab-2-li-3'] }}</li>
 													<li>{{ $our_service_2[0]['our-services-tab-2-li-4'] }}</li>
 													<li>{{ $our_service_2[0]['our-services-tab-2-li-5'] }}</li>
+													<li>{{ $our_service_2[0]['our-services-tab-2-li-6'] }}</li>
+													<li>{{ $our_service_2[0]['our-services-tab-2-li-7'] }}</li>
+													<li>{{ $our_service_2[0]['our-services-tab-2-li-8'] }}</li>
 												</ul>
 												<div class="btn-box">
 													<a data-toggle="modal" data-target="#exampleModal" class="btn2 theme-btn-three thm-btn">CONTACTE-NOS</a>
@@ -1315,7 +1321,6 @@
 												<figure class="image"><img src="{{ $our_service_2[0]['img-2'] }}" alt=""></figure>
 												<div class="image-content" style="background-color: #002255">
 													<h6>VISTORIA GRÁTIS</h6>
-													<h2>$49</h2>
 												</div>
 											</div>
 										</div>
@@ -1489,7 +1494,7 @@
 					"margin": 30
 				},
 				"1200": {
-					"items": 3,
+					"items": 4,
 					"margin": 30
 				}
 			}
@@ -1879,20 +1884,20 @@
 			<div class="row" style="height:50px;z-index:10;background-color:#002255;color:white;border-color:#002255;">
 
 				<div class="col-md-3 text-white"
-					style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
+					style="background-color: #002255;color:white;margin-top:-50px;height:50px;text-align: center;">
 					<p class="text-white copy-hover">Copyright sospragas <span id="year"></span> <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
 						direitos reservados</p>
 				</div>
 				<div class="col-md-3 text-white"
-					style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
+					style="background-color: #002255;color:white;margin-top:-50px;height:50px;text-align: center;">
 					<p class="mt-3 text-white copy-hover"><a href="/politica-privacidade" target="_blank">Política de Privacidade</a></p>
 				</div>
 				<div class="col-md-3 text-white"
-					style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
+					style="background-color: #002255;color:white;margin-top:-50px;height:50px;text-align: center;">
 					<p class="mt-3 text-white copy-hover"><a href="/termos-servico" target="_blank">Termos de Serviços</a></p>
 				</div>
 				<div class="col-md-3 text-white"
-					style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
+					style="background-color: #002255;color:white;margin-top:-50px;height:50px;text-align: center;">
 					<p class="mt-3 text-white copy-hover"><a href="https://pixelinmotion.pt" target="_blank">Desenvolvido por Pixel in Motion</a></p>
 				</div>
 			</div>

@@ -6239,7 +6239,7 @@ body.megamenu-popup-active .mobile-nav__content {
   margin: 0 0 24px;
   color: var(--tolak-gray2, #c1c1c1);
   transition: all 300ms ease;
-  width: 320px;
+  width: 290px;
 }
 .testimonials-card__name {
   text-transform: capitalize;
@@ -6870,7 +6870,7 @@ body.megamenu-popup-active .mobile-nav__content {
   content: "";
   width: 100%;
   height: 86%;
-  background-color: var(--tolak-base, #fff);
+  background-color: #fff;
   border-radius: 10px;
   clip-path: polygon(0 38%, 100% 0, 100% 100%, 0% 100%);
   z-index: -1;
@@ -6889,13 +6889,13 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 .cta-two__info__title {
   margin: 20px 0 10px;
-  color: var(--tolak-white, #fff);
+  color: var(--tolak-black, #fff);
   font-size: 22px;
 }
 .cta-two__info__text {
   font-size: 17px;
   line-height: 26px;
-  color: var(--tolak-white, #222222);
+  color: var(--tolak-black, #222222);
   margin: 0;
 }
 .cta-two__info__text a {

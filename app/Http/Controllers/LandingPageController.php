@@ -181,6 +181,9 @@ class LandingPageController extends Controller
                 'our-services-tab-1-li-3' => $request->input('our-services-tab-1-li-3'),
                 'our-services-tab-1-li-4' => $request->input('our-services-tab-1-li-4'),
                 'our-services-tab-1-li-5' => $request->input('our-services-tab-1-li-5'),
+				'our-services-tab-1-li-6' => $request->input('our-services-tab-1-li-6'),
+				'our-services-tab-1-li-7' => $request->input('our-services-tab-1-li-7'),
+				'our-services-tab-1-li-8' => $request->input('our-services-tab-1-li-8'),
                 'our-services-tab-1-p-2' => $request->input('our-services-tab-1-p-2'),
                 'our-services-tab-1-a-2' => $request->input('our-services-tab-1-a-2'),
             ]);
@@ -213,6 +216,9 @@ class LandingPageController extends Controller
                 'our-services-tab-2-li-3' => $request->input('our-services-tab-2-li-3'),
                 'our-services-tab-2-li-4' => $request->input('our-services-tab-2-li-4'),
                 'our-services-tab-2-li-5' => $request->input('our-services-tab-2-li-5'),
+				'our-services-tab-2-li-6' => $request->input('our-services-tab-2-li-6'),
+				'our-services-tab-2-li-7' => $request->input('our-services-tab-2-li-7'),
+				'our-services-tab-2-li-8' => $request->input('our-services-tab-2-li-8'),
                 'our-services-tab-2-p-2' => $request->input('our-services-tab-2-p-2'),
                 'our-services-tab-2-a' => $request->input('our-services-tab-2-a'),
             ]);

@@ -1,5 +1,6 @@
 <x-app-layout>
   <!-- Layout wrapper -->
+  <script src="{{ asset('tinymce/tinymce.min.js') }}"></script>
   <div class="layout-wrapper layout-content-navbar">
     <div class="layout-container">
         <!-- Menu -->
@@ -1042,6 +1043,18 @@
                                         <label for="validationCustom01" class="form-label" style="float:left;">Tab 1 li 5</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_1[0]['our-services-tab-1-li-5'] }}" name="our-services-tab-1-li-5" required>
                                       </div>
+									  <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Tab 1 li 6</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_1[0]['our-services-tab-1-li-6'] }}" name="our-services-tab-1-li-6" required>
+                                      </div>
+									  <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Tab 1 li 7</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_1[0]['our-services-tab-1-li-7'] }}" name="our-services-tab-1-li-7" required>
+                                      </div>
+									  <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Tab 1 li 8</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_1[0]['our-services-tab-1-li-8'] }}" name="our-services-tab-1-li-8" required>
+                                      </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">Tab 1 p 2</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_1[0]['our-services-tab-1-p-2'] }}" name="our-services-tab-1-p-2" required>
@@ -1097,6 +1110,18 @@
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">Tab 1 li 5</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_2[0]['our-services-tab-2-li-5'] }}" name="our-services-tab-2-li-5" required>
+                                      </div>
+									  <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Tab 1 li 6</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_2[0]['our-services-tab-2-li-6'] }}" name="our-services-tab-2-li-6" required>
+                                      </div>
+									  <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Tab 1 li 7</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_2[0]['our-services-tab-2-li-7'] }}" name="our-services-tab-2-li-7" required>
+                                      </div>
+									  <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">Tab 1 li 8</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $our_service_2[0]['our-services-tab-2-li-8'] }}" name="our-services-tab-2-li-8" required>
                                       </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">Tab 2 p 2</label>
@@ -1713,9 +1738,9 @@
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $policy_privacy[0]['privacy-policy-title'] }}" name="privacy-policy-title" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">P strong 1</label>
-                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $policy_privacy[0]['privacy-policy-p-text-1'] }}" name="privacy-policy-p-text-1" required>
+                                        <textarea class="form-control" placeholder="Write here..." id="privacy-policy-p-text-1" name="privacy-policy-p-text-1" required></textarea>
                                       </div>
+									  <input type="hidden" value="{{ $policy_privacy[0]['privacy-policy-p-text-1'] }}" id="content-privacy-policy-p-text-1">
 
                                       <div class="col-12">
                                         <button class="btn btn-primary w-100" type="submit" name="form15">Submit</button>
@@ -1723,7 +1748,6 @@
                                     </form>
 
                                 </div>
-
 								<!-- TERM OF SERVICE -->
                                 <div class="tab-pane fade" id="terms-service" role="tabpanel" aria-labelledby="terms-service-tab">
 
@@ -1735,9 +1759,11 @@
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $terms_service[0]['terms-title'] }}" name="terms-title" required>
                                       </div>
                                       <div class="col-12 mt-5">
-                                        <label for="validationCustom01" class="form-label" style="float:left;">P strong 1</label>
-                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $terms_service[0]['terms-p-text-1'] }}" name="terms-p-text-1" required>
+                                        {{-- <label for="terms-p-text-1" class="form-label" style="float:left;">P strong 1</label> --}}
+										<textarea class="form-control" placeholder="Write here..." id="terms-p-text-1" name="terms-p-text-1" value="" required></textarea>
+                                        {{-- <input type="text" class="form-control" id="validationCustom01" value="{{ $terms_service[0]['terms-p-text-1'] }}" name="terms-p-text-1" required> --}}
                                       </div>
+									  <input type="hidden" value="{{ $terms_service[0]['terms-p-text-1'] }}" id="contentterms-p-text-1">
 
                                       <div class="col-12">
                                         <button class="btn btn-primary w-100" type="submit" name="form14">Submit</button>
@@ -1874,5 +1900,34 @@
       <!-- Drag Target Area To SlideIn Menu On Small Screens -->
       <div class="drag-target"></div>
     </div>
+	<script>
+		tinymce.init({
+			selector: "#terms-p-text-1, #privacy-policy-p-text-1",
+			plugins: [
+				'advlist',
+				'autolink',
+				'link',
+				'image',
+				'lists',
+				'print',
+				'preview',
+				'hr',
+				'searchreplace',
+				'wordcount',
+				'fullscreen',
+				'insertdatetime',
+				'media',
+				'save',
+				'table',
+				'paste',
+				'emoticons'
+			],
+			init_instance_callback: () => {
+				tinymce.get("terms-p-text-1").setContent($("#contentterms-p-text-1").val());
+				tinymce.get("privacy-policy-p-text-1").setContent($("#content-privacy-policy-p-text-1").val())
+			}
+		 })
+	</script>
+
     <!-- / Layout wrapper -->
 </x-app-layout>

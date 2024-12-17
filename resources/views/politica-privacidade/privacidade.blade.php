@@ -475,7 +475,7 @@
 					<!-- /.sec-title__title -->
 				</div><!-- /.sec-title -->
 				<div class="row gutter-y-30 mt-5">
-					<p class="feature-one__item__text">{{ $privacy_policy[0]['privacy-policy-p-text-1'] }}</p>
+					<p class="feature-one__item__text">{!! $privacy_policy[0]['privacy-policy-p-text-1'] !!}</p>
 				</div>
 			</div>
 		</section>
@@ -487,28 +487,28 @@
 					<img class="pull-left" src="assets/images/footer-logo.png" style="margin-left: -20px;"/>
 				</div>
 				<div class="col-md-9" style="height:200px;">
-					<h3 class="h3 mt-5">Cuidamos do seu bem-estar, eliminamos pragas</h3>
+					<h3 class="h3 mt-5" style="font-weight: 600;color: #000;">Cuidamos do seu bem-estar, eliminamos pragas</h3>
 					<p style="color: #ff6600">Solicite um orçamento sem compromisso</p>
 				</div>
 			</div>
 			<div class="row" style="height:50px;z-index:10;background-color:#002255;color:white;border-color:#002255;">
 
 				<div class="col-md-3 text-white"
-					style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
-					<p class="text-white">Copyright sospragas <span id="year"></span> <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
+					style="background-color: #002255;color:white;margin-top:-50px;height:50px;text-align: center;">
+					<p class="text-white copy-hover">Copyright sospragas <span id="year"></span> <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
 						direitos reservados</p>
 				</div>
 				<div class="col-md-3 text-white"
-					style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
-					<p class="mt-3 text-white"><a href="/politica-privacidade" target="_blank">Política de Privacidade</a></p>
+					style="background-color: #002255;color:white;margin-top:-50px;height:50px;text-align: center;">
+					<p class="mt-3 text-white copy-hover"><a href="/politica-privacidade" target="_blank">Política de Privacidade</a></p>
 				</div>
 				<div class="col-md-3 text-white"
-					style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
-					<p class="mt-3 text-white"><a href="/termos-servico" target="_blank">Termos de Serviços</a></p>
+					style="background-color: #002255;color:white;margin-top:-50px;height:50px;text-align: center;">
+					<p class="mt-3 text-white copy-hover"><a href="/termos-servico" target="_blank">Termos de Serviços</a></p>
 				</div>
 				<div class="col-md-3 text-white"
-					style="background-color: #002255;color:white;margin-top:-50px;height:50px;">
-					<p class="mt-3 text-white"><a href="https://pixelinmotion.pt">Desenvolvido por Pixel in Motion</a></p>
+					style="background-color: #002255;color:white;margin-top:-50px;height:50px;text-align: center;">
+					<p class="mt-3 text-white copy-hover"><a href="https://pixelinmotion.pt" target="_blank">Desenvolvido por Pixel in Motion</a></p>
 				</div>
 			</div>
 		</footer>
