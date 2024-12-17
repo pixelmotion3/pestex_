@@ -449,7 +449,6 @@
 							<li class="scrollToLink"><a href="#sobrenos" class="font-semibold">Sobre</a></li>
 							<li class="scrollToLink"><a href="#servicos" class="font-semibold">Serviços</a></li>
 							<li class="scrollToLink"><a href="#sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
-							<li class="scrollToLink"><a href="#equipamentos" class="font-semibold">Equipamentos</a></li>
 							<li class="scrollToLink"><a href="#contact-us" class="font-semibold">Contactos</a></li>
 							<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
 						</ul>
@@ -529,7 +528,6 @@
 					<li class="scrollToLink"><a href="sobre">Sobre</a></li>
 					<li class="scrollToLink"><a href="servicos">Serviços</a></li>
 					<li class="scrollToLink"><a href="sustentabilidade">Sustentabilidade</a></li>
-					<li class="scrollToLink"><a href="equipamentos">Equipamentos</a></li>
 					<li class="scrollToLink"><a href="contactos">Contactos</a></li>
 					<li class="scrollToLink"><a href="#">Contacta-nos</a></li>
 				</ul>
