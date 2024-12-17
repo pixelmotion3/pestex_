@@ -450,7 +450,7 @@
 							<li class="scrollToLink"><a href="#servicos" class="font-semibold">Serviços</a></li>
 							<li class="scrollToLink"><a href="#sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
 							<li class="scrollToLink"><a href="#equipamentos" class="font-semibold">Equipamentos</a></li>
-							<li class="scrollToLink"><a href="#contact-us" class="font-semibold">Contactos</a></li>
+							<li class="scrollToLink contactenos-link2"><a href="#contact-us" class="font-semibold">Contactos</a></li>
 							<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
 						</ul>
 					</nav>
@@ -1224,7 +1224,7 @@
 			<div class="container">
 				<div class="text-center light text-white">
 					<h6 class="sec-title__tagline text-white"><span
-						class="sec-title__tagline__left1"></span><b>{{ $best_service[0]['best-service-h6-1'] }}</b><span
+						class="sec-title__tagline__left1"></span><b>{{ $our_service_1[0]['our-services-h6-1'] }}</b><span
 						class="sec-title__tagline__right1"></span></h6>
 					<h2 class="h2 text-white"><b>{{ $our_service_1[0]['our-services-h2-1'] }}</b></h2>
 					<p class="text-white mt-3">{{ $our_service_1[0]['our-services-h2-2'] }}</p>
@@ -1805,7 +1805,7 @@
 							<div class="sec-title-four text-center">
 
 								<h6 class="sec-title-four__tagline"><span
-										class="sec-title-four__tagline__left-border"></span>CONTACT US<span
+										class="sec-title-four__tagline__left-border"></span>FALE CONNOSCO<span
 										class="sec-title-four__tagline__right-border"></span></h6>
 								<!-- /.sec-title-four__tagline -->
 
@@ -1881,11 +1881,11 @@
 					<p style="color: #ff6600">Solicite um orçamento sem compromisso</p>
 				</div>
 			</div>
-			<div class="row" style="height:50px;z-index:10;background-color:#002255;color:white;border-color:#002255;">
+			<div class="row copy" style="height:50px;z-index:10;background-color:#002255;color:white;border-color:#002255;">
 
 				<div class="col-md-3 text-white"
-					style="background-color: #002255;color:white;margin-top:-50px;height:50px;text-align: center;">
-					<p class="text-white copy-hover">Copyright sospragas <span id="year"></span> <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
+					style="background-color: #002255;color:white;margin-top:-50px;height:50px;/* text-align: center; *//* width: 00px; */">
+					<p class="text-white copy-hover" style="width: 600px;">Copyright sospragas <span id="year"></span> <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
 						direitos reservados</p>
 				</div>
 				<div class="col-md-3 text-white"

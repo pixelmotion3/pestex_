@@ -108,6 +108,10 @@
 	display: block !important;
   }
 
+  .contactenos-link2 {
+	display: none !important;
+  }
+
   .contactenos-btn {
 	display: none;
   }

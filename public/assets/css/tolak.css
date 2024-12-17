@@ -6096,7 +6096,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 @media (max-width: 767px) {
   .testimonials-one {
-    padding: 80px 0;
+    padding: 0px 0;
   }
 }
 .testimonials-one__bg {
@@ -6851,6 +6851,10 @@ body.megamenu-popup-active .mobile-nav__content {
   .cta-two__bg {
     background-position: left;
   }
+
+  .cta-two {
+	margin-top: 20px !important;
+  }
 }
 .cta-two__info {
   background-position: center center;
@@ -7172,7 +7176,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 @media (max-width: 991px) {
   .cta-four {
-    padding: 50px 0 136px;
+    padding: 0px 0 60px;
   }
 }
 .cta-four__bg {
@@ -13430,7 +13434,7 @@ body.megamenu-popup-active .mobile-nav__content {
 	background-color: var(--tolak-white, #fff);
 	padding: 80px 0 78px;
 	counter-reset: count;
-	height: 700px;
+	/* height: 700px; */
 }
 
 @media (max-width: 767px) {
@@ -24751,6 +24755,25 @@ body.boxed-wrapper .main-slider-one__floating-text {
   }
 }
 
+
+@media (max-width: 991px) {
+	.footer > .row {
+	  margin-left: none !important;
+	  margin-right: none !important;
+	}
+
+	.footer {
+		padding-left: none !important;
+    	padding-right: none !important;
+	}
+	.footer > .row > .col-md-9 {
+		display: none;
+	}
+
+	.footer > .copy {
+		display: none;
+	}
+  }
 /*--------------------------------------------------------------
 # Work Process
 --------------------------------------------------------------*/
@@ -24932,7 +24955,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
 }
 @media (max-width: 991px) {
   .contact-three__content {
-    padding: 63px 30px 60px;
+    padding: 40px 30px 60px;
   }
 }
 .contact-three__content .sec-title-four {
