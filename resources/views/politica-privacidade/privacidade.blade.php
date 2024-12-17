@@ -491,11 +491,11 @@
 					<p style="color: #ff6600">Solicite um orçamento sem compromisso</p>
 				</div>
 			</div>
-			<div class="row" style="height:50px;z-index:10;background-color:#002255;color:white;border-color:#002255;">
+			<div class="row copy" style="height:50px;z-index:10;background-color:#002255;color:white;border-color:#002255;">
 
 				<div class="col-md-3 text-white"
-					style="background-color: #002255;color:white;margin-top:-50px;height:50px;text-align: center;">
-					<p class="text-white copy-hover">Copyright sospragas <span id="year"></span> <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
+					style="background-color: #002255;color:white;margin-top:-50px;height:50px;/* text-align: center; *//* width: 00px; */">
+					<p class="text-white copy-hover" style="width: 600px;">Copyright sospragas <span id="year"></span> <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
 						direitos reservados</p>
 				</div>
 				<div class="col-md-3 text-white"
