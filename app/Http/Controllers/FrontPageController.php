@@ -73,7 +73,7 @@ class FrontPageController extends Controller
         $landing_9page = landing_9page::where('id',1)->get()->toArray();
         $landing_10page = landing_10page::where('id',1)->get()->toArray();
         $landing_11page = landing_11page::where('id',1)->get()->toArray();
-
+		$reviews = Review::all();
 
         return view('home.index', [
             'main_screen' => $landing_page,
@@ -87,6 +87,7 @@ class FrontPageController extends Controller
             'collapse' => $landing_9page,
             'call_now' => $landing_10page,
             'video_contact' => $landing_11page,
+			'reviews' =>  $reviews
         ]);
     }
 

@@ -959,6 +959,73 @@
                                         <label for="validationCustom01" class="form-label" style="float:left;">P3</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-p-3'] }}" name="best-service-p-3" required>
                                       </div>
+
+									  <div class="col-12 mt-5 form-group">
+                                        <div class="card-header">
+                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Image</label>
+                                        </div>
+                                          <div class="card">
+                                            <img src="{{ $best_service[0]['best-service-img-path-4'] }}" class="img-fluid" alt="..." style="max-height:239px;max-width:370px;">
+                                            <div class="card-body">
+                                              <label for="exampleFormControlFile1">Example file input</label>
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="best-service-img-path-4">
+                                            </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">A4</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-a-4'] }}" name="best-service-a-4" required>
+                                      </div>
+                                      <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">P4</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-p-4'] }}" name="best-service-p-4" required>
+                                      </div>
+
+									  <div class="col-12 mt-5 form-group">
+                                        <div class="card-header">
+                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Image</label>
+                                        </div>
+                                          <div class="card">
+                                            <img src="{{ $best_service[0]['best-service-img-path-5'] }}" class="img-fluid" alt="..." style="max-height:239px;max-width:370px;">
+                                            <div class="card-body">
+                                              <label for="exampleFormControlFile1">Example file input</label>
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="best-service-img-path-5">
+                                            </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">A5</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-a-5'] }}" name="best-service-a-5" required>
+                                      </div>
+                                      <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">P5</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-p-5'] }}" name="best-service-p-5" required>
+                                      </div>
+
+
+
+									  <div class="col-12 mt-5 form-group">
+                                        <div class="card-header">
+                                          <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Image</label>
+                                        </div>
+                                          <div class="card">
+                                            <img src="{{ $best_service[0]['best-service-img-path-6'] }}" class="img-fluid" alt="..." style="max-height:239px;max-width:370px;">
+                                            <div class="card-body">
+                                              <label for="exampleFormControlFile1">Example file input</label>
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1" name="best-service-img-path-6">
+                                            </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">A6</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-a-6'] }}" name="best-service-a-6" required>
+                                      </div>
+                                      <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">P6</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-p-6'] }}" name="best-service-p-6" required>
+                                      </div>
+
+
                                       {{-- <div class="col-12 mt-5 form-group">
                                         <div class="card-header">
                                           <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Navbar Paragraph</label>

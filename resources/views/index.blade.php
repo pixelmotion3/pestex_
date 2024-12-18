@@ -1209,7 +1209,7 @@
 					<div class="col-lg-12 col-md-12 text-center text-white mt-5"
 						style="max-width:250px;margin-left:auto;margin-right:auto;">
 						<button type="button" class="btn theme-btn-three thm-btn" data-toggle="modal" data-target="#exampleModal">
-							AGENDAR VISTORIA GRATIS
+							AGENDAR VISTORIA GRÁTIS
 						</button>
 					</div>
 				</div>

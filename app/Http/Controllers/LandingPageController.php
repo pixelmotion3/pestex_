@@ -143,6 +143,13 @@ class LandingPageController extends Controller
                 'best-service-a-3' => $request->input('best-service-a-3'),
                 'best-service-p-3' => $request->input('best-service-p-3'),
                 'best-service-a-1' => $request->input('best-service-a-1'),
+
+				'best-service-a-4' => $request->input('best-service-a-4'),
+				'best-service-a-5' => $request->input('best-service-a-5'),
+				'best-service-a-6' => $request->input('best-service-a-6'),
+				'best-service-p-4' => $request->input('best-service-p-4'),
+				'best-service-p-5' => $request->input('best-service-p-5'),
+				'best-service-p-6' => $request->input('best-service-p-6'),
             ]);
             if ($request->hasFile('best-service-img-path-1')) {
                 $filename = $request->file('best-service-img-path-1');
@@ -163,6 +170,29 @@ class LandingPageController extends Controller
                 $path = $request->file('best-service-img-path-3')->store('assets/images');
                 $query = landing_3page::where('id',1)->update([
                     'best-service-img-path-3' => 'storage/' . $path
+                ]);
+            }
+			if ($request->hasFile('best-service-img-path-4')) {
+                $filename = $request->file('best-service-img-path-4');
+                $path = $request->file('best-service-img-path-4')->store('assets/images');
+                $query = landing_3page::where('id',1)->update([
+                    'best-service-img-path-4' => 'storage/' . $path
+                ]);
+            }
+
+			if ($request->hasFile('best-service-img-path-5')) {
+                $filename = $request->file('best-service-img-path-5');
+                $path = $request->file('best-service-img-path-5')->store('assets/images');
+                $query = landing_3page::where('id',1)->update([
+                    'best-service-img-path-5' => 'storage/' . $path
+                ]);
+            }
+
+			if ($request->hasFile('best-service-img-path-6')) {
+                $filename = $request->file('best-service-img-path-6');
+                $path = $request->file('best-service-img-path-6')->store('assets/images');
+                $query = landing_3page::where('id',1)->update([
+                    'best-service-img-path-6' => 'storage/' . $path
                 ]);
             }
         }

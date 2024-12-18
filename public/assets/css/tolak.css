@@ -396,7 +396,7 @@ h6 {
   text-align: center;
 }
 .tolak-btn span {
-  background: var(--tolak-black, #051d1f);
+  background: #1b272a;
   border-radius: 50%;
   display: block;
   height: 0;
