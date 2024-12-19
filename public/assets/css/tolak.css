@@ -24,7 +24,7 @@
   --tolak-text-dark: #b7b7b7;
   --tolak-text-dark-rgb: 183, 183, 183;
   --tolak-base: #ff6600;
-  --tolak-base-rgb: 61, 114, 252;
+  --tolak-base-rgb: 255, 102, 0;
   --tolak-gray: #ecf2fc;
   --tolak-gray-rgb: 236, 242, 252;
   --tolak-gray2: #c1c1c1;
@@ -45,6 +45,8 @@
   --tolak-border-color2-rgb: 234, 240, 250;
   --tolak-letter-space: 0.1em;
   --tolak-letter-space-xl: 0.2em;
+  --tolak-blue1: #002255;
+  --tolak-blue1-rgb: 0, 34, 85;
 }
 
 /*--------------------------------------------------------------
@@ -15523,13 +15525,13 @@ body.megamenu-popup-active .mobile-nav__content {
 .service-two__item__normal__icon {
   width: 70px;
   height: 70px;
-  background-color: var(--tolak-white, #fff);
+  background-color: var(--tolak-base, #fff);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 38px;
-  color: var(--tolak-base, #3d72fc);
+  color: var(--tolak-white, #3d72fc);
   margin: 0 0 15px;
 }
 .service-two__item__normal__title {
@@ -15546,7 +15548,7 @@ body.megamenu-popup-active .mobile-nav__content {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(var(--tolak-base-rgb, 61, 114, 252), 0.95);
+  background-color: rgba(var(--tolak-blue1-rgb, 61, 114, 252), 0.95);
   display: flex;
   padding: 32px 60px 20px 40px;
   flex-direction: column;
@@ -19675,7 +19677,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
   position: absolute;
   width: 65%;
   height: calc(100% + 19px);
-  background-color: var(--tolak-black2, #222222);
+  background-color: var(--tolak-blue1, #222222);
   border-radius: 10px 900px 10px 10px;
   left: 0;
   top: 10px;

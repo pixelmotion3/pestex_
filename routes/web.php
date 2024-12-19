@@ -5,6 +5,7 @@ use App\Http\Controllers\ServicePageController;
 use App\Http\Controllers\AboutPageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\FrontPageController;
+use App\Http\Controllers\ContactPageController;
 use App\Http\Controllers\HardwareController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\ServiceController;
@@ -22,7 +23,8 @@ Route::get('/home', [FrontPageController::class, 'Home'])->name('FrontPage.Home'
 
 Route::resource('/sustentabilidade', SustainabilityController::class);
 
-Route::resource('/equipamento', HardwareController::class);
+Route::resource('/equipamentos', HardwareController::class);
+Route::get('/contactos', [ContactPageController::class, 'index'])->name('ContactPage.index');
 Route::post('/contacts', [FrontPageController::class, 'store'])->name('FrontPage.store');
 Route::post('/quote-form', [FrontPageController::class, 'QuoteForm'])->name('FrontPage.QuoteForm');
 Route::post('/contact-form', [FrontPageController::class, 'ContactForm'])->name('FrontPage.ContactForm');
