@@ -5,17 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>{{ config('app.name') }}</title>
-        
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />    
-    
+        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+
         <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap/css/bootstrap.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/vendors/animate/animate.min.css') }}" />
-        
+
         <link rel="stylesheet" href="{{ asset('assets/vendors/fontawesome/css/all.min.css') }}" />
-        
+
         <link rel="stylesheet" href="{{ asset('assets/vendors/icofont/icofont.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/vendors/jquery-ui/jquery-ui.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/vendors/jarallax/jarallax.css') }}" />
@@ -33,7 +33,7 @@
 
         <!-- Stylesheets -->
         <link href="{{ asset('assets/css/font-awesome-all.css') }}" rel="stylesheet">
-        
+
         <link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/owl.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
@@ -54,13 +54,13 @@
             .icon { padding: 10px; color: black; min-width: 50px; text-align: center; }
             .input-field { width: 100%; padding: 10px; outline: none; }
             .input-field:focus { border: 2px solid dodgerblue; }
-            .btn { background-color: dodgerblue; color: white; padding: 15px 20px; border: none; cursor: pointer; width: 100%; opacity: 0.9; }
+            .btn { background-color: #ff6600; color: white; padding: 15px 20px; border: none; cursor: pointer; width: 100%; opacity: 0.9; }
             .btn:hover { opacity: 1; }
             .custom-select{
                 background-color:#A9A9A9;
                 width:100%;
                 color:white;
-            } 
+            }
             .custom-select:focus{
                 border: 2px solid dodgerblue;
             }
@@ -79,11 +79,11 @@
 
         </style>
          <!-- jequery plugins -->
-        
+
         <script src="{{ asset('assets/js/popper.min.js') }}"></script>
         <script src="{{ asset('assets/js/jquery.js') }}"></script>
         <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-          
+
         <script src="{{ asset('assets/js/owl.js') }}"></script>
         <script src="{{ asset('assets/js/wow.js') }}"></script>
         <script src="{{ asset('assets/js/validation.js') }}"></script>
@@ -92,28 +92,49 @@
         <script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
         <script src="{{ asset('assets/js/scrollbar.js') }}"></script>
         <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
-    
+
         <!-- main-js -->
         <script src="{{ asset('assets/js/script.js') }}"></script>
     </head>
-    <body class="custom-cursor">  
-        <header class="main-header sticky-header sticky-header--normal">
-            <div class="container-fluid">
-                <div class="main-header__inner">
-                    <div class="main-header__logo">
-                        <a href="/">
-                            <img src="assets/images/logo-dark.png" alt="Tolak HTML" width="184">
-                        </a>
-                    </div><!-- /.main-header__logo -->
+    <body class="custom-cursor" style="overflow-x: hidden;">
+		<div class="custom-cursor__cursor"></div>
+		<div class="custom-cursor__cursor-two"></div>
 
-                    @include('includes.nav') 
-                   
-                </div><!-- /.main-header__inner -->
-            </div><!-- /.container-fluid -->
-        </header><!-- /.main-header -->
+
+        <header class="main-header sticky-header sticky-header--one-page">
+			<div class="container-fluid">
+				<div class="main-header__inner">
+					<div class="main-header__logo">
+						<a href="/">
+							<img src="assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
+						</a>
+
+					</div><!-- /.main-header__logo -->
+					<nav class="main-header__nav main-menu">
+						<ul class="main-menu__list one-page-scroll-menu">
+							<li class="megamenu scrollToLink current"><a href="home" class="font-semibold">Home</a></li>
+							<li class="scrollToLink"><a href="sobre" class="font-semibold">Sobre</a></li>
+							<li class="scrollToLink"><a href="servicos" class="font-semibold">Serviços</a></li>
+							<li class="scrollToLink"><a href="sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
+							<li class="scrollToLink contactenos-link2"><a href="contact" class="font-semibold">Contactos</a></li>
+							<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
+						</ul>
+					</nav>
+
+					<div class="main-header-two__right">
+						<div class="mobile-nav__btn mobile-nav__toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+						<a href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn" type="submit" name="quote_form">CONTACTE-NOS</a>
+					</div>
+				</div>
+			</div>
+		</header><!-- /.main-header -->
         <section class="main-slider-three" id="home">
             <div class="main-slider-three__carousel tolak-owl__carousel owl-carousel" data-owl-options='{
-            "loop": true,
+            "loop": false,
             "animateOut": "fadeOut",
             "animateIn": "fadeIn",
             "items": 1,
@@ -151,12 +172,7 @@
                                         </p><!-- slider-text -->
                                         <div class="main-slider-three__btn">
                                             <a href="/servicos" class="tolak-btn"><b>{{ $main[0]['div-a-b'] }}</b><span></span></a><!-- slider-btn -->
-                                            {{-- <div class="main-slider-three__btn__video">
-                                                <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                                                    <i class="icon-play-button"></i>
-                                                    <span class="video-popup__btn-ripple"></span>
-                                                </a>
-                                            </div> --}}
+
                                         </div>
                                     </div>
                                 </div>
@@ -164,49 +180,11 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="item">
-                    <div class="main-slider-three__item">
-                        <div class="main-slider-three__bg" style="background-image: url({{ $main[0]['bg-2'] }});"></div><!-- slider-bg -->
-                        <div class="main-slider-three__shape-one" style="background-image: url({{ $main[0]['shape-one-2'] }});"></div><!-- slider-shape -->
-                        <div class="main-slider-three__shape-two" style="background-image: url({{ $main[0]['shape-two-2'] }});"></div><!-- slider-shape -->
-                        <div class="main-slider-three__shape-three" style="background-image: url({{ $main[0]['shape-three-2'] }});"></div><!-- slider-shape -->
-                        <div class="main-slider-three__shape-four" style="background-image: url({{ $main[0]['shape-four-2'] }});"></div><!-- slider-shape -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="main-slider-three__thumb">
-                                        <img src="{{ $main[0]['thumb-2'] }}" alt="tolak" />
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="main-slider-three__content">
-                                        <h2 class="main-slider-three__title">
-                                            <span class="main-slider-three__title__anim">{{ $main[0]['h2-span-1-1'] }}</span>
-                                            <span class="main-slider-three__title__anim">{{ $main[0]['h2-span-2-1'] }}</span>
-                                            <span class="main-slider-three__title__anim">{{ $main[0]['h2-span-3-1'] }}</span>
-                                        </h2><!-- slider-title -->
-                                        <p class="main-slider-three__text">
-                                            {{ $main[0]['p-1-1'] }}
-                                        </p><!-- slider-text -->
-                                        <div class="main-slider-three__btn">
-                                            <a href="/servicos" class="tolak-btn"><b>{{ $main[0]['div-a-b-1'] }}</b><span></span></a><!-- slider-btn -->
-                                            <div class="main-slider-three__btn__video">
-                                                <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                                                    <i class="icon-play-button"></i>
-                                                    <span class="video-popup__btn-ripple"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
+
             </div>
         </section>
         <!-- Feature -->
-             
+
         <!-- service-section -->
         <section class="service-section fadeInUp">
             <div class="image-layer" style="background-image: url({{ $service[0]['image-layer-path'] }});"></div>
@@ -220,7 +198,7 @@
                 </div>
             </div>
         </section>
-        <div class="mt-5" style="padding:200px;">
+        <div class="mt-5" style="padding: 200px 200px 100px 200px;">
             <section class="why-choose-five bg-light p-5" style="border-radius:30px; margin-top: -200px;">
                 <div class="container">
                     <div class="row ">
@@ -290,11 +268,11 @@
                 </div><!-- /.container -->
             </section><!-- /.why-choose-five -->
         </div>
-        
+
         <!-- service-section end -->
-        <h2 class="text-center h2 text-body">{{ $video[0]['h2'] }}</h2>
-        <p class="text-center p mt-3 mb-5 p-5">{{ $video[0]['p'] }}</p>
-        <section class="cta-four mt-5">
+        <h2 class="text-center h2 text-body" style="font-weight: 600;">{{ $video[0]['h2'] }}</h2>
+        <p class="text-center p mt-0 p-5"style="font-size: 1.5pts !important;margin: 0px 200px 0px;">{{ $video[0]['p'] }}</p>
+        <section class="cta-four">
             <div class="container mt-5">
                 <div class="cta-four__bg" style="background-image: url({{ $video[0]['bg-img'] }});">
                     <div class="cta-four__shape" style="background-image: url({{ $video[0]['shape-img'] }});"></div>
@@ -302,9 +280,7 @@
                     <div class="row">
                         <div class="col-lg-6 wow fadeInUp" data-wow-delay="00ms">
                             <div class="cta-four__content">
-                                <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                                    <i class="icon-play-button"></i>
-                                </a>
+
                                 <div class="sec-title-two text-left">
                                     <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span>{{ $video[0]['h6-span'] }}<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
                                     <h3 class="sec-title-two__title">{{ $video[0]['h3'] }}</h3><!-- /.sec-title-two__title -->
@@ -316,7 +292,7 @@
                                 <div class="cta-four__content__info">
                                     <div class="cta-four__content__info__icon"><i class="icofont-speech-comments"></i></div>
                                     <p class="cta-four__content__info__text">
-                                        {{ $video[0]['div-p'] }} <a href="contact.html">Saiba mais.</a>
+                                        {{ $video[0]['div-p'] }} <a href="sustentabilidade">Saiba mais.</a>
                                     </p>
                                 </div>
                             </div>
@@ -330,11 +306,17 @@
                 </div>
             </div>
         </section>
+
+
         <section class="testimonials-three">
             <div class="testimonials-three__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%" style="background-image: url({{ $testimonial[0]['img-path'] }});"></div>
             <div class="container">
                 <div class="sec-title-two text-center">
-                    <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span><b>{{ $testimonial[0]['h6'] }}</b><span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
+                    <h6 class="sec-title-two__tagline">
+						<span class="sec-title__tagline__left"></span>
+						<b>{{ $testimonial[0]['h6'] }}</b>
+						<span class="sec-title__tagline__right"></span>
+					</h6><!-- /.sec-title-two__tagline -->
                     <h3 class="sec-title-two__title">{{ $testimonial[0]['h3'] }}</h3><!-- /.sec-title-two__title -->
                 </div><!-- /.sec-title-two -->
                 <div class="row">
@@ -359,60 +341,31 @@
                         "dots": true,
                         "autoplay": false
                         }'>
-                                <div class="item">
-                                    <div class="testimonials-card-three">
-                                        <div class="testimonials-card-three__content">
-                                            <span class="testimonials-card-three__content__quote">“ </span>
-                                            {{ $testimonial[0]['span'] }}
-                                        </div><!-- /.testimonials-card-three__content -->
-                                        <div class="testimonials-card-three__author">
-                                            <!--
-                                            <div class="testimonials-card-three__image">
-                                                <img src="assets/images/resources/testi-1-4.jpg" alt="Lataro Marsena">
-                                            </div><!-- /.testimonials-card-three__image -->
-                                            <h3 class="testimonials-card-three__name">
-                                                {{ $testimonial[0]['h3-2'] }}
-                                            </h3><!-- /.testimonials-card-three__name -->
-                                            <p class="testimonials-card-three__designation">{{ $testimonial[0]['p'] }}</p><!-- /.testimonials-card-three__designation -->
-                                        </div>
-                                    </div><!-- /.testimonials-card-three -->
-                                </div><!-- /.item -->
-                                <div class="item">
-                                    <div class="testimonials-card-three">
-                                        <div class="testimonials-card-three__content">
-                                            <span class="testimonials-card-three__content__quote">“</span>
-                                            {{ $testimonial[0]['span-1'] }}
-                                        </div><!-- /.testimonials-card-three__content -->
-                                        <div class="testimonials-card-three__author">
-                                            <!--
-                                            <div class="testimonials-card-three__image">
-                                                <img src="assets/images/resources/testi-1-5.jpg" alt="Marsena Baran">
-                                            </div><!-- /.testimonials-card-three__image -->
-                                            <h3 class="testimonials-card-three__name">
-                                                {{ $testimonial[0]['h3-3'] }}
-                                            </h3><!-- /.testimonials-card-three__name -->
-                                            <p class="testimonials-card-three__designation">{{ $testimonial[0]['p-1'] }}</p><!-- /.testimonials-card-three__designation -->
-                                        </div>
-                                    </div><!-- /.testimonials-card-three -->
-                                </div><!-- /.item -->
-                                <div class="item">
-                                    <div class="testimonials-card-three">
-                                        <div class="testimonials-card-three__content">
-                                            <span class="testimonials-card-three__content__quote">“</span>
-                                            {{ $testimonial[0]['span-2'] }}
-                                        </div><!-- /.testimonials-card-three__content -->
-                                        <div class="testimonials-card-three__author">
-                                            <!--
-                                            <div class="testimonials-card-three__image">
-                                                <img src="assets/images/resources/testi-1-3.jpg" alt="David Cooper">
-                                            </div><!-- /.testimonials-card-three__image -->
-                                            <h3 class="testimonials-card-three__name">
-                                                {{ $testimonial[0]['h3-4'] }}
-                                            </h3><!-- /.testimonials-card-three__name -->
-                                            <p class="testimonials-card-three__designation">{{ $testimonial[0]['p-2'] }}</p><!-- /.testimonials-card-three__designation -->
-                                        </div>
-                                    </div><!-- /.testimonials-card-three -->
-                                </div><!-- /.item -->
+							@isset($testimonial_abouts)
+								@foreach ($testimonial_abouts as $testimonial)
+								<div class="item">
+									<div class="testimonials-card-three">
+										<div class="testimonials-card-three__content">
+											<span class="testimonials-card-three__content__quote">“ </span>
+											{{ $testimonial['p'] }}
+										</div><!-- /.testimonials-card-three__content -->
+										<div class="testimonials-card-three__author">
+											<!--
+											<div class="testimonials-card-three__image">
+												<img src="assets/images/resources/testi-1-4.jpg" alt="Lataro Marsena">
+											</div><!-- /.testimonials-card-three__image -->
+											<h3 class="testimonials-card-three__name">
+												{{ $testimonial['name'] }}
+											</h3><!-- /.testimonials-card-three__name -->
+											{{-- <p class="testimonials-card-three__designation">{{ $testimonial[0]['p'] }}</p><!-- /.testimonials-card-three__designation --> --}}
+										</div>
+									</div><!-- /.testimonials-card-three -->
+								</div><!-- /.item -->
+
+								@endforeach
+							@endisset
+
+
                             </div><!-- /.testimonials-three__carousel -->
                         </div>
                     </div>
@@ -438,8 +391,8 @@
                                     </li>
                                     <li class="contact-two__info__box">
                                         <div class="contact-two__info__box__icon"><i class="icon-open-mail"></i></div>
-                                        <h4 class="contact-two__info__box__title">{{ $contact_info[0]['h4-1'] }}</h4>
-                                        <p class="contact-two__info__box__text"><a href="mailto:{{ $contact_info[0]['p-1'] }}">{{ $contact_info[0]['p-1'] }}</a></p>
+                                        <h4 class="contact-two__info__box__title">{{ $contact_info[0]['h4-4'] }}</h4>
+                                        <p class="contact-two__info__box__text"><a href="mailto:{{ $contact_info[0]['p-3-1'] }}">{{ $contact_info[0]['p-3-1'] }}</a></p>
                                     </li>
                                     <li class="contact-two__info__box">
                                         <div class="contact-two__info__box__icon"><i class="icon-pin"></i></div>
@@ -450,19 +403,19 @@
                                 <div class="contact-two__info__social">
                                     <h5 class="contact-two__info__social__title">Siga-nos:</h5>
                                     <div class="contact-two__info__social__wrap">
-                                        <a href="https://facebook.com">
+                                        <a href="{{ $contact_info[0]['a-1'] }}">
                                             <i class="fab fa-facebook-f" aria-hidden="true"></i>
                                             <span class="sr-only">Facebook</span>
                                         </a>
-                                        <a href="https://pinterest.com">
+                                        {{-- <a href="https://pinterest.com">
                                             <i class="fab fa-pinterest-p" aria-hidden="true"></i>
                                             <span class="sr-only">Pinterest</span>
                                         </a>
                                         <a href="https://twitter.com">
                                             <i class="fab fa-twitter" aria-hidden="true"></i>
                                             <span class="sr-only">Twitter</span>
-                                        </a>
-                                        <a href="https://instagram.com">
+                                        </a> --}}
+                                        <a href="{{ $contact_info[0]['a-2'] }}">
                                             <i class="fab fa-instagram" aria-hidden="true"></i>
                                             <span class="sr-only">Instagram</span>
                                         </a>
@@ -473,7 +426,11 @@
                         <div class="col-lg-6">
                             <div class="contact-two__content">
                                 <div class="sec-title-two text-left">
-                                    <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span><b>{{ $contact_info[0]['h-6'] }}</b><span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
+                                    <h6 class="sec-title-two__tagline">
+										<span class="sec-title__tagline__left"></span>
+										<b>{{ $contact_info[0]['h-6'] }}</b>
+										<span class="sec-title__tagline__right"></span>
+									</h6><!-- /.sec-title-two__tagline -->
                                     <h3 class="sec-title-two__title"><b>{{ $contact_info[0]['h-3'] }}</b></h3><!-- /.sec-title-two__title -->
                                 </div><!-- /.sec-title-two -->
                                 <p class="contact-two__content__text">
@@ -501,23 +458,23 @@
                 </div>
             </div><!-- /.container -->
         </section><!-- /.contact -->
-        <section class="mail-section">
-            <div class="container" style="margin-top: 150px;">
+		<section class="mail-section">
+            <div class="container">
                 <div class="mail-section__wrapper">
                     <div class="row">
                         <div class="col-md-12 col-lg-4"></div>
                         <div class="col-md-5 col-lg-3">
                             <div class="mail-section__content">
-                                <h3 class="mail-section__content__title">Our Newsletter</h3>
-                                <p class="mail-section__content__text">We are dolor sit amet csectetur</p>
+                                <h3 class="mail-section__content__title">Subscreva a Newsletter</h3>
+                                <p class="mail-section__content__text">Esteja a par das nossas novidades</p>
                             </div>
                         </div>
                         <div class="col-md-7 col-lg-5">
-                            <form action="#" data-url="MAILCHIMP_FORM_URL" class="mail-section__newsletter mc-form">
-                                <input type="text" name="EMAIL" placeholder="Enter your email">
+                            <form action="#" data-url="MAILCHIMP_FORM_URL" class="mail-section__newsletter mc-form" novalidate="true">
+                                <input type="text" name="EMAIL" placeholder="Insira o seu email">
                                 <button type="submit" class="tolak-btn">
-                                    <b>Subscribe</b><span></span>
-                                    <span class="sr-only">Subscribe</span><!-- /.sr-only -->
+                                    <b>Subscrever</b><span></span>
+                                    <span class="sr-only">Subscrever</span><!-- /.sr-only -->
                                 </button>
                             </form><!-- /.footer-widget__newsletter mc-form -->
                             <div class="mc-form__response"></div><!-- /.mc-form__response -->
@@ -527,19 +484,20 @@
             </div>
         </section>
         <footer class="main-footer background-black">
-            <div class="main-footer__bg background-black" style="background-image: url(assets/images/backgrounds/footer-bg-1-1.jpg);"></div>
+            {{-- <div class="main-footer__bg background-black" style="background-image: url(assets/images/backgrounds/footer-bg-1-1.jpg);"></div> --}}
+			<div class="main-footer__bg background-black" style=""></div>
             <!-- /.main-footer__bg -->
-            <div class="main-footer__shape" style="background-image: url(assets/images/shapes/footer-shape-1.png);"></div>
+            <div class="main-footer__shape" style="background-image: url(assets/images/shapes/footer-shape-1-orange.png);"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-4">
                         <div class="footer-widget footer-widget--about">
                             <a href="index.html" class="footer-widget__logo">
-                                <img src="assets/images/logo-light.png" width="184" alt="Tolak HTML Template">
+                                <img src="assets/images/logo-white.png" width="184" alt="Tolak HTML Template">
                             </a>
                             <ul class="footer-widget__info">
-                                <li><span class="icofont-clock-time"></span>Open Hours of Government:<br> Mon - Fri: 8.00 am. - 6.00 pm.</li>
                                 <li><span class="icofont-location-pin"></span>13/A, Miranda Halim City .</li>
+                                <li><span class="icofont-email"></span>email@email.com</li>
                                 <li><span class="icofont-phone"></span><a href="tel:09969569535">099 695 695 35</a></li>
                             </ul>
                             <div class="footer-widget__social">
@@ -547,14 +505,14 @@
                                     <i class="fab fa-facebook-f" aria-hidden="true"></i>
                                     <span class="sr-only">Facebook</span>
                                 </a>
-                                <a href="https://pinterest.com">
+                                {{-- <a href="https://pinterest.com">
                                     <i class="fab fa-pinterest-p" aria-hidden="true"></i>
                                     <span class="sr-only">Pinterest</span>
                                 </a>
                                 <a href="https://twitter.com">
                                     <i class="fab fa-twitter" aria-hidden="true"></i>
                                     <span class="sr-only">Twitter</span>
-                                </a>
+                                </a> --}}
                                 <a href="https://instagram.com">
                                     <i class="fab fa-instagram" aria-hidden="true"></i>
                                     <span class="sr-only">Instagram</span>
@@ -565,9 +523,9 @@
                             </div>
                         </div><!-- /.footer-widget -->
                     </div><!-- /.col-md-6 -->
-                    <div class="col-md-6 col-lg-4">
+                    {{-- <div class="col-md-6 col-lg-4">
                         <div class="footer-widget footer-widget--posts">
-                            <h2 class="footer-widget__title">Recent Posts</h2><!-- /.footer-widget__title -->
+                            <h2 class="footer-widget__title">SOS Pragas</h2><!-- /.footer-widget__title -->
                             <ul class="footer-widget__posts list-unstyled">
                                 <li class="footer-widget__posts__item">
                                     <div class="footer-widget__posts__image">
@@ -588,29 +546,28 @@
                                     </div><!-- /.sidebar__posts__content -->
                                 </li>
                             </ul><!-- /.sidebar__posts list-unstyled -->
-                        </div><!-- /.footer-widget -->
-                    </div><!-- /.col-md-6 -->
+                        </div>
+                    </div> --}}
                     <div class="col-md-6 col-lg-2">
                         <div class="footer-widget footer-widget--links">
-                            <h2 class="footer-widget__title">Service</h2><!-- /.footer-widget__title -->
+                            <h2 class="footer-widget__title">SOS Pragas</h2><!-- /.footer-widget__title -->
                             <ul class="list-unstyled footer-widget__links">
-                                <li><a href="about.html">Why choose us</a></li>
-                                <li><a href="services.html">Our Service</a></li>
-                                <li><a href="reviews.html">Partners</a></li>
-                                <li><a href="contact.html">Core values</a></li>
-                                <li><a href="project.html">Our projects</a></li>
+                                <li><a href="home">Início</a></li>
+                                <li><a href="sobre">Sobre Nós</a></li>
+                                <li><a href="servicos">Serviços</a></li>
+                                <li><a href="equipament">Equipamento</a></li>
+                                <li><a href="sustentabilidade">Sustentabilidade</a></li>
                             </ul><!-- /.list-unstyled footer-widget__links -->
                         </div><!-- /.footer-widget -->
                     </div><!-- /.col-md-6 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="footer-widget footer-widget--links footer-widget--last">
-                            <h2 class="footer-widget__title">Quick Link</h2><!-- /.footer-widget__title -->
+                            <h2 class="footer-widget__title">Links Úteis</h2><!-- /.footer-widget__title -->
                             <ul class="list-unstyled footer-widget__links">
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="packages.html">Packages</a></li>
-                                <li><a href="team.html">Team</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="blog-grid-right.html">News</a></li>
+                                <li><a href="contactos" target="_blank">Contactos</a></li>
+                                <li><a href="termos-servico" target="_blank">Termos de Serviço</a></li>
+                                <li><a href="politica-privacidade" target="_blank">Política de Privacidade</a></li>
+                                <li><a href="https://www.livroreclamacoes.pt/Inicio/ " target="_blank">Livro de Reclamações</a></li>
                             </ul><!-- /.list-unstyled footer-widget__links -->
                         </div><!-- /.footer-widget -->
                     </div><!-- /.col-md-6 -->
@@ -619,18 +576,15 @@
             <div class="main-footer__bottom">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             <p class="main-footer__copyright">
-                                &copy; Copyright <span class="dynamic-year"></span> by Tolak HTML Template.
+                                Copyright sospragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
                             </p>
                         </div>
-                        <div class="col-md-6">
-                            <ul class="list-unstyled main-footer__bottom__list">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="blog-list-right.html">News</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                            </ul><!-- /.list-unstyled -->
+                        <div class="col-md-4">
+                            <p class="main-footer__copyright text-right">
+                                <a href="https://pixelinmotion.pt" style="color:#ff6600;" target="_blank">Desenvolvido por Pixel in Motion</a>
+                            </p>
                         </div>
                     </div><!-- /.main-footer__inner -->
                 </div><!-- /.container -->
@@ -640,7 +594,7 @@
         <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
             <span class="scroll-to-top__text">back top</span>
             <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
-        </a>     
+        </a>
         -->
         <script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}"></script>
         <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -672,9 +626,9 @@
 
         <!-- template js -->
         <script src="{{ asset('assets/js/tolak.js') }}"></script>
-        
+
         <!-- sanito -->
-        
+
         <script src="{{ asset('assets/js/jquery.js') }}"></script>
         <script src="{{ asset('assets/js/popper.min.js') }}"></script>
         <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
@@ -685,6 +639,6 @@
         <script src="{{ asset('assets/js/appear.js') }}"></script>
         <script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
         <script src="{{ asset('assets/js/scrollbar.js') }}"></script>
-        <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>  
+        <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
     </body>
 </html>

@@ -11,7 +11,7 @@ use App\Models\ServiceDetails;
 use App\Models\ServiceDetailsShow;
 use App\Models\Method;
 use Illuminate\Http\Request;
-
+use App\Models\About_video;
 class ServiceController extends Controller
 {
     /**
@@ -22,10 +22,12 @@ class ServiceController extends Controller
         $best_service = landing_3page::where('id',1)->get()->toArray();
         $main_screen = ServicesMainScreen::where('id', 1)->get()->toArray();
         $services = ServiceDetails::all();
+		$video = About_video::where('id',1)->get()->toArray();
         return view('services.index', [
             'main_screen' => $main_screen,
             'best_service' => $best_service,
-            'services' => $services
+            'services' => $services,
+			'video' => $video
         ]);
     }
 
@@ -43,7 +45,7 @@ class ServiceController extends Controller
             'services' => $services,
             'service_detail' => $service_detail,
             'methods' => $methods,
-            'service_detail_show'=> $service_detail_show 
+            'service_detail_show'=> $service_detail_show
         ]);
     }
 

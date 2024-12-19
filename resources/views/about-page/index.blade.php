@@ -57,9 +57,9 @@
                         </a>
                       </li>
                     </ul>
-                    
+
                   --></li>
-      
+
         <!-- Layouts -->
         <!--
         <li class="menu-item">
@@ -78,8 +78,8 @@
               <a href="layouts-content-navbar.html" class="menu-link">
                 <div data-i18n="Content navbar">Content navbar</div>
               </a>
-            </li>       
-         
+            </li>
+
           </ul>
         </li>
 
@@ -633,7 +633,7 @@
                             </form>
                             <i class="ti ti-logout ms-2 ti-14px"></i>
                           </small>
-                          
+
                       </div>
                     </li>
                   </ul>
@@ -678,75 +678,75 @@
                                 <form class="row g-3 needs-validation" novalidate action="{{ route('about-page.update', 1) }}" method="post" enctype="multipart/form-data">
                                   @csrf
                                   @method('PUT')
-                                  <div class="col-12 mt-5 form-group">   
+                                  <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                    </div>                                       
+                                    </div>
                                     <div class="card">
                                       <img src="{{ $main_screen[0]['bg-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                      <div class="card-body">                                              
+                                      <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="bg-1">                        
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="bg-1">
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-12 mt-5 form-group">   
+                                  <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                    </div>                                       
+                                    </div>
                                     <div class="card">
                                       <img src="{{ $main_screen[0]['shape-one-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                      <div class="card-body">                                              
+                                      <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-one-1">                        
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-one-1">
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-12 mt-5 form-group">   
+                                  <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                    </div>                                       
+                                    </div>
                                     <div class="card">
                                       <img src="{{ $main_screen[0]['shape-two-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                      <div class="card-body">                                              
+                                      <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-two-1">                        
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-two-1">
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-12 mt-5 form-group">   
+                                  <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                    </div>                                       
+                                    </div>
                                     <div class="card">
                                       <img src="{{ $main_screen[0]['shape-three-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                      <div class="card-body">                                              
+                                      <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-three-1">                        
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-three-1">
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-12 mt-5 form-group">   
+                                  <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                    </div>                                       
+                                    </div>
                                     <div class="card">
                                       <img src="{{ $main_screen[0]['shape-four-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                      <div class="card-body">                                              
+                                      <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-four-1">                        
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-four-1">
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-12 mt-5 form-group">   
+                                  <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                    </div>                                       
+                                    </div>
                                     <div class="card">
                                       <img src="{{ $main_screen[0]['thumb-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                      <div class="card-body">                                              
+                                      <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="thumb-1">                        
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="thumb-1">
                                       </div>
                                     </div>
                                   </div>
@@ -770,75 +770,75 @@
                                     <label for="validationCustom01" class="form-label" style="float:left;">Div a b</label>
                                     <input type="text" class="form-control" name="div-a-b" id="validationCustom01" value="{{ $main_screen[0]['div-a-b'] }}" required>
                                   </div>
-                                  <div class="col-12 mt-5 form-group">   
+                                  <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                    </div>                                       
+                                    </div>
                                     <div class="card">
                                       <img src="{{ $main_screen[0]['bg-2'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                      <div class="card-body">                                              
+                                      <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="bg-2">                        
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="bg-2">
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-12 mt-5 form-group">   
+                                  <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                    </div>                                       
+                                    </div>
                                     <div class="card">
                                       <img src="{{ $main_screen[0]['shape-one-2'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                      <div class="card-body">                                              
+                                      <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-one-2">                        
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-one-2">
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-12 mt-5 form-group">   
+                                  <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                    </div>                                       
+                                    </div>
                                     <div class="card">
                                       <img src="{{ $main_screen[0]['shape-two-2'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                      <div class="card-body">                                              
+                                      <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-two-2">                        
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-two-2">
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-12 mt-5 form-group">   
+                                  <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                    </div>                                       
+                                    </div>
                                     <div class="card">
                                       <img src="{{ $main_screen[0]['shape-three-2'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                      <div class="card-body">                                              
+                                      <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-three-2">                        
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-three-2">
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-12 mt-5 form-group">   
+                                  <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                    </div>                                       
+                                    </div>
                                     <div class="card">
                                       <img src="{{ $main_screen[0]['shape-four-2'] }}" alt="..." style="max-height:885px;max-width:1920px;">
-                                      <div class="card-body">                                              
+                                      <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-four-2">                        
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-four-2">
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-12 mt-5 form-group">   
+                                  <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                    </div>                                       
+                                    </div>
                                     <div class="card">
                                       <img src="{{ $main_screen[0]['thumb-2'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                      <div class="card-body">                                              
+                                      <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="thumb-2">                        
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="thumb-2">
                                       </div>
                                     </div>
                                   </div>
@@ -872,91 +872,91 @@
                               <form class="row g-3" action="{{ route('about-page.update', 1) }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 @method('PUT')
-                                <div class="col-12 mt-5 form-group">   
+                                <div class="col-12 mt-5 form-group">
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                  </div>                                       
+                                  </div>
                                   <div class="card">
                                     <img src="{{ $service[0]['image-layer-path'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                    <div class="card-body">                                              
+                                    <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
-                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image-layer-path">                        
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image-layer-path">
                                     </div>
                                   </div>
                                 </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="h6" id="validationCustom01" value="{{ $service[0]['h6'] }}" required>
-                                </div> 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="h2" id="validationCustom01" value="{{ $service[0]['h2'] }}" required>
-                                </div> 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="p" id="validationCustom01" value="{{ $service[0]['p'] }}" required>
-                                </div> 
-                                <div class="col-12 mt-5 form-group">   
+                                </div>
+                                <div class="col-12 mt-5 form-group">
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                  </div>                                       
+                                  </div>
                                   <div class="card">
                                     <img src="{{ $service[0]['img-path'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                    <div class="card-body">                                              
+                                    <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
-                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-path">                        
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-path">
                                     </div>
                                   </div>
-                                </div> 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="h6-span" id="validationCustom01" value="{{ $service[0]['h6-span'] }}" required>
-                                </div>                                 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="h3" id="validationCustom01" value="{{ $service[0]['h3'] }}" required>
-                                </div> 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="p-1" id="validationCustom01" value="{{ $service[0]['p-1'] }}" required>
-                                </div> 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="h3-1" id="validationCustom01" value="{{ $service[0]['h3-1'] }}" required>
-                                </div>                                 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="h3-2" id="validationCustom01" value="{{ $service[0]['h3-2'] }}" required>
-                                </div> 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="h3-3" id="validationCustom01" value="{{ $service[0]['h3-3'] }}" required>
-                                </div>                          
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="li-i-1" id="validationCustom01" value="{{ $service[0]['li-i-1'] }}" required>
-                                </div> 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="li-i-2" id="validationCustom01" value="{{ $service[0]['li-i-2'] }}" required>
-                                </div> 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="li-i-3" id="validationCustom01" value="{{ $service[0]['li-i-3'] }}" required>
-                                </div> 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="li-i-4" id="validationCustom01" value="{{ $service[0]['li-i-4'] }}" required>
-                                </div> 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="a-span" id="validationCustom01" value="{{ $service[0]['a-span'] }}" required>
-                                </div> 
+                                </div>
 
                                 <div class="col-12">
                                   <button type="submit" class="btn btn-primary w-100" name="form1">Submit</button>
                                 </div>
-                              </form>  
+                              </form>
                             </div>
                             <!-- video -->
                             <div class="tab-pane fade show" id="video" role="tabpanel" aria-labelledby="video-tab">
@@ -966,72 +966,72 @@
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="h2" id="validationCustom01" value="{{ $video[0]['h2'] }}" required>
-                                </div> 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="p" id="validationCustom01" value="{{ $video[0]['p'] }}" required>
-                                </div> 
-                                <div class="col-12 mt-5 form-group">   
+                                </div>
+                                <div class="col-12 mt-5 form-group">
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                  </div>                                       
+                                  </div>
                                   <div class="card">
                                     <img src="{{ $video[0]['bg-img'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                    <div class="card-body">                                              
+                                    <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
-                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="bg-img">                        
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="bg-img">
                                     </div>
                                   </div>
-                                </div> 
-                                <div class="col-12 mt-5 form-group">   
+                                </div>
+                                <div class="col-12 mt-5 form-group">
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                  </div>                                       
+                                  </div>
                                   <div class="card">
                                     <img src="{{ $video[0]['shape-img'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                    <div class="card-body">                                              
+                                    <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
-                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-img">                        
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-img">
                                     </div>
                                   </div>
-                                </div>                                
-                                <div class="col-12 mt-5 form-group">   
+                                </div>
+                                <div class="col-12 mt-5 form-group">
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                  </div>                                       
+                                  </div>
                                   <div class="card">
                                     <img src="{{ $video[0]['overlay-img'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                    <div class="card-body">                                              
+                                    <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
-                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="overlay-img">                        
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="overlay-img">
                                     </div>
                                   </div>
                                 </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="h6-span" id="validationCustom01" value="{{ $video[0]['h6-span'] }}" required>
-                                </div> 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="h3" id="validationCustom01" value="{{ $video[0]['h3'] }}" required>
-                                </div> 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="p-1" id="validationCustom01" value="{{ $video[0]['p-1'] }}" required>
-                                </div> 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="div-p" id="validationCustom01" value="{{ $video[0]['div-p'] }}" required>
-                                </div> 
-                                <div class="col-12 mt-5 form-group">   
+                                </div>
+                                <div class="col-12 mt-5 form-group">
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                  </div>                                       
+                                  </div>
                                   <div class="card">
                                     <img src="{{ $video[0]['img-path'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                    <div class="card-body">                                              
+                                    <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
-                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-path">                        
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-path">
                                     </div>
                                   </div>
                                 </div>
@@ -1045,15 +1045,15 @@
                               <form class="row g-3" action="{{ route('about-page.update', 1) }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 @method('PUT')
-                                <div class="col-12 mt-5 form-group">   
+                                <div class="col-12 mt-5 form-group">
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                  </div>                                       
+                                  </div>
                                   <div class="card">
                                     <img src="{{ $testimonial[0]['img-path'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                    <div class="card-body">                                              
+                                    <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
-                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-path">                        
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-path">
                                     </div>
                                   </div>
                                 </div>
@@ -1064,28 +1064,28 @@
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="h3" id="validationCustom01" value="{{ $testimonial[0]['h3'] }}" required>
-                                </div> 
-                                <div class="col-12 mt-5 form-group">   
+                                </div>
+                                <div class="col-12 mt-5 form-group">
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                  </div>                                       
+                                  </div>
                                   <div class="card">
                                     <img src="{{ $testimonial[0]['img-path-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                    <div class="card-body">                                              
+                                    <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
-                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-path-1">                        
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-path-1">
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-12 mt-5 form-group">   
+                                <div class="col-12 mt-5 form-group">
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                  </div>                                       
+                                  </div>
                                   <div class="card">
                                     <img src="{{ $testimonial[0]['img-path-2'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                    <div class="card-body">                                              
+                                    <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
-                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-path-2">                        
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-path-2">
                                     </div>
                                   </div>
                                 </div>
@@ -1093,10 +1093,10 @@
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="h3-1" id="validationCustom01" value="{{ $testimonial[0]['h3-1'] }}" required>
                                 </div>
-                                <div class="col-12 mt-5">
+                                {{-- <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="span" id="validationCustom01" value="{{ $testimonial[0]['span'] }}" required>
-                                </div> 
+                                </div>
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="h3-2" id="validationCustom02" value="{{ $testimonial[0]['h3-2'] }}" required>
@@ -1128,26 +1128,144 @@
                                 <div class="col-12 mt-5">
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="p-2" id="validationCustom02" value="{{ $testimonial[0]['p-2'] }}" required>
-                                </div>
+                                </div> --}}
                                 <div class="col-22">
                                   <button type="submit" class="btn btn-primary w-100" name="form3">Submit</button>
                                 </div>
                               </form>
+
+							  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+									  <div class="modal-header">
+										<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									  </div>
+									  <div class="modal-body">
+										<form class="row g-3 needs-validation" novalidate action="{{ route('about-page.store') }}" method="post" enctype="multipart/form-data">
+										  @csrf
+										  @method('POST')
+										  <div class="col-12 mt-5">
+											<label for="validationCustom01" class="form-label" style="float:left;">Paragrafo</label>
+											<input type="text" class="form-control" id="validationCustom01" name="p" required>
+										  </div>
+										  <div class="col-12 mt-5">
+											<label for="validationCustom01" class="form-label" style="float:left;">Nome</label>
+											<input type="text" class="form-control" id="validationCustom01" name="name" required>
+										  </div>
+										  <div class="col-12 mt-5">
+											<label for="validationCustom01" class="form-label" style="float:left;">Ratings</label>
+											<input type="number" class="form-control" id="validationCustom01" name="rating" min="0" max="5" required>
+										  </div>
+										</div>
+										<div class="modal-footer">
+										  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										  <button type="submit" class="btn btn-primary">Save changes</button>
+										</div>
+									  </form>
+									</div>
+								</div>
+							  </div>
+
+
+							  <div class="container mt-12">
+								<div class="row">
+								  @foreach ($testimonial_abouts as $testimonial)
+									<div class="col-sm-12 col-md-4 testimonial-boxes text-center text-primary bg-white">
+										<blockquote>
+											<p class="text-center mt-5">
+												<i>
+													{{ $testimonial['p'] }}
+												</i>
+											</p>
+											<h3 class="h3 mt-3"><strong>{{ $testimonial['name'] }}</strong>
+											</h3>
+											<h5 class="h5 text-white-50">
+											<div class="d-flex justify-content-around m-5">
+											  @for ($i = 0; $i < 5; $i++)
+												@if ($i < $testimonial['rating'])
+												  <i class="fa fa-star text-primary" aria-hidden="true"></i>
+												@else
+												  <i class="fa fa-star text-white" aria-hidden="true"></i>
+												@endif
+											  @endfor
+											</div>
+										</blockquote>
+										<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal{{ $testimonial['id'] }}">Editar</button>
+										<a href="#"
+											class="btn btn-danger p-2 rounded"
+											onclick="
+											let result = confirm('Tem a certeza que quer apagar este item ?');
+											if(result){
+												event.preventDefault();
+												document.getElementById('delete-form').submit();
+											}
+											">
+											Apagar
+										</a>
+										<form id="delete-form"
+											action="{{ route('about-page.destroy', [$testimonial['id']]) }}"
+											method="post" style="display: none">
+											<input type="hidden" name="_method"
+												value="delete" />
+											@csrf
+										</form>
+										<form method="post" action="{{ route('about-page.update', $testimonial['id']) }}">
+										  @csrf
+										  @method('put')
+										  <div class="modal fade" id="exampleModal{{ $testimonial['id'] }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+											<div class="modal-dialog">
+											  <div class="modal-content">
+												<div class="modal-header">
+												  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+												  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+												  <div class="col-12 mt-5">
+													<label for="validationCustom01" class="form-label" style="float:left;">Paragrafo</label>
+													<input type="text" class="form-control" id="validationCustom01" name="p" value="{{ $testimonial['p'] }}" required>
+												  </div>
+												  <div class="col-12 mt-5">
+													<label for="validationCustom01" class="form-label" style="float:left;">Nome</label>
+													<input type="text" class="form-control" id="validationCustom01" name="name" value="{{ $testimonial['name'] }}" required>
+												  </div>
+												  <div class="col-12 mt-5">
+													<label for="validationCustom01" class="form-label" style="float:left;">Ratings</label>
+													<input type="number" class="form-control" id="validationCustom01" name="rating" min="0" max="5" value="{{ $testimonial['rating'] }}" required>
+												  </div>
+												</div>
+												<div class="modal-footer">
+												  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+												  <button type="submit" class="btn btn-primary" name="form5">Save changes</button>
+												</div>
+											  </div>
+											</div>
+										  </div>
+										</form>
+									</div>
+								  @endforeach
+								</div>
+							  </div>
+							  <button type="button" class="btn btn-primary w-100 mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								Criar Testimonial
+							  </button>
                             </div>
+
+
                             <!-- Contact Info -->
                             <div class="tab-pane fade show" id="contact-info" role="tabpanel" aria-labelledby="contact-info-tab">
                               <form class="row g-3" action="{{ route('about-page.update', 1) }}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 @method('PUT')
-                                <div class="col-12 mt-5 form-group">   
+                                <div class="col-12 mt-5 form-group">
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
-                                  </div>                                       
+                                  </div>
                                   <div class="card">
                                     <img src="{{ $contact_info[0]['bg-img'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
-                                    <div class="card-body">                                              
+                                    <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
-                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="bg-img">                        
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1" name="bg-img">
                                     </div>
                                   </div>
                                 </div>
@@ -1206,6 +1324,16 @@
                                   <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                   <input type="text" class="form-control" name="p-3" id="validationCustom02" value="{{ $contact_info[0]['p-3'] }}" required>
                                 </div>
+
+								<div class="col-12 mt-5">
+									<label for="validationCustom01" class="form-label" style="float:left;">A1</label>
+									<input type="text" class="form-control" name="a-1" id="validationCustom02" value="{{ $contact_info[0]['a-1'] }}" required>
+								</div>
+
+								  <div class="col-12 mt-5">
+									<label for="validationCustom01" class="form-label" style="float:left;">A2</label>
+									<input type="text" class="form-control" name="a-2" id="validationCustom02" value="{{ $contact_info[0]['a-2'] }}" required>
+								  </div>
                                 <div class="col-22">
                                   <button type="submit" class="btn btn-primary w-100" name="form4">Submit</button>
                                 </div>
@@ -1216,7 +1344,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- / Content -->
 
             <!-- Footer -->

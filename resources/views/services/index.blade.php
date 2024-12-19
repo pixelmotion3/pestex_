@@ -75,7 +75,7 @@
         }
 
         .btn {
-            background-color: dodgerblue;
+            background-color: #ff6600;
             color: white;
             padding: 15px 20px;
             border: none;
@@ -128,8 +128,10 @@
     <script src="{{ asset('assets/js/script.js') }}"></script>
 </head>
 
-<body class="custom-cursor">
-    <header class="main-header sticky-header sticky-header--normal">
+<body class="custom-cursor" style="overflow-x: hidden;">
+	<div class="custom-cursor__cursor"></div>
+	<div class="custom-cursor__cursor-two"></div>
+    {{-- <header class="main-header sticky-header sticky-header--normal">
         <div class="container-fluid">
             <div class="main-header__inner">
                 <div class="main-header__logo">
@@ -137,11 +139,41 @@
                         <img src="assets/images/logo-dark.png" alt="Tolak HTML" width="184">
                     </a>
                 </div><!-- /.main-header__logo -->
-                @include('includes.nav')                
+                @include('includes.nav')
             </div><!-- /.main-header__inner -->
         </div><!-- /.container-fluid -->
-    </header><!-- /.main-header -->
+    </header><!-- /.main-header --> --}}
+	<header class="main-header sticky-header sticky-header--one-page">
+		<div class="container-fluid">
+			<div class="main-header__inner">
+				<div class="main-header__logo">
+					<a href="/">
+						<img src="assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
+					</a>
 
+				</div><!-- /.main-header__logo -->
+				<nav class="main-header__nav main-menu">
+					<ul class="main-menu__list one-page-scroll-menu">
+						<li class="megamenu scrollToLink current"><a href="home" class="font-semibold">Home</a></li>
+						<li class="scrollToLink"><a href="sobre" class="font-semibold">Sobre</a></li>
+						<li class="scrollToLink"><a href="servicos" class="font-semibold">Serviços</a></li>
+						<li class="scrollToLink"><a href="sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
+						<li class="scrollToLink contactenos-link2"><a href="contact" class="font-semibold">Contactos</a></li>
+						<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
+					</ul>
+				</nav>
+
+				<div class="main-header-two__right">
+					<div class="mobile-nav__btn mobile-nav__toggler">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<a href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn" type="submit" name="quote_form">CONTACTE-NOS</a>
+				</div>
+			</div>
+		</div>
+	</header>
     <section class="page-header">
         <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg-1-1.png)"></div>
         <div class="page-header__shape"></div>
@@ -152,10 +184,10 @@
                 <div class="col-md-7">
                     <div class="page-header__content">
                         <h2 class="page-header__title">{{ $main_screen[0]['h2'] }}</h2>
-                        <ul class="tolak-breadcrumb list-unstyled">
+                        {{-- <ul class="tolak-breadcrumb list-unstyled">
                             <li><a href="/">Home</a></li>
                             <li><span>Services</span></li>
-                        </ul><!-- /.thm-breadcrumb list-unstyled -->
+                        </ul><!-- /.thm-breadcrumb list-unstyled --> --}}
                     </div>
                 </div>
                 <div class="col-md-5">
@@ -168,10 +200,14 @@
             </div>
         </div><!-- /.container -->
     </section><!-- /.page-header -->
-    <div class="sec-title text-center" style="margin-top:200px;">
+    {{-- <div class="sec-title text-center" style="margin-top:200px;">
         <h1 class="text-center h1 text-body">{{ $main_screen[0]['h1'] }}</h1>
         <p class="text-center mt-5" style="padding-left: 250px;padding-right: 250px;">{{ $main_screen[0]['p'] }}</p>
-    </div>
+    </div> --}}
+	<div class="sec-title text-center" style="margin-top:200px;">
+		<h2 class="text-center h2 text-body" style="font-weight: 600;">{{ $video[0]['h2'] }}</h2>
+		<p class="text-center p mt-0 p-5"style="font-size: 1.5pts !important;margin: 0px 200px 0px;">{{ $video[0]['p'] }}</p>
+	</div>
     <section class="service-one">
         <div class="container" style="margin-top:-150px;">
             <div class="row">

@@ -8,7 +8,7 @@ use App\Models\About_service;
 use App\Models\About_video;
 use App\Models\Testimonial;
 use App\Models\ContactInfo;
-
+use App\Models\TestimonialAbout;
 
 class AboutPageController extends Controller
 {
@@ -17,18 +17,20 @@ class AboutPageController extends Controller
      */
     public function index()
     {
-        $main_screen = About::where('id',1)->get()->toArray(); 
+        $main_screen = About::where('id',1)->get()->toArray();
         $service = About_service::where('id',1)->get()->toArray();
         $video = About_video::where('id',1)->get()->toArray();
         $testimonial = Testimonial::where('id',1)->get()->toArray();
-        $contact_info = ContactInfo::where('id',1)->get()->toArray();  
+        $contact_info = ContactInfo::where('id',1)->get()->toArray();
+		$testimonial_abouts = TestimonialAbout::all();
        // dd($testimonial);
         return view('about-page.index', [
             'main_screen' => $main_screen,
             'service' => $service,
             'video' => $video,
             'testimonial' => $testimonial,
-            'contact_info' => $contact_info
+            'contact_info' => $contact_info,
+			'testimonial_abouts' => $testimonial_abouts
         ]);
     }
 
@@ -36,45 +38,45 @@ class AboutPageController extends Controller
 
         if ($request->has('form0')) {
             if ($request->hasFile('bg-1')) {
-                $path = $request->file('bg-1')->store('assets/images');  
+                $path = $request->file('bg-1')->store('assets/images');
                 $query = About::where('id',1)->update([
-                    'bg-1' => 'storage/' . $path 
-                ]);                 
+                    'bg-1' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('shape-one-1')) {
-                $path = $request->file('shape-one-1')->store('assets/images');  
+                $path = $request->file('shape-one-1')->store('assets/images');
                 $query = About::where('id',1)->update([
-                    'shape-one-1' => 'storage/' . $path 
-                ]);                 
+                    'shape-one-1' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('shape-two-1')) {
-                $path = $request->file('shape-two-1')->store('assets/images');  
+                $path = $request->file('shape-two-1')->store('assets/images');
                 $query = About::where('id',1)->update([
-                    'shape-two-1' => 'storage/' . $path 
-                ]);                 
+                    'shape-two-1' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('shape-three-1')) {
-                $path = $request->file('shape-three-1')->store('assets/images');  
+                $path = $request->file('shape-three-1')->store('assets/images');
                 $query = About::where('id',1)->update([
-                    'shape-three-1' => 'storage/' . $path 
-                ]);                 
+                    'shape-three-1' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('shape-four-1')) {
-                $path = $request->file('shape-four-1')->store('assets/images');  
+                $path = $request->file('shape-four-1')->store('assets/images');
                 $query = About::where('id',1)->update([
-                    'shape-four-1' => 'storage/' . $path 
-                ]);                 
+                    'shape-four-1' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('thumb-1')) {
-                $path = $request->file('thumb-1')->store('assets/images');  
+                $path = $request->file('thumb-1')->store('assets/images');
                 $query = About::where('id',1)->update([
-                    'thumb-1' => 'storage/' . $path 
-                ]);                 
+                    'thumb-1' => 'storage/' . $path
+                ]);
             }
             //dd($request->all());
             $query = About::where('id',1)->update([
@@ -91,45 +93,45 @@ class AboutPageController extends Controller
             ]);
 
             if ($request->hasFile('bg-2')) {
-                $path = $request->file('bg-2')->store('assets/images');  
+                $path = $request->file('bg-2')->store('assets/images');
                 $query = About::where('id',1)->update([
-                    'bg-2' => 'storage/' . $path 
-                ]);                 
+                    'bg-2' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('shape-one-2')) {
-                $path = $request->file('shape-one-2')->store('assets/images');  
+                $path = $request->file('shape-one-2')->store('assets/images');
                 $query = About::where('id',1)->update([
-                    'shape-one-2' => 'storage/' . $path 
-                ]);                 
+                    'shape-one-2' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('shape-two-2')) {
-                $path = $request->file('shape-two-2')->store('assets/images');  
+                $path = $request->file('shape-two-2')->store('assets/images');
                 $query = About::where('id',1)->update([
-                    'shape-two-2' => 'storage/' . $path 
-                ]);                 
+                    'shape-two-2' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('shape-three-2')) {
-                $path = $request->file('shape-three-2')->store('assets/images');  
+                $path = $request->file('shape-three-2')->store('assets/images');
                 $query = About::where('id',1)->update([
-                    'shape-three-2' => 'storage/' . $path 
-                ]);                 
+                    'shape-three-2' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('shape-four-2')) {
-                $path = $request->file('shape-four-2')->store('assets/images');  
+                $path = $request->file('shape-four-2')->store('assets/images');
                 $query = About::where('id',1)->update([
-                    'shape-four-2' => 'storage/' . $path 
-                ]);                 
+                    'shape-four-2' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('thumb-2')) {
-                $path = $request->file('thumb-2')->store('assets/images');  
+                $path = $request->file('thumb-2')->store('assets/images');
                 $query = About::where('id',1)->update([
-                    'thumb-2' => 'storage/' . $path 
-                ]);                 
+                    'thumb-2' => 'storage/' . $path
+                ]);
             }
 
             return redirect()->route('about-page.index');
@@ -139,16 +141,16 @@ class AboutPageController extends Controller
         if ($request->has('form1')) {
 
             if ($request->hasFile('image-layer-path')) {
-                $path = $request->file('image-layer-path')->store('assets/images');  
+                $path = $request->file('image-layer-path')->store('assets/images');
                 $query = About_service::where('id',1)->update([
-                    'image-layer-path' => 'storage/' . $path 
-                ]);                 
+                    'image-layer-path' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-path')) {
-                $path = $request->file('img-path')->store('assets/images');  
+                $path = $request->file('img-path')->store('assets/images');
                 $query = About_service::where('id',1)->update([
-                    'img-path' => 'storage/' . $path 
-                ]);                 
+                    'img-path' => 'storage/' . $path
+                ]);
             }
 
             $query = About_service::where('id',1)->update([
@@ -175,31 +177,31 @@ class AboutPageController extends Controller
         if ($request->has('form2')) {
 
             if ($request->hasFile('bg-img')) {
-                $path = $request->file('bg-img')->store('assets/images');  
+                $path = $request->file('bg-img')->store('assets/images');
                 $query = About_video::where('id',1)->update([
-                    'bg-img' => 'storage/' . $path 
-                ]);                 
+                    'bg-img' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('shape-img')) {
-                $path = $request->file('shape-img')->store('assets/images');  
+                $path = $request->file('shape-img')->store('assets/images');
                 $query = About_video::where('id',1)->update([
-                    'shape-img' => 'storage/' . $path 
-                ]);                 
+                    'shape-img' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('overlay-img')) {
-                $path = $request->file('overlay-img')->store('assets/images');  
+                $path = $request->file('overlay-img')->store('assets/images');
                 $query = About_video::where('id',1)->update([
-                    'overlay-img' => 'storage/' . $path 
-                ]);                 
+                    'overlay-img' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-path')) {
-                $path = $request->file('img-path')->store('assets/images');  
+                $path = $request->file('img-path')->store('assets/images');
                 $query = About_video::where('id',1)->update([
-                    'img-path' => 'storage/' . $path 
-                ]);                 
+                    'img-path' => 'storage/' . $path
+                ]);
             }
            // dd($request->all());
             $query = About_video::where('id',1)->update([
@@ -216,36 +218,36 @@ class AboutPageController extends Controller
 
         if ($request->has('form3')) {
             if ($request->hasFile('img-path')) {
-                $path = $request->file('img-path')->store('assets/images');  
+                $path = $request->file('img-path')->store('assets/images');
                 $query = Testimonial::where('id',1)->update([
-                    'img-path' => 'storage/' . $path 
-                ]);                 
+                    'img-path' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-path-1')) {
-                $path = $request->file('img-path-1')->store('assets/images');  
+                $path = $request->file('img-path-1')->store('assets/images');
                 $query = Testimonial::where('id',1)->update([
-                    'img-path-1' => 'storage/' . $path 
-                ]);                 
+                    'img-path-1' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-path-2')) {
-                $path = $request->file('img-path-2')->store('assets/images');  
+                $path = $request->file('img-path-2')->store('assets/images');
                 $query = Testimonial::where('id',1)->update([
-                    'img-path-2' => 'storage/' . $path 
-                ]);                 
+                    'img-path-2' => 'storage/' . $path
+                ]);
             }
             $query = Testimonial::where('id',1)->update([
-                'h6' => $request->input('h6'),
-                'h3' => $request->input('h3'),
-                'h3-1' => $request->input('h3-1'),
-                'span' => $request->input('span'),
-                'h3-2' => $request->input('h3-2'),
-                'p' => $request->input('p'),
-                'span-1' => $request->input('span-1'),
-                'h3-3' => $request->input('h3-3'),
-                'p-1' => $request->input('p-1'),
-                'span-2' => $request->input('span-2'),
-                'h3-4' => $request->input('h3-4'),
-                'p-2' => $request->input('p-2'),
+				'h3-1' => $request->input('h3-1')
+                // 'h6' => $request->input('h6'),
+                // 'h3' => $request->input('h3'),
+                // 'span' => $request->input('span'),
+                // 'h3-2' => $request->input('h3-2'),
+                // 'p' => $request->input('p'),
+                // 'span-1' => $request->input('span-1'),
+                // 'h3-3' => $request->input('h3-3'),
+                // 'p-1' => $request->input('p-1'),
+                // 'span-2' => $request->input('span-2'),
+                // 'h3-4' => $request->input('h3-4'),
+                // 'p-2' => $request->input('p-2'),
             ]);
 
             return redirect()->route('about-page.index');
@@ -254,10 +256,10 @@ class AboutPageController extends Controller
         if ($request->has('form4')) {
 
             if ($request->hasFile('bg-img')) {
-                $path = $request->file('bg-img')->store('assets/images');  
+                $path = $request->file('bg-img')->store('assets/images');
                 $query = ContactInfo::where('id',1)->update([
-                    'bg-img' => 'storage/' . $path 
-                ]);                 
+                    'bg-img' => 'storage/' . $path
+                ]);
             }
             $query = ContactInfo::where('id',1)->update([
                 'h4' => $request->input('h4'),
@@ -273,9 +275,42 @@ class AboutPageController extends Controller
                 'h-6' => $request->input('h-6'),
                 'h-3' => $request->input('h-3'),
                 'p-3' => $request->input('p-3'),
+				'a-1' => $request->input('a-1'),
+				'a-2' => $request->input('a-2'),
             ]);
             return redirect()->route('about-page.index');
         }
+
+		if ($request->has('form5')) {
+			$query = TestimonialAbout::where('id',$id)->update([
+                'p' => $request->input('p'),
+                'name' => $request->input('name'),
+                'rating' => $request->input('rating'),
+            ]);
+		}
+
         return back();
+    }
+
+	public function store(Request $request){
+        $query = TestimonialAbout::create([
+            'p' => $request->input('p'),
+            'name' => $request->input('name'),
+            'rating' => $request->input('rating'),
+        ]);
+
+        if ($query) {
+            return redirect()->route('about-page.index');
+        }
+        return back();
+    }
+
+	public function destroy($id)
+    {
+        $query = TestimonialAbout::findOrFail($id);
+
+        if ($query->delete()) {
+            return redirect()->route('about-page.index');
+        }
     }
 }

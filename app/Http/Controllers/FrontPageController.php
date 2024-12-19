@@ -41,6 +41,8 @@ class FrontPageController extends Controller
         $landing_10page = landing_10page::where('id',1)->get()->toArray();
         $landing_11page = landing_11page::where('id',1)->get()->toArray();
         $reviews = Review::all();
+
+
         return view('index', [
             'main_screen' => $landing_page,
             'company_status' => $landing_2page,

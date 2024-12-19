@@ -68,6 +68,7 @@
 </head>
 
 <body class="custom-cursor">
+
     <header class="main-header sticky-header sticky-header--normal">
         <div class="container-fluid">
             <div class="main-header__inner">
@@ -530,7 +531,7 @@
             $('#collapse-4').hide();
 
             $('#collapse-1-icon').click(function(){
-                $('#collapse-1').show();                
+                $('#collapse-1').show();
                 $('#collapse-2').hide();
                 $('#collapse-3').hide();
                 $('#collapse-4').hide();
