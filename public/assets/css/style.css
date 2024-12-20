@@ -462,6 +462,14 @@ img {
   background: #0a267a;
 }
 
+.thm-btn2:before{
+	background: #fff !important;
+}
+
+.thm-btn2:hover{
+	color: #ff6600 !important;
+}
+
 
 .pagination{
   position: relative;

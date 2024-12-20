@@ -341,7 +341,7 @@
                 </div><!-- /.container -->
             </section><!-- /.about-six -->
 
-            <section class="mail-section">
+            <section class="mail-section" style="margin-top: 60px;	">
 				<div class="container">
 					<div class="mail-section__wrapper">
 						<div class="row">

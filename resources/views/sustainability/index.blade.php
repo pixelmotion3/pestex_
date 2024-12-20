@@ -84,7 +84,7 @@
         }
 
         .btn {
-            background-color: dodgerblue;
+            background-color: #ff6600;
             color: white;
             padding: 15px 20px;
             border: none;
@@ -138,42 +138,54 @@
 </head>
 
 <body class="custom-cursor">
-    <header class="main-header sticky-header sticky-header--normal">
-        <div class="container-fluid">
-            <div class="main-header__inner">
-                <div class="main-header__logo">
-                    <a href="index.html">
-                        <img src="assets/images/logo-dark.png" alt="Tolak HTML" width="184">
-                    </a>
-                </div><!-- /.main-header__logo -->
+    <div class="custom-cursor__cursor"></div>
+	<div class="custom-cursor__cursor-two"></div>
+	<header class="main-header sticky-header sticky-header--one-page">
+		<div class="container-fluid">
+			<div class="main-header__inner">
+				<div class="main-header__logo">
+					<a href="/">
+						<img src="assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
+					</a>
 
-                {{-- <nav class="main-header__nav main-menu">
-                            <ul class="main-menu__list one-page-scroll-menu">
-                                <li class="megamenu scrollToLink current"><a href="https://pestex.pixeldev05.com/">Home</a></li>
-                                <li class="scrollToLink"><a href="https://pestex.pixeldev05.com/about">About</a></li>
-                                <li class="scrollToLink"><a href="https://pestex.pixeldev05.com/services">Services</a></li>
-                                <li class="scrollToLink"><a href="https://pestex.pixeldev05.com/sustainability">Sustainability</a></li>
-                            </ul>
-                        </nav> --}}
+				</div><!-- /.main-header__logo -->
+				<nav class="main-header__nav main-menu">
+					<ul class="main-menu__list one-page-scroll-menu">
+						<li class="megamenu scrollToLink"><a href="home" class="font-semibold">Home</a></li>
+						<li class="scrollToLink"><a href="sobre" class="font-semibold">Sobre</a></li>
+						<li class="scrollToLink"><a href="servicos" class="font-semibold">Serviços</a></li>
+						<li class="scrollToLink current"><a href="sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
+						<li class="scrollToLink"><a href="/equipamentos" class="font-semibold">Equipamentos</a></li>
+						<li class="scrollToLink contactenos-link2"><a href="contact" class="font-semibold">Contactos</a></li>
+						<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
+					</ul>
+				</nav>
 
-                @include('includes.nav')
+				<div class="main-header-two__right">
+					<div class="mobile-nav__btn mobile-nav__toggler">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<a href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn" type="submit" name="quote_form">CONTACTE-NOS</a>
+				</div>
+			</div>
+		</div>
+	</header>
 
-            </div><!-- /.main-header__inner -->
-        </div><!-- /.container-fluid -->
-    </header><!-- /.main-header -->
-
-    <section class="page-header">
-        <!-- /.page-header__bg -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12" style="background-image:url({{ $main[0]['bg-img'] }});">
-                    <div class="page-header__content">
-                        <h1 class="page-header__title text-center">{{ $main[0]['h2'] }}</h1>
-                    </div>
-                </div>
-            </div>
-        </div><!-- /.container -->
-    </section><!-- /.page-header -->
+	<section class="page-header" style="background-image:url({{ $main[0]['bg-img'] }});background-size: cover;background-repeat: no-repeat;background-position: center;">
+		<!-- /.page-header__bg -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header__content text-center">
+						<h1 class="text-white h1"><b>{{ $main[0]['h1'] }}</b></h1>
+					</div>
+				</div>
+			</div>
+		</div><!-- /.container -->
+	</section><!-- /.page-header -->
+	<!-- Service Start -->
     <section>
         <div class="container">
             <div class="row">
@@ -189,8 +201,9 @@
         <div class="container tabs-box">
             <div class="sec-title-four text-center">
 
+
                 <h6 class="sec-title-four__tagline"><span
-                        class="sec-title-four__tagline__left-border"></span>{{ $main[0]['h6'] }}<span
+                        class="sec-title-four__tagline__left-border"></span><b>{{ $main[0]['h6'] }}</b><span
                         class="sec-title-four__tagline__right-border"></span></h6><!-- /.sec-title-four__tagline -->
 
                 <h3 class="sec-title-four__title">{{ $main[0]['h3'] }}</h3><!-- /.sec-title-four__title -->
@@ -432,13 +445,13 @@
     <!-- Feature End -->
     <!-- Service Start -->
     <div class="page-wrapper">
-        <section class="service-five">
+        <section class="service-five" style="background: #e1e1e1;">
             <div class="container">
                 <div class="sec-title-three text-center">
 
                     <h6 class="sec-title-three__tagline"><span
-                            class="sec-title-three__tagline__left-border"></span>{{ $main[0]['h6-span'] }}<span
-                            class="sec-title-three__tagline__right-border"></span></h6>
+                        class="sec-title-four__tagline__left-border"></span><b>{{ $main[0]['h6-span'] }}</b><span
+                        class="sec-title-four__tagline__right-border"></span></h6>
                     <!-- /.sec-title-three__tagline -->
 
                     <h3 class="sec-title-three__title">{{ $main[0]['h3-9'] }}</h3><!-- /.sec-title-three__title -->
@@ -521,154 +534,146 @@
                     </div>
                 </div>
             </div>
+			<div style="margin-left:auto;margin-right:auto;margin-top: 40px;" class="text-center mb-5">
+				<a href="/servicos" class="btn mt-2 theme-btn-three thm-btn contactenos-btn" style="width:15%;">Ver todos os serviços</a>
+			</div>
         </section>
-        <div style="margin-left:auto;margin-right:auto;" class="text-center mb-5">
-            <a href="/servicos" class="btn btn-warning " style="width:15%;">Ver todos os serviços</a>
-        </div>
+
     </div>
-    <section class="mail-section">
-        <div class="container">
-            <div class="mail-section__wrapper">
-                <div class="row">
-                    <div class="col-md-12 col-lg-4"></div>
-                    <div class="col-md-5 col-lg-3">
-                        <div class="mail-section__content">
-                            <h3 class="mail-section__content__title">Our Newsletter</h3>
-                            <p class="mail-section__content__text">We are dolor sit amet csectetur</p>
-                        </div>
-                    </div>
-                    <div class="col-md-7 col-lg-5">
-                        <form action="#" data-url="MAILCHIMP_FORM_URL" class="mail-section__newsletter mc-form">
-                            <input type="text" name="EMAIL" placeholder="Enter your email">
-                            <button type="submit" class="tolak-btn">
-                                <b>Subscribe</b><span></span>
-                                <span class="sr-only">Subscribe</span><!-- /.sr-only -->
-                            </button>
-                        </form><!-- /.footer-widget__newsletter mc-form -->
-                        <div class="mc-form__response"></div><!-- /.mc-form__response -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="main-footer background-black">
-        <div class="main-footer__bg background-black"
-            style="background-image: url(assets/images/backgrounds/footer-bg-1-1.jpg);"></div>
-        <!-- /.main-footer__bg -->
-        <div class="main-footer__shape" style="background-image: url(assets/images/shapes/footer-shape-1.png);"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="footer-widget footer-widget--about">
-                        <a href="index.html" class="footer-widget__logo">
-                            <img src="assets/images/logo-light.png" width="184" alt="Tolak HTML Template">
-                        </a>
-                        <ul class="footer-widget__info">
-                            <li><span class="icofont-clock-time"></span>Open Hours of Government:<br> Mon - Fri: 8.00
-                                am. - 6.00 pm.</li>
-                            <li><span class="icofont-location-pin"></span>13/A, Miranda Halim City .</li>
-                            <li><span class="icofont-phone"></span><a href="tel:09969569535">099 695 695 35</a></li>
-                        </ul>
-                        <div class="footer-widget__social">
-                            <a href="https://facebook.com">
-                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                <span class="sr-only">Facebook</span>
-                            </a>
-                            <a href="https://pinterest.com">
-                                <i class="fab fa-pinterest-p" aria-hidden="true"></i>
-                                <span class="sr-only">Pinterest</span>
-                            </a>
-                            <a href="https://twitter.com">
-                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                                <span class="sr-only">Twitter</span>
-                            </a>
-                            <a href="https://instagram.com">
-                                <i class="fab fa-instagram" aria-hidden="true"></i>
-                                <span class="sr-only">Instagram</span>
-                            </a>
-                        </div>
-                        <div class="footer-widget__image">
-                            <img src="assets/images/resources/footer-about.jpg" alt="tolak">
-                        </div>
-                    </div><!-- /.footer-widget -->
-                </div><!-- /.col-md-6 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="footer-widget footer-widget--posts">
-                        <h2 class="footer-widget__title">Recent Posts</h2><!-- /.footer-widget__title -->
-                        <ul class="footer-widget__posts list-unstyled">
-                            <li class="footer-widget__posts__item">
-                                <div class="footer-widget__posts__image">
-                                    <img src="assets/images/blog/lp-1-1.jpg" alt="">
-                                </div><!-- /.sidebar__posts__image -->
-                                <div class="footer-widget__posts__content">
-                                    <p class="footer-widget__posts__meta">23 jun 2023</p>
-                                    <!-- /.sidebar__posts__date -->
-                                    <h4 class="footer-widget__posts__title"><a href="blog-details.html">We round
-                                            Solution york Blog</a></h4><!-- /.sidebar__posts__title -->
-                                </div><!-- /.sidebar__posts__content -->
-                            </li>
-                            <li class="footer-widget__posts__item">
-                                <div class="footer-widget__posts__image">
-                                    <img src="assets/images/blog/lp-1-2.jpg" alt="">
-                                </div><!-- /.sidebar__posts__image -->
-                                <div class="footer-widget__posts__content">
-                                    <p class="footer-widget__posts__meta">23 jun 2023</p>
-                                    <!-- /.sidebar__posts__date -->
-                                    <h4 class="footer-widget__posts__title"><a href="blog-details.html">We Should be
-                                            Descriptive</a></h4><!-- /.sidebar__posts__title -->
-                                </div><!-- /.sidebar__posts__content -->
-                            </li>
-                        </ul><!-- /.sidebar__posts list-unstyled -->
-                    </div><!-- /.footer-widget -->
-                </div><!-- /.col-md-6 -->
-                <div class="col-md-6 col-lg-2">
-                    <div class="footer-widget footer-widget--links">
-                        <h2 class="footer-widget__title">Service</h2><!-- /.footer-widget__title -->
-                        <ul class="list-unstyled footer-widget__links">
-                            <li><a href="about.html">Why choose us</a></li>
-                            <li><a href="services.html">Our Service</a></li>
-                            <li><a href="reviews.html">Partners</a></li>
-                            <li><a href="contact.html">Core values</a></li>
-                            <li><a href="project.html">Our projects</a></li>
-                        </ul><!-- /.list-unstyled footer-widget__links -->
-                    </div><!-- /.footer-widget -->
-                </div><!-- /.col-md-6 -->
-                <div class="col-md-6 col-lg-2">
-                    <div class="footer-widget footer-widget--links footer-widget--last">
-                        <h2 class="footer-widget__title">Quick Link</h2><!-- /.footer-widget__title -->
-                        <ul class="list-unstyled footer-widget__links">
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="packages.html">Packages</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="blog-grid-right.html">News</a></li>
-                        </ul><!-- /.list-unstyled footer-widget__links -->
-                    </div><!-- /.footer-widget -->
-                </div><!-- /.col-md-6 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-        <div class="main-footer__bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="main-footer__copyright">
-                            &copy; Copyright <span class="dynamic-year"></span> by Tolak HTML Template.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="list-unstyled main-footer__bottom__list">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="blog-list-right.html">News</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                        </ul><!-- /.list-unstyled -->
-                    </div>
-                </div><!-- /.main-footer__inner -->
-            </div><!-- /.container -->
-        </div><!-- /.main-footer__bottom -->
-    </footer><!-- /.main-footer -->
+    <section class="mail-section" style="margin-top: 60px;	">
+		<div class="container">
+			<div class="mail-section__wrapper">
+				<div class="row">
+					<div class="col-md-12 col-lg-4"></div>
+					<div class="col-md-5 col-lg-3">
+						<div class="mail-section__content">
+							<h3 class="mail-section__content__title">Subscreva a Newsletter</h3>
+							<p class="mail-section__content__text">Esteja a par das nossas novidades</p>
+						</div>
+					</div>
+					<div class="col-md-7 col-lg-5">
+						<form action="#" data-url="MAILCHIMP_FORM_URL" class="mail-section__newsletter mc-form" novalidate="true">
+							<input type="text" name="EMAIL" placeholder="Insira o seu email">
+							<button type="submit" class="tolak-btn">
+								<b>Subscrever</b><span></span>
+								<span class="sr-only">Subscrever</span><!-- /.sr-only -->
+							</button>
+						</form><!-- /.footer-widget__newsletter mc-form -->
+						<div class="mc-form__response"></div><!-- /.mc-form__response -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="main-footer background-black">
+		{{-- <div class="main-footer__bg background-black" style="background-image: url(assets/images/backgrounds/footer-bg-1-1.jpg);"></div> --}}
+		<div class="main-footer__bg background-black" style=""></div>
+		<!-- /.main-footer__bg -->
+		<div class="main-footer__shape" style="background-image: url(assets/images/shapes/footer-shape-1-orange.png);"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<div class="footer-widget footer-widget--about">
+						<a href="index.html" class="footer-widget__logo">
+							<img src="assets/images/logo-white.png" width="184" alt="Tolak HTML Template">
+						</a>
+						<ul class="footer-widget__info">
+							<li><span class="icofont-location-pin"></span>13/A, Miranda Halim City .</li>
+							<li><span class="icofont-email"></span>email@email.com</li>
+							<li><span class="icofont-phone"></span><a href="tel:09969569535">099 695 695 35</a></li>
+						</ul>
+						<div class="footer-widget__social">
+							<a href="https://facebook.com">
+								<i class="fab fa-facebook-f" aria-hidden="true"></i>
+								<span class="sr-only">Facebook</span>
+							</a>
+							{{-- <a href="https://pinterest.com">
+								<i class="fab fa-pinterest-p" aria-hidden="true"></i>
+								<span class="sr-only">Pinterest</span>
+							</a>
+							<a href="https://twitter.com">
+								<i class="fab fa-twitter" aria-hidden="true"></i>
+								<span class="sr-only">Twitter</span>
+							</a> --}}
+							<a href="https://instagram.com">
+								<i class="fab fa-instagram" aria-hidden="true"></i>
+								<span class="sr-only">Instagram</span>
+							</a>
+						</div>
+						<div class="footer-widget__image">
+							<img src="assets/images/resources/footer-about.jpg" alt="tolak">
+						</div>
+					</div><!-- /.footer-widget -->
+				</div><!-- /.col-md-6 -->
+				{{-- <div class="col-md-6 col-lg-4">
+					<div class="footer-widget footer-widget--posts">
+						<h2 class="footer-widget__title">SOS Pragas</h2><!-- /.footer-widget__title -->
+						<ul class="footer-widget__posts list-unstyled">
+							<li class="footer-widget__posts__item">
+								<div class="footer-widget__posts__image">
+									<img src="assets/images/blog/lp-1-1.jpg" alt="">
+								</div><!-- /.sidebar__posts__image -->
+								<div class="footer-widget__posts__content">
+									<p class="footer-widget__posts__meta">23 jun 2023</p><!-- /.sidebar__posts__date -->
+									<h4 class="footer-widget__posts__title"><a href="blog-details.html">We round Solution york Blog</a></h4><!-- /.sidebar__posts__title -->
+								</div><!-- /.sidebar__posts__content -->
+							</li>
+							<li class="footer-widget__posts__item">
+								<div class="footer-widget__posts__image">
+									<img src="assets/images/blog/lp-1-2.jpg" alt="">
+								</div><!-- /.sidebar__posts__image -->
+								<div class="footer-widget__posts__content">
+									<p class="footer-widget__posts__meta">23 jun 2023</p><!-- /.sidebar__posts__date -->
+									<h4 class="footer-widget__posts__title"><a href="blog-details.html">We Should be Descriptive</a></h4><!-- /.sidebar__posts__title -->
+								</div><!-- /.sidebar__posts__content -->
+							</li>
+						</ul><!-- /.sidebar__posts list-unstyled -->
+					</div>
+				</div> --}}
+				<div class="col-md-6 col-lg-2">
+					<div class="footer-widget footer-widget--links">
+						<h2 class="footer-widget__title">SOS Pragas</h2><!-- /.footer-widget__title -->
+						<ul class="list-unstyled footer-widget__links">
+							<li><a href="home">Início</a></li>
+							<li><a href="sobre">Sobre Nós</a></li>
+							<li><a href="servicos">Serviços</a></li>
+							<li><a href="equipament">Equipamento</a></li>
+							<li><a href="sustentabilidade">Sustentabilidade</a></li>
+						</ul><!-- /.list-unstyled footer-widget__links -->
+					</div><!-- /.footer-widget -->
+				</div><!-- /.col-md-6 -->
+				<div class="col-md-6 col-lg-2">
+					<div class="footer-widget footer-widget--links footer-widget--last">
+						<h2 class="footer-widget__title">Links Úteis</h2><!-- /.footer-widget__title -->
+						<ul class="list-unstyled footer-widget__links">
+							<li><a href="contactos" target="_blank">Contactos</a></li>
+							<li><a href="termos-servico" target="_blank">Termos de Serviço</a></li>
+							<li><a href="politica-privacidade" target="_blank">Política de Privacidade</a></li>
+							<li><a href="https://www.livroreclamacoes.pt/Inicio/ " target="_blank">Livro de Reclamações</a></li>
+						</ul><!-- /.list-unstyled footer-widget__links -->
+					</div><!-- /.footer-widget -->
+				</div><!-- /.col-md-6 -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+		<div class="main-footer__bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<p class="main-footer__copyright">
+							Copyright sospragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
+						</p>
+					</div>
+					<div class="col-md-4">
+						<p class="main-footer__copyright text-right">
+							<a href="https://pixelinmotion.pt" style="color:#ff6600;" target="_blank">Desenvolvido por Pixel in Motion</a>
+						</p>
+					</div>
+				</div><!-- /.main-footer__inner -->
+			</div><!-- /.container -->
+		</div><!-- /.main-footer__bottom -->
+	</footer><!-- /.main-footer -->
     <!-- Service End
-             
+
             <footer class="footer" style="max-height:200px; mt-5">
               <div class="container-fluid">
                 <div class="row">
@@ -702,6 +707,60 @@
             <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
         </a>
         -->
+		<div class="mobile-nav__wrapper">
+			<div class="mobile-nav__overlay mobile-nav__toggler"></div>
+			<!-- /.mobile-nav__overlay -->
+			<div class="mobile-nav__content">
+				<span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+				<div class="logo-box">
+					<a href="index.html" aria-label="logo image"><img src="assets/images/logo-dark.png" width="155" alt=""></a>
+				</div>
+				<!-- /.logo-box -->
+				<div class="mobile-nav__container">
+					<ul class="main-menu__list one-page-scroll-menu">
+						<li class="megamenu scrollToLink"><a href="/">Home</a></li>
+						<li class="scrollToLink"><a href="sobre">Sobre</a></li>
+						<li class="scrollToLink"><a href="servicos">Serviços</a></li>
+						<li class="scrollToLink"><a href="sustentabilidade">Sustentabilidade</a></li>
+						<li class="scrollToLink"><a href="equipamentos">Equipamentos</a></li>
+						<li class="scrollToLink"><a href="contactos">Contactos</a></li>
+						<li class="scrollToLink"><a href="contato">Contacta-nos</a></li>
+					</ul>
+				</div>
+				<!-- /.mobile-nav__container -->
+
+				{{-- <ul class="mobile-nav__contact list-unstyled">
+					<li>
+						<i class="fa fa-envelope"></i>
+						<a href="mailto:needhelp@tolak.com">needhelp@tolak.com</a>
+					</li>
+					<li>
+						<i class="fa fa-phone-alt"></i>
+						<a href="tel:666-888-0000">666 888 0000</a>
+					</li>
+				</ul><!-- /.mobile-nav__contact --> --}}
+				{{-- <div class="mobile-nav__social">
+					<a href="https://facebook.com">
+						<i class="fab fa-facebook-f" aria-hidden="true"></i>
+						<span class="sr-only">Facebook</span>
+					</a>
+					<a href="https://pinterest.com">
+						<i class="fab fa-pinterest-p" aria-hidden="true"></i>
+						<span class="sr-only">Pinterest</span>
+					</a>
+					<a href="https://twitter.com">
+						<i class="fab fa-twitter" aria-hidden="true"></i>
+						<span class="sr-only">Twitter</span>
+					</a>
+					<a href="https://instagram.com">
+						<i class="fab fa-instagram" aria-hidden="true"></i>
+						<span class="sr-only">Instagram</span>
+					</a>
+				</div> --}}
+			</div>
+			<!-- /.mobile-nav__content -->
+		</div>
     <script>
         $(document).ready(function() {
             $(".technological-solutions").click(function() {

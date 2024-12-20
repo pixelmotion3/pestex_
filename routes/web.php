@@ -32,6 +32,7 @@ Route::get('/termos-servico', [FrontPageController::class, 'TermoServicos'])->na
 Route::get('/politica-privacidade', [FrontPageController::class, 'PoliticaPrivacidade'])->name('FrontPage.PoliticaPrivacidade');
 Route::resource('/servicos', ServiceController::class);
 
+
 Route::get('/sobre', [AboutController::class, 'index'])->name('About.index');
 Route::get('/dashboard', function () {
     return view('dashboard');

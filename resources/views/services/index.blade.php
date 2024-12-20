@@ -131,18 +131,6 @@
 <body class="custom-cursor" style="overflow-x: hidden;">
 	<div class="custom-cursor__cursor"></div>
 	<div class="custom-cursor__cursor-two"></div>
-    {{-- <header class="main-header sticky-header sticky-header--normal">
-        <div class="container-fluid">
-            <div class="main-header__inner">
-                <div class="main-header__logo">
-                    <a href="/">
-                        <img src="assets/images/logo-dark.png" alt="Tolak HTML" width="184">
-                    </a>
-                </div><!-- /.main-header__logo -->
-                @include('includes.nav')
-            </div><!-- /.main-header__inner -->
-        </div><!-- /.container-fluid -->
-    </header><!-- /.main-header --> --}}
 	<header class="main-header sticky-header sticky-header--one-page">
 		<div class="container-fluid">
 			<div class="main-header__inner">
@@ -154,10 +142,11 @@
 				</div><!-- /.main-header__logo -->
 				<nav class="main-header__nav main-menu">
 					<ul class="main-menu__list one-page-scroll-menu">
-						<li class="megamenu scrollToLink current"><a href="home" class="font-semibold">Home</a></li>
+						<li class="megamenu scrollToLink"><a href="home" class="font-semibold">Home</a></li>
 						<li class="scrollToLink"><a href="sobre" class="font-semibold">Sobre</a></li>
-						<li class="scrollToLink"><a href="servicos" class="font-semibold">Serviços</a></li>
+						<li class="scrollToLink current"><a href="servicos" class="font-semibold">Serviços</a></li>
 						<li class="scrollToLink"><a href="sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
+						<li class="scrollToLink"><a href="/equipamentos" class="font-semibold">Equipamentos</a></li>
 						<li class="scrollToLink contactenos-link2"><a href="contact" class="font-semibold">Contactos</a></li>
 						<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
 					</ul>
@@ -232,6 +221,7 @@
                                     </div>
                                     <div class="service-one__item__bottom">
                                         <div class="service-one__item__bottom__number"></div>
+										<a class="service-one__item__bottom__rm" href="servicos/{{ $service['id'] }}">SAIBA MAIS<span class="fas fa-angle-double-right"></span></a>
                                         <!--
                                                                 <a class="service-one__item__bottom__rm" href="business-growth.html">Read More<span class="fas fa-angle-double-right"></span></a>
                                                             -->
@@ -253,7 +243,8 @@
         <div class="cta-one__bg">
             <div class="cta-one__bg__shape-left" style="background-image: url(../{{ $main_screen[0]['bg-img'] }});">
             </div>
-            <div class="cta-one__bg__shape" style="background-image: url(../{{ $main_screen[0]['bg-img-1'] }});"></div>
+            {{-- <div class="cta-one__bg__shape" style="background-image: url(../{{ $main_screen[0]['bg-img-1'] }});"></div> --}}
+			<div class="cta-one__bg__shape"></div>
         </div>
         <div class="container">
             <div class="row d-flex align-items-center">
@@ -269,6 +260,7 @@
                             <h3 class="cta-one__box__title">{{ $main_screen[0]['h3-a'] }}</h3>
                             <p class="cta-one__box__text">{{ $main_screen[0]['p-a-1'] }}</p>
                         </div>
+						<a href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn thm-btn2" type="submit" name="quote_form">CONTACTE-NOS</a>
                         <!--
                                 <div class="cta-one__author">
                                     <img src="assets/images/resources/cta-1-author-1.jpg" alt="tolak">
@@ -291,9 +283,9 @@
                     <div class="contact-one__info wow fadeInLeft" data-wow-delay="100ms">
                         <div class="contact-one__info__icon"><span class="icon-customer-service"></span></div>
                         <h3 class="contact-one__info__title">{{ $main_screen[0]['h3'] }}</h3>
-                        <p class="contact-one__info__text"><a href="tel:255225551">{{ $main_screen[0]['p-a'] }}</a>,
+                        {{-- <p class="contact-one__info__text"><a href="tel:255225551">{{ $main_screen[0]['p-a'] }}</a>,
                             <a href="tel:6544144444">+6544144444</a>
-                        </p>
+                        </p> --}}
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -315,7 +307,7 @@
                         <div class="contact-one__content">
                             <div>
                                 <h6 class="sec-title__tagline"><span
-                                        class="sec-title__tagline__left"></span>{{ $main_screen[0]['h6'] }}<span
+                                        class="sec-title__tagline__left"></span><b>{{ $main_screen[0]['h6'] }}</b><span
                                         class="sec-title__tagline__right"></span></h6><!-- /.sec-title__tagline -->
                                 <h3 class="sec-title__title">{{ $main_screen[0]['h3-1'] }}</h3>
                                 <!-- /.sec-title__title -->
@@ -336,8 +328,7 @@
                                         <textarea name="message" placeholder="Mensagem"></textarea><!-- /# -->
                                     </div><!-- /.form-one__control -->
                                     <div class="form-one__control form-one__control--full">
-                                        <button type="submit" class="tolak-btn"><b>Contacte-nos
-                                                Agora!</b><span></span></button>
+                                        <button type="submit" class="tolak-btn"><b>ENVIAR MENSAGEM</b><span></span></button>
                                     </div><!-- /.form-one__control -->
                                 </div><!-- /.form-one__group -->
                             </form>
@@ -347,7 +338,139 @@
             </div>
         </div><!-- /.container -->
     </section><!-- /.contact -->
-    @include('includes.footer_aux')
+    {{-- @include('includes.footer_aux') --}}
+	<section class="mail-section" style="margin-top: 6%;">
+		<div class="container">
+			<div class="mail-section__wrapper">
+				<div class="row">
+					<div class="col-md-12 col-lg-4"></div>
+					<div class="col-md-5 col-lg-3">
+						<div class="mail-section__content">
+							<h3 class="mail-section__content__title">Subscreva a Newsletter</h3>
+							<p class="mail-section__content__text">Esteja a par das nossas novidades</p>
+						</div>
+					</div>
+					<div class="col-md-7 col-lg-5">
+						<form action="#" data-url="MAILCHIMP_FORM_URL" class="mail-section__newsletter mc-form" novalidate="true">
+							<input type="text" name="EMAIL" placeholder="Insira o seu email">
+							<button type="submit" class="tolak-btn">
+								<b>Subscrever</b><span></span>
+								<span class="sr-only">Subscrever</span><!-- /.sr-only -->
+							</button>
+						</form><!-- /.footer-widget__newsletter mc-form -->
+						<div class="mc-form__response"></div><!-- /.mc-form__response -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="main-footer background-black">
+		{{-- <div class="main-footer__bg background-black" style="background-image: url(assets/images/backgrounds/footer-bg-1-1.jpg);"></div> --}}
+		<div class="main-footer__bg background-black" style=""></div>
+		<!-- /.main-footer__bg -->
+		<div class="main-footer__shape" style="background-image: url(assets/images/shapes/footer-shape-1-orange.png);"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<div class="footer-widget footer-widget--about">
+						<a href="index.html" class="footer-widget__logo">
+							<img src="assets/images/logo-white.png" width="184" alt="Tolak HTML Template">
+						</a>
+						<ul class="footer-widget__info">
+							<li><span class="icofont-location-pin"></span>13/A, Miranda Halim City .</li>
+							<li><span class="icofont-email"></span>email@email.com</li>
+							<li><span class="icofont-phone"></span><a href="tel:09969569535">099 695 695 35</a></li>
+						</ul>
+						<div class="footer-widget__social">
+							<a href="https://facebook.com">
+								<i class="fab fa-facebook-f" aria-hidden="true"></i>
+								<span class="sr-only">Facebook</span>
+							</a>
+							{{-- <a href="https://pinterest.com">
+								<i class="fab fa-pinterest-p" aria-hidden="true"></i>
+								<span class="sr-only">Pinterest</span>
+							</a>
+							<a href="https://twitter.com">
+								<i class="fab fa-twitter" aria-hidden="true"></i>
+								<span class="sr-only">Twitter</span>
+							</a> --}}
+							<a href="https://instagram.com">
+								<i class="fab fa-instagram" aria-hidden="true"></i>
+								<span class="sr-only">Instagram</span>
+							</a>
+						</div>
+						<div class="footer-widget__image">
+							<img src="assets/images/resources/footer-about.jpg" alt="tolak">
+						</div>
+					</div><!-- /.footer-widget -->
+				</div><!-- /.col-md-6 -->
+				{{-- <div class="col-md-6 col-lg-4">
+					<div class="footer-widget footer-widget--posts">
+						<h2 class="footer-widget__title">SOS Pragas</h2><!-- /.footer-widget__title -->
+						<ul class="footer-widget__posts list-unstyled">
+							<li class="footer-widget__posts__item">
+								<div class="footer-widget__posts__image">
+									<img src="assets/images/blog/lp-1-1.jpg" alt="">
+								</div><!-- /.sidebar__posts__image -->
+								<div class="footer-widget__posts__content">
+									<p class="footer-widget__posts__meta">23 jun 2023</p><!-- /.sidebar__posts__date -->
+									<h4 class="footer-widget__posts__title"><a href="blog-details.html">We round Solution york Blog</a></h4><!-- /.sidebar__posts__title -->
+								</div><!-- /.sidebar__posts__content -->
+							</li>
+							<li class="footer-widget__posts__item">
+								<div class="footer-widget__posts__image">
+									<img src="assets/images/blog/lp-1-2.jpg" alt="">
+								</div><!-- /.sidebar__posts__image -->
+								<div class="footer-widget__posts__content">
+									<p class="footer-widget__posts__meta">23 jun 2023</p><!-- /.sidebar__posts__date -->
+									<h4 class="footer-widget__posts__title"><a href="blog-details.html">We Should be Descriptive</a></h4><!-- /.sidebar__posts__title -->
+								</div><!-- /.sidebar__posts__content -->
+							</li>
+						</ul><!-- /.sidebar__posts list-unstyled -->
+					</div>
+				</div> --}}
+				<div class="col-md-6 col-lg-2">
+					<div class="footer-widget footer-widget--links">
+						<h2 class="footer-widget__title">SOS Pragas</h2><!-- /.footer-widget__title -->
+						<ul class="list-unstyled footer-widget__links">
+							<li><a href="home">Início</a></li>
+							<li><a href="sobre">Sobre Nós</a></li>
+							<li><a href="servicos">Serviços</a></li>
+							<li><a href="equipament">Equipamento</a></li>
+							<li><a href="sustentabilidade">Sustentabilidade</a></li>
+						</ul><!-- /.list-unstyled footer-widget__links -->
+					</div><!-- /.footer-widget -->
+				</div><!-- /.col-md-6 -->
+				<div class="col-md-6 col-lg-2">
+					<div class="footer-widget footer-widget--links footer-widget--last">
+						<h2 class="footer-widget__title">Links Úteis</h2><!-- /.footer-widget__title -->
+						<ul class="list-unstyled footer-widget__links">
+							<li><a href="contactos" target="_blank">Contactos</a></li>
+							<li><a href="termos-servico" target="_blank">Termos de Serviço</a></li>
+							<li><a href="politica-privacidade" target="_blank">Política de Privacidade</a></li>
+							<li><a href="https://www.livroreclamacoes.pt/Inicio/ " target="_blank">Livro de Reclamações</a></li>
+						</ul><!-- /.list-unstyled footer-widget__links -->
+					</div><!-- /.footer-widget -->
+				</div><!-- /.col-md-6 -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+		<div class="main-footer__bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<p class="main-footer__copyright">
+							Copyright sospragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
+						</p>
+					</div>
+					<div class="col-md-4">
+						<p class="main-footer__copyright text-right">
+							<a href="https://pixelinmotion.pt" style="color:#ff6600;" target="_blank">Desenvolvido por Pixel in Motion</a>
+						</p>
+					</div>
+				</div><!-- /.main-footer__inner -->
+			</div><!-- /.container -->
+		</div><!-- /.main-footer__bottom -->
+	</footer><!-- /.main-footer -->
     <!--
         <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
             <span class="scroll-to-top__text">back top</span>
