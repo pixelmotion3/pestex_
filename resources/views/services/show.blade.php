@@ -204,7 +204,9 @@
                             </div>
                             <div class="form-inner">
                                 <h3>{{ $service_detail_show['h3-2'] }}</h3>
-                                <form action="contact.html" method="post">
+                                <form  method="POST" action="{{ route('ServicePage.ContactFormService') }}">
+									@csrf
+									@method('post')
                                     <div class="form-group">
                                         <input type="text" name="name" placeholder="Nome" required>
                                     </div>
@@ -609,7 +611,9 @@
 						</div>
 					</div>
 					<div class="col-md-7 col-lg-5">
-						<form action="#" data-url="MAILCHIMP_FORM_URL" class="mail-section__newsletter mc-form" novalidate="true">
+						<form  method="POST" action="{{ route('NewsLatterPage.NewsletterForm') }}">
+							@csrf
+							@method('post')
 							<input type="text" name="EMAIL" placeholder="Insira o seu email">
 							<button type="submit" class="tolak-btn">
 								<b>Subscrever</b><span></span>

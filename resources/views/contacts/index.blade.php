@@ -216,7 +216,9 @@
                                 <p class="contact-two__content__text">
                                     {{ $contact_info[0]['p-3'] }}
                                 </p>
-                                <form class="contact-two__form contact-form-validated form-one" action="inc/sendemail.php">
+                                <form class="contact-two__form contact-form-validated form-one" method="POST" action="{{ route('ContactPage.ContactFormContactos') }}">
+									@csrf
+									@method('post')
                                     <div class="form-one__group">
                                         <div class="form-one__control">
                                             <input type="text" name="name" placeholder="Nome">
@@ -251,7 +253,9 @@
                             </div>
                         </div>
                         <div class="col-md-7 col-lg-5">
-                            <form action="#" data-url="MAILCHIMP_FORM_URL" class="mail-section__newsletter mc-form" novalidate="true">
+                            <form  method="POST" action="{{ route('NewsLatterPage.NewsletterForm') }}">
+								@csrf
+								@method('post')
                                 <input type="text" name="EMAIL" placeholder="Insira o seu email">
                                 <button type="submit" class="tolak-btn">
                                     <b>Subscrever</b><span></span>

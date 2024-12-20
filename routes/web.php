@@ -15,6 +15,7 @@ use App\Http\Controllers\SustainabilityPageController;
 use App\Http\Controllers\ServiceDetailsController;
 use App\Http\Controllers\MethodController;
 use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\NewsletterController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -22,18 +23,21 @@ Route::resource('/', FrontPageController::class);
 Route::get('/home', [FrontPageController::class, 'Home'])->name('FrontPage.Home');
 
 Route::resource('/sustentabilidade', SustainabilityController::class);
-
+Route::post('/newsletter/new', [NewsletterController::class, 'NewsletterForm'])->name('NewsLatterPage.NewsletterForm');
 Route::resource('/equipamentos', HardwareController::class);
 Route::get('/contactos', [ContactPageController::class, 'index'])->name('ContactPage.index');
+Route::post('/quote-form/contactos', [ContactPageController::class, 'ContactFormServiceContactos'])->name('ContactPage.ContactFormContactos');
 Route::post('/contacts', [FrontPageController::class, 'store'])->name('FrontPage.store');
 Route::post('/quote-form', [FrontPageController::class, 'QuoteForm'])->name('FrontPage.QuoteForm');
 Route::post('/contact-form', [FrontPageController::class, 'ContactForm'])->name('FrontPage.ContactForm');
 Route::get('/termos-servico', [FrontPageController::class, 'TermoServicos'])->name('FrontPage.TermoServicos');
 Route::get('/politica-privacidade', [FrontPageController::class, 'PoliticaPrivacidade'])->name('FrontPage.PoliticaPrivacidade');
-Route::resource('/servicos', ServiceController::class);
-
+Route::get('/servicos', [ServiceController::class, 'index'])->name('ServicePage.index');
+Route::get('/servicos/{id}', [ServiceController::class, 'show'])->name('ServicePage.show');
+Route::post('/quote-form/service', [ServiceController::class, 'ContactFormService'])->name('ServicePage.ContactFormService');
 
 Route::get('/sobre', [AboutController::class, 'index'])->name('About.index');
+Route::post('/quote-form/about', [AboutController::class, 'ContactFormAbout'])->name('About.ContactFormAbout');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

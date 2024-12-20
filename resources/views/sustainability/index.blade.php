@@ -552,7 +552,9 @@
 						</div>
 					</div>
 					<div class="col-md-7 col-lg-5">
-						<form action="#" data-url="MAILCHIMP_FORM_URL" class="mail-section__newsletter mc-form" novalidate="true">
+						<form  method="POST" action="{{ route('NewsLatterPage.NewsletterForm') }}">
+							@csrf
+							@method('post')
 							<input type="text" name="EMAIL" placeholder="Insira o seu email">
 							<button type="submit" class="tolak-btn">
 								<b>Subscrever</b><span></span>

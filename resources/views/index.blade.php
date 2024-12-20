@@ -1813,7 +1813,7 @@
 								<!-- /.sec-title-four__title -->
 							</div><!-- /.sec-title-four -->
 							<form class="contact-three__form form-one" method="POST"
-								action="{{ route('FrontPage.store') }}">
+								action="{{ route('FrontPage.ContactForm') }}">
 								@csrf
 								@method('POST')
 								<div class="form-one__group">

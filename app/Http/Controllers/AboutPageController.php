@@ -9,6 +9,7 @@ use App\Models\About_video;
 use App\Models\Testimonial;
 use App\Models\ContactInfo;
 use App\Models\TestimonialAbout;
+use App\Models\contact_forms;
 
 class AboutPageController extends Controller
 {
@@ -311,6 +312,33 @@ class AboutPageController extends Controller
 
         if ($query->delete()) {
             return redirect()->route('about-page.index');
+        }
+    }
+
+	public function ContactForm(Request $request){
+
+        $query = contact_forms::create([
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'phone' => $request->input('phone'),
+            'confirmed' => true
+        ]);
+        if ($query) {
+            $main_screen = About::where('id',1)->get()->toArray();
+			$service = About_service::where('id',1)->get()->toArray();
+			$video = About_video::where('id',1)->get()->toArray();
+			$testimonial = Testimonial::where('id',1)->get()->toArray();
+			$contact_info = ContactInfo::where('id',1)->get()->toArray();
+			$testimonial_abouts = TestimonialAbout::all();
+			// dd($testimonial);
+			return view('about-page.index', [
+				'main_screen' => $main_screen,
+				'service' => $service,
+				'video' => $video,
+				'testimonial' => $testimonial,
+				'contact_info' => $contact_info,
+				'testimonial_abouts' => $testimonial_abouts
+			]);
         }
     }
 }

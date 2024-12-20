@@ -60,5 +60,16 @@ class ContactPageController extends Controller
         }
     }
 
+	public function ContactFormServiceContactos(Request $request){
+		$query = contact_forms::create([
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'phone' => $request->input('phone'),
+            'confirmed' => true
+        ]);
+
+		return redirect()->route('ContactPage.index');
+    }
+
 
 }

@@ -10,8 +10,11 @@ use App\Models\ServicesMainScreen;
 use App\Models\ServiceDetails;
 use App\Models\ServiceDetailsShow;
 use App\Models\Method;
-use Illuminate\Http\Request;
 use App\Models\About_video;
+use App\Models\contact_forms;
+use Illuminate\Http\Request;
+
+
 class ServiceController extends Controller
 {
     /**
@@ -71,5 +74,20 @@ class ServiceController extends Controller
     public function destroy(Service $service)
     {
         //
+    }
+
+	public function ContactFormService(Request $request){
+		$query = contact_forms::create([
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'phone' => $request->input('phone'),
+            'confirmed' => true
+        ]);
+        $best_service = landing_3page::where('id',1)->get()->toArray();
+        $main_screen = ServicesMainScreen::where('id', 1)->get()->toArray();
+        $services = ServiceDetails::all();
+		$video = About_video::where('id',1)->get()->toArray();
+
+		return redirect()->route('ServicePage.index');
     }
 }

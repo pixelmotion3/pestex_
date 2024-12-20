@@ -1893,7 +1893,7 @@
 								<!-- /.sec-title-four__title -->
 							</div><!-- /.sec-title-four -->
 							<form class="contact-three__form form-one" method="POST"
-								action="{{ route('FrontPage.store') }}">
+								action="{{ route('FrontPage.ContactForm') }}">
 								@csrf
 								@method('POST')
 								<div class="form-one__group">
@@ -1961,8 +1961,10 @@
                             </div>
                         </div>
                         <div class="col-md-7 col-lg-5">
-                            <form action="#" data-url="MAILCHIMP_FORM_URL" class="mail-section__newsletter mc-form" novalidate="true">
-                                <input type="text" name="EMAIL" placeholder="Insira o seu email">
+                            <form  method="POST" action="{{ route('NewsLatterPage.NewsletterForm') }}">
+								@csrf
+								@method('post')
+                                <input type="text" name="email" placeholder="Insira o seu email">
                                 <button type="submit" class="tolak-btn">
                                     <b>Subscrever</b><span></span>
                                     <span class="sr-only">Subscrever</span><!-- /.sr-only -->
