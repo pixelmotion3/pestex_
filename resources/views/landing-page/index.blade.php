@@ -911,6 +911,10 @@
                                             </div>
                                           </div>
                                       </div>
+									  <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">ID service</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-id-1'] }}" name="best-service-id-1" required>
+                                      </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">A1</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-a-1'] }}" name="best-service-a-1" required>
@@ -931,6 +935,10 @@
                                             </div>
                                           </div>
                                       </div>
+									  <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">ID service</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-id-2'] }}" name="best-service-id-2" required>
+                                      </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">A2</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-a-2'] }}" name="best-service-a-2" required>
@@ -950,6 +958,10 @@
                                               <input type="file" class="form-control-file" id="exampleFormControlFile1" name="best-service-img-path-3">
                                             </div>
                                           </div>
+                                      </div>
+									  <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">ID service</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-id-3'] }}" name="best-service-id-3" required>
                                       </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">A3</label>
@@ -972,6 +984,10 @@
                                             </div>
                                           </div>
                                       </div>
+									  <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">ID service</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-id-4'] }}" name="best-service-id-4" required>
+                                      </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">A4</label>
                                         <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-a-4'] }}" name="best-service-a-4" required>
@@ -992,6 +1008,10 @@
                                               <input type="file" class="form-control-file" id="exampleFormControlFile1" name="best-service-img-path-5">
                                             </div>
                                           </div>
+                                      </div>
+									  <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">ID service</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-id-5'] }}" name="best-service-id-5" required>
                                       </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">A5</label>
@@ -1015,6 +1035,10 @@
                                               <input type="file" class="form-control-file" id="exampleFormControlFile1" name="best-service-img-path-6">
                                             </div>
                                           </div>
+                                      </div>
+									  <div class="col-12 mt-5">
+                                        <label for="validationCustom01" class="form-label" style="float:left;">ID service</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="{{ $best_service[0]['best-service-id-6'] }}" name="best-service-id-6" required>
                                       </div>
                                       <div class="col-12 mt-5">
                                         <label for="validationCustom01" class="form-label" style="float:left;">A6</label>

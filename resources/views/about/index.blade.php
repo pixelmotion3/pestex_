@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>{{ config('app.name') }}</title>
-
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon01.png">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
@@ -117,7 +117,7 @@
 							<li class="scrollToLink"><a href="/servicos" class="font-semibold">Serviços</a></li>
 							<li class="scrollToLink"><a href="/sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
 							<li class="scrollToLink"><a href="/equipamentos" class="font-semibold">Equipamentos</a></li>
-							<li class="scrollToLink contactenos-link2"><a href="contact" class="font-semibold">Contactos</a></li>
+							<li class="scrollToLink contactenos-link2"><a href="contactos" class="font-semibold">Contactos</a></li>
 							<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
 						</ul>
 					</nav>
@@ -220,20 +220,20 @@
                                 <p class="why-choose-five__content__text">
                                     {{ $service[0]['p-1'] }}
                                 </p>
-                                <div class="row gutter-y-30">
-                                    <div class="col-md-4">
+                                <div class="why-aboutus-content">
+                                    <div class="why-aboutus-content-div">
                                         <div class="why-choose-five__box">
                                             <div class="why-choose-five__box__icon"><i class="tolak-icons-two-deal"></i></div>
                                             <h3 class="why-choose-five__box__title">{{ $service[0]['h3-1'] }}</h3>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="why-aboutus-content-div">
                                         <div class="why-choose-five__box">
                                             <div class="why-choose-five__box__icon"><i class="tolak-icons-two-solutions-three"></i></div>
                                             <h3 class="why-choose-five__box__title">{{ $service[0]['h3-2'] }}</h3>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="why-aboutus-content-div">
                                         <div class="why-choose-five__box">
                                             <div class="why-choose-five__box__icon"><i class="tolak-icons-two-smart-grid"></i></div>
                                             <h3 class="why-choose-five__box__title">{{ $service[0]['h3-3'] }}</h3>
@@ -283,7 +283,11 @@
                             <div class="cta-four__content">
 
                                 <div class="sec-title-two text-left">
-                                    <h6 class="sec-title-two__tagline"><span class="sec-title-two__tagline__left icofont-rounded-double-left"></span>{{ $video[0]['h6-span'] }}<span class="sec-title-two__tagline__right icofont-rounded-double-right"></span></h6><!-- /.sec-title-two__tagline -->
+                                    <h6 class="sec-title-two__tagline">
+										<span class="sec-title__tagline__left"></span>
+										{{ $video[0]['h6-span'] }}
+										<span class="sec-title__tagline__right"></span>
+									</h6><!-- /.sec-title-two__tagline -->
                                     <h3 class="sec-title-two__title">{{ $video[0]['h3'] }}</h3><!-- /.sec-title-two__title -->
                                 </div><!-- /.sec-title-two -->
                                 <p class="cta-four__content__text">
@@ -555,19 +559,19 @@
                             </ul><!-- /.sidebar__posts list-unstyled -->
                         </div>
                     </div> --}}
-                    <div class="col-md-6 col-lg-2">
+                    <div class="col-md-6 col-lg-4">
                         <div class="footer-widget footer-widget--links">
                             <h2 class="footer-widget__title">SOS Pragas</h2><!-- /.footer-widget__title -->
                             <ul class="list-unstyled footer-widget__links">
                                 <li><a href="home">Início</a></li>
                                 <li><a href="sobre">Sobre Nós</a></li>
                                 <li><a href="servicos">Serviços</a></li>
-                                <li><a href="equipament">Equipamento</a></li>
+                                <li><a href="equipamentos">Equipamento</a></li>
                                 <li><a href="sustentabilidade">Sustentabilidade</a></li>
                             </ul><!-- /.list-unstyled footer-widget__links -->
                         </div><!-- /.footer-widget -->
                     </div><!-- /.col-md-6 -->
-                    <div class="col-md-6 col-lg-2">
+                    <div class="col-md-6 col-lg-4">
                         <div class="footer-widget footer-widget--links footer-widget--last">
                             <h2 class="footer-widget__title">Links Úteis</h2><!-- /.footer-widget__title -->
                             <ul class="list-unstyled footer-widget__links">

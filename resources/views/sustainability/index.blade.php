@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ config('app.name') }}</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon01.png">
     <!-- favicons Icons -->
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/images/favicons/apple-touch-icon.png') }}" />
         <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/images/favicons/favicon-32x32.png') }}" />
@@ -156,7 +157,7 @@
 						<li class="scrollToLink"><a href="servicos" class="font-semibold">Serviços</a></li>
 						<li class="scrollToLink current"><a href="sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
 						<li class="scrollToLink"><a href="/equipamentos" class="font-semibold">Equipamentos</a></li>
-						<li class="scrollToLink contactenos-link2"><a href="contact" class="font-semibold">Contactos</a></li>
+						<li class="scrollToLink contactenos-link2"><a href="contactos" class="font-semibold">Contactos</a></li>
 						<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
 					</ul>
 				</nav>
@@ -632,19 +633,19 @@
 						</ul><!-- /.sidebar__posts list-unstyled -->
 					</div>
 				</div> --}}
-				<div class="col-md-6 col-lg-2">
+				<div class="col-md-6 col-lg-4">
 					<div class="footer-widget footer-widget--links">
 						<h2 class="footer-widget__title">SOS Pragas</h2><!-- /.footer-widget__title -->
 						<ul class="list-unstyled footer-widget__links">
 							<li><a href="home">Início</a></li>
 							<li><a href="sobre">Sobre Nós</a></li>
 							<li><a href="servicos">Serviços</a></li>
-							<li><a href="equipament">Equipamento</a></li>
+							<li><a href="equipamentos">Equipamento</a></li>
 							<li><a href="sustentabilidade">Sustentabilidade</a></li>
 						</ul><!-- /.list-unstyled footer-widget__links -->
 					</div><!-- /.footer-widget -->
 				</div><!-- /.col-md-6 -->
-				<div class="col-md-6 col-lg-2">
+				<div class="col-md-6 col-lg-4">
 					<div class="footer-widget footer-widget--links footer-widget--last">
 						<h2 class="footer-widget__title">Links Úteis</h2><!-- /.footer-widget__title -->
 						<ul class="list-unstyled footer-widget__links">

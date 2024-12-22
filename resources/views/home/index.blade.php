@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ config('app.name') }}</title>
-
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon01.png">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
@@ -1133,7 +1133,7 @@
 					<!-- /.sec-title__title -->
 				</div><!-- /.sec-title -->
 				<div class="row mt-5">
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms" style="margin-bottom: 40px;">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image">
 								<img src="{{ $best_service[0]['best-service-img-path-1'] }}" alt="tolak">
@@ -1143,7 +1143,7 @@
 									<span class="icon-cooperation"></span>
 								</div><!-- /.service-icon -->
 								<h3 class="service-one__item__title">
-									<a href="business-growth.html">{{ $best_service[0]['best-service-a-1'] }}</a>
+									<a href="servicos/{{ $best_service[0]['best-service-id-1'] }}">{{ $best_service[0]['best-service-a-1'] }}</a>
 								</h3><!-- /.service-title -->
 								<p class="service-one__item__text">
 									{{ $best_service[0]['best-service-p-1'] }}
@@ -1157,7 +1157,7 @@
 							</div>
 						</div><!-- /.service-card-one -->
 					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="150ms">
+					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="150ms" style="margin-bottom: 40px;">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image">
 								<img src="{{ $best_service[0]['best-service-img-path-2'] }}" alt="tolak">
@@ -1167,7 +1167,7 @@
 									<span class="icon-ads-campaign"></span>
 								</div><!-- /.service-icon -->
 								<h3 class="service-one__item__title">
-									<a href="business-solution.html">{{ $best_service[0]['best-service-a-2'] }}</a>
+									<a href="servicos/{{ $best_service[0]['best-service-id-2'] }}">{{ $best_service[0]['best-service-a-2'] }}</a>
 								</h3><!-- /.service-title -->
 								<p class="service-one__item__text">
 									{{ $best_service[0]['best-service-p-2'] }}
@@ -1181,7 +1181,7 @@
 							</div>
 						</div><!-- /.service-card-one -->
 					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" style="margin-bottom: 40px;">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image">
 								<img src="{{ $best_service[0]['best-service-img-path-3'] }}" alt="tolak">
@@ -1191,7 +1191,7 @@
 									<span class="icon-headhunter"></span>
 								</div><!-- /.service-icon -->
 								<h3 class="service-one__item__title">
-									<a href="marketing-solution.html">{{ $best_service[0]['best-service-a-3'] }}</a>
+									<a href="servicos/{{ $best_service[0]['best-service-id-3'] }}">{{ $best_service[0]['best-service-a-3'] }}</a>
 								</h3><!-- /.service-title -->
 								<p class="service-one__item__text">
 								   {{ $best_service[0]['best-service-p-3'] }}
@@ -1206,7 +1206,7 @@
 						</div><!-- /.service-card-one -->
 					</div>
 
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" style="margin-bottom: 40px;">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image">
 								<img src="{{ $best_service[0]['best-service-img-path-4'] }}" alt="tolak">
@@ -1216,7 +1216,7 @@
 									<span class="icon-headhunter"></span>
 								</div><!-- /.service-icon -->
 								<h3 class="service-one__item__title">
-									<a href="marketing-solution.html">{{ $best_service[0]['best-service-a-4'] }}</a>
+									<a href="servicos/{{ $best_service[0]['best-service-id-4'] }}">{{ $best_service[0]['best-service-a-4'] }}</a>
 								</h3><!-- /.service-title -->
 								<p class="service-one__item__text">
 								   {{ $best_service[0]['best-service-p-4'] }}
@@ -1231,7 +1231,7 @@
 						</div><!-- /.service-card-one -->
 					</div>
 
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" style="margin-bottom: 40px;">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image">
 								<img src="{{ $best_service[0]['best-service-img-path-5'] }}" alt="tolak">
@@ -1241,7 +1241,7 @@
 									<span class="icon-headhunter"></span>
 								</div><!-- /.service-icon -->
 								<h3 class="service-one__item__title">
-									<a href="marketing-solution.html">{{ $best_service[0]['best-service-a-5'] }}</a>
+									<a href="servicos/{{ $best_service[0]['best-service-id-5'] }}">{{ $best_service[0]['best-service-a-5'] }}</a>
 								</h3><!-- /.service-title -->
 								<p class="service-one__item__text">
 								   {{ $best_service[0]['best-service-p-5'] }}
@@ -1256,7 +1256,7 @@
 						</div><!-- /.service-card-one -->
 					</div>
 
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" style="margin-bottom: 40px;">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image">
 								<img src="{{ $best_service[0]['best-service-img-path-6'] }}" alt="tolak">
@@ -1266,7 +1266,7 @@
 									<span class="icon-headhunter"></span>
 								</div><!-- /.service-icon -->
 								<h3 class="service-one__item__title">
-									<a href="marketing-solution.html">{{ $best_service[0]['best-service-a-6'] }}</a>
+									<ac>{{ $best_service[0]['best-service-a-6'] }}</a>
 								</h3><!-- /.service-title -->
 								<p class="service-one__item__text">
 								   {{ $best_service[0]['best-service-p-6'] }}
@@ -1470,7 +1470,7 @@
 									-->
 						</div><!-- /.about__content -->
 					</div><!-- /.col-xl-6 -->
-					<div class="col-xl-1 bg-primary rounded" style="margin-right: -100px;z-index:2;">
+					<div class="col-xl-1 bg-primary" style="margin-right: -37px;z-index:2;max-width: 21px;">
 
 					</div>
 					<div class="col-xl-6">
@@ -1572,7 +1572,15 @@
 					"items": 2,
 					"margin": 30
 				},
-				"1200": {
+				"1000": {
+					"items": 2,
+					"margin": 30
+				},
+				"1400": {
+					"items": 3,
+					"margin": 30
+				},
+				"1500": {
 					"items": 4,
 					"margin": 30
 				}
@@ -2041,7 +2049,7 @@
                             </ul><!-- /.sidebar__posts list-unstyled -->
                         </div>
                     </div> --}}
-                    <div class="col-md-6 col-lg-2">
+                    <div class="col-md-6 col-lg-4">
                         <div class="footer-widget footer-widget--links">
                             <h2 class="footer-widget__title">SOS Pragas</h2><!-- /.footer-widget__title -->
                             <ul class="list-unstyled footer-widget__links">
@@ -2053,7 +2061,7 @@
                             </ul><!-- /.list-unstyled footer-widget__links -->
                         </div><!-- /.footer-widget -->
                     </div><!-- /.col-md-6 -->
-                    <div class="col-md-6 col-lg-2">
+                    <div class="col-md-6 col-lg-4">
                         <div class="footer-widget footer-widget--links footer-widget--last">
                             <h2 class="footer-widget__title">Links Úteis</h2><!-- /.footer-widget__title -->
                             <ul class="list-unstyled footer-widget__links">
@@ -2147,7 +2155,9 @@
 
     <script>
         $(document).ready(function() {
-
+			$(".service-one__item__image").on("click", () =>{
+				window.open("/servicos")
+			})
 			const currentYear = new Date().getFullYear();
 			$('#year').text(currentYear);
 

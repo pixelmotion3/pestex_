@@ -150,6 +150,13 @@ class LandingPageController extends Controller
 				'best-service-p-4' => $request->input('best-service-p-4'),
 				'best-service-p-5' => $request->input('best-service-p-5'),
 				'best-service-p-6' => $request->input('best-service-p-6'),
+
+				'best-service-id-1' => $request->input('best-service-id-1'),
+				'best-service-id-2' => $request->input('best-service-id-2'),
+				'best-service-id-3' => $request->input('best-service-id-3'),
+				'best-service-id-4' => $request->input('best-service-id-4'),
+				'best-service-id-5' => $request->input('best-service-id-5'),
+				'best-service-id-6' => $request->input('best-service-id-6'),
             ]);
             if ($request->hasFile('best-service-img-path-1')) {
                 $filename = $request->file('best-service-img-path-1');

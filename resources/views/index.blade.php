@@ -1139,7 +1139,7 @@
 									</span>
 								</div><!-- /.service-icon -->
 								<h3 class="service-one__item__title">
-									<a href="/"><b>{{ $best_service[0]['best-service-a-1'] }}</b></a>
+									<a href="servicos/{{ $best_service[0]['best-service-id-1'] }}"><b>{{ $best_service[0]['best-service-a-1'] }}</b></a>
 								</h3><!-- /.service-title -->
 								<p class="service-one__item__text">
 									{{ $best_service[0]['best-service-p-1'] }}
@@ -1165,7 +1165,7 @@
 									</span>
 								</div><!-- /.service-icon -->
 								<h3 class="service-one__item__title">
-									<a href="/servicos"><b>{{ $best_service[0]['best-service-a-2'] }}</b></a>
+									<a href="servicos/{{ $best_service[0]['best-service-id-2'] }}"><b>{{ $best_service[0]['best-service-a-2'] }}</b></a>
 								</h3><!-- /.service-title -->
 								<p class="service-one__item__text">
 									{{ $best_service[0]['best-service-p-2'] }}
@@ -1191,7 +1191,7 @@
 									</span>
 								</div><!-- /.service-icon -->
 								<h3 class="service-one__item__title">
-									<a href="/servicos"><b>{{ $best_service[0]['best-service-a-3'] }}</b></a>
+									<a href="servicos/{{ $best_service[0]['best-service-id-3'] }}"><b>{{ $best_service[0]['best-service-a-3'] }}</b></a>
 								</h3><!-- /.service-title -->
 								<p class="service-one__item__text">
 									{{ $best_service[0]['best-service-p-3'] }}
@@ -1492,7 +1492,15 @@
 					"items": 2,
 					"margin": 30
 				},
-				"1200": {
+				"1000": {
+					"items": 2,
+					"margin": 30
+				},
+				"1400": {
+					"items": 3,
+					"margin": 30
+				},
+				"1500": {
 					"items": 4,
 					"margin": 30
 				}
