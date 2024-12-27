@@ -15355,8 +15355,8 @@ body.megamenu-popup-active .mobile-nav__content {
   padding: 0 20px 25px;
   border: 1px solid var(--tolak-border-color, #dddddd);
   border-top: none;
-  max-height: 250px;
-  height: 250px;
+  max-height: 490px;
+  height: 590px;
 }
 .service-one__item__icon {
   width: 90px;

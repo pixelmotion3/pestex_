@@ -56,7 +56,7 @@
                         </a>
                       </li>
                     </ul>
-                    
+
                   -->
                     </li>
 
@@ -79,7 +79,7 @@
                 <div data-i18n="Content navbar">Content navbar</div>
               </a>
             </li>
-         
+
           </ul>
         </li>
 
@@ -906,10 +906,10 @@
                                                 <div class="container-fluid">
                                                     <div class="row">
                                                         @isset($services)
-                                                            @foreach ($services as $index => $service)                                                            
+                                                            @foreach ($services as $index => $service)
                                                             <div class="col-md-12 mt-5"
                                                                 data-wow-delay="100ms">
-                                                                <div class="service-one__item text-center">
+                                                                <div class="service-one__item text-center" style="height: 800px;">
                                                                     <div class="service-one__item__image">
                                                                         <img src="{{ $service['img'] }}"
                                                                             alt="tolak">
@@ -1278,9 +1278,9 @@
                                             </div>
                                             <!-- edit service details -->
                                             <div class="tab-pane fade show" id="detail-services" role="tabpanel"
-                                                aria-labelledby="detail-services-tab">        
+                                                aria-labelledby="detail-services-tab">
                                                 <div class="container">
-                                                    <div class="row">                                                        
+                                                    <div class="row">
                                                         <form action="{{ route('ServiceDetails.update', 1) }}" method="post" enctype="multipart/form-data">
                                                             @csrf
                                                             @method('put')
@@ -2190,9 +2190,9 @@
                                                                 <button class="btn btn-primary w-100" type="submit"
                                                                     name="form1">Submit</button>
                                                             </div>
-                                                        </form>                                                  
+                                                        </form>
                                                     </div>
-                                                </div>                                        
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
