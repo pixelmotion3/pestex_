@@ -581,9 +581,9 @@
 							<img src="assets/images/logo-white.png" width="184" alt="Tolak HTML Template">
 						</a>
 						<ul class="footer-widget__info">
-							<li><span class="icofont-location-pin"></span>13/A, Miranda Halim City .</li>
-							<li><span class="icofont-email"></span>email@email.com</li>
-							<li><span class="icofont-phone"></span><a href="tel:09969569535">099 695 695 35</a></li>
+							<li><span class="icofont-location-pin"></span>Rua de Entremuros 54, Fração BB, São Julião do Tojal, 2660-533</li>
+							<li><span class="icofont-email"></span>geral@sospragas.pt</li>
+							<li><span class="icofont-phone"></span><a href="tel:219747353">219 747 353</a></li>
 						</ul>
 						<div class="footer-widget__social">
 							<a href="https://facebook.com">

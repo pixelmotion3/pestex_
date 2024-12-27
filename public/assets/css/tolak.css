@@ -5559,7 +5559,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .why-choose-two {
   position: relative;
-  padding: 21px 0;
+  padding: 70px 0;
   background-color: var(--tolak-white, #fff);
 }
 @media (max-width: 767px) {
@@ -6102,7 +6102,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .testimonials-one {
   position: relative;
   z-index: 2;
-  padding: 20px 0;
+  padding: 70px 0;
   background-color: var(--tolak-black, #051d1f);
 }
 @media (max-width: 767px) {
@@ -13995,7 +13995,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 .about-one__content {
   position: relative;
-  padding: 120px 0;
+  padding: 90px 0;
 }
 @media (max-width: 1199px) {
   .about-one__content {
@@ -23030,6 +23030,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
   font-size: 18px;
   line-height: 26px;
   transition: all 0.3s;
+  font-weight: 600;
 }
 @media (max-width: 1199px) {
   .why-choose-five__box__title {

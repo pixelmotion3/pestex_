@@ -1116,7 +1116,7 @@
 				</div>
 				<div class="col-lg-12 col-md-12 text-center text-white mt-5" style="max-width:250px;margin-left:auto;margin-right:auto;">
 					<a href="/sobre" type="button" class="btn btn-primary">
-						SOS PRAGAS. QUEM SOMOS
+						PORQUÊ NÓS
 					</a>
 				</div>
 			</div>
@@ -1138,7 +1138,7 @@
 							<div class="service-one__item__image">
 								<img src="{{ $best_service[0]['best-service-img-path-1'] }}" alt="tolak">
 							</div>
-							<div class="service-one__item__content">
+							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
 									<span class="icon-cooperation"></span>
 								</div><!-- /.service-icon -->
@@ -1162,7 +1162,7 @@
 							<div class="service-one__item__image">
 								<img src="{{ $best_service[0]['best-service-img-path-2'] }}" alt="tolak">
 							</div>
-							<div class="service-one__item__content">
+							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
 									<span class="icon-ads-campaign"></span>
 								</div><!-- /.service-icon -->
@@ -1186,7 +1186,7 @@
 							<div class="service-one__item__image">
 								<img src="{{ $best_service[0]['best-service-img-path-3'] }}" alt="tolak">
 							</div>
-							<div class="service-one__item__content">
+							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
 									<span class="icon-headhunter"></span>
 								</div><!-- /.service-icon -->
@@ -1211,7 +1211,7 @@
 							<div class="service-one__item__image">
 								<img src="{{ $best_service[0]['best-service-img-path-4'] }}" alt="tolak">
 							</div>
-							<div class="service-one__item__content">
+							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
 									<span class="icon-headhunter"></span>
 								</div><!-- /.service-icon -->
@@ -1236,7 +1236,7 @@
 							<div class="service-one__item__image">
 								<img src="{{ $best_service[0]['best-service-img-path-5'] }}" alt="tolak">
 							</div>
-							<div class="service-one__item__content">
+							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
 									<span class="icon-headhunter"></span>
 								</div><!-- /.service-icon -->
@@ -1261,7 +1261,7 @@
 							<div class="service-one__item__image">
 								<img src="{{ $best_service[0]['best-service-img-path-6'] }}" alt="tolak">
 							</div>
-							<div class="service-one__item__content">
+							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
 									<span class="icon-headhunter"></span>
 								</div><!-- /.service-icon -->
@@ -1447,8 +1447,8 @@
 									<p class="text-white">{{ $about_now[0]['about-now-li-6'] }}</p>
 								</li>
 							</ul>
-							<div class="clearfix"></div>
-							<a type="button" href="sobre" class="btn btn-primary about-one__content__text" style="max-width: 200px;">
+							{{-- <div class="clearfix"></div> --}}
+							<a type="button" href="sobre" class="btn btn-primary about-one__content__text mt-4" style="max-width: 200px;">
 								SAIBA MAIS
 							</a>
 							<!--
@@ -1470,7 +1470,7 @@
 									-->
 						</div><!-- /.about__content -->
 					</div><!-- /.col-xl-6 -->
-					<div class="col-xl-1 bg-primary" style="margin-right: -37px;z-index:2;max-width: 21px;">
+					<div class="col-xl-1 bg-primary rounded" style="margin-right: -100px;z-index:2;">
 
 					</div>
 					<div class="col-xl-6">
@@ -1921,7 +1921,7 @@
 										<div class="form-one__control form-one__control--full">
 											<div class="pull-left" style="margin-left: 20px;">
 												<input class="form-check-input" type="checkbox" name="confirmed" id="flexCheckDefault" required="">
-												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;width: 280px;max-width:580px; color:grey;font-size:12px;">
+												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;width: 320px;max-width:580px; color:grey;font-size:12px;">
 													Aceito os <a href="/termos-servico"  target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
 												</label>
 											</div>
@@ -1929,7 +1929,7 @@
 										<div class="form-one__control form-one__control--full">
 											<div class="pull-left" style="margin-left: 20px;">
 												<input class="form-check-input" type="checkbox" id="flexCheckDefault" required="">
-												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;width: 280px;max-width:580px;color:grey;font-size:12px;">
+												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;width: 320px;max-width:580px;color:grey;font-size:12px;">
 													Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
 												</label>
 											</div>
@@ -1997,9 +1997,9 @@
                                 <img src="assets/images/logo-white.png" width="184" alt="Tolak HTML Template">
                             </a>
                             <ul class="footer-widget__info">
-                                <li><span class="icofont-location-pin"></span>13/A, Miranda Halim City .</li>
-                                <li><span class="icofont-email"></span>email@email.com</li>
-                                <li><span class="icofont-phone"></span><a href="tel:09969569535">099 695 695 35</a></li>
+                                <li><span class="icofont-location-pin"></span>Rua de Entremuros 54, Fração BB, São Julião do Tojal, 2660-533</li>
+                                <li><span class="icofont-email"></span>geral@sospragas.pt</li>
+                                <li><span class="icofont-phone"></span><a href="tel:219747353">219 747 353</a></li>
                             </ul>
                             <div class="footer-widget__social">
                                 <a href="https://facebook.com">
@@ -2090,7 +2090,7 @@
                     </div><!-- /.main-footer__inner -->
                 </div><!-- /.container -->
             </div><!-- /.main-footer__bottom -->
-        </footer>
+        </footer><!-- /.main-footer -->
 	</div>
 
 

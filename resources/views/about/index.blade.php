@@ -113,7 +113,7 @@
 					<nav class="main-header__nav main-menu">
 						<ul class="main-menu__list one-page-scroll-menu">
 							<li class="megamenu scrollToLink"><a href="/home" class="font-semibold">Home</a></li>
-							<li class="scrollToLink current"><a href="/sobre" class="font-semibold">Sobre</a></li>
+							<li class="scrollToLink current"><a href="sobre" class="font-semibold">Sobre</a></li>
 							<li class="scrollToLink"><a href="/servicos" class="font-semibold">Serviços</a></li>
 							<li class="scrollToLink"><a href="/sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
 							<li class="scrollToLink"><a href="/equipamentos" class="font-semibold">Equipamentos</a></li>
@@ -172,7 +172,7 @@
                                             {{ $main[0]['p-1'] }}
                                         </p><!-- slider-text -->
                                         <div class="main-slider-three__btn">
-                                            <a href="/servicos" class="tolak-btn"><b>{{ $main[0]['div-a-b'] }}</b><span></span></a><!-- slider-btn -->
+                                            <b><a href="/contactos" class="tolak-btn"><b>{{ $main[0]['div-a-b'] }}</b><span></span></a><!-- slider-btn --></b>
 
                                         </div>
                                     </div>
@@ -192,7 +192,7 @@
             <div class="auto-container">
                 <div class="text-center light">
                     <h6 class="sec-title__tagline h6 text-white"><span
-                        class="sec-title__tagline__left"></span>{{ $service[0]['h6'] }}<span
+                        class="sec-title__tagline__left"></span><b>{{ $service[0]['h6'] }}</b><span
                         class="sec-title__tagline__right"></span></h6>
                     <h2 class="h3 text-white">{{ $service[0]['h2'] }}</h2>
                     <p class="text-white mt-5">{{ $service[0]['p'] }}</p>
@@ -319,7 +319,7 @@
                 <div class="sec-title-two text-center">
                     <h6 class="sec-title-two__tagline">
 						<span class="sec-title__tagline__left"></span>
-						<b>{{ $testimonial[0]['h6'] }}</b>
+						<i><b>{{ $testimonial[0]['h6'] }}</b></i>
 						<span class="sec-title__tagline__right"></span>
 					</h6><!-- /.sec-title-two__tagline -->
                     <h3 class="sec-title-two__title">{{ $testimonial[0]['h3'] }}</h3><!-- /.sec-title-two__title -->
@@ -408,7 +408,7 @@
                                 <div class="contact-two__info__social">
                                     <h5 class="contact-two__info__social__title">Siga-nos:</h5>
                                     <div class="contact-two__info__social__wrap">
-                                        <a href="{{ $contact_info[0]['a-1'] }}">
+                                        <a href="{{ $contact_info[0]['a-1'] }}" target="_blank">
                                             <i class="fab fa-facebook-f" aria-hidden="true"></i>
                                             <span class="sr-only">Facebook</span>
                                         </a>
@@ -420,7 +420,7 @@
                                             <i class="fab fa-twitter" aria-hidden="true"></i>
                                             <span class="sr-only">Twitter</span>
                                         </a> --}}
-                                        <a href="{{ $contact_info[0]['a-2'] }}">
+                                        <a href="{{ $contact_info[0]['a-2'] }}" target="_blank">
                                             <i class="fab fa-instagram" aria-hidden="true"></i>
                                             <span class="sr-only">Instagram</span>
                                         </a>
@@ -433,7 +433,7 @@
                                 <div class="sec-title-two text-left">
                                     <h6 class="sec-title-two__tagline">
 										<span class="sec-title__tagline__left"></span>
-										<b>{{ $contact_info[0]['h-6'] }}</b>
+										<i><b>{{ $contact_info[0]['h-6'] }}</b></i>
 										<span class="sec-title__tagline__right"></span>
 									</h6><!-- /.sec-title-two__tagline -->
                                     <h3 class="sec-title-two__title"><b>{{ $contact_info[0]['h-3'] }}</b></h3><!-- /.sec-title-two__title -->
@@ -507,9 +507,9 @@
                                 <img src="assets/images/logo-white.png" width="184" alt="Tolak HTML Template">
                             </a>
                             <ul class="footer-widget__info">
-                                <li><span class="icofont-location-pin"></span>13/A, Miranda Halim City .</li>
-                                <li><span class="icofont-email"></span>email@email.com</li>
-                                <li><span class="icofont-phone"></span><a href="tel:09969569535">099 695 695 35</a></li>
+                                <li><span class="icofont-location-pin"></span>Rua de Entremuros 54, Fração BB, São Julião do Tojal, 2660-533</li>
+                                <li><span class="icofont-email"></span>geral@sospragas.pt</li>
+                                <li><span class="icofont-phone"></span><a href="tel:219747353">219 747 353</a></li>
                             </ul>
                             <div class="footer-widget__social">
                                 <a href="https://facebook.com">

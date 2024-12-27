@@ -1132,7 +1132,7 @@
 							<div class="service-one__item__image">
 								<img src="{{ $best_service[0]['best-service-img-path-1'] }}" alt="tolak">
 							</div>
-							<div class="service-one__item__content">
+							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
 									<span>
 										<img src="assets/images/Ratos.png" />
@@ -1158,7 +1158,7 @@
 							<div class="service-one__item__image">
 								<img src="{{ $best_service[0]['best-service-img-path-2'] }}" alt="tolak">
 							</div>
-							<div class="service-one__item__content">
+							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
 									<span>
 										<img src="assets/images/Baratas.png" />
@@ -1184,7 +1184,7 @@
 							<div class="service-one__item__image">
 								<img src="{{ $best_service[0]['best-service-img-path-3'] }}" alt="tolak">
 							</div>
-							<div class="service-one__item__content">
+							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
 									<span>
 										<img src="assets/images/Percevejos.png" />
