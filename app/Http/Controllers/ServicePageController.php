@@ -29,58 +29,65 @@ class ServicePageController extends Controller
         if ($request->has('form0')) {
 
             if ($request->hasFile('bg-img-path')) { ;
-                $path = $request->file('bg-img-path')->store('assets/images');     
+                $path = $request->file('bg-img-path')->store('assets/images');
                 $query = ServicesMainScreen::where('id',1)->update([
-                    'bg-img-path' => 'storage/' . $path 
-                ]);                 
+                    'bg-img-path' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('bg-img')) {
-                $path = $request->file('bg-img')->store('assets/images');     
+                $path = $request->file('bg-img')->store('assets/images');
                 $query = ServicesMainScreen::where('id',1)->update([
-                    'bg-img' => 'storage/' . $path 
-                ]);                 
+                    'bg-img' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('bg-img-1')) {
-                $path = $request->file('bg-img-1')->store('assets/images');     
+                $path = $request->file('bg-img-1')->store('assets/images');
                 $query = ServicesMainScreen::where('id',1)->update([
-                    'bg-img-1' => 'storage/' . $path 
-                ]);                 
+                    'bg-img-1' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('bg-img-2')) {
-                $path = $request->file('bg-img-2')->store('assets/images');     
+                $path = $request->file('bg-img-2')->store('assets/images');
                 $query = ServicesMainScreen::where('id',1)->update([
-                    'bg-img-2' => 'storage/' . $path 
-                ]);                 
+                    'bg-img-2' => 'storage/' . $path
+                ]);
             }
 
-            if ($request->hasFile('bg-img-3-a')) { 
-                $path = $request->file('bg-img-3-a')->store('assets/images');     
+			if ($request->hasFile('bg-img-3')) {
+                $path = $request->file('bg-img-3')->store('assets/images');
                 $query = ServicesMainScreen::where('id',1)->update([
-                    'bg-img-3-a' => 'storage/' . $path 
-                ]);                 
+                    'bg-img-3' => 'storage/' . $path
+                ]);
+            }
+
+            if ($request->hasFile('bg-img-3-a')) {
+                $path = $request->file('bg-img-3-a')->store('assets/images');
+                $query = ServicesMainScreen::where('id',1)->update([
+                    'bg-img-3-a' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('bg-img-3')) {
-                $path = $request->file('bg-img-3')->store('assets/images');     
+                $path = $request->file('bg-img-3')->store('assets/images');
                 $query = ServicesMainScreen::where('id',1)->update([
-                    'bg-img-3' => 'storage/' . $path 
-                ]);                 
+                    'bg-img-3' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('bg-img-4')) {
-                $path = $request->file('bg-img-4')->store('assets/images');     
+                $path = $request->file('bg-img-4')->store('assets/images');
                 $query = ServicesMainScreen::where('id',1)->update([
-                    'bg-img-4' => 'storage/' . $path 
-                ]);                 
+                    'bg-img-4' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('bg-img-5')) {
-                $path = $request->file('bg-img-5')->store('assets/images');     
+                $path = $request->file('bg-img-5')->store('assets/images');
                 $query = ServicesMainScreen::where('id',1)->update([
-                    'bg-img-5' => 'storage/' . $path 
-                ]);                 
+                    'bg-img-5' => 'storage/' . $path
+                ]);
             }
-        
+
             $query = ServicesMainScreen::where('id',1)->update([
                 'h2' => $request->input('h2'),
                 'h1' => $request->input('h1'),
@@ -95,7 +102,7 @@ class ServicePageController extends Controller
             ]);
             if($query){
                 return redirect()->route('services-page.index');
-            }            
+            }
         }
         return back();
     }

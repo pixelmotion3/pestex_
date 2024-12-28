@@ -1,139 +1,169 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ config('app.name') }}</title>
-<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon01.png">
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap/css/bootstrap.min.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/vendors/animate/animate.min.css') }}" />
+    <title>{{ config('app.name') }}</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon01.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
-        <link rel="stylesheet" href="{{ asset('assets/vendors/fontawesome/css/all.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendors/animate/animate.min.css') }}" />
 
-        <link rel="stylesheet" href="{{ asset('assets/vendors/icofont/icofont.min.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/vendors/jquery-ui/jquery-ui.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/vendors/jarallax/jarallax.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/vendors/nouislider/nouislider.min.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/vendors/nouislider/nouislider.pips.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/vendors/tiny-slider/tiny-slider.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/vendors/tolak-icons/style.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel/css/owl.carousel.min.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel/css/owl.theme.default.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendors/fontawesome/css/all.min.css') }}" />
 
-        <link rel="stylesheet" href="{{ asset('assets/vendors/tolak-icons-two/style.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/vendors/tolak-icons/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendors/icofont/icofont.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendors/jquery-ui/jquery-ui.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendors/jarallax/jarallax.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendors/nouislider/nouislider.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendors/nouislider/nouislider.pips.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendors/tiny-slider/tiny-slider.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendors/tolak-icons/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel/css/owl.carousel.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel/css/owl.theme.default.min.css') }}" />
 
+    <!-- Stylesheets -->
+    <link href="{{ asset('assets/css/font-awesome-all.css') }}" rel="stylesheet">
 
-        <!-- Stylesheets -->
-        <link href="{{ asset('assets/css/font-awesome-all.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/owl.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/jquery.fancybox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/animate.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/nice-select.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/color.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
+    <!-- template styles -->
+    <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
 
-        <link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/css/owl.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/css/jquery.fancybox.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/css/animate.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/css/nice-select.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/css/color.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-        <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
-        <!-- template styles -->
-        <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
+    <!-- Styles -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-        <!-- Styles -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- Styles -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <style>
+        .input-container {
+            display: flex;
+            width: 60%;
+            margin-bottom: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
 
-        <style>
-            .input-container { display: flex; width: 60%; margin-bottom: 15px; margin-left: 20px;margin-right: 20px;}
-            .icon { padding: 10px; color: black; min-width: 50px; text-align: center; }
-            .input-field { width: 100%; padding: 10px; outline: none; }
-            .input-field:focus { border: 2px solid dodgerblue; }
-            .btn { background-color: #ff6600; color: white; padding: 15px 20px; border: none; cursor: pointer; width: 100%; opacity: 0.9; }
-            .btn:hover { opacity: 1; }
-            .custom-select{
-                background-color:#A9A9A9;
-                width:100%;
-                color:white;
+        .icon {
+            padding: 10px;
+            color: black;
+            min-width: 50px;
+            text-align: center;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+        }
+
+        .input-field:focus {
+            border: 2px solid dodgerblue;
+        }
+
+        .btn {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+
+        .custom-select {
+            background-color: #A9A9A9;
+            width: 100%;
+            color: white;
+        }
+
+        .custom-select:focus {
+            border: 2px solid dodgerblue;
+        }
+
+        @media screen and (max-width: 770px) {
+            .apointement-box {
+                margin-left: 0px;
+                margin-top: 0px
             }
-            .custom-select:focus{
-                border: 2px solid dodgerblue;
-            }
+        }
 
-            @media screen and (max-width: 770px) {
-                .apointement-box {
-                    margin-left:0px;
-                    margin-top:0px
-                }
-            }
+        .quote_border_inbox {
+            border-top-right-radius: 30px;
+        }
+    </style>
+    <!-- jequery plugins -->
 
-            .quote_border_inbox{
-                border-top-right-radius:30px;
-            }
+    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 
+    <script src="{{ asset('assets/js/owl.js') }}"></script>
+    <script src="{{ asset('assets/js/wow.js') }}"></script>
+    <script src="{{ asset('assets/js/validation.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.fancybox.js') }}"></script>
+    <script src="{{ asset('assets/js/appear.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
+    <script src="{{ asset('assets/js/scrollbar.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
 
-        </style>
-         <!-- jequery plugins -->
+    <!-- main-js -->
+    <script src="{{ asset('assets/js/script.js') }}"></script>
+</head>
 
-        <script src="{{ asset('assets/js/popper.min.js') }}"></script>
-        <script src="{{ asset('assets/js/jquery.js') }}"></script>
-        <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+<body class="custom-cursor" style="overflow-x: hidden;">
+	<div class="custom-cursor__cursor"></div>
+	<div class="custom-cursor__cursor-two"></div>
+	<header class="main-header sticky-header sticky-header--one-page">
+		<div class="container-fluid">
+			<div class="main-header__inner">
+				<div class="main-header__logo">
+					<a href="/">
+						<img src="assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
+					</a>
 
-        <script src="{{ asset('assets/js/owl.js') }}"></script>
-        <script src="{{ asset('assets/js/wow.js') }}"></script>
-        <script src="{{ asset('assets/js/validation.js') }}"></script>
-        <script src="{{ asset('assets/js/jquery.fancybox.js') }}"></script>
-        <script src="{{ asset('assets/js/appear.js') }}"></script>
-        <script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
-        <script src="{{ asset('assets/js/scrollbar.js') }}"></script>
-        <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
+				</div><!-- /.main-header__logo -->
+				<nav class="main-header__nav main-menu">
+					<ul class="main-menu__list one-page-scroll-menu">
+						<li class="megamenu scrollToLink"><a href="home" class="font-semibold">Home</a></li>
+						<li class="scrollToLink current"><a href="sobre" class="font-semibold">Sobre</a></li>
+						<li class="scrollToLink"><a href="servicos" class="font-semibold">Serviços</a></li>
+						<li class="scrollToLink"><a href="sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
+						<li class="scrollToLink"><a href="equipamentos" class="font-semibold">Equipamentos</a></li>
+						<li class="scrollToLink contactenos-link2"><a href="contactos" class="font-semibold">Contactos</a></li>
+						<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
+					</ul>
+				</nav>
 
-        <!-- main-js -->
-        <script src="{{ asset('assets/js/script.js') }}"></script>
-    </head>
-    <body class="custom-cursor" style="overflow-x: hidden;">
-		<div class="custom-cursor__cursor"></div>
-		<div class="custom-cursor__cursor-two"></div>
-
-
-        <header class="main-header sticky-header sticky-header--one-page">
-			<div class="container-fluid">
-				<div class="main-header__inner">
-					<div class="main-header__logo">
-						<a href="/">
-							<img src="assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
-						</a>
-
-					</div><!-- /.main-header__logo -->
-					<nav class="main-header__nav main-menu">
-						<ul class="main-menu__list one-page-scroll-menu">
-							<li class="megamenu scrollToLink"><a href="/home" class="font-semibold">Home</a></li>
-							<li class="scrollToLink current"><a href="sobre" class="font-semibold">Sobre</a></li>
-							<li class="scrollToLink"><a href="/servicos" class="font-semibold">Serviços</a></li>
-							<li class="scrollToLink"><a href="/sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
-							<li class="scrollToLink"><a href="/equipamentos" class="font-semibold">Equipamentos</a></li>
-							<li class="scrollToLink contactenos-link2"><a href="contactos" class="font-semibold">Contactos</a></li>
-							<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
-						</ul>
-					</nav>
-
-					<div class="main-header-two__right">
-						<div class="mobile-nav__btn mobile-nav__toggler">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-						<a href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn" type="submit" name="quote_form">CONTACTE-NOS</a>
+				<div class="main-header-two__right">
+					<div class="mobile-nav__btn mobile-nav__toggler">
+						<span></span>
+						<span></span>
+						<span></span>
 					</div>
+					<a href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn" type="submit" name="quote_form">CONTACTE-NOS</a>
 				</div>
 			</div>
-		</header><!-- /.main-header -->
-        <section class="main-slider-three" id="home">
+		</div>
+	</header>
+        <section class="main-slider-three">
             <div class="main-slider-three__carousel tolak-owl__carousel owl-carousel" data-owl-options='{
             "loop": false,
             "animateOut": "fadeOut",
@@ -296,9 +326,12 @@
                                 <div class="cta-four__content__bar"></div>
                                 <div class="cta-four__content__info">
                                     <div class="cta-four__content__info__icon"><i class="icofont-speech-comments"></i></div>
-                                    <p class="cta-four__content__info__text">
-                                        {{ $video[0]['div-p'] }} <a href="sustentabilidade">Saiba mais.</a>
-                                    </p>
+                                    <div>
+										<p class="cta-four__content__info__text">
+											{{ $video[0]['div-p'] }}
+										</p>
+										<p class="cta-four__content__info__text"><a href="sustentabilidade">Saiba mais</a></p>
+									</div>
                                 </div>
                             </div>
                         </div>
@@ -508,7 +541,7 @@
                             </a>
                             <ul class="footer-widget__info">
                                 <li><span class="icofont-location-pin"></span>Rua de Entremuros 54, Fração BB, São Julião do Tojal, 2660-533</li>
-                                <li><span class="icofont-email"></span>geral@sospragas.pt</li>
+                                <li><span class="icofont-email"></span><a href="mailto:geral@sospragas.pt">geral@sospragas.pt</a></li>
                                 <li><span class="icofont-phone"></span><a href="tel:219747353">219 747 353</a></li>
                             </ul>
                             <div class="footer-widget__social">
@@ -589,7 +622,7 @@
                     <div class="row">
                         <div class="col-md-8">
                             <p class="main-footer__copyright">
-                                Copyright sospragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
+                                Copyright SOSpragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
                             </p>
                         </div>
                         <div class="col-md-4">

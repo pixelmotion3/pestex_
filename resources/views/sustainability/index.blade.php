@@ -7,17 +7,6 @@
 
     <title>{{ config('app.name') }}</title>
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon01.png">
-    <!-- favicons Icons -->
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/images/favicons/apple-touch-icon.png') }}" />
-        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/images/favicons/favicon-32x32.png') }}" />
-        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/favicons/favicon-16x16.png') }}" />
-        <link rel="manifest" href="{{ asset('assets/images/favicons/site.webmanifest') }}" /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
@@ -41,8 +30,7 @@
 
     <!-- Stylesheets -->
     <link href="{{ asset('assets/css/font-awesome-all.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('assets/vendors/tolak-icons-two/style.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/vendors/tolak-icons/style.css') }}" />
+
     <link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/owl.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
@@ -54,8 +42,10 @@
     <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
     <!-- template styles -->
     <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/tolak-color-2.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/tolak-color-3.css') }}" />
+
+    <!-- Styles -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
@@ -138,8 +128,8 @@
     <script src="{{ asset('assets/js/script.js') }}"></script>
 </head>
 
-<body class="custom-cursor">
-    <div class="custom-cursor__cursor"></div>
+<body class="custom-cursor" style="overflow-x: hidden;">
+	<div class="custom-cursor__cursor"></div>
 	<div class="custom-cursor__cursor-two"></div>
 	<header class="main-header sticky-header sticky-header--one-page">
 		<div class="container-fluid">
@@ -156,7 +146,7 @@
 						<li class="scrollToLink"><a href="sobre" class="font-semibold">Sobre</a></li>
 						<li class="scrollToLink"><a href="servicos" class="font-semibold">Serviços</a></li>
 						<li class="scrollToLink current"><a href="sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
-						<li class="scrollToLink"><a href="/equipamentos" class="font-semibold">Equipamentos</a></li>
+						<li class="scrollToLink"><a href="equipamentos" class="font-semibold">Equipamentos</a></li>
 						<li class="scrollToLink contactenos-link2"><a href="contactos" class="font-semibold">Contactos</a></li>
 						<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
 					</ul>
@@ -204,7 +194,7 @@
 
 
                 <h6 class="sec-title-four__tagline"><span
-                        class="sec-title-four__tagline__left-border"></span><b>{{ $main[0]['h6'] }}</b><span
+                        class="sec-title-four__tagline__left-border"></span><b><i>{{ $main[0]['h6'] }}</i></b><span
                         class="sec-title-four__tagline__right-border"></span></h6><!-- /.sec-title-four__tagline -->
 
                 <h3 class="sec-title-four__title">{{ $main[0]['h3'] }}</h3><!-- /.sec-title-four__title -->
@@ -258,7 +248,7 @@
                                 <ul class="tab-one__content__list">
                                     <li>
                                         <i class="tolak-icons-two-arrow-circle-right"></i>
-                                        <span>{{ $main[0]['span'] }}t</span>
+                                        <span>{{ $main[0]['span'] }}</span>
                                     </li>
                                     <li>
                                         <i class="tolak-icons-two-arrow-circle-right"></i>
@@ -446,12 +436,12 @@
     <!-- Feature End -->
     <!-- Service Start -->
     <div class="page-wrapper">
-        <section class="service-five" style="background: #e1e1e1;">
+        <section class="service-five" style="background: #eeeeee;">
             <div class="container">
                 <div class="sec-title-three text-center">
 
                     <h6 class="sec-title-three__tagline"><span
-                        class="sec-title-four__tagline__left-border"></span><b>{{ $main[0]['h6-span'] }}</b><span
+                        class="sec-title-four__tagline__left-border"></span><b><i>{{ $main[0]['h6-span'] }}</i></b><span
                         class="sec-title-four__tagline__right-border"></span></h6>
                     <!-- /.sec-title-three__tagline -->
 
@@ -489,7 +479,7 @@
                                     <span class="tolak-icons-two-solution-1"></span>
                                 </div><!-- /.service-icon -->
                                 <h3 class="service-five__item__title">
-                                    <a href="business-marketing.html">{{ $main[0]['h3-a'] }}</a>
+                                    <a href="{{ $main[0]['link-1'] }}">{{ $main[0]['h3-a'] }}</a>
                                 </h3><!-- /.service-title -->
                                 <p class="service-five__item__text">
                                     {{ $main[0]['p-5'] }}
@@ -507,7 +497,7 @@
                                     <span class=" tolak-icons-two-solutions-three"></span>
                                 </div><!-- /.service-icon -->
                                 <h3 class="service-five__item__title">
-                                    <a href="business-solution.html">{{ $main[0]['h3-a-1'] }}</a>
+                                    <a href="{{ $main[0]['link-2'] }}">{{ $main[0]['h3-a-1'] }}</a>
                                 </h3><!-- /.service-title -->
                                 <p class="service-five__item__text">
                                     {{ $main[0]['p-6'] }}
@@ -525,7 +515,7 @@
                                     <span class="tolak-icons-two-cybersecurity"></span>
                                 </div><!-- /.service-icon -->
                                 <h3 class="service-five__item__title">
-                                    <a href="technology-services.html"> {{ $main[0]['h3-a-2'] }}</a>
+                                    <a href="{{ $main[0]['link-3'] }}"> {{ $main[0]['h3-a-2'] }}</a>
                                 </h3><!-- /.service-title -->
                                 <p class="service-five__item__text">
                                     {{ $main[0]['p-7'] }}
@@ -582,7 +572,7 @@
 						</a>
 						<ul class="footer-widget__info">
 							<li><span class="icofont-location-pin"></span>Rua de Entremuros 54, Fração BB, São Julião do Tojal, 2660-533</li>
-							<li><span class="icofont-email"></span>geral@sospragas.pt</li>
+							<li><span class="icofont-email"></span><a href="mailto:geral@sospragas.pt">geral@sospragas.pt</a></li>
 							<li><span class="icofont-phone"></span><a href="tel:219747353">219 747 353</a></li>
 						</ul>
 						<div class="footer-widget__social">
@@ -663,7 +653,7 @@
 				<div class="row">
 					<div class="col-md-8">
 						<p class="main-footer__copyright">
-							Copyright sospragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
+							Copyright SOSpragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
 						</p>
 					</div>
 					<div class="col-md-4">
@@ -811,6 +801,50 @@
             });
         });
     </script>
+	<script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jarallax/jarallax.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-ui/jquery-ui.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-validate/jquery.validate.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}"></script>
+	<script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
+	<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
+	<script src="{{ asset('assets/vendors/simpleParallax/simpleParallax.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/imagesloaded/imagesloaded.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/isotope/isotope.js') }}"></script>
+	<script src="{{ asset('assets/vendors/countdown/countdown.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-circleType/jquery.circleType.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-lettering/jquery.lettering.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/progress-bar/knob.js') }}"></script>
+
+	<!-- chart js -->
+	<script src="{{ asset('assets/vendors/chart/chart.js') }}"></script>
+	<script src="{{ asset('assets/vendors/chart/custome-chart.js') }}"></script>
+
+	<!-- template js -->
+	<script src="{{ asset('assets/js/tolak.js') }}"></script>
+
+	<!-- sanito -->
+
+	<script src="{{ asset('assets/js/jquery.js') }}"></script>
+	<script src="{{ asset('assets/js/popper.min.js') }}"></script>
+	<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+	<script src="{{ asset('assets/js/owl.js') }}"></script>
+	<script src="{{ asset('assets/js/wow.js') }}"></script>
+	<script src="{{ asset('assets/js/validation.js') }}"></script>
+	<script src="{{ asset('assets/js/jquery.fancybox.js') }}"></script>
+	<script src="{{ asset('assets/js/appear.js') }}"></script>
+	<script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
+	<script src="{{ asset('assets/js/scrollbar.js') }}"></script>
+	<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
 </body>
 
 </html>

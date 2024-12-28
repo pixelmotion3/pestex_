@@ -166,7 +166,7 @@
 
     <section>
         <!-- /.page-header__bg -->
-        <div class="container-fluid" style="background-image: url(../{{$service_detail_show['bg-img'] }});border-bottom-left-radius:150px;background-size: cover;background-repeat: no-repeat;background-position: center;">
+        <div class="container-fluid" style="background-image: url(../{{$service_detail['img'] }});border-bottom-left-radius:150px;background-size: cover;background-repeat: no-repeat;background-position: center;">
             <div class="row">
                 <div class="col-md-12"
                     >
@@ -317,17 +317,17 @@
         <div class="container">
             <div class="sec-title-four text-center">
 
-                <h6 class="sec-title-four__tagline"><span class="sec-title-four__tagline__left-border"></span><b>{{ $service_detail_show['h6'] }}</b><span class="sec-title-four__tagline__right-border"></span></h6>
+                <h6 class="sec-title-four__tagline"><span class="sec-title-four__tagline__left-border"></span><b><i>{{ $service_detail_show['h6'] }}</i></b><span class="sec-title-four__tagline__right-border"></span></h6>
                 <!-- /.sec-title-four__tagline -->
 
                 <h3 class="sec-title-four__title">{{ $service_detail_show['h3-3'] }}</h3>
                 <!-- /.sec-title-four__title -->
             </div><!-- /.sec-title-four -->
-            <div class="row gutter-y-30">
-                <div class="col-xl-4 col-md-6" style="display: flex;justify-content: center; ">
+            <div class="row" style="display: flex;justify-content: center;">
+                <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; ">
                     <div class="work-process-two__item text-center wow fadeInUp" data-wow-delay="00ms">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
-                        <h4 class="work-process-two__item__title">{{ $service_detail_show['h4'] }}</h4><!-- /.work-process-title -->
+                        <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-1'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text">
                             {{ $service_detail_show['p'] }}
                         </p><!-- /.work-process-text -->
@@ -336,11 +336,11 @@
                         </div><!-- /.work-process-image -->
                     </div><!-- /.work-process-item -->
                 </div>
-                <div class="col-xl-4 col-md-6" style="display: flex;justify-content: center; ">
+                <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; ">
                     <div class="work-process-two__item work-process-two__item--reverse text-center wow fadeInUp"
                         data-wow-delay="100ms">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
-                        <h4 class="work-process-two__item__title">{{ $service_detail_show['h4'] }}</h4><!-- /.work-process-title -->
+                        <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-2'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text">
                             {{ $service_detail_show['p-1'] }}
                         </p><!-- /.work-process-text -->
@@ -349,10 +349,10 @@
                         </div><!-- /.work-process-image -->
                     </div><!-- /.work-process-item -->
                 </div>
-                <div class="col-xl-4 col-md-6" style="display: flex;justify-content: center; ">
+                <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; ">
                     <div class="work-process-two__item text-center wow fadeInUp" data-wow-delay="200ms">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
-                        <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-2'] }}</h4><!-- /.work-process-title -->
+                        <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-3'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text">
                             {{ $service_detail_show['p-2'] }}
                         </p><!-- /.work-process-text -->
@@ -380,11 +380,11 @@
     <!-- Work Process End -->
     <section class="faq-one">
         <div class="container">
-            <div class="row">
+            <div style="display: flex;">
                 <div class="col-lg-6 d-flex align-items-center">
                     <div class="faq-one__content">
                         <div class="sec-title-two text-left">
-                            <h6 class="sec-title-two__tagline"><span class="sec-title-four__tagline__left-border"></span><b>{{ $service_detail_show['h6-1'] }}<b><span class="sec-title-four__tagline__right-border"></span>
+                            <h6 class="sec-title-two__tagline"><span class="sec-title-four__tagline__left-border"></span><b><i>{{ $service_detail_show['h6-1'] }}</i><b><span class="sec-title-four__tagline__right-border"></span>
                             </h6><!-- /.sec-title-two__tagline -->
                             <h3 class="sec-title-two__title">{{ $service_detail_show['h3-4'] }}</h3>
                             <!-- /.sec-title-two__title -->
@@ -412,7 +412,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <div class="faq-one__accordion tolak-accrodion" data-grp-name="tolak-accrodion">
                         <div class="accrodion active collapse-1">
                             <div class="accrodion-title">
@@ -475,8 +475,6 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div><!-- /.col-lg-6 -->
             </div>
         </div><!-- /.container -->

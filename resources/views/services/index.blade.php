@@ -146,7 +146,7 @@
 						<li class="scrollToLink"><a href="sobre" class="font-semibold">Sobre</a></li>
 						<li class="scrollToLink current"><a href="servicos" class="font-semibold">Serviços</a></li>
 						<li class="scrollToLink"><a href="sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
-						<li class="scrollToLink"><a href="/equipamentos" class="font-semibold">Equipamentos</a></li>
+						<li class="scrollToLink"><a href="equipamentos" class="font-semibold">Equipamentos</a></li>
 						<li class="scrollToLink contactenos-link2"><a href="contactos" class="font-semibold">Contactos</a></li>
 						<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
 					</ul>
@@ -329,7 +329,7 @@
                                         <textarea name="message" placeholder="Mensagem"></textarea><!-- /# -->
                                     </div><!-- /.form-one__control -->
                                     <div class="form-one__control form-one__control--full">
-                                        <button type="submit" class="tolak-btn"><b>ENVIAR MENSAGEM</b><span></span></button>
+                                        <button type="submit" class="tolak-btn2"><b>ENVIAR MENSAGEM</b><span></span></button>
                                     </div><!-- /.form-one__control -->
                                 </div><!-- /.form-one__group -->
                             </form>
@@ -381,7 +381,7 @@
 						</a>
 						<ul class="footer-widget__info">
 							<li><span class="icofont-location-pin"></span>Rua de Entremuros 54, Fração BB, São Julião do Tojal, 2660-533</li>
-							<li><span class="icofont-email"></span>geral@sospragas.pt</li>
+							<li><span class="icofont-email"></span><a href="mailto:geral@sospragas.pt">geral@sospragas.pt</a></li>
 							<li><span class="icofont-phone"></span><a href="tel:219747353">219 747 353</a></li>
 						</ul>
 						<div class="footer-widget__social">
@@ -462,7 +462,7 @@
 				<div class="row">
 					<div class="col-md-8">
 						<p class="main-footer__copyright">
-							Copyright sospragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
+							Copyright SOSpragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
 						</p>
 					</div>
 					<div class="col-md-4">
@@ -480,6 +480,50 @@
             <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
         </a>
         -->
+		<script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/jarallax/jarallax.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/jquery-ui/jquery-ui.js') }}"></script>
+        <script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/jquery-validate/jquery.validate.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}"></script>
+        <script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
+        <script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
+        <script src="{{ asset('assets/vendors/simpleParallax/simpleParallax.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/imagesloaded/imagesloaded.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/isotope/isotope.js') }}"></script>
+        <script src="{{ asset('assets/vendors/countdown/countdown.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/jquery-circleType/jquery.circleType.js') }}"></script>
+        <script src="{{ asset('assets/vendors/jquery-lettering/jquery.lettering.min.js') }}"></script>
+        <script src="{{ asset('assets/vendors/progress-bar/knob.js') }}"></script>
+
+        <!-- chart js -->
+        <script src="{{ asset('assets/vendors/chart/chart.js') }}"></script>
+        <script src="{{ asset('assets/vendors/chart/custome-chart.js') }}"></script>
+
+        <!-- template js -->
+        <script src="{{ asset('assets/js/tolak.js') }}"></script>
+
+        <!-- sanito -->
+
+        <script src="{{ asset('assets/js/jquery.js') }}"></script>
+        <script src="{{ asset('assets/js/popper.min.js') }}"></script>
+        <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('assets/js/owl.js') }}"></script>
+        <script src="{{ asset('assets/js/wow.js') }}"></script>
+        <script src="{{ asset('assets/js/validation.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.fancybox.js') }}"></script>
+        <script src="{{ asset('assets/js/appear.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
+        <script src="{{ asset('assets/js/scrollbar.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
 </body>
 
 </html>

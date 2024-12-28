@@ -434,7 +434,7 @@
         </div>
     </div>
 	<div class="page-wrapper">
-		<header class="main-header sticky-header sticky-header--one-page">
+		<header class="main-header sticky-header sticky-header--normal">
 			<div class="container-fluid">
 				<div class="main-header__inner">
 					<div class="main-header__logo">
@@ -1319,22 +1319,24 @@
 									<div class="col-lg-6 col-md-12 col-sm-12 content-column">
 										<div class="content_block_2">
 											<div class="content-box">
-												<h2>{{ $our_service_1[0]['our-services-tab-1-h2'] }}</h2>
+												<h2>{!!  $our_service_1[0]['our-services-tab-1-h2'] !!}</h2>
 												<div class="text">
 													<p>{{ $our_service_1[0]['our-services-tab-1-p'] }}<br />{{ $our_service_1[0]['our-services-tab-1-p-1'] }}</p>
 												</div>
-												<ul class="list-item clearfix">
-													<li>{{ $our_service_1[0]['our-services-tab-1-li-1'] }}</li>
-													<li>{{ $our_service_1[0]['our-services-tab-1-li-2'] }}</li>
-													<li>{{ $our_service_1[0]['our-services-tab-1-li-3'] }}</li>
-													<li>{{ $our_service_1[0]['our-services-tab-1-li-4'] }}</li>
-													<li>{{ $our_service_1[0]['our-services-tab-1-li-5'] }}</li>
-													<li>{{ $our_service_1[0]['our-services-tab-1-li-6'] }}</li>
-													<li>{{ $our_service_1[0]['our-services-tab-1-li-7'] }}</li>
-													<li>{{ $our_service_1[0]['our-services-tab-1-li-8'] }}</li>
-												</ul>
-												<div class="btn-box">
-													<a data-toggle="modal" data-target="#exampleModal" class="btn2 theme-btn-three thm-btn">CONTACTE-NOS</a>
+												<div style="display: flex;align-items: center;justify-content: space-between;">
+													<ul class="list-item clearfix">
+														<li>{{ $our_service_1[0]['our-services-tab-1-li-1'] }}</li>
+														<li>{{ $our_service_1[0]['our-services-tab-1-li-2'] }}</li>
+														<li>{{ $our_service_1[0]['our-services-tab-1-li-3'] }}</li>
+														<li>{{ $our_service_1[0]['our-services-tab-1-li-4'] }}</li>
+														<li>{{ $our_service_1[0]['our-services-tab-1-li-5'] }}</li>
+														<li>{{ $our_service_1[0]['our-services-tab-1-li-6'] }}</li>
+														<li>{{ $our_service_1[0]['our-services-tab-1-li-7'] }}</li>
+														<li>{{ $our_service_1[0]['our-services-tab-1-li-8'] }}</li>
+													</ul>
+													<div class="btn-box mr-5">
+														<a data-toggle="modal" data-target="#exampleModal" class="btn2 theme-btn-three thm-btn">CONTACTE-NOS</a>
+													</div>
 												</div>
 												<div class="other-text">
 													<p>{{ $our_service_1[0]['our-services-tab-1-a-2'] }} <a data-toggle="modal"
@@ -1367,18 +1369,20 @@
 												<div class="text">
 													<p>{{ $our_service_2[0]['our-services-tab-2-p'] }}<br />{{ $our_service_2[0]['our-services-tab-2-p-1'] }}</p>
 												</div>
-												<ul class="list-item clearfix">
-													<li>{{ $our_service_2[0]['our-services-tab-2-li-1'] }}</li>
-													<li>{{ $our_service_2[0]['our-services-tab-2-li-2'] }}</li>
-													<li>{{ $our_service_2[0]['our-services-tab-2-li-3'] }}</li>
-													<li>{{ $our_service_2[0]['our-services-tab-2-li-4'] }}</li>
-													<li>{{ $our_service_2[0]['our-services-tab-2-li-5'] }}</li>
-													<li>{{ $our_service_2[0]['our-services-tab-2-li-6'] }}</li>
-													<li>{{ $our_service_2[0]['our-services-tab-2-li-7'] }}</li>
-													<li>{{ $our_service_2[0]['our-services-tab-2-li-8'] }}</li>
-												</ul>
-												<div class="btn-box">
-													<a data-toggle="modal" data-target="#exampleModal" class="btn2 theme-btn-three thm-btn">CONTACTE-NOS</a>
+												<div style="display: flex;align-items: center;justify-content: space-between;">
+													<ul class="list-item clearfix">
+														<li>{{ $our_service_2[0]['our-services-tab-2-li-1'] }}</li>
+														<li>{{ $our_service_2[0]['our-services-tab-2-li-2'] }}</li>
+														<li>{{ $our_service_2[0]['our-services-tab-2-li-3'] }}</li>
+														<li>{{ $our_service_2[0]['our-services-tab-2-li-4'] }}</li>
+														<li>{{ $our_service_2[0]['our-services-tab-2-li-5'] }}</li>
+														<li>{{ $our_service_2[0]['our-services-tab-2-li-6'] }}</li>
+														<li>{{ $our_service_2[0]['our-services-tab-2-li-7'] }}</li>
+														<li>{{ $our_service_2[0]['our-services-tab-2-li-8'] }}</li>
+													</ul>
+													<div class="btn-box mr-5">
+														<a data-toggle="modal" data-target="#exampleModal" class="btn2 theme-btn-three thm-btn">CONTACTE-NOS</a>
+													</div>
 												</div>
 												<div class="other-text">
 													<p>{{ $our_service_2[0]['our-services-tab-2-p-2'] }} <a data-toggle="modal"
@@ -1418,13 +1422,13 @@
 				<div class="row">
 					<div class="col-xl-6 wow fadeInLeft" data-wow-delay="300ms">
 						<div class="about-one__content">
-							<div class="text-titles">
+							<div class="text-titles mb-5">
 								<h6 class="sec-title__tagline text-titles">{{ $about_now[0]['about-now-h6'] }}</h6>
 								<!-- /.sec-title__tagline -->
 								<h3 class="sec-title__title">{{ $about_now[0]['about-now-h3'] }}</h3>
 								<!-- /.sec-title__title -->
 							</div><!-- /.sec-title -->
-							<p class="about-one__content__text">
+							<p class="about-one__content__text mb-5">
 								{{ $about_now[0]['about-now-p'] }}.
 							</p>
 							<ul class="about-one__content__list text-white">
@@ -1998,7 +2002,7 @@
                             </a>
                             <ul class="footer-widget__info">
                                 <li><span class="icofont-location-pin"></span>Rua de Entremuros 54, Fração BB, São Julião do Tojal, 2660-533</li>
-                                <li><span class="icofont-email"></span>geral@sospragas.pt</li>
+                                <li><span class="icofont-email"></span><a href="mailto:geral@sospragas.pt">geral@sospragas.pt</a></li>
                                 <li><span class="icofont-phone"></span><a href="tel:219747353">219 747 353</a></li>
                             </ul>
                             <div class="footer-widget__social">
@@ -2079,7 +2083,7 @@
                     <div class="row">
                         <div class="col-md-8">
                             <p class="main-footer__copyright">
-                                Copyright sospragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
+                                Copyright SOSpragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
                             </p>
                         </div>
                         <div class="col-md-4">

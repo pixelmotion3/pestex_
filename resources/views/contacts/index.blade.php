@@ -183,7 +183,7 @@
                                 <div class="contact-two__info__social">
                                     <h5 class="contact-two__info__social__title">Siga-nos:</h5>
                                     <div class="contact-two__info__social__wrap">
-                                        <a href="{{ $contact_info[0]['a-1'] }}">
+                                        <a href="{{ $contact_info[0]['a-1'] }}" target="_blank">
                                             <i class="fab fa-facebook-f" aria-hidden="true"></i>
                                             <span class="sr-only">Facebook</span>
                                         </a>
@@ -195,7 +195,7 @@
                                             <i class="fab fa-twitter" aria-hidden="true"></i>
                                             <span class="sr-only">Twitter</span>
                                         </a> --}}
-                                        <a href="{{ $contact_info[0]['a-2'] }}">
+                                        <a href="{{ $contact_info[0]['a-2'] }}" target="_blank">
                                             <i class="fab fa-instagram" aria-hidden="true"></i>
                                             <span class="sr-only">Instagram</span>
                                         </a>
@@ -208,7 +208,7 @@
                                 <div class="sec-title-two text-left">
                                     <h6 class="sec-title-two__tagline">
 										<span class="sec-title__tagline__left"></span>
-										<b>{{ $contact_info[0]['h-6'] }}</b>
+										<b><i>{{ $contact_info[0]['h-6'] }}</i></b>
 										<span class="sec-title__tagline__right"></span>
 									</h6><!-- /.sec-title-two__tagline -->
                                     <h3 class="sec-title-two__title"><b>{{ $contact_info[0]['h-3'] }}</b></h3><!-- /.sec-title-two__title -->
@@ -230,7 +230,7 @@
                                             <textarea name="message" placeholder="Mensagem"></textarea><!-- /# -->
                                         </div><!-- /.form-one__control -->
                                         <div class="form-one__control form-one__control--full">
-                                            <button type="submit" class="tolak-btn"><b>enviar</b><span></span></button>
+                                            <button type="submit" class="tolak-btn2"><b>enviar</b><span></span></button>
                                         </div><!-- /.form-one__control -->
                                     </div><!-- /.form-one__group -->
                                 </form>
@@ -282,7 +282,7 @@
                             </a>
                             <ul class="footer-widget__info">
                                 <li><span class="icofont-location-pin"></span>Rua de Entremuros 54, Fração BB, São Julião do Tojal, 2660-533</li>
-                                <li><span class="icofont-email"></span>geral@sospragas.pt</li>
+                                <li><span class="icofont-email"></span><a href="mailto:geral@sospragas.pt">geral@sospragas.pt</a></li>
                                 <li><span class="icofont-phone"></span><a href="tel:219747353">219 747 353</a></li>
                             </ul>
                             <div class="footer-widget__social">
@@ -363,7 +363,7 @@
                     <div class="row">
                         <div class="col-md-8">
                             <p class="main-footer__copyright">
-                                Copyright sospragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
+                                Copyright SOSpragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
                             </p>
                         </div>
                         <div class="col-md-4">

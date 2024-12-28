@@ -818,6 +818,25 @@
                                                             required>
                                                     </div>
 
+													<div class="col-12 mt-5 form-group">
+                                                        <div class="card-header">
+                                                            <label for="validationCustom01" class="form-label"
+                                                                style="float:left;margin-left:-22px;">Background
+                                                                Image</label>
+                                                        </div>
+                                                        <div class="card">
+                                                            <img src="{{ $services_page[0]['bg-img-3'] }}"
+                                                                class="img-fluid" alt="..."
+                                                                style="max-height:885px;max-width:1920px;">
+                                                            <div class="card-body">
+                                                                <label for="exampleFormControlFile1">Example file
+                                                                    input</label>
+                                                                <input type="file" class="form-control-file"
+                                                                    id="exampleFormControlFile1" name="bg-img-3">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                     <div class="col-12 mt-5 form-group">
                                                         <div class="card-header">
                                                             <label for="validationCustom01" class="form-label"

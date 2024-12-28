@@ -56,9 +56,9 @@
                             </a>
                           </li>
                         </ul>
-                        
+
                       --></li>
-          
+
             <!-- Layouts -->
             <!--
             <li class="menu-item">
@@ -77,8 +77,8 @@
                   <a href="layouts-content-navbar.html" class="menu-link">
                     <div data-i18n="Content navbar">Content navbar</div>
                   </a>
-                </li>       
-             
+                </li>
+
               </ul>
             </li>
 
@@ -1133,6 +1133,13 @@
                                                             id="validationCustom01" value="{{ $main[0]['p-5'] }}"
                                                             name="p-5" required>
                                                     </div>
+													<div class="col-12 mt-5">
+                                                        <label for="validationCustom01" class="form-label"
+                                                            style="float:left;">link 1</label>
+                                                        <input type="text" class="form-control"
+                                                            id="validationCustom01" value="{{ $main[0]['link-1'] }}"
+                                                            name="link-1" required>
+                                                    </div>
                                                     <div class="col-12 mt-5 form-group">
                                                         <div class="card-header">
                                                             <label for="validationCustom01" class="form-label"
@@ -1165,6 +1172,13 @@
                                                             id="validationCustom01" value="{{ $main[0]['p-6'] }}"
                                                             name="p-6" required>
                                                     </div>
+													<div class="col-12 mt-5">
+                                                        <label for="validationCustom01" class="form-label"
+                                                            style="float:left;">link 2</label>
+                                                        <input type="text" class="form-control"
+                                                            id="validationCustom01" value="{{ $main[0]['link-2'] }}"
+                                                            name="link-2" required>
+                                                    </div>
                                                     <div class="col-12 mt-5 form-group">
                                                         <div class="card-header">
                                                             <label for="validationCustom01" class="form-label"
@@ -1196,6 +1210,13 @@
                                                         <input type="text" class="form-control"
                                                             id="validationCustom01" value="{{ $main[0]['p-7'] }}"
                                                             name="p-7" required>
+                                                    </div>
+													<div class="col-12 mt-5">
+                                                        <label for="validationCustom01" class="form-label"
+                                                            style="float:left;">link 3</label>
+                                                        <input type="text" class="form-control"
+                                                            id="validationCustom01" value="{{ $main[0]['link-3'] }}"
+                                                            name="link-3" required>
                                                     </div>
                                                     <div class="col-12 mt-5">
                                                         <button class="btn btn-primary w-100" type="submit"
