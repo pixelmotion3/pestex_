@@ -56,9 +56,9 @@
                             </a>
                           </li>
                         </ul>
-                        
+
                       --></li>
-          
+
             <!-- Layouts -->
             <!--
             <li class="menu-item">
@@ -77,8 +77,8 @@
                   <a href="layouts-content-navbar.html" class="menu-link">
                     <div data-i18n="Content navbar">Content navbar</div>
                   </a>
-                </li>       
-             
+                </li>
+
               </ul>
             </li>
 

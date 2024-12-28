@@ -699,9 +699,13 @@
 										id="customer_type" value="home" required>
 									<div class="input-container mt-3" style="width: 92%;" required>
 										<select name="products">
-											<option value="ratos" selected class="text-muted">Ratos</option>
-											<option value="baratas" class="text-muted">Baratas</option>
-											<option value="percevejos" class="text-muted">Percevejos</option>
+											@isset($services)
+                    							@foreach ($services as $service)
+													<option value="{{ $service['a'] }}" selected class="text-muted">{{ $service['a'] }}</option>
+													{{-- <option value="baratas" class="text-muted">Baratas</option>
+													<option value="percevejos" class="text-muted">Percevejos</option> --}}
+												@endforeach
+                							@endisset
 										</select>
 									</div>
 									<div class="input-container mt-3" style="width: 92%;">

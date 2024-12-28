@@ -434,7 +434,7 @@
         </div>
     </div>
 	<div class="page-wrapper">
-		<header class="main-header sticky-header sticky-header--normal">
+		<header class="main-header sticky-header sticky-header--one-page">
 			<div class="container-fluid">
 				<div class="main-header__inner">
 					<div class="main-header__logo">
@@ -444,8 +444,8 @@
 
 					</div><!-- /.main-header__logo -->
 					<nav class="main-header__nav main-menu">
-						<ul class="main-menu__list one-page-scroll-menu">
-							<li class="megamenu scrollToLink current"><a href="home" class="font-semibold">Home</a></li>
+						<ul class="main-menu__list">
+							<li class="megamenu current"><a href="home" class="font-semibold">Home</a></li>
 							<li class="scrollToLink"><a href="sobre" class="font-semibold">Sobre</a></li>
 							<li class="scrollToLink"><a href="servicos" class="font-semibold">Serviços</a></li>
 							<li class="scrollToLink"><a href="sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
@@ -700,9 +700,14 @@
 										id="customer_type" value="home" required>
 									<div class="input-container mt-3" style="width: 92%;" required>
 										<select name="products">
-											<option value="ratos" selected class="text-muted">Ratos</option>
-											<option value="baratas" class="text-muted">Baratas</option>
-											<option value="percevejos" class="text-muted">Percevejos</option>
+
+											@isset($services)
+                    							@foreach ($services as $service)
+													<option value="{{ $service['a'] }}" selected class="text-muted">{{ $service['a'] }}</option>
+													{{-- <option value="baratas" class="text-muted">Baratas</option>
+													<option value="percevejos" class="text-muted">Percevejos</option> --}}
+												@endforeach
+                							@endisset
 										</select>
 									</div>
 									<div class="input-container mt-3" style="width: 92%;">
@@ -2110,13 +2115,13 @@
             <!-- /.logo-box -->
             <div class="mobile-nav__container">
 				<ul class="main-menu__list one-page-scroll-menu">
-					<li class="megamenu scrollToLink"><a href="/">Home</a></li>
-					<li class="scrollToLink"><a href="sobre">Sobre</a></li>
-					<li class="scrollToLink"><a href="servicos">Serviços</a></li>
-					<li class="scrollToLink"><a href="sustentabilidade">Sustentabilidade</a></li>
-					<li class="scrollToLink"><a href="equipamentos">Equipamentos</a></li>
-					<li class="scrollToLink"><a href="contactos">Contactos</a></li>
-					<li class="scrollToLink"><a href="contato">Contacta-nos</a></li>
+					<li class="megamenu "><a href="/">Home</a></li>
+					<li class=""><a href="sobre">Sobre</a></li>
+					<li class=""><a href="servicos">Serviços</a></li>
+					<li class=""><a href="sustentabilidade">Sustentabilidade</a></li>
+					<li class=""><a href="equipamentos">Equipamentos</a></li>
+					<li class=""><a href="contactos">Contactos</a></li>
+					<li class=""><a href="contato">Contacta-nos</a></li>
 				</ul>
 			</div>
             <!-- /.mobile-nav__container -->

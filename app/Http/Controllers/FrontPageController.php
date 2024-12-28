@@ -16,6 +16,7 @@ use App\Models\landing_10page;
 use App\Models\landing_11page;
 use App\Models\landing_12page;
 use App\Models\landing_13page;
+use App\Models\ServiceDetails;
 use App\Models\contacts;
 use App\Models\Review;
 use Illuminate\Http\Request;
@@ -40,6 +41,7 @@ class FrontPageController extends Controller
         $landing_9page = landing_9page::where('id',1)->get()->toArray();
         $landing_10page = landing_10page::where('id',1)->get()->toArray();
         $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$services = ServiceDetails::all();
         $reviews = Review::all();
 
 
@@ -54,6 +56,7 @@ class FrontPageController extends Controller
             'testimonial_say' => $landing_8page,
             'collapse' => $landing_9page,
             'call_now' => $landing_10page,
+			'services' => $services,
             'video_contact' => $landing_11page,
             'reviews' =>  $reviews
         ]);
@@ -75,6 +78,7 @@ class FrontPageController extends Controller
         $landing_9page = landing_9page::where('id',1)->get()->toArray();
         $landing_10page = landing_10page::where('id',1)->get()->toArray();
         $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$services = ServiceDetails::all();
 		$reviews = Review::all();
 
         return view('home.index', [
@@ -89,6 +93,7 @@ class FrontPageController extends Controller
             'collapse' => $landing_9page,
             'call_now' => $landing_10page,
             'video_contact' => $landing_11page,
+			'services' => $services,
 			'reviews' =>  $reviews
         ]);
     }

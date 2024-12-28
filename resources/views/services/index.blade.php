@@ -141,7 +141,7 @@
 
 				</div><!-- /.main-header__logo -->
 				<nav class="main-header__nav main-menu">
-					<ul class="main-menu__list one-page-scroll-menu">
+					<ul class="main-menu__list">
 						<li class="megamenu scrollToLink"><a href="home" class="font-semibold">Home</a></li>
 						<li class="scrollToLink"><a href="sobre" class="font-semibold">Sobre</a></li>
 						<li class="scrollToLink current"><a href="servicos" class="font-semibold">Serviços</a></li>
