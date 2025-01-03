@@ -135,7 +135,7 @@
 		<div class="container-fluid">
 			<div class="main-header__inner">
 				<div class="main-header__logo">
-					<a href="/">
+					<a href="/home">
 						<img src="assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
 					</a>
 
@@ -170,7 +170,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="page-header__content text-center">
-						<h1 class="text-white h1"><b>{{ $main[0]['h1'] }}</b></h1>
+						<h1 class="text-white h1"><b>{{ $main[0]['h2'] }}</b></h1>
 					</div>
 				</div>
 			</div>
@@ -182,7 +182,7 @@
             <div class="row">
                 <div class="col-md-12" style="margin-bottom: 150px">
                     <h1 class="h1 mt-5 text-center text-body">{{ $main[0]['h1'] }}</h1>
-                    <p class="p mt-3 text-center">{{ $main[0]['p'] }}</p>
+                    <p class="p mt-3 text-center" style="font-size: large;">{!! $main[0]['p'] !!}</p>
                 </div>
             </div>
         </div>

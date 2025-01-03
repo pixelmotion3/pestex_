@@ -135,7 +135,7 @@
 		<div class="container-fluid">
 			<div class="main-header__inner">
 				<div class="main-header__logo">
-					<a href="/">
+					<a href="/home">
 						<img src="assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
 					</a>
 

@@ -246,52 +246,55 @@
 								<p>{{ $service_detail['p-3'] }}</p>
 							</div>
 						</div>
-						<h3 class="h3" style="color:black;"><b>Métodos</b></h3>
-						<div class="feature-three__carousel tolak-owl__carousel tolak-owl__carousel--basic-nav owl-theme row"
-							data-owl-options='{
-								"items": 3,
-								"margin": 30,
-								"loop": false,
-								"smartSpeed": 700,
-								"nav": false,
-								"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
-								"dots": false,
-								"autoplay": false,
-								"responsive": {
-									"0": {
-										"items": 1
-									},
-									"768": {
-										"items": 2
-									},
-									"992": {
-										"items": 3
+						@if ($service_detail['id'] != 13 && $service_detail['id'] != 17 && $service_detail['id'] != 20 && $service_detail['id'] != 18 && $service_detail['id'] != 21)
+							<h3 class="h3" style="color:black;"><b>Métodos</b></h3>
+							<div class="feature-three__carousel tolak-owl__carousel tolak-owl__carousel--basic-nav owl-theme row"
+								data-owl-options='{
+									"items": 3,
+									"margin": 30,
+									"loop": false,
+									"smartSpeed": 700,
+									"nav": false,
+									"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+									"dots": false,
+									"autoplay": false,
+									"responsive": {
+										"0": {
+											"items": 1
+										},
+										"768": {
+											"items": 2
+										},
+										"992": {
+											"items": 3
+										}
 									}
-								}
-								}'>
-							@foreach ($methods as $method)
-								<div class="item col-md-4">
-									<div class="feature-three__item wow fadeInUp" data-wow-delay="100ms">
-										<div class="feature-three__item__image rounded-box">
-											<img src="../{{ $method['img'] }}" alt="tolak">
-											{{-- <a href="about.html" class="feature-three__item__link"><i
-													class="icon-right-arrow"></i></a> --}}
-										</div>
-										<div class="feature-three__item__normal">
-											<h4 class="feature-three__item__normal__title">{{ $method['title1'] }}</h4>
-											<p class="feature-three__item__normal__text">{{ $method['p'] }}</p>
-										</div>
-										<div class="feature-three__item__hover">
-											<div class="feature-three__item__icon">
-												<span class="icon-cooperation"></span>
+									}'>
+								@foreach ($methods as $method)
+									<div class="item col-md-4">
+										<div class="feature-three__item wow fadeInUp" data-wow-delay="100ms">
+											<div class="feature-three__item__image rounded-box">
+												<img src="../{{ $method['img'] }}" alt="tolak">
+												{{-- <a href="about.html" class="feature-three__item__link"><i
+														class="icon-right-arrow"></i></a> --}}
 											</div>
-											<h4 class="feature-three__item__title">{{ $method['title2'] }}</h4>
-											<p class="feature-three__item__text">{{ $method['p1'] }}</p>
-										</div>
-									</div><!-- feature-item -->
-								</div>
-							@endforeach
-						</div>
+											<div class="feature-three__item__normal">
+												<h4 class="feature-three__item__normal__title">{{ $method['title1'] }}</h4>
+												<p class="feature-three__item__normal__text">{{ $method['p'] }}</p>
+											</div>
+											<div class="feature-three__item__hover">
+												<div class="feature-three__item__icon">
+													<span class="icon-cooperation"></span>
+												</div>
+												<h4 class="feature-three__item__title">{{ $method['title2'] }}</h4>
+												<p class="feature-three__item__text">{{ $method['p1'] }}</p>
+											</div>
+										</div><!-- feature-item -->
+									</div>
+								@endforeach
+							</div>
+						@endif
+
 					</div>
 				</div>
             </div><!-- /.row -->
@@ -432,7 +435,7 @@
                         <div class="accrodion collapse-2">
                             <div class="accrodion-title" >
                                 <h4>
-                                    {{ $service_detail_show['h4-5'] }}
+                                    {{ $service_detail_show['h4-6'] }}
                                     <span class="accrodion-title__icon" id="collapse-2-icon"></span>
                                 </h4>
                             </div>

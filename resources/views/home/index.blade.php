@@ -250,7 +250,7 @@
                                                 <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
                                                 <path d="M31.6,16.2c.3,0,.6.1.8.3l26.1,20.6c.6.5.7,1.4.2,2-.4.6-1.4.7-2,.2l-25.2-19.9L6.3,39.3c-.6.4-1.5.4-1.9-.2-.4-.6-.4-1.5.2-2l9.8-7.7v-11.8c0-.8.6-1.4,1.4-1.4h5.5c.8,0,1.4.6,1.4,1.4v5.3l8.1-6.4c.3-.2.6-.3.9-.3h0ZM19.9,19h-2.7v8.2l2.7-2.2v-6.1ZM48.7,34.7l2.7,2.2v21.9c0,.8-.6,1.4-1.4,1.4h-11.7c-.8,0-1.4-.6-1.4-1.4v-6.9c0-3.1-2.4-5.5-5.5-5.5s-5.5,2.4-5.5,5.5v6.9c0,.8-.6,1.4-1.4,1.4h-11.7c-.8,0-1.4-.6-1.4-1.4v-21.9l2.7-2.2v22.7h8.9v-5.5c0-4.5,3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2v5.5h8.9v-22.7h0Z"/>
                                             </svg>
-                                            <p>Casa</p>
+                                            <p>Residência</p>
                                         </div>
                                         <div class="col border mt-3" style="margin-right:30px;margin-left:15px;"
                                             id="modal-company">
@@ -438,7 +438,7 @@
 			<div class="container-fluid">
 				<div class="main-header__inner">
 					<div class="main-header__logo">
-						<a href="/">
+						<a href="/home">
 							<img src="assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
 						</a>
 
@@ -672,7 +672,7 @@
 											<!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
 											<path d="M31.6,16.2c.3,0,.6.1.8.3l26.1,20.6c.6.5.7,1.4.2,2-.4.6-1.4.7-2,.2l-25.2-19.9L6.3,39.3c-.6.4-1.5.4-1.9-.2-.4-.6-.4-1.5.2-2l9.8-7.7v-11.8c0-.8.6-1.4,1.4-1.4h5.5c.8,0,1.4.6,1.4,1.4v5.3l8.1-6.4c.3-.2.6-.3.9-.3h0ZM19.9,19h-2.7v8.2l2.7-2.2v-6.1ZM48.7,34.7l2.7,2.2v21.9c0,.8-.6,1.4-1.4,1.4h-11.7c-.8,0-1.4-.6-1.4-1.4v-6.9c0-3.1-2.4-5.5-5.5-5.5s-5.5,2.4-5.5,5.5v6.9c0,.8-.6,1.4-1.4,1.4h-11.7c-.8,0-1.4-.6-1.4-1.4v-21.9l2.7-2.2v22.7h8.9v-5.5c0-4.5,3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2v5.5h8.9v-22.7h0Z"/>
 										</svg>
-										<p>Casa</p>
+										<p>Residência</p>
 									</div>
 									<div class="col border mt-3" style="margin-right:30px;margin-left:15px;"
 										id="company">
@@ -887,7 +887,7 @@
 											<!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
 											<path d="M31.6,16.2c.3,0,.6.1.8.3l26.1,20.6c.6.5.7,1.4.2,2-.4.6-1.4.7-2,.2l-25.2-19.9L6.3,39.3c-.6.4-1.5.4-1.9-.2-.4-.6-.4-1.5.2-2l9.8-7.7v-11.8c0-.8.6-1.4,1.4-1.4h5.5c.8,0,1.4.6,1.4,1.4v5.3l8.1-6.4c.3-.2.6-.3.9-.3h0ZM19.9,19h-2.7v8.2l2.7-2.2v-6.1ZM48.7,34.7l2.7,2.2v21.9c0,.8-.6,1.4-1.4,1.4h-11.7c-.8,0-1.4-.6-1.4-1.4v-6.9c0-3.1-2.4-5.5-5.5-5.5s-5.5,2.4-5.5,5.5v6.9c0,.8-.6,1.4-1.4,1.4h-11.7c-.8,0-1.4-.6-1.4-1.4v-21.9l2.7-2.2v22.7h8.9v-5.5c0-4.5,3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2v5.5h8.9v-22.7h0Z"/>
 										</svg>
-										<p>Casa</p>
+										<p>Residência</p>
 									</div>
 									<div class="col border mt-3" style="margin-right:30px;margin-left:15px;"
 										id="company">
@@ -1121,7 +1121,7 @@
 				</div>
 				<div class="col-lg-12 col-md-12 text-center text-white mt-5" style="max-width:250px;margin-left:auto;margin-right:auto;">
 					<a href="/sobre" type="button" class="btn btn-primary">
-						PORQUÊ NÓS
+						<b>PORQUÊ NÓS</b>
 					</a>
 				</div>
 			</div>
@@ -1288,7 +1288,7 @@
 
 					 <div class="col-lg-12 col-md-12 text-center text-white mt-5" style="max-width:250px;margin-left:auto;margin-right:auto;">
 						<a type="button" href="servicos" class="btn btn-primary">
-							VER MAIS
+							<b>VER MAIS</b>
 						</a>
 					</div>
 				</div>
@@ -1458,7 +1458,7 @@
 							</ul>
 							{{-- <div class="clearfix"></div> --}}
 							<a type="button" href="sobre" class="btn btn-primary about-one__content__text mt-4" style="max-width: 200px;">
-								SAIBA MAIS
+								<b>SAIBA MAIS</b>
 							</a>
 							<!--
 									<div class="about-one__content__btn">
@@ -1790,9 +1790,6 @@
 										<p>
 											{{ $collapse[0]['collapse-div-p-5-1'] }}
 										</p>
-										<p>
-											{{ $collapse[0]['collapse-div-p-5-1'] }}
-										</p>
 									</div><!-- /.accordian-content -->
 								</div>
 							</div><!-- /.accordian-item -->
@@ -1901,7 +1898,7 @@
 							<div class="sec-title-four text-center">
 
 								<h6 class="sec-title-four__tagline"><span
-										class="sec-title-four__tagline__left-border"></span>FALE CONNOSCO<span
+										class="sec-title-four__tagline__left-border"></span><b><i>FALE CONNOSCO</i></b><span
 										class="sec-title-four__tagline__right-border"></span></h6>
 								<!-- /.sec-title-four__tagline -->
 
@@ -1947,7 +1944,7 @@
 									<div class="form-one__control form-one__control--full">
 										<button type="submit" class="tolak-btn-two tolak-btn-two--home-six pull-left" style="border-radius: 5px;">
 											<span class="tolak-btn-two__left-star"></span>
-											<span>ENVIAR MENSAGEM<i class="tolak-icons-two-arrow-right-short"></i></span>
+											<span><b>ENVIAR MENSAGEM</b></span>
 											<span class="tolak-btn-two__right-star"></span>
 										</button>
 									</div><!-- /.form-one__control -->

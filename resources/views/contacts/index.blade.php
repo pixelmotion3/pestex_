@@ -105,7 +105,7 @@
 			<div class="container-fluid">
 				<div class="main-header__inner">
 					<div class="main-header__logo">
-						<a href="/">
+						<a href="/home">
 							<img src="assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
 						</a>
 
@@ -165,7 +165,9 @@
                                 </p>
                                 <ul class="contact-two__info__box-wrapper">
                                     <li class="contact-two__info__box">
-                                        <div class="contact-two__info__box__icon"><i class="icon-phone-call"></i></div>
+                                        <div class="contact-two__info__box__icon">
+											<i class="icon-phone-call"></i>
+										</div>
                                         <h4 class="contact-two__info__box__title">{{ $contact_info[0]['h4-1'] }}</h4>
                                         <p class="contact-two__info__box__text"><a href="tel:025461556695">{{ $contact_info[0]['p-1'] }}</a></p>
                                     </li>

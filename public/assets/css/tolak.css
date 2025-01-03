@@ -2976,7 +2976,7 @@ h6 {
   position: relative;
   margin: -115px 0 0;
   padding: 0;
-  max-width: 327px;
+  max-width: 350px;
   background-color: #1b272a;
   border-radius: 6px 6px 0 0;
 }
@@ -15708,7 +15708,7 @@ body.megamenu-popup-active .mobile-nav__content {
   padding: 30px 30px 35px;
 }
 .service-details__sidebar__title {
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   font-size: 22px;
   letter-spacing: 0.33px;
   margin: 0 0 24px;

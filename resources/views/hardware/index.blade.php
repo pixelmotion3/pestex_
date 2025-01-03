@@ -135,7 +135,7 @@
 		<div class="container-fluid">
 			<div class="main-header__inner">
 				<div class="main-header__logo">
-					<a href="/">
+					<a href="/home">
 						<img src="assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
 					</a>
 
@@ -178,7 +178,7 @@
         </div><!-- /.container -->
     </section><!-- /.page-header -->
     <!-- Service Start -->
-    <section class="service-two service-two--page"style="padding: 0px !important;">
+    <section class="service-two service-two--page"style="padding: 20px !important;">
         <div class="container">
             <div class="sec-title-two text-center">
                 <h6 class="sec-title-two__tagline">
@@ -317,8 +317,8 @@
                         </div>
                         <div class="about-six__image__bg-shape"></div>
                         <div class="about-six__image__experiance">
-                            <h3 class="about-six__image__experiance__count"><span class="count-text" data-stop="25"
-                                    data-speed="1500"></span></h3><!-- /.about-six__image__experiance__number -->
+                            {{-- <h3 class="about-six__image__experiance__count"><span class="count-text" data-stop=""
+                                    data-speed="1500"></span></h3><!-- /.about-six__image__experiance__number --> --}}
                             {{ $main[0]['div'] }}
                         </div>
                     </div>
@@ -330,7 +330,7 @@
                             <h6 class="sec-title-three__tagline">
                                 {{-- <span class="sec-title-three__tagline__left-border"></span> --}}
                                 <span class="sec-title__tagline__left"></span>
-                                {{ $main[0]['h6-2'] }}
+                                <b><i>{{ $main[0]['h6-2'] }}</i></b>
                                 <span class="sec-title__tagline__right"></span>
                                 {{-- <span class="sec-title-three__tagline__right-border"></span> --}}
                             </h6><!-- /.sec-title-three__tagline -->
@@ -382,7 +382,7 @@
                             </li>
                         </ul>
                         <a href="/sustentabilidade" class="tolak-btn-two tolak-btn-two--home-six">
-                            <span>Sobre mais<i class="tolak-icons-two-arrow-right-short"></i></span>
+                            <span>SAIBA MAIS<i class="tolak-icons-two-arrow-right-short"></i></span>
                         </a>
                     </div><!-- /.about__content -->
                 </div><!-- /.col-lg-6 -->

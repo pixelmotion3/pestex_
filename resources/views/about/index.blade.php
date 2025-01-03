@@ -135,7 +135,7 @@
 		<div class="container-fluid">
 			<div class="main-header__inner">
 				<div class="main-header__logo">
-					<a href="/">
+					<a href="/home">
 						<img src="assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
 					</a>
 
@@ -202,7 +202,7 @@
                                             {{ $main[0]['p-1'] }}
                                         </p><!-- slider-text -->
                                         <div class="main-slider-three__btn">
-                                            <b><a href="/contactos" class="tolak-btn"><b>{{ $main[0]['div-a-b'] }}</b><span></span></a><!-- slider-btn --></b>
+                                            <b><a href="/contactos" class="tolak-btn"><b style="text-transform: uppercase;font-weight: 700;">{{ $main[0]['div-a-b'] }}</b><span></span></a><!-- slider-btn --></b>
 
                                         </div>
                                     </div>
@@ -222,7 +222,7 @@
             <div class="auto-container">
                 <div class="text-center light">
                     <h6 class="sec-title__tagline h6 text-white"><span
-                        class="sec-title__tagline__left"></span><b>{{ $service[0]['h6'] }}</b><span
+                        class="sec-title__tagline__left"></span><b style="color:#ff6600;">{{ $service[0]['h6'] }}</b><span
                         class="sec-title__tagline__right"></span></h6>
                     <h2 class="h3 text-white">{{ $service[0]['h2'] }}</h2>
                     <p class="text-white mt-5">{{ $service[0]['p'] }}</p>
@@ -242,7 +242,7 @@
                             <div class="why-choose-five__content">
                                 <div class="sec-title-four text-left">
                                     <h6 class="sec-title__tagline text-titles"><span
-                                        class="sec-title__tagline__left"></span>{{ $service[0]['h6-span'] }}<span
+                                        class="sec-title__tagline__left"></span><b><i>{{ $service[0]['h6-span'] }}</i></b><span
                                         class="sec-title__tagline__right"></span></h6>
 
                                     <h3 class="sec-title-four__title">{{ $service[0]['h3'] }}</h3><!-- /.sec-title-four__title -->
@@ -315,7 +315,7 @@
                                 <div class="sec-title-two text-left">
                                     <h6 class="sec-title-two__tagline">
 										<span class="sec-title__tagline__left"></span>
-										{{ $video[0]['h6-span'] }}
+										<b><i>{{ $video[0]['h6-span'] }}</i></b>
 										<span class="sec-title__tagline__right"></span>
 									</h6><!-- /.sec-title-two__tagline -->
                                     <h3 class="sec-title-two__title">{{ $video[0]['h3'] }}</h3><!-- /.sec-title-two__title -->
@@ -490,7 +490,7 @@
                                             <textarea name="message" placeholder="Mensagem"></textarea><!-- /# -->
                                         </div><!-- /.form-one__control -->
                                         <div class="form-one__control form-one__control--full">
-                                            <button type="submit" class="tolak-btn"><b>enviar</b><span></span></button>
+                                            <button type="submit" class="tolak-btn" style="font-weight: 700 !important;"><b><i>enviar</i></b><span></span></button>
                                         </div><!-- /.form-one__control -->
                                     </div><!-- /.form-one__group -->
                                 </form>
