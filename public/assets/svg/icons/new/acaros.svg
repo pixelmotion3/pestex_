@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg201" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 682.7 682.7">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0, .st1 {
+        fill: none;
+      }
+
+      .st1 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 20px;
+      }
+
+      .st2 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="st0" width="682.7" height="682.7"/>
+    </clipPath>
+  </defs>
+  <g id="g207">
+    <g id="g209">
+      <g class="st2">
+        <g id="g211">
+          <g id="g217">
+            <path id="path219" class="st1" d="M526.7,408.7c0,102.4-83,185.3-185.3,185.3s-185.3-83-185.3-185.3,83-244.7,185.3-244.7,185.3,142.4,185.3,244.7Z"/>
+          </g>
+          <g id="g221">
+            <path id="path223" class="st1" d="M198.9,265.8c35.5,38.3,86.2,62.2,142.4,62.2s107-23.9,142.4-62.2"/>
+          </g>
+          <g id="g225">
+            <path id="path227" class="st1" d="M442.1,211.6s106.8-19.1,84.6-144.5"/>
+          </g>
+          <g id="g229">
+            <path id="path231" class="st1" d="M476,662.7s59.6-46.2,40-192"/>
+          </g>
+          <g id="g233">
+            <path id="path235" class="st1" d="M512.3,328s101.5,29.8,150.4,169.4"/>
+          </g>
+          <g id="g237">
+            <path id="path239" class="st1" d="M483.8,265.8s108.7-8.1,178.9,62.2"/>
+          </g>
+          <g id="g241">
+            <path id="path243" class="st1" d="M240.6,211.6s-106.8-19.1-84.6-144.5"/>
+          </g>
+          <g id="g245">
+            <path id="path247" class="st1" d="M206.7,662.7s-59.6-46.2-40-192"/>
+          </g>
+          <g id="g249">
+            <path id="path251" class="st1" d="M170.4,328s-101.5,29.8-150.4,169.4"/>
+          </g>
+          <g id="g253">
+            <path id="path255" class="st1" d="M198.9,265.8s-108.7-8.1-178.9,62.2"/>
+          </g>
+          <g id="g257">
+            <path id="path259" class="st1" d="M371.4,92.1s23.3-33.4,23.3-72"/>
+          </g>
+          <g id="g261">
+            <path id="path263" class="st1" d="M311.3,92.1s-23.3-33.4-23.3-72"/>
+          </g>
+          <g id="g265">
+            <path id="path267" class="st1" d="M401.3,180.4v-36.4c0-33.1-26.9-60-60-60s-60,26.9-60,60v36.4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

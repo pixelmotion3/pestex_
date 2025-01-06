@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HardwarePageController;
+use App\Http\Controllers\FormsPageController;
 use App\Http\Controllers\ServicePageController;
 use App\Http\Controllers\AboutPageController;
 use App\Http\Controllers\ProfileController;
@@ -32,8 +33,15 @@ Route::post('/quote-form', [FrontPageController::class, 'QuoteForm'])->name('Fro
 Route::post('/contact-form', [FrontPageController::class, 'ContactForm'])->name('FrontPage.ContactForm');
 Route::get('/termos-servico', [FrontPageController::class, 'TermoServicos'])->name('FrontPage.TermoServicos');
 Route::get('/politica-privacidade', [FrontPageController::class, 'PoliticaPrivacidade'])->name('FrontPage.PoliticaPrivacidade');
+
+
+Route::get('/home/termos-servico', [FrontPageController::class, 'HomeTermoServicos'])->name('FrontPage.TermoServicos');
+Route::get('/home/politica-privacidade', [FrontPageController::class, 'HomePoliticaPrivacidade'])->name('FrontPage.PoliticaPrivacidade');
+
+
+
 Route::get('/servicos', [ServiceController::class, 'index'])->name('ServicePage.index');
-Route::get('/servicos/{id}', [ServiceController::class, 'show'])->name('ServicePage.show');
+Route::get('/servicos/{slug}', [ServiceController::class, 'show'])->name('ServicePage.show');
 Route::post('/quote-form/service', [ServiceController::class, 'ContactFormService'])->name('ServicePage.ContactFormService');
 
 Route::get('/sobre', [AboutController::class, 'index'])->name('About.index');
@@ -51,6 +59,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('/about-page', AboutPageController::class);
     Route::resource('/services-page', ServicePageController::class);
     Route::resource('/hardware-page', HardwarePageController::class);
+	Route::resource('/forms-page', FormsPageController::class);
 
     Route::resource('/sustainability-page', SustainabilityPageController::class);
     Route::resource('/ServiceDetails', ServiceDetailsController::class);

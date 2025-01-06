@@ -164,7 +164,7 @@
 		</div>
 	</header>
     <section class="page-header">
-        <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg-1-1.png)"></div>
+        <div class="page-header__bg" style="background-image: url(../{{ $main_screen[0]['bg-img-path-1'] }})"></div>
         <div class="page-header__shape"></div>
         <div class="page-header__shape-two"></div>
         <!-- /.page-header__bg -->
@@ -195,7 +195,7 @@
     </div> --}}
 	<div class="sec-title text-center" style="margin-top:200px;">
 		<h2 class="text-center h2 text-body" style="font-weight: 600;">{{ $video[0]['h2'] }}</h2>
-		<p class="text-center p mt-0 p-5"style="font-size: 1.5pts !important;margin: 0px 200px 0px;">{{ $video[0]['p'] }}</p>
+		<p class="text-center p mt-0 p-5"style="font-size: 1.5pts !important;margin: 0px 10% 0px;">{{ $video[0]['p'] }}</p>
 	</div>
     <section class="service-one">
         <div class="container" style="margin-top:-150px;">
@@ -206,14 +206,65 @@
                             <a href="/servicos/{{ $service->id }}">
                                 <div class="service-one__item text-center">
                                     <div class="service-one__item__image">
-                                        <img src="../{{ $service['img'] }}" alt="tolak">
+										<img src="../{{ $service['img'] }}" alt="tolak">
+
+
                                     </div>
                                     <div class="service-one__item__content" style="height: 300px;">
                                         <div class="service-one__item__icon">
-                                            <span class="icon-cooperation"></span>
+											@if ($service['a'] == "Roedores" || $service['a'] == "roedores")
+												<img src="../assets/svg/icons/new-white/rato.svg" width="60" alt="tolak">
+											@endif
+											@if ($service['a'] == "Baratas" || $service['a'] == "baratas")
+												<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak">
+											@endif
+											@if ($service['a'] == "Percevejos" || $service['a'] == "percevejos")
+												<img src="../assets/svg/icons/new-white/percevejo.svg" width="60" alt="tolak">
+											@endif
+											@if ($service['a'] == "Formigas" || $service['a'] == "formigas")
+												<img src="../assets/svg/icons/new-white/formiga.svg" width="60" alt="tolak">
+											@endif
+											@if ($service['a'] == "Processionária do Pinheiro" || $service['a'] == "processionária do pinheiro")
+												<img src="../assets/svg/icons/new-white/processionario-pinheiro.svg" width="60" alt="tolak">
+											@endif
+											@if ($service['a'] == "Mosquitos" || $service['a'] == "mosquitos")
+												<img src="../assets/svg/icons/new-white/mosquito.svg" width="60" alt="tolak">
+											@endif
+											@if ($service['a'] == "Ácaros" || $service['a'] == "ácaros")
+												<img src="../assets/svg/icons/new-white/acaros.svg" width="60" alt="tolak">
+											@endif
+											@if ($service['a'] == "Vespas" || $service['a'] == "vespas")
+												<img src="../assets/svg/icons/new-white/vespas.svg" width="60" alt="tolak">
+											@endif
+											@if ($service['a'] == "Moscas" || $service['a'] == "moscas")
+												<img src="../assets/svg/icons/new-white/mosca.svg" width="60" alt="tolak">
+											@endif
+											@if ($service['a'] == "Traças" || $service['a'] == "traças")
+												<img src="../assets/svg/icons/new-white/traca.svg" width="60" alt="tolak">
+											@endif
+											@if ($service['a'] == "Pulgas" || $service['a'] == "pulgas")
+												<img src="../assets/svg/icons/new-white/pulga.svg" width="60" alt="tolak">
+											@endif
+
+											@if ($service['a'] == "Gorgulho das Farinhas" || $service['a'] == "gorgulho das farinhas")
+												<img src="../assets/svg/icons/new-white/gorgulho-farinhas.svg" width="60" alt="tolak">
+											@endif
+
+											@if ($service['a'] == "Traça de Cereais" || $service['a'] == "traça de cereais")
+												<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak">
+											@endif
+
+											@if ($service['a'] == "Peixinho-de-Prata" || $service['a'] == "peixinho-de-prata")
+												<img src="../assets/svg/icons/new-white/peixinho-prata.svg" width="60" alt="tolak">
+											@endif
+
+											@if ($service['a'] == "Térmitas" || $service['a'] == "térmitas")
+												<img src="../assets/svg/icons/new-white/termita.svg" width="60" alt="tolak">
+											@endif
+                                            {{-- <span class="icon-cooperation"></span> --}}
                                         </div><!-- /.service-icon -->
                                         <h3 class="service-one__item__title">
-                                            <a href="servicos/{{ $service['id'] }}">{{ $service['a'] }}</a>
+                                            <a href="servicos/{{ $service['slug'] }}">{{ $service['a'] }}</a>
                                         </h3><!-- /.service-title -->
                                         <p class="service-one__item__text">
                                             {{ $service['p'] }}
@@ -403,7 +454,7 @@
 							</a>
 						</div>
 						<div class="footer-widget__image">
-							<img src="assets/images/resources/footer-about.jpg" alt="tolak">
+							<img src="assets/images/footer-img.webp" alt="tolak">
 						</div>
 					</div><!-- /.footer-widget -->
 				</div><!-- /.col-md-6 -->
@@ -449,8 +500,8 @@
 						<h2 class="footer-widget__title">Links Úteis</h2><!-- /.footer-widget__title -->
 						<ul class="list-unstyled footer-widget__links">
 							<li><a href="contactos" target="_blank">Contactos</a></li>
-							<li><a href="termos-servico" target="_blank">Termos de Serviço</a></li>
-							<li><a href="politica-privacidade" target="_blank">Política de Privacidade</a></li>
+							<li><a href="home/termos-servico" target="_blank">Termos de Serviço</a></li>
+							<li><a href="home/politica-privacidade" target="_blank">Política de Privacidade</a></li>
 							<li><a href="https://www.livroreclamacoes.pt/Inicio/ " target="_blank">Livro de Reclamações</a></li>
 						</ul><!-- /.list-unstyled footer-widget__links -->
 					</div><!-- /.footer-widget -->

@@ -332,7 +332,7 @@
 											<input class="form-check-input" type="checkbox"
 												name="confirmed" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-												Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+												Aceito os <a href="/home/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
 											</label>
 											@error('confirmed')
 												<span class="invalid-feedback" role="alert">
@@ -345,7 +345,7 @@
 											<input class="form-check-input"
 												type="checkbox" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+												Tenho conhecimento e aceito a <a href="/home/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
 											</label>
 										</div>
                                         <div class="col-md-12 ml-4 mb-5" style="max-width: 92%">
@@ -403,7 +403,7 @@
 												<input class="form-check-input" type="checkbox"
 													name="confirmed" id="flexCheckDefault" required>
 												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-													Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+													Aceito os <a href="/home/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
 												</label>
 												@error('confirmed')
 													<span class="invalid-feedback" role="alert">
@@ -416,7 +416,7 @@
 												<input class="form-check-input"
 													type="checkbox" id="flexCheckDefault" required>
 												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-													Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+													Tenho conhecimento e aceito a <a href="/home/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
 												</label>
 											</div>
                                             <div class="col-md-12 ml-4" style="max-width: 92%;">
@@ -665,7 +665,7 @@
 								@method('post')
 								<div class="row" style="border-radius:50%;">
 									<div class="col mt-3 border" style="margin-left:30px;margin-right:15px;"
-										id="home"">
+										id="home_desktop">
 										{{-- <i class="fa fa-home mt-3" aria-hidden="true" style="font-size:4rem;"></i> --}}
 										<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 63.2 64">
 											<!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
@@ -674,7 +674,7 @@
 										<p>Residência</p>
 									</div>
 									<div class="col border mt-3" style="margin-right:30px;margin-left:15px;"
-										id="company">
+										id="company_desktop">
 										{{-- <i class="far fa-building mt-3" aria-hidden="true" style="font-size:4rem;"></i> --}}
 										<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 63.2 64">
 											<!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
@@ -697,17 +697,17 @@
 									</div>
 									<input class="input-field rounded" type="hidden" name="customer_type"
 										id="customer_type" value="home" required>
-									<div class="input-container mt-3" style="width: 92%;" required>
+									{{-- <div class="input-container mt-3" style="width: 92%;" required>
 										<select name="products">
 											@isset($services)
                     							@foreach ($services as $service)
 													<option value="{{ $service['a'] }}" selected class="text-muted">{{ $service['a'] }}</option>
-													{{-- <option value="baratas" class="text-muted">Baratas</option>
-													<option value="percevejos" class="text-muted">Percevejos</option> --}}
+													<option value="baratas" class="text-muted">Baratas</option>
+													<option value="percevejos" class="text-muted">Percevejos</option>
 												@endforeach
                 							@endisset
 										</select>
-									</div>
+									</div> --}}
 									<div class="input-container mt-3" style="width: 92%;">
 										<i class="far fa-map-marker-alt icon" aria-hidden="true"></i>
 										<input class="input-field rounded" type="text" placeholder="Localidade"
@@ -756,7 +756,7 @@
 										<input class="form-check-input" type="checkbox"
 											name="confirmed" id="flexCheckDefault" required>
 										<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-											Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+											Aceito os <a href="/home/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
 										</label>
 										@error('confirmed')
 											<span class="invalid-feedback" role="alert">
@@ -769,7 +769,7 @@
 										<input class="form-check-input"
 											type="checkbox" id="flexCheckDefault" required>
 										<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-											Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+											Tenho conhecimento e aceito a <a href="/home/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
 										</label>
 									</div>
 									{{-- <div class="form-check">
@@ -822,7 +822,7 @@
 											<input class="form-check-input" type="checkbox"
 												name="confirmed" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-												Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+												Aceito os <a href="/home/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
 											</label>
 											@error('confirmed')
 												<span class="invalid-feedback" role="alert">
@@ -835,7 +835,7 @@
 											<input class="form-check-input"
 												type="checkbox" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+												Tenho conhecimento e aceito a <a href="/home/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
 											</label>
 										</div>
 										<div class="col-md-12 ml-4" style="max-width: 92%;">
@@ -879,7 +879,7 @@
 								@method('post')
 								<div class="row" style="border-radius:50%;">
 									<div class="col mt-3 border" style="margin-left:30px;margin-right:15px;"
-										id="home"">
+										id="home_mobile">
 										{{-- <i class="fa fa-home mt-3" aria-hidden="true" style="font-size:4rem;"></i> --}}
 										<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 63.2 64">
 											<!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
@@ -888,7 +888,7 @@
 										<p>Residência</p>
 									</div>
 									<div class="col border mt-3" style="margin-right:30px;margin-left:15px;"
-										id="company">
+										id="company_mobile">
 										{{-- <i class="far fa-building mt-3" aria-hidden="true" style="font-size:4rem;"></i> --}}
 										<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 63.2 64">
 											<!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
@@ -911,13 +911,13 @@
 									</div>
 									<input class="input-field rounded" type="hidden" name="customer_type"
 										id="customer_type" value="home" required>
-									<div class="input-container mt-3" style="width: 92%;" required>
+									{{-- <div class="input-container mt-3" style="width: 92%;" required>
 										<select name="products">
 											<option value="ratos" selected class="text-muted">Ratos</option>
 											<option value="baratas" class="text-muted">Baratas</option>
 											<option value="percevejos" class="text-muted">Percevejos</option>
 										</select>
-									</div>
+									</div> --}}
 									<div class="input-container mt-3" style="width: 92%;">
 										<i class="far fa-map-marker-alt icon" aria-hidden="true"></i>
 										<input class="input-field rounded" type="text" placeholder="Localidade"
@@ -966,7 +966,7 @@
 										<input class="form-check-input" type="checkbox"
 											name="confirmed" id="flexCheckDefault" required>
 										<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-											Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+											Aceito os <a href="/home/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
 										</label>
 										@error('confirmed')
 											<span class="invalid-feedback" role="alert">
@@ -979,7 +979,7 @@
 										<input class="form-check-input"
 											type="checkbox" id="flexCheckDefault" required>
 										<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-											Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+											Tenho conhecimento e aceito a <a href="/home/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
 										</label>
 									</div>
 									{{-- <div class="form-check">
@@ -1033,7 +1033,7 @@
 											<input class="form-check-input" type="checkbox"
 												name="confirmed" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-												Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+												Aceito os <a href="/home/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
 											</label>
 											@error('confirmed')
 												<span class="invalid-feedback" role="alert">
@@ -1046,7 +1046,7 @@
 											<input class="form-check-input"
 												type="checkbox" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+												Tenho conhecimento e aceito a <a href="/home/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
 											</label>
 										</div>
 										<div class="col-md-12 ml-4" style="max-width: 92%;">
@@ -1846,7 +1846,7 @@
 											<div class="pull-left" style="margin-left: 20px;">
 												<input class="form-check-input" type="checkbox" name="confirmed" id="flexCheckDefault" required="">
 												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;width: 280px;max-width:580px; color:grey;font-size:12px;">
-													Aceito os <a href="/termos-servico"  target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+													Aceito os <a href="/home/termos-servico"  target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
 												</label>
 											</div>
 										</div>
@@ -1854,7 +1854,7 @@
 											<div class="pull-left" style="margin-left: 20px;">
 												<input class="form-check-input" type="checkbox" id="flexCheckDefault" required="">
 												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;width: 280px;max-width:580px;color:grey;font-size:12px;">
-													Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+													Tenho conhecimento e aceito a <a href="/home/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
 												</label>
 											</div>
 										</div>
@@ -2011,22 +2011,40 @@
                 $("#myTabContent").css("border-top-left-radius", "0px");
             })
 
-            $("#home").click(function() {
-                $('#company').removeClass('active-tab');
-                $('#company').addClass('border');
-                $('#home').removeClass('border');
-                $('#home').addClass('active-tab');
+            $("#home_mobile").click(function() {
+                $('#company_mobile').removeClass('active-tab');
+                $('#company_mobile').addClass('border');
+                $('#home_mobile').removeClass('border');
+                $('#home_mobile').addClass('active-tab');
                 $('#customer_type').val('home');
-                $("#home").val("home");
+                $("#home_mobile").val("home");
 
             })
-            $("#company").click(function() {
-                $('#home').removeClass('active-tab');
-                $('#home').addClass('border');
-                $('#company').removeClass('border');
-                $('#company').addClass('active-tab');
+            $("#company_mobile").click(function() {
+                $('#home_mobile').removeClass('active-tab');
+                $('#home_mobile').addClass('border');
+                $('#company_mobile').removeClass('border');
+                $('#company_mobile').addClass('active-tab');
                 $('#customer_type').val('company');
-                $("#company").val("company");
+                $("#company_mobile").val("company");
+            })
+
+			$("#home_desktop").click(function() {
+                $('#company_desktop').removeClass('active-tab');
+                $('#company_desktop').addClass('border');
+                $('#home_desktop').removeClass('border');
+                $('#home_desktop').addClass('active-tab');
+                $('#customer_type').val('home');
+                $("#home_desktop").val("home");
+
+            })
+            $("#company_desktop").click(function() {
+                $('#home_desktop').removeClass('active-tab');
+                $('#home_desktop').addClass('border');
+                $('#company_desktop').removeClass('border');
+                $('#company_desktop').addClass('active-tab');
+                $('#customer_type').val('company');
+                $("#company_desktop").val("company");
             })
 
             $("#modal-contact-tab").click(function() {

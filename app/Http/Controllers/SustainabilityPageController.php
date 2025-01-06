@@ -15,7 +15,7 @@ class SustainabilityPageController extends Controller
     public function index()
     {
         $main = SustainabilityPage::where('id', 1)->get()->toArray();
-        
+
         return view('sustainability-page.index', [
             'main' => $main
         ]);
@@ -29,84 +29,91 @@ class SustainabilityPageController extends Controller
         if ($request->has('form0')) {
 
             if ($request->hasFile('bg-img')) {
-                $path = $request->file('bg-img')->store('assets/images');     
+                $path = $request->file('bg-img')->store('assets/images');
                 $query = SustainabilityPage::where('id',1)->update([
-                    'bg-img' => 'storage/' . $path 
-                ]);                 
+                    'bg-img' => 'storage/' . $path
+                ]);
+            }
+
+			if ($request->hasFile('bg-img-2')) {
+                $path = $request->file('bg-img-2')->store('assets/images');
+                $query = SustainabilityPage::where('id',1)->update([
+                    'bg-img-2' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img')) {
-                $path = $request->file('img')->store('assets/images');     
+                $path = $request->file('img')->store('assets/images');
                 $query = SustainabilityPage::where('id',1)->update([
-                    'img' => 'storage/' . $path 
-                ]);                 
+                    'img' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-1')) {
-                $path = $request->file('img-1')->store('assets/images');     
+                $path = $request->file('img-1')->store('assets/images');
                 $query = SustainabilityPage::where('id',1)->update([
-                    'img-1' => 'storage/' . $path 
-                ]);                 
+                    'img-1' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-2')) {
-                $path = $request->file('img-2')->store('assets/images');     
+                $path = $request->file('img-2')->store('assets/images');
                 $query = SustainabilityPage::where('id',1)->update([
-                    'img-2' => 'storage/' . $path 
-                ]);                 
+                    'img-2' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-3')) {
-                $path = $request->file('img-3')->store('assets/images');     
+                $path = $request->file('img-3')->store('assets/images');
                 $query = SustainabilityPage::where('id',1)->update([
-                    'img-3' => 'storage/' . $path 
-                ]);                 
+                    'img-3' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-4-1')) {
-                $path = $request->file('img-4-1')->store('assets/images');     
+                $path = $request->file('img-4-1')->store('assets/images');
                 $query = SustainabilityPage::where('id',1)->update([
-                    'img-4-1' => 'storage/' . $path 
-                ]);                 
+                    'img-4-1' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-5')) {
-                $path = $request->file('img-5')->store('assets/images');     
+                $path = $request->file('img-5')->store('assets/images');
                 $query = SustainabilityPage::where('id',1)->update([
-                    'img-5' => 'storage/' . $path 
-                ]);                 
+                    'img-5' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-6')) {
-                $path = $request->file('img-6')->store('assets/images');     
+                $path = $request->file('img-6')->store('assets/images');
                 $query = SustainabilityPage::where('id',1)->update([
-                    'img-6' => 'storage/' . $path 
-                ]);                 
+                    'img-6' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-7')) {
-                $path = $request->file('img-7')->store('assets/images');     
+                $path = $request->file('img-7')->store('assets/images');
                 $query = SustainabilityPage::where('id',1)->update([
-                    'img-7' => 'storage/' . $path 
-                ]);                 
+                    'img-7' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-8')) {
-                $path = $request->file('img-8')->store('assets/images');     
+                $path = $request->file('img-8')->store('assets/images');
                 $query = SustainabilityPage::where('id',1)->update([
-                    'img-8' => 'storage/' . $path 
-                ]);                 
+                    'img-8' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-9')) {
-                $path = $request->file('img-9')->store('assets/images');     
+                $path = $request->file('img-9')->store('assets/images');
                 $query = SustainabilityPage::where('id',1)->update([
-                    'img-9' => 'storage/' . $path 
-                ]);                 
+                    'img-9' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-10')) {
-                $path = $request->file('img-10')->store('assets/images');     
+                $path = $request->file('img-10')->store('assets/images');
                 $query = SustainabilityPage::where('id',1)->update([
-                    'img-10' => 'storage/' . $path 
-                ]);                 
+                    'img-10' => 'storage/' . $path
+                ]);
             }
             $query = SustainabilityPage::where('id',1)->update([
                 'h2' => $request->input('h2'),
@@ -150,6 +157,9 @@ class SustainabilityPageController extends Controller
                 'p-6' => $request->input('p-6'),
                 'h3-a-2' => $request->input('h3-a-2'),
                 'p-7' => $request->input('p-7'),
+				'link-1' => $request->input('link-1'),
+                'link-2' => $request->input('link-2'),
+                'link-3' => $request->input('link-3'),
             ]);
             if($query){
                 return redirect()->route('sustainability-page.index');

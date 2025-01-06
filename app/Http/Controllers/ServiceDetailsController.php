@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Str;
 use App\Http\Requests\StoreServiceDetailsRequest;
 use App\Http\Requests\UpdateServiceDetailsRequest;
 use App\Models\ServiceDetails;
@@ -17,7 +17,7 @@ class ServiceDetailsController extends Controller
     {
          if ($request->has('form0')) {
             if ($request->hasFile('img')) {
-                $path = $request->file('img')->store('assets/images');  
+                $path = $request->file('img')->store('assets/images');
                 $query = ServiceDetails::create([
                     'img' => 'storage/' . $path,
                     'a' => $request->input('a'),
@@ -26,12 +26,13 @@ class ServiceDetailsController extends Controller
                     'p-1' => $request->input('p-1'),
                     'p-2' => $request->input('p-2'),
                     'p-3' => $request->input('p-3'),
+					'slug' => Str::slug($request->input('a'))
                 ]);
 
             }
             if ($query) {
                 return redirect()->route('services-page.index');
-            } 
+            }
         }
         return back();
     }
@@ -43,14 +44,9 @@ class ServiceDetailsController extends Controller
     {
         if ($request->has('form0')) {
 
-            if ($request->hasFile('img')) { ;
-                $path = $request->file('img')->store('assets/images');     
-                $query = ServiceDetails::where('id',$id)->update([
-                    'img' => 'storage/' . $path 
-                ]);                 
-            }
-            
-        
+
+
+
             $query = ServiceDetails::where('id',$id)->update([
                 'a' => $request->input('a'),
                 'p' => $request->input('p'),
@@ -58,118 +54,134 @@ class ServiceDetailsController extends Controller
                 'p-1' => $request->input('p-1'),
                 'p-2' => $request->input('p-2'),
                 'p-3' => $request->input('p-3'),
+				'slug' => Str::slug($request->input('a'))
             ]);
             if($query){
+
+				if ($request->hasFile('img')) { ;
+					$path = $request->file('img')->store('assets/images');
+					$query = ServiceDetails::where('id',$id)->update([
+						'img' => 'storage/' . $path
+					]);
+				}
+
+				if ($request->hasFile('img-2')) { ;
+					$path = $request->file('img-2')->store('assets/images');
+					$query = ServiceDetails::where('id',$id)->update([
+						'img-2' => 'storage/' . $path
+					]);
+				}
+
                 return redirect()->route('services-page.index');
-            }            
+            }
         }
         if ($request->has('form1')) {
 
             if ($request->hasFile('bg-img')) {
-                $path = $request->file('bg-img')->store('assets/images');     
+                $path = $request->file('bg-img')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'bg-img' => 'storage/' . $path 
-                ]);                 
+                    'bg-img' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img')) {
-                $path = $request->file('img')->store('assets/images');     
+                $path = $request->file('img')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img' => 'storage/' . $path 
-                ]);                 
+                    'img' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-1')) {
-                $path = $request->file('img-1')->store('assets/images');     
+                $path = $request->file('img-1')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img-1' => 'storage/' . $path 
-                ]);                 
+                    'img-1' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-2')) {
-                $path = $request->file('img-2')->store('assets/images');     
+                $path = $request->file('img-2')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img-2' => 'storage/' . $path 
-                ]);                 
+                    'img-2' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-3')) {
-                $path = $request->file('img-3')->store('assets/images');     
+                $path = $request->file('img-3')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img-3' => 'storage/' . $path 
-                ]);                 
+                    'img-3' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-4')) {
-                $path = $request->file('img-4')->store('assets/images');     
+                $path = $request->file('img-4')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img-4' => 'storage/' . $path 
-                ]);                 
+                    'img-4' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-5')) {
-                $path = $request->file('img-5')->store('assets/images');     
+                $path = $request->file('img-5')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img-5' => 'storage/' . $path 
-                ]);                 
+                    'img-5' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-6')) {
-                $path = $request->file('img-6')->store('assets/images');     
+                $path = $request->file('img-6')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img-6' => 'storage/' . $path 
-                ]);                 
+                    'img-6' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-7')) {
-                $path = $request->file('img-7')->store('assets/images');     
+                $path = $request->file('img-7')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img-7' => 'storage/' . $path 
-                ]);                 
+                    'img-7' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-8')) {
-                $path = $request->file('img-8')->store('assets/images');     
+                $path = $request->file('img-8')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img-8' => 'storage/' . $path 
-                ]);                 
+                    'img-8' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-9')) {
-                $path = $request->file('img-9')->store('assets/images');     
+                $path = $request->file('img-9')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img-9' => 'storage/' . $path 
-                ]);                 
+                    'img-9' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-10')) {
-                $path = $request->file('img-10')->store('assets/images');     
+                $path = $request->file('img-10')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img-10' => 'storage/' . $path 
-                ]);                 
+                    'img-10' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-11')) {
-                $path = $request->file('img-11')->store('assets/images');     
+                $path = $request->file('img-11')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img-11' => 'storage/' . $path 
-                ]);                 
+                    'img-11' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-12')) {
-                $path = $request->file('img-12')->store('assets/images');     
+                $path = $request->file('img-12')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img-12' => 'storage/' . $path 
-                ]);                 
+                    'img-12' => 'storage/' . $path
+                ]);
             }
             if ($request->hasFile('img-13')) {
-                $path = $request->file('img-13')->store('assets/images');     
+                $path = $request->file('img-13')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img-13' => 'storage/' . $path 
-                ]);                 
+                    'img-13' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-14')) {
-                $path = $request->file('img-14')->store('assets/images');     
+                $path = $request->file('img-14')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img-14' => 'storage/' . $path 
-                ]);                 
+                    'img-14' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-15')) {
-                $path = $request->file('img-15')->store('assets/images');     
+                $path = $request->file('img-15')->store('assets/images');
                 $query = ServiceDetailsShow::where('id',1)->update([
-                    'img-15' => 'storage/' . $path 
-                ]);                 
+                    'img-15' => 'storage/' . $path
+                ]);
             }
 
             $query = ServiceDetailsShow::where('id',1)->update([
@@ -225,10 +237,11 @@ class ServiceDetailsController extends Controller
                 'li-4' => $request->input('li-4'),
                 'h3-7' => $request->input('h3-7'),
                 'p-10' => $request->input('p-10'),
+
             ]);
             if($query){
                 return redirect()->route('services-page.index');
-            } 
+            }
         }
         return back();
     }
@@ -248,7 +261,7 @@ class ServiceDetailsController extends Controller
     public function fetch(Request $request)
     {
         $query = ServiceDetails::where('service_id', $request->input('service_id'))->get();
-        
+
         return response()->json($query);
     }
 }

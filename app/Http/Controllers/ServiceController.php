@@ -37,16 +37,17 @@ class ServiceController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Request $request, $id)
+    public function show(Request $request, $slug)
     {
-        $service_detail = ServiceDetails::findOrFail($id)->toArray();
+        $service_detail = ServiceDetails::where('slug',$slug)->get();
         $service_detail_show = ServiceDetailsShow::findOrFail(1)->toArray();
-        $methods = Method::where('service_id',$id)->get();
+        $methods = Method::where('service_id',$service_detail[0]['id'])->get();
         $services = ServiceDetails::all();
         //dd($service_detail);
+
         return view('services.show', [
             'services' => $services,
-            'service_detail' => $service_detail,
+            'service_detail' => $service_detail[0],
             'methods' => $methods,
             'service_detail_show'=> $service_detail_show
         ]);

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\ServicesMainScreen;
 use App\Models\ServiceDetails;
 use App\Models\ServiceDetailsShow;
@@ -32,6 +33,14 @@ class ServicePageController extends Controller
                 $path = $request->file('bg-img-path')->store('assets/images');
                 $query = ServicesMainScreen::where('id',1)->update([
                     'bg-img-path' => 'storage/' . $path
+                ]);
+            }
+
+
+			if ($request->hasFile('bg-img-path-1')) { ;
+                $path = $request->file('bg-img-path-1')->store('assets/images');
+                $query = ServicesMainScreen::where('id',1)->update([
+                    'bg-img-path-1' => 'storage/' . $path
                 ]);
             }
             if ($request->hasFile('bg-img')) {
@@ -98,7 +107,7 @@ class ServicePageController extends Controller
                 'p-a' => $request->input('p-a'),
                 'h6' => $request->input('h6'),
                 'h3-1' => $request->input('h3-1'),
-                'p-1' => $request->input('p-1'),
+                'p-1' => $request->input('p-1')
             ]);
             if($query){
                 return redirect()->route('services-page.index');

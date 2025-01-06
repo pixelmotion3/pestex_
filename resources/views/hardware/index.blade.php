@@ -456,7 +456,7 @@
                             </a>
                         </div>
                         <div class="footer-widget__image">
-                            <img src="assets/images/resources/footer-about.jpg" alt="tolak">
+                            <img src="assets/images/footer-img.webp" alt="tolak">
                         </div>
                     </div><!-- /.footer-widget -->
                 </div><!-- /.col-md-6 -->
@@ -502,8 +502,8 @@
                         <h2 class="footer-widget__title">Links Úteis</h2><!-- /.footer-widget__title -->
                         <ul class="list-unstyled footer-widget__links">
                             <li><a href="contactos" target="_blank">Contactos</a></li>
-                            <li><a href="termos-servico" target="_blank">Termos de Serviço</a></li>
-                            <li><a href="politica-privacidade" target="_blank">Política de Privacidade</a></li>
+                            <li><a href="home/termos-servico" target="_blank">Termos de Serviço</a></li>
+                            <li><a href="home/politica-privacidade" target="_blank">Política de Privacidade</a></li>
                             <li><a href="https://www.livroreclamacoes.pt/Inicio/ " target="_blank">Livro de
                                     Reclamações</a></li>
                         </ul><!-- /.list-unstyled footer-widget__links -->

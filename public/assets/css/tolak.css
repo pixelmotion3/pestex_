@@ -10175,6 +10175,21 @@ body.megamenu-popup-active .mobile-nav__content {
   background-color: var(--tolak-black, #051d1f);
   padding: 120px 0;
 }
+
+
+@media (min-width: 767px) {
+    .faq-one-faaq {
+		display: flex !important;
+		flex-wrap: nowrap !important;
+	}
+}
+
+
+.faq-one-faaq {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .faq-one--dark {
   background-position: center center;
   background-size: cover;
@@ -22962,7 +22977,22 @@ body.boxed-wrapper .main-slider-one__floating-text {
   .why-choose-five {
     padding: 80px 0;
   }
+
 }
+
+
+@media (max-width: 767px) {
+    .why-choose-five-container {
+		padding: 200px 0 0 0 !important;
+	  }
+}
+
+
+.why-choose-five-container {
+	padding: 200px 200px 100px 200px;
+}
+
+
 .why-choose-five__image {
   position: relative;
   z-index: 2;

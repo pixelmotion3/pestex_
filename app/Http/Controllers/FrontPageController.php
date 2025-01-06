@@ -130,6 +130,75 @@ class FrontPageController extends Controller
         ]);
     }
 
+
+	public function HomeTermoServicos()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+
+
+        return view('home-termos.termos', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+			'terms_service' => $landing_12page
+        ]);
+    }
+
+
+	public function HomePoliticaPrivacidade()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+
+
+        return view('home-politica-privacidade.privacidade', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+			'terms_service' => $landing_12page,
+			'privacy_policy' => $landing_13page
+
+        ]);
+    }
+
 	public function PoliticaPrivacidade()
     {
         $landing_page = LandingPage::where('id',1)->get()->toArray();
@@ -178,7 +247,7 @@ class FrontPageController extends Controller
         //dd($request->all());
         $query = quote_forms::create([
             'customer_type' => $request->input('customer_type'),
-            'products' => $request->input('products'),
+            'products' => "",//$request->input('products'),
             'locality' => $request->input('locality'),
             'name' => $request->input('name'),
             'email' => $request->input('email'),

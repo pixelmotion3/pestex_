@@ -479,7 +479,7 @@
                                     <span class="tolak-icons-two-solution-1"></span>
                                 </div><!-- /.service-icon -->
                                 <h3 class="service-five__item__title">
-                                    <a href="{{ $main[0]['link-1'] }}">{{ $main[0]['h3-a'] }}</a>
+                                    <a href="/servicos/{{ $main[0]['link-1'] }}">{{ $main[0]['h3-a'] }}</a>
                                 </h3><!-- /.service-title -->
                                 <p class="service-five__item__text">
                                     {{ $main[0]['p-5'] }}
@@ -497,7 +497,7 @@
                                     <span class=" tolak-icons-two-solutions-three"></span>
                                 </div><!-- /.service-icon -->
                                 <h3 class="service-five__item__title">
-                                    <a href="{{ $main[0]['link-2'] }}">{{ $main[0]['h3-a-1'] }}</a>
+                                    <a href="/servicos{{ $main[0]['link-2'] }}">{{ $main[0]['h3-a-1'] }}</a>
                                 </h3><!-- /.service-title -->
                                 <p class="service-five__item__text">
                                     {{ $main[0]['p-6'] }}
@@ -515,7 +515,7 @@
                                     <span class="tolak-icons-two-cybersecurity"></span>
                                 </div><!-- /.service-icon -->
                                 <h3 class="service-five__item__title">
-                                    <a href="{{ $main[0]['link-3'] }}"> {{ $main[0]['h3-a-2'] }}</a>
+                                    <a href="/servicos{{ $main[0]['link-3'] }}"> {{ $main[0]['h3-a-2'] }}</a>
                                 </h3><!-- /.service-title -->
                                 <p class="service-five__item__text">
                                     {{ $main[0]['p-7'] }}
@@ -594,7 +594,7 @@
 							</a>
 						</div>
 						<div class="footer-widget__image">
-							<img src="assets/images/resources/footer-about.jpg" alt="tolak">
+							<img src="assets/images/footer-img.webp" alt="tolak">
 						</div>
 					</div><!-- /.footer-widget -->
 				</div><!-- /.col-md-6 -->
@@ -640,8 +640,8 @@
 						<h2 class="footer-widget__title">Links Úteis</h2><!-- /.footer-widget__title -->
 						<ul class="list-unstyled footer-widget__links">
 							<li><a href="contactos" target="_blank">Contactos</a></li>
-							<li><a href="termos-servico" target="_blank">Termos de Serviço</a></li>
-							<li><a href="politica-privacidade" target="_blank">Política de Privacidade</a></li>
+							<li><a href="home/termos-servico" target="_blank">Termos de Serviço</a></li>
+							<li><a href="home/politica-privacidade" target="_blank">Política de Privacidade</a></li>
 							<li><a href="https://www.livroreclamacoes.pt/Inicio/ " target="_blank">Livro de Reclamações</a></li>
 						</ul><!-- /.list-unstyled footer-widget__links -->
 					</div><!-- /.footer-widget -->

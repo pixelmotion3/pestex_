@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg4191" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 682.7 682.7">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2 {
+        fill: none;
+      }
+
+      .st1 {
+        stroke-width: 21px;
+      }
+
+      .st1, .st2 {
+        stroke: #000;
+        stroke-miterlimit: 13.3;
+      }
+
+      .st2 {
+        stroke-width: 19px;
+      }
+
+      .st3 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="st0" width="682.7" height="682.7"/>
+    </clipPath>
+  </defs>
+  <g id="g4197">
+    <g id="g4199">
+      <g class="st3">
+        <g id="g4201">
+          <g id="g4207">
+            <path id="path4209" class="st2" d="M442.9,274.8c-50.5-66-4.5-138.8,58.4-138.8s80,35.8,80,80-9.7,43.7-25.2,58.3c33,30.3,64.5,64,91.2,100.7,9.9,13.7,15.3,30.1,15.3,47.1v34H195.4c-96.9,0-175.4-78.5-175.4-175.4S101.6,106.1,196,106.7c13.8,0,27.8,1.6,41.9,5.1l23.4,5.9c58.5,14.6,115.6,35.5,167.5,64.5"/>
+          </g>
+          <g id="g4211">
+            <path id="path4213" class="st1" d="M521.3,336h40"/>
+          </g>
+          <g id="g4215">
+            <path id="path4217" class="st2" d="M220,456H60c-22.1,0-40,17.9-40,40s17.9,40,40,40h280c22.1,0,41.3,17.9,41.3,40v20"/>
+          </g>
+          <g id="g4219">
+            <path id="path4221" class="st2" d="M160,216h20c44.2,0,80,35.8,80,80s-35.8,80-80,80h-20"/>
+          </g>
+          <g id="g4223">
+            <path id="path4225" class="st2" d="M180,376h80c44.2,0,80,35.8,80,80"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

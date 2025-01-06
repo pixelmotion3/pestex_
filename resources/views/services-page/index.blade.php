@@ -704,6 +704,27 @@
                                                     enctype="multipart/form-data">
                                                     @csrf
                                                     @method('PUT')
+
+													<div class="col-12 mt-5 form-group">
+                                                        <div class="card-header">
+                                                            <label for="validationCustom01" class="form-label"
+                                                                style="float:left;margin-left:-22px;">Background
+                                                                Image 1</label>
+                                                        </div>
+                                                        <div class="card">
+                                                            <img src="{{ $services_page[0]['bg-img-path-1'] }}"
+                                                                class="img-fluid" alt="..."
+                                                                style="max-height:885px;max-width:1920px;">
+                                                            <div class="card-body">
+                                                                <label for="exampleFormControlFile2">Example file
+                                                                    input</label>
+                                                                <input type="file" class="form-control-file"
+                                                                    id="exampleFormControlFile2" name="bg-img-path-1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
                                                     <div class="col-12 mt-5">
                                                         <label for="validationCustom01" class="form-label"
                                                             style="float:left;">H2</label>
@@ -913,6 +934,8 @@
                                                             value="{{ $services_page[0]['p-1'] }}" name="p-1"
                                                             required>
                                                     </div>
+
+
                                                     <div class="col-12">
                                                         <button class="btn btn-primary w-100" type="submit"
                                                             name="form0">Submit</button>
@@ -1041,6 +1064,28 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
+																					<div class="col-12 mt-5 form-group">
+                                                                                        <div class="card-header">
+                                                                                            <label for="validationCustom01"
+                                                                                                class="form-label"
+                                                                                                style="float:left;margin-left:-22px;">Background
+                                                                                                Image</label>
+                                                                                        </div>
+                                                                                        <div class="card">
+                                                                                            <img src="{{ $service['img-2'] }}"
+                                                                                                class="img-fluid"
+                                                                                                alt="...">
+                                                                                            <div class="card-body">
+                                                                                                <label
+                                                                                                    for="exampleFormControlFile2">Example
+                                                                                                    file input</label>
+                                                                                                <input type="file"
+                                                                                                    class="form-control-file"
+                                                                                                    id="exampleFormControlFile2"
+                                                                                                    name="img-2">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
                                                                                     <div class="col-12 mt-5">
                                                                                         <label for="validationCustom01"
                                                                                             class="form-label"
@@ -1101,6 +1146,14 @@
                                                                                             value={{ $service['p-3'] }}
                                                                                             name="p-3" required>
                                                                                     </div>
+																					<div class="col-12 mt-5">
+																						<label for="validationCustom01" class="form-label"
+																							style="float:left;">Slug</label>
+																						<input type="text" class="form-control"
+																							id="validationCustom01"
+																							value="{{ $service['slug'] }}" name="slug"
+																							disabled>
+																					</div>
                                                                                     <div class="modal-footer">
                                                                                         <button type="button"
                                                                                             class="btn btn-secondary"
@@ -1212,6 +1265,7 @@
                                                                                             id="validationCustom01"
                                                                                             name="p-1" required>
                                                                                     </div>
+
                                                                                     <div class="col-12 mt-5">
                                                                                         <input type="hidden"
                                                                                             class="form-control service_id"
@@ -1782,6 +1836,7 @@
                                                                 <label for="validationCustom01"
                                                                     class="form-label"
                                                                     style="float:left;">P</label>
+
                                                                 <input type="text"
                                                                     class="form-control"
                                                                     id="validationCustom01"
@@ -1793,11 +1848,12 @@
                                                                 <label for="validationCustom01"
                                                                     class="form-label"
                                                                     style="float:left;">P</label>
-                                                                <input type="text"
+																<textarea id="validationCustom01" name="p-6" class="form-control" required>{{ $service_details_page[0]['p-6'] }}</textarea>
+                                                                {{-- <input type="text"
                                                                     class="form-control"
                                                                     id="validationCustom01"
                                                                     value="{{ $service_details_page[0]['p-6'] }}"
-                                                                    name="p-6" required>
+                                                                    name="p-6" required> --}}
                                                             </div>
 
 
@@ -1816,11 +1872,12 @@
                                                                 <label for="validationCustom01"
                                                                     class="form-label"
                                                                     style="float:left;">P</label>
-                                                                <input type="text"
+																<textarea id="validationCustom01" name="p-7" class="form-control" required>{{ $service_details_page[0]['p-7'] }}</textarea>
+                                                                {{-- <input type="text"
                                                                     class="form-control"
                                                                     id="validationCustom01"
                                                                     value="{{ $service_details_page[0]['p-7'] }}"
-                                                                    name="p-7" required>
+                                                                    name="p-7" required> --}}
                                                             </div>
                                                             <div class="col-12 mt-5">
                                                                 <label for="validationCustom01"

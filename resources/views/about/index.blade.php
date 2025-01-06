@@ -229,7 +229,7 @@
                 </div>
             </div>
         </section>
-        <div class="mt-5" style="padding: 200px 200px 100px 200px;">
+        <div class="mt-5 why-choose-five-container">
             <section class="why-choose-five bg-light p-5" style="border-radius:30px; margin-top: -200px;">
                 <div class="container">
                     <div class="row ">
@@ -302,7 +302,7 @@
 
         <!-- service-section end -->
         <h2 class="text-center h2 text-body" style="font-weight: 600;">{{ $video[0]['h2'] }}</h2>
-        <p class="text-center p mt-0 p-5"style="font-size: 1.5pts !important;margin: 0px 200px 0px;">{{ $video[0]['p'] }}</p>
+        <p class="text-center p mt-0 p-5"style="font-size: 1.5pts !important;margin: 0px 10% 0px;">{{ $video[0]['p'] }}</p>
         <section class="cta-four">
             <div class="container mt-5">
                 <div class="cta-four__bg" style="background-image: url({{ $video[0]['bg-img'] }});">
@@ -563,7 +563,7 @@
                                 </a>
                             </div>
                             <div class="footer-widget__image">
-                                <img src="assets/images/resources/footer-about.jpg" alt="tolak">
+                                <img src="assets/images/footer-img.webp" alt="tolak">
                             </div>
                         </div><!-- /.footer-widget -->
                     </div><!-- /.col-md-6 -->
@@ -609,8 +609,8 @@
                             <h2 class="footer-widget__title">Links Úteis</h2><!-- /.footer-widget__title -->
                             <ul class="list-unstyled footer-widget__links">
                                 <li><a href="contactos" target="_blank">Contactos</a></li>
-                                <li><a href="termos-servico" target="_blank">Termos de Serviço</a></li>
-                                <li><a href="politica-privacidade" target="_blank">Política de Privacidade</a></li>
+                                <li><a href="home/termos-servico" target="_blank">Termos de Serviço</a></li>
+                                <li><a href="home/politica-privacidade" target="_blank">Política de Privacidade</a></li>
                                 <li><a href="https://www.livroreclamacoes.pt/Inicio/ " target="_blank">Livro de Reclamações</a></li>
                             </ul><!-- /.list-unstyled footer-widget__links -->
                         </div><!-- /.footer-widget -->
