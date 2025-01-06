@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="{{ asset('assets/vendors/nouislider/nouislider.pips.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/tiny-slider/tiny-slider.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/tolak-icons/style.css') }}" />
+	<link rel="stylesheet" href="{{ asset('assets/vendors/tolak-icons-two/style.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel/css/owl.carousel.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel/css/owl.theme.default.min.css') }}" />
 
