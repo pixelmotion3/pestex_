@@ -494,7 +494,7 @@
 
 					<div class="col-md-3 text-white"
 						style="background-color: #002255;color:white;margin-top:-50px;height:50px;/* text-align: center; *//* width: 00px; */">
-						<p class="text-white copy-hover" style="width: 600px;">Copyright sospragas <span id="year"></span> <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
+						<p class="text-white copy-hover" style="width: 600px;">Copyright SOS Pragas <span id="year"></span> <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
 							direitos reservados</p>
 					</div>
 					<div class="col-md-3 text-white"

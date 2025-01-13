@@ -20738,7 +20738,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
   align-items: center;
   justify-content: center;
   margin: 0 auto -25px;
-  background-color: var(--tolak-white, #fff);
+  background-color: var(--tolak-base, #fff);
   font-size: 44px;
   color: var(--tolak-base);
   transition: all 500ms ease;
@@ -25372,7 +25372,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 18px 0;
-  max-width: 410px;
+  max-width: 500px;
 }
 @media (max-width: 767px) {
   .tab-one__content__list {

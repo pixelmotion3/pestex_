@@ -604,7 +604,7 @@
                     <div class="row">
                         <div class="col-md-8">
                             <p class="main-footer__copyright">
-                                Copyright SOSpragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
+                                Copyright SOS Pragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
                             </p>
                         </div>
                         <div class="col-md-4">

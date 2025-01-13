@@ -477,7 +477,43 @@
                             </div>
                             <div class="service-five__item__content">
                                 <div class="service-five__item__icon">
-                                    <span class="tolak-icons-two-solution-1"></span>
+                                    {{-- <span class="tolak-icons-two-solution-1"></span> --}}
+									@if ($main[0]['h3-a'] == "Roedores" || $main[0]['h3-a'] == "roedores")
+										<img src="../assets/svg/icons/new-white/rato.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a'] == "Baratas" || $main[0]['h3-a'] == "baratas")
+										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a'] == "Percevejos" || $main[0]['h3-a'] == "percevejos")
+										<img src="../assets/svg/icons/new-white/percevejo.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a'] == "Formigas" || $main[0]['h3-a'] == "formigas")
+										<img src="../assets/svg/icons/new-white/formiga.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a'] == "Processionária do Pinheiro" || $main[0]['h3-a'] == "processionária do pinheiro")
+										<img src="../assets/svg/icons/new-white/processionario-pinheiro.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a'] == "Mosquitos" || $main[0]['h3-a'] == "mosquitos")
+										<img src="../assets/svg/icons/new-white/mosquito.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a'] == "Ácaros" || $main[0]['h3-a'] == "ácaros")
+										<img src="../assets/svg/icons/new-white/acaros.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a'] == "Vespas" || $main[0]['h3-a'] == "vespas")
+										<img src="../assets/svg/icons/new-white/vespas.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a'] == "Moscas" || $main[0]['h3-a'] == "moscas")
+										<img src="../assets/svg/icons/new-white/mosca.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a'] == "Traças" || $main[0]['h3-a'] == "traças")
+										<img src="../assets/svg/icons/new-white/traca.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a'] == "Pulgas" || $main[0]['h3-a'] == "pulgas")
+										<img src="../assets/svg/icons/new-white/pulga.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a'] == "Gorgulho das Farinhas" || $main[0]['h3-a'] == "gorgulho das farinhas")
+										<img src="../assets/svg/icons/new-white/gorgulho-farinhas.svg" width="60" alt="tolak">
+									@endif
                                 </div><!-- /.service-icon -->
                                 <h3 class="service-five__item__title">
                                     <a href="/servicos/{{ $main[0]['link-1'] }}">{{ $main[0]['h3-a'] }}</a>
@@ -494,8 +530,44 @@
                                 <img src="{{ $main[0]['img-9'] }}" alt="tolak">
                             </div>
                             <div class="service-five__item__content">
-                                <div class="service-five__item__icon">
-                                    <span class=" tolak-icons-two-solutions-three"></span>
+								<div class="service-five__item__icon">
+									@if ($main[0]['h3-a-1'] == "Roedores" || $main[0]['h3-a-1'] == "roedores")
+										<img src="../assets/svg/icons/new-white/rato.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-1'] == "Baratas" || $main[0]['h3-a-1'] == "baratas")
+										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-1'] == "Percevejos" || $main[0]['h3-a-1'] == "percevejos")
+										<img src="../assets/svg/icons/new-white/percevejo.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-1'] == "Formigas" || $main[0]['h3-a-1'] == "formigas")
+										<img src="../assets/svg/icons/new-white/formiga.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-1'] == "Processionária do Pinheiro" || $main[0]['h3-a-1'] == "processionária do pinheiro")
+										<img src="../assets/svg/icons/new-white/processionario-pinheiro.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-1'] == "Mosquitos" || $main[0]['h3-a-1'] == "mosquitos")
+										<img src="../assets/svg/icons/new-white/mosquito.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-1'] == "Ácaros" || $main[0]['h3-a-1'] == "ácaros")
+										<img src="../assets/svg/icons/new-white/acaros.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-1'] == "Vespas" || $main[0]['h3-a-1'] == "vespas")
+										<img src="../assets/svg/icons/new-white/vespas.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-1'] == "Moscas" || $main[0]['h3-a-1'] == "moscas")
+										<img src="../assets/svg/icons/new-white/mosca.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-1'] == "Traças" || $main[0]['h3-a-1'] == "traças")
+										<img src="../assets/svg/icons/new-white/traca.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-1'] == "Pulgas" || $main[0]['h3-a-1'] == "pulgas")
+										<img src="../assets/svg/icons/new-white/pulga.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-1'] == "Gorgulho das Farinhas" || $main[0]['h3-a-1'] == "gorgulho das farinhas")
+										<img src="../assets/svg/icons/new-white/gorgulho-farinhas.svg" width="60" alt="tolak">
+									@endif
+                                    {{-- <span class=" tolak-icons-two-solutions-three"></span> --}}
                                 </div><!-- /.service-icon -->
                                 <h3 class="service-five__item__title">
                                     <a href="/servicos{{ $main[0]['link-2'] }}">{{ $main[0]['h3-a-1'] }}</a>
@@ -513,7 +585,43 @@
                             </div>
                             <div class="service-five__item__content">
                                 <div class="service-five__item__icon">
-                                    <span class="tolak-icons-two-cybersecurity"></span>
+                                    {{-- <span class="tolak-icons-two-cybersecurity"></span> --}}
+									@if ($main[0]['h3-a-2'] == "Roedores" || $main[0]['h3-a-2'] == "roedores")
+										<img src="../assets/svg/icons/new-white/rato.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-2'] == "Baratas" || $main[0]['h3-a-2'] == "baratas")
+										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-2'] == "Percevejos" || $main[0]['h3-a-2'] == "percevejos")
+										<img src="../assets/svg/icons/new-white/percevejo.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-2'] == "Formigas" || $main[0]['h3-a-2'] == "formigas")
+										<img src="../assets/svg/icons/new-white/formiga.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-2'] == "Processionária do Pinheiro" || $main[0]['h3-a-2'] == "processionária do pinheiro")
+										<img src="../assets/svg/icons/new-white/processionario-pinheiro.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-2'] == "Mosquitos" || $main[0]['h3-a-2'] == "mosquitos")
+										<img src="../assets/svg/icons/new-white/mosquito.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-2'] == "Ácaros" || $main[0]['h3-a-2'] == "ácaros")
+										<img src="../assets/svg/icons/new-white/acaros.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-2'] == "Vespas" || $main[0]['h3-a-2'] == "vespas")
+										<img src="../assets/svg/icons/new-white/vespas.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-2'] == "Moscas" || $main[0]['h3-a-2'] == "moscas")
+										<img src="../assets/svg/icons/new-white/mosca.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-2'] == "Traças" || $main[0]['h3-a-2'] == "traças")
+										<img src="../assets/svg/icons/new-white/traca.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-2'] == "Pulgas" || $main[0]['h3-a-2'] == "pulgas")
+										<img src="../assets/svg/icons/new-white/pulga.svg" width="60" alt="tolak">
+									@endif
+									@if ($main[0]['h3-a-2'] == "Gorgulho das Farinhas" || $main[0]['h3-a-2'] == "gorgulho das farinhas")
+										<img src="../assets/svg/icons/new-white/gorgulho-farinhas.svg" width="60" alt="tolak">
+									@endif
                                 </div><!-- /.service-icon -->
                                 <h3 class="service-five__item__title">
                                     <a href="/servicos{{ $main[0]['link-3'] }}"> {{ $main[0]['h3-a-2'] }}</a>
@@ -654,7 +762,7 @@
 				<div class="row">
 					<div class="col-md-8">
 						<p class="main-footer__copyright">
-							Copyright SOSpragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
+							Copyright SOS Pragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
 						</p>
 					</div>
 					<div class="col-md-4">

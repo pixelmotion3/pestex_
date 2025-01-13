@@ -1249,7 +1249,7 @@
 									<div class="col-lg-6 col-md-12 col-sm-12 content-column">
 										<div class="content_block_2">
 											<div class="content-box">
-												<h2>{{ $our_service_1[0]['our-services-tab-1-h2'] }}</h2>
+												<h2>{!! $our_service_1[0]['our-services-tab-1-h2'] !!}</h2>
 												<div class="text">
 													<p>{{ $our_service_1[0]['our-services-tab-1-p'] }}<br />{{ $our_service_1[0]['our-services-tab-1-p-1'] }}</p>
 												</div>
@@ -1293,7 +1293,7 @@
 									<div class="col-lg-6 col-md-12 col-sm-12 content-column">
 										<div class="content_block_2">
 											<div class="content-box">
-												<h2>{{ $our_service_2[0]['our-services-tab-2-h2'] }}</h2>
+												<h2>{!! $our_service_2[0]['our-services-tab-2-h2'] !!}</h2>
 												<div class="text">
 													<p>{{ $our_service_2[0]['our-services-tab-2-p'] }}<br />{{ $our_service_2[0]['our-services-tab-2-p-1'] }}</p>
 												</div>
@@ -1312,7 +1312,7 @@
 												</div>
 												<div class="other-text">
 													<p>{{ $our_service_2[0]['our-services-tab-2-p-2'] }} <a data-toggle="modal"
-														data-target="#exampleModal">Agende vistoria gratis</a></p>
+														data-target="#exampleModal">Agende vistoria grátis</a></p>
 													<div class="arrow" style="background-image: url(assets/images/icons/arrow-1.png);"></div>
 												</div>
 											</div>
@@ -1896,7 +1896,7 @@
 
 				<div class="col-md-3 text-white"
 					style="background-color: #002255;color:white;margin-top:-50px;height:50px;/* text-align: center; *//* width: 00px; */">
-					<p class="text-white copy-hover" style="width: 600px;">Copyright sospragas <span id="year"></span> <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
+					<p class="text-white copy-hover" style="width: 600px;">Copyright SOS Pragas <span id="year"></span> <i class="fa fa-copyright mt-3" aria-hidden="true"></i> Todos
 						direitos reservados</p>
 				</div>
 				<div class="col-md-3 text-white"

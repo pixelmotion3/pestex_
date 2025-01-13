@@ -185,7 +185,7 @@
                         <h3 class="service-details__sidebar__title">{{$service_detail_show['h3']}}</h3><!-- /.service-sidebar__title -->
                         <ul class="list-unstyled service-details__sidebar__nav">
                             @foreach ($services as $service)
-                                <li><a href="/servicos/{{ $service['id']}}">{{ $service['a']}}</a></li>
+                                <li><a href="/servicos/{{ $service['slug'] }}">{{ $service['a']}}</a></li>
                             @endforeach
                         </ul><!-- /.list-unstyled service-sidebar__nav -->
                     </div><!-- /.sidebar -->
@@ -328,7 +328,7 @@
             </div><!-- /.sec-title-four -->
             <div class="row" style="display: flex;justify-content: center;">
                 <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; ">
-                    <div class="work-process-two__item text-center wow fadeInUp" data-wow-delay="00ms">
+                    <div class="work-process-two__item text-center wow fadeInUp" data-wow-delay="100ms">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
                         <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-1'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text">
@@ -353,13 +353,13 @@
                     </div><!-- /.work-process-item -->
                 </div>
                 <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; ">
-                    <div class="work-process-two__item text-center wow fadeInUp" data-wow-delay="200ms">
+                    <div class="work-process-two__item text-center wow fadeInUp" data-wow-delay="100ms" style="display: flex;flex-direction: column;align-items: center;">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
                         <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-3'] }}</h4><!-- /.work-process-title -->
-                        <p class="work-process-two__item__text">
-                            {{ $service_detail_show['p-2'] }}
+                        <p class="work-process-two__item__text" style="width: 80%;">
+                            <span>{{ $service_detail_show['p-2'] }}</span>
                         </p><!-- /.work-process-text -->
-                        <div class="work-process-two__item__thumb" style="margin-top: 35px;">
+                        <div class="work-process-two__item__thumb">
                             <img src="../{{ $service_detail_show['img-7'] }}" alt="tolak">
                         </div><!-- /.work-process-image -->
                     </div><!-- /.work-process-item -->

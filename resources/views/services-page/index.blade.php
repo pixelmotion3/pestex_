@@ -116,6 +116,12 @@
                                     <div data-i18n="Hardware">Hardware</div>
                                 </a>
                             </li>
+
+							<li class="menu-item">
+                                <a href="/forms-page" class="menu-link">
+                                    <div data-i18n="Forms">Forms</div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -1110,41 +1116,67 @@
                                                                                         <label for="validationCustom01"
                                                                                             class="form-label"
                                                                                             style="float:left;">Title</label>
-                                                                                        <input type="text"
+																						<textarea class="form-control"
+																							id="validationCustom01"
+																							name="title" required>
+																							{{ $service['title'] }}
+																						</textarea>
+                                                                                        {{-- <input type="text"
                                                                                             class="form-control"
                                                                                             id="validationCustom01"
                                                                                             value={{ $service['title'] }}
-                                                                                            name="title" required>
+                                                                                            name="title" required> --}}
                                                                                     </div>
                                                                                     <div class="col-12 mt-5">
                                                                                         <label for="validationCustom01"
                                                                                             class="form-label"
                                                                                             style="float:left;">P-1</label>
-                                                                                        <input type="text"
+																						<textarea class="form-control"
+																							id="validationCustom01"
+																							name="p-1" required>
+																							{{ $service['p-1'] }}
+																						</textarea>
+                                                                                        {{-- <input type="text"
                                                                                             class="form-control"
                                                                                             id="validationCustom01"
                                                                                             value={{ $service['p-1'] }}
-                                                                                            name="p-1" required>
+                                                                                            name="p-1" required> --}}
                                                                                     </div>
                                                                                     <div class="col-12 mt-5">
                                                                                         <label for="validationCustom01"
                                                                                             class="form-label"
                                                                                             style="float:left;">P-2</label>
-                                                                                        <input type="text"
+
+
+																						<textarea class="form-control"
+																							id="validationCustom01"
+																							name="p-2" required>
+																							{{ $service['p-2'] }}
+																						</textarea>
+
+
+
+                                                                                        {{-- <input type="text"
                                                                                             class="form-control"
                                                                                             id="validationCustom01"
                                                                                             value={{ $service['p-2'] }}
-                                                                                            name="p-2" required>
+                                                                                            name="p-2" required> --}}
                                                                                     </div>
                                                                                     <div class="col-12 mt-5">
                                                                                         <label for="validationCustom01"
                                                                                             class="form-label"
                                                                                             style="float:left;">P-3</label>
-                                                                                        <input type="text"
+																						<textarea class="form-control"
+																							id="validationCustom01"
+																							name="p-3" required>
+																							{{ $service['p-3'] }}
+																						</textarea>
+
+                                                                                        {{-- <input type="text"
                                                                                             class="form-control"
                                                                                             id="validationCustom01"
                                                                                             value={{ $service['p-3'] }}
-                                                                                            name="p-3" required>
+                                                                                            name="p-3" required> --}}
                                                                                     </div>
 																					<div class="col-12 mt-5">
 																						<label for="validationCustom01" class="form-label"

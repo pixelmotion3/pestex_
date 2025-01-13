@@ -183,7 +183,7 @@
             <div class="sec-title-two text-center">
                 <h6 class="sec-title-two__tagline">
                     <span class="sec-title__tagline__left"></span>
-                    <b>{{ $main[0]['h6'] }}</b>
+                    <b><i>{{ $main[0]['h6'] }}</i></b>
                     <span class="sec-title__tagline__right"></span>
                 </h6><!-- /.sec-title-two__tagline -->
                 <h3 class="sec-title-two__title">{{ $main[0]['h3'] }}</h3><!-- /.sec-title-two__title -->
@@ -516,7 +516,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <p class="main-footer__copyright">
-                            Copyright SOSpragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
+                            Copyright SOS Pragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
                         </p>
                     </div>
                     <div class="col-md-4">

@@ -1680,7 +1680,7 @@
 												</div>
 												<div class="other-text">
 													<p>{{ $our_service_2[0]['our-services-tab-2-p-2'] }} <a data-toggle="modal"
-														data-target="#exampleModal">Agende vistoria gratis</a></p>
+														data-target="#exampleModal">Agende vistoria grátis</a></p>
 													<div class="arrow" style="background-image: url(assets/images/icons/arrow-1.png);"></div>
 												</div>
 											</div>
@@ -1806,7 +1806,7 @@
 									<img src="assets/images/produtos_ecologicos_seguros.png" alt="Produtos ecologicos seguros">
 								</div>
 								<h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-1'] }}</h4>
-								<a href="team.html" class="why-choose-two__item__rm"><span class="icon-right-arrow"></span></a>
+								<a href="/sustentabilidade" class="why-choose-two__item__rm"><span class="icon-right-arrow"></span></a>
 							</div><!-- why-choose-two__item -->
 							<div class="why-choose-two__item why-choose-two__item--reverse wow fadeInUp rounded-lg"
 								data-wow-delay="100ms">
@@ -1814,14 +1814,14 @@
 									<img src="assets/images/metodos_preventivos.png" alt="metodos preventivos">
 								</div>
 								<h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-2'] }}</h4>
-								<a href="services.html" class="why-choose-two__item__rm"><span class="icon-right-arrow"></span></a>
+								<a href="/sustentabilidade" class="why-choose-two__item__rm"><span class="icon-right-arrow"></span></a>
 							</div><!-- why-choose-two__item -->
 							<div class="why-choose-two__item wow fadeInUp rounded-lg" data-wow-delay="200ms">
 								<div class="why-choose-two__item__icon rounded-lg">
 									<img src="assets/images/compromisso_meio_ambiente.png" alt="compromisso com o meio ambiente">
 								</div>
 								<h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-3'] }}</h4>
-								<a href="team.html" class="why-choose-two__item__rm"><span class="icon-right-arrow"></span></a>
+								<a href="/sustentabilidade" class="why-choose-two__item__rm"><span class="icon-right-arrow"></span></a>
 							</div><!-- why-choose-two__item -->
 						</div><!-- /.why-choose-two__content -->
 					</div><!-- /.col-lg-5 -->
@@ -2374,7 +2374,7 @@
                     <div class="row">
                         <div class="col-md-8">
                             <p class="main-footer__copyright">
-                                Copyright SOSpragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
+                                Copyright SOS Pragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
                             </p>
                         </div>
                         <div class="col-md-4">

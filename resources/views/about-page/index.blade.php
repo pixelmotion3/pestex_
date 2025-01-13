@@ -116,6 +116,11 @@
                                 <div data-i18n="Hardware">Hardware</div>
                             </a>
                         </li>
+						<li class="menu-item">
+							<a href="/forms-page" class="menu-link">
+								<div data-i18n="Forms">Forms</div>
+							</a>
+						</li>
                     </ul>
                 </li>
             </ul>
