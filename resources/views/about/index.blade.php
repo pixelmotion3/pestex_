@@ -648,7 +648,34 @@
                                             <button type="submit" class="tolak-btn" style="font-weight: 700 !important;"><b><i>enviar</i></b><span></span></button>
                                         </div><!-- /.form-one__control -->
                                     </div><!-- /.form-one__group -->
+
                                 </form>
+								@if(session('success'))
+									<div id="success-alert" class="alert alert-success">
+										{{ session('success') }}
+									</div>
+								@endif
+
+								@if(session('error'))
+									<div id="error-alert" class="alert alert-danger">
+										{{ session('error') }}
+									</div>
+								@endif
+								<script>
+								// Esconde o alerta após 5 segundos
+								setTimeout(function() {
+									let successAlert = document.getElementById('success-alert');
+									let errorAlert = document.getElementById('error-alert');
+
+									if (successAlert) {
+									successAlert.style.display = 'none';
+									}
+
+									if (errorAlert) {
+									errorAlert.style.display = 'none';
+									}
+								}, 5000); // 5000ms = 5 segundos
+								</script>
                             </div>
                         </div>
                     </div>
@@ -774,14 +801,14 @@
             </div><!-- /.container -->
             <div class="main-footer__bottom">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-8">
+                    <div class="footer-developer">
+                        <div class="">
                             <p class="main-footer__copyright">
                                 Copyright SOS Pragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
                             </p>
                         </div>
-                        <div class="col-md-4">
-                            <p class="main-footer__copyright text-right">
+                        <div class="">
+                            <p class="main-footer__copyright">
                                 <a href="https://pixelinmotion.pt" style="color:#ff6600;" target="_blank">Desenvolvido por Pixel in Motion</a>
                             </p>
                         </div>
@@ -789,7 +816,62 @@
                 </div><!-- /.container -->
             </div><!-- /.main-footer__bottom -->
         </footer><!-- /.main-footer -->
-            <!--
+
+		<div class="mobile-nav__wrapper">
+			<div class="mobile-nav__overlay mobile-nav__toggler"></div>
+			<!-- /.mobile-nav__overlay -->
+			<div class="mobile-nav__content">
+				<span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+				<div class="logo-box">
+					<a href="index.html" aria-label="logo image"><img src="assets/images/logo-dark.png" width="155" alt=""></a>
+				</div>
+				<!-- /.logo-box -->
+				<div class="mobile-nav__container">
+					<ul class="main-menu__list one-page-scroll-menu">
+						<li class="megamenu "><a href="/">Home</a></li>
+						<li class=""><a href="/sobre">Sobre</a></li>
+						<li class=""><a href="/servicos">Serviços</a></li>
+						<li class=""><a href="/sustentabilidade">Sustentabilidade</a></li>
+						<li class=""><a href="/equipamentos">Equipamentos</a></li>
+						<li class=""><a href="/contactos">Contactos</a></li>
+						<li class=""><a href="/contato">Contacta-nos</a></li>
+					</ul>
+				</div>
+				<!-- /.mobile-nav__container -->
+
+				{{-- <ul class="mobile-nav__contact list-unstyled">
+					<li>
+						<i class="fa fa-envelope"></i>
+						<a href="mailto:needhelp@tolak.com">needhelp@tolak.com</a>
+					</li>
+					<li>
+						<i class="fa fa-phone-alt"></i>
+						<a href="tel:666-888-0000">666 888 0000</a>
+					</li>
+				</ul><!-- /.mobile-nav__contact --> --}}
+				{{-- <div class="mobile-nav__social">
+					<a href="https://facebook.com">
+						<i class="fab fa-facebook-f" aria-hidden="true"></i>
+						<span class="sr-only">Facebook</span>
+					</a>
+					<a href="https://pinterest.com">
+						<i class="fab fa-pinterest-p" aria-hidden="true"></i>
+						<span class="sr-only">Pinterest</span>
+					</a>
+					<a href="https://twitter.com">
+						<i class="fab fa-twitter" aria-hidden="true"></i>
+						<span class="sr-only">Twitter</span>
+					</a>
+					<a href="https://instagram.com">
+						<i class="fab fa-instagram" aria-hidden="true"></i>
+						<span class="sr-only">Instagram</span>
+					</a>
+				</div> --}}
+			</div>
+			<!-- /.mobile-nav__content -->
+		</div>
+		<!--
         <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
             <span class="scroll-to-top__text">back top</span>
             <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>

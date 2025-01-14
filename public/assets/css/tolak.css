@@ -23046,6 +23046,32 @@ body.boxed-wrapper .main-slider-one__floating-text {
     padding-right: 67px;
   }
 }
+
+
+@media (min-width: 480px) {
+	.why-choose-five__content {
+	  margin-top: 10%;
+	}
+}
+.footer-developer {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 480px) {
+
+	.footer-widget--links {
+		text-align: center;
+	}
+	.footer-developer {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+}
+
+
+
+
 .why-choose-five__box {
   position: relative;
   z-index: 2;

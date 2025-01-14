@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@if(session('success'))
+    <div id="success-alert" class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
 
+@if(session('error'))
+    <div id="error-alert" class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+@endif
+<script>
+// Esconde o alerta após 5 segundos
+setTimeout(function() {
+	let successAlert = document.getElementById('success-alert');
+	let errorAlert = document.getElementById('error-alert');
+
+	if (successAlert) {
+	successAlert.style.display = 'none';
+	}
+
+	if (errorAlert) {
+	errorAlert.style.display = 'none';
+	}
+}, 5000); // 5000ms = 5 segundos
+</script>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1659,7 +1684,7 @@
 									<div class="col-lg-6 col-md-12 col-sm-12 content-column">
 										<div class="content_block_2">
 											<div class="content-box">
-												<h2>{{ $our_service_2[0]['our-services-tab-2-h2'] }}</h2>
+												<h2>{!! $our_service_2[0]['our-services-tab-2-h2'] !!}</h2>
 												<div class="text">
 													<p>{{ $our_service_2[0]['our-services-tab-2-p'] }}<br />{{ $our_service_2[0]['our-services-tab-2-p-1'] }}</p>
 												</div>
@@ -2371,14 +2396,14 @@
             </div><!-- /.container -->
             <div class="main-footer__bottom">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-8">
+                    <div class="footer-developer">
+                        <div class="">
                             <p class="main-footer__copyright">
                                 Copyright SOS Pragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
                             </p>
                         </div>
-                        <div class="col-md-4">
-                            <p class="main-footer__copyright text-right">
+                        <div class="">
+                            <p class="main-footer__copyright">
                                 <a href="https://pixelinmotion.pt" style="color:#ff6600;" target="_blank">Desenvolvido por Pixel in Motion</a>
                             </p>
                         </div>

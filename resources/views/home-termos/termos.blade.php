@@ -601,14 +601,14 @@
             </div><!-- /.container -->
             <div class="main-footer__bottom">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-8">
+                    <div class="footer-developer">
+                        <div class="">
                             <p class="main-footer__copyright">
                                 Copyright SOS Pragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
                             </p>
                         </div>
-                        <div class="col-md-4">
-                            <p class="main-footer__copyright text-right">
+                        <div class="">
+                            <p class="main-footer__copyright">
                                 <a href="https://pixelinmotion.pt" style="color:#ff6600;" target="_blank">Desenvolvido por Pixel in Motion</a>
                             </p>
                         </div>

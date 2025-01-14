@@ -570,7 +570,7 @@
                                     {{-- <span class=" tolak-icons-two-solutions-three"></span> --}}
                                 </div><!-- /.service-icon -->
                                 <h3 class="service-five__item__title">
-                                    <a href="/servicos{{ $main[0]['link-2'] }}">{{ $main[0]['h3-a-1'] }}</a>
+                                    <a href="/servicos/{{ $main[0]['link-2'] }}">{{ $main[0]['h3-a-1'] }}</a>
                                 </h3><!-- /.service-title -->
                                 <p class="service-five__item__text">
                                     {{ $main[0]['p-6'] }}
@@ -624,7 +624,7 @@
 									@endif
                                 </div><!-- /.service-icon -->
                                 <h3 class="service-five__item__title">
-                                    <a href="/servicos{{ $main[0]['link-3'] }}"> {{ $main[0]['h3-a-2'] }}</a>
+                                    <a href="/servicos/{{ $main[0]['link-3'] }}"> {{ $main[0]['h3-a-2'] }}</a>
                                 </h3><!-- /.service-title -->
                                 <p class="service-five__item__text">
                                     {{ $main[0]['p-7'] }}
@@ -759,14 +759,14 @@
 		</div><!-- /.container -->
 		<div class="main-footer__bottom">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-8">
+				<div class="footer-developer">
+					<div class="">
 						<p class="main-footer__copyright">
 							Copyright SOS Pragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
 						</p>
 					</div>
-					<div class="col-md-4">
-						<p class="main-footer__copyright text-right">
+					<div class="">
+						<p class="main-footer__copyright">
 							<a href="https://pixelinmotion.pt" style="color:#ff6600;" target="_blank">Desenvolvido por Pixel in Motion</a>
 						</p>
 					</div>
@@ -822,12 +822,12 @@
 				<div class="mobile-nav__container">
 					<ul class="main-menu__list one-page-scroll-menu">
 						<li class="megamenu scrollToLink"><a href="/">Home</a></li>
-						<li class="scrollToLink"><a href="sobre">Sobre</a></li>
-						<li class="scrollToLink"><a href="servicos">Serviços</a></li>
-						<li class="scrollToLink"><a href="sustentabilidade">Sustentabilidade</a></li>
-						<li class="scrollToLink"><a href="equipamentos">Equipamentos</a></li>
-						<li class="scrollToLink"><a href="contactos">Contactos</a></li>
-						<li class="scrollToLink"><a href="contato">Contacta-nos</a></li>
+						<li class="scrollToLink"><a href="/sobre">Sobre</a></li>
+						<li class="scrollToLink"><a href="/servicos">Serviços</a></li>
+						<li class="scrollToLink"><a href="/sustentabilidade">Sustentabilidade</a></li>
+						<li class="scrollToLink"><a href="/equipamentos">Equipamentos</a></li>
+						<li class="scrollToLink"><a href="/contactos">Contactos</a></li>
+						<li class="scrollToLink"><a href="/contato">Contacta-nos</a></li>
 					</ul>
 				</div>
 				<!-- /.mobile-nav__container -->

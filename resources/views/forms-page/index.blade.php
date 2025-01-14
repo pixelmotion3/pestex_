@@ -721,6 +721,24 @@
 										@endisset
 									</div>
 								</div>
+
+								<div>
+									<h2>Quote Forms</h2>
+									<div style="max-height: 300px;overflow: auto;">
+										@isset($quote_forms)
+											@foreach ($quote_forms as $quote_form)
+												<div>
+													<p>{{$quote_form["customer_type"]}}</p>
+													<p>{{$quote_form["locality"]}}</p>
+													<p>{{$quote_form["name"]}}</p>
+													<p>{{$quote_form["email"] }}</p>
+													<p>{{$quote_form["phone"] }}</p>
+												</div>
+												<hr>
+											@endforeach
+										@endisset
+									</div>
+								</div>
                             </div>
                         </div>
                       </div>

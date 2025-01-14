@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@if(session('success'))
+	<div id="success-alert" class="alert alert-success">
+		{{ session('success') }}
+	</div>
+@endif
 
+@if(session('error'))
+	<div id="error-alert" class="alert alert-danger">
+		{{ session('error') }}
+	</div>
+@endif
+<script>
+// Esconde o alerta após 5 segundos
+setTimeout(function() {
+	let successAlert = document.getElementById('success-alert');
+	let errorAlert = document.getElementById('error-alert');
+
+	if (successAlert) {
+	successAlert.style.display = 'none';
+	}
+
+	if (errorAlert) {
+	errorAlert.style.display = 'none';
+	}
+}, 5000); // 5000ms = 5 segundos
+</script>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -229,6 +254,7 @@
                                     <div class="form-group message-btn">
                                         <button type="submit" class="btn mt-2 theme-btn-three thm-btn contactenos-btn">ENVIAR MENSAGEM</button>
                                     </div>
+
                                 </form>
                             </div>
                         </div>
@@ -328,7 +354,7 @@
             </div><!-- /.sec-title-four -->
             <div class="row" style="display: flex;justify-content: center;">
                 <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; ">
-                    <div class="work-process-two__item text-center wow fadeInUp" data-wow-delay="100ms">
+                    <div class="work-process-two__item text-center wow fadeInUp" data-wow-delay="100ms" style="display: flex;flex-direction: column;align-items: center;width: 260px;">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
                         <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-1'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text">
@@ -341,7 +367,7 @@
                 </div>
                 <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; ">
                     <div class="work-process-two__item work-process-two__item--reverse text-center wow fadeInUp"
-                        data-wow-delay="100ms">
+                        data-wow-delay="100ms" style="display: flex;flex-direction: column;align-items: center;width: 260px;">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
                         <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-2'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text">
@@ -353,7 +379,7 @@
                     </div><!-- /.work-process-item -->
                 </div>
                 <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; ">
-                    <div class="work-process-two__item text-center wow fadeInUp" data-wow-delay="100ms" style="display: flex;flex-direction: column;align-items: center;">
+                    <div class="work-process-two__item text-center wow fadeInUp" data-wow-delay="100ms" style="display: flex;flex-direction: column;align-items: center;width: 260px;">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
                         <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-3'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text" style="width: 80%;">
@@ -364,6 +390,7 @@
                         </div><!-- /.work-process-image -->
                     </div><!-- /.work-process-item -->
                 </div>
+
                 {{-- <div class="col-xl-3 col-md-6">
                     <div class="work-process-two__item work-process-two__item--reverse text-center wow fadeInUp"
                         data-wow-delay="300ms">
@@ -718,21 +745,21 @@
 			</div><!-- /.row -->
 		</div><!-- /.container -->
 		<div class="main-footer__bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8">
-						<p class="main-footer__copyright">
-							Copyright sospragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
-						</p>
-					</div>
-					<div class="col-md-4">
-						<p class="main-footer__copyright text-right">
-							<a href="https://pixelinmotion.pt" style="color:#ff6600;" target="_blank">Desenvolvido por Pixel in Motion</a>
-						</p>
-					</div>
-				</div><!-- /.main-footer__inner -->
-			</div><!-- /.container -->
-		</div><!-- /.main-footer__bottom -->
+                <div class="container">
+                    <div class="footer-developer">
+                        <div class="">
+                            <p class="main-footer__copyright">
+                                Copyright SOS Pragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
+                            </p>
+                        </div>
+                        <div class="">
+                            <p class="main-footer__copyright">
+                                <a href="https://pixelinmotion.pt" style="color:#ff6600;" target="_blank">Desenvolvido por Pixel in Motion</a>
+                            </p>
+                        </div>
+                    </div><!-- /.main-footer__inner -->
+                </div><!-- /.container -->
+            </div><!-- /.main-footer__bottom -->
 	</footer><!-- /.main-footer -->
     <script>
         $(document).ready(function() {

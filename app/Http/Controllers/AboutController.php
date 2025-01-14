@@ -45,16 +45,20 @@ class AboutController extends Controller
             'phone' => $request->input('phone'),
             'confirmed' => true
         ]);
-        if ($query) {
-			$about_main = About::where('id',1)->get()->toArray();
-			$service = About_service::where('id',1)->get()->toArray();
-			$video = About_video::where('id',1)->get()->toArray();
-			$testimonial = Testimonial::where('id',1)->get()->toArray();
-			$contact_info = ContactInfo::where('id',1)->get()->toArray();
-			$testimonial_abouts = TestimonialAbout::all();
-			//dd($contact_info);
-			return redirect()->route('About.index');
-        }
+		if ($query) {
+			return redirect()->route('About.index')->with('success', 'Formulário enviado com sucesso!');
+		}
+		return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
+        // if ($query) {
+		// 	$about_main = About::where('id',1)->get()->toArray();
+		// 	$service = About_service::where('id',1)->get()->toArray();
+		// 	$video = About_video::where('id',1)->get()->toArray();
+		// 	$testimonial = Testimonial::where('id',1)->get()->toArray();
+		// 	$contact_info = ContactInfo::where('id',1)->get()->toArray();
+		// 	$testimonial_abouts = TestimonialAbout::all();
+		// 	//dd($contact_info);
+		// 	return redirect()->route('About.index');
+        // }
     }
 
 }
