@@ -23050,7 +23050,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
 
 @media (min-width: 400px) {
 	.why-choose-five__content {
-	  margin-top: 10%;
+	  margin-top: 10% !important;
 	}
 }
 .footer-developer {
