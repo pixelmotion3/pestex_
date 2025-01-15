@@ -1,4 +1,30 @@
 <!DOCTYPE html>
+@if(session('success'))
+	<div id="success-alert" class="alert alert-success">
+		{{ session('success') }}
+	</div>
+@endif
+
+@if(session('error'))
+	<div id="error-alert" class="alert alert-danger">
+		{{ session('error') }}
+	</div>
+@endif
+<script>
+// Esconde o alerta após 5 segundos
+setTimeout(function() {
+	let successAlert = document.getElementById('success-alert');
+	let errorAlert = document.getElementById('error-alert');
+
+	if (successAlert) {
+	successAlert.style.display = 'none';
+	}
+
+	if (errorAlert) {
+	errorAlert.style.display = 'none';
+	}
+}, 5000); // 5000ms = 5 segundos
+</script>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -266,7 +292,7 @@
                                 <p class="contact-two__content__text">
                                     {{ $contact_info[0]['p-3'] }}
                                 </p>
-                                <form class="contact-two__form contact-form-validated form-one" method="POST" action="{{ route('ContactPage.ContactFormContactos') }}">
+                                <form class="contact-two__form form-one" method="POST" action="{{ route('ContactPage.ContactFormContactos') }}">
 									@csrf
 									@method('post')
                                     <div class="form-one__group">

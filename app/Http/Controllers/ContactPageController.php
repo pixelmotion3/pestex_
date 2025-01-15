@@ -68,7 +68,11 @@ class ContactPageController extends Controller
             'confirmed' => true
         ]);
 
-		return redirect()->route('ContactPage.index');
+		if ($query) {
+
+			return redirect()->back()->with('success', 'Obrigado pelo seu contacto. Iremos entrar em contacto brevemente!')->withInput();
+		}
+		return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
     }
 
 

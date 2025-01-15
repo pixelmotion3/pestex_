@@ -2016,8 +2016,8 @@
                 $('#company_mobile').addClass('border');
                 $('#home_mobile').removeClass('border');
                 $('#home_mobile').addClass('active-tab');
-                $('#customer_type').val('home');
-                $("#home_mobile").val("home");
+                $('#customer_type').val('residência');
+                $("#home_mobile").val("residência");
 
             })
             $("#company_mobile").click(function() {
@@ -2025,8 +2025,8 @@
                 $('#home_mobile').addClass('border');
                 $('#company_mobile').removeClass('border');
                 $('#company_mobile').addClass('active-tab');
-                $('#customer_type').val('company');
-                $("#company_mobile").val("company");
+                $('#customer_type').val('empresa');
+                $("#company_mobile").val("empresa");
             })
 
 			$("#home_desktop").click(function() {
@@ -2034,8 +2034,8 @@
                 $('#company_desktop').addClass('border');
                 $('#home_desktop').removeClass('border');
                 $('#home_desktop').addClass('active-tab');
-                $('#customer_type').val('home');
-                $("#home_desktop").val("home");
+                $('#customer_type').val('residência');
+                $("#home_desktop").val("residência");
 
             })
             $("#company_desktop").click(function() {
@@ -2043,8 +2043,8 @@
                 $('#home_desktop').addClass('border');
                 $('#company_desktop').removeClass('border');
                 $('#company_desktop').addClass('active-tab');
-                $('#customer_type').val('company');
-                $("#company_desktop").val("company");
+                $('#customer_type').val('empresa');
+                $("#company_desktop").val("empresa");
             })
 
             $("#modal-contact-tab").click(function() {
@@ -2069,8 +2069,8 @@
                 $('#modal-company').addClass('border');
                 $('#modal-home').removeClass('border');
                 $('#modal-home').addClass('active-tab');
-                $('#modal-customer_type').val('home');
-                $("#modal-home").val("home");
+                $('#modal-customer_type').val('residência');
+                $("#modal-home").val("residência");
 
             })
             $("#modal-company").click(function() {
@@ -2078,8 +2078,8 @@
                 $('#modal-home').addClass('border');
                 $('#modal-company').removeClass('border');
                 $('#modal-company').addClass('active-tab');
-                $('#modal-customer_type').val('company');
-                $("#modal-company").val("company");
+                $('#modal-customer_type').val('empresa');
+                $("#modal-company").val("empresa");
             })
 
 

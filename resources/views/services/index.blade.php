@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@if(session('success'))
+	<div id="success-alert" class="alert alert-success">
+		{{ session('success') }}
+	</div>
+@endif
 
+@if(session('error'))
+	<div id="error-alert" class="alert alert-danger">
+		{{ session('error') }}
+	</div>
+@endif
+<script>
+// Esconde o alerta após 5 segundos
+setTimeout(function() {
+	let successAlert = document.getElementById('success-alert');
+	let errorAlert = document.getElementById('error-alert');
+
+	if (successAlert) {
+	successAlert.style.display = 'none';
+	}
+
+	if (errorAlert) {
+	errorAlert.style.display = 'none';
+	}
+}, 5000); // 5000ms = 5 segundos
+</script>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -372,7 +397,8 @@
                             <p class="contact-one__content__text">
                                 {{ $main_screen[0]['p-1'] }}
                             </p>
-                            <form class="contact-two__form contact-form-validated form-one" method="POST" action="{{ route('ServicePage.ContactFormService') }}">
+
+                            <form class="contact-two__form form-one" method="POST" action="{{ route('ServicePage.ContactFormService') }}">
 								@csrf
 								@method('post')
                                 <div class="form-one__group">
@@ -389,6 +415,7 @@
                                         <button type="submit" class="tolak-btn2"><b>ENVIAR MENSAGEM</b><span></span></button>
                                     </div><!-- /.form-one__control -->
                                 </div><!-- /.form-one__group -->
+
                             </form>
                         </div>
                     </div>

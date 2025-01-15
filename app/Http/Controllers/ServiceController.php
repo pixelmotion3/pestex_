@@ -88,8 +88,10 @@ class ServiceController extends Controller
         $main_screen = ServicesMainScreen::where('id', 1)->get()->toArray();
         $services = ServiceDetails::all();
 		$video = About_video::where('id',1)->get()->toArray();
+
 		if ($query) {
-			return redirect()->back()->with('success', 'Formulário enviado com sucesso!');
+
+			return redirect()->back()->with('success', 'Obrigado pelo seu contacto. Iremos entrar em contacto brevemente!')->withInput();
 		}
 		return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
 		// return redirect()->route('ServicePage.index');
