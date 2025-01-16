@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@if(session('success'))
+	<div id="success-alert" class="alert alert-success">
+		{{ session('success') }}
+	</div>
+@endif
 
+@if(session('error'))
+	<div id="error-alert" class="alert alert-danger">
+		{{ session('error') }}
+	</div>
+@endif
+<script>
+// Esconde o alerta após 5 segundos
+setTimeout(function() {
+	let successAlert = document.getElementById('success-alert');
+	let errorAlert = document.getElementById('error-alert');
+
+	if (successAlert) {
+	successAlert.style.display = 'none';
+	}
+
+	if (errorAlert) {
+	errorAlert.style.display = 'none';
+	}
+}, 5000); // 5000ms = 5 segundos
+</script>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1763,24 +1788,21 @@
 			</div>
 		</section>
 
-		<section class="cta-four mt-5">
+		{{-- <section class="cta-four mt-5">
 			<div class="container" style="margin-top:100px;">
 				<div class="cta-four__bg" style="background-image: url({{ $video_contact[0]['watch-video-bg-img'] }});">
 						<div class="cta-four__shape" style="background-image: url(assets/images/shapes/cta-4-border.png);"></div>
 					<div class="row">
 						<div class="col-lg-6 wow fadeInUp" data-wow-delay="00ms">
 							<div class="cta-four__content">
-								{{-- <a class="video-popup" style="color: white;background-color:#ff6600;">
-									<i class="icon-play-button"></i>
-								</a> --}}
 								<div class="sec-title-two text-left">
 									<h6 class="sec-title-two__tagline"><span
 											class="sec-title__tagline__left" style="color:#ff6600;"></span><i style="color:#ff6600;">{{ $video_contact[0]['watch-video-p-strong-1'] }}</i><span
 											class="sec-title__tagline__right" style="color:#ff6600;"></span>
-									</h6><!-- /.sec-title-two__tagline -->
+									</h6>
 									<h3 class="sec-title-two__title">{{ $video_contact[0]['watch-video-h2'] }}</h3>
-									<!-- /.sec-title-two__title -->
-								</div><!-- /.sec-title-two -->
+
+								</div>
 								<p class="cta-four__content__text">
 									{{ $video_contact[0]['watch-video-p-2'] }}<br />{{ $video_contact[0]['watch-video-p-2-1'] }}
 								</p>
@@ -1802,7 +1824,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> --}}
 
 		<section id="contact-us">
 			<div class="container mt-3 mb-5">

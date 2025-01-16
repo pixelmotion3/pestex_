@@ -46,7 +46,7 @@ class AboutController extends Controller
             'confirmed' => true
         ]);
 		if ($query) {
-			return redirect()->route('About.index')->with('success', 'Obrigado pelo seu contacto. Iremos entrar em contacto brevemente!');
+			return redirect()->back()->with('success', 'Obrigado pelo seu contacto. Iremos entrar em contacto brevemente!');
 		}
 		return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
         // if ($query) {

@@ -269,35 +269,39 @@ class FrontPageController extends Controller
             'phone' => $request->input('phone'),
             'confirmed' => true
         ]);
-        if ($query) {
-            $landing_page = LandingPage::where('id',1)->get()->toArray();
-			$landing_2page = landing_2page::where('id',1)->get()->toArray();
-			$landing_3page = landing_3page::where('id',1)->get()->toArray();
-			$landing_4page = landing_4page::where('id',1)->get()->toArray();
-			$landing_5page = landing_5page::where('id',1)->get()->toArray();
-			$landing_6page = landing_6page::where('id',1)->get()->toArray();
-			$landing_7page = landing_7page::where('id',1)->get()->toArray();
-			$landing_8page = landing_8page::where('id',1)->get()->toArray();
-			$landing_9page = landing_9page::where('id',1)->get()->toArray();
-			$landing_10page = landing_10page::where('id',1)->get()->toArray();
-			$landing_11page = landing_11page::where('id',1)->get()->toArray();
-			$reviews = Review::all();
+		if ($query) {
+			return redirect()->back()->with('success', 'Obrigado pelo seu contacto. Iremos entrar em contacto brevemente!!');
+		}
+		return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
+        // if ($query) {
+        //     $landing_page = LandingPage::where('id',1)->get()->toArray();
+		// 	$landing_2page = landing_2page::where('id',1)->get()->toArray();
+		// 	$landing_3page = landing_3page::where('id',1)->get()->toArray();
+		// 	$landing_4page = landing_4page::where('id',1)->get()->toArray();
+		// 	$landing_5page = landing_5page::where('id',1)->get()->toArray();
+		// 	$landing_6page = landing_6page::where('id',1)->get()->toArray();
+		// 	$landing_7page = landing_7page::where('id',1)->get()->toArray();
+		// 	$landing_8page = landing_8page::where('id',1)->get()->toArray();
+		// 	$landing_9page = landing_9page::where('id',1)->get()->toArray();
+		// 	$landing_10page = landing_10page::where('id',1)->get()->toArray();
+		// 	$landing_11page = landing_11page::where('id',1)->get()->toArray();
+		// 	$reviews = Review::all();
 
-			return view('home.index', [
-				'main_screen' => $landing_page,
-				'company_status' => $landing_2page,
-				'best_service' => $landing_3page,
-				'our_service_1' => $landing_4page,
-				'our_service_2' => $landing_5page,
-				'about_now' => $landing_6page,
-				'choose_us' => $landing_7page,
-				'testimonial_say' => $landing_8page,
-				'collapse' => $landing_9page,
-				'call_now' => $landing_10page,
-				'video_contact' => $landing_11page,
-				'reviews' =>  $reviews
-			]);
-        }
+		// 	return view('home.index', [
+		// 		'main_screen' => $landing_page,
+		// 		'company_status' => $landing_2page,
+		// 		'best_service' => $landing_3page,
+		// 		'our_service_1' => $landing_4page,
+		// 		'our_service_2' => $landing_5page,
+		// 		'about_now' => $landing_6page,
+		// 		'choose_us' => $landing_7page,
+		// 		'testimonial_say' => $landing_8page,
+		// 		'collapse' => $landing_9page,
+		// 		'call_now' => $landing_10page,
+		// 		'video_contact' => $landing_11page,
+		// 		'reviews' =>  $reviews
+		// 	]);
+        // }
     }
 
     /**

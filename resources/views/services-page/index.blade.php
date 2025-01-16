@@ -1106,11 +1106,16 @@
                                                                                         <label for="validationCustom01"
                                                                                             class="form-label"
                                                                                             style="float:left;">P</label>
-                                                                                        <input type="text"
+																						<textarea class="form-control"
+																							id="validationCustom01"
+																							name="p" required>
+																							{{ $service['p'] }}
+																						</textarea>
+                                                                                        {{-- <input type="text"
                                                                                             class="form-control"
                                                                                             id="validationCustom01"
                                                                                             value={{ $service['p'] }}
-                                                                                            name="p" required>
+                                                                                            name="p" required> --}}
                                                                                     </div>
                                                                                     <div class="col-12 mt-5">
                                                                                         <label for="validationCustom01"

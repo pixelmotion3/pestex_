@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@if(session('success'))
+	<div id="success-alert" class="alert alert-success">
+		{{ session('success') }}
+	</div>
+@endif
 
+@if(session('error'))
+	<div id="error-alert" class="alert alert-danger">
+		{{ session('error') }}
+	</div>
+@endif
+<script>
+// Esconde o alerta após 5 segundos
+setTimeout(function() {
+	let successAlert = document.getElementById('success-alert');
+	let errorAlert = document.getElementById('error-alert');
+
+	if (successAlert) {
+	successAlert.style.display = 'none';
+	}
+
+	if (errorAlert) {
+	errorAlert.style.display = 'none';
+	}
+}, 5000); // 5000ms = 5 segundos
+</script>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -630,7 +655,7 @@
                                     {{ $contact_info[0]['p-3'] }}
                                 </p>
                                 {{-- <form class="contact-two__form contact-form-validated form-one" action="inc/sendemail.php"> --}}
-								<form class="contact-two__form contact-form-validated form-one" action="{{ route('About.ContactFormAbout') }}">
+								<form class="contact-two__form form-one" method="POST" action="{{ route('About.ContactFormAbout') }}">
 									@csrf
 									@method('post')
                                     <div class="form-one__group">
@@ -650,32 +675,6 @@
                                     </div><!-- /.form-one__group -->
 
                                 </form>
-								@if(session('success'))
-									<div id="success-alert" class="alert alert-success">
-										{{ session('success') }}
-									</div>
-								@endif
-
-								@if(session('error'))
-									<div id="error-alert" class="alert alert-danger">
-										{{ session('error') }}
-									</div>
-								@endif
-								<script>
-								// Esconde o alerta após 5 segundos
-								setTimeout(function() {
-									let successAlert = document.getElementById('success-alert');
-									let errorAlert = document.getElementById('error-alert');
-
-									if (successAlert) {
-									successAlert.style.display = 'none';
-									}
-
-									if (errorAlert) {
-									errorAlert.style.display = 'none';
-									}
-								}, 5000); // 5000ms = 5 segundos
-								</script>
                             </div>
                         </div>
                     </div>

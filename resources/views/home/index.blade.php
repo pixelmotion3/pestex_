@@ -1165,7 +1165,7 @@ setTimeout(function() {
 				<div class="row mt-5">
 					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms" style="margin-bottom: 40px;">
 						<div class="service-one__item text-center">
-							<div class="service-one__item__image">
+							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-1'] }}')" id="">
 								<img src="{{ $best_service[0]['best-service-img-path-1'] }}" alt="tolak">
 							</div>
 							<div class="service-one__item__content" style="height: 300px;">
@@ -1237,7 +1237,7 @@ setTimeout(function() {
 					</div>
 					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="150ms" style="margin-bottom: 40px;">
 						<div class="service-one__item text-center">
-							<div class="service-one__item__image">
+							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-2'] }}')" >
 								<img src="{{ $best_service[0]['best-service-img-path-2'] }}" alt="tolak">
 							</div>
 							<div class="service-one__item__content" style="height: 300px;">
@@ -1309,7 +1309,7 @@ setTimeout(function() {
 					</div>
 					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" style="margin-bottom: 40px;">
 						<div class="service-one__item text-center">
-							<div class="service-one__item__image">
+							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-3'] }}')" >
 								<img src="{{ $best_service[0]['best-service-img-path-3'] }}" alt="tolak">
 							</div>
 							<div class="service-one__item__content" style="height: 300px;">
@@ -1383,7 +1383,7 @@ setTimeout(function() {
 
 					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" style="margin-bottom: 40px;">
 						<div class="service-one__item text-center">
-							<div class="service-one__item__image">
+							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-4'] }}')" >
 								<img src="{{ $best_service[0]['best-service-img-path-4'] }}" alt="tolak">
 							</div>
 							<div class="service-one__item__content" style="height: 300px;">
@@ -1456,7 +1456,7 @@ setTimeout(function() {
 
 					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" style="margin-bottom: 40px;">
 						<div class="service-one__item text-center">
-							<div class="service-one__item__image">
+							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-5'] }}')" >
 								<img src="{{ $best_service[0]['best-service-img-path-5'] }}" alt="tolak">
 							</div>
 							<div class="service-one__item__content" style="height: 300px;">
@@ -1529,7 +1529,7 @@ setTimeout(function() {
 
 					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" style="margin-bottom: 40px;">
 						<div class="service-one__item text-center">
-							<div class="service-one__item__image">
+							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-6'] }}')" >
 								<img src="{{ $best_service[0]['best-service-img-path-6'] }}" alt="tolak">
 							</div>
 							<div class="service-one__item__content" style="height: 300px;">
@@ -2159,24 +2159,21 @@ setTimeout(function() {
 			</div>
 		</section>
 
-		<section class="cta-four mt-5">
+		{{-- <section class="cta-four mt-5">
 			<div class="container" style="margin-top:100px;">
 				<div class="cta-four__bg" style="background-image: url({{ $video_contact[0]['watch-video-bg-img'] }});">
 						<div class="cta-four__shape" style="background-image: url(assets/images/shapes/cta-4-border.png);"></div>
 					<div class="row">
 						<div class="col-lg-6 wow fadeInUp" data-wow-delay="00ms">
 							<div class="cta-four__content">
-								{{-- <a class="video-popup" style="color: white;background-color:#ff6600;">
-									<i class="icon-play-button"></i>
-								</a> --}}
 								<div class="sec-title-two text-left">
 									<h6 class="sec-title-two__tagline"><span
 											class="sec-title__tagline__left" style="color:#ff6600;"></span><i style="color:#ff6600;">{{ $video_contact[0]['watch-video-p-strong-1'] }}</i><span
 											class="sec-title__tagline__right" style="color:#ff6600;"></span>
-									</h6><!-- /.sec-title-two__tagline -->
+									</h6>
 									<h3 class="sec-title-two__title">{{ $video_contact[0]['watch-video-h2'] }}</h3>
-									<!-- /.sec-title-two__title -->
-								</div><!-- /.sec-title-two -->
+
+								</div>
 								<p class="cta-four__content__text">
 									{{ $video_contact[0]['watch-video-p-2'] }}<br />{{ $video_contact[0]['watch-video-p-2-1'] }}
 								</p>
@@ -2198,7 +2195,7 @@ setTimeout(function() {
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> --}}
 
 		<section id="contact-us">
 			<div class="container mt-3 mb-5">
@@ -2480,9 +2477,11 @@ setTimeout(function() {
 				var time = $(this).attr("id");
 				console.log(time)
 			})
-			$(".service-one__item__image").on("click", () =>{
-				window.open("/servicos")
-			})
+			// $(".service-one__item__image").on("click", () =>{
+			// 	var service_id = $(this).attr("id");
+			// 	console.log(service_id)
+			// 	window.open("/servicos/"+service_id)
+			// })
 			const currentYear = new Date().getFullYear();
 			$('#year').text(currentYear);
 
