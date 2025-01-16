@@ -142,7 +142,7 @@ setTimeout(function() {
 							<li class="scrollToLink"><a href="sobre" class="font-semibold">Sobre</a></li>
 							<li class="scrollToLink"><a href="servicos" class="font-semibold">Serviços</a></li>
 							<li class="scrollToLink"><a href="sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
-							<li class="scrollToLink"><a href="equipamentos" class="font-semibold">Equipamentos</a></li>
+							{{-- <li class="scrollToLink"><a href="equipamentos" class="font-semibold">Equipamentos</a></li> --}}
 							<li class="scrollToLink contactenos-link2 current"><a href="contactos" class="font-semibold">Contactos</a></li>
 							<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
 						</ul>
@@ -416,7 +416,7 @@ setTimeout(function() {
                                 <li><a href="home">Início</a></li>
                                 <li><a href="sobre">Sobre Nós</a></li>
                                 <li><a href="servicos">Serviços</a></li>
-                                <li><a href="equipamentos">Equipamento</a></li>
+                                {{-- <li><a href="equipamentos">Equipamento</a></li> --}}
                                 <li><a href="sustentabilidade">Sustentabilidade</a></li>
                             </ul><!-- /.list-unstyled footer-widget__links -->
                         </div><!-- /.footer-widget -->
