@@ -19,41 +19,41 @@ use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\NewsletterController;
 use Illuminate\Support\Facades\Route;
 
-// Rota padrão para o domínio principal
-Route::domain('127.0.0.1')->group(function () {
-    // Quando acessar "sospragas.pt", redireciona para a rota /home
-    Route::get('/', function () {
-        return redirect('/home');
-    });
+// // Rota padrão para o domínio principal
+// Route::domain('127.0.0.1')->group(function () {
+//     // Quando acessar "sospragas.pt", redireciona para a rota /home
+//     Route::get('/', function () {
+//         return redirect('/home');
+//     });
 
-    // Outras rotas específicas para "sospragas.pt"
-    Route::get('/home', [FrontPageController::class, 'Home'])->name('FrontPage.Home');
-});
-
-
-// Rota padrão para o domínio principal
-Route::domain('sospragas.pt')->group(function () {
-    // Quando acessar "sospragas.pt", redireciona para a rota /home
-    Route::get('/', function () {
-        return redirect('/home');
-    });
-
-    // Outras rotas específicas para "sospragas.pt"
-    Route::get('/home', [FrontPageController::class, 'Home'])->name('FrontPage.Home');
-});
-
-// Rota padrão para o subdomínio
-Route::domain('desinfestacoes.sospragas.pt')->group(function () {
-    // Quando acessar "desinfestacoes.sospragas.pt", redireciona para /
-    Route::resource('/', FrontPageController::class);
-
-    // Outras rotas específicas para "desinfestacoes.sospragas.pt"
-});
+//     // Outras rotas específicas para "sospragas.pt"
+//     Route::get('/home', [FrontPageController::class, 'Home'])->name('FrontPage.Home');
+// });
 
 
+// // Rota padrão para o domínio principal
+// Route::domain('sospragas.pt')->group(function () {
+//     // Quando acessar "sospragas.pt", redireciona para a rota /home
+//     Route::get('/', function () {
+//         return redirect('/home');
+//     });
 
-// Route::resource('/', FrontPageController::class);
-// Route::get('/home', [FrontPageController::class, 'Home'])->name('FrontPage.Home');
+//     // Outras rotas específicas para "sospragas.pt"
+//     Route::get('/home', [FrontPageController::class, 'Home'])->name('FrontPage.Home');
+// });
+
+// // Rota padrão para o subdomínio
+// Route::domain('desinfestacoes.sospragas.pt')->group(function () {
+//     // Quando acessar "desinfestacoes.sospragas.pt", redireciona para /
+//     Route::resource('/', FrontPageController::class);
+
+//     // Outras rotas específicas para "desinfestacoes.sospragas.pt"
+// });
+
+
+
+Route::resource('/', FrontPageController::class);
+Route::get('/home', [FrontPageController::class, 'Home'])->name('FrontPage.Home');
 
 Route::resource('/sustentabilidade', SustainabilityController::class);
 Route::post('/newsletter/new', [NewsletterController::class, 'NewsletterForm'])->name('NewsLatterPage.NewsletterForm');
