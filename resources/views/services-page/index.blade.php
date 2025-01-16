@@ -643,7 +643,7 @@
                                     <li>
                                         <div class="d-grid px-2 pt-2 pb-1">
                                             <small class="align-middle btn btn-sm btn-danger d-flex text-white">
-                                                <form method="POST" action="{{ route('logout') }}">
+                                                <form method="POST" action="{{ route('logout', [], false) }}">
                                                     @csrf
                                                     <x-responsive-nav-link :href="route('logout')"
                                                         onclick="event.preventDefault();
@@ -706,7 +706,7 @@
                                             <div class="tab-pane fade show active" id="main-screen" role="tabpanel"
                                                 aria-labelledby="main-screen-tab">
                                                 <form class="row g-3 needs-validation" novalidate
-                                                    action="{{ route('services-page.update', 1) }}" method="post"
+                                                    action="{{ route('services-page.update', 1,false) }}" method="post"
                                                     enctype="multipart/form-data">
                                                     @csrf
                                                     @method('PUT')
@@ -998,7 +998,7 @@
                                                                                 Apagar serviço
                                                                             </a>
                                                                             <form id="delete-form"
-                                                                                action="{{ route('ServiceDetails.destroy', [$service->id]) }}"
+                                                                                action="{{ route('ServiceDetails.destroy', [$service->id],false) }}"
                                                                                 method="post" style="display: none">
                                                                                 <input type="hidden" name="_method"
                                                                                     value="delete" />
@@ -1043,7 +1043,7 @@
                                                                             </div>
                                                                             <div class="modal-body">
                                                                                 <form class="row g-3 needs-validation"
-                                                                                    action="{{ route('ServiceDetails.update', [$service['id']]) }}"
+                                                                                    action="{{ route('ServiceDetails.update', [$service['id']],false) }}"
                                                                                     method="post"
                                                                                     enctype="multipart/form-data">
                                                                                     @csrf
@@ -1246,7 +1246,7 @@
                                                                             </div>
                                                                             <div class="modal-body">
                                                                                 <form class="row g-3 needs-validation"
-                                                                                    action="{{ route('methods.store') }}"
+                                                                                    action="{{ route('methods.store', [], false) }}"
                                                                                     method="post"
                                                                                     enctype="multipart/form-data">
                                                                                     @csrf
@@ -1332,7 +1332,7 @@
                                             <div class="tab-pane fade show" id="create-services" role="tabpanel"
                                                 aria-labelledby="create-services-tab">
                                                 <form class="row g-3 needs-validation"
-                                                    action="{{ route('ServiceDetails.store') }}" method="post"
+                                                    action="{{ route('ServiceDetails.store', [], false) }}" method="post"
                                                     enctype="multipart/form-data">
                                                     @csrf
                                                     @method('POST')
@@ -1391,7 +1391,7 @@
                                                 aria-labelledby="detail-services-tab">
                                                 <div class="container">
                                                     <div class="row">
-                                                        <form action="{{ route('ServiceDetails.update', 1) }}" method="post" enctype="multipart/form-data">
+                                                        <form action="{{ route('ServiceDetails.update', 1,false) }}" method="post" enctype="multipart/form-data">
                                                             @csrf
                                                             @method('put')
                                                             <div class="col-12 mt-5 form-group">

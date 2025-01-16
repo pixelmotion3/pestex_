@@ -23,8 +23,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if (request()->getHost() === 'sospragas.pt') {
-			\URL::forceRootUrl('https://sospragas.pt');
-		}
+        //
     }
 }
