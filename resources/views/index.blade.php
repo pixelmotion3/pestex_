@@ -357,7 +357,7 @@ setTimeout(function() {
 											<input class="form-check-input" type="checkbox"
 												name="confirmed" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-												Aceito os <a href="/home/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+												Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
 											</label>
 											@error('confirmed')
 												<span class="invalid-feedback" role="alert">
@@ -370,7 +370,7 @@ setTimeout(function() {
 											<input class="form-check-input"
 												type="checkbox" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-												Tenho conhecimento e aceito a <a href="/home/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
 											</label>
 										</div>
                                         <div class="col-md-12 ml-4 mb-5" style="max-width: 92%">
@@ -428,7 +428,7 @@ setTimeout(function() {
 												<input class="form-check-input" type="checkbox"
 													name="confirmed" id="flexCheckDefault" required>
 												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-													Aceito os <a href="/home/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+													Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
 												</label>
 												@error('confirmed')
 													<span class="invalid-feedback" role="alert">
@@ -441,7 +441,7 @@ setTimeout(function() {
 												<input class="form-check-input"
 													type="checkbox" id="flexCheckDefault" required>
 												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-													Tenho conhecimento e aceito a <a href="/home/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+													Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
 												</label>
 											</div>
                                             <div class="col-md-12 ml-4" style="max-width: 92%;">
@@ -781,7 +781,7 @@ setTimeout(function() {
 										<input class="form-check-input" type="checkbox"
 											name="confirmed" id="flexCheckDefault" required>
 										<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-											Aceito os <a href="/home/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+											Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
 										</label>
 										@error('confirmed')
 											<span class="invalid-feedback" role="alert">
@@ -794,7 +794,7 @@ setTimeout(function() {
 										<input class="form-check-input"
 											type="checkbox" id="flexCheckDefault" required>
 										<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-											Tenho conhecimento e aceito a <a href="/home/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+											Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
 										</label>
 									</div>
 									{{-- <div class="form-check">
@@ -847,7 +847,7 @@ setTimeout(function() {
 											<input class="form-check-input" type="checkbox"
 												name="confirmed" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-												Aceito os <a href="/home/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+												Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
 											</label>
 											@error('confirmed')
 												<span class="invalid-feedback" role="alert">
@@ -860,7 +860,7 @@ setTimeout(function() {
 											<input class="form-check-input"
 												type="checkbox" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-												Tenho conhecimento e aceito a <a href="/home/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
 											</label>
 										</div>
 										<div class="col-md-12 ml-4" style="max-width: 92%;">
@@ -991,7 +991,7 @@ setTimeout(function() {
 										<input class="form-check-input" type="checkbox"
 											name="confirmed" id="flexCheckDefault" required>
 										<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-											Aceito os <a href="/home/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+											Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
 										</label>
 										@error('confirmed')
 											<span class="invalid-feedback" role="alert">
@@ -1004,7 +1004,7 @@ setTimeout(function() {
 										<input class="form-check-input"
 											type="checkbox" id="flexCheckDefault" required>
 										<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-											Tenho conhecimento e aceito a <a href="/home/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+											Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
 										</label>
 									</div>
 									{{-- <div class="form-check">
@@ -1058,7 +1058,7 @@ setTimeout(function() {
 											<input class="form-check-input" type="checkbox"
 												name="confirmed" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-												Aceito os <a href="/home/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+												Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
 											</label>
 											@error('confirmed')
 												<span class="invalid-feedback" role="alert">
@@ -1071,7 +1071,7 @@ setTimeout(function() {
 											<input class="form-check-input"
 												type="checkbox" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-												Tenho conhecimento e aceito a <a href="/home/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
 											</label>
 										</div>
 										<div class="col-md-12 ml-4" style="max-width: 92%;">
@@ -1868,7 +1868,7 @@ setTimeout(function() {
 											<div class="pull-left" style="margin-left: 20px;">
 												<input class="form-check-input" type="checkbox" name="confirmed" id="flexCheckDefault" required="">
 												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;width: 280px;max-width:580px; color:grey;font-size:12px;">
-													Aceito os <a href="/home/termos-servico"  target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+													Aceito os <a href="/termos-servico"  target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
 												</label>
 											</div>
 										</div>
@@ -1876,7 +1876,7 @@ setTimeout(function() {
 											<div class="pull-left" style="margin-left: 20px;">
 												<input class="form-check-input" type="checkbox" id="flexCheckDefault" required="">
 												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;width: 280px;max-width:580px;color:grey;font-size:12px;">
-													Tenho conhecimento e aceito a <a href="/home/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+													Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
 												</label>
 											</div>
 										</div>

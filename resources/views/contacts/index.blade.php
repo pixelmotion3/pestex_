@@ -131,14 +131,14 @@ setTimeout(function() {
 			<div class="container-fluid">
 				<div class="main-header__inner">
 					<div class="main-header__logo">
-						<a href="/home">
+						<a href="/">
 							<img src="assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
 						</a>
 
 					</div><!-- /.main-header__logo -->
 					<nav class="main-header__nav main-menu">
 						<ul class="main-menu__list">
-							<li class="megamenu scrollToLink"><a href="home" class="font-semibold">Home</a></li>
+							<li class="megamenu scrollToLink"><a href="/" class="font-semibold">Home</a></li>
 							<li class="scrollToLink"><a href="sobre" class="font-semibold">Sobre</a></li>
 							<li class="scrollToLink"><a href="servicos" class="font-semibold">Serviços</a></li>
 							<li class="scrollToLink"><a href="sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
@@ -413,7 +413,7 @@ setTimeout(function() {
                         <div class="footer-widget footer-widget--links">
                             <h2 class="footer-widget__title">SOS Pragas</h2><!-- /.footer-widget__title -->
                             <ul class="list-unstyled footer-widget__links">
-                                <li><a href="home">Início</a></li>
+                                <li><a href="/">Início</a></li>
                                 <li><a href="sobre">Sobre Nós</a></li>
                                 <li><a href="servicos">Serviços</a></li>
                                 {{-- <li><a href="equipamentos">Equipamento</a></li> --}}
@@ -426,8 +426,8 @@ setTimeout(function() {
                             <h2 class="footer-widget__title">Links Úteis</h2><!-- /.footer-widget__title -->
                             <ul class="list-unstyled footer-widget__links">
                                 <li><a href="contactos" target="_blank">Contactos</a></li>
-                                <li><a href="home/termos-servico" target="_blank">Termos de Serviço</a></li>
-                                <li><a href="home/politica-privacidade" target="_blank">Política de Privacidade</a></li>
+                                <li><a href="/termos-servico" target="_blank">Termos de Serviço</a></li>
+                                <li><a href="/politica-privacidade" target="_blank">Política de Privacidade</a></li>
                                 <li><a href="https://www.livroreclamacoes.pt/Inicio/ " target="_blank">Livro de Reclamações</a></li>
                             </ul><!-- /.list-unstyled footer-widget__links -->
                         </div><!-- /.footer-widget -->
