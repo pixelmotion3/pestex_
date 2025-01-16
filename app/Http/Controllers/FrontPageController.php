@@ -255,7 +255,7 @@ class FrontPageController extends Controller
             'confirmed' => true
         ]);
 		if ($query) {
-			return redirect()->route('FrontPage.Home')->with('success', 'Obrigado pelo seu contacto. Iremos entrar em contacto brevemente!!');
+			return redirect()->back()->with('success', 'Obrigado pelo seu contacto. Iremos entrar em contacto brevemente!!');
 		}
 		return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
     }
