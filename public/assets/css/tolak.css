@@ -23034,6 +23034,14 @@ body.boxed-wrapper .main-slider-one__floating-text {
 .why-choose-five__content {
   position: relative;
 }
+
+@media (max-width: 668px) {
+	.why-choose-five__content {
+	  margin-top: 15% !important;
+	}
+}
+
+
 .why-choose-five__content .sec-title-four {
   padding-bottom: 24px;
 }
@@ -23048,11 +23056,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
 }
 
 
-@media (min-width: 400px) {
-	.why-choose-five__content {
-	  margin-top: 10% !important;
-	}
-}
+
 .footer-developer {
     display: flex;
     justify-content: space-between;
