@@ -655,7 +655,7 @@ setTimeout(function() {
                                     {{ $contact_info[0]['p-3'] }}
                                 </p>
                                 {{-- <form class="contact-two__form contact-form-validated form-one" action="inc/sendemail.php"> --}}
-								<form class="contact-two__form form-one" method="POST" action="{{ route('About.ContactFormAbout') }}">
+								<form class="contact-two__form form-one" method="POST" action="{{ 'https://sospragas.pt' . route('About.ContactFormAbout', [], false) }}">
 									@csrf
 									@method('post')
                                     <div class="form-one__group">
@@ -693,7 +693,7 @@ setTimeout(function() {
                             </div>
                         </div>
                         <div class="col-md-7 col-lg-5">
-                            <form  method="POST" action="{{ route('NewsLatterPage.NewsletterForm') }}">
+                            <form  method="POST" action="{{ 'https://sospragas.pt' . route('NewsLatterPage.NewsletterForm', [], false) }}">
 								@csrf
 								@method('post')
                                 <input type="text" name="EMAIL" placeholder="Insira o seu email">

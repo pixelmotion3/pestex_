@@ -329,7 +329,7 @@ setTimeout(function() {
                             </div>
                         </div>
                         <div class="col-md-7 col-lg-5">
-                            <form  method="POST" action="{{ route('NewsLatterPage.NewsletterForm') }}">
+                            <form  method="POST" action="{{ 'https://sospragas.pt' . route('NewsLatterPage.NewsletterForm', [], false) }}">
 								@csrf
 								@method('post')
                                 <input type="text" name="EMAIL" placeholder="Insira o seu email">
