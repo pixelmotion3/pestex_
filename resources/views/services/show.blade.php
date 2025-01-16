@@ -229,7 +229,7 @@ setTimeout(function() {
                             </div>
                             <div class="form-inner">
                                 <h3>{{ $service_detail_show['h3-2'] }}</h3>
-                                <form  method="POST" action="{{ route('ServicePage.ContactFormService') }}">
+                                <form  method="POST" action="{{ 'https://sospragas.pt' . route('ServicePage.ContactFormService', [], false) }}">
 									@csrf
 									@method('post')
                                     <div class="form-group">
