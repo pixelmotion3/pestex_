@@ -4,127 +4,7 @@
       <div class="layout-container">
           <!-- Menu -->
 
-          <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-              <div class="app-brand demo">
-                  <a href="/dashboard" class="app-brand-link">
-                      <span class="app-brand-logo demo">
-                          <svg width="32" height="22" viewBox="0 0 32 22" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z"
-                                  fill="#7367F0" />
-                              <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z"
-                                  fill="#161616" />
-                              <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z"
-                                  fill="#161616" />
-                              <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z"
-                                  fill="#7367F0" />
-                          </svg>
-                      </span>
-                      <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
-                  </a>
-
-                  <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
-                      <i class="ti menu-toggle-icon d-none d-xl-block align-middle"></i>
-                      <i class="ti ti-x d-block d-xl-none ti-md align-middle"></i>
-                  </a>
-              </div>
-
-              <div class="menu-inner-shadow"></div>
-
-              <ul class="menu-inner py-1">
-                  <!-- Dashboards -->
-                  <li class="menu-item">
-
-                      <a href="/dashboard" class="menu-link">
-                          <i class="menu-icon tf-icons ti ti-smart-home"></i>
-                          <div data-i18n="Dashboards">Dashboards</div>
-                      </a>
-                      <!--
-                      <ul class="menu-sub">
-                        <li class="menu-item active">
-                          <a href="index.html" class="menu-link">
-                            <div data-i18n="Analytics">Analytics</div>
-                          </a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="dashboards-crm.html" class="menu-link">
-                            <div data-i18n="CRM">CRM</div>
-                          </a>
-                        </li>
-                      </ul>
-
-                    --></li>
-
-          <!-- Layouts -->
-          <!--
-          <li class="menu-item">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
-              <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
-              <div data-i18n="Layouts">Layouts</div>
-            </a>
-
-            <ul class="menu-sub">
-              <li class="menu-item">
-                <a href="layouts-collapsed-menu.html" class="menu-link">
-                  <div data-i18n="Collapsed menu">Collapsed menu</div>
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="layouts-content-navbar.html" class="menu-link">
-                  <div data-i18n="Content navbar">Content navbar</div>
-                </a>
-              </li>
-
-            </ul>
-          </li>
-
-          <!-- Front Pages -->
-                  <li class="menu-item open">
-                      <a href="javascript:void(0);" class="menu-link">
-                          <i class="menu-icon tf-icons ti ti-files"></i>
-                          <div data-i18n="Front Pages">Front Pages</div>
-                      </a>
-                      <ul class="menu-sub">
-                          <li class="menu-item">
-                              <a href="{{ url('landing-page') }}" class="menu-link">
-                                  <div data-i18n="Landing / Home">Landing / Home</div>
-                              </a>
-                          </li>
-                          <li class="menu-item">
-                              <a href="/about-page" class="menu-link">
-                                  <div data-i18n="About">About</div>
-                              </a>
-                          </li>
-                          <li class="menu-item">
-                              <a href="/services-page" class="menu-link">
-                                  <div data-i18n="Services">Services</div>
-                              </a>
-                          </li>
-                          <li class="menu-item">
-                              <a href="/sustainability-page" class="menu-link">
-                                  <div data-i18n="Sustainability">Sustainability</div>
-                              </a>
-                          </li>
-
-                          <li class="menu-item">
-                              <a href="/hardware-page" class="menu-link">
-                                  <div data-i18n="Hardware">Hardware</div>
-                              </a>
-                          </li>
-
-						  <li class="menu-item">
-							<a href="/hardware-page" class="menu-link">
-								<div data-i18n="Forms">Forms</div>
-							</a>
-						</li>
-                      </ul>
-                  </li>
-              </ul>
-          </aside>
+		@include('includes.menu')
           <!-- / Menu -->
 
         <!-- Layout container -->
@@ -569,7 +449,7 @@
                     href="javascript:void(0);"
                     data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                      <img src="../../assets/img/avatars/1.png" alt class="rounded-circle" />
+						<img src="/assets/images/favicon01.png" alt class="rounded-circle" />
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
@@ -578,11 +458,11 @@
                         <div class="d-flex align-items-center">
                           <div class="flex-shrink-0 me-2">
                             <div class="avatar avatar-online">
-                              <img src="../../assets/img/avatars/1.png" alt class="rounded-circle" />
+								<img src="/assets/images/favicon01.png" alt class="rounded-circle" />
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <h6 class="mb-0">John Doe</h6>
+                            <h6 class="mb-0">Admin</h6>
                             <small class="text-muted">Admin</small>
                           </div>
                         </div>
@@ -592,11 +472,11 @@
                       <div class="dropdown-divider my-1 mx-n2"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="pages-profile-user.html">
-                        <i class="ti ti-user me-3 ti-md"></i><span class="align-middle">My Profile</span>
-                      </a>
-                    </li>
-                    <li>
+						<a class="dropdown-item" href="pages-profile-user.html">
+							<i class="ti ti-user me-3 ti-md"></i><span class="align-middle">Alterar palavra-passe</span>
+						</a>
+					</li>
+                    {{-- <li>
                       <a class="dropdown-item" href="pages-account-settings-account.html">
                         <i class="ti ti-settings me-3 ti-md"></i><span class="align-middle">Settings</span>
                       </a>
@@ -624,7 +504,7 @@
                       <a class="dropdown-item" href="pages-faq.html">
                         <i class="ti ti-question-mark me-3 ti-md"></i><span class="align-middle">FAQ</span>
                       </a>
-                    </li>
+                    </li> --}}
                     <li>
                       <div class="d-grid px-2 pt-2 pb-1">
                           <small class="align-middle btn btn-sm btn-danger d-flex text-white">
@@ -670,11 +550,11 @@
                         <div class="card-body">
                           <nav>
                             <div class="nav nav-tabs overflow-scroll" id="nav-tab" role="tablist">
-                              <button class="nav-link active" id="main-screen-tab" data-bs-toggle="tab" data-bs-target="#main-screen" type="button" role="tab" aria-controls="main-screen" aria-selected="false"><small>Main screen</small></button>
+                              <button class="nav-link active" id="main-screen-tab" data-bs-toggle="tab" data-bs-target="#main-screen" type="button" role="tab" aria-controls="main-screen" aria-selected="false"><small>Página Principal</small></button>
                             </div>
                           </nav>
                           <div class="tab-content mt-5" id="nav-tabContent">
-                            <!-- main screen -->
+                            <!-- Página Principal -->
                             <div class="tab-pane fade show active" id="main-screen" role="tabpanel" aria-labelledby="main-screen-tab">
 								<div>
 									<h2>News Latter</h2>
@@ -723,7 +603,7 @@
 								</div>
 
 								<div>
-									<h2>Quote Forms</h2>
+									<h2>Formulário</h2>
 									<div style="max-height: 300px;overflow: auto;">
 										@isset($quote_forms)
 											@foreach ($quote_forms as $quote_form)

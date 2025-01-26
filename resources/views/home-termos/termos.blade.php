@@ -332,7 +332,7 @@
 											<input class="form-check-input" type="checkbox"
 												name="confirmed" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-												Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+												Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilização</a>
 											</label>
 											@error('confirmed')
 												<span class="invalid-feedback" role="alert">
@@ -345,7 +345,7 @@
 											<input class="form-check-input"
 												type="checkbox" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 											</label>
 										</div>
                                         <div class="col-md-12 ml-4 mb-5" style="max-width: 92%">
@@ -403,7 +403,7 @@
 												<input class="form-check-input" type="checkbox"
 													name="confirmed" id="flexCheckDefault" required>
 												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-													Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+													Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilização</a>
 												</label>
 												@error('confirmed')
 													<span class="invalid-feedback" role="alert">
@@ -416,7 +416,7 @@
 												<input class="form-check-input"
 													type="checkbox" id="flexCheckDefault" required>
 												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-													Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+													Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 												</label>
 											</div>
                                             <div class="col-md-12 ml-4" style="max-width: 92%;">
@@ -439,7 +439,7 @@
 				<div class="main-header__inner">
 					<div class="main-header__logo">
 						<a href="/">
-							<img src="../assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
+							<img src="..//assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
 						</a>
 
 					</div><!-- /.main-header__logo -->
@@ -490,7 +490,7 @@
                         <div class="col-md-5 col-lg-3">
                             <div class="mail-section__content">
                                 <h3 class="mail-section__content__title">Subscreva a Newsletter</h3>
-                                <p class="mail-section__content__text">Esteja a par das nossas novidades</p>
+                                <p class="mail-section__content__text">Fique a par de todas as novidades!</p>
                             </div>
                         </div>
                         <div class="col-md-7 col-lg-5">
@@ -624,7 +624,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="assets/images/logo-dark.png" width="155" alt=""></a>
+                <a href="index.html" aria-label="logo image"><img src="/assets/images/logo-dark.png" width="155" alt=""></a>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container">

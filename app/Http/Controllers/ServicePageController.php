@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Models\contact_forms;
+use App\Models\News_letter;
+use App\Models\quote_forms;
 use App\Models\ServicesMainScreen;
 use App\Models\ServiceDetails;
 use App\Models\ServiceDetailsShow;
@@ -15,10 +17,20 @@ class ServicePageController extends Controller
      */
     public function index()
     {
+
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
         return view('services-page.index', [
             'services_page' => ServicesMainScreen::where('id', 1)->get()->toArray(),
             'service_details_page' => ServiceDetailsShow::where('id', 1)->get()->toArray(),
-            'services' => ServiceDetails::all()
+            'services' => ServiceDetails::all(),
+			'contactos_news' => $contactos_news,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
         ]);
     }
 
@@ -107,7 +119,10 @@ class ServicePageController extends Controller
                 'p-a' => $request->input('p-a'),
                 'h6' => $request->input('h6'),
                 'h3-1' => $request->input('h3-1'),
-                'p-1' => $request->input('p-1')
+                'p-1' => $request->input('p-1'),
+				'meta-title' => $request->input('meta-title'),
+                'meta-desctiption' => $request->input('meta-desctiption'),
+                'meta-keywords' => $request->input('meta-keywords')
             ]);
             if($query){
                 return redirect()->route('services-page.index');

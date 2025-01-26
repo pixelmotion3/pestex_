@@ -13,6 +13,7 @@ class quote_forms extends Model
         'name',
         'email',
         'phone',
-        'confirmed'
+        'confirmed',
+		'viewed'
     ];
 }

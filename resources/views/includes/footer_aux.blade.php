@@ -124,7 +124,7 @@
                 <div class="col-md-6">
                     <ul class="list-unstyled main-footer__bottom__list">
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
+                        <li><a href="services.html">Serviços</a></li>
                         <li><a href="blog-list-right.html">News</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                     </ul><!-- /.list-unstyled -->

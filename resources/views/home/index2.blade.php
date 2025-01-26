@@ -98,7 +98,7 @@
             <div class="custom-cursor__cursor-two"></div>
 
             <div class="preloader">
-                <div class="preloader__image" style="background-image: url(assets/images/logo-dark.png);"></div>
+                <div class="preloader__image" style="background-image: url(/assets/images/logo-dark.png);"></div>
             </div>
             <!-- Modal -->
             <div class="modal fade rounded-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -191,7 +191,7 @@
                                                 <div class="col-md-12 form-check">
                                                     <input class="form-check-input form-check-input float-left" type="checkbox" name="confirmed" id="flexCheckDefault" required>
                                                     <label class="form-check-label" for="flexCheckDefault">
-                                                    Concordo com os termos de utilizaçao
+                                                    Concordo com os Termos de Utilização
                                                     </label>
                                                     @error('confirmed')
                                                         <span class="invalid-feedback" role="alert">
@@ -246,7 +246,7 @@
                                                     <div class="col-md-12 form-check">
                                                         <input class="form-check-input form-check-input float-left" type="checkbox" name="confirmed" id="flexCheckDefault" required>
                                                         <label class="form-check-label" for="flexCheckDefault">
-                                                        Concordo com os termos de utilizaçao
+                                                        Concordo com os Termos de Utilização
                                                         </label>
                                                         @error('confirmed')
                                                             <span class="invalid-feedback" role="alert">
@@ -272,7 +272,7 @@
 					<div class="main-header__inner">
 						<div class="main-header__logo">
 							<a href="/">
-								<img src="assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
+								<img src="/assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
 							</a>
 
 						</div><!-- /.main-header__logo -->
@@ -582,7 +582,7 @@
                                         <div class="col-md-12 form-check">
                                             <input class="form-check-input form-check-input float-left" type="checkbox" name="confirmed" id="flexCheckDefault" required>
                                             <label class="form-check-label" for="flexCheckDefault">
-                                               Concordo com os termos de utilizaçao
+                                               Concordo com os Termos de Utilização
                                             </label>
                                             @error('confirmed')
                                                 <span class="invalid-feedback" role="alert">
@@ -1710,7 +1710,7 @@
                         <div class="col-md-6">
                             <ul class="list-unstyled main-footer__bottom__list">
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="services.html">Services</a></li>
+                                <li><a href="services.html">Serviços</a></li>
                                 <li><a href="blog-list-right.html">News</a></li>
                                 <li><a href="portfolio.html">Portfolio</a></li>
                             </ul><!-- /.list-unstyled -->

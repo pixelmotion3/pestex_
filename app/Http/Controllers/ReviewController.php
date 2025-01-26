@@ -62,9 +62,12 @@ class ReviewController extends Controller
     public function destroy($id)
     {
         $query = Review::findOrFail($id);
-
+		// echo "<pre>";
+		// print_r($query);
+		// echo "</pre>";
+		// die();
         if ($query->delete()) {
-            return redirect()->route('landing-page.index');
+            return redirect()->back();
         }
     }
 }

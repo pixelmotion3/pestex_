@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreHardwareMainScreenRequest;
 use App\Http\Requests\UpdateHardwareMainScreenRequest;
+use App\Models\contact_forms;
 use App\Models\HardwareMainScreen;
+use App\Models\News_letter;
+use App\Models\quote_forms;
 use Illuminate\Http\Request;
 
 class HardwarePageController extends Controller
@@ -15,8 +18,17 @@ class HardwarePageController extends Controller
     public function index()
     {
         $main = HardwareMainScreen::where('id',1)->get()->toArray();
-        
-        return view('hardware-page.index', ['main' => $main ]);
+
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+        return view('hardware-page.index', ['main' => $main,
+		'contactos_news' => $contactos_news,
+		'contact_forms_news' => $contact_forms_news,
+		'news_letters_news' => $news_letters_news,
+		'quote_forms_news' => $quote_forms_news ]);
     }
 
     /**
@@ -27,59 +39,59 @@ class HardwarePageController extends Controller
         if ($request->has('form0')) {
 
             if ($request->hasFile('bg-img')) {
-                $path = $request->file('bg-img')->store('assets/images');     
+                $path = $request->file('bg-img')->store('assets/images');
                 $query = HardwareMainScreen::where('id',1)->update([
-                    'bg-img' => 'storage/' . $path 
-                ]);                 
+                    'bg-img' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img')) {
-                $path = $request->file('img')->store('assets/images');     
+                $path = $request->file('img')->store('assets/images');
                 $query = HardwareMainScreen::where('id',1)->update([
-                    'img' => 'storage/' . $path 
-                ]);                 
+                    'img' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-1')) {
-                $path = $request->file('img-1')->store('assets/images');     
+                $path = $request->file('img-1')->store('assets/images');
                 $query = HardwareMainScreen::where('id',1)->update([
-                    'img-1' => 'storage/' . $path 
-                ]);                 
+                    'img-1' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-2')) {
-                $path = $request->file('img-2')->store('assets/images');     
+                $path = $request->file('img-2')->store('assets/images');
                 $query = HardwareMainScreen::where('id',1)->update([
-                    'img-2' => 'storage/' . $path 
-                ]);                 
+                    'img-2' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-3')) {
-                $path = $request->file('img-3')->store('assets/images');     
+                $path = $request->file('img-3')->store('assets/images');
                 $query = HardwareMainScreen::where('id',1)->update([
-                    'img-3' => 'storage/' . $path 
-                ]);                 
+                    'img-3' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-4')) {
-                $path = $request->file('img-4')->store('assets/images');     
+                $path = $request->file('img-4')->store('assets/images');
                 $query = HardwareMainScreen::where('id',1)->update([
-                    'img-4' => 'storage/' . $path 
-                ]);                 
+                    'img-4' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-5')) {
-                $path = $request->file('img-5')->store('assets/images');     
+                $path = $request->file('img-5')->store('assets/images');
                 $query = HardwareMainScreen::where('id',1)->update([
-                    'img-5' => 'storage/' . $path 
-                ]);                 
+                    'img-5' => 'storage/' . $path
+                ]);
             }
 
             if ($request->hasFile('img-6')) {
-                $path = $request->file('img-6')->store('assets/images');     
+                $path = $request->file('img-6')->store('assets/images');
                 $query = HardwareMainScreen::where('id',1)->update([
-                    'img-6' => 'storage/' . $path 
-                ]);                 
+                    'img-6' => 'storage/' . $path
+                ]);
             }
             //dd($request->all());
             $query = HardwareMainScreen::where('id',1)->update([
@@ -112,6 +124,9 @@ class HardwarePageController extends Controller
                 'li-p' => $request->input('li-p'),
                 'li-h3-1' => $request->input('li-h3-1'),
                 'li-p-1' => $request->input('li-p-1'),
+				'meta-title' => $request->input('meta-title'),
+                'meta-desctiption' => $request->input('meta-desctiption'),
+                'meta-keywords' => $request->input('meta-keywords'),
             ]);
 
             if($query){

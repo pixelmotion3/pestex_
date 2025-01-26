@@ -5,17 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>{{ config('app.name') }}</title>
-        
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />    
-    
+        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+
         <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap/css/bootstrap.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/vendors/animate/animate.min.css') }}" />
-        
+
         <link rel="stylesheet" href="{{ asset('assets/vendors/fontawesome/css/all.min.css') }}" />
-        
+
         <link rel="stylesheet" href="{{ asset('assets/vendors/icofont/icofont.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/vendors/jquery-ui/jquery-ui.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/vendors/jarallax/jarallax.css') }}" />
@@ -26,10 +26,10 @@
         <link rel="stylesheet" href="{{ asset('assets/vendors/tolak-icons/style.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel/css/owl.carousel.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel/css/owl.theme.default.min.css') }}" />
-        
+
         <!-- Stylesheets -->
         <link href="{{ asset('assets/css/font-awesome-all.css') }}" rel="stylesheet">
-        
+
         <link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/owl.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
@@ -59,7 +59,7 @@
                 background-color:#A9A9A9;
                 width:100%;
                 color:white;
-            } 
+            }
             .custom-select:focus{
                 border: 2px solid dodgerblue;
             }
@@ -78,11 +78,11 @@
 
         </style>
          <!-- jequery plugins -->
-        
+
         <script src="{{ asset('assets/js/popper.min.js') }}"></script>
         <script src="{{ asset('assets/js/jquery.js') }}"></script>
         <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-          
+
         <script src="{{ asset('assets/js/owl.js') }}"></script>
         <script src="{{ asset('assets/js/wow.js') }}"></script>
         <script src="{{ asset('assets/js/validation.js') }}"></script>
@@ -91,24 +91,24 @@
         <script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
         <script src="{{ asset('assets/js/scrollbar.js') }}"></script>
         <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
-    
+
         <!-- main-js -->
         <script src="{{ asset('assets/js/script.js') }}"></script>
     </head>
-    <body class="custom-cursor">  
+    <body class="custom-cursor">
             <header class="main-header sticky-header sticky-header--normal">
                 <div class="container-fluid">
                     <div class="main-header__inner">
                         <div class="main-header__logo">
                             <a href="index.html">
-                                <img src="assets/images/logo-dark.png" alt="Tolak HTML" width="184">
+                                <img src="/assets/images/logo-dark.png" alt="Tolak HTML" width="184">
                             </a>
                         </div><!-- /.main-header__logo -->
 
                         <nav class="main-header__nav main-menu">
-                            <p>Tudo Joia</p>    
+                            <p>Tudo Joia</p>
                         </nav><!-- /.main-header__nav -->
-                       
+
                     </div><!-- /.main-header__inner -->
                 </div><!-- /.container-fluid -->
             </header><!-- /.main-header -->
@@ -158,7 +158,7 @@
         <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
             <span class="scroll-to-top__text">back top</span>
             <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
-        </a>     
+        </a>
         -->
     </body>
 </html>

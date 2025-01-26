@@ -22,6 +22,8 @@ use App\Models\Review;
 use Illuminate\Http\Request;
 use App\Models\quote_forms;
 use App\Models\contact_forms;
+use App\Models\News_letter;
+use App\Models\PageView;
 
 class FrontPageController extends Controller
 {
@@ -43,7 +45,19 @@ class FrontPageController extends Controller
         $landing_11page = landing_11page::where('id',1)->get()->toArray();
 		$services = ServiceDetails::all();
         $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
 
+		$routeName = 'landing-page'; // Nome da rota ou página que será monitorada
+        $today = now()->toDateString(); // Data atual (YYYY-MM-DD)
+		// Incrementa ou cria um registro para a contagem de visitas
+		PageView::updateOrCreate(
+			['route_name' => $routeName, 'view_date' => $today],
+			['view_count' => \DB::raw('view_count + 1')]
+		);
 
         return view('index', [
             'main_screen' => $landing_page,
@@ -58,7 +72,11 @@ class FrontPageController extends Controller
             'call_now' => $landing_10page,
 			'services' => $services,
             'video_contact' => $landing_11page,
-            'reviews' =>  $reviews
+            'reviews' =>  $reviews,
+			'contactos_news' => $contactos_news,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
         ]);
     }
 
@@ -67,20 +85,32 @@ class FrontPageController extends Controller
      */
     public function Home()
     {
-        $landing_page = LandingPage::where('id',1)->get()->toArray();
-        $landing_2page = landing_2page::where('id',1)->get()->toArray();
-        $landing_3page = landing_3page::where('id',1)->get()->toArray();
-        $landing_4page = landing_4page::where('id',1)->get()->toArray();
-        $landing_5page = landing_5page::where('id',1)->get()->toArray();
-        $landing_6page = landing_6page::where('id',1)->get()->toArray();
-        $landing_7page = landing_7page::where('id',1)->get()->toArray();
-        $landing_8page = landing_8page::where('id',1)->get()->toArray();
-        $landing_9page = landing_9page::where('id',1)->get()->toArray();
-        $landing_10page = landing_10page::where('id',1)->get()->toArray();
-        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+        $landing_page = LandingPage::where('id',2)->get()->toArray();
+        $landing_2page = landing_2page::where('id',2)->get()->toArray();
+        $landing_3page = landing_3page::where('id',2)->get()->toArray();
+        $landing_4page = landing_4page::where('id',2)->get()->toArray();
+        $landing_5page = landing_5page::where('id',2)->get()->toArray();
+        $landing_6page = landing_6page::where('id',2)->get()->toArray();
+        $landing_7page = landing_7page::where('id',2)->get()->toArray();
+        $landing_8page = landing_8page::where('id',2)->get()->toArray();
+        $landing_9page = landing_9page::where('id',2)->get()->toArray();
+        $landing_10page = landing_10page::where('id',2)->get()->toArray();
+        $landing_11page = landing_11page::where('id',2)->get()->toArray();
 		$services = ServiceDetails::all();
 		$reviews = Review::all();
 
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+		$routeName = 'home'; // Nome da rota ou página que será monitorada
+        $today = now()->toDateString(); // Data atual (YYYY-MM-DD)
+		// Incrementa ou cria um registro para a contagem de visitas
+		PageView::updateOrCreate(
+			['route_name' => $routeName, 'view_date' => $today],
+			['view_count' => \DB::raw('view_count + 1')]
+		);
         return view('home.index', [
             'main_screen' => $landing_page,
             'company_status' => $landing_2page,
@@ -94,7 +124,11 @@ class FrontPageController extends Controller
             'call_now' => $landing_10page,
             'video_contact' => $landing_11page,
 			'services' => $services,
-			'reviews' =>  $reviews
+			'reviews' =>  $reviews,
+			'contactos_news' => $contactos_news,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
         ]);
     }
 
@@ -113,7 +147,18 @@ class FrontPageController extends Controller
         $landing_11page = landing_11page::where('id',1)->get()->toArray();
 		$landing_12page = landing_12page::where('id',1)->get()->toArray();
 
-
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+		$routeName = 'termos-servico'; // Nome da rota ou página que será monitorada
+        $today = now()->toDateString(); // Data atual (YYYY-MM-DD)
+		// Incrementa ou cria um registro para a contagem de visitas
+		PageView::updateOrCreate(
+			['route_name' => $routeName, 'view_date' => $today],
+			['view_count' => \DB::raw('view_count + 1')]
+		);
         return view('termos.termos', [
             'main_screen' => $landing_page,
             'company_status' => $landing_2page,
@@ -126,27 +171,42 @@ class FrontPageController extends Controller
             'collapse' => $landing_9page,
             'call_now' => $landing_10page,
             'video_contact' => $landing_11page,
-			'terms_service' => $landing_12page
+			'terms_service' => $landing_12page,
+			'contactos_news' => $contactos_news,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
         ]);
     }
 
 
 	public function HomeTermoServicos()
     {
-        $landing_page = LandingPage::where('id',1)->get()->toArray();
-        $landing_2page = landing_2page::where('id',1)->get()->toArray();
-        $landing_3page = landing_3page::where('id',1)->get()->toArray();
-        $landing_4page = landing_4page::where('id',1)->get()->toArray();
-        $landing_5page = landing_5page::where('id',1)->get()->toArray();
-        $landing_6page = landing_6page::where('id',1)->get()->toArray();
-        $landing_7page = landing_7page::where('id',1)->get()->toArray();
-        $landing_8page = landing_8page::where('id',1)->get()->toArray();
-        $landing_9page = landing_9page::where('id',1)->get()->toArray();
-        $landing_10page = landing_10page::where('id',1)->get()->toArray();
-        $landing_11page = landing_11page::where('id',1)->get()->toArray();
-		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+        $landing_page = LandingPage::where('id',2)->get()->toArray();
+        $landing_2page = landing_2page::where('id',2)->get()->toArray();
+        $landing_3page = landing_3page::where('id',2)->get()->toArray();
+        $landing_4page = landing_4page::where('id',2)->get()->toArray();
+        $landing_5page = landing_5page::where('id',2)->get()->toArray();
+        $landing_6page = landing_6page::where('id',2)->get()->toArray();
+        $landing_7page = landing_7page::where('id',2)->get()->toArray();
+        $landing_8page = landing_8page::where('id',2)->get()->toArray();
+        $landing_9page = landing_9page::where('id',2)->get()->toArray();
+        $landing_10page = landing_10page::where('id',2)->get()->toArray();
+        $landing_11page = landing_11page::where('id',2)->get()->toArray();
+		$landing_12page = landing_12page::where('id',2)->get()->toArray();
 
-
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+		$routeName = 'termos-servico'; // Nome da rota ou página que será monitorada
+        $today = now()->toDateString(); // Data atual (YYYY-MM-DD)
+		// Incrementa ou cria um registro para a contagem de visitas
+		PageView::updateOrCreate(
+			['route_name' => $routeName, 'view_date' => $today],
+			['view_count' => \DB::raw('view_count + 1')]
+		);
         return view('home-termos.termos', [
             'main_screen' => $landing_page,
             'company_status' => $landing_2page,
@@ -159,28 +219,42 @@ class FrontPageController extends Controller
             'collapse' => $landing_9page,
             'call_now' => $landing_10page,
             'video_contact' => $landing_11page,
-			'terms_service' => $landing_12page
+			'terms_service' => $landing_12page,
+			'contactos_news' => $contactos_news,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
         ]);
     }
 
 
 	public function HomePoliticaPrivacidade()
     {
-        $landing_page = LandingPage::where('id',1)->get()->toArray();
-        $landing_2page = landing_2page::where('id',1)->get()->toArray();
-        $landing_3page = landing_3page::where('id',1)->get()->toArray();
-        $landing_4page = landing_4page::where('id',1)->get()->toArray();
-        $landing_5page = landing_5page::where('id',1)->get()->toArray();
-        $landing_6page = landing_6page::where('id',1)->get()->toArray();
-        $landing_7page = landing_7page::where('id',1)->get()->toArray();
-        $landing_8page = landing_8page::where('id',1)->get()->toArray();
-        $landing_9page = landing_9page::where('id',1)->get()->toArray();
-        $landing_10page = landing_10page::where('id',1)->get()->toArray();
-        $landing_11page = landing_11page::where('id',1)->get()->toArray();
-		$landing_12page = landing_12page::where('id',1)->get()->toArray();
-		$landing_13page = landing_13page::where('id',1)->get()->toArray();
 
 
+
+
+        $landing_page = LandingPage::where('id',2)->get()->toArray();
+        $landing_2page = landing_2page::where('id',2)->get()->toArray();
+        $landing_3page = landing_3page::where('id',2)->get()->toArray();
+        $landing_4page = landing_4page::where('id',2)->get()->toArray();
+        $landing_5page = landing_5page::where('id',2)->get()->toArray();
+        $landing_6page = landing_6page::where('id',2)->get()->toArray();
+        $landing_7page = landing_7page::where('id',2)->get()->toArray();
+        $landing_8page = landing_8page::where('id',2)->get()->toArray();
+        $landing_9page = landing_9page::where('id',2)->get()->toArray();
+        $landing_10page = landing_10page::where('id',2)->get()->toArray();
+        $landing_11page = landing_11page::where('id',2)->get()->toArray();
+		$landing_12page = landing_12page::where('id',2)->get()->toArray();
+		$landing_13page = landing_13page::where('id',2)->get()->toArray();
+
+		$routeName = 'poltica-privacidade'; // Nome da rota ou página que será monitorada
+        $today = now()->toDateString(); // Data atual (YYYY-MM-DD)
+		// Incrementa ou cria um registro para a contagem de visitas
+		PageView::updateOrCreate(
+			['route_name' => $routeName, 'view_date' => $today],
+			['view_count' => \DB::raw('view_count + 1')]
+		);
         return view('home-politica-privacidade.privacidade', [
             'main_screen' => $landing_page,
             'company_status' => $landing_2page,
@@ -201,6 +275,8 @@ class FrontPageController extends Controller
 
 	public function PoliticaPrivacidade()
     {
+
+
         $landing_page = LandingPage::where('id',1)->get()->toArray();
         $landing_2page = landing_2page::where('id',1)->get()->toArray();
         $landing_3page = landing_3page::where('id',1)->get()->toArray();
@@ -215,6 +291,13 @@ class FrontPageController extends Controller
 		$landing_12page = landing_12page::where('id',1)->get()->toArray();
 		$landing_13page = landing_13page::where('id',1)->get()->toArray();
 
+		$routeName = 'politica-privacidade'; // Nome da rota ou página que será monitorada
+        $today = now()->toDateString(); // Data atual (YYYY-MM-DD)
+		// Incrementa ou cria um registro para a contagem de visitas
+		PageView::updateOrCreate(
+			['route_name' => $routeName, 'view_date' => $today],
+			['view_count' => \DB::raw('view_count + 1')]
+		);
 
         return view('politica-privacidade.privacidade', [
             'main_screen' => $landing_page,

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreLandingPageRequest;
 use App\Http\Requests\UpdateLandingPageRequest;
+use App\Models\contact_forms;
 use App\Models\LandingPage;
 use App\Models\landing_2page;
 use App\Models\landing_3page;
@@ -17,13 +18,15 @@ use App\Models\landing_10page;
 use App\Models\landing_11page;
 use App\Models\landing_12page;
 use App\Models\landing_13page;
+use App\Models\News_letter;
+use App\Models\quote_forms;
 use App\Models\Review;
 use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the resource
      */
     public function index()
     {
@@ -41,6 +44,11 @@ class LandingPageController extends Controller
 		$landing_12page = landing_12page::where('id',1)->get()->toArray();
 		$landing_13page = landing_13page::where('id',1)->get()->toArray();
         $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
 
        //dd($landing_3page);
 
@@ -58,7 +66,731 @@ class LandingPageController extends Controller
             'video_contact' => $landing_11page,
             'reviews' => $reviews,
 			'terms_service' => $landing_12page,
-			'policy_privacy' => $landing_13page
+			'policy_privacy' => $landing_13page,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+        ]);
+    }
+
+	// public function show($id)
+    // {
+    //     // Lógica para mostrar a landing page com base no ID
+    //     return null;
+    // }
+
+
+
+	public function NavParagraphIndex()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+       //dd($landing_3page);
+
+        return view('landing-page-views.navparagraph', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+        ]);
+    }
+
+	public function AboutNowIndex()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+       //dd($landing_3page);
+
+        return view('landing-page-views.aboutnow', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+        ]);
+    }
+
+	public function BestServicesIndex()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+       //dd($landing_3page);
+
+        return view('landing-page-views.bestservices', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+        ]);
+    }
+
+	public function CallNowIndex()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+       //dd($landing_3page);
+
+        return view('landing-page-views.callnow', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+        ]);
+    }
+
+
+	public function ChooseUsIndex()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+       //dd($landing_3page);
+
+        return view('landing-page-views.chooseus', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+        ]);
+    }
+
+	public function CollapseIndex()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+       //dd($landing_3page);
+
+        return view('landing-page-views.collapse', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+        ]);
+    }
+
+
+	public function ContactUsIndex()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+       //dd($landing_3page);
+
+        return view('landing-page-views.contactus', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+        ]);
+    }
+
+	public function CustomerAreaIndex()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+       //dd($landing_3page);
+
+        return view('landing-page-views.customerarea', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+        ]);
+    }
+
+
+	public function MainCarrouselIndex()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+       //dd($landing_3page);
+
+        return view('landing-page-views.maincarrousel', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+        ]);
+    }
+
+	public function OurServicesIndex()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+       //dd($landing_3page);
+
+        return view('landing-page-views.ourservices', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+        ]);
+    }
+
+	public function PrivacyPolicyIndex()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+       //dd($landing_3page);
+
+        return view('landing-page-views.privacypolicy', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+        ]);
+    }
+
+
+	public function QuoteFormsIndex()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+       //dd($landing_3page);
+
+        return view('landing-page-views.quoteforms', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page,
+			'news_forms' => $news_forms,
+			'contactos_news' => $contactos_news,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+        ]);
+    }
+
+
+	public function StatusIndex()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+       //dd($landing_3page);
+
+        return view('landing-page-views.status', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+        ]);
+    }
+
+	public function TermsServiceIndex()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+       //dd($landing_3page);
+
+        return view('landing-page-views.termsservice', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+        ]);
+    }
+
+
+	public function TestimonialIndex()
+    {
+        $landing_page = LandingPage::where('id',1)->get()->toArray();
+        $landing_2page = landing_2page::where('id',1)->get()->toArray();
+        $landing_3page = landing_3page::where('id',1)->get()->toArray();
+        $landing_4page = landing_4page::where('id',1)->get()->toArray();
+        $landing_5page = landing_5page::where('id',1)->get()->toArray();
+        $landing_6page = landing_6page::where('id',1)->get()->toArray();
+        $landing_7page = landing_7page::where('id',1)->get()->toArray();
+        $landing_8page = landing_8page::where('id',1)->get()->toArray();
+        $landing_9page = landing_9page::where('id',1)->get()->toArray();
+        $landing_10page = landing_10page::where('id',1)->get()->toArray();
+        $landing_11page = landing_11page::where('id',1)->get()->toArray();
+		$landing_12page = landing_12page::where('id',1)->get()->toArray();
+		$landing_13page = landing_13page::where('id',1)->get()->toArray();
+        $reviews = Review::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+       //dd($landing_3page);
+
+        return view('landing-page-views.testimonial', [
+            'main_screen' => $landing_page,
+            'company_status' => $landing_2page,
+            'best_service' => $landing_3page,
+            'our_service_1' => $landing_4page,
+            'our_service_2' => $landing_5page,
+            'about_now' => $landing_6page,
+            'choose_us' => $landing_7page,
+            'testimonial_say' => $landing_8page,
+            'collapse' => $landing_9page,
+            'call_now' => $landing_10page,
+            'video_contact' => $landing_11page,
+            'reviews' => $reviews,
+			'terms_service' => $landing_12page,
+			'policy_privacy' => $landing_13page,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
         ]);
     }
 
@@ -69,7 +801,9 @@ class LandingPageController extends Controller
     {
         if ($request->has('form0')) {
             $query = LandingPage::where('id',1)->update([
-                'nav-paragraph' => $request->input('nav-paragraph')
+                'meta-title' => $request->input('meta-title'),
+                'meta-desctiption' => $request->input('meta-desctiption'),
+                'meta-keywords' => $request->input('meta-keywords'),
             ]);
         }
 
@@ -484,7 +1218,9 @@ class LandingPageController extends Controller
             ]);
         }
 
-        return redirect()->route('landing-page.index');
+        // return redirect()->route('landing-page.index');
+        return redirect()->back();
+
     }
 
     public function store(Request $request){

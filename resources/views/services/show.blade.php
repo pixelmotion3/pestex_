@@ -30,7 +30,13 @@ setTimeout(function() {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ config('app.name') }}</title>
+    <title>{{ $service_detail['meta-title'] }}</title>
+
+	<!-- Meta Description -->
+    <meta name="description" content="{{ $service_detail['meta-desctiption'] }}">
+
+    <!-- Meta Keywords (opcional, com pouco uso atualmente) -->
+    <meta name="keywords" content="{{ $service_detail['meta-keywords'] }}">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -635,7 +641,7 @@ setTimeout(function() {
 					<div class="col-md-5 col-lg-3">
 						<div class="mail-section__content">
 							<h3 class="mail-section__content__title">Subscreva a Newsletter</h3>
-							<p class="mail-section__content__text">Esteja a par das nossas novidades</p>
+							<p class="mail-section__content__text">Fique a par de todas as novidades!</p>
 						</div>
 					</div>
 					<div class="col-md-7 col-lg-5">
@@ -667,9 +673,9 @@ setTimeout(function() {
 							<img src="/assets/images/logo-white.png" width="184" alt="Tolak HTML Template">
 						</a>
 						<ul class="footer-widget__info">
-							<li><span class="icofont-location-pin"></span>13/A, Miranda Halim City .</li>
-							<li><span class="icofont-email"></span>email@email.com</li>
-							<li><span class="icofont-phone"></span><a href="tel:09969569535">099 695 695 35</a></li>
+							<li><span class="icofont-location-pin"></span>Rua de Entremuros 54, Fração BB, São Julião do Tojal, 2660-533</li>
+							<li><span class="icofont-email"></span><a href="mailto:geral@sospragas.pt">geral@sospragas.pt</a></li>
+							<li><span class="icofont-phone"></span><a href="tel:219747353">219 747 353</a></li>
 						</ul>
 						<div class="footer-widget__social">
 							<a href="https://facebook.com">
@@ -719,19 +725,19 @@ setTimeout(function() {
 						</ul><!-- /.sidebar__posts list-unstyled -->
 					</div>
 				</div> --}}
-				<div class="col-md-6 col-lg-2">
+				<div class="col-md-6 col-lg-4">
 					<div class="footer-widget footer-widget--links">
 						<h2 class="footer-widget__title">SOS Pragas</h2><!-- /.footer-widget__title -->
 						<ul class="list-unstyled footer-widget__links">
 							<li><a href="/">Início</a></li>
 							<li><a href="sobre">Sobre Nós</a></li>
 							<li><a href="servicos">Serviços</a></li>
-							<li><a href="equipament">Equipamento</a></li>
+							{{-- <li><a href="equipamentos">Equipamento</a></li> --}}
 							<li><a href="sustentabilidade">Sustentabilidade</a></li>
 						</ul><!-- /.list-unstyled footer-widget__links -->
 					</div><!-- /.footer-widget -->
 				</div><!-- /.col-md-6 -->
-				<div class="col-md-6 col-lg-2">
+				<div class="col-md-6 col-lg-4">
 					<div class="footer-widget footer-widget--links footer-widget--last">
 						<h2 class="footer-widget__title">Links Úteis</h2><!-- /.footer-widget__title -->
 						<ul class="list-unstyled footer-widget__links">
@@ -745,21 +751,21 @@ setTimeout(function() {
 			</div><!-- /.row -->
 		</div><!-- /.container -->
 		<div class="main-footer__bottom">
-                <div class="container">
-                    <div class="footer-developer">
-                        <div class="">
-                            <p class="main-footer__copyright">
-                                Copyright SOS Pragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
-                            </p>
-                        </div>
-                        <div class="">
-                            <p class="main-footer__copyright">
-                                <a href="https://pixelinmotion.pt" style="color:#ff6600;" target="_blank">Desenvolvido por Pixel in Motion</a>
-                            </p>
-                        </div>
-                    </div><!-- /.main-footer__inner -->
-                </div><!-- /.container -->
-            </div><!-- /.main-footer__bottom -->
+			<div class="container">
+				<div class="footer-developer">
+					<div class="">
+						<p class="main-footer__copyright">
+							Copyright SOS Pragas <span class="dynamic-year"></span> &copy; Todos os direitos reservados.
+						</p>
+					</div>
+					<div class="">
+						<p class="main-footer__copyright">
+							<a href="https://pixelinmotion.pt" style="color:#ff6600;" target="_blank">Desenvolvido por Pixel in Motion</a>
+						</p>
+					</div>
+				</div><!-- /.main-footer__inner -->
+			</div><!-- /.container -->
+		</div><!-- /.main-footer__bottom -->
 	</footer><!-- /.main-footer -->
     <script>
         $(document).ready(function() {

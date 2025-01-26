@@ -10,6 +10,7 @@ class contact_forms extends Model
         'phone',
         'name',
         'email',
-        'confirmed'
+        'confirmed',
+		'viewed'
     ];
 }

@@ -5,8 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ config('app.name') }}</title>
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon01.png">
+    <title>{{ $main[0]['meta-title'] }}</title>
+
+	<!-- Meta Description -->
+    <meta name="description" content="{{ $main[0]['meta-desctiption'] }}">
+
+    <!-- Meta Keywords (opcional, com pouco uso atualmente) -->
+    <meta name="keywords" content="{{ $main[0]['meta-keywords'] }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon01.png">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
@@ -137,7 +143,7 @@
 			<div class="main-header__inner">
 				<div class="main-header__logo">
 					<a href="/">
-						<img src="assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
+						<img src="/assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
 					</a>
 
 				</div><!-- /.main-header__logo -->
@@ -205,13 +211,26 @@
                     <div class="tab-one__tab-title__trinagle"></div>
                     <div class="tab-one__tab-title__icon"><i class="tolak-icons-two-solutions-three"></i></div>
                     <h3 class="tab-one__tab-title__text">{{ $main[0]['h3-1'] }}</h3>
+					<div style="display: flex;align-items: center;gap: 5px;">
+						<span style="color: #ff6600">Saiba mais</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="none">
+							<path d="M12 6V18M12 18L7 13M12 18L17 13" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
                     <div class="tab-one__tab-title__shape" style="background-image: url({{ $main[0]['img'] }});">
+
                     </div>
                 </li>
                 <li data-tab="#competitor-research" class="tab-btn competitor-research">
                     <div class="tab-one__tab-title__trinagle"></div>
                     <div class="tab-one__tab-title__icon"><i class=" tolak-icons-two-lightbulb-dollar"></i></div>
                     <h3 class="tab-one__tab-title__text">{{ $main[0]['h3-2'] }}</h3>
+					<div style="display: flex;align-items: center;gap: 5px;">
+						<span style="color: #ff6600">Saiba mais</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="none">
+							<path d="M12 6V18M12 18L7 13M12 18L17 13" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
                     <div class="tab-one__tab-title__shape" style="background-image: url({{ $main[0]['img-1'] }});">
                     </div>
                 </li>
@@ -219,6 +238,12 @@
                     <div class="tab-one__tab-title__trinagle"></div>
                     <div class="tab-one__tab-title__icon"><i class="tolak-icons-two-solution-1"></i></div>
                     <h3 class="tab-one__tab-title__text">{{ $main[0]['h3-3'] }}</h3>
+					<div style="display: flex;align-items: center;gap: 5px;">
+						<span style="color: #ff6600">Saiba mais</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="none">
+							<path d="M12 6V18M12 18L7 13M12 18L17 13" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
                     <div class="tab-one__tab-title__shape" style="background-image: url({{ $main[0]['img-2'] }});">
                     </div>
                 </li>
@@ -226,6 +251,12 @@
                     <div class="tab-one__tab-title__trinagle"></div>
                     <div class="tab-one__tab-title__icon"><i class=" tolak-icons-two-cybersecurity"></i></div>
                     <h3 class="tab-one__tab-title__text">{{ $main[0]['h3-4'] }}</h3>
+					<div style="display: flex;align-items: center;gap: 5px;">
+						<span style="color: #ff6600">Saiba mais</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="none">
+							<path d="M12 6V18M12 18L7 13M12 18L17 13" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</div>
                     <div class="tab-one__tab-title__shape" style="background-image: url({{ $main[0]['img-3'] }});">
                     </div>
                 </li>
@@ -648,7 +679,7 @@
 					<div class="col-md-5 col-lg-3">
 						<div class="mail-section__content">
 							<h3 class="mail-section__content__title">Subscreva a Newsletter</h3>
-							<p class="mail-section__content__text">Esteja a par das nossas novidades</p>
+							<p class="mail-section__content__text">Fique a par de todas as novidades!</p>
 						</div>
 					</div>
 					<div class="col-md-7 col-lg-5">
@@ -816,7 +847,7 @@
 				<span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
 				<div class="logo-box">
-					<a href="index.html" aria-label="logo image"><img src="assets/images/logo-dark.png" width="155" alt=""></a>
+					<a href="index.html" aria-label="logo image"><img src="/assets/images/logo-dark.png" width="155" alt=""></a>
 				</div>
 				<!-- /.logo-box -->
 				<div class="mobile-nav__container">
@@ -876,7 +907,29 @@
                 $('#management-solutions').removeClass('active-tab');
             });
 
+			$(".technological-solutions").hover(function() {
+                $('.technological-solutions').addClass('active-btn');
+                $('.competitor-research').removeClass('active-btn');
+                $('.consulting-planning').removeClass('active-btn');
+                $('.management-solutions').removeClass('active-btn');
+                $('#technological-solutions').addClass('active-tab');
+                $('#competitor-research').removeClass('active-tab');
+                $('#consulting-planning').removeClass('active-tab');
+                $('#management-solutions').removeClass('active-tab');
+            });
+
             $(".competitor-research").click(function() {
+                $('.technological-solutions').removeClass('active-btn');
+                $('.competitor-research').addClass('active-btn');
+                $('.consulting-planning').removeClass('active-btn');
+                $('.management-solutions').removeClass('active-btn');
+                $('#technological-solutions').removeClass('active-tab');
+                $('#competitor-research').addClass('active-tab');
+                $('#consulting-planning').removeClass('active-tab');
+                $('#management-solutions').removeClass('active-tab');
+            });
+
+			$(".competitor-research").hover(function() {
                 $('.technological-solutions').removeClass('active-btn');
                 $('.competitor-research').addClass('active-btn');
                 $('.consulting-planning').removeClass('active-btn');
@@ -898,7 +951,29 @@
                 $('#management-solutions').removeClass('active-tab');
             });
 
+			$(".consulting-planning").hover(function() {
+                $('.technological-solutions').removeClass('active-btn');
+                $('.competitor-research').removeClass('active-btn');
+                $('.consulting-planning').addClass('active-btn');
+                $('.management-solutions').removeClass('active-btn');
+                $('#technological-solutions').removeClass('active-tab');
+                $('#competitor-research').removeClass('active-tab');
+                $('#consulting-planning').addClass('active-tab');
+                $('#management-solutions').removeClass('active-tab');
+            });
+
             $(".management-solutions").click(function() {
+                $('.technological-solutions').removeClass('active-btn');
+                $('.competitor-research').removeClass('active-btn');
+                $('.consulting-planning').removeClass('active-btn');
+                $('.management-solutions').addClass('active-btn');
+                $('#technological-solutions').removeClass('active-tab');
+                $('#competitor-research').removeClass('active-tab');
+                $('#consulting-planning').removeClass('active-tab');
+                $('#management-solutions').addClass('active-tab');
+            });
+
+			$(".management-solutions").hover(function() {
                 $('.technological-solutions').removeClass('active-btn');
                 $('.competitor-research').removeClass('active-btn');
                 $('.consulting-planning').removeClass('active-btn');

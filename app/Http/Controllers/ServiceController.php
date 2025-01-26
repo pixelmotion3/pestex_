@@ -12,6 +12,7 @@ use App\Models\ServiceDetailsShow;
 use App\Models\Method;
 use App\Models\About_video;
 use App\Models\contact_forms;
+use App\Models\PageView;
 use Illuminate\Http\Request;
 
 
@@ -26,6 +27,14 @@ class ServiceController extends Controller
         $main_screen = ServicesMainScreen::where('id', 1)->get()->toArray();
         $services = ServiceDetails::all();
 		$video = About_video::where('id',1)->get()->toArray();
+
+		$routeName = 'servicos'; // Nome da rota ou página que será monitorada
+        $today = now()->toDateString(); // Data atual (YYYY-MM-DD)
+		// Incrementa ou cria um registro para a contagem de visitas
+		PageView::updateOrCreate(
+			['route_name' => $routeName, 'view_date' => $today],
+			['view_count' => \DB::raw('view_count + 1')]
+		);
         return view('services.index', [
             'main_screen' => $main_screen,
             'best_service' => $best_service,
@@ -45,6 +54,13 @@ class ServiceController extends Controller
         $services = ServiceDetails::all();
         //dd($service_detail);
 
+		$routeName = 'servicos - '.$slug; // Nome da rota ou página que será monitorada
+        $today = now()->toDateString(); // Data atual (YYYY-MM-DD)
+		// Incrementa ou cria um registro para a contagem de visitas
+		PageView::updateOrCreate(
+			['route_name' => $routeName, 'view_date' => $today],
+			['view_count' => \DB::raw('view_count + 1')]
+		);
         return view('services.show', [
             'services' => $services,
             'service_detail' => $service_detail[0],

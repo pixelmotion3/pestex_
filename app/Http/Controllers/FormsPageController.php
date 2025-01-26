@@ -22,8 +22,99 @@ class FormsPageController extends Controller
 		$quote_forms =  quote_forms::orderBy('id', 'desc')->get();
 		$contact_forms = contact_forms::orderBy('id', 'desc')->get();
 		$news_letter = News_letter::orderBy('id', 'desc')->get();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
 
-        return view('forms-page.index', ['contacts' => $contacts, 'news_letter' => $news_letter, 'contact_forms' => $contact_forms, "quote_forms" => $quote_forms  ]);
+        return view('forms-page.index', [
+			'contacts' => $contacts,
+			'news_letter' => $news_letter,
+			'contact_forms' => $contact_forms,
+			"quote_forms" => $quote_forms,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+		]);
+    }
+
+
+	public function newsletter()
+    {
+        $contacts = contacts::orderBy('id', 'desc')->get();
+		$quote_forms =  quote_forms::orderBy('id', 'desc')->get();
+		$contact_forms = contact_forms::orderBy('id', 'desc')->get();
+		$news_letter = News_letter::orderBy('id', 'desc')->get();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+        return view('forms-page.newsletter', [
+			'contacts' => $contacts,
+			'news_letter' => $news_letter,
+			'contact_forms' => $contact_forms,
+			"quote_forms" => $quote_forms,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+		]);
+    }
+
+
+	public function quote()
+    {
+        $contacts = contacts::orderBy('id', 'desc')->get();
+		$quote_forms =  quote_forms::orderBy('id', 'desc')->get();
+		$contact_forms = contact_forms::orderBy('id', 'desc')->get();
+		$news_letter = News_letter::orderBy('id', 'desc')->get();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+        return view('forms-page.quote', [
+			'contacts' => $contacts,
+			'news_letter' => $news_letter,
+			'contact_forms' => $contact_forms,
+			"quote_forms" => $quote_forms,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
+		]);
+    }
+
+	public function contact()
+    {
+        $contacts = contacts::orderBy('id', 'desc')->get();
+		$quote_forms =  quote_forms::orderBy('id', 'desc')->get();
+		$contact_forms = contact_forms::orderBy('id', 'desc')->get();
+		$news_letter = News_letter::orderBy('id', 'desc')->get();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+
+        return view('forms-page.contact', [
+			'contacts' => $contacts,
+			'news_letter' => $news_letter,
+			'contact_forms' => $contact_forms,
+			"quote_forms" => $quote_forms,
+			'contactos_news' => $contactos_news,
+			'news_forms' => $news_forms,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news  ]);
     }
 
     /**

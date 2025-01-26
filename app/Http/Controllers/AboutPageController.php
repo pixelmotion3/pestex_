@@ -10,6 +10,8 @@ use App\Models\Testimonial;
 use App\Models\ContactInfo;
 use App\Models\TestimonialAbout;
 use App\Models\contact_forms;
+use App\Models\News_letter;
+use App\Models\quote_forms;
 
 class AboutPageController extends Controller
 {
@@ -24,6 +26,11 @@ class AboutPageController extends Controller
         $testimonial = Testimonial::where('id',1)->get()->toArray();
         $contact_info = ContactInfo::where('id',1)->get()->toArray();
 		$testimonial_abouts = TestimonialAbout::all();
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
        // dd($testimonial);
         return view('about-page.index', [
             'main_screen' => $main_screen,
@@ -31,7 +38,12 @@ class AboutPageController extends Controller
             'video' => $video,
             'testimonial' => $testimonial,
             'contact_info' => $contact_info,
-			'testimonial_abouts' => $testimonial_abouts
+			'testimonial_abouts' => $testimonial_abouts,
+			'news_forms' => $news_forms,
+			'contactos_news' => $contactos_news,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
         ]);
     }
 
@@ -86,11 +98,14 @@ class AboutPageController extends Controller
                 'h2-span-3' => $request->input('h2-span-3'),
                 'p-1' => $request->input('p-1'),
                 'div-a-b' => $request->input('div-a-b'),
-                'h2-span-1-1' => $request->input('h2-span-1-1'),
-                'h2-span-2-1' => $request->input('h2-span-2-1'),
-                'h2-span-3-1' => $request->input('h2-span-3-1'),
-                'p-1-1' => $request->input('p-1-1'),
-                'div-a-b-1' => $request->input('div-a-b-1'),
+				'meta-title' => $request->input('meta-title'),
+                'meta-desctiption' => $request->input('meta-desctiption'),
+                'meta-keywords' => $request->input('meta-keywords'),
+                'h2-span-1-1' => "",//$request->input('h2-span-1-1'),
+                'h2-span-2-1' => "",//$request->input('h2-span-2-1'),
+                'h2-span-3-1' => "",//$request->input('h2-span-3-1'),
+                'p-1-1' => "",//$request->input('p-1-1'),
+                'div-a-b-1' => "",//$request->input('div-a-b-1'),
             ]);
 
             if ($request->hasFile('bg-2')) {

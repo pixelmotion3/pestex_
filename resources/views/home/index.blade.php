@@ -30,8 +30,14 @@ setTimeout(function() {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ config('app.name') }}</title>
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon01.png">
+	<title>{{ $main_screen[0]['meta-title'] }}</title>
+
+	<!-- Meta Description -->
+    <meta name="description" content="{{ $main_screen[0]['meta-desctiption'] }}">
+
+    <!-- Meta Keywords (opcional, com pouco uso atualmente) -->
+    <meta name="keywords" content="{{ $main_screen[0]['meta-keywords'] }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon01.png">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
@@ -228,7 +234,7 @@ setTimeout(function() {
     <div class="custom-cursor__cursor-two"></div>
 
     <div class="preloader">
-        <div class="preloader__image" style="background-image: url(assets/images/logo-dark.png);"></div>
+        <div class="preloader__image" style="background-image: url(/assets/images/logo-dark.png);"></div>
     </div>
     <!-- Modal -->
     <div class="modal fade rounded-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -357,7 +363,7 @@ setTimeout(function() {
 											<input class="form-check-input" type="checkbox"
 												name="confirmed" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-												Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+												Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilização</a>
 											</label>
 											@error('confirmed')
 												<span class="invalid-feedback" role="alert">
@@ -370,7 +376,7 @@ setTimeout(function() {
 											<input class="form-check-input"
 												type="checkbox" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 											</label>
 										</div>
                                         <div class="col-md-12 ml-4 mb-5" style="max-width: 92%">
@@ -428,7 +434,7 @@ setTimeout(function() {
 												<input class="form-check-input" type="checkbox"
 													name="confirmed" id="flexCheckDefault" required>
 												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-													Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+													Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilização</a>
 												</label>
 												@error('confirmed')
 													<span class="invalid-feedback" role="alert">
@@ -441,7 +447,7 @@ setTimeout(function() {
 												<input class="form-check-input"
 													type="checkbox" id="flexCheckDefault" required>
 												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-													Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+													Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 												</label>
 											</div>
                                             <div class="col-md-12 ml-4" style="max-width: 92%;">
@@ -464,7 +470,7 @@ setTimeout(function() {
 				<div class="main-header__inner">
 					<div class="main-header__logo">
 						<a href="/">
-							<img src="assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
+							<img src="/assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
 						</a>
 
 					</div><!-- /.main-header__logo -->
@@ -783,7 +789,7 @@ setTimeout(function() {
 										<input class="form-check-input" type="checkbox"
 											name="confirmed" id="flexCheckDefault" required>
 										<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-											Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+											Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilização</a>
 										</label>
 										@error('confirmed')
 											<span class="invalid-feedback" role="alert">
@@ -796,7 +802,7 @@ setTimeout(function() {
 										<input class="form-check-input"
 											type="checkbox" id="flexCheckDefault" required>
 										<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-											Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+											Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 										</label>
 									</div>
 									{{-- <div class="form-check">
@@ -849,7 +855,7 @@ setTimeout(function() {
 											<input class="form-check-input" type="checkbox"
 												name="confirmed" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-												Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+												Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilização</a>
 											</label>
 											@error('confirmed')
 												<span class="invalid-feedback" role="alert">
@@ -862,7 +868,7 @@ setTimeout(function() {
 											<input class="form-check-input"
 												type="checkbox" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 											</label>
 										</div>
 										<div class="col-md-12 ml-4" style="max-width: 92%;">
@@ -993,7 +999,7 @@ setTimeout(function() {
 										<input class="form-check-input" type="checkbox"
 											name="confirmed" id="flexCheckDefault" required>
 										<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-											Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+											Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilização</a>
 										</label>
 										@error('confirmed')
 											<span class="invalid-feedback" role="alert">
@@ -1006,7 +1012,7 @@ setTimeout(function() {
 										<input class="form-check-input"
 											type="checkbox" id="flexCheckDefault" required>
 										<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-											Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+											Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 										</label>
 									</div>
 									{{-- <div class="form-check">
@@ -1060,7 +1066,7 @@ setTimeout(function() {
 											<input class="form-check-input" type="checkbox"
 												name="confirmed" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
-												Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+												Aceito os <a href="/termos-servico" target="_blank" style="color:#3d72fc;">Termos de Utilização</a>
 											</label>
 											@error('confirmed')
 												<span class="invalid-feedback" role="alert">
@@ -1073,7 +1079,7 @@ setTimeout(function() {
 											<input class="form-check-input"
 												type="checkbox" id="flexCheckDefault" required>
 											<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 											</label>
 										</div>
 										<div class="col-md-12 ml-4" style="max-width: 92%;">
@@ -1660,7 +1666,7 @@ setTimeout(function() {
 												</div>
 												<div class="other-text">
 													<p>{{ $our_service_1[0]['our-services-tab-1-a-2'] }} <a data-toggle="modal"
-														data-target="#exampleModal">Faça a sua marcação</a></p>
+														data-target="#exampleModal">Agende uma visita grátis.</a></p>
 													<div class="arrow" style="background-image: url(assets/images/icons/arrow-1.png);"></div>
 												</div>
 											</div>
@@ -1671,7 +1677,7 @@ setTimeout(function() {
 											<div class="image-box">
 												<figure class="image"><img src="{{ $our_service_1[0]['img-1'] }}" alt=""></figure>
 												<div class="image-content" style="background-color: #002255">
-													<h6>VISTORIA GRÁTIS</h6>
+													<h6>VISITA GRÁTIS</h6>
 												</div>
 											</div>
 										</div>
@@ -1706,7 +1712,7 @@ setTimeout(function() {
 												</div>
 												<div class="other-text">
 													<p>{{ $our_service_2[0]['our-services-tab-2-p-2'] }} <a data-toggle="modal"
-														data-target="#exampleModal">Agende vistoria grátis</a></p>
+														data-target="#exampleModal">Agende uma visita grátis!</a></p>
 													<div class="arrow" style="background-image: url(assets/images/icons/arrow-1.png);"></div>
 												</div>
 											</div>
@@ -1717,7 +1723,7 @@ setTimeout(function() {
 											<div class="image-box">
 												<figure class="image"><img src="{{ $our_service_2[0]['img-2'] }}" alt=""></figure>
 												<div class="image-content" style="background-color: #002255">
-													<h6>VISTORIA GRÁTIS</h6>
+													<h6>VISITA GRÁTIS</h6>
 												</div>
 											</div>
 										</div>
@@ -2160,7 +2166,7 @@ setTimeout(function() {
 			</div>
 		</section>
 
-		{{-- <section class="cta-four mt-5">
+		<section class="cta-four mt-5">
 			<div class="container" style="margin-top:100px;">
 				<div class="cta-four__bg" style="background-image: url({{ $video_contact[0]['watch-video-bg-img'] }});">
 						<div class="cta-four__shape" style="background-image: url(assets/images/shapes/cta-4-border.png);"></div>
@@ -2196,7 +2202,7 @@ setTimeout(function() {
 					</div>
 				</div>
 			</div>
-		</section> --}}
+		</section>
 
 		<section id="contact-us">
 			<div class="container mt-3 mb-5">
@@ -2240,7 +2246,7 @@ setTimeout(function() {
 											<div class="pull-left" style="margin-left: 20px;">
 												<input class="form-check-input" type="checkbox" name="confirmed" id="flexCheckDefault" required="">
 												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;width: 320px;max-width:580px; color:grey;font-size:12px;">
-													Aceito os <a href="/termos-servico"  target="_blank" style="color:#3d72fc;">Termos de Utilizaçao</a>
+													Aceito os <a href="/termos-servico"  target="_blank" style="color:#3d72fc;">Termos de Utilização</a>
 												</label>
 											</div>
 										</div>
@@ -2248,7 +2254,7 @@ setTimeout(function() {
 											<div class="pull-left" style="margin-left: 20px;">
 												<input class="form-check-input" type="checkbox" id="flexCheckDefault" required="">
 												<label class="form-check-label text-left" for="flexCheckDefault" style="min-width: 280px;width: 320px;max-width:580px;color:grey;font-size:12px;">
-													Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Politica de Privacidade</a>
+													Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 												</label>
 											</div>
 										</div>
@@ -2283,7 +2289,7 @@ setTimeout(function() {
                         <div class="col-md-5 col-lg-3">
                             <div class="mail-section__content">
                                 <h3 class="mail-section__content__title">Subscreva a Newsletter</h3>
-                                <p class="mail-section__content__text">Esteja a par das nossas novidades</p>
+                                <p class="mail-section__content__text">Fique a par de todas as novidades!</p>
                             </div>
                         </div>
                         <div class="col-md-7 col-lg-5">
@@ -2419,7 +2425,7 @@ setTimeout(function() {
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="assets/images/logo-dark.png" width="155" alt=""></a>
+                <a href="index.html" aria-label="logo image"><img src="/assets/images/logo-dark.png" width="155" alt=""></a>
             </div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container">

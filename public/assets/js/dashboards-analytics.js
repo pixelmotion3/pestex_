@@ -130,94 +130,94 @@
 
   // Earning Reports Bar Chart
   // --------------------------------------------------------------------
-  const weeklyEarningReportsEl = document.querySelector('#weeklyEarningReports'),
-    weeklyEarningReportsConfig = {
-      chart: {
-        height: 161,
-        parentHeightOffset: 0,
-        type: 'bar',
-        toolbar: {
-          show: false
-        }
-      },
-      plotOptions: {
-        bar: {
-          barHeight: '60%',
-          columnWidth: '38%',
-          startingShape: 'rounded',
-          endingShape: 'rounded',
-          borderRadius: 4,
-          distributed: true
-        }
-      },
-      grid: {
-        show: false,
-        padding: {
-          top: -30,
-          bottom: 0,
-          left: -10,
-          right: -10
-        }
-      },
-      colors: [
-        config.colors_label.primary,
-        config.colors_label.primary,
-        config.colors_label.primary,
-        config.colors_label.primary,
-        config.colors.primary,
-        config.colors_label.primary,
-        config.colors_label.primary
-      ],
-      dataLabels: {
-        enabled: false
-      },
-      series: [
-        {
-          data: [40, 65, 50, 45, 90, 55, 70]
-        }
-      ],
-      legend: {
-        show: false
-      },
-      xaxis: {
-        categories: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
-        axisBorder: {
-          show: false
-        },
-        axisTicks: {
-          show: false
-        },
-        labels: {
-          style: {
-            colors: labelColor,
-            fontSize: '13px',
-            fontFamily: 'Public Sans'
-          }
-        }
-      },
-      yaxis: {
-        labels: {
-          show: false
-        }
-      },
-      tooltip: {
-        enabled: false
-      },
-      responsive: [
-        {
-          breakpoint: 1025,
-          options: {
-            chart: {
-              height: 199
-            }
-          }
-        }
-      ]
-    };
-  if (typeof weeklyEarningReportsEl !== undefined && weeklyEarningReportsEl !== null) {
-    const weeklyEarningReports = new ApexCharts(weeklyEarningReportsEl, weeklyEarningReportsConfig);
-    weeklyEarningReports.render();
-  }
+//   const weeklyEarningReportsEl = document.querySelector('#weeklyEarningReports'),
+//     weeklyEarningReportsConfig = {
+//       chart: {
+//         height: 161,
+//         parentHeightOffset: 0,
+//         type: 'bar',
+//         toolbar: {
+//           show: false
+//         }
+//       },
+//       plotOptions: {
+//         bar: {
+//           barHeight: '60%',
+//           columnWidth: '38%',
+//           startingShape: 'rounded',
+//           endingShape: 'rounded',
+//           borderRadius: 4,
+//           distributed: true
+//         }
+//       },
+//       grid: {
+//         show: false,
+//         padding: {
+//           top: -30,
+//           bottom: 0,
+//           left: -10,
+//           right: -10
+//         }
+//       },
+//       colors: [
+//         config.colors_label.primary,
+//         config.colors_label.primary,
+//         config.colors_label.primary,
+//         config.colors_label.primary,
+//         config.colors.primary,
+//         config.colors_label.primary,
+//         config.colors_label.primary
+//       ],
+//       dataLabels: {
+//         enabled: false
+//       },
+//       series: [
+//         {
+//           data: [40, 65, 50, 45, 90, 55, 70]
+//         }
+//       ],
+//       legend: {
+//         show: false
+//       },
+//       xaxis: {
+//         categories: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+//         axisBorder: {
+//           show: false
+//         },
+//         axisTicks: {
+//           show: false
+//         },
+//         labels: {
+//           style: {
+//             colors: labelColor,
+//             fontSize: '13px',
+//             fontFamily: 'Public Sans'
+//           }
+//         }
+//       },
+//       yaxis: {
+//         labels: {
+//           show: false
+//         }
+//       },
+//       tooltip: {
+//         enabled: false
+//       },
+//       responsive: [
+//         {
+//           breakpoint: 1025,
+//           options: {
+//             chart: {
+//               height: 199
+//             }
+//           }
+//         }
+//       ]
+//     };
+//   if (typeof weeklyEarningReportsEl !== undefined && weeklyEarningReportsEl !== null) {
+//     const weeklyEarningReports = new ApexCharts(weeklyEarningReportsEl, weeklyEarningReportsConfig);
+//     weeklyEarningReports.render();
+//   }
 
   // Support Tracker - Radial Bar Chart
   // --------------------------------------------------------------------

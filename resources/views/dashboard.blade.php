@@ -4,127 +4,7 @@
         <div class="layout-container">
             <!-- Menu -->
 
-            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-                <div class="app-brand demo">
-                    <a href="/dashboard" class="app-brand-link">
-                        <span class="app-brand-logo demo">
-                            <svg width="32" height="22" viewBox="0 0 32 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z"
-                                    fill="#7367F0" />
-                                <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z"
-                                    fill="#161616" />
-                                <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z"
-                                    fill="#161616" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z"
-                                    fill="#7367F0" />
-                            </svg>
-                        </span>
-                        <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
-                    </a>
-
-                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
-                        <i class="ti menu-toggle-icon d-none d-xl-block align-middle"></i>
-                        <i class="ti ti-x d-block d-xl-none ti-md align-middle"></i>
-                    </a>
-                </div>
-
-                <div class="menu-inner-shadow"></div>
-
-                <ul class="menu-inner py-1">
-                    <!-- Dashboards -->
-                    <li class="menu-item">
-
-                        <a href="/dashboard" class="menu-link">
-                            <i class="menu-icon tf-icons ti ti-smart-home"></i>
-                            <div data-i18n="Dashboards">Dashboards</div>
-                        </a>
-                        <!--
-                        <ul class="menu-sub">
-                          <li class="menu-item active">
-                            <a href="index.html" class="menu-link">
-                              <div data-i18n="Analytics">Analytics</div>
-                            </a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="dashboards-crm.html" class="menu-link">
-                              <div data-i18n="CRM">CRM</div>
-                            </a>
-                          </li>
-                        </ul>
-
-                      --></li>
-
-            <!-- Layouts -->
-            <!--
-            <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
-                <div data-i18n="Layouts">Layouts</div>
-              </a>
-
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="layouts-collapsed-menu.html" class="menu-link">
-                    <div data-i18n="Collapsed menu">Collapsed menu</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="layouts-content-navbar.html" class="menu-link">
-                    <div data-i18n="Content navbar">Content navbar</div>
-                  </a>
-                </li>
-
-              </ul>
-            </li>
-
-            <!-- Front Pages -->
-                    <li class="menu-item open">
-                        <a href="javascript:void(0);" class="menu-link">
-                            <i class="menu-icon tf-icons ti ti-files"></i>
-                            <div data-i18n="Front Pages">Front Pages</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="{{ url('landing-page') }}" class="menu-link">
-                                    <div data-i18n="Landing / Home">Landing / Home</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/about-page" class="menu-link">
-                                    <div data-i18n="About">About</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/services-page" class="menu-link">
-                                    <div data-i18n="Services">Services</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/sustainability-page" class="menu-link">
-                                    <div data-i18n="Sustainability">Sustainability</div>
-                                </a>
-                            </li>
-
-                            <li class="menu-item">
-                                <a href="/hardware-page" class="menu-link">
-                                    <div data-i18n="Hardware">Hardware</div>
-                                </a>
-                            </li>
-
-                            <li class="menu-item">
-                                <a href="/forms-page" class="menu-link">
-                                    <div data-i18n="Forms">Forms</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </aside>
+            @include('includes.menu')
             <!-- / Menu -->
 
             <!-- Layout container -->
@@ -580,7 +460,7 @@
                                 <a class="nav-link dropdown-toggle hide-arrow p-0" href="javascript:void(0);"
                                     data-bs-toggle="dropdown">
                                     <div class="avatar avatar-online">
-                                        <img src="../../assets/img/avatars/1.png" alt class="rounded-circle" />
+                                        <img src="/assets/images/favicon01.png" alt class="rounded-circle" />
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
@@ -589,12 +469,12 @@
                                             <div class="d-flex align-items-center">
                                                 <div class="flex-shrink-0 me-2">
                                                     <div class="avatar avatar-online">
-                                                        <img src="../../assets/img/avatars/1.png" alt
+                                                        <img src="/assets/images/favicon01.png" alt
                                                             class="rounded-circle" />
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <h6 class="mb-0">John Doe</h6>
+                                                    <h6 class="mb-0">Admin</h6>
                                                     <small class="text-muted">Admin</small>
                                                 </div>
                                             </div>
@@ -605,11 +485,10 @@
                                     </li>
                                     <li>
                                         <a class="dropdown-item" href="pages-profile-user.html">
-                                            <i class="ti ti-user me-3 ti-md"></i><span class="align-middle">My
-                                                Profile</span>
+                                            <i class="ti ti-user me-3 ti-md"></i><span class="align-middle">Alterar palavra-passe</span>
                                         </a>
                                     </li>
-                                    <li>
+                                    {{-- <li>
                                         <a class="dropdown-item" href="pages-account-settings-account.html">
                                             <i class="ti ti-settings me-3 ti-md"></i><span
                                                 class="align-middle">Settings</span>
@@ -639,7 +518,7 @@
                                             <i class="ti ti-question-mark me-3 ti-md"></i><span
                                                 class="align-middle">FAQ</span>
                                         </a>
-                                    </li>
+                                    </li> --}}
                                     <li>
                                         <div class="d-grid px-2 pt-2 pb-1">
                                             <small class="align-middle btn btn-sm btn-danger d-flex text-white">
@@ -680,7 +559,7 @@
                     <div class="container-xxl flex-grow-1 container-p-y">
                         <div class="row g-6">
                             <!-- Website Analytics -->
-                            <div class="col-lg-6">
+                            {{-- <div class="col-lg-6">
                                 <div class="swiper-container swiper-container-horizontal swiper swiper-card-advance-bg"
                                     id="swiper-with-pagination-cards">
                                     <div class="swiper-wrapper">
@@ -842,11 +721,11 @@
                                     </div>
                                     <div class="swiper-pagination"></div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <!--/ Website Analytics -->
 
                             <!-- Average Daily Sales -->
-                            <div class="col-xl-3 col-sm-6">
+                            {{-- <div class="col-xl-3 col-sm-6">
                                 <div class="card h-100">
                                     <div class="card-header pb-0">
                                         <h5 class="mb-3 card-title">Average Daily Sales</h5>
@@ -857,11 +736,11 @@
                                         <div id="averageDailySales"></div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <!--/ Average Daily Sales -->
 
                             <!-- Sales Overview -->
-                            <div class="col-xl-3 col-sm-6">
+                            {{-- <div class="col-xl-3 col-sm-6">
                                 <div class="card h-100">
                                     <div class="card-header">
                                         <div class="d-flex justify-content-between">
@@ -910,7 +789,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <!--/ Sales Overview -->
 
                             <!-- Earning Reports -->
@@ -918,10 +797,10 @@
                                 <div class="card h-100">
                                     <div class="card-header pb-0 d-flex justify-content-between">
                                         <div class="card-title mb-0">
-                                            <h5 class="mb-1">Earning Reports</h5>
-                                            <p class="card-subtitle">Weekly Earnings Overview</p>
+                                            <h5 class="mb-1">Visitas ao website</h5>
+                                            <p class="card-subtitle"></p>
                                         </div>
-                                        <div class="dropdown">
+                                        {{-- <div class="dropdown">
                                             <button
                                                 class="btn btn-text-secondary rounded-pill text-muted border-0 p-2 me-n1"
                                                 type="button" id="earningReportsId" data-bs-toggle="dropdown"
@@ -933,23 +812,32 @@
                                                 <a class="dropdown-item" href="javascript:void(0);">View More</a>
                                                 <a class="dropdown-item" href="javascript:void(0);">Delete</a>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                     </div>
+
+									{{-- @isset($page_views)
+										@foreach ($page_views as $view)
+
+										@endforeach
+                					@endisset --}}
                                     <div class="card-body">
                                         <div class="row align-items-center g-md-8">
-                                            <div class="col-12 col-md-5 d-flex flex-column">
+                                            <div class="col-12 col-md-12 d-flex flex-column">
                                                 <div class="d-flex gap-2 align-items-center mb-3 flex-wrap">
-                                                    <h2 class="mb-0">$468</h2>
-                                                    <div class="badge rounded bg-label-success">+4.2%</div>
+                                                    <h2 class="mb-0">
+														@isset($total_views_all)
+															{{$total_views_all}}
+														@endisset
+													</h2>
+                                                    {{-- <div class="badge rounded bg-label-success">+4.2%</div> --}}
                                                 </div>
-                                                <small class="text-body">You informed of this week compared to last
-                                                    week</small>
+                                                <small class="text-body">Soma geral das visitas ao seu website</small>
                                             </div>
-                                            <div class="col-12 col-md-7 ps-xl-8">
+                                            {{-- <div class="col-12 col-md-12 ps-xl-8">
                                                 <div id="weeklyEarningReports"></div>
-                                            </div>
+                                            </div> --}}
                                         </div>
-                                        <div class="border rounded p-5 mt-5">
+                                        {{-- <div class="border rounded p-5 mt-5">
                                             <div class="row gap-4 gap-sm-0">
                                                 <div class="col-12 col-sm-4">
                                                     <div class="d-flex gap-2 align-items-center">
@@ -993,14 +881,106 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div> --}}
+                                    </div>
+                                </div>
+                            </div>
+							<div class="col-lg-6">
+                                <div class="card h-100">
+                                    <div class="card-header pb-0 d-flex justify-content-between">
+                                        <div class="card-title mb-0">
+                                            <h5 class="mb-1">Formulários preenchidos</h5>
+                                            <p class="card-subtitle"></p>
                                         </div>
+                                        {{-- <div class="dropdown">
+                                            <button
+                                                class="btn btn-text-secondary rounded-pill text-muted border-0 p-2 me-n1"
+                                                type="button" id="earningReportsId" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                <i class="ti ti-dots-vertical ti-md text-muted"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="earningReportsId">
+                                                <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                                                <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                            </div>
+                                        </div> --}}
+                                    </div>
+
+									{{-- @isset($page_views)
+										@foreach ($page_views as $view)
+
+										@endforeach
+                					@endisset --}}
+                                    <div class="card-body">
+                                        <div class="row align-items-center g-md-8">
+                                            <div class="col-12 col-md-12 d-flex flex-column">
+                                                <div class="d-flex gap-2 align-items-center mb-3 flex-wrap">
+                                                    <h2 class="mb-0">
+														@isset($total_all_forms)
+															{{$total_all_forms}}
+														@endisset
+													</h2>
+                                                    {{-- <div class="badge rounded bg-label-success">+4.2%</div> --}}
+                                                </div>
+                                                <small class="text-body">Soma geral dos formulários (NewsLetters, Contactos, Solicitação de Orçamento)</small>
+                                            </div>
+                                            {{-- <div class="col-12 col-md-12 ps-xl-8">
+                                                <div id="weeklyEarningReports"></div>
+                                            </div> --}}
+                                        </div>
+                                        {{-- <div class="border rounded p-5 mt-5">
+                                            <div class="row gap-4 gap-sm-0">
+                                                <div class="col-12 col-sm-4">
+                                                    <div class="d-flex gap-2 align-items-center">
+                                                        <div class="badge rounded bg-label-primary p-1">
+                                                            <i class="ti ti-currency-dollar ti-sm"></i>
+                                                        </div>
+                                                        <h6 class="mb-0 fw-normal">Earnings</h6>
+                                                    </div>
+                                                    <h4 class="my-2">$545.69</h4>
+                                                    <div class="progress w-75" style="height: 4px">
+                                                        <div class="progress-bar" role="progressbar"
+                                                            style="width: 65%" aria-valuenow="65"
+                                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4">
+                                                    <div class="d-flex gap-2 align-items-center">
+                                                        <div class="badge rounded bg-label-info p-1"><i
+                                                                class="ti ti-chart-pie-2 ti-sm"></i></div>
+                                                        <h6 class="mb-0 fw-normal">Profit</h6>
+                                                    </div>
+                                                    <h4 class="my-2">$256.34</h4>
+                                                    <div class="progress w-75" style="height: 4px">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                            style="width: 50%" aria-valuenow="50"
+                                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4">
+                                                    <div class="d-flex gap-2 align-items-center">
+                                                        <div class="badge rounded bg-label-danger p-1">
+                                                            <i class="ti ti-brand-paypal ti-sm"></i>
+                                                        </div>
+                                                        <h6 class="mb-0 fw-normal">Expense</h6>
+                                                    </div>
+                                                    <h4 class="my-2">$74.19</h4>
+                                                    <div class="progress w-75" style="height: 4px">
+                                                        <div class="progress-bar bg-danger" role="progressbar"
+                                                            style="width: 65%" aria-valuenow="65"
+                                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> --}}
                                     </div>
                                 </div>
                             </div>
                             <!--/ Earning Reports -->
 
                             <!-- Support Tracker -->
-                            <div class="col-md-6">
+                            {{-- <div class="col-md-6">
                                 <div class="card h-100">
                                     <div class="card-header d-flex justify-content-between">
                                         <div class="card-title mb-0">
@@ -1060,15 +1040,76 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <!--/ Support Tracker -->
 
-                            <!-- Sales By Country -->
-                            <div class="col-xxl-4 col-md-6">
+							<div class="col-xxl-6 col-md-6">
                                 <div class="card h-100">
                                     <div class="card-header d-flex justify-content-between">
                                         <div class="card-title mb-0">
-                                            <h5 class="mb-1">Sales by Countries</h5>
+                                            <h5 class="mb-1">Novos contatos</h5>
+                                            <p class="card-subtitle">Novos contactos ( ordenados por data de registo )</p>
+                                        </div>
+                                        {{-- <div class="dropdown">
+                                            <button
+                                                class="btn btn-text-secondary rounded-pill text-muted border-0 p-2 me-n1"
+                                                type="button" id="salesByCountry" data-bs-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                <i class="ti ti-dots-vertical ti-md text-muted"></i>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="salesByCountry">
+                                                <a class="dropdown-item" href="javascript:void(0);">Download</a>
+                                                <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
+                                                <a class="dropdown-item" href="javascript:void(0);">Share</a>
+                                            </div>
+                                        </div> --}}
+                                    </div>
+                                    <div class="card-body" style="max-height: 200px; overflow-y: auto;">
+                                        <ul class="p-0 m-0">
+											@isset($contactos_news)
+												@foreach ($contactos_news as $contacto)
+													<li class="d-flex align-items-center mb-4">
+														<div class="avatar flex-shrink-0 me-4">
+															<i class="far fa-user icon rounded-circle fs-2"></i>
+														</div>
+														<div
+															class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+															<div class="me-2">
+																<div class="d-flex align-items-center">
+																	<h6 class="mb-0 me-1">{{$contacto['name']}}</h6>
+																</div>
+																<small class="text-body">{{$contacto['email']}}</small>
+															</div>
+															<div class="user-progress">
+																<p
+																	class="text-body fw-medium mb-0 d-flex align-items-center gap-1">
+																	<?php
+																		$date_new = new DateTime($contacto['created_at']);
+
+																		$date_new = $date_new->format('Y/m/d H:i:s');
+																	?>
+																	{{$date_new}}
+																</p>
+															</div>
+														</div>
+													</li>
+												@endforeach
+											@endisset
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Sales By Country -->
+                            {{-- <div class="col-xxl-4 col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header d-flex justify-content-between">
+                                        <div class="card-title mb-0">
+                                            <h5 class="mb-1">Novos contatos</h5>
                                             <p class="card-subtitle">Monthly Sales Overview</p>
                                         </div>
                                         <div class="dropdown">
@@ -1086,7 +1127,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body" style="max-height: 200px; overflow-y: auto;">
                                         <ul class="p-0 m-0">
                                             <li class="d-flex align-items-center mb-4">
                                                 <div class="avatar flex-shrink-0 me-4">
@@ -1217,11 +1258,11 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <!--/ Sales By Country -->
 
                             <!-- Total Earning -->
-                            <div class="col-xxl-4 col-md-6">
+                            {{-- <div class="col-xxl-4 col-md-6">
                                 <div class="card h-100">
                                     <div class="card-header">
                                         <div class="d-flex justify-content-between align-items-center">
@@ -1277,11 +1318,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <!--/ Total Earning -->
 
                             <!-- Monthly Campaign State -->
-                            <div class="col-xxl-4 col-md-6">
+                            {{-- <div class="col-xxl-4 col-md-6">
                                 <div class="card h-100">
                                     <div class="card-header d-flex justify-content-between">
                                         <div class="card-title mb-0">
@@ -1375,11 +1416,11 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <!--/ Monthly Campaign State -->
 
                             <!-- Source Visit -->
-                            <div class="col-xxl-4 col-xl-6 col-lg-12">
+                            {{-- <div class="col-xxl-4 col-xl-6 col-lg-12">
                                 <div class="card h-100">
                                     <div class="card-header d-flex justify-content-between">
                                         <div class="card-title mb-0">
@@ -1508,11 +1549,11 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <!--/ Source Visit -->
 
                             <!-- Projects table -->
-                            <div class="col-xxl-8">
+                            {{-- <div class="col-xxl-8">
                                 <div class="card">
                                     <div class="card-datatable table-responsive">
                                         <table class="datatables-projects table table-sm">
@@ -1530,7 +1571,7 @@
                                         </table>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <!--/ Projects table -->
                         </div>
                     </div>
@@ -1579,5 +1620,6 @@
         <!-- Drag Target Area To SlideIn Menu On Small Screens -->
         <div class="drag-target"></div>
     </div>
+
     <!-- / Layout wrapper -->
 </x-app-layout>

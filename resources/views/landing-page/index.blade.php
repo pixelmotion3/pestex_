@@ -6,126 +6,257 @@
         <!-- Menu -->
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-            <div class="app-brand demo">
-                <a href="/dashboard" class="app-brand-link">
-                    <span class="app-brand-logo demo">
-                        <svg width="32" height="22" viewBox="0 0 32 22" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z"
-                                fill="#7367F0" />
-                            <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
-                                d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z"
-                                fill="#161616" />
-                            <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
-                                d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z"
-                                fill="#161616" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z"
-                                fill="#7367F0" />
-                        </svg>
-                    </span>
-                    <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
-                </a>
+			<div class="app-brand demo">
+				<a href="/dashboard" class="app-brand-link">
+					<img src="/assets/images/logo-dark.png" alt="Logo SOS Pragas" width="184">
+				</a>
 
-                <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
-                    <i class="ti menu-toggle-icon d-none d-xl-block align-middle"></i>
-                    <i class="ti ti-x d-block d-xl-none ti-md align-middle"></i>
-                </a>
-            </div>
+				<a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+					<i class="ti menu-toggle-icon d-none d-xl-block align-middle"></i>
+					<i class="ti ti-x d-block d-xl-none ti-md align-middle"></i>
+				</a>
+			</div>
 
-            <div class="menu-inner-shadow"></div>
+			<div class="menu-inner-shadow"></div>
 
-            <ul class="menu-inner py-1">
-                <!-- Dashboards -->
-                <li class="menu-item">
+			<ul class="menu-inner py-1">
+				<!-- Dashboards -->
+				<li class="menu-item">
 
-                    <a href="/dashboard" class="menu-link">
-                        <i class="menu-icon tf-icons ti ti-smart-home"></i>
-                        <div data-i18n="Dashboards">Dashboards</div>
-                    </a>
-                    <!--
-                    <ul class="menu-sub">
-                      <li class="menu-item active">
-                        <a href="index.html" class="menu-link">
-                          <div data-i18n="Analytics">Analytics</div>
-                        </a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="dashboards-crm.html" class="menu-link">
-                          <div data-i18n="CRM">CRM</div>
-                        </a>
-                      </li>
-                    </ul>
+					<a href="/dashboard" class="menu-link">
+						<i class="menu-icon tf-icons ti ti-smart-home"></i>
+						<div data-i18n="Dashboards">Dashboards</div>
+					</a>
+					<!--
+					<ul class="menu-sub">
+					  <li class="menu-item active">
+						<a href="index.html" class="menu-link">
+						  <div data-i18n="Analytics">Analytics</div>
+						</a>
+					  </li>
+					  <li class="menu-item">
+						<a href="dashboards-crm.html" class="menu-link">
+						  <div data-i18n="CRM">CRM</div>
+						</a>
+					  </li>
+					</ul>
 
-                  --></li>
+				  --></li>
 
-        <!-- Layouts -->
-        <!--
-        <li class="menu-item">
-          <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
-            <div data-i18n="Layouts">Layouts</div>
-          </a>
+		<!-- Layouts -->
 
-          <ul class="menu-sub">
-            <li class="menu-item">
-              <a href="layouts-collapsed-menu.html" class="menu-link">
-                <div data-i18n="Collapsed menu">Collapsed menu</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="layouts-content-navbar.html" class="menu-link">
-                <div data-i18n="Content navbar">Content navbar</div>
-              </a>
-            </li>
+		<!-- Front Pages -->
+				<li class="menu-item">
+					<a href="javascript:void(0);" class="menu-link menu-toggle">
+					<i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
+					<div data-i18n="Lading Page">Lading Page</div>
+					</a>
 
-          </ul>
-        </li>
+					<ul class="menu-sub">
+						<li class="menu-item">
+							<a href="/landing-page/nav-paragraph" class="menu-link">
+							<div data-i18n="Nav Paragraph">Nav Paragraph</div>
+							</a>
+						</li>
 
-        <!-- Front Pages -->
-                <li class="menu-item open">
-                    <a href="javascript:void(0);" class="menu-link">
-                        <i class="menu-icon tf-icons ti ti-files"></i>
-                        <div data-i18n="Front Pages">Front Pages</div>
-                    </a>
-                    <ul class="menu-sub">
-                        <li class="menu-item">
-                            <a href="{{ url('landing-page') }}" class="menu-link">
-                                <div data-i18n="Landing / Home">Landing / Home</div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/about-page" class="menu-link">
-                                <div data-i18n="About">About</div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/services-page" class="menu-link">
-                                <div data-i18n="Services">Services</div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/sustainability-page" class="menu-link">
-                                <div data-i18n="Sustainability">Sustainability</div>
-                            </a>
-                        </li>
+						<li class="menu-item">
+							<a href="/landing-page/main-carrousel" class="menu-link">
+							<div data-i18n="Main Carrousel">Main Carrousel</div>
+							</a>
+						</li>
 
-                        <li class="menu-item">
-                            <a href="/hardware-page" class="menu-link">
-                                <div data-i18n="Hardware">Hardware</div>
-                            </a>
-                        </li>
+						<li class="menu-item">
+							<a href="/landing-page/status" class="menu-link">
+							<div data-i18n="Status">Status</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/landing-page/best-service" class="menu-link">
+							<div data-i18n="Best Service">Best Service</div>
+							</a>
+						</li>
+
+						<li class="menu-item">
+							<a href="/landing-page/our-service" class="menu-link">
+							<div data-i18n="Our service">Our service</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/landing-page/about-now" class="menu-link">
+							<div data-i18n="About Now">About Now</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/landing-page/choose-us" class="menu-link">
+							<div data-i18n="Choose us">Choose us</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/landing-page/testimonial" class="menu-link">
+							<div data-i18n="Testemunhos">Testemunhos</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/landing-page/collapse" class="menu-link">
+							<div data-i18n="Collapse">Collapse</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/landing-page/call-now" class="menu-link">
+							<div data-i18n="Call-now">Call-now</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/landing-page/customer-area" class="menu-link">
+							<div data-i18n="Área Cliente">Área Cliente</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/landing-page/contact-us" class="menu-link">
+							<div data-i18n="Contact Us">Contact Us</div>
+							</a>
+						</li>
+
+					</ul>
+				</li>
+				<li class="menu-item">
+					<a href="javascript:void(0);" class="menu-link menu-toggle">
+						<i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
+						<div data-i18n="Home Page">Home Page</div>
+					</a>
+					<ul class="menu-sub">
+						<li class="menu-item">
+							<a href="/home-page/nav-paragraph" class="menu-link">
+							<div data-i18n="Nav Paragraph">Nav Paragraph</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/home-page/quote-forms" class="menu-link">
+							<div data-i18n="Quote Form">Quote Form</div>
+							</a>
+						</li>
+
+						<li class="menu-item">
+							<a href="/home-page/main-carrousel" class="menu-link">
+							<div data-i18n="Main Carrousel">Main Carrousel</div>
+							</a>
+						</li>
+
+						<li class="menu-item">
+							<a href="/home-page/status" class="menu-link">
+							<div data-i18n="Status">Status</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/home-page/best-services" class="menu-link">
+							<div data-i18n="Best Service">Best Service</div>
+							</a>
+						</li>
+
+						<li class="menu-item">
+							<a href="/home-page/our-services" class="menu-link">
+							<div data-i18n="Our service">Our service</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/home-page/about-now" class="menu-link">
+							<div data-i18n="About Now">About Now</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/home-page/choose-us" class="menu-link">
+							<div data-i18n="Choose us">Choose us</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/home-page/testimonial" class="menu-link">
+							<div data-i18n="Testemunhos">Testemunhos</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/home-page/collapse" class="menu-link">
+							<div data-i18n="Collapse">Collapse</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/home-page/call-now" class="menu-link">
+							<div data-i18n="Call-now">Call-now</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/home-page/customer-area" class="menu-link">
+							<div data-i18n="Área Cliente">Área Cliente</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/home-page/contact-us" class="menu-link">
+							<div data-i18n="Contact Us">Contact Us</div>
+							</a>
+						</li>
+
+
+
+						<li class="menu-item">
+							<a href="/about-page" class="menu-link">
+								<div data-i18n="About">About</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/services-page" class="menu-link">
+								<div data-i18n="Serviços">Serviços</div>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/sustainability-page" class="menu-link">
+								<div data-i18n="Sustentabilidade">Sustentabilidade</div>
+							</a>
+						</li>
+
+						<li class="menu-item">
+							<a href="/hardware-page" class="menu-link">
+								<div data-i18n="Equipamentos">Equipamentos</div>
+							</a>
+						</li>
 
 						<li class="menu-item">
 							<a href="/forms-page" class="menu-link">
 								<div data-i18n="Forms">Forms</div>
 							</a>
 						</li>
-                    </ul>
-                </li>
-            </ul>
-        </aside>
+
+					</ul>
+				</li>
+
+				<li class="menu-item open">
+					<a href="layouts-content-navbar.html" class="menu-link">
+					<div data-i18n="Quote Form">Quote Form</div>
+					</a>
+				</li>
+
+				<li class="menu-item open">
+					<a href="javascript:void(0);" class="menu-link">
+						<i class="menu-icon tf-icons ti ti-book"></i>
+						<div data-i18n="Termos de Serviço">Termos de Serviço</div>
+					</a>
+					<a href="{{ url('landing-page') }}" class="menu-link">
+						<i class="menu-icon tf-icons ti ti-book"></i>
+						<div data-i18n="Política de Privacidade">Política de Privacidade</div>
+					</a>
+				</li>
+
+				<li class="menu-item open">
+					<ul class="menu-sub">
+						<li class="menu-item">
+							<a href="{{ url('landing-page') }}" class="menu-link">
+								<div data-i18n="Landing / Home">Landing / Home</div>
+							</a>
+						</li>
+
+					</ul>
+				</li>
+
+			</ul>
+		</aside>
         <!-- / Menu -->
 
         <!-- Layout container -->
@@ -571,7 +702,7 @@
                     href="javascript:void(0);"
                     data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                      <img src="../../assets/img/avatars/1.png" alt class="rounded-circle" />
+						<img src="/assets/images/favicon01.png" alt class="rounded-circle" />
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
@@ -580,11 +711,11 @@
                         <div class="d-flex align-items-center">
                           <div class="flex-shrink-0 me-2">
                             <div class="avatar avatar-online">
-                              <img src="../../assets/img/avatars/1.png" alt class="rounded-circle" />
+								<img src="/assets/images/favicon01.png" alt class="rounded-circle" />
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <h6 class="mb-0">John Doe</h6>
+                            <h6 class="mb-0">Admin</h6>
                             <small class="text-muted">Admin</small>
                           </div>
                         </div>
@@ -594,11 +725,11 @@
                       <div class="dropdown-divider my-1 mx-n2"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="pages-profile-user.html">
-                        <i class="ti ti-user me-3 ti-md"></i><span class="align-middle">My Profile</span>
-                      </a>
-                    </li>
-                    <li>
+						<a class="dropdown-item" href="pages-profile-user.html">
+							<i class="ti ti-user me-3 ti-md"></i><span class="align-middle">Alterar palavra-passe</span>
+						</a>
+					</li>
+                    {{-- <li>
                       <a class="dropdown-item" href="pages-account-settings-account.html">
                         <i class="ti ti-settings me-3 ti-md"></i><span class="align-middle">Settings</span>
                       </a>
@@ -626,7 +757,7 @@
                       <a class="dropdown-item" href="pages-faq.html">
                         <i class="ti ti-question-mark me-3 ti-md"></i><span class="align-middle">FAQ</span>
                       </a>
-                    </li>
+                    </li> --}}
                     <li>
                       <div class="d-grid px-2 pt-2 pb-1">
                           <small class="align-middle btn btn-sm btn-danger d-flex text-white">
@@ -682,12 +813,12 @@
                                 <button class="nav-link" id="image-tabs-text-tab" data-bs-toggle="tab" data-bs-target="#image-tabs-text" type="button" role="tab" aria-controls="image-tabs-text" aria-selected="false"><small>Our service</small></button>
                                 <button class="nav-link" id="background-images+text-tab" data-bs-toggle="tab" data-bs-target="#background-images+text" type="button" role="tab" aria-controls="background-images+text" aria-selected="false"><small>About Now</small></button>
                                 <button class="nav-link" id="three-images+six-icons+three-paragraphs-tab" data-bs-toggle="tab" data-bs-target="#three-images+six-icons+three-paragraphs" type="button" role="tab" aria-controls="three-images+six-icons+three-paragraphs" aria-selected="false"><small>Choose us</small></button>
-                                <button class="nav-link" id="three-dark-bg-boxes-tab" data-bs-toggle="tab" data-bs-target="#three-dark-bg-boxes" type="button" role="tab" aria-controls="three-dark-bg-boxes" aria-selected="false"><small>Testimonial</small></button>
+                                <button class="nav-link" id="three-dark-bg-boxes-tab" data-bs-toggle="tab" data-bs-target="#three-dark-bg-boxes" type="button" role="tab" aria-controls="three-dark-bg-boxes" aria-selected="false"><small>Testemunhos</small></button>
                                 <button class="nav-link" id="four-images+collapse-box-tab" data-bs-toggle="tab" data-bs-target="#four-images+collapse-box" type="button" role="tab" aria-controls="four-images+collapse-box" aria-selected="false"><small>Collapse</small></button>
                                 <button class="nav-link" id="call-now-image-box-tab" data-bs-toggle="tab" data-bs-target="#call-now-image-box" type="button" role="tab" aria-controls="call-now-image-box" aria-selected="false"><small>Call-now</small></button>
-                                <button class="nav-link" id="watch-video+background-image-tab" data-bs-toggle="tab" data-bs-target="#watch-video+background-image" type="button" role="tab" aria-controls="watch-video+background-image" aria-selected="false"><small>Watch video</small></button>
+                                <button class="nav-link" id="watch-video+background-image-tab" data-bs-toggle="tab" data-bs-target="#watch-video+background-image" type="button" role="tab" aria-controls="watch-video+background-image" aria-selected="false"><small>Área Cliente</small></button>
 								<button class="nav-link" id="terms-service-tab" data-bs-toggle="tab" data-bs-target="#terms-service" type="button" role="tab" aria-controls="terms-service" aria-selected="false"><small>Termos de Serviço</small></button>
-								<button class="nav-link" id="policy-privacy-tab" data-bs-toggle="tab" data-bs-target="#policy-privacy" type="button" role="tab" aria-controls="policy-privacy" aria-selected="false"><small>Politica de Privacidade</small></button>
+								<button class="nav-link" id="policy-privacy-tab" data-bs-toggle="tab" data-bs-target="#policy-privacy" type="button" role="tab" aria-controls="policy-privacy" aria-selected="false"><small>Política de Privacidade</small></button>
                                 <button class="nav-link" id="background-image+form-tab" data-bs-toggle="tab" data-bs-target="#background-image+form" type="button" role="tab" aria-controls="background-image+form" aria-selected="false"><small>Contact Us</small></button>
                                 <!--
                                 <button class="nav-link" id="footer-tab" data-bs-toggle="tab" data-bs-target="#footer" type="button" role="tab" aria-controls="footer" aria-selected="false"><small>footer</small></button>
@@ -747,7 +878,7 @@
                                           <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Carrousel Image 1</label>
                                         </div>
                                         <div class="card">
-                                          <img src="{{ $main_screen[0]['carrousel-bg-img-path'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                          <img src="{{ $main_screen[0]['carrousel-bg-img-path'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                           <div class="card-body">
                                             <label for="exampleFormControlFile1">Example file input</label>
                                             <input type="file" class="form-control-file" id="exampleFormControlFile1" name="carrousel-bg-img-path">
@@ -781,7 +912,7 @@
                                           <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                         </div>
                                         <div class="card">
-                                          <img src="{{ $main_screen[0]['carrousel-bg-img-path-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                          <img src="{{ $main_screen[0]['carrousel-bg-img-path-1'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                           <div class="card-body">
                                             <label for="exampleFormControlFile1">Example file input</label>
                                             <input type="file" class="form-control-file" id="exampleFormControlFile1" name="carrousel-bg-img-path-1">
@@ -815,7 +946,7 @@
                                           <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                         </div>
                                         <div class="card">
-                                          <img src="{{ $main_screen[0]['carrousel-bg-img-path-2'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                          <img src="{{ $main_screen[0]['carrousel-bg-img-path-2'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                           <div class="card-body">
                                             <label for="exampleFormControlFile1">Example file input</label>
                                             <input type="file" class="form-control-file" id="exampleFormControlFile1" name="carrousel-bg-img-path-2">

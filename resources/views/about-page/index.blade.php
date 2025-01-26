@@ -5,126 +5,7 @@
     <div class="layout-container">
         <!-- Menu -->
 
-        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-            <div class="app-brand demo">
-                <a href="/dashboard" class="app-brand-link">
-                    <span class="app-brand-logo demo">
-                        <svg width="32" height="22" viewBox="0 0 32 22" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M0.00172773 0V6.85398C0.00172773 6.85398 -0.133178 9.01207 1.98092 10.8388L13.6912 21.9964L19.7809 21.9181L18.8042 9.88248L16.4951 7.17289L9.23799 0H0.00172773Z"
-                                fill="#7367F0" />
-                            <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
-                                d="M7.69824 16.4364L12.5199 3.23696L16.5541 7.25596L7.69824 16.4364Z"
-                                fill="#161616" />
-                            <path opacity="0.06" fill-rule="evenodd" clip-rule="evenodd"
-                                d="M8.07751 15.9175L13.9419 4.63989L16.5849 7.28475L8.07751 15.9175Z"
-                                fill="#161616" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M7.77295 16.3566L23.6563 0H32V6.88383C32 6.88383 31.8262 9.17836 30.6591 10.4057L19.7824 22H13.6938L7.77295 16.3566Z"
-                                fill="#7367F0" />
-                        </svg>
-                    </span>
-                    <span class="app-brand-text demo menu-text fw-bold">Vuexy</span>
-                </a>
-
-                <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
-                    <i class="ti menu-toggle-icon d-none d-xl-block align-middle"></i>
-                    <i class="ti ti-x d-block d-xl-none ti-md align-middle"></i>
-                </a>
-            </div>
-
-            <div class="menu-inner-shadow"></div>
-
-            <ul class="menu-inner py-1">
-                <!-- Dashboards -->
-                <li class="menu-item">
-
-                    <a href="/dashboard" class="menu-link">
-                        <i class="menu-icon tf-icons ti ti-smart-home"></i>
-                        <div data-i18n="Dashboards">Dashboards</div>
-                    </a>
-                    <!--
-                    <ul class="menu-sub">
-                      <li class="menu-item active">
-                        <a href="index.html" class="menu-link">
-                          <div data-i18n="Analytics">Analytics</div>
-                        </a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="dashboards-crm.html" class="menu-link">
-                          <div data-i18n="CRM">CRM</div>
-                        </a>
-                      </li>
-                    </ul>
-
-                  --></li>
-
-        <!-- Layouts -->
-        <!--
-        <li class="menu-item">
-          <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
-            <div data-i18n="Layouts">Layouts</div>
-          </a>
-
-          <ul class="menu-sub">
-            <li class="menu-item">
-              <a href="layouts-collapsed-menu.html" class="menu-link">
-                <div data-i18n="Collapsed menu">Collapsed menu</div>
-              </a>
-            </li>
-            <li class="menu-item">
-              <a href="layouts-content-navbar.html" class="menu-link">
-                <div data-i18n="Content navbar">Content navbar</div>
-              </a>
-            </li>
-
-          </ul>
-        </li>
-
-        <!-- Front Pages -->
-                <li class="menu-item open">
-                    <a href="javascript:void(0);" class="menu-link">
-                        <i class="menu-icon tf-icons ti ti-files"></i>
-                        <div data-i18n="Front Pages">Front Pages</div>
-                    </a>
-                    <ul class="menu-sub">
-                        <li class="menu-item">
-                            <a href="{{ url('landing-page') }}" class="menu-link">
-                                <div data-i18n="Landing / Home">Landing / Home</div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/about-page" class="menu-link">
-                                <div data-i18n="About">About</div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/services-page" class="menu-link">
-                                <div data-i18n="Services">Services</div>
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="/sustainability-page" class="menu-link">
-                                <div data-i18n="Sustainability">Sustainability</div>
-                            </a>
-                        </li>
-
-                        <li class="menu-item">
-                            <a href="/hardware-page" class="menu-link">
-                                <div data-i18n="Hardware">Hardware</div>
-                            </a>
-                        </li>
-						<li class="menu-item">
-							<a href="/forms-page" class="menu-link">
-								<div data-i18n="Forms">Forms</div>
-							</a>
-						</li>
-                    </ul>
-                </li>
-            </ul>
-        </aside>
+        @include('includes.menu')
         <!-- / Menu -->
 
         <!-- Layout container -->
@@ -569,7 +450,7 @@
                     href="javascript:void(0);"
                     data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                      <img src="../../assets/img/avatars/1.png" alt class="rounded-circle" />
+						<img src="/assets/images/favicon01.png" alt class="rounded-circle" />
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
@@ -578,11 +459,11 @@
                         <div class="d-flex align-items-center">
                           <div class="flex-shrink-0 me-2">
                             <div class="avatar avatar-online">
-                              <img src="../../assets/img/avatars/1.png" alt class="rounded-circle" />
+								<img src="/assets/images/favicon01.png" alt class="rounded-circle" />
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <h6 class="mb-0">John Doe</h6>
+                            <h6 class="mb-0">Admin</h6>
                             <small class="text-muted">Admin</small>
                           </div>
                         </div>
@@ -591,17 +472,12 @@
                     <li>
                       <div class="dropdown-divider my-1 mx-n2"></div>
                     </li>
-                    <li>
-                      <a class="dropdown-item" href="pages-profile-user.html">
-                        <i class="ti ti-user me-3 ti-md"></i><span class="align-middle">My Profile</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="pages-account-settings-account.html">
-                        <i class="ti ti-settings me-3 ti-md"></i><span class="align-middle">Settings</span>
-                      </a>
-                    </li>
-                    <li>
+					<li>
+						<a class="dropdown-item" href="pages-profile-user.html">
+							<i class="ti ti-user me-3 ti-md"></i><span class="align-middle">Alterar palavra-passe</span>
+						</a>
+					</li>
+                    {{-- <li>
                       <a class="dropdown-item" href="pages-account-settings-billing.html">
                         <span class="d-flex align-items-center align-middle">
                           <i class="flex-shrink-0 ti ti-file-dollar me-3 ti-md"></i
@@ -624,7 +500,7 @@
                       <a class="dropdown-item" href="pages-faq.html">
                         <i class="ti ti-question-mark me-3 ti-md"></i><span class="align-middle">FAQ</span>
                       </a>
-                    </li>
+                    </li> --}}
                     <li>
                       <div class="d-grid px-2 pt-2 pb-1">
                           <small class="align-middle btn btn-sm btn-danger d-flex text-white">
@@ -670,25 +546,37 @@
                         <div class="card-body">
                           <nav>
                             <div class="nav nav-tabs overflow-scroll" id="nav-tab" role="tablist">
-                              <button class="nav-link active" id="main-screen-tab" data-bs-toggle="tab" data-bs-target="#main-screen" type="button" role="tab" aria-controls="main-screen" aria-selected="false"><small>Main screen</small></button>
-                              <button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="false"><small>Services</small></button>
-                              <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video" type="button" role="tab" aria-controls="video" aria-selected="false"><small>Video</small></button>
-                              <button class="nav-link" id="testimonial-tab" data-bs-toggle="tab" data-bs-target="#testimonial" type="button" role="tab" aria-controls="testimonial" aria-selected="false"><small>Testimonial</small></button>
+                              <button class="nav-link active" id="main-screen-tab" data-bs-toggle="tab" data-bs-target="#main-screen" type="button" role="tab" aria-controls="main-screen" aria-selected="false"><small>Página Principal</small></button>
+                              <button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button" role="tab" aria-controls="services" aria-selected="false"><small>O que nos diferencia</small></button>
+                              <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video" type="button" role="tab" aria-controls="video" aria-selected="false"><small>Sustentabilidade</small></button>
+                              <button class="nav-link" id="testimonial-tab" data-bs-toggle="tab" data-bs-target="#testimonial" type="button" role="tab" aria-controls="testimonial" aria-selected="false"><small>Testemunhos</small></button>
                               <button class="nav-link" id="contact-info-tab" data-bs-toggle="tab" data-bs-target="#contact-info" type="button" role="tab" aria-controls="contact-info" aria-selected="false"><small>Contact Info</small></button>
                             </div>
                           </nav>
                           <div class="tab-content mt-5" id="nav-tabContent">
-                            <!-- main screen -->
+                            <!-- Página Principal -->
                             <div class="tab-pane fade show active" id="main-screen" role="tabpanel" aria-labelledby="main-screen-tab">
                                 <form class="row g-3 needs-validation" novalidate action="{{ route('about-page.update', 1) }}" method="post" enctype="multipart/form-data">
                                   @csrf
                                   @method('PUT')
+								  <div class="col-12 mt-5">
+									<label for="validationCustom01" class="form-label" style="float:left;">Meta Title (PT)</label>
+									<input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['meta-title'] }}" name="meta-title" required>
+								  </div>
+								  <div class="col-12 mt-5">
+									<label for="validationCustom01" class="form-label" style="float:left;">Meta Description (PT)</label>
+									<input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['meta-desctiption'] }}" name="meta-desctiption"  required>
+								  </div>
+								  <div class="col-12 mt-5">
+									<label for="validationCustom01" class="form-label" style="float:left;">Meta Keywords (PT)</label>
+									<input type="text" class="form-control" id="validationCustom01" value="{{ $main_screen[0]['meta-keywords'] }}" name="meta-keywords" required>
+								  </div>
                                   <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                     </div>
-                                    <div class="card">
-                                      <img src="{{ $main_screen[0]['bg-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                    <div class="card" style="display: flex;align-items: center;">
+                                      <img src="{{ $main_screen[0]['bg-1'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                       <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" name="bg-1">
@@ -699,8 +587,8 @@
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                     </div>
-                                    <div class="card">
-                                      <img src="{{ $main_screen[0]['shape-one-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                    <div class="card" style="display: flex;align-items: center;">
+                                      <img src="{{ $main_screen[0]['shape-one-1'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                       <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-one-1">
@@ -711,8 +599,8 @@
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                     </div>
-                                    <div class="card">
-                                      <img src="{{ $main_screen[0]['shape-two-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                    <div class="card" style="display: flex;align-items: center;">
+                                      <img src="{{ $main_screen[0]['shape-two-1'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                       <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-two-1">
@@ -723,8 +611,8 @@
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                     </div>
-                                    <div class="card">
-                                      <img src="{{ $main_screen[0]['shape-three-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                    <div class="card" style="display: flex;align-items: center;">
+                                      <img src="{{ $main_screen[0]['shape-three-1'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                       <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-three-1">
@@ -735,8 +623,8 @@
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                     </div>
-                                    <div class="card">
-                                      <img src="{{ $main_screen[0]['shape-four-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                    <div class="card" style="display: flex;align-items: center;">
+                                      <img src="{{ $main_screen[0]['shape-four-1'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                       <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-four-1">
@@ -747,8 +635,8 @@
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                     </div>
-                                    <div class="card">
-                                      <img src="{{ $main_screen[0]['thumb-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                    <div class="card" style="display: flex;align-items: center;">
+                                      <img src="{{ $main_screen[0]['thumb-1'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                       <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" name="thumb-1">
@@ -775,48 +663,48 @@
                                     <label for="validationCustom01" class="form-label" style="float:left;">Div a b</label>
                                     <input type="text" class="form-control" name="div-a-b" id="validationCustom01" value="{{ $main_screen[0]['div-a-b'] }}" required>
                                   </div>
-                                  <div class="col-12 mt-5 form-group">
+                                  {{-- <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                     </div>
                                     <div class="card">
-                                      <img src="{{ $main_screen[0]['bg-2'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                      <img src="{{ $main_screen[0]['bg-2'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                       <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" name="bg-2">
                                       </div>
                                     </div>
-                                  </div>
-                                  <div class="col-12 mt-5 form-group">
+                                  </div> --}}
+                                  {{-- <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                     </div>
                                     <div class="card">
-                                      <img src="{{ $main_screen[0]['shape-one-2'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                      <img src="{{ $main_screen[0]['shape-one-2'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                       <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-one-2">
                                       </div>
                                     </div>
-                                  </div>
-                                  <div class="col-12 mt-5 form-group">
+                                  </div> --}}
+                                  {{-- <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                     </div>
                                     <div class="card">
-                                      <img src="{{ $main_screen[0]['shape-two-2'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                      <img src="{{ $main_screen[0]['shape-two-2'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                       <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-two-2">
                                       </div>
                                     </div>
-                                  </div>
-                                  <div class="col-12 mt-5 form-group">
+                                  </div> --}}
+                                  {{-- <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                     </div>
                                     <div class="card">
-                                      <img src="{{ $main_screen[0]['shape-three-2'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                      <img src="{{ $main_screen[0]['shape-three-2'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                       <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-three-2">
@@ -828,26 +716,26 @@
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                     </div>
                                     <div class="card">
-                                      <img src="{{ $main_screen[0]['shape-four-2'] }}" alt="..." style="max-height:885px;max-width:1920px;">
+                                      <img src="{{ $main_screen[0]['shape-four-2'] }}" alt="..." style="max-height: 290px;max-width: 884px;">
                                       <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-four-2">
                                       </div>
                                     </div>
-                                  </div>
-                                  <div class="col-12 mt-5 form-group">
+                                  </div> --}}
+                                  {{-- <div class="col-12 mt-5 form-group">
                                     <div class="card-header">
                                       <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                     </div>
                                     <div class="card">
-                                      <img src="{{ $main_screen[0]['thumb-2'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                      <img src="{{ $main_screen[0]['thumb-2'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                       <div class="card-body">
                                         <label for="exampleFormControlFile1">Example file input</label>
                                         <input type="file" class="form-control-file" id="exampleFormControlFile1" name="thumb-2">
                                       </div>
                                     </div>
-                                  </div>
-                                  <div class="col-12 mt-5">
+                                  </div> --}}
+                                  {{-- <div class="col-12 mt-5">
                                     <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                     <input type="text" class="form-control" name="h2-span-1-1" id="validationCustom01" value="{{ $main_screen[0]['h2-span-1-1'] }}" required>
                                   </div>
@@ -866,13 +754,13 @@
                                   <div class="col-12 mt-5">
                                     <label for="validationCustom01" class="form-label" style="float:left;">H2</label>
                                     <input type="text" class="form-control" name="div-a-b-1" id="validationCustom01" value="{{ $main_screen[0]['div-a-b-1'] }}" required>
-                                  </div>
+                                  </div> --}}
                                   <div class="col-12">
                                     <button class="btn btn-primary w-100" type="submit" name="form0">Submit</button>
                                   </div>
                                 </form>
                             </div>
-                             <!-- Services -->
+                             <!-- Serviços -->
                             <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
                               <form class="row g-3" action="{{ route('about-page.update', 1) }}" method="post" enctype="multipart/form-data">
                                 @csrf
@@ -881,8 +769,8 @@
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                   </div>
-                                  <div class="card">
-                                    <img src="{{ $service[0]['image-layer-path'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                  <div class="card" style="display: flex;align-items: center;">
+                                    <img src="{{ $service[0]['image-layer-path'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                     <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
                                       <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image-layer-path">
@@ -905,8 +793,8 @@
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                   </div>
-                                  <div class="card">
-                                    <img src="{{ $service[0]['img-path'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                  <div class="card" style="display: flex;align-items: center;">
+                                    <img src="{{ $service[0]['img-path'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                     <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
                                       <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-path">
@@ -980,8 +868,8 @@
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                   </div>
-                                  <div class="card">
-                                    <img src="{{ $video[0]['bg-img'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                  <div class="card" style="display: flex;align-items: center;">
+                                    <img src="{{ $video[0]['bg-img'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                     <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
                                       <input type="file" class="form-control-file" id="exampleFormControlFile1" name="bg-img">
@@ -992,8 +880,8 @@
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                   </div>
-                                  <div class="card">
-                                    <img src="{{ $video[0]['shape-img'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                  <div class="card" style="display: flex;align-items: center;">
+                                    <img src="{{ $video[0]['shape-img'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                     <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
                                       <input type="file" class="form-control-file" id="exampleFormControlFile1" name="shape-img">
@@ -1004,8 +892,8 @@
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                   </div>
-                                  <div class="card">
-                                    <img src="{{ $video[0]['overlay-img'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                  <div class="card" style="display: flex;align-items: center;">
+                                    <img src="{{ $video[0]['overlay-img'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                     <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
                                       <input type="file" class="form-control-file" id="exampleFormControlFile1" name="overlay-img">
@@ -1032,8 +920,8 @@
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                   </div>
-                                  <div class="card">
-                                    <img src="{{ $video[0]['img-path'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                  <div class="card" style="display: flex;align-items: center;">
+                                    <img src="{{ $video[0]['img-path'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                     <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
                                       <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-path">
@@ -1045,7 +933,7 @@
                                 </div>
                               </form>
                             </div>
-                            <!-- Testimonial -->
+                            <!-- Testemunhos -->
                             <div class="tab-pane fade show" id="testimonial" role="tabpanel" aria-labelledby="testimonial-tab">
                               <form class="row g-3" action="{{ route('about-page.update', 1) }}" method="post" enctype="multipart/form-data">
                                 @csrf
@@ -1054,8 +942,8 @@
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                   </div>
-                                  <div class="card">
-                                    <img src="{{ $testimonial[0]['img-path'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                  <div class="card" style="display: flex;align-items: center;">
+                                    <img src="{{ $testimonial[0]['img-path'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                     <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
                                       <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-path">
@@ -1074,8 +962,8 @@
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                   </div>
-                                  <div class="card">
-                                    <img src="{{ $testimonial[0]['img-path-1'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                  <div class="card" style="display: flex;align-items: center;">
+                                    <img src="{{ $testimonial[0]['img-path-1'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                     <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
                                       <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-path-1">
@@ -1086,8 +974,8 @@
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                   </div>
-                                  <div class="card">
-                                    <img src="{{ $testimonial[0]['img-path-2'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                  <div class="card" style="display: flex;align-items: center;">
+                                    <img src="{{ $testimonial[0]['img-path-2'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                     <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
                                       <input type="file" class="form-control-file" id="exampleFormControlFile1" name="img-path-2">
@@ -1252,7 +1140,7 @@
 								</div>
 							  </div>
 							  <button type="button" class="btn btn-primary w-100 mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
-								Criar Testimonial
+								Criar Testemunhos
 							  </button>
                             </div>
 
@@ -1266,8 +1154,8 @@
                                   <div class="card-header">
                                     <label for="validationCustom01" class="form-label" style="float:left;margin-left:-22px;">Background Image</label>
                                   </div>
-                                  <div class="card">
-                                    <img src="{{ $contact_info[0]['bg-img'] }}" class="img-fluid" alt="..." style="max-height:885px;max-width:1920px;">
+                                  <div class="card" style="display: flex;align-items: center;">
+                                    <img src="{{ $contact_info[0]['bg-img'] }}" class="img-fluid" alt="..." style="max-height: 290px;max-width: 884px;">
                                     <div class="card-body">
                                       <label for="exampleFormControlFile1">Example file input</label>
                                       <input type="file" class="form-control-file" id="exampleFormControlFile1" name="bg-img">

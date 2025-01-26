@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreSustainabilityPageRequest;
 use App\Http\Requests\UpdateSustainabilityPageRequest;
+use App\Models\contact_forms;
+use App\Models\News_letter;
+use App\Models\quote_forms;
 use App\Models\SustainabilityPage;
 use Illuminate\Http\Request;
 
@@ -16,8 +19,17 @@ class SustainabilityPageController extends Controller
     {
         $main = SustainabilityPage::where('id', 1)->get()->toArray();
 
+		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
         return view('sustainability-page.index', [
-            'main' => $main
+            'main' => $main,
+			'contactos_news' => $contactos_news,
+			'contact_forms_news' => $contact_forms_news,
+			'news_letters_news' => $news_letters_news,
+			'quote_forms_news' => $quote_forms_news
         ]);
     }
 
@@ -131,24 +143,24 @@ class SustainabilityPageController extends Controller
                 'span-1' => $request->input('span-1'),
                 'span-2' => $request->input('span-2'),
                 'span-3' => $request->input('span-3'),
-                'h3-6' => $request->input('h3-6'),
-                'p-2' => $request->input('p-2'),
-                'span-4' => $request->input('span-4'),
-                'span-5' => $request->input('span-5'),
-                'span-6' => $request->input('span-6'),
-                'span-6-a' => $request->input('span-6-a'),
-                'h3-7' => $request->input('h3-7'),
-                'p-3' => $request->input('p-3'),
-                'span-7' => $request->input('span-7'),
-                'span-8' => $request->input('span-8'),
-                'span-9' => $request->input('span-9'),
-                'span-9-a' => $request->input('span-9-a'),
-                'h3-8' => $request->input('h3-8'),
-                'p-4' => $request->input('p-4'),
-                'span-10' => $request->input('span-10'),
-                'span-11' => $request->input('span-11'),
-                'span-12' => $request->input('span-12'),
-                'span-13' => $request->input('span-13'),
+                'h3-6' => "", //$request->input('h3-6'),
+                'p-2' => "",//$request->input('p-2'),
+                'span-4' => "",//$request->input('span-4'),
+                'span-5' => "",//$request->input('span-5'),
+                'span-6' => "",//$request->input('span-6'),
+                'span-6-a' => "",//$request->input('span-6-a'),
+                'h3-7' => "",//$request->input('h3-7'),
+                'p-3' => "",//$request->input('p-3'),
+                'span-7' => "",//$request->input('span-7'),
+                'span-8' => "",//$request->input('span-8'),
+                'span-9' => "",//$request->input('span-9'),
+                'span-9-a' => "",//$request->input('span-9-a'),
+                'h3-8' => "",//$request->input('h3-8'),
+                'p-4' => "",//$request->input('p-4'),
+                'span-10' => "",//$request->input('span-10'),
+                'span-11' => "",//$request->input('span-11'),
+                'span-12' => "",//$request->input('span-12'),
+                'span-13' => "", //$request->input('span-13'),
                 'h6-span' => $request->input('h6-span'),
                 'h3-9' => $request->input('h3-9'),
                 'h3-a' => $request->input('h3-a'),
@@ -160,6 +172,9 @@ class SustainabilityPageController extends Controller
 				'link-1' => $request->input('link-1'),
                 'link-2' => $request->input('link-2'),
                 'link-3' => $request->input('link-3'),
+				'meta-title' => $request->input('meta-title'),
+                'meta-desctiption' => $request->input('meta-desctiption'),
+                'meta-keywords' => $request->input('meta-keywords'),
             ]);
             if($query){
                 return redirect()->route('sustainability-page.index');

@@ -14,7 +14,7 @@ class LandingPage extends Model
         'quote-form-tab-title-2',
         'quote-form-tab-2-h2',
         'quote-form-tab-2-p',
-        
+
         'carrousel-h5',
         'carrousel-h2',
         'carrousel-h2-a',
@@ -35,6 +35,9 @@ class LandingPage extends Model
         'carrousel-p-2',
         'carrousel-a-1-2',
         'carrousel-bg-img-path-2',
-        
+		'meta-title',
+		'meta-desctiption',
+		'meta-keywords'
+
     ];
 }
