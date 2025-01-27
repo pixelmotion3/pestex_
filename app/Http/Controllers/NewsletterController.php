@@ -25,7 +25,7 @@ class NewsletterController extends Controller
         $query = News_letter::create([
             'email' => $request->input('email')
         ]);
-		return redirect()->route('FrontPage.Home');
+		return redirect()->back();
     }
 
 }
