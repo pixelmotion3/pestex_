@@ -33,7 +33,7 @@
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <!-- Language -->
-                            <li class="nav-item dropdown-language dropdown">
+                            {{-- <li class="nav-item dropdown-language dropdown">
                                 <a class="nav-link btn btn-text-secondary btn-icon rounded-pill dropdown-toggle hide-arrow"
                                     href="javascript:void(0);" data-bs-toggle="dropdown">
                                     <i class="ti ti-language rounded-circle ti-md"></i>
@@ -64,7 +64,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> --}}
                             <!--/ Language -->
 
                             <!-- Style Switcher -->
@@ -97,7 +97,7 @@
                             <!-- / Style Switcher-->
 
                             <!-- Quick links  -->
-                            <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown">
+                            {{-- <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown">
                                 <a class="nav-link btn btn-text-secondary btn-icon rounded-pill btn-icon dropdown-toggle hide-arrow"
                                     href="javascript:void(0);" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                                     aria-expanded="false">
@@ -184,11 +184,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
+                            </li> --}}
                             <!-- Quick links -->
 
                             <!-- Notification -->
-                            <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-2">
+                            {{-- <li class="1nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-2">
                                 <a class="nav-link btn btn-text-secondary btn-icon rounded-pill dropdown-toggle hide-arrow"
                                     href="javascript:void(0);" data-bs-toggle="dropdown"
                                     data-bs-auto-close="outside" aria-expanded="false">
@@ -452,7 +452,7 @@
                                         </div>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> --}}
                             <!--/ Notification -->
 
                             <!-- User -->
@@ -1579,7 +1579,7 @@
 
                     <!-- Footer -->
                     <footer class="content-footer footer bg-footer-theme">
-                        <div class="container-xxl">
+                        {{-- <div class="container-xxl">
                             <div
                                 class="footer-container d-flex align-items-center justify-content-between py-4 flex-md-row flex-column">
                                 <div class="text-body">
@@ -1603,7 +1603,7 @@
                                         class="footer-link d-none d-sm-inline-block">Support</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </footer>
                     <!-- / Footer -->
 

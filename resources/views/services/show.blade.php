@@ -312,7 +312,7 @@ setTimeout(function() {
 											</div>
 											<div class="feature-three__item__normal">
 												<h4 class="feature-three__item__normal__title">{{ $method['title1'] }}</h4>
-												<p class="feature-three__item__normal__text">{{ $method['p'] }}</p>
+												{{-- <p class="feature-three__item__normal__text">{{ $method['p'] }}</p> --}}
 											</div>
 											<div class="feature-three__item__hover">
 												<div class="feature-three__item__icon">

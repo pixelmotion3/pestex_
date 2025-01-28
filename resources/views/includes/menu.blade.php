@@ -107,6 +107,17 @@
 					</a>
 				</li>
 
+				<li class="menu-item">
+					<a href="/landing-page/about-now" class="menu-link">
+					<div data-i18n="Porquê Nós (Lan. Page)">Porquê Nós (Lan. Page)</div>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a href="/landing-page/contact-us" class="menu-link">
+						<div data-i18n="Contact Us (Lan. Page)">Contact Us (Lan. Page)</div>
+					</a>
+				</li>
+
 
 			</ul>
 		</li>
@@ -175,14 +186,19 @@
 					<div data-i18n="Área Cliente">Área Cliente</div>
 					</a>
 				</li>
-
-
-				<div class="dropdown-divider my-1 mx-n2"></div>
 				<li class="menu-item">
-					<a href="/about-page" class="menu-link">
-						<div data-i18n="About">About</div>
+					<a href="/home-page/about-now" class="menu-link">
+					<div data-i18n="Porquê Nós (Home Page)">Porquê Nós</div>
 					</a>
 				</li>
+				<li class="menu-item">
+					<a href="/home-page/contact-us" class="menu-link">
+						<div data-i18n="Contact Us (Home Page)">Contact Us</div>
+					</a>
+				</li>
+
+				<div class="dropdown-divider my-1 mx-n2"></div>
+
 
 
 
@@ -269,30 +285,14 @@
 				</a>
 			</li>
 
-		</li>
-
-		<li class="menu-item open">
 			<li class="menu-item">
-				<a href="/home-page/about-now" class="menu-link">
-				<div data-i18n="Porquê Nós (Home Page)">Porquê Nós (Home Page)</div>
-				</a>
-			</li>
-			<li class="menu-item">
-				<a href="/landing-page/about-now" class="menu-link">
-				<div data-i18n="Porquê Nós (Lan. Page)">Porquê Nós (Lan. Page)</div>
+				<a href="/about-page" class="menu-link">
+					<div data-i18n="About">About</div>
 				</a>
 			</li>
 
 		</li>
 
-		<li class="menu-item open">
-			<a href="/home-page/contact-us" class="menu-link">
-				<div data-i18n="Contact Us (Home Page)">Contact Us (Home Page)</div>
-			</a>
-			<a href="/landing-page/contact-us" class="menu-link">
-				<div data-i18n="Contact Us (Lan. Page)">Contact Us (Lan. Page)</div>
-			</a>
-		</li>
 
 		<li class="menu-item open">
 			<a href="/termsservice" class="menu-link">
