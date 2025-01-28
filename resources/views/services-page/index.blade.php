@@ -904,10 +904,10 @@
                                                                                 ">
                                                                                 Criar metodo
                                                                             </a>
-                                                                            {{-- <button data-bs-toggle="modal"
+                                                                            <button data-bs-toggle="modal"
                                                                                 data-bs-target="#allMethodsModal"
                                                                                 class="btn btn-danger text-white all_methods"
-                                                                                onclick="all_methods({{ $service->id }})">Metodos</button> --}}
+                                                                                onclick="all_methods({{ $service->id }})">Metodos</button>
                                                                         </div>
                                                                     </div>
                                                                 </div><!-- /.service-card-one -->

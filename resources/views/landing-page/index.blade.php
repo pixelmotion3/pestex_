@@ -49,7 +49,7 @@
 				<li class="menu-item">
 					<a href="javascript:void(0);" class="menu-link menu-toggle">
 					<i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
-					<div data-i18n="Lading Page">Lading Page</div>
+					<div data-i18n="Landing Page">Landing Page</div>
 					</a>
 
 					<ul class="menu-sub">
@@ -67,7 +67,7 @@
 
 						<li class="menu-item">
 							<a href="/landing-page/status" class="menu-link">
-							<div data-i18n="Status">Status</div>
+							<div data-i18n="Intro">Intro</div>
 							</a>
 						</li>
 						<li class="menu-item">
@@ -78,17 +78,17 @@
 
 						<li class="menu-item">
 							<a href="/landing-page/our-service" class="menu-link">
-							<div data-i18n="Our service">Our service</div>
+							<div data-i18n="Serviços Tabs">Serviços Tabs</div>
 							</a>
 						</li>
 						<li class="menu-item">
 							<a href="/landing-page/about-now" class="menu-link">
-							<div data-i18n="About Now">About Now</div>
+							<div data-i18n="Porquê Nós">Porquê Nós</div>
 							</a>
 						</li>
 						<li class="menu-item">
 							<a href="/landing-page/choose-us" class="menu-link">
-							<div data-i18n="Choose us">Choose us</div>
+							<div data-i18n="Sustentabilidade">Sustentabilidade</div>
 							</a>
 						</li>
 						<li class="menu-item">
@@ -103,7 +103,7 @@
 						</li>
 						<li class="menu-item">
 							<a href="/landing-page/call-now" class="menu-link">
-							<div data-i18n="Call-now">Call-now</div>
+							<div data-i18n="Contacto">Contacto</div>
 							</a>
 						</li>
 						<li class="menu-item">
@@ -144,7 +144,7 @@
 
 						<li class="menu-item">
 							<a href="/home-page/status" class="menu-link">
-							<div data-i18n="Status">Status</div>
+							<div data-i18n="Intro">Intro</div>
 							</a>
 						</li>
 						<li class="menu-item">
@@ -155,17 +155,17 @@
 
 						<li class="menu-item">
 							<a href="/home-page/our-services" class="menu-link">
-							<div data-i18n="Our service">Our service</div>
+							<div data-i18n="Serviços Tabs">Serviços Tabs</div>
 							</a>
 						</li>
 						<li class="menu-item">
 							<a href="/home-page/about-now" class="menu-link">
-							<div data-i18n="About Now">About Now</div>
+							<div data-i18n="Porquê Nós">Porquê Nós</div>
 							</a>
 						</li>
 						<li class="menu-item">
 							<a href="/home-page/choose-us" class="menu-link">
-							<div data-i18n="Choose us">Choose us</div>
+							<div data-i18n="Sustentabilidade">Sustentabilidade</div>
 							</a>
 						</li>
 						<li class="menu-item">
@@ -180,7 +180,7 @@
 						</li>
 						<li class="menu-item">
 							<a href="/home-page/call-now" class="menu-link">
-							<div data-i18n="Call-now">Call-now</div>
+							<div data-i18n="Contacto">Contacto</div>
 							</a>
 						</li>
 						<li class="menu-item">
@@ -808,14 +808,14 @@
                                 <button class="nav-link active" id="nav-paragraph-tab" data-bs-toggle="tab" data-bs-target="#nav-paragraph" type="button" role="tab" aria-controls="nav-paragraph" aria-selected="false"><small>Nav Paragraph</small></button>
                                 <button class="nav-link" id="quote-form-tab" data-bs-toggle="tab" data-bs-target="#quote-form" type="button" role="tab" aria-controls="quote-form" aria-selected="false"><small>Quote Form</small></button>
                                 <button class="nav-link" id="carrousel-tab" data-bs-toggle="tab" data-bs-target="#carrousel" type="button" role="tab" aria-controls="carrousel" aria-selected="false"><small>Main Carrousel</small></button>
-                                <button class="nav-link" id="three-icon-boxes-tab" data-bs-toggle="tab" data-bs-target="#three-icon-boxes" type="button" role="tab" aria-controls="three-icon-boxes" aria-selected="false"><small>Status</small></button>
+                                <button class="nav-link" id="three-icon-boxes-tab" data-bs-toggle="tab" data-bs-target="#three-icon-boxes" type="button" role="tab" aria-controls="three-icon-boxes" aria-selected="false"><small>Intro</small></button>
                                 <button class="nav-link" id="three-icon-images-boxes-tab" data-bs-toggle="tab" data-bs-target="#three-icon-images-boxes" type="button" role="tab" aria-controls="three-icon-images-boxes" aria-selected="false"><small>Best Service</small></button>
-                                <button class="nav-link" id="image-tabs-text-tab" data-bs-toggle="tab" data-bs-target="#image-tabs-text" type="button" role="tab" aria-controls="image-tabs-text" aria-selected="false"><small>Our service</small></button>
-                                <button class="nav-link" id="background-images+text-tab" data-bs-toggle="tab" data-bs-target="#background-images+text" type="button" role="tab" aria-controls="background-images+text" aria-selected="false"><small>About Now</small></button>
-                                <button class="nav-link" id="three-images+six-icons+three-paragraphs-tab" data-bs-toggle="tab" data-bs-target="#three-images+six-icons+three-paragraphs" type="button" role="tab" aria-controls="three-images+six-icons+three-paragraphs" aria-selected="false"><small>Choose us</small></button>
+                                <button class="nav-link" id="image-tabs-text-tab" data-bs-toggle="tab" data-bs-target="#image-tabs-text" type="button" role="tab" aria-controls="image-tabs-text" aria-selected="false"><small>Serviços Tabs</small></button>
+                                <button class="nav-link" id="background-images+text-tab" data-bs-toggle="tab" data-bs-target="#background-images+text" type="button" role="tab" aria-controls="background-images+text" aria-selected="false"><small>Porquê Nós</small></button>
+                                <button class="nav-link" id="three-images+six-icons+three-paragraphs-tab" data-bs-toggle="tab" data-bs-target="#three-images+six-icons+three-paragraphs" type="button" role="tab" aria-controls="three-images+six-icons+three-paragraphs" aria-selected="false"><small>Sustentabilidade</small></button>
                                 <button class="nav-link" id="three-dark-bg-boxes-tab" data-bs-toggle="tab" data-bs-target="#three-dark-bg-boxes" type="button" role="tab" aria-controls="three-dark-bg-boxes" aria-selected="false"><small>Testemunhos</small></button>
                                 <button class="nav-link" id="four-images+collapse-box-tab" data-bs-toggle="tab" data-bs-target="#four-images+collapse-box" type="button" role="tab" aria-controls="four-images+collapse-box" aria-selected="false"><small>Collapse</small></button>
-                                <button class="nav-link" id="call-now-image-box-tab" data-bs-toggle="tab" data-bs-target="#call-now-image-box" type="button" role="tab" aria-controls="call-now-image-box" aria-selected="false"><small>Call-now</small></button>
+                                <button class="nav-link" id="call-now-image-box-tab" data-bs-toggle="tab" data-bs-target="#call-now-image-box" type="button" role="tab" aria-controls="call-now-image-box" aria-selected="false"><small>Contacto</small></button>
                                 <button class="nav-link" id="watch-video+background-image-tab" data-bs-toggle="tab" data-bs-target="#watch-video+background-image" type="button" role="tab" aria-controls="watch-video+background-image" aria-selected="false"><small>Área Cliente</small></button>
 								<button class="nav-link" id="terms-service-tab" data-bs-toggle="tab" data-bs-target="#terms-service" type="button" role="tab" aria-controls="terms-service" aria-selected="false"><small>Termos de Serviço</small></button>
 								<button class="nav-link" id="policy-privacy-tab" data-bs-toggle="tab" data-bs-target="#policy-privacy" type="button" role="tab" aria-controls="policy-privacy" aria-selected="false"><small>Política de Privacidade</small></button>

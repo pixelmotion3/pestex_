@@ -773,7 +773,7 @@
                 </li>
                 <li class="menu-item">
                   <a href="ui-collapse.html" class="menu-link">
-                    <div data-i18n="Collapse">Collapse</div>
+                    <div data-i18n="FAQ">FAQ</div>
                   </a>
                 </li>
                 <li class="menu-item">
@@ -1690,12 +1690,12 @@
                                 <button class="nav-link" id="carrousel-tab" data-bs-toggle="tab" data-bs-target="#carrousel" type="button" role="tab" aria-controls="carrousel" aria-selected="false"><small>Main Carrousel</small></button>
                                 <button class="nav-link" id="three-icon-boxes-tab" data-bs-toggle="tab" data-bs-target="#three-icon-boxes" type="button" role="tab" aria-controls="three-icon-boxes" aria-selected="false"><small>Status</small></button>
                                 <button class="nav-link" id="three-icon-images-boxes-tab" data-bs-toggle="tab" data-bs-target="#three-icon-images-boxes" type="button" role="tab" aria-controls="three-icon-images-boxes" aria-selected="false"><small>Best Service</small></button>
-                                <button class="nav-link" id="image-tabs-text-tab" data-bs-toggle="tab" data-bs-target="#image-tabs-text" type="button" role="tab" aria-controls="image-tabs-text" aria-selected="false"><small>Our service</small></button>
-                                <button class="nav-link" id="background-images+text-tab" data-bs-toggle="tab" data-bs-target="#background-images+text" type="button" role="tab" aria-controls="background-images+text" aria-selected="false"><small>About Now</small></button>
-                                <button class="nav-link" id="three-images+six-icons+three-paragraphs-tab" data-bs-toggle="tab" data-bs-target="#three-images+six-icons+three-paragraphs" type="button" role="tab" aria-controls="three-images+six-icons+three-paragraphs" aria-selected="false"><small>Choose us</small></button>
+                                <button class="nav-link" id="image-tabs-text-tab" data-bs-toggle="tab" data-bs-target="#image-tabs-text" type="button" role="tab" aria-controls="image-tabs-text" aria-selected="false"><small>Serviços Tabs</small></button>
+                                <button class="nav-link" id="background-images+text-tab" data-bs-toggle="tab" data-bs-target="#background-images+text" type="button" role="tab" aria-controls="background-images+text" aria-selected="false"><small>Porquê Nós</small></button>
+                                <button class="nav-link" id="three-images+six-icons+three-paragraphs-tab" data-bs-toggle="tab" data-bs-target="#three-images+six-icons+three-paragraphs" type="button" role="tab" aria-controls="three-images+six-icons+three-paragraphs" aria-selected="false"><small>Sustentabilidade</small></button>
                                 <button class="nav-link" id="three-dark-bg-boxes-tab" data-bs-toggle="tab" data-bs-target="#three-dark-bg-boxes" type="button" role="tab" aria-controls="three-dark-bg-boxes" aria-selected="false"><small>Testemunhos</small></button>
-                                <button class="nav-link" id="four-images+collapse-box-tab" data-bs-toggle="tab" data-bs-target="#four-images+collapse-box" type="button" role="tab" aria-controls="four-images+collapse-box" aria-selected="false"><small>Collapse</small></button>
-                                <button class="nav-link" id="call-now-image-box-tab" data-bs-toggle="tab" data-bs-target="#call-now-image-box" type="button" role="tab" aria-controls="call-now-image-box" aria-selected="false"><small>Call-now</small></button>
+                                <button class="nav-link" id="four-images+collapse-box-tab" data-bs-toggle="tab" data-bs-target="#four-images+collapse-box" type="button" role="tab" aria-controls="four-images+collapse-box" aria-selected="false"><small>FAQ</small></button>
+                                <button class="nav-link" id="call-now-image-box-tab" data-bs-toggle="tab" data-bs-target="#call-now-image-box" type="button" role="tab" aria-controls="call-now-image-box" aria-selected="false"><small>Contacto</small></button>
                                 <button class="nav-link" id="watch-video+background-image-tab" data-bs-toggle="tab" data-bs-target="#watch-video+background-image" type="button" role="tab" aria-controls="watch-video+background-image" aria-selected="false"><small>Área Cliente</small></button>
                                 <button class="nav-link" id="background-image+form-tab" data-bs-toggle="tab" data-bs-target="#background-image+form" type="button" role="tab" aria-controls="background-image+form" aria-selected="false"><small>Contact Us</small></button>
                                 <!--

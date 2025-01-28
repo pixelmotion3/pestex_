@@ -24,7 +24,7 @@ setTimeout(function() {
 	if (errorAlert) {
 	errorAlert.style.display = 'none';
 	}
-}, 5000); // 5000ms = 5 segundos
+}, 8000); // 8000ms = 8 segundos
 </script>
 <head>
     <meta charset="utf-8">
@@ -1607,7 +1607,7 @@ setTimeout(function() {
 							<img class="funfact-one__image__shape" src="assets/images/shapes/counter-border-1.png"
 								alt="tolak">
 							<div class="funfact-one__item count-box tolak-tilt"
-								data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 9, "speed": 700, "scale": 1 }' style="background-color: #ff6600;">
+								data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 9, "speed": 700, "scale": 1 }' style="background-color: #002255;">
 								<h3 class="funfact-one__item__count">+<span class="count-text" data-stop="{{ $collapse[0]['collapse-h3-1'] }}"
 										data-speed="1500"></span></h3>
 								<!-- /.funfact-one__number -->
@@ -1623,7 +1623,7 @@ setTimeout(function() {
 								<!-- /.funfact-one__title -->
 							</div><!-- /.funfact-one__item -->
 							<div class="funfact-one__item funfact-one__item--three count-box tolak-tilt"
-								data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 9, "speed": 700, "scale": 1 }' style="background-color: #ff6600;">
+								data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 9, "speed": 700, "scale": 1 }' style="background-color: #002255;">
 								<h3 class="funfact-one__item__count"><span class="count-text" data-stop="{{ $collapse[0]['collapse-h3-3'] }}"
 										data-speed="1500"></span></h3>
 								<!-- /.funfact-one__number -->
@@ -1639,7 +1639,7 @@ setTimeout(function() {
 									<h4 id="accordion-icon-1">
 										<i class="fa fa-check-circle"></i>
 										{{ $collapse[0]['collapse-h4-1'] }}
-										<span class="accrodion-title__icon" style="color: #ff6600"></span><!-- /.accrodion-title__icon -->
+										<span class="accrodion-title__icon" style="color: #002255"></span><!-- /.accrodion-title__icon -->
 									</h4>
 								</div><!-- /.accordian-title -->
 								<div class="accrodion-content">
@@ -1816,10 +1816,10 @@ setTimeout(function() {
 								</p>
 								<div class="cta-four__content__bar" style="background-color: #ff6600;"></div>
 								<div class="cta-four__content__info">
-									<div class="cta-four__content__info__icon" style="color:#ff6600;"><i class="icofont-speech-comments"></i>
+									<div class="cta-four__content__info__icon" style="color:#002255;"><i class="icofont-speech-comments"></i>
 									</div>
 									<p class="cta-four__content__info__text">
-										{{ $video_contact[0]['watch-video-p-3'] }}<br />{{ $video_contact[0]['watch-video-p-3-1'] }}
+										{{ $video_contact[0]['watch-video-p-3'] }}<br /><a href="{{ $video_contact[0]['watch-video-p-3-1'] }}" target="_blank">{{ $video_contact[0]['watch-video-p-3-1'] }}</a>
 									</p>
 								</div>
 							</div>

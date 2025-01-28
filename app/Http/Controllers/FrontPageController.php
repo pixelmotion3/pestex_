@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMail;
 use App\Models\FrontPage;
 use App\Models\LandingPage;
 use App\Models\landing_2page;
@@ -24,7 +25,7 @@ use App\Models\quote_forms;
 use App\Models\contact_forms;
 use App\Models\News_letter;
 use App\Models\PageView;
-
+use Illuminate\Support\Facades\Mail;
 class FrontPageController extends Controller
 {
     /**
@@ -337,6 +338,19 @@ class FrontPageController extends Controller
             'phone' => $request->input('phone'),
             'confirmed' => true
         ]);
+		// <b>Nome:</b> {{ $data['name'] }}<br/>
+		// <b>Email:</b> {{ $data['email'] }}<br/>
+		// <b>Telefone:</b> {{ $data['phone'] }}<br/>
+		// <b>Localidade:</b> {{ $data['local'] }}<br/>
+		// <b>Tipo:</b> {{ $data['type'] }}
+		$data = [
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'phone' => $request->input('phone'),
+            'local' => $request->input('locality'),
+            'type' => $request->input('customer_type')
+        ];
+        Mail::to($request->input('email'))->send(new ContactMail($data));
 		if ($query) {
 			return redirect()->back()->with('success', 'Obrigado pelo seu contacto. Iremos entrar em contacto brevemente!!');
 		}

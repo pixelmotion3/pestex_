@@ -42,7 +42,7 @@
 		<li class="menu-item">
 			<a href="javascript:void(0);" class="menu-link menu-toggle">
 			<i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
-			<div data-i18n="Lading Page">Lading Page</div>
+			<div data-i18n="Landing Page">Landing Page</div>
 			</a>
 
 			<ul class="menu-sub">
@@ -66,7 +66,7 @@
 
 				<li class="menu-item">
 					<a href="/landing-page/status" class="menu-link">
-					<div data-i18n="Status">Status</div>
+					<div data-i18n="Intro">Intro</div>
 					</a>
 				</li>
 				<li class="menu-item">
@@ -77,17 +77,13 @@
 
 				<li class="menu-item">
 					<a href="/landing-page/our-service" class="menu-link">
-					<div data-i18n="Our service">Our service</div>
+					<div data-i18n="Serviços Tabs">Serviços Tabs</div>
 					</a>
 				</li>
-				<li class="menu-item">
-					<a href="/landing-page/about-now" class="menu-link">
-					<div data-i18n="About Now">About Now</div>
-					</a>
-				</li>
+
 				<li class="menu-item">
 					<a href="/landing-page/choose-us" class="menu-link">
-					<div data-i18n="Choose us">Choose us</div>
+					<div data-i18n="Sustentabilidade">Sustentabilidade</div>
 					</a>
 				</li>
 				<li class="menu-item">
@@ -97,12 +93,12 @@
 				</li>
 				<li class="menu-item">
 					<a href="/landing-page/collapse" class="menu-link">
-					<div data-i18n="Collapse">Collapse</div>
+					<div data-i18n="FAQ">FAQ</div>
 					</a>
 				</li>
 				<li class="menu-item">
 					<a href="/landing-page/call-now" class="menu-link">
-					<div data-i18n="Call-now">Call-now</div>
+					<div data-i18n="Contacto">Contacto</div>
 					</a>
 				</li>
 				<li class="menu-item">
@@ -110,11 +106,7 @@
 					<div data-i18n="Área Cliente">Área Cliente</div>
 					</a>
 				</li>
-				<li class="menu-item">
-					<a href="/landing-page/contact-us" class="menu-link">
-					<div data-i18n="Contact Us">Contact Us</div>
-					</a>
-				</li>
+
 
 			</ul>
 		</li>
@@ -143,7 +135,7 @@
 
 				<li class="menu-item">
 					<a href="/home-page/status" class="menu-link">
-					<div data-i18n="Status">Status</div>
+					<div data-i18n="Intro">Intro</div>
 					</a>
 				</li>
 				<li class="menu-item">
@@ -154,17 +146,13 @@
 
 				<li class="menu-item">
 					<a href="/home-page/our-services" class="menu-link">
-					<div data-i18n="Our service">Our service</div>
+					<div data-i18n="Serviços Tabs">Serviços Tabs</div>
 					</a>
 				</li>
-				<li class="menu-item">
-					<a href="/home-page/about-now" class="menu-link">
-					<div data-i18n="About Now">About Now</div>
-					</a>
-				</li>
+
 				<li class="menu-item">
 					<a href="/home-page/choose-us" class="menu-link">
-					<div data-i18n="Choose us">Choose us</div>
+					<div data-i18n="Sustentabilidade">Sustentabilidade</div>
 					</a>
 				</li>
 				<li class="menu-item">
@@ -174,12 +162,12 @@
 				</li>
 				<li class="menu-item">
 					<a href="/home-page/collapse" class="menu-link">
-					<div data-i18n="Collapse">Collapse</div>
+					<div data-i18n="FAQ">FAQ</div>
 					</a>
 				</li>
 				<li class="menu-item">
 					<a href="/home-page/call-now" class="menu-link">
-					<div data-i18n="Call-now">Call-now</div>
+					<div data-i18n="Contacto">Contacto</div>
 					</a>
 				</li>
 				<li class="menu-item">
@@ -187,11 +175,7 @@
 					<div data-i18n="Área Cliente">Área Cliente</div>
 					</a>
 				</li>
-				<li class="menu-item">
-					<a href="/home-page/contact-us" class="menu-link">
-					<div data-i18n="Contact Us">Contact Us</div>
-					</a>
-				</li>
+
 
 				<div class="dropdown-divider my-1 mx-n2"></div>
 				<li class="menu-item">
@@ -199,22 +183,9 @@
 						<div data-i18n="About">About</div>
 					</a>
 				</li>
-				<li class="menu-item">
-					<a href="/services-page" class="menu-link">
-						<div data-i18n="Serviços">Serviços</div>
-					</a>
-				</li>
-				<li class="menu-item">
-					<a href="/sustainability-page" class="menu-link">
-						<div data-i18n="Sustentabilidade">Sustentabilidade</div>
-					</a>
-				</li>
 
-				<li class="menu-item">
-					<a href="/hardware-page" class="menu-link">
-						<div data-i18n="Equipamentos">Equipamentos</div>
-					</a>
-				</li>
+
+
 
 				{{-- <li class="menu-item">
 					<a href="/forms-page" class="menu-link">
@@ -279,6 +250,49 @@
 			<div data-i18n="Quote Form">Quote Form</div>
 			</a>
 		</li> --}}
+
+		<li class="menu-item open">
+
+			<li class="menu-item">
+				<a href="/services-page" class="menu-link">
+					<div data-i18n="Serviços">Serviços</div>
+				</a>
+			</li>
+			<li class="menu-item">
+				<a href="/sustainability-page" class="menu-link">
+					<div data-i18n="Sustentabilidade">Sustentabilidade</div>
+				</a>
+			</li>
+			<li class="menu-item">
+				<a href="/hardware-page" class="menu-link">
+					<div data-i18n="Equipamentos">Equipamentos</div>
+				</a>
+			</li>
+
+		</li>
+
+		<li class="menu-item open">
+			<li class="menu-item">
+				<a href="/home-page/about-now" class="menu-link">
+				<div data-i18n="Porquê Nós (Home Page)">Porquê Nós (Home Page)</div>
+				</a>
+			</li>
+			<li class="menu-item">
+				<a href="/landing-page/about-now" class="menu-link">
+				<div data-i18n="Porquê Nós (Lan. Page)">Porquê Nós (Lan. Page)</div>
+				</a>
+			</li>
+
+		</li>
+
+		<li class="menu-item open">
+			<a href="/home-page/contact-us" class="menu-link">
+				<div data-i18n="Contact Us (Home Page)">Contact Us (Home Page)</div>
+			</a>
+			<a href="/landing-page/contact-us" class="menu-link">
+				<div data-i18n="Contact Us (Lan. Page)">Contact Us (Lan. Page)</div>
+			</a>
+		</li>
 
 		<li class="menu-item open">
 			<a href="/termsservice" class="menu-link">

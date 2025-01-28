@@ -24,7 +24,7 @@ setTimeout(function() {
 	if (errorAlert) {
 	errorAlert.style.display = 'none';
 	}
-}, 5000); // 5000ms = 5 segundos
+}, 8000); // 8000ms = 8 segundos
 </script>
 <head>
     <meta charset="utf-8">
@@ -319,7 +319,7 @@ setTimeout(function() {
 													<span class="icon-cooperation"></span>
 												</div>
 												<h4 class="feature-three__item__title">{{ $method['title2'] }}</h4>
-												<p class="feature-three__item__text">{{ $method['p1'] }}</p>
+												{{-- <p class="feature-three__item__text">{{ $method['p1'] }}</p> --}}
 											</div>
 										</div><!-- feature-item -->
 									</div>

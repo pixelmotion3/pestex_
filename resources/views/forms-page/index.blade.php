@@ -557,7 +557,7 @@
                             <!-- Página Principal -->
                             <div class="tab-pane fade show active" id="main-screen" role="tabpanel" aria-labelledby="main-screen-tab">
 								<div>
-									<h2>News Latter</h2>
+									<h2>Newsletter</h2>
 									<div style="max-height: 200px;overflow: auto;">
 										<ul>
 											@isset($news_letter)

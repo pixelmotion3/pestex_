@@ -869,7 +869,7 @@
                 </li>
                 <li class="menu-item">
                   <a href="ui-collapse.html" class="menu-link">
-                    <div data-i18n="Collapse">Collapse</div>
+                    <div data-i18n="FAQ">FAQ</div>
                   </a>
                 </li>
                 <li class="menu-item">

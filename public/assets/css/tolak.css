@@ -3440,7 +3440,7 @@ h6 {
 }
 .contact-one__info {
   position: relative;
-  background-color: #ff6600;
+  background-color: #002255;
   border-radius: 10px;
   padding: 58px 30px 40px 200px;
 }
@@ -3461,7 +3461,7 @@ h6 {
   height: 0px;
   border-style: solid;
   border-width: 36px 0 36px 56px;
-  border-color: transparent transparent transparent #ff6600;
+  border-color: transparent transparent transparent #002255;
 }
 @media (max-width: 991px) {
   .contact-one__info::after {
@@ -3664,7 +3664,7 @@ h6 {
 }
 .contact-two__info {
   position: relative;
-  background-color: #ff6600;
+  background-color: #002255;
   max-width: 501px;
   border-radius: 11px;
   padding: 45px 52px 69px;
@@ -3777,7 +3777,7 @@ h6 {
   align-items: center;
   justify-content: center;
   background-color: var(--tolak-white, #fff);
-  color: #ff6600;
+  color: #002255;
   border-radius: 50%;
   font-size: 34px;
   transition: all 500ms ease;
@@ -3847,7 +3847,7 @@ h6 {
   justify-content: center;
   border-radius: 50%;
   font-size: 16px;
-  color: #ff6600;
+  color: #002255;
 }
 .contact-two__info__social__wrap a:hover {
   background-color: var(--tolak-black, #051d1f);
@@ -5673,7 +5673,7 @@ body.megamenu-popup-active .mobile-nav__content {
   flex-shrink: 0;
   width: 104px;
   height: 100px;
-  background-color: #ff6600;
+  background-color: #002255;
   font-size: 72px;
   color: white;
   display: flex;
@@ -5710,7 +5710,7 @@ body.megamenu-popup-active .mobile-nav__content {
   flex-shrink: 0;
   width: 69px;
   height: 69px;
-  background-color: #ff6600;
+  background-color: #002255;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -6004,7 +6004,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .funfact-one__accordion .accrodion-title h4 i {
   display: inline-block;
   font-size: 20px;
-  color: #ff6600 !important;
+  color: #002255 !important;
   margin-right: 14px;
   position: relative;
   top: 1px;
@@ -6026,17 +6026,17 @@ body.megamenu-popup-active .mobile-nav__content {
   top: 50%;
   left: 50%;
   font-size: 20px;
-  color: #ff6600;
+  color: #002255;
   content: "\ea86";
   font-family: IcoFont !important;
   transform: translate(-50%, -50%);
   transition: all 500ms ease;
 }
 .funfact-one__accordion .active {
-  border-color: #ff6600 !important;
+  border-color: #002255 !important;
 }
 .funfact-one__accordion .active .accrodion-title {
-  background-color: #ff6600;
+  background-color: #002255;
 }
 .funfact-one__accordion .active .accrodion-title h4 {
   color: var(--tolak-white, #fff);
@@ -6181,8 +6181,11 @@ body.megamenu-popup-active .mobile-nav__content {
   border-color: var(--tolak-gray, #ecf2fc);
 }
 .testimonials-one--page .testimonials-card__bg-hover svg {
-  fill: var(--tolak-black, #051d1f);
+  /* fill: var(--tolak-black, #051d1f);
   stroke: var(--tolak-black, #051d1f);
+  stroke-width: 0; */
+  fill: var(--tolak-blue1, #051d1f);
+  stroke: var(--tolak-blue1, #051d1f);
   stroke-width: 0;
 }
 
@@ -6938,7 +6941,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .cta-two__info__icon {
   width: 83px;
   height: 83px;
-  background-color: #ff6600;
+  background-color: #002255;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -7375,7 +7378,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 .cta-four__content__info__icon {
   font-size: 61px;
-  color: #ff6600;
+  color: #002255;
   line-height: 61px;
   flex-shrink: 0;
 }
@@ -14099,7 +14102,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .about-one__content__list li span {
   display: inline-block;
   margin-right: 12px;
-  color: #ff6600;
+  color: #002255;
   transition: all 0.4s ease;
 }
 .about-one__content__list li:hover span {
@@ -15366,12 +15369,12 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 .service-one__item:hover .service-one__item__icon {
   color: white;
-  background-color: #002255;
+  background-color: #ff6600;
 }
 .service-one__item:hover .service-one__item__icon::after {
   height: 100%;
   border-color: #002255;
-  background-color: #002255;
+  background-color: #ff6600;
 }
 .service-one__item:hover .service-one__item__bottom {
   border-color: #002255;
@@ -20738,7 +20741,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
   align-items: center;
   justify-content: center;
   margin: 0 auto -25px;
-  background-color: var(--tolak-base, #fff);
+  background-color: var(--tolak-blue1, #fff);
   font-size: 44px;
   color: var(--tolak-base);
   transition: all 500ms ease;
@@ -23184,7 +23187,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
 .why-choose-five__list li i {
   font-size: 17px;
   line-height: 17px;
-  color: #ff6600;
+  color: #002255;
   display: inline-block;
   transition: all 0.6s ease;
 }
@@ -25313,7 +25316,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
   align-items: center;
   justify-content: center;
   font-size: 44px;
-  color: #ff6600;
+  color: #002255;
   margin-bottom: 18px;
   transition: all 400ms ease;
 }
@@ -25340,7 +25343,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: #ff6600;
+  background-color: #002255;
   mask: url('data:image/svg+xml;utf8,<svg viewBox="0 0 74 69" xmlns="http://www.w3.org/2000/svg"><rect x="75.9531" width="55" height="110" transform="rotate(43.6673 75.9531 0)"/></svg>');
   mask-repeat: no-repeat;
   mask-position: center center;
@@ -26021,7 +26024,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
   overflow: hidden;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
-  background-color: #ff6600;
+  background-color: #002255;
 }
 
 .service-one__item__icon:hover {
@@ -26039,7 +26042,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
   left: 50%;
   width: 0;
   height: 0;
-  background-color: #002255;
+  background-color: #ff6600;
   color: white;
   transform: translate(-50%, -50%);
   transition: width 0.3s ease, height 0.3s ease;
@@ -26074,7 +26077,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
 }
 
 .active-collapse{
-  background-color: #ff6600 !important;
+  background-color: #002255 !important;
 }
 .rounded-box{
   border-radius: 30px;
