@@ -894,6 +894,7 @@
 			</div>
 			<!-- /.mobile-nav__content -->
 		</div>
+		@include('includes.cookies');
     <script>
         $(document).ready(function() {
             $(".technological-solutions").click(function() {

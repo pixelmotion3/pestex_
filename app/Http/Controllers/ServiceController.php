@@ -27,7 +27,12 @@ class ServiceController extends Controller
         $main_screen = ServicesMainScreen::where('id', 1)->get()->toArray();
         $services = ServiceDetails::all();
 		$video = About_video::where('id',1)->get()->toArray();
-
+		$showCookieBanner = 0;
+		if(isset($_COOKIE['cookie_consent_sosp'])){
+			$showCookieBanner = $_COOKIE['cookie_consent_sosp'] == true ? 1 : 0;
+		}else{
+		 	$showCookieBanner = 0;
+		}
 		$routeName = 'servicos'; // Nome da rota ou página que será monitorada
         $today = now()->toDateString(); // Data atual (YYYY-MM-DD)
 		// Incrementa ou cria um registro para a contagem de visitas
@@ -39,7 +44,8 @@ class ServiceController extends Controller
             'main_screen' => $main_screen,
             'best_service' => $best_service,
             'services' => $services,
-			'video' => $video
+			'video' => $video,
+			'showCookieBanner' => !$showCookieBanner
         ]);
     }
 

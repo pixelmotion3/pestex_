@@ -533,7 +533,7 @@ setTimeout(function() {
 										</div><!-- slider-text -->
 										<div class="main-slider-one__bottom">
 											<div class="main-slider-one__btn">
-												<a href="/servicos"
+												<a href="tel:00351219747353"
 													class="btn1 theme-btn-three1 thm-btn1"><b>{{ $main_screen[0]['carrousel-a-1'] }}</b><span></span></a><!-- slider-btn -->
 											</div>
 											<!--
@@ -584,7 +584,7 @@ setTimeout(function() {
 										</div><!-- slider-text -->
 										<div class="main-slider-one__bottom">
 											<div class="main-slider-one__btn">
-												<a href="/servicos"
+												<a href="tel:00351219747353"
 													class="btn1 theme-btn-three1 thm-btn1"><b>{{ $main_screen[0]['carrousel-a-1-1'] }}</b><span></span></a><!-- slider-btn -->
 											</div>
 											<!--
@@ -638,7 +638,7 @@ setTimeout(function() {
 										</div><!-- slider-text -->
 										<div class="main-slider-one__bottom">
 											<div class="main-slider-one__btn">
-												<a href="/servicos"
+												<a href="tel:00351219747353"
 													class="btn1 theme-btn-three1 thm-btn1"><b>{{ $main_screen[0]['carrousel-a-1-2'] }}</b><span></span></a><!-- slider-btn -->
 											</div>
 											<!--

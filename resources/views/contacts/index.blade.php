@@ -451,6 +451,7 @@ setTimeout(function() {
                 </div><!-- /.container -->
             </div><!-- /.main-footer__bottom -->
         </footer><!-- /.main-footer -->
+		@include('includes.cookies');
             <!--
         <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
             <span class="scroll-to-top__text">back top</span>

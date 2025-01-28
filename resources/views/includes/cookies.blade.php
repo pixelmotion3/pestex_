@@ -3,7 +3,7 @@
 	<div class="fixed bottom-0 left-0 w-full p-4 shadow-md z-50" style="background-color: #002255">
 		<div class="container mx-auto flex justify-between items-center">
 			<p class="text-sm text-white">
-				Olá, o nosso website utiliza cookies essenciais para garantia o seu correcto funcionamento e para melhorar a sua experiência. <a href="/politica-privacidade" class="underline" style="color: #ff6600;">Ler mais</a> sobre a nossa política de cookies.
+				Olá, o nosso website utiliza cookies essenciais para garantia o seu correcto funcionamento e para melhorar a sua experiência. <a href="/politica-privacidade" class="underline" target="_blank" style="color: #ff6600;">Ler mais</a> sobre a nossa política de cookies.
 				Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa.
 			</p>
 			<button id="acceptCookies" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">

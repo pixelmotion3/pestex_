@@ -618,6 +618,7 @@ setTimeout(function() {
         </div>
         <!-- /.mobile-nav__content -->
     </div>
+	@include('includes.cookies');
 	<!--
         <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
             <span class="scroll-to-top__text">back top</span>

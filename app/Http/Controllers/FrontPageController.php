@@ -52,6 +52,15 @@ class FrontPageController extends Controller
 		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
 		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
 
+
+		$showCookieBanner = 0;
+		if(isset($_COOKIE['cookie_consent_sosp'])){
+			$showCookieBanner = $_COOKIE['cookie_consent_sosp'] == true ? 1 : 0;
+		}else{
+		 	$showCookieBanner = 0;
+		}
+
+
 		$routeName = 'landing-page'; // Nome da rota ou página que será monitorada
         $today = now()->toDateString(); // Data atual (YYYY-MM-DD)
 		// Incrementa ou cria um registro para a contagem de visitas
@@ -77,7 +86,8 @@ class FrontPageController extends Controller
 			'contactos_news' => $contactos_news,
 			'contact_forms_news' => $contact_forms_news,
 			'news_letters_news' => $news_letters_news,
-			'quote_forms_news' => $quote_forms_news
+			'quote_forms_news' => $quote_forms_news,
+			'showCookieBanner' => !$showCookieBanner
         ]);
     }
 
@@ -358,7 +368,7 @@ class FrontPageController extends Controller
             'local' => $request->input('locality'),
             'type' => $request->input('customer_type')
         ];
-        Mail::to($request->input('email'))->send(new ContactMail($data));
+        Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
 		if ($query) {
 			return redirect()->back()->with('success', 'Obrigado pelo seu contacto. Iremos entrar em contacto brevemente!!');
 		}

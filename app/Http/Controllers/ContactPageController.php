@@ -31,7 +31,12 @@ class ContactPageController extends Controller
         $contact_info = ContactInfo::where('id',1)->get()->toArray();
 		$main = SustainabilityPage::where('id', 1)->get()->toArray();
 		$testimonial_abouts = TestimonialAbout::all();
-
+		$showCookieBanner = 0;
+		if(isset($_COOKIE['cookie_consent_sosp'])){
+			$showCookieBanner = $_COOKIE['cookie_consent_sosp'] == true ? 1 : 0;
+		}else{
+		 	$showCookieBanner = 0;
+		}
 		$routeName = 'contactos'; // Nome da rota ou página que será monitorada
 		$today = now()->toDateString(); // Data atual (YYYY-MM-DD)
 		// Incrementa ou cria um registro para a contagem de visitas
@@ -56,7 +61,8 @@ class ContactPageController extends Controller
 			'contactos_news' => $contactos_news,
 			'contact_forms_news' => $contact_forms_news,
 			'news_letters_news' => $news_letters_news,
-			'quote_forms_news' => $quote_forms_news
+			'quote_forms_news' => $quote_forms_news,
+			'showCookieBanner' => !$showCookieBanner
         ]);
     }
 
