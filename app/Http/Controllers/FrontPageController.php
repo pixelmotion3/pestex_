@@ -137,7 +137,7 @@ class FrontPageController extends Controller
 			'contact_forms_news' => $contact_forms_news,
 			'news_letters_news' => $news_letters_news,
 			'quote_forms_news' => $quote_forms_news,
-			'showCookieBanner' => $showCookieBanner
+			'showCookieBanner' => !$showCookieBanner
         ]);
     }
 
