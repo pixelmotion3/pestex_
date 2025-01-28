@@ -1,17 +1,16 @@
 
 @if($showCookieBanner ?? false)
-	@if($showCookieBanner == 0)
-		<div class="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4 shadow-md z-50">
-			<div class="container mx-auto flex justify-between items-center">
-				<p class="text-sm">
-					Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="/politica-de-cookies" class="underline">Política de Cookies</a>.
-				</p>
-				<button id="acceptCookies" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-					Aceitar
-				</button>
-			</div>
+	<div class="fixed bottom-0 left-0 w-full p-4 shadow-md z-50" style="background-color: #002255">
+		<div class="container mx-auto flex justify-between items-center">
+			<p class="text-sm">
+				Olá, o nosso website utiliza cookies essenciais para garantia o seu correcto funcionamento e para melhorar a sua experiência. <a href="/politica-privacidade" class="underline">Ler mais</a> sobre a nossa política de cookies.
+				Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa.
+			</p>
+			<button id="acceptCookies" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+				Aceitar
+			</button>
 		</div>
-	@endif
+	</div>
 @endif
 
 <script>

@@ -501,7 +501,7 @@
                     </div><!-- item -->
                 </div>
                 <!-- formulario -->
-                <div class="main-slider-one__project fadeInUp text-center shadow-lg bg-light" data-wow-delay="200ms" style="min-width: 400px;z-index:100;border-radius:30px;background-color: black;">
+                <div class="main-slider-one__project fadeInUp text-center shadow-lg bg-light" data-wow-delay="200ms" style="min-width: 400px;z-index:1;border-radius:30px;background-color: black;">
                     <ul class="nav nav-tabs " id="myTab" role="tablist">
                         <li class="nav-item w-50 rounded-top-lg" role="presentation">
                             <button class="nav-link active w-100 text-muted p-4" id="quote-tab" data-bs-toggle="tab" style="border-top-left-radius:30px;border-top-right-radius:30px; border:none; background-color: transparent;"
