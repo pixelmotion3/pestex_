@@ -99,7 +99,13 @@ class FrontPageController extends Controller
         $landing_11page = landing_11page::where('id',2)->get()->toArray();
 		$services = ServiceDetails::all();
 		$reviews = Review::all();
-		$showCookieBanner = !$request->hasCookie('cookie_consent_sosp');
+		$showCookieBanner = 0;
+		if(isset($_COOKIE['cookie_consent_sosp'])){
+			$showCookieBanner = $_COOKIE['cookie_consent_sosp'] == true ? 1 : 0;
+		}else{
+		 	$showCookieBanner = 0;
+		}
+
 
 		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
 		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
