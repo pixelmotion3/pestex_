@@ -109,12 +109,12 @@
 
 				<li class="menu-item">
 					<a href="/landing-page/about-now" class="menu-link">
-					<div data-i18n="Porquê Nós (Lan. Page)">Porquê Nós (Lan. Page)</div>
+					<div data-i18n="Porquê Nós">Porquê Nós</div>
 					</a>
 				</li>
 				<li class="menu-item">
 					<a href="/landing-page/contact-us" class="menu-link">
-						<div data-i18n="Contact Us (Lan. Page)">Contact Us (Lan. Page)</div>
+						<div data-i18n="Contact Us">Contact Us</div>
 					</a>
 				</li>
 
@@ -188,12 +188,12 @@
 				</li>
 				<li class="menu-item">
 					<a href="/home-page/about-now" class="menu-link">
-					<div data-i18n="Porquê Nós (Home Page)">Porquê Nós</div>
+					<div data-i18n="Porquê Nós">Porquê Nós</div>
 					</a>
 				</li>
 				<li class="menu-item">
 					<a href="/home-page/contact-us" class="menu-link">
-						<div data-i18n="Contact Us (Home Page)">Contact Us</div>
+						<div data-i18n="Contact Us">Contact Us</div>
 					</a>
 				</li>
 
