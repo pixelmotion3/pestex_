@@ -2001,7 +2001,7 @@ setTimeout(function() {
         <span class="scroll-to-top__text">back top</span>
         <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
     </a>
-
+	@include('includes.cookies')
     <script>
         $(document).ready(function() {
 

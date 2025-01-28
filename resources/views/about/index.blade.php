@@ -882,6 +882,7 @@ setTimeout(function() {
             <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
         </a>
         -->
+		@include('includes.cookies')
         <script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}"></script>
         <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
         <script src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}"></script>

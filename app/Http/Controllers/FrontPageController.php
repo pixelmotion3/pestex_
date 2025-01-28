@@ -84,7 +84,7 @@ class FrontPageController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function Home()
+    public function Home(Request $request)
     {
         $landing_page = LandingPage::where('id',2)->get()->toArray();
         $landing_2page = landing_2page::where('id',2)->get()->toArray();
@@ -99,6 +99,7 @@ class FrontPageController extends Controller
         $landing_11page = landing_11page::where('id',2)->get()->toArray();
 		$services = ServiceDetails::all();
 		$reviews = Review::all();
+		$showCookieBanner = !$request->hasCookie('cookie_consent_sosp');
 
 		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
 		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
@@ -129,7 +130,8 @@ class FrontPageController extends Controller
 			'contactos_news' => $contactos_news,
 			'contact_forms_news' => $contact_forms_news,
 			'news_letters_news' => $news_letters_news,
-			'quote_forms_news' => $quote_forms_news
+			'quote_forms_news' => $quote_forms_news,
+			'showCookieBanner' => $showCookieBanner
         ]);
     }
 
