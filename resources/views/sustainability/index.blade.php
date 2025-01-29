@@ -118,7 +118,12 @@
     </style>
     <!-- jequery plugins -->
 
-    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
+
+	<!-- Google tag (gtag.js) --> <script async src=https://www.googletagmanager.com/gtag/js?id=G-973E1T9CZV></script>
+
+	<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-973E1T9CZV'); </script>
+
+	<script src="{{ asset('assets/js/popper.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 

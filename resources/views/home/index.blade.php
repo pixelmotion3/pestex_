@@ -75,6 +75,11 @@ setTimeout(function() {
     <!-- template styles -->
     <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
 
+
+	<!-- Google tag (gtag.js) --> <script async src=https://www.googletagmanager.com/gtag/js?id=G-973E1T9CZV></script>
+
+	<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-973E1T9CZV'); </script>
+
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
