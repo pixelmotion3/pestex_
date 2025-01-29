@@ -1310,7 +1310,7 @@
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                               </div>
                                               <div class="modal-body">
-                                                <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.store') }}" method="post" enctype="multipart/form-data">
+                                                <form class="row g-3 needs-validation" novalidate action="{{ route('home-page.store') }}" method="post" enctype="multipart/form-data">
                                                   @csrf
                                                   @method('POST')
                                                   <div class="col-12 mt-5">
@@ -1377,7 +1377,7 @@
                                                         value="delete" />
                                                     @csrf
                                                 </form>
-                                                <form method="post" action="{{ route('landing-page.update', $review['id']) }}">
+                                                <form method="post" action="{{ route('home-page.update', $review['id']) }}">
                                                   @csrf
                                                   @method('put')
                                                   <div class="modal fade" id="exampleModal{{ $review['id'] }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

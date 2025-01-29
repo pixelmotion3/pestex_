@@ -577,7 +577,7 @@
 							  <div class="tab-content mt-5" id="nav-tabContent">
 								  <!-- first paragraph -->
 								  <div class="tab-pane fade" id="nav-paragraph" role="tabpanel" aria-labelledby="nav-paragraph-tab">
-									  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post">
+									  <form class="row g-3 needs-validation" novalidate action="{{ route('home-page.update', 1) }}" method="post">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5">
@@ -591,7 +591,7 @@
 								  </div>
 								   <!-- Quote form -->
 								  <div class="tab-pane fade" id="quote-form" role="tabpanel" aria-labelledby="quote-form-tab">
-									  <form class="row g-3" action="{{ route('landing-page.update', 1) }}" method="post">
+									  <form class="row g-3" action="{{ route('home-page.update', 1) }}" method="post">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5">
@@ -619,7 +619,7 @@
 								  <!-- carrousel-->
 								  <div class="tab-pane fade" id="carrousel" role="tabpanel" aria-labelledby="carrousel-tab">
 
-									  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
+									  <form class="row g-3 needs-validation" novalidate action="{{ route('home-page.update', 1) }}" method="post" enctype="multipart/form-data">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5 form-group">
@@ -730,7 +730,7 @@
 								  </div>
 								  <!-- Three Icon Boxes-->
 								  <div class="tab-pane fade" id="three-icon-boxes" role="tabpanel" aria-labelledby="three-icon-boxes-tab">
-									  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post">
+									  <form class="row g-3 needs-validation" novalidate action="{{ route('home-page.update', 1) }}" method="post">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5">
@@ -774,7 +774,7 @@
 								  <!-- Three Icon Images Boxes-->
 								  <div class="tab-pane fade" id="three-icon-images-boxes" role="tabpanel" aria-labelledby="three-icon-images-boxes-tab">
 
-									  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
+									  <form class="row g-3 needs-validation" novalidate action="{{ route('home-page.update', 1) }}" method="post" enctype="multipart/form-data">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5">
@@ -957,7 +957,7 @@
 								  <!-- Three Icon Images Boxes-->
 								  <div class="tab-pane fade" id="image-tabs-text" role="tabpanel" aria-labelledby="image-tabs-text-tab">
 
-									  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
+									  <form class="row g-3 needs-validation" novalidate action="{{ route('home-page.update', 1) }}" method="post" enctype="multipart/form-data">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5">
@@ -1128,7 +1128,7 @@
 								  </div>
 								   <!-- background-images+text -->
 								   <div class="tab-pane fade" id="background-images+text" role="tabpanel" aria-labelledby="background-images+text-tab">
-									  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
+									  <form class="row g-3 needs-validation" novalidate action="{{ route('home-page.update', 1) }}" method="post" enctype="multipart/form-data">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5">
@@ -1210,7 +1210,7 @@
 								  </div>
 								  <!-- three-images+six-icons+three-paragraphs -->
 								  <div class="tab-pane fade" id="three-images+six-icons+three-paragraphs" role="tabpanel" aria-labelledby="three-images+six-icons+three-paragraphs-tab">
-									<form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
+									<form class="row g-3 needs-validation" novalidate action="{{ route('home-page.update', 1) }}" method="post" enctype="multipart/form-data">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5">
@@ -1301,7 +1301,7 @@
 												  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 												</div>
 												<div class="modal-body">
-												  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.store') }}" method="post" enctype="multipart/form-data">
+												  <form class="row g-3 needs-validation" novalidate action="{{ route('home-page.store') }}" method="post" enctype="multipart/form-data">
 													@csrf
 													@method('POST')
 													<div class="col-12 mt-5">
@@ -1368,7 +1368,7 @@
 														  value="delete" />
 													  @csrf
 												  </form>
-												  <form method="post" action="{{ route('landing-page.update', $review['id']) }}">
+												  <form method="post" action="{{ route('home-page.update', $review['id']) }}">
 													@csrf
 													@method('put')
 													<div class="modal fade" id="exampleModal{{ $review['id'] }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1467,7 +1467,7 @@
 								  <!-- four-images+collapse-box -->
 								  <h2>Estatísticas</h2>
 								  <div class="tab-pane fade show active" id="four-images+collapse-box" role="tabpanel" aria-labelledby="four-images+collapse-box-tab">
-									  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
+									  <form class="row g-3 needs-validation" novalidate action="{{ route('home-page.update', 1) }}" method="post" enctype="multipart/form-data">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5 form-group">
@@ -1607,7 +1607,7 @@
 								   <!-- CALL US -->
 								  <div class="tab-pane fade" id="call-now-image-box" role="tabpanel" aria-labelledby="call-now-image-box-tab">
 
-									  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
+									  <form class="row g-3 needs-validation" novalidate action="{{ route('home-page.update', 1) }}" method="post" enctype="multipart/form-data">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5 form-group">
@@ -1716,7 +1716,7 @@
 								  <!-- POLICY PRIVACY -->
 								  <div class="tab-pane fade" id="policy-privacy" role="tabpanel" aria-labelledby="policy-privacy-tab">
 
-									  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
+									  <form class="row g-3 needs-validation" novalidate action="{{ route('home-page.update', 1) }}" method="post" enctype="multipart/form-data">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5">
@@ -1737,7 +1737,7 @@
 								  <!-- TERM OF SERVICE -->
 								  <div class="tab-pane fade" id="terms-service" role="tabpanel" aria-labelledby="terms-service-tab">
 
-									  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
+									  <form class="row g-3 needs-validation" novalidate action="{{ route('home-page.update', 1) }}" method="post" enctype="multipart/form-data">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5">
@@ -1762,7 +1762,7 @@
 								  <!-- WATCH VIDEO -->
 								  <div class="tab-pane fade" id="watch-video+background-image" role="tabpanel" aria-labelledby="watch-video+background-image-tab">
 
-									  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
+									  <form class="row g-3 needs-validation" novalidate action="{{ route('home-page.update', 1) }}" method="post" enctype="multipart/form-data">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5">
@@ -1821,7 +1821,7 @@
 								  </div>
 								  <!-- background-image+form -->
 								  <div class="tab-pane fade" id="background-image+form" role="tabpanel" aria-labelledby="background-image+form-tab">
-									  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
+									  <form class="row g-3 needs-validation" novalidate action="{{ route('home-page.update', 1) }}" method="post" enctype="multipart/form-data">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5">
@@ -1853,7 +1853,7 @@
 								  <!-- footer
 								  <div class="tab-pane fade" id="footer" role="tabpanel" aria-labelledby="footer">
 
-									  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post">
+									  <form class="row g-3 needs-validation" novalidate action="{{ route('home-page.update', 1) }}" method="post">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5">
