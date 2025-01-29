@@ -96,7 +96,7 @@
 	</div>
 	@endif
 
-	<script>
+	{{-- <script>
 		document.getElementById('acceptCookies').addEventListener('click', function() {
 			// Define o cookie no navegador com validade de 1 ano
 			document.cookie = "cookie_consent=true; path=/; max-age=" + (365 * 24 * 60 * 60);
@@ -104,7 +104,7 @@
 			// Esconde o banner
 			document.querySelector('[id="acceptCookies"]').parentElement.parentElement.remove();
 		});
-	</script>
+	</script> --}}
     <script src="{{ asset('assets/vendor/libs/jquery/jquery.js') }}"></script>
     <script src="{{ asset('assets/vendor/libs/popper/popper.js') }}"></script>
     <script src="{{ asset('assets/vendor/js/bootstrap.js') }}"></script>

@@ -357,7 +357,7 @@
                       <div class="dropdown-divider my-1 mx-n2"></div>
                     </li>
                     <li>
-						<a class="dropdown-item" href="pages-profile-user.html">
+						<a class="dropdown-item" href="/profile">
 							<i class="ti ti-user me-3 ti-md"></i><span class="align-middle">Alterar palavra-passe</span>
 						</a>
 					</li>

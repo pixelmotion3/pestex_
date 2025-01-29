@@ -559,7 +559,7 @@
                   </a>
                   <ul class="menu-sub">
                     <li class="menu-item">
-                      <a href="pages-profile-user.html" class="menu-link">
+                      <a href="/profile" class="menu-link">
                         <div data-i18n="Profile">Profile</div>
                       </a>
                     </li>
