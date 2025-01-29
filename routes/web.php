@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\Route;
 
 // Rota padrão para o domínio principal
 Route::domain('127.0.0.1')->group(function () {
-    Route::get('/', [FrontPageController::class, 'index'])->name('FrontPage.Home');
+    Route::get('/', [FrontPageController::class, 'Home'])->name('FrontPage.Home');
 
 	Route::resource('/sustentabilidade', SustainabilityController::class);
 	Route::post('/newsletter/new', [NewsletterController::class, 'NewsletterForm'])->name('NewsLatterPage.NewsletterForm');
