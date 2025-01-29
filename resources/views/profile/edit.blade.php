@@ -564,7 +564,6 @@
 											<!-- background-images+text -->
 											<div class="tab-pane fade show active" id="background-images+text"
 												role="tabpanel" aria-labelledby="background-images+text-tab">
-												<x-app-layout>
 													{{-- <x-slot name="header">
 														<h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
 															{{ __('Profile') }}
@@ -592,7 +591,6 @@
 															</div> --}}
 														</div>
 													</div>
-												</x-app-layout>
 											</div>
 											<!-- three-images+six-icons+three-paragraphs -->
 										</div>
