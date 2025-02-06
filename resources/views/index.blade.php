@@ -1896,7 +1896,7 @@ setTimeout(function() {
 											</div>
 										</div>
 									</div>
-
+									<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
 									<div class="form-one__control form-one__control--full">
 										<button type="submit" class="tolak-btn-two tolak-btn-two--home-six pull-left" style="border-radius: 5px;">
 											<span class="tolak-btn-two__left-star"></span>
