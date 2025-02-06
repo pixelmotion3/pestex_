@@ -1861,7 +1861,7 @@ setTimeout(function() {
 									</br>{{ $video_contact[0]['contact-us-h2-part-2'] }}</h3>
 								<!-- /.sec-title-four__title -->
 							</div><!-- /.sec-title-four -->
-							<form class="form-contacts"  class="contact-three__form form-one" method="POST"
+							<form class="contact-three__form form-one form-contacts" method="POST"
 								action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
 								@csrf
 								@method('POST')
