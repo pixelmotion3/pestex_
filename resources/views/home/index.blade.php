@@ -29,7 +29,7 @@ setTimeout(function() {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 	<title>{{ $main_screen[0]['meta-title'] }}</title>
 
 	<!-- Meta Description -->
@@ -384,6 +384,7 @@ setTimeout(function() {
 												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 											</label>
 										</div>
+										<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e"></div>
                                         <div class="col-md-12 ml-4 mb-5" style="max-width: 92%">
                                             <button class="btn btn-dark mt-2" type="submit" name="quote_form">Obter
                                                 Orçamento Grátis</button>
