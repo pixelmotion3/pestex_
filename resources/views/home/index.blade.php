@@ -456,6 +456,7 @@ setTimeout(function() {
 													Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 												</label>
 											</div>
+											<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e"></div>
                                             <div class="col-md-12 ml-4" style="max-width: 92%;">
                                                 <button class="btn btn-dark w-100 mt-2" type="submit"
                                                     name="form_contact">Contacte-nos Agora!</button>
@@ -818,7 +819,7 @@ setTimeout(function() {
 											Autorizo tratamento de dados pessoais para marketing de produtos e serviços
 										</label>
 									</div> --}}
-
+									<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e"></div>
 									<div class="ml-4 mb-5" style="max-width: 92%">
 										<button class="btn mt-2 theme-btn-three thm-btn" type="submit" name="quote_form">Obter
 											Orçamento Grátis</button>
@@ -877,6 +878,7 @@ setTimeout(function() {
 												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 											</label>
 										</div>
+										<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e"></div>
 										<div class="col-md-12 ml-4" style="max-width: 92%;">
 											<button class="btn theme-btn-three thm-btn w-100 mt-2" type="submit"
 												name="form_contact">Contacte-nos Agora!</button>
@@ -1028,7 +1030,7 @@ setTimeout(function() {
 											Autorizo tratamento de dados pessoais para marketing de produtos e serviços
 										</label>
 									</div> --}}
-
+									<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e"></div>
 									<div class="ml-4 mb-5" style="max-width: 92%">
 										<button class="btn mt-2 theme-btn-three thm-btn" type="submit" name="quote_form">Obter
 											Orçamento Grátis</button>
@@ -1088,6 +1090,7 @@ setTimeout(function() {
 												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 											</label>
 										</div>
+										<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e"></div>
 										<div class="col-md-12 ml-4" style="max-width: 92%;">
 											<button class="btn theme-btn-three thm-btn w-100 mt-2" type="submit"
 												name="form_contact">Contacte-nos Agora!</button>
@@ -2265,6 +2268,7 @@ setTimeout(function() {
 											</div>
 										</div>
 									</div>
+									<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e"></div>
 									<div class="form-one__control form-one__control--full">
 										<button type="submit" class="tolak-btn-two tolak-btn-two--home-six pull-left" style="border-radius: 5px;">
 											<span class="tolak-btn-two__left-star"></span>
