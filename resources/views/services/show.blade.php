@@ -29,7 +29,7 @@ setTimeout(function() {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
     <title>{{ $service_detail['meta-title'] }}</title>
 
 	<!-- Meta Description -->
@@ -239,7 +239,7 @@ setTimeout(function() {
                             </div>
                             <div class="form-inner">
                                 <h3>{{ $service_detail_show['h3-2'] }}</h3>
-                                <form  method="POST" action="{{ 'https://sospragas.pt' . route('ServicePage.ContactFormService', [], false) }}">
+                                <form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('ServicePage.ContactFormService', [], false) }}">
 									@csrf
 									@method('post')
                                     <div class="form-group">
@@ -261,6 +261,7 @@ setTimeout(function() {
                                     <div class="form-group">
                                         <textarea name="message" placeholder="Mensagem..."></textarea>
                                     </div>
+									<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
                                     <div class="form-group message-btn">
                                         <button type="submit" class="btn mt-2 theme-btn-three thm-btn contactenos-btn">ENVIAR MENSAGEM</button>
                                     </div>
@@ -915,6 +916,17 @@ setTimeout(function() {
             });
         });
     </script>
+	<script>
+		$(".form-contacts").on('submit', (e) => {
+		   // e.target é o formulário que disparou o evento
+		   let recaptchaResponse = $(e.target).find("textarea[name='g-recaptcha-response']").val();
+		   if(recaptchaResponse == ""){
+			   alert("Por favor preencha o hCaptcha");
+			   e.preventDefault();
+		   }s
+
+	   });
+   </script>
     {{-- @include('includes.footer_aux') --}}
     <!--
         <a href="#" data-target="html" class="scroll-to-target scroll-to-top">

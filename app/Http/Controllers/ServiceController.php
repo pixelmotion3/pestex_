@@ -100,22 +100,52 @@ class ServiceController extends Controller
     }
 
 	public function ContactFormService(Request $request){
-		$query = contact_forms::create([
-            'name' => $request->input('name'),
-            'email' => $request->input('email'),
-            'phone' => $request->input('phone'),
-            'confirmed' => true
-        ]);
-        $best_service = landing_3page::where('id',1)->get()->toArray();
-        $main_screen = ServicesMainScreen::where('id', 1)->get()->toArray();
-        $services = ServiceDetails::all();
-		$video = About_video::where('id',1)->get()->toArray();
+		$secretKey = 'ES_8cf3c7f61ea84e6ebb4446cb84cfa8e4'; // Substitua pela sua chave secreta
+		$verifyUrl = 'https://api.hcaptcha.com/siteverify';
 
-		if ($query) {
+		// Recebe o token da resposta enviada do formulário
+		$token = $_POST['h-captcha-response']?? '';
 
-			return redirect()->back()->with('success', 'Obrigado pelo seu contacto. Iremos entrar em contacto brevemente!')->withInput();
+		// Cria os dados para enviar na requisição POST
+		$data = [
+			'secret' => $secretKey,
+			'response' => $token
+		];
+
+		// Faz a requisição POST para a API do hCaptcha
+		$options = [
+			'http' => [
+				'method'  => 'POST',
+				'content' => http_build_query($data),
+				'header'  => "Content-Type: application/x-www-form-urlencoded\r\n"
+			]
+		];
+		$context  = stream_context_create($options);
+		$response = file_get_contents($verifyUrl, false, $context);
+
+		// Decodifica a resposta JSON
+		$responseJson = json_decode($response, true);
+
+		// Verifica se a verificação foi bem-sucedida
+		$success = $responseJson['success'];
+
+		if ($success) {
+			$query = contact_forms::create([
+				'name' => $request->input('name'),
+				'email' => $request->input('email'),
+				'phone' => $request->input('phone'),
+				'confirmed' => true
+			]);
+
+			if ($query) {
+
+				return redirect()->back()->with('success', 'Obrigado pelo seu contacto. Iremos entrar em contacto brevemente!')->withInput();
+			}
+			return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
+		} else {
+			return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
 		}
-		return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
+
 		// return redirect()->route('ServicePage.index');
     }
 }

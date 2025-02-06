@@ -29,7 +29,7 @@ setTimeout(function() {
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
         <title>{{ config('app.name') }}</title>
 		<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon01.png">
         <!-- Fonts -->
@@ -294,7 +294,7 @@ setTimeout(function() {
                                 <p class="contact-two__content__text">
                                     {{ $contact_info[0]['p-3'] }}
                                 </p>
-                                <form class="contact-two__form form-one" method="POST" action="{{ 'https://sospragas.pt' . route('ContactPage.ContactFormContactos', [], false) }}">
+                                <form class="contact-two__form form-one form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('ContactPage.ContactFormContactos', [], false) }}">
 									@csrf
 									@method('post')
                                     <div class="form-one__group">
@@ -307,6 +307,7 @@ setTimeout(function() {
                                         <div class="form-one__control form-one__control--full">
                                             <textarea name="message" placeholder="Mensagem"></textarea><!-- /# -->
                                         </div><!-- /.form-one__control -->
+										<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
                                         <div class="form-one__control form-one__control--full">
                                             <button type="submit" class="tolak-btn2"><b>enviar</b><span></span></button>
                                         </div><!-- /.form-one__control -->
@@ -593,5 +594,16 @@ setTimeout(function() {
         <script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
         <script src="{{ asset('assets/js/scrollbar.js') }}"></script>
         <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
+		<script>
+			$(".form-contacts").on('submit', (e) => {
+			   // e.target é o formulário que disparou o evento
+			   let recaptchaResponse = $(e.target).find("textarea[name='g-recaptcha-response']").val();
+			   if(recaptchaResponse == ""){
+				   alert("Por favor preencha o hCaptcha");
+				   e.preventDefault();
+			   }s
+
+		   });
+	   </script>
     </body>
 </html>

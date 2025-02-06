@@ -29,7 +29,7 @@ setTimeout(function() {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
     <title>{{ $main_screen[0]['meta-title'] }}</title>
 
 	<!-- Meta Description -->
@@ -409,7 +409,7 @@ setTimeout(function() {
                                 {{ $main_screen[0]['p-1'] }}
                             </p>
 
-                            <form class="contact-two__form form-one" method="POST" action="{{ 'https://sospragas.pt' . route('ServicePage.ContactFormService', [], false) }}">
+                            <form class="contact-two__form form-one form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('ServicePage.ContactFormService', [], false) }}">
 								@csrf
 								@method('post')
                                 <div class="form-one__group">
@@ -422,6 +422,7 @@ setTimeout(function() {
                                     <div class="form-one__control form-one__control--full">
                                         <textarea name="message" placeholder="Mensagem"></textarea><!-- /# -->
                                     </div><!-- /.form-one__control -->
+									<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
                                     <div class="form-one__control form-one__control--full">
                                         <button type="submit" class="tolak-btn2"><b>ENVIAR MENSAGEM</b><span></span></button>
                                     </div><!-- /.form-one__control -->
@@ -763,6 +764,17 @@ setTimeout(function() {
         <script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
         <script src="{{ asset('assets/js/scrollbar.js') }}"></script>
         <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
+		<script>
+			$(".form-contacts").on('submit', (e) => {
+			   // e.target é o formulário que disparou o evento
+			   let recaptchaResponse = $(e.target).find("textarea[name='g-recaptcha-response']").val();
+			   if(recaptchaResponse == ""){
+				   alert("Por favor preencha o hCaptcha");
+				   e.preventDefault();
+			   }s
+
+		   });
+	   </script>
 </body>
 
 </html>
