@@ -29,7 +29,7 @@ setTimeout(function() {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
 	<title>{{ $main_screen[0]['meta-title'] }}</title>
 
 	<!-- Meta Description -->
