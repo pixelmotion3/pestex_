@@ -31,7 +31,7 @@ setTimeout(function() {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ $main_screen[0]['meta-title'] }}</title>
-
+	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 	<!-- Meta Description -->
     <meta name="description" content="{{ $main_screen[0]['meta-desctiption'] }}">
 
@@ -276,7 +276,7 @@ setTimeout(function() {
                         <div class="tab-pane fade show active" id="modal-quote" role="tabpanel"
                             aria-labelledby="modal-quote-tab">
                             <div class="container bg-white">
-                                <form method="POST" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.QuoteForm', [], false) }}">
+                                <form class="form-contacts"  method="POST" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.QuoteForm', [], false) }}">
                                     @csrf
                                     @method('post')
                                     <div class="row text-center" style="border-radius:50%;">
@@ -384,6 +384,7 @@ setTimeout(function() {
 												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 											</label>
 										</div>
+										<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
                                         <div class="col-md-12 ml-4 mb-5" style="max-width: 92%">
                                             <button class="btn btn-dark mt-2" type="submit" name="quote_form">Obter
                                                 Orçamento Grátis</button>
@@ -397,7 +398,7 @@ setTimeout(function() {
                             <div class="tab-pane fade show active quote_border_inbox" id="modal-home" role="tabpanel"
                                 aria-labelledby="home-tab">
                                 <div class="container">
-                                    <form method="post" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
+                                    <form class="form-contacts"  method="post" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
                                         @csrf
                                         @method('POST')
                                         <div class="row text-center">
@@ -455,6 +456,7 @@ setTimeout(function() {
 													Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 												</label>
 											</div>
+											<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
                                             <div class="col-md-12 ml-4" style="max-width: 92%;">
                                                 <button class="btn btn-dark w-100 mt-2" type="submit"
                                                     name="form_contact">Contacte-nos Agora!</button>
@@ -696,7 +698,7 @@ setTimeout(function() {
 				<div class="tab-content p-2 bg-white mb-5" id="myTabContent" style="border-radius:30px;">
 					<div class="tab-pane fade show active" id="quote" role="tabpanel" aria-labelledby="quote-tab">
 						<div class="container-fluid bg-white">
-							<form method="POST" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.QuoteForm', [], false) }}">
+							<form class="form-contacts"  method="POST" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.QuoteForm', [], false) }}">
 								@csrf
 								@method('post')
 								<div class="row" style="border-radius:50%;">
@@ -815,7 +817,7 @@ setTimeout(function() {
 											Autorizo tratamento de dados pessoais para marketing de produtos e serviços
 										</label>
 									</div> --}}
-
+									<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
 									<div class="ml-4 mb-5" style="max-width: 92%">
 										<button class="btn mt-2 theme-btn-three thm-btn" type="submit" name="quote_form">Obter
 											Orçamento Grátis</button>
@@ -829,7 +831,7 @@ setTimeout(function() {
 						<div class="tab-pane fade show active quote_border_inbox" id="home" role="tabpanel"
 							aria-labelledby="home-tab">
 							<div class="container-fluid">
-								<form method="post" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
+								<form class="form-contacts"  method="post" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
 									@csrf
 									@method('POST')
 									<div class="row">
@@ -874,6 +876,7 @@ setTimeout(function() {
 												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 											</label>
 										</div>
+										<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
 										<div class="col-md-12 ml-4" style="max-width: 92%;">
 											<button class="btn theme-btn-three thm-btn w-100 mt-2" type="submit"
 												name="form_contact">Contacte-nos Agora!</button>
@@ -910,7 +913,7 @@ setTimeout(function() {
 				<div class="tab-content p-2 bg-white mb-5" id="myTabContent" style="border-radius:30px;">
 					<div class="tab-pane fade show active" id="quote2" role="tabpanel" aria-labelledby="quote-tab">
 						<div class="container-fluid bg-white">
-							<form method="POST" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.QuoteForm', [], false) }}">
+							<form class="form-contacts"  method="POST" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.QuoteForm', [], false) }}">
 								@csrf
 								@method('post')
 								<div class="row" style="border-radius:50%;">
@@ -1025,7 +1028,7 @@ setTimeout(function() {
 											Autorizo tratamento de dados pessoais para marketing de produtos e serviços
 										</label>
 									</div> --}}
-
+									<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
 									<div class="ml-4 mb-5" style="max-width: 92%">
 										<button class="btn mt-2 theme-btn-three thm-btn" type="submit" name="quote_form">Obter
 											Orçamento Grátis</button>
@@ -1039,7 +1042,7 @@ setTimeout(function() {
 						<div class="tab-pane fade show active quote_border_inbox" id="home" role="tabpanel"
 							aria-labelledby="home-tab">
 							<div class="container-fluid">
-								<form method="post" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
+								<form class="form-contacts"  method="post" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
 									@csrf
 									@method('POST')
 									<div class="row">
@@ -1085,6 +1088,7 @@ setTimeout(function() {
 												Tenho conhecimento e aceito a <a href="/politica-privacidade"  target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 											</label>
 										</div>
+										<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
 										<div class="col-md-12 ml-4" style="max-width: 92%;">
 											<button class="btn theme-btn-three thm-btn w-100 mt-2" type="submit"
 												name="form_contact">Contacte-nos Agora!</button>
@@ -1857,7 +1861,7 @@ setTimeout(function() {
 									</br>{{ $video_contact[0]['contact-us-h2-part-2'] }}</h3>
 								<!-- /.sec-title-four__title -->
 							</div><!-- /.sec-title-four -->
-							<form class="contact-three__form form-one" method="POST"
+							<form class="form-contacts"  class="contact-three__form form-one" method="POST"
 								action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
 								@csrf
 								@method('POST')
@@ -1892,6 +1896,7 @@ setTimeout(function() {
 											</div>
 										</div>
 									</div>
+
 									<div class="form-one__control form-one__control--full">
 										<button type="submit" class="tolak-btn-two tolak-btn-two--home-six pull-left" style="border-radius: 5px;">
 											<span class="tolak-btn-two__left-star"></span>
@@ -2291,6 +2296,17 @@ setTimeout(function() {
     <script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
     <script src="{{ asset('assets/js/scrollbar.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
+	<script>
+		$(".form-contacts").on('submit', (e) => {
+		   // e.target é o formulário que disparou o evento
+		   let recaptchaResponse = $(e.target).find("textarea[name='g-recaptcha-response']").val();
+		   if(recaptchaResponse == ""){
+			   alert("Por favor preencha o hCaptcha");
+			   e.preventDefault();
+		   }s
+
+	   });
+   </script>
 </body>
 
 </html>

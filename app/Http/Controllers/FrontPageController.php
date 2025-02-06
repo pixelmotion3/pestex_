@@ -392,23 +392,22 @@ class FrontPageController extends Controller
 		$success = $responseJson['success'];
 
 		if ($success) {
-			print_r($success);
-			echo "Verificação do hCaptcha bem-sucedida!";
+			$data = [
+				'name' => $request->input('name'),
+				'email' => $request->input('email'),
+				'phone' => $request->input('phone'),
+				'local' => $request->input('locality'),
+				'type' => $request->input('customer_type')
+			];
+			Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
+			if ($query) {
+				return redirect()->back()->with('success', 'Obrigado pelo seu contacto. Iremos entrar em contacto brevemente!!');
+			}
 		} else {
-			echo "Falha na verificação do hCaptcha.";
+			return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
 		}
-		// $data = [
-        //     'name' => $request->input('name'),
-        //     'email' => $request->input('email'),
-        //     'phone' => $request->input('phone'),
-        //     'local' => $request->input('locality'),
-        //     'type' => $request->input('customer_type')
-        // ];
-        // Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
-		// if ($query) {
-		// 	return redirect()->back()->with('success', 'Obrigado pelo seu contacto. Iremos entrar em contacto brevemente!!');
-		// }
-		// return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
+
+
     }
 
 
