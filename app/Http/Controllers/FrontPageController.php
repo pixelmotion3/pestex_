@@ -405,10 +405,10 @@ class FrontPageController extends Controller
         //     'type' => $request->input('customer_type')
         // ];
         // Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
-		if ($query) {
-			return redirect()->back()->with('success', 'Obrigado pelo seu contacto. Iremos entrar em contacto brevemente!!');
-		}
-		return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
+		// if ($query) {
+		// 	return redirect()->back()->with('success', 'Obrigado pelo seu contacto. Iremos entrar em contacto brevemente!!');
+		// }
+		// return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
     }
 
 
