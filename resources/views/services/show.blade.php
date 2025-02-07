@@ -76,6 +76,7 @@ setTimeout(function() {
     <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
 
 	<!-- Google tag (gtag.js) --> <script async src=https://www.googletagmanager.com/gtag/js?id=G-973E1T9CZV></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16760451034"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-16760451034'); </script>
 
 	<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-973E1T9CZV'); </script>
     <!-- Styles -->

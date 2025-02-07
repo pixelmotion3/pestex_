@@ -192,6 +192,7 @@
     <script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
     <script src="{{ asset('assets/js/scrollbar.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16760451034"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-16760451034'); </script>
 
     <!-- main-js -->
     <script src="{{ asset('assets/js/script.js') }}"></script>
