@@ -246,89 +246,21 @@ setTimeout(function() {
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title ml-4" id="exampleModalLabel">Formulario</h5>
+                    <h5 class="modal-title ml-4" id="exampleModalLabel">Agende uma visita grátis</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body p-2">
-                    <ul class="nav nav-tabs" id="myTabModal" role="tablist">
-                        <li class="nav-item w-50 rounded-top-lg" role="presentation">
-                            <button class="nav-link active w-100 text-muted p-4" id="modal-quote-tab"
-                                data-bs-toggle="tab"
-                                style="border-top-left-radius:30px;border-top-right-radius:30px; border:none; background-color: transparent;"
-                                data-bs-target="#modal-quote" type="button" role="tab" aria-controls="modal-quote"
-                                aria-selected="true">
-                                <strong class="text-body">{{ $main_screen[0]['quote-form-tab-title-1'] }}</strong>
-                            </button>
-                        </li>
-                        <li class="nav-item w-50 rounded-top-lg " role="presentation">
-                            <button class="nav-link w-100 text-muted p-4" id="modal-contact-tab" data-bs-toggle="tab"
-                                style="background-color: transparent;border:none;border-top-left-radius:35px;border-top-right-radius:35px;"
-                                data-bs-target="#modal-contact" type="button" role="tab"
-                                aria-controls="modal-contact" aria-selected="false">
-                                <strong class="text-body">{{ $main_screen[0]['quote-form-tab-title-2'] }}</strong>
-                            </button>
-                        </li>
-                    </ul>
                     <div class="tab-content p-2 bg-white" id="myTabModalContent" style="border-radius:30px;">
                         <div class="tab-pane fade show active" id="modal-quote" role="tabpanel"
                             aria-labelledby="modal-quote-tab">
                             <div class="container bg-white">
-                                <form class="form-contacts"  method="POST" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.QuoteForm', [], false) }}">
+                                <form class="form-contacts"  method="POST" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.ScheduleInspection', [], false) }}">
                                     @csrf
                                     @method('post')
                                     <div class="row text-center" style="border-radius:50%;">
-                                        <div class="col mt-3 border" style="margin-left:30px;margin-right:15px;"
-                                            id="modal-home">
-                                            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 63.2 64">
-                                                <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
-                                                <path d="M31.6,16.2c.3,0,.6.1.8.3l26.1,20.6c.6.5.7,1.4.2,2-.4.6-1.4.7-2,.2l-25.2-19.9L6.3,39.3c-.6.4-1.5.4-1.9-.2-.4-.6-.4-1.5.2-2l9.8-7.7v-11.8c0-.8.6-1.4,1.4-1.4h5.5c.8,0,1.4.6,1.4,1.4v5.3l8.1-6.4c.3-.2.6-.3.9-.3h0ZM19.9,19h-2.7v8.2l2.7-2.2v-6.1ZM48.7,34.7l2.7,2.2v21.9c0,.8-.6,1.4-1.4,1.4h-11.7c-.8,0-1.4-.6-1.4-1.4v-6.9c0-3.1-2.4-5.5-5.5-5.5s-5.5,2.4-5.5,5.5v6.9c0,.8-.6,1.4-1.4,1.4h-11.7c-.8,0-1.4-.6-1.4-1.4v-21.9l2.7-2.2v22.7h8.9v-5.5c0-4.5,3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2v5.5h8.9v-22.7h0Z"/>
-                                            </svg>
-                                            <p>Residência</p>
-                                        </div>
-                                        <div class="col border mt-3" style="margin-right:30px;margin-left:15px;"
-                                            id="modal-company">
-                                            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 63.2 64">
-                                                <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
-                                                <defs>
-                                                  <style>
-                                                    .st0 {
-                                                      stroke: #000;
-                                                      stroke-miterlimit: 10;
-                                                    }
-                                                  </style>
-                                                </defs>
-                                                <g id="Layer_38">
-                                                  <path class="st0" d="M26.4,38.2h10.4c.6,0,1-.4,1-1s-.4-1-1-1h-10.4c-.6,0-1,.4-1,1s.4,1,1,1Z"/>
-                                                  <path class="st0" d="M26.4,30.6h10.4c.6,0,1-.4,1-1s-.4-1-1-1h-10.4c-.6,0-1,.4-1,1s.4,1,1,1Z"/>
-                                                  <path class="st0" d="M26.4,23h10.4c.6,0,1-.4,1-1s-.4-1-1-1h-10.4c-.6,0-1,.4-1,1s.4,1,1,1Z"/>
-                                                  <path class="st0" d="M59.9,57.7h-4.2v-20.4c0-.6-.4-1-1-1h-9.4V15.8c0-.4-.2-.8-.6-.9L19.3,4.4c-.3-.1-.7,0-.9,0-.3.2-.4.5-.4.8v17.9h-9.4c-.6,0-1,.4-1,1v33.4h-3.4c-.6,0-1,.4-1,1s.4,1,1,1h55.7c.6,0,1-.4,1-1s-.4-1-1-1ZM9.5,25.3h8.4v32.4h-8.4V25.3ZM19.9,6.8l23.3,9.6v41.2h-5.5v-9.7c0-.6-.4-1-1-1h-10.4c-.6,0-1,.4-1,1v9.7h-5.4V6.8ZM27.4,57.7v-8.7h8.4v8.7h-8.4ZM45.2,57.7v-19.4h8.4v19.4h-8.4Z"/>
-                                                </g>
-                                              </svg>
-                                            <p>Empresa</p>
-                                        </div>
-                                        <input class="input-field rounded" type="hidden" name="customer_type"
-                                            id="modal-customer_type" value="home" required>
 
-                                        <div class="input-container mt-3" style="width: 92%;" required>
-                                            <select name="products">
-                                                <option value="ratos" selected class="text-white">Ratos</option>
-                                                <option value="baratas" class="text-muted">Baratas</option>
-                                                <option value="percevejos" class="text-muted">Percevejos</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="input-container mt-3" style="width: 92%;">
-                                            <i class="far fa-map-marker-alt icon"></i>
-                                            <input class="input-field rounded" type="text"
-                                                placeholder="Localidade" name="locality" required>
-                                            @error('locality')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
-                                        </div>
                                         <div class="input-container mt-1" style="width: 92%;">
                                             <i class="far fa-user icon"></i>
                                             <input class="input-field rounded" type="text" placeholder="Nome"
@@ -385,8 +317,7 @@ setTimeout(function() {
 										</div>
 										<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
                                         <div class="col-md-12 ml-4 mb-5" style="max-width: 92%">
-                                            <button class="btn btn-dark mt-2" type="submit" name="quote_form">Obter
-                                                Orçamento Grátis</button>
+                                            <button class="btn btn-dark mt-2" type="submit" name="quote_form">Agendar vistoria</button>
                                         </div>
                                     </div>
                                 </form>

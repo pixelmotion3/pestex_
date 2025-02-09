@@ -23,8 +23,11 @@ use App\Models\Review;
 use Illuminate\Http\Request;
 use App\Models\quote_forms;
 use App\Models\contact_forms;
+use App\Models\ContactInfo;
 use App\Models\News_letter;
 use App\Models\PageView;
+use App\Models\schedule_inspection;
+use App\Models\SustainabilityPage;
 use Illuminate\Support\Facades\Mail;
 class FrontPageController extends Controller
 {
@@ -476,6 +479,80 @@ class FrontPageController extends Controller
         if ($query) {
             return view('contacts.index');
         }
+    }
+
+
+	public function thankYouForm(Request $request){
+		$contact_info = ContactInfo::where('id',1)->get()->toArray();
+		$main = SustainabilityPage::where('id', 1)->get()->toArray();
+		return view('thank-you.thank-you', [
+			'contact_info' => $contact_info,
+			'main' => $main
+		]);
+	}
+
+	public function ScheduleInspection(Request $request, schedule_inspection $schedule_inspection)
+    {
+        //dd($request->all());
+        $query = schedule_inspection::create([
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'phone' => $request->input('phone'),
+            'confirmed' => true
+        ]);
+		$contact_info = ContactInfo::where('id',1)->get()->toArray();
+		$main = SustainabilityPage::where('id', 1)->get()->toArray();
+
+
+		$secretKey = 'ES_8cf3c7f61ea84e6ebb4446cb84cfa8e4'; // Substitua pela sua chave secreta
+		$verifyUrl = 'https://api.hcaptcha.com/siteverify';
+
+		// Recebe o token da resposta enviada do formulário
+		$token = $_POST['h-captcha-response']?? '';
+
+		// Cria os dados para enviar na requisição POST
+		$data = [
+			'secret' => $secretKey,
+			'response' => $token
+		];
+
+		// Faz a requisição POST para a API do hCaptcha
+		$options = [
+			'http' => [
+				'method'  => 'POST',
+				'content' => http_build_query($data),
+				'header'  => "Content-Type: application/x-www-form-urlencoded\r\n"
+			]
+		];
+		$context  = stream_context_create($options);
+		$response = file_get_contents($verifyUrl, false, $context);
+
+		// Decodifica a resposta JSON
+		$responseJson = json_decode($response, true);
+
+		// Verifica se a verificação foi bem-sucedida
+		$success = $responseJson['success'];
+
+		if ($success) {
+			$data = [
+				'name' => $request->input('name'),
+				'email' => $request->input('email'),
+				'phone' => $request->input('phone'),
+				'local' => $request->input('locality'),
+				'type' => $request->input('customer_type')
+			];
+			Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
+			if ($query) {
+				return view('FrontPage.thankYouFormScheduleInspection', [
+					'contact_info' => $contact_info,
+					'main' => $main
+				]);
+			}
+		} else {
+			return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
+		}
+
+
     }
 
 
