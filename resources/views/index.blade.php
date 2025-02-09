@@ -260,7 +260,7 @@ setTimeout(function() {
                                     @csrf
                                     @method('post')
                                     <div class="row text-center" style="border-radius:50%;">
-
+										<input class="input-field rounded" type="hidden" value="ScheduleInspection" placeholder="type_form" name="type_form">
                                         <div class="input-container mt-1" style="width: 92%;">
                                             <i class="far fa-user icon"></i>
                                             <input class="input-field rounded" type="text" placeholder="Nome"
@@ -328,7 +328,7 @@ setTimeout(function() {
                             <div class="tab-pane fade show active quote_border_inbox" id="modal-home" role="tabpanel"
                                 aria-labelledby="home-tab">
                                 <div class="container">
-                                    <form class="form-contacts"  method="post" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
+                                    <form class="form-contacts"  method="post" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.thankYouFormContactForm', [], false) }}">
                                         @csrf
                                         @method('POST')
                                         <div class="row text-center">
@@ -336,6 +336,7 @@ setTimeout(function() {
                                             <p class="mb-5 text-muted">{{ $main_screen[0]['quote-form-tab-2-p'] }}</p>
                                             <div class="input-container mt-3" style="width: 92%;">
                                                 <i class="far fa-user icon"></i>
+												<input class="input-field rounded" type="hidden" value="ContactForm" placeholder="type_form" name="type_form">
                                                 <input class="input-field rounded" type="text" placeholder="Nome"
                                                     name="name">
                                                 @error('name')
@@ -628,7 +629,7 @@ setTimeout(function() {
 				<div class="tab-content p-2 bg-white mb-5" id="myTabContent" style="border-radius:30px;">
 					<div class="tab-pane fade show active" id="quote" role="tabpanel" aria-labelledby="quote-tab">
 						<div class="container-fluid bg-white">
-							<form class="form-contacts"  method="POST" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.QuoteForm', [], false) }}">
+							<form class="form-contacts"  method="POST" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.thankYouFormRequestQuote', [], false) }}">
 								@csrf
 								@method('post')
 								<div class="row" style="border-radius:50%;">
@@ -676,6 +677,7 @@ setTimeout(function() {
                 							@endisset
 										</select>
 									</div> --}}
+									<input class="input-field rounded" type="hidden" value="QuoteForm" placeholder="type_form" name="type_form">
 									<div class="input-container mt-3" style="width: 92%;">
 										<i class="far fa-map-marker-alt icon" aria-hidden="true"></i>
 										<input class="input-field rounded" type="text" placeholder="Localidade"
@@ -686,6 +688,7 @@ setTimeout(function() {
 											</span>
 										@enderror
 									</div>
+									<input class="input-field rounded" type="hidden" value="QuoteForm" placeholder="type_form" name="type_form">
 									<div class="input-container mt-1" style="width: 92%;">
 										<i class="far fa-user icon"></i>
 										<input class="input-field rounded" type="text" placeholder="Nome"
@@ -761,10 +764,11 @@ setTimeout(function() {
 						<div class="tab-pane fade show active quote_border_inbox" id="home" role="tabpanel"
 							aria-labelledby="home-tab">
 							<div class="container-fluid">
-								<form class="form-contacts"  method="post" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
+								<form class="form-contacts"  method="post" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.thankYouFormContactForm', [], false) }}">
 									@csrf
 									@method('POST')
 									<div class="row">
+										<input class="input-field rounded" type="hidden" value="ContactForm" placeholder="type_form" name="type_form">
 										<h2 class="h2 mt-5 text-muted">{{ $main_screen[0]['quote-form-tab-2-h2'] }}</h2>
 										<p>{{ $main_screen[0]['quote-form-tab-2-p'] }}</p>
 										<div class="input-container mt-3" style="width: 92%;">
@@ -843,7 +847,7 @@ setTimeout(function() {
 				<div class="tab-content p-2 bg-white mb-5" id="myTabContent" style="border-radius:30px;">
 					<div class="tab-pane fade show active" id="quote2" role="tabpanel" aria-labelledby="quote-tab">
 						<div class="container-fluid bg-white">
-							<form class="form-contacts"  method="POST" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.QuoteForm', [], false) }}">
+							<form class="form-contacts"  method="POST" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.thankYouFormRequestQuote', [], false) }}">
 								@csrf
 								@method('post')
 								<div class="row" style="border-radius:50%;">
@@ -878,6 +882,7 @@ setTimeout(function() {
 										</svg>
 										<p>Empresa</p>
 									</div>
+									<input class="input-field rounded" type="hidden" value="QuoteFom" placeholder="type_form" name="type_form">
 									<input class="input-field rounded" type="hidden" name="customer_type"
 										id="customer_type" value="home" required>
 									{{-- <div class="input-container mt-3" style="width: 92%;" required>
@@ -972,10 +977,11 @@ setTimeout(function() {
 						<div class="tab-pane fade show active quote_border_inbox" id="home" role="tabpanel"
 							aria-labelledby="home-tab">
 							<div class="container-fluid">
-								<form class="form-contacts"  method="post" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
+								<form class="form-contacts"  method="post" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.thankYouFormContactForm', [], false) }}">
 									@csrf
 									@method('POST')
 									<div class="row">
+										<input class="input-field rounded" type="hidden" value="ContactForm" placeholder="type_form" name="type_form">
 										<h2 class="h2 mt-5 text-muted">{{ $main_screen[0]['quote-form-tab-2-h2'] }}</h2>
 										<p>{{ $main_screen[0]['quote-form-tab-2-p'] }}</p>
 										<div class="input-container mt-3" style="width: 92%;">
@@ -1792,10 +1798,11 @@ setTimeout(function() {
 								<!-- /.sec-title-four__title -->
 							</div><!-- /.sec-title-four -->
 							<form class="contact-three__form form-one form-contacts" method="POST"
-								action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
+								action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.thankYouFormContactForm', [], false) }}">
 								@csrf
 								@method('POST')
 								<div class="form-one__group">
+									<input class="input-field rounded" type="hidden" value="ContactForm" placeholder="type_form" name="type_form">
 									<div class="form-one__control form-one__control--full">
 										<input type="text" name="name" placeholder="Nome *" required>
 									</div><!-- /.form-one__control -->

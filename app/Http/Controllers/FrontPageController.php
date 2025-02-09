@@ -483,12 +483,127 @@ class FrontPageController extends Controller
 
 
 	public function thankYouForm(Request $request){
-		$contact_info = ContactInfo::where('id',1)->get()->toArray();
-		$main = SustainabilityPage::where('id', 1)->get()->toArray();
-		return view('thank-you.thank-you', [
-			'contact_info' => $contact_info,
-			'main' => $main
-		]);
+
+
+
+		if($request->input('type_form') == 'QuoteForm'){
+			//dd($request->all());
+			$query = quote_forms::create([
+				'customer_type' => $request->input('customer_type'),
+				'products' => "",//$request->input('products'),
+				'locality' => $request->input('locality'),
+				'name' => $request->input('name'),
+				'email' => $request->input('email'),
+				'phone' => $request->input('phone'),
+				'confirmed' => true
+			]);
+			// <b>Nome:</b> {{ $data['name'] }}<br/>
+			// <b>Email:</b> {{ $data['email'] }}<br/>
+			// <b>Telefone:</b> {{ $data['phone'] }}<br/>
+			// <b>Localidade:</b> {{ $data['local'] }}<br/>
+			// <b>Tipo:</b> {{ $data['type'] }}
+
+			$secretKey = 'ES_8cf3c7f61ea84e6ebb4446cb84cfa8e4'; // Substitua pela sua chave secreta
+			$verifyUrl = 'https://api.hcaptcha.com/siteverify';
+
+			// Recebe o token da resposta enviada do formulário
+			$token = $_POST['h-captcha-response']?? '';
+
+			// Cria os dados para enviar na requisição POST
+			$data = [
+				'secret' => $secretKey,
+				'response' => $token
+			];
+
+			// Faz a requisição POST para a API do hCaptcha
+			$options = [
+				'http' => [
+					'method'  => 'POST',
+					'content' => http_build_query($data),
+					'header'  => "Content-Type: application/x-www-form-urlencoded\r\n"
+				]
+			];
+			$context  = stream_context_create($options);
+			$response = file_get_contents($verifyUrl, false, $context);
+
+			// Decodifica a resposta JSON
+			$responseJson = json_decode($response, true);
+
+			// Verifica se a verificação foi bem-sucedida
+			$success = $responseJson['success'];
+
+			if ($success) {
+				$data = [
+					'name' => $request->input('name'),
+					'email' => $request->input('email'),
+					'phone' => $request->input('phone'),
+					'local' => $request->input('locality'),
+					'type' => $request->input('customer_type')
+				];
+				Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
+				$contact_info = ContactInfo::where('id',1)->get()->toArray();
+				$main = SustainabilityPage::where('id', 1)->get()->toArray();
+				return view('thank-you.thank-you', [
+					'contact_info' => $contact_info,
+					'main' => $main
+				]);
+			} else {
+				return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
+			}
+		}
+
+		if($request->input('type_form') == 'ContactForm'){
+			$secretKey = 'ES_8cf3c7f61ea84e6ebb4446cb84cfa8e4'; // Substitua pela sua chave secreta
+			$verifyUrl = 'https://api.hcaptcha.com/siteverify';
+
+			// Recebe o token da resposta enviada do formulário
+			$token = $_POST['h-captcha-response']?? '';
+
+			// Cria os dados para enviar na requisição POST
+			$data = [
+				'secret' => $secretKey,
+				'response' => $token
+			];
+
+			// Faz a requisição POST para a API do hCaptcha
+			$options = [
+				'http' => [
+					'method'  => 'POST',
+					'content' => http_build_query($data),
+					'header'  => "Content-Type: application/x-www-form-urlencoded\r\n"
+				]
+			];
+			$context  = stream_context_create($options);
+			$response = file_get_contents($verifyUrl, false, $context);
+
+			// Decodifica a resposta JSON
+			$responseJson = json_decode($response, true);
+
+			// Verifica se a verificação foi bem-sucedida
+			$success = $responseJson['success'];
+
+			if ($success) {
+				$query = contact_forms::create([
+					'name' => $request->input('name'),
+					'email' => $request->input('email'),
+					'phone' => $request->input('phone'),
+					'confirmed' => true
+				]);
+				if ($query) {
+					$contact_info = ContactInfo::where('id',1)->get()->toArray();
+					$main = SustainabilityPage::where('id', 1)->get()->toArray();
+					return view('thank-you.thank-you', [
+						'contact_info' => $contact_info,
+						'main' => $main
+					]);
+				}
+				return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
+			} else {
+				return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
+			}
+
+		}
+
 	}
 
 	public function ScheduleInspection(Request $request, schedule_inspection $schedule_inspection)
@@ -551,8 +666,6 @@ class FrontPageController extends Controller
 		} else {
 			return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
 		}
-
-
     }
 
 

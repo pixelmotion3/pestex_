@@ -39,10 +39,10 @@ Route::domain('127.0.0.1')->group(function () {
 	Route::get('/politica-privacidade', [FrontPageController::class, 'HomePoliticaPrivacidade'])->name('FrontPage.PoliticaPrivacidade');
 
 
-	Route::get('/obrigado-fale-conosco', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactUs');
-	Route::get('/obrigado-pedir-orcamento', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormRequestQuote');
-	Route::get('/obrigado-entrar-em-contato', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactForm');
-	Route::get('/obrigado-agenda-vistoria', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormScheduleInspection');
+	Route::post('/obrigado-fale-conosco', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactUs');
+	Route::post('/obrigado-pedir-orcamento', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormRequestQuote');
+	Route::post('/obrigado-entrar-em-contato', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactForm');
+	Route::post('/obrigado-agenda-vistoria', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormScheduleInspection');
 
 
 
@@ -150,10 +150,10 @@ Route::domain('sospragas.pt')->group(function () {
 	Route::get('/politica-privacidade', [FrontPageController::class, 'HomePoliticaPrivacidade'])->name('FrontPage.PoliticaPrivacidade');
 
 
-	Route::get('/obrigado-fale-conosco', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactUs');
-	Route::get('/obrigado-pedir-orcamento', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormRequestQuote');
-	Route::get('/obrigado-entrar-em-contato', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactForm');
-	Route::get('/obrigado-agenda-vistoria', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormScheduleInspection');
+	Route::post('/obrigado-fale-conosco', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactUs');
+	Route::post('/obrigado-pedir-orcamento', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormRequestQuote');
+	Route::post('/obrigado-entrar-em-contato', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactForm');
+	Route::post('/obrigado-agenda-vistoria', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormScheduleInspection');
 
 
 
@@ -258,10 +258,10 @@ Route::domain('desinfestacoes.sospragas.pt')->group(function () {
 	Route::get('/politica-privacidade', [FrontPageController::class, 'HomePoliticaPrivacidade'])->name('FrontPage.PoliticaPrivacidade');
 
 
-	Route::get('/obrigado-fale-conosco', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactUs');
-	Route::get('/obrigado-pedir-orcamento', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormRequestQuote');
-	Route::get('/obrigado-entrar-em-contato', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactForm');
-	Route::get('/obrigado-agenda-vistoria', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormScheduleInspection');
+	Route::post('/obrigado-fale-conosco', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactUs');
+	Route::post('/obrigado-pedir-orcamento', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormRequestQuote');
+	Route::post('/obrigado-entrar-em-contato', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactForm');
+	Route::post('/obrigado-agenda-vistoria', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormScheduleInspection');
 
 
 	Route::get('/servicos', [ServiceController::class, 'index'])->name('ServicePage.index');
