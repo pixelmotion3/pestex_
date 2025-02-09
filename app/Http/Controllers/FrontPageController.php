@@ -543,7 +543,7 @@ class FrontPageController extends Controller
 			];
 			// Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
 			if ($query) {
-				return view('FrontPage.thankYouFormScheduleInspection', [
+				redirect()->route('FrontPage.thankYouFormScheduleInspection', [
 					'contact_info' => $contact_info,
 					'main' => $main
 				]);
