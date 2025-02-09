@@ -653,7 +653,7 @@ class FrontPageController extends Controller
 					'local' => $request->input('locality'),
 					'type' => $request->input('customer_type')
 				];
-				Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
+				// Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
 				$contact_info = ContactInfo::where('id',1)->get()->toArray();
 				$main = SustainabilityPage::where('id', 1)->get()->toArray();
 				return view('thank-you.index', [
