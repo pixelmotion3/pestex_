@@ -256,7 +256,7 @@ setTimeout(function() {
                         <div class="tab-pane fade show active" id="modal-quote" role="tabpanel"
                             aria-labelledby="modal-quote-tab">
                             <div class="container bg-white">
-                                <form class="form-contacts"  method="POST" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.ScheduleInspection', [], false) }}">
+                                <form class="form-contacts"  method="POST" action="{{ 'https://desinfestacoes.sospragas.pt' . route('FrontPage.thankYouFormScheduleInspection', [], false) }}">
                                     @csrf
                                     @method('post')
                                     <div class="row text-center" style="border-radius:50%;">
