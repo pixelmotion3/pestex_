@@ -543,10 +543,8 @@ class FrontPageController extends Controller
 			];
 			// Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
 			if ($query) {
-				redirect()->route('FrontPage.thankYouFormScheduleInspection', [
-					'contact_info' => $contact_info,
-					'main' => $main
-				]);
+				redirect()->route('FrontPage.thankYouFormScheduleInspection')->with('contact_info', $contact_info)
+				->with('main', $main);;
 			}
 		} else {
 			return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
