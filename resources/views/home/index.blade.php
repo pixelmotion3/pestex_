@@ -275,7 +275,7 @@ setTimeout(function() {
                         <div class="tab-pane fade show active" id="modal-quote" role="tabpanel"
                             aria-labelledby="modal-quote-tab">
                             <div class="container bg-white">
-                                <form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.QuoteForm', [], false) }}">
+                                <form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormRequestQuote', [], false) }}">
                                     @csrf
                                     @method('post')
                                     <div class="row text-center" style="border-radius:50%;">
