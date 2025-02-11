@@ -278,6 +278,7 @@ setTimeout(function() {
                                 <form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormRequestQuote', [], false) }}">
                                     @csrf
                                     @method('post')
+									<input class="input-field rounded" type="hidden" value="QuoteForm" placeholder="type_form" name="type_form">
                                     <div class="row text-center" style="border-radius:50%;">
                                         <div class="col mt-3 border" style="margin-left:30px;margin-right:15px;"
                                             id="modal-home">
@@ -401,6 +402,7 @@ setTimeout(function() {
                                         @csrf
                                         @method('POST')
                                         <div class="row text-center">
+											<input class="input-field rounded" type="hidden" value="QuoteForm" placeholder="type_form" name="type_form">
                                             <h2 class="h2 mt-5 text-muted">{{ $main_screen[0]['quote-form-tab-2-h2'] }}</h2>
                                             <p class="mb-5 text-muted">{{ $main_screen[0]['quote-form-tab-2-p'] }}</p>
                                             <div class="input-container mt-3" style="width: 92%;">
@@ -703,6 +705,7 @@ setTimeout(function() {
 								@csrf
 								@method('post')
 								<div class="row" style="border-radius:50%;">
+									<input class="input-field rounded" type="hidden" value="QuoteForm" placeholder="type_form" name="type_form">
 									<div class="col mt-3 border change-customer" style="margin-left:30px;margin-right:15px;"
 										id="home_desktop">
 										{{-- <i class="fa fa-home mt-3" aria-hidden="true" style="font-size:4rem;"></i> --}}
@@ -836,6 +839,7 @@ setTimeout(function() {
 								<form class="form-contacts" method="post" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
 									@csrf
 									@method('POST')
+									<input class="input-field rounded" type="hidden" value="ContactForm" placeholder="type_form" name="type_form">
 									<div class="row">
 										<h2 class="h2 mt-5 text-muted">{{ $main_screen[0]['quote-form-tab-2-h2'] }}</h2>
 										<p>{{ $main_screen[0]['quote-form-tab-2-p'] }}</p>
@@ -918,6 +922,7 @@ setTimeout(function() {
 							<form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormRequestQuote', [], false) }}">
 								@csrf
 								@method('post')
+								<input class="input-field rounded" type="hidden" value="QuoteForm" placeholder="type_form" name="type_form">
 								<div class="row" style="border-radius:50%;">
 									<div class="col mt-3 border" style="margin-left:30px;margin-right:15px;"
 										id="home_mobile">
@@ -1048,6 +1053,7 @@ setTimeout(function() {
 									@csrf
 									@method('POST')
 									<div class="row">
+										<input class="input-field rounded" type="hidden" value="ContactForm" placeholder="type_form" name="type_form">
 										<h2 class="h2 mt-5 text-muted">{{ $main_screen[0]['quote-form-tab-2-h2'] }}</h2>
 										<p>{{ $main_screen[0]['quote-form-tab-2-p'] }}</p>
 										<div class="input-container mt-3" style="width: 92%;">
@@ -2237,6 +2243,7 @@ setTimeout(function() {
 								action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
 								@csrf
 								@method('POST')
+								<input class="input-field rounded" type="hidden" value="ContactForm" placeholder="type_form" name="type_form">
 								<div class="form-one__group">
 									<div class="form-one__control form-one__control--full">
 										<input type="text" name="name" placeholder="Nome *" required>
