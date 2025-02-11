@@ -1461,15 +1461,14 @@ class HomePageController extends Controller
 					'phone' => $request->input('phone'),
 					'confirmed' => true
 				]);
-				$contact_info = ContactInfo::where('id',1)->get()->toArray();
-				$main = SustainabilityPage::where('id', 1)->get()->toArray();
-				return view('thank-you.home', [
-					'contact_info' => $contact_info,
-					'main' => $main
-				]);
-			} else {
-				return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
+
 			}
+			$contact_info = ContactInfo::where('id',1)->get()->toArray();
+			$main = SustainabilityPage::where('id', 1)->get()->toArray();
+			return view('thank-you.home', [
+				'contact_info' => $contact_info,
+				'main' => $main
+			]);
 		}
 
 		if($request->input('type_form') == 'ContactFormService'){
@@ -1510,15 +1509,14 @@ class HomePageController extends Controller
 					'confirmed' => true
 				]);
 
-				$contact_info = ContactInfo::where('id',1)->get()->toArray();
-				$main = SustainabilityPage::where('id', 1)->get()->toArray();
-				return view('thank-you.home', [
-					'contact_info' => $contact_info,
-					'main' => $main
-				]);
-			} else {
-				return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
+
 			}
+			$contact_info = ContactInfo::where('id',1)->get()->toArray();
+			$main = SustainabilityPage::where('id', 1)->get()->toArray();
+			return view('thank-you.home', [
+				'contact_info' => $contact_info,
+				'main' => $main
+			]);
 		}
 
 		if($request->input('type_form') == 'ContactFormContactos'){
@@ -1559,15 +1557,14 @@ class HomePageController extends Controller
 					'confirmed' => true
 				]);
 
-				$contact_info = ContactInfo::where('id',1)->get()->toArray();
-				$main = SustainabilityPage::where('id', 1)->get()->toArray();
-				return view('thank-you.home', [
-					'contact_info' => $contact_info,
-					'main' => $main
-				]);
-			} else {
-				return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
+
 			}
+			$contact_info = ContactInfo::where('id',1)->get()->toArray();
+			$main = SustainabilityPage::where('id', 1)->get()->toArray();
+			return view('thank-you.home', [
+				'contact_info' => $contact_info,
+				'main' => $main
+			]);
 		}
 
 	}
