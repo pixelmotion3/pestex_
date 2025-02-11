@@ -397,7 +397,7 @@ setTimeout(function() {
                             <div class="tab-pane fade show active quote_border_inbox" id="modal-home" role="tabpanel"
                                 aria-labelledby="home-tab">
                                 <div class="container">
-                                    <form class="form-contacts" method="post" action="{{ 'https://sospragas.pt' . route('HomePage.ContactForm', [], false) }}">
+                                    <form class="form-contacts" method="post" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormRequestQuote', [], false) }}">
                                         @csrf
                                         @method('POST')
                                         <div class="row text-center">
