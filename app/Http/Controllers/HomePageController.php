@@ -1307,15 +1307,14 @@ class HomePageController extends Controller
 					'type' => $request->input('customer_type')
 				];
 				Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
-				$contact_info = ContactInfo::where('id',1)->get()->toArray();
-				$main = SustainabilityPage::where('id', 1)->get()->toArray();
-				return view('thank-you.home', [
-					'contact_info' => $contact_info,
-					'main' => $main
-				]);
-			} else {
-				return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
+
 			}
+			$contact_info = ContactInfo::where('id',1)->get()->toArray();
+			$main = SustainabilityPage::where('id', 1)->get()->toArray();
+			return view('thank-you.home', [
+				'contact_info' => $contact_info,
+				'main' => $main
+			]);
 		}
 
 		if($request->input('type_form') == 'ContactForm'){
@@ -1355,18 +1354,13 @@ class HomePageController extends Controller
 					'phone' => $request->input('phone'),
 					'confirmed' => true
 				]);
-				if ($query) {
-					$contact_info = ContactInfo::where('id',1)->get()->toArray();
-					$main = SustainabilityPage::where('id', 1)->get()->toArray();
-					return view('thank-you.home', [
-						'contact_info' => $contact_info,
-						'main' => $main
-					]);
-				}
-				return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
-			} else {
-				return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
 			}
+			$contact_info = ContactInfo::where('id',1)->get()->toArray();
+			$main = SustainabilityPage::where('id', 1)->get()->toArray();
+			return view('thank-you.home', [
+				'contact_info' => $contact_info,
+				'main' => $main
+			]);
 
 		}
 
@@ -1419,16 +1413,15 @@ class HomePageController extends Controller
 					'local' => $request->input('locality'),
 					'type' => $request->input('customer_type')
 				];
-				// Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
-				$contact_info = ContactInfo::where('id',1)->get()->toArray();
-				$main = SustainabilityPage::where('id', 1)->get()->toArray();
-				return view('thank-you.home', [
-					'contact_info' => $contact_info,
-					'main' => $main
-				]);
-			} else {
-				return redirect()->back()->with('error', 'Ocorreu um erro ao enviar o formulário. Tente novamente.');
+
 			}
+			Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
+			$contact_info = ContactInfo::where('id',1)->get()->toArray();
+			$main = SustainabilityPage::where('id', 1)->get()->toArray();
+			return view('thank-you.home', [
+				'contact_info' => $contact_info,
+				'main' => $main
+			]);
 		}
 
 		if($request->input('type_form') == 'ContactFormAbout'){
