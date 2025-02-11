@@ -294,7 +294,7 @@ setTimeout(function() {
                                 <p class="contact-two__content__text">
                                     {{ $contact_info[0]['p-3'] }}
                                 </p>
-                                <form class="contact-two__form form-one form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('ContactPage.ContactFormContactos', [], false) }}">
+                                <form class="contact-two__form form-one form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
 									@csrf
 									@method('post')
                                     <div class="form-one__group">
