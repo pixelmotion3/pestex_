@@ -409,10 +409,11 @@ setTimeout(function() {
                                 {{ $main_screen[0]['p-1'] }}
                             </p>
 
-                            <form class="contact-two__form form-one form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('ServicePage.ContactFormService', [], false) }}">
+                            <form class="contact-two__form form-one form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
 								@csrf
 								@method('post')
                                 <div class="form-one__group">
+									<input class="input-field rounded" type="hidden" value="ContactFormService" placeholder="type_form" name="type_form">
                                     <div class="form-one__control">
                                         <input type="text" name="name" placeholder="Nome">
                                     </div><!-- /.form-one__control -->

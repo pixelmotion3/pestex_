@@ -275,7 +275,7 @@ setTimeout(function() {
                         <div class="tab-pane fade show active" id="modal-quote" role="tabpanel"
                             aria-labelledby="modal-quote-tab">
                             <div class="container bg-white">
-                                <form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('FrontPage.QuoteForm', [], false) }}">
+                                <form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.QuoteForm', [], false) }}">
                                     @csrf
                                     @method('post')
                                     <div class="row text-center" style="border-radius:50%;">
@@ -397,7 +397,7 @@ setTimeout(function() {
                             <div class="tab-pane fade show active quote_border_inbox" id="modal-home" role="tabpanel"
                                 aria-labelledby="home-tab">
                                 <div class="container">
-                                    <form class="form-contacts" method="post" action="{{ 'https://sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
+                                    <form class="form-contacts" method="post" action="{{ 'https://sospragas.pt' . route('HomePage.ContactForm', [], false) }}">
                                         @csrf
                                         @method('POST')
                                         <div class="row text-center">
@@ -699,7 +699,7 @@ setTimeout(function() {
 				<div class="tab-content p-2 bg-white mb-5" id="myTabContent" style="border-radius:30px;">
 					<div class="tab-pane fade show active" id="quote" role="tabpanel" aria-labelledby="quote-tab">
 						<div class="container-fluid bg-white">
-							<form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('FrontPage.QuoteForm', [], false) }}">
+							<form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormRequestQuote', [], false) }}">
 								@csrf
 								@method('post')
 								<div class="row" style="border-radius:50%;">
@@ -833,7 +833,7 @@ setTimeout(function() {
 						<div class="tab-pane fade show active quote_border_inbox" id="home" role="tabpanel"
 							aria-labelledby="home-tab">
 							<div class="container-fluid">
-								<form class="form-contacts" method="post" action="{{ 'https://sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
+								<form class="form-contacts" method="post" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
 									@csrf
 									@method('POST')
 									<div class="row">
@@ -915,7 +915,7 @@ setTimeout(function() {
 				<div class="tab-content p-2 bg-white mb-5" id="myTabContent" style="border-radius:30px;">
 					<div class="tab-pane fade show active" id="quote2" role="tabpanel" aria-labelledby="quote-tab">
 						<div class="container-fluid bg-white">
-							<form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('FrontPage.QuoteForm', [], false) }}">
+							<form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormRequestQuote', [], false) }}">
 								@csrf
 								@method('post')
 								<div class="row" style="border-radius:50%;">
@@ -1044,7 +1044,7 @@ setTimeout(function() {
 						<div class="tab-pane fade show active quote_border_inbox" id="home" role="tabpanel"
 							aria-labelledby="home-tab">
 							<div class="container-fluid">
-								<form class="form-contacts" method="post" action="{{ 'https://sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
+								<form class="form-contacts" method="post" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
 									@csrf
 									@method('POST')
 									<div class="row">
@@ -2234,7 +2234,7 @@ setTimeout(function() {
 								<!-- /.sec-title-four__title -->
 							</div><!-- /.sec-title-four -->
 							<form class="contact-three__form form-one form-contacts" method="POST"
-								action="{{ 'https://sospragas.pt' . route('FrontPage.ContactForm', [], false) }}">
+								action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
 								@csrf
 								@method('POST')
 								<div class="form-one__group">

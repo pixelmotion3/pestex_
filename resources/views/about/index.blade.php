@@ -665,10 +665,11 @@ setTimeout(function() {
                                     {{ $contact_info[0]['p-3'] }}
                                 </p>
                                 {{-- <form class="contact-two__form contact-form-validated form-one" action="inc/sendemail.php"> --}}
-								<form class="contact-two__form form-one form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('About.ContactFormAbout', [], false) }}">
+								<form class="contact-two__form form-one form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
 									@csrf
 									@method('post')
                                     <div class="form-one__group">
+										<input class="input-field rounded" type="hidden" value="ContactFormAbout" placeholder="type_form" name="type_form">
                                         <div class="form-one__control">
                                             <input type="text" name="name" placeholder="Nome">
                                         </div><!-- /.form-one__control -->

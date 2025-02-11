@@ -141,11 +141,11 @@ setTimeout(function() {
 					<nav class="main-header__nav main-menu">
 						<ul class="main-menu__list">
 							<li class="megamenu scrollToLink"><a href="/" class="font-semibold">Home</a></li>
-							<li class="scrollToLink"><a href="sobre" class="font-semibold">Sobre</a></li>
+							<li class="scrollToLink "><a href="sobre" class="font-semibold">Sobre</a></li>
 							<li class="scrollToLink"><a href="servicos" class="font-semibold">Serviços</a></li>
 							<li class="scrollToLink"><a href="sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
-							{{-- <li class="scrollToLink"><a href="equipamentos" class="font-semibold">Equipamentos</a></li> --}}
-							<li class="scrollToLink contactenos-link2 current"><a href="contactos" class="font-semibold">Contactos</a></li>
+							<li class="scrollToLink"><a href="equipamentos" class="font-semibold">Equipamentos</a></li>
+							<li class="scrollToLink contactenos-link2"><a href="contactos" class="font-semibold">Contactos</a></li>
 							<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
 						</ul>
 					</nav>
@@ -162,19 +162,6 @@ setTimeout(function() {
 			</div>
 		</header><!-- /.main-header -->
 
-		<section class="page-header" style="background-image:url({{ $main[0]['bg-img-2'] }});background-size: cover;background-repeat: no-repeat;background-position: center;">
-			<!-- /.page-header__bg -->
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="page-header__content">
-							<h1 class="page-header__title text-center">Fale Connosco</h1>
-						</div>
-					</div>
-				</div>
-			</div><!-- /.container -->
-		</section><!-- /.page-header -->
-
 
 
 
@@ -184,13 +171,9 @@ setTimeout(function() {
             <div class="container">
                 <div class="contact-two__wrapper">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-5">
                             <div class="contact-two__info">
-                                <div class="contact-two__info__shape" style="background-image: url({{ $contact_info[0]['bg-img'] }});"></div>
-                                <h4 class="contact-two__info__title"><b>{{ $contact_info[0]['h4'] }}</b></h4>
-                                <p class="contact-two__info__text">
-                                    {{ $contact_info[0]['p'] }}
-                                </p>
+
 								<style>
 									.contact-two__info__box__icon:hover {
 										.svg-phone {
@@ -281,39 +264,16 @@ setTimeout(function() {
                                 </div><!-- contact-social -->
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" style="display: flex;justify-content: center;align-items: center;">
                             <div class="contact-two__content">
-                                <div class="sec-title-two text-left">
-                                    <h6 class="sec-title-two__tagline">
-										<span class="sec-title__tagline__left"></span>
-										<b><i>{{ $contact_info[0]['h-6'] }}</i></b>
-										<span class="sec-title__tagline__right"></span>
-									</h6><!-- /.sec-title-two__tagline -->
-                                    <h3 class="sec-title-two__title"><b>{{ $contact_info[0]['h-3'] }}</b></h3><!-- /.sec-title-two__title -->
+                                <div class="sec-title-two text-center">
+                                    <a href="/" style="display: flex;justify-content: center;">
+										<img src="/assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="384">
+									</a>
+                                    <h3 class="sec-title-two__title"><b>Obrigado pelo seu contacto</b></h3><!-- /.sec-title-two__title -->
                                 </div><!-- /.sec-title-two -->
-                                <p class="contact-two__content__text">
-                                    {{ $contact_info[0]['p-3'] }}
-                                </p>
-                                <form class="contact-two__form form-one form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('ContactPage.ContactFormContactos', [], false) }}">
-									@csrf
-									@method('post')
-                                    <div class="form-one__group">
-										<input class="input-field rounded" type="hidden" value="ContactFormContactos" placeholder="type_form" name="type_form">
-                                        <div class="form-one__control">
-                                            <input type="text" name="name" placeholder="Nome">
-                                        </div><!-- /.form-one__control -->
-                                        <div class="form-one__control">
-                                            <input type="email" name="email" placeholder="Email">
-                                        </div><!-- /.form-one__control -->
-                                        <div class="form-one__control form-one__control--full">
-                                            <textarea name="message" placeholder="Mensagem"></textarea><!-- /# -->
-                                        </div><!-- /.form-one__control -->
-										<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
-                                        <div class="form-one__control form-one__control--full">
-                                            <button type="submit" class="tolak-btn2"><b>enviar</b><span></span></button>
-                                        </div><!-- /.form-one__control -->
-                                    </div><!-- /.form-one__group -->
-                                </form>
+                                <p class="contact-two__content__text text-center">Em breve, um dos nossos especialistas irá entrar em contacto consigo.</p>
+
                             </div>
                         </div>
                     </div>
@@ -321,28 +281,28 @@ setTimeout(function() {
             </div><!-- /.container -->
         </section><!-- /.contact -->
 
-		<section class="mail-section">
+		<section class="mail-section" style="margin-top: 7rem;">
             <div class="container">
                 <div class="mail-section__wrapper">
                     <div class="row">
                         <div class="col-md-12 col-lg-4"></div>
                         <div class="col-md-5 col-lg-3">
-                            <div class="mail-section__content">
+                            {{-- <div class="mail-section__content">
                                 <h3 class="mail-section__content__title">Subscreva a Newsletter</h3>
                                 <p class="mail-section__content__text">Fique a par de todas as novidades!</p>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="col-md-7 col-lg-5">
-                            <form  method="POST" action="{{ 'https://sospragas.pt' . route('NewsLatterPage.NewsletterForm', [], false) }}">
+                            {{-- <form  method="POST" action="{{ 'https://sospragas.pt' . route('NewsLatterPage.NewsletterForm', [], false) }}">
 								@csrf
 								@method('post')
                                 <input type="text" name="EMAIL" placeholder="Insira o seu email">
                                 <button type="submit" class="tolak-btn">
                                     <b>Subscrever</b><span></span>
-                                    <span class="sr-only">Subscrever</span><!-- /.sr-only -->
+                                    <span class="sr-only">Subscrever</span>
                                 </button>
-                            </form><!-- /.footer-widget__newsletter mc-form -->
-                            <div class="mc-form__response"></div><!-- /.mc-form__response -->
+                            </form> --}}
+                            <div class="mc-form__response"></div>
                         </div>
                     </div>
                 </div>

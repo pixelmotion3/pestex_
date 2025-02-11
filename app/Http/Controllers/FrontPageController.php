@@ -665,6 +665,8 @@ class FrontPageController extends Controller
 			}
 		}
 
+
+
 	}
 
 	public function ScheduleInspection(Request $request, schedule_inspection $schedule_inspection)
