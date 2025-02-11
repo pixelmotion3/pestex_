@@ -1311,7 +1311,7 @@ class HomePageController extends Controller
 			}
 			$contact_info = ContactInfo::where('id',1)->get()->toArray();
 			$main = SustainabilityPage::where('id', 1)->get()->toArray();
-			return view('thank-you.home', [
+			return view('thank-you.tkhome', [
 				'contact_info' => $contact_info,
 				'main' => $main
 			]);
@@ -1357,7 +1357,7 @@ class HomePageController extends Controller
 			}
 			$contact_info = ContactInfo::where('id',1)->get()->toArray();
 			$main = SustainabilityPage::where('id', 1)->get()->toArray();
-			return view('thank-you.home', [
+			return view('thank-you.tkhome', [
 				'contact_info' => $contact_info,
 				'main' => $main
 			]);
@@ -1418,7 +1418,7 @@ class HomePageController extends Controller
 			Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
 			$contact_info = ContactInfo::where('id',1)->get()->toArray();
 			$main = SustainabilityPage::where('id', 1)->get()->toArray();
-			return view('thank-you.home', [
+			return view('thank-you.tkhome', [
 				'contact_info' => $contact_info,
 				'main' => $main
 			]);
@@ -1465,7 +1465,7 @@ class HomePageController extends Controller
 			}
 			$contact_info = ContactInfo::where('id',1)->get()->toArray();
 			$main = SustainabilityPage::where('id', 1)->get()->toArray();
-			return view('thank-you.home', [
+			return view('thank-you.tkhome', [
 				'contact_info' => $contact_info,
 				'main' => $main
 			]);
@@ -1513,7 +1513,7 @@ class HomePageController extends Controller
 			}
 			$contact_info = ContactInfo::where('id',1)->get()->toArray();
 			$main = SustainabilityPage::where('id', 1)->get()->toArray();
-			return view('thank-you.home', [
+			return view('thank-you.tkhome', [
 				'contact_info' => $contact_info,
 				'main' => $main
 			]);
@@ -1561,7 +1561,7 @@ class HomePageController extends Controller
 			}
 			$contact_info = ContactInfo::where('id',1)->get()->toArray();
 			$main = SustainabilityPage::where('id', 1)->get()->toArray();
-			return view('thank-you.home', [
+			return view('thank-you.tkhome', [
 				'contact_info' => $contact_info,
 				'main' => $main
 			]);
