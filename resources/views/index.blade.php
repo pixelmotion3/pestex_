@@ -38,7 +38,19 @@ setTimeout(function() {
     <!-- Meta Keywords (opcional, com pouco uso atualmente) -->
     <meta name="keywords" content="{{ $main_screen[0]['meta-keywords'] }}">
 
+	<!-- Google Tag Manager -->
 
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+	})(window,document,'script','dataLayer','GTM-TH5LZNRJ');</script>
+
+	<!-- End Google Tag Manager -->
 	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon01.png">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -76,8 +88,6 @@ setTimeout(function() {
     <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
     <!-- template styles -->
     <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
-
-	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16760451034"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-16760451034'); </script>
 
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -2244,6 +2254,13 @@ setTimeout(function() {
 
 	   });
    </script>
+   <!-- Google Tag Manager (noscript) -->
+
+	<noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-TH5LZNRJ
+
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	<!-- End Google Tag Manager (noscript) -->
 </body>
 
 </html>
