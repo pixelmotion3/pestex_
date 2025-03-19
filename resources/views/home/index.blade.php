@@ -31,7 +31,39 @@ setTimeout(function() {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 	<title>{{ $main_screen[0]['meta-title'] }}</title>
+<!-- Meta Pixel Code -->
 
+<script>
+
+	!function(f,b,e,v,n,t,s)
+
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+
+	n.queue=[];t=b.createElement(e);t.async=!0;
+
+	t.src=v;s=b.getElementsByTagName(e)[0];
+
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+
+	'https://connect.facebook.net/en_US/fbevents.js');
+
+	fbq('init', '1312432023376979');
+
+	fbq('track', 'PageView');
+
+	</script>
+
+	<noscript><img height="1" width="1" style="display:none"
+
+	src=https://www.facebook.com/tr?id=1312432023376979&ev=PageView&noscript=1
+
+	/></noscript>
+
+	<!-- End Meta Pixel Code -->
 	<!-- Meta Description -->
     <meta name="description" content="{{ $main_screen[0]['meta-desctiption'] }}">
 
