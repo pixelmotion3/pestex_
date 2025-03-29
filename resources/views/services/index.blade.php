@@ -500,7 +500,7 @@ setTimeout(function() {
 							</a>
 						</div>
 						<div class="footer-widget__image">
-							<img src="/assets/images/footer-img.webp" alt="tolak">
+							<img src="assets/images/footer-img.webp" alt="tolak">
 						</div>
 					</div><!-- /.footer-widget -->
 				</div><!-- /.col-md-6 -->
