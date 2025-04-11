@@ -230,7 +230,7 @@ setTimeout(function() {
                                 <form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
 									@csrf
 									@method('post')
-									<input type="hidden" name="type_form" value="type_form">
+									<input type="hidden" name="type_form" value="ContactForm">
                                     <div class="form-group">
                                         <input type="text" name="name" placeholder="Nome" required>
                                     </div>
