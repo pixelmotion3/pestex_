@@ -204,41 +204,28 @@ setTimeout(function() {
         <!-- /.page-header__bg -->
         <div class="container-fluid" style="background-image: url(../{{$service_detail['img'] }});border-bottom-left-radius:150px;background-size: cover;background-repeat: no-repeat;background-position: center;">
             <div class="row">
-                <div class="col-md-12"
+                <div class="col-md-8"
                     >
                     <div class="page-header__content text-center">
                         <h1 class="text-white h1"><b>{{$service_detail['a']}}</b></h1>
                     </div>
                 </div>
-            </div>
-        </div><!-- /.container -->
-    </section><!-- /.page-header -->
-    <section class="service-details">
-        <div class="container">
-            <div class="row gutter-y-30">
-                <div class="col-md-12 col-xl-4">
-                    <div class="service-details__sidebar">
-                        <h3 class="service-details__sidebar__title">{{$service_detail_show['h3']}}</h3><!-- /.service-sidebar__title -->
-                        <ul class="list-unstyled service-details__sidebar__nav">
-                            @foreach ($services as $service)
-                                <li><a href="/servicos/{{ $service['slug'] }}">{{ $service['a']}}</a></li>
-                            @endforeach
-                        </ul><!-- /.list-unstyled service-sidebar__nav -->
-                    </div><!-- /.sidebar -->
+				<div class="col-md-3">
 					<div class="service-sidebar" style="margin-top: 20px">
                         <div class="sidebar-widget banner-widget">
                             <div class="widget-content"
-                                style="background-image: url(../{{ $service_detail_show['img-1'] }});">
+                                style="">
                                 <div class="shape" style="background-image: url(../{{ $service_detail_show['img-2'] }});">
                                 </div>
                                 <div class="content-box">
 
                                     <h3>{{ $service_detail_show['h3-1'] }}</h3>
                                     {{-- <a href="contact.html" class="theme-btn-two">{{ $service_detail_show['a'] }}</a> --}}
-									<a href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn thm-btn2" type="submit" name="quote_form">LIGAR AGORA</a>
+									<a href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn thm-btn2" type="submit" name="quote_form" style="width: 50%;">LIGAR AGORA</a>
+									<p style="margin-top: 1rem;font-size: 19px;color: white;">geral@sospragas.pt &nbsp | &nbsp 219 747 343</p>
                                 </div>
                             </div>
-                            <div class="form-inner">
+                            <div class="form-inner" style="text-align: center;">
                                 <h3>{{ $service_detail_show['h3-2'] }}</h3>
                                 <form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
 									@csrf
@@ -264,13 +251,29 @@ setTimeout(function() {
                                     </div>
 									<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
                                     <div class="form-group message-btn">
-                                        <button type="submit" class="btn mt-2 theme-btn-three thm-btn contactenos-btn">ENVIAR MENSAGEM</button>
+                                        <button type="submit" class="btn mt-2 theme-btn-three thm-btn ">ENVIAR MENSAGEM</button>
                                     </div>
-
                                 </form>
                             </div>
                         </div>
                     </div>
+				</div>
+            </div>
+        </div><!-- /.container -->
+    </section><!-- /.page-header -->
+    <section class="service-details">
+        <div class="container">
+            <div class="row gutter-y-30">
+                <div class="col-md-12 col-xl-4">
+                    <div class="service-details__sidebar">
+                        <h3 class="service-details__sidebar__title">{{$service_detail_show['h3']}}</h3><!-- /.service-sidebar__title -->
+                        <ul class="list-unstyled service-details__sidebar__nav">
+                            @foreach ($services as $service)
+                                <li><a href="/servicos/{{ $service['slug'] }}">{{ $service['a']}}</a></li>
+                            @endforeach
+                        </ul><!-- /.list-unstyled service-sidebar__nav -->
+                    </div><!-- /.sidebar -->
+
                 </div><!-- /.col-md-12 col-lg-4 -->
                 <div class="col-lg-8 col-md-12 col-sm-12 content-side">
 					<div class="service-details-content container-fluid">
