@@ -10596,7 +10596,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 /*--------------------------------------------------------------
-# Skill 
+# Skill
 --------------------------------------------------------------*/
 .skill-one {
   position: relative;
@@ -15590,6 +15590,7 @@ body.megamenu-popup-active .mobile-nav__content {
   position: relative;
   background-color: var(--tolak-gray, #ecf2fc);
   padding: 30px 30px 35px;
+  height: 100%;
 }
 .service-details__sidebar__title {
   text-transform: capitalize;
