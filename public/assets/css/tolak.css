@@ -15724,6 +15724,7 @@ body.megamenu-popup-active .mobile-nav__content {
   position: relative;
   background-color: #eeeeee;
   padding: 30px 30px 35px;
+  height: 100%;
 }
 .service-details__sidebar__title {
   /* text-transform: capitalize; */
