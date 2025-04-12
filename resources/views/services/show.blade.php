@@ -173,7 +173,7 @@ setTimeout(function() {
 			<div class="main-header__inner">
 				<div class="main-header__logo">
 					<a href="/">
-						<img src="/assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
+						<img src="/assets/images/logo-dark.png" alt="SOS Pragas" width="284">
 					</a>
 
 				</div><!-- /.main-header__logo -->
