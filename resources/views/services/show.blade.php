@@ -204,13 +204,13 @@ setTimeout(function() {
         <!-- /.page-header__bg -->
         <div class="container-fluid" style="background-image: url(../{{$service_detail['img'] }});border-bottom-left-radius:150px;background-size: cover;background-repeat: no-repeat;background-position: center;">
             <div class="row">
-                <div class="col-md-8"
+                <div class="col-md-7"
                     >
                     <div class="page-header__content text-center">
                         <h1 class="text-white h1"><b>{{$service_detail['a']}}</b></h1>
                     </div>
                 </div>
-				<div class="col-md-3">
+				<div class="col-md-4">
 					<div class="service-sidebar" style="margin-top: 20px">
                         <div class="sidebar-widget banner-widget">
                             <div class="widget-content"
@@ -221,7 +221,7 @@ setTimeout(function() {
 
                                     <h3>{{ $service_detail_show['h3-1'] }}</h3>
                                     {{-- <a href="contact.html" class="theme-btn-two">{{ $service_detail_show['a'] }}</a> --}}
-									<a href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn thm-btn2" type="submit" name="quote_form" style="width: 50%;">LIGAR AGORA</a>
+									<a href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn thm-btn2" type="submit" name="quote_form" style="width: 50%;">LIGAR JÁ</a>
 									<p style="margin-top: 1rem;font-size: 19px;color: white;">geral@sospragas.pt &nbsp | &nbsp 219 747 343</p>
                                 </div>
                             </div>
@@ -250,9 +250,10 @@ setTimeout(function() {
                                     <div class="form-group">
                                         <textarea name="message" placeholder="Mensagem..."></textarea>
                                     </div>
-									<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
+									{{-- <div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div> --}}
                                     <div class="form-group message-btn">
-                                        <button type="submit" class="btn mt-2 theme-btn-three thm-btn ">ENVIAR MENSAGEM</button>
+										<button class="btn btn-primary h-captcha" style="border-radius: 0px !important;" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" data-callback="onSubmit"> ENVIAR MENSAGEM</button>
+                                        {{-- <button type="submit" class="btn mt-2 theme-btn-three thm-btn ">ENVIAR MENSAGEM</button> --}}
                                     </div>
                                 </form>
                             </div>
