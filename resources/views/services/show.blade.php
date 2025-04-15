@@ -211,7 +211,7 @@ setTimeout(function() {
                     </div>
                 </div>
 				<div class="col-md-4">
-					<div class="service-sidebar" style="margin-top: 20px">
+					<div class="service-sidebar" style="margin-top: 20px;margin-top: 20px;margin-bottom: 20px;">
                         <div class="sidebar-widget banner-widget">
                             <div class="widget-content"
                                 style="">
