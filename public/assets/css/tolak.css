@@ -692,7 +692,7 @@ h6 {
 .scroll-to-top.show {
   opacity: 1;
   visibility: visible;
-  bottom: 70px;
+  bottom: 150px;
 }
 
 /* post paginations */
