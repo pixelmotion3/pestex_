@@ -125,6 +125,38 @@ setTimeout(function() {
         <script src="{{ asset('assets/js/script.js') }}"></script>
     </head>
     <body class="custom-cursor" style="overflow-x: hidden;">
+		<style>
+			.whatsapp-float {
+				position: fixed;
+				width: 60px;
+				height: 60px;
+				bottom: 20px;
+				right: 20px;
+				/* background-color: #25d366; */
+				color: #fff;
+				border-radius: 50%;
+				text-align: center;
+				box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+				z-index: 1000;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: transform 0.3s ease;
+			}
+
+			.whatsapp-float:hover {
+				transform: scale(1.1);
+			}
+
+			.whatsapp-float img {
+				width: 100%;
+				height: 100%;
+			}
+
+		</style>
+		<a href="https://wa.me/+351937824676" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
+			<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+		</a>
 		<div class="custom-cursor__cursor"></div>
 		<div class="custom-cursor__cursor-two"></div>
 
