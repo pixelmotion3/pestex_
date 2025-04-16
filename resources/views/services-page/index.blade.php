@@ -462,7 +462,7 @@
                                                         @isset($services)
                                                             @foreach ($services as $index => $service)
                                                             <div class="col-md-12 mt-5"
-                                                                data-wow-delay="100ms">
+                                                                data-wow-delay="500ms">
                                                                 <div class="service-one__item text-center" style="height: 800px;">
                                                                     <div class="service-one__item__image">
                                                                         <img src="{{ $service['img'] }}"

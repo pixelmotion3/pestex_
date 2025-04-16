@@ -190,7 +190,7 @@
             </div><!-- /.sec-title-two -->
             <div class="row gutter-y-30">
                 <div class="col-lg-6 col-md-6" style="border-radius:30px;">
-                    <div class="service-two__item wow fadeInUp" data-wow-delay="100ms">
+                    <div class="service-two__item wow fadeInUp" data-wow-delay="500ms">
                         <div class="service-two__item__thumb">
                             <img src="{{ $main[0]['img'] }}" alt="tolak">
                         </div>

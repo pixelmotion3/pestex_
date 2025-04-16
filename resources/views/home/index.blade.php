@@ -1169,7 +1169,7 @@ setTimeout(function() {
 							</div>
 						</div><!-- feature-item -->
 					</div>
-					<div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="100ms">
+					<div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="500ms">
 						<div class="feature-one__item text-center">
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
@@ -1216,7 +1216,7 @@ setTimeout(function() {
 					<!-- /.sec-title__title -->
 				</div><!-- /.sec-title -->
 				<div class="row mt-5">
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms" style="margin-bottom: 40px;">
+					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="500ms" style="margin-bottom: 40px;">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-1'] }}')" id="">
 								<img src="{{ $best_service[0]['best-service-img-path-1'] }}" alt="tolak">
@@ -1793,7 +1793,7 @@ setTimeout(function() {
 
 			<div class="auto-container">
 				<div class="row">
-					<div class="col-xl-6 wow fadeInLeft" data-wow-delay="300ms">
+					<div class="col-xl-6 wow fadeInLeft" data-wow-delay="1000ms">
 						<div class="about-one__content">
 							<div class="text-titles mb-5">
 								<h6 class="sec-title__tagline text-titles">{{ $about_now[0]['about-now-h6'] }}</h6>
@@ -1888,7 +1888,7 @@ setTimeout(function() {
 								<a href="/sustentabilidade" class="why-choose-two__item__rm"><span class="icon-right-arrow"></span></a>
 							</div><!-- why-choose-two__item -->
 							<div class="why-choose-two__item why-choose-two__item--reverse wow fadeInUp rounded-lg"
-								data-wow-delay="100ms">
+								data-wow-delay="500ms">
 								<div class="why-choose-two__item__icon rounded-lg">
 									<img src="assets/images/metodos_preventivos.png" alt="metodos preventivos">
 								</div>
@@ -2174,7 +2174,7 @@ setTimeout(function() {
 				<div class="cta-two__bg"
 					style="background-image: url({{ $call_now[0]['call-now-bg-image-2-path'] }});">
 					<div class="row">
-						<div class="col-lg-4 wow fadeInLeft" data-wow-delay="100ms">
+						<div class="col-lg-4 wow fadeInLeft" data-wow-delay="600ms">
 							<div class="cta-two__info"
 								style="background-image: url({{ $call_now[0]['call-now-bg-image-3-path'] }});">
 								<div class="cta-two__info__icon">

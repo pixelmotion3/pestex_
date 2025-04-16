@@ -706,7 +706,7 @@
                 </div><!-- item -->
             </div>
             <!-- formulario -->
-            <div class="main-slider-one__project fadeInUp text-center shadow-lg bg-light" data-wow-delay="200ms"
+            <div class="main-slider-one__project fadeInUp text-center shadow-lg bg-light" data-wow-delay="600ms"
                 style="min-width: 400px;z-index:1;border-radius:30px;">
                 <ul class="nav nav-tabs " id="myTab" role="tablist">
                     <li class="nav-item w-50 rounded-top-lg" role="presentation">
@@ -952,7 +952,7 @@
         </section>
         <section>
             <div class="main-slider-one__project2 fadeInUp text-center shadow-lg bg-light" style="display: none;"
-                data-wow-delay="200ms" style="min-width: 400px;z-index:1;border-radius:30px;">
+                data-wow-delay="600ms" style="min-width: 400px;z-index:1;border-radius:30px;">
                 <ul class="nav nav-tabs " id="myTab" role="tablist">
                     <li class="nav-item w-50 rounded-top-lg" role="presentation">
                         <button class="nav-link active w-100 text-muted p-4" id="quote-tab" data-bs-toggle="tab"
@@ -1219,7 +1219,7 @@
                             </div>
                         </div><!-- feature-item -->
                     </div>
-                    <div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="100ms">
+                    <div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="400ms">
                         <div class="feature-one__item text-center">
                             <div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
                             <div class="service-one__item__icon">
@@ -1235,7 +1235,7 @@
                             </div>
                         </div><!-- feature-item -->
                     </div>
-                    <div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="200ms">
+                    <div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="600ms">
                         <div class="feature-one__item text-center">
                             <div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
                             <div class="service-one__item__icon">
@@ -1263,7 +1263,7 @@
                     <!-- /.sec-title__title -->
                 </div><!-- /.sec-title -->
                 <div class="row mt-5">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                         <div class="service-one__item text-center">
                             <div class="service-one__item__image">
                                 <img src="{{ $best_service[0]['best-service-img-path-1'] }}" alt="tolak">
@@ -1290,7 +1290,7 @@
                             </div>
                         </div><!-- /.service-card-one -->
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="150ms">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="450ms">
                         <div class="service-one__item text-center">
                             <div class="service-one__item__image">
                                 <img src="{{ $best_service[0]['best-service-img-path-2'] }}" alt="tolak">
@@ -1317,7 +1317,7 @@
                             </div>
                         </div><!-- /.service-card-one -->
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="600ms">
                         <div class="service-one__item text-center">
                             <div class="service-one__item__image">
                                 <img src="{{ $best_service[0]['best-service-img-path-3'] }}" alt="tolak">
@@ -1496,7 +1496,7 @@
 
             <div class="auto-container">
                 <div class="row">
-                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="300ms">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="1000ms">
                         <div class="about-one__content">
                             <div class="text-titles">
                                 <h6 class="sec-title__tagline text-titles">{{ $about_now[0]['about-now-h6'] }}</h6>
@@ -1588,7 +1588,7 @@
                                 <h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-1'] }}</h4>
                             </div><!-- why-choose-two__item -->
                             <div class="why-choose-two__item why-choose-two__item--reverse wow fadeInUp rounded-lg"
-                                data-wow-delay="100ms">
+                                data-wow-delay="500ms">
                                 <div class="why-choose-two__item__icon rounded-lg">
                                     <img src="assets/images/metodos_preventivos.png" alt="metodos preventivos">
                                 </div>
@@ -1886,7 +1886,7 @@
                 <div class="cta-two__bg"
                     style="background-image: url({{ $call_now[0]['call-now-bg-image-2-path'] }});">
                     <div class="row">
-                        <div class="col-lg-4 wow fadeInLeft" data-wow-delay="100ms">
+                        <div class="col-lg-4 wow fadeInLeft" data-wow-delay="600ms">
                             <div class="cta-two__info"
                                 style="background-image: url({{ $call_now[0]['call-now-bg-image-3-path'] }});">
                                 <div class="cta-two__info__icon">
