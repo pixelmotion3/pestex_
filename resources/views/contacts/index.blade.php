@@ -216,8 +216,8 @@ setTimeout(function() {
             <div class="container">
                 <div class="contact-two__wrapper">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <div class="contact-two__info">
+                        <div class="col-lg-5">
+                            <div class="contact-two__info wow slideInLeft animated" style="visibility: visible; animation-name: slideInLeft;">
                                 <div class="contact-two__info__shape" style="background-image: url({{ $contact_info[0]['bg-img'] }});"></div>
                                 <h4 class="contact-two__info__title"><b>{{ $contact_info[0]['h4'] }}</b></h4>
                                 <p class="contact-two__info__text">

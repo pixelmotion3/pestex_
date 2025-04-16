@@ -1131,7 +1131,7 @@
 						<h3 class="sec-title-two__title"><b>{{ $testimonial_say[0]['testimonial-say-h2'] }}</b></h3>
 						<!-- /.sec-title-two__title -->
 					</div>
-					<div class="testimonials-one__carousel tolak-owl__carousel tolak-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+					<div class="testimonials-one__carousel tolak-owl__carousel tolak-owl__carousel--basic-nav owl-carousel owl-theme wow fadeInUp animated" data-wow-delay="200ms" style="margin-bottom: 40px; visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;" data-owl-options='{
 				"items": 1,
 				"margin": 0,
 				"loop": false,
@@ -1459,7 +1459,7 @@
         </section> -->
         <section>
             <div class="container mt-5 mb-5">
-                <div class="row">
+                <div class="row wow slideInRight animated" style="visibility: visible; animation-name: slideInRight;">
                     <div class="col-md-6 services-background-image w-100 h-75" style="background-image: url({{ $video_contact[0]['contact-us-bg-img'] }});border-radius:30px;">
 
                     </div>

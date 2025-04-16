@@ -449,7 +449,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab fadeInUp animated" id="management-solutions" style="border:none;">
+                <div class="tab slideInLeft animated" style="visibility: visible; animation-name: slideInLeft;" id="management-solutions" style="border:none;">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="tab-one__thumb">
@@ -516,7 +516,7 @@
 
                     <h3 class="sec-title-three__title">{{ $main[0]['h3-9'] }}</h3><!-- /.sec-title-three__title -->
                 </div><!-- /.sec-title-three -->
-                <div class="row"
+                <div class="row wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;"
                     data-owl-options='{
                             "items": 1,
                             "margin": 30,

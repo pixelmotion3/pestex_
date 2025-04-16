@@ -2208,9 +2208,18 @@ div#mCSB_1_container{
 }
 
 .image_block_2 .image-box .image img{
-  width: 100%;
-  border-radius: 5px;
+	width: 100%;
+	border-radius: 5px;
+	animation: fadeIn 2s ease-in-out forwards;
 }
+@keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
 
 .image_block_2 .image-box .image-content{
   position: absolute;

@@ -1418,7 +1418,7 @@
                                     <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                                         <div class="image_block_2">
                                             <div class="image-box">
-                                                <figure class="image"><img src="{{ $our_service_1[0]['img-1'] }}"
+                                                <figure class="image wow slideInRight animated" style="visibility: visible; animation-name: slideInRight;"><img src="{{ $our_service_1[0]['img-1'] }}"
                                                         alt=""></figure>
                                                 <div class="image-content" style="background-color: #002255">
                                                     <h6>VISITA GRÁTIS</h6>
@@ -1468,7 +1468,7 @@
                                     <div class="col-lg-6 col-md-12 col-sm-12 image-column">
                                         <div class="image_block_2">
                                             <div class="image-box">
-                                                <figure class="image"><img src="{{ $our_service_2[0]['img-2'] }}"
+                                                <figure class="image wow slideInRight animated" style="visibility: visible; animation-name: slideInRight;"><img src="{{ $our_service_2[0]['img-2'] }}"
                                                         alt=""></figure>
                                                 <div class="image-content" style="background-color: #002255">
                                                     <h6>VISITA GRÁTIS</h6>
@@ -1631,7 +1631,7 @@
                     <h3 class="sec-title-two__title"><b>{{ $testimonial_say[0]['testimonial-say-h2'] }}</b></h3>
                     <!-- /.sec-title-two__title -->
                 </div>
-                <div class="testimonials-one__carousel tolak-owl__carousel tolak-owl__carousel--basic-nav owl-carousel owl-theme"
+                <div class="testimonials-one__carousel tolak-owl__carousel tolak-owl__carousel--basic-nav owl-carousel owl-theme wow fadeInUp animated" data-wow-delay="200ms" style="margin-bottom: 40px; visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;"
                     data-owl-options='{
 			"items": 1,
 			"margin": 0,
@@ -1665,7 +1665,7 @@
 			}'>
                     @isset($reviews)
                         @foreach ($reviews as $review)
-                            <div class="testimonials-card">
+						<div class="testimonials-card">
                                 <div class="testimonials-card__bg"></div><!-- /.testimonials-card__bg -->
                                 <div class="testimonials-card__bg-hover">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 371 430">
@@ -1971,7 +1971,7 @@
 
         <section id="contact-us">
             <div class="container mt-3 mb-5">
-                <div class="row">
+                <div class="row wow slideInRight animated" style="visibility: visible; animation-name: slideInRight;">
                     <div class="col-md-6 services-background-image w-100 h-75"
                         style="background-image: url({{ $video_contact[0]['contact-us-bg-img'] }});border-radius:30px;">
 
