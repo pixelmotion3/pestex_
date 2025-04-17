@@ -324,8 +324,8 @@ img {
   display: inline-block;
   max-width: 100%;
   height: auto;
-  transition-delay: 900s;
-  transition-timing-function: ease-in-out;
+  transition-delay: 2s;
+  transition-timing-function: linear;
   transition-duration: 3000s;
   transition-property: all;
 }

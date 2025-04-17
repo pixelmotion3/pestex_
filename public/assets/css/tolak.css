@@ -12509,7 +12509,7 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 .main-slider-one__project {
   position: absolute;
-  left: 1200px;
+  left: 70%;
   top: 48px;
   z-index: 1;
   background-color: #ff6600;

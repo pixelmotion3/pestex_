@@ -741,7 +741,8 @@ setTimeout(function() {
 				</div><!-- item -->
 			</div>
 			<!-- formulario -->
-			<div class="main-slider-one__project fadeInUp text-center shadow-lg bg-light" data-wow-delay="200ms"
+			<div class="main-slider-one__project wow slideInRight animated text-center shadow-lg bg-light" data-wow-delay="600ms"
+			 {{-- wow slideInRight animated" style="visibility: visible; animation-name: slideInRight;" --}}
 				style="min-width: 400px;z-index:1;border-radius:30px;">
 				<ul class="nav nav-tabs " id="myTab" role="tablist">
 					<li class="nav-item w-50 rounded-top-lg" role="presentation">
@@ -1185,7 +1186,7 @@ setTimeout(function() {
 					<!-- /.sec-title__title -->
 				</div><!-- /.sec-title -->
 				<div class="row gutter-y-30 mt-5">
-					<div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="2000ms">
+					<div class="col-md-4 wow slideInUp animated animated" style="visibility: visible; animation-name: slideInUp;">
 						<div class="feature-one__item text-center">
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
@@ -1200,7 +1201,7 @@ setTimeout(function() {
 							</div>
 						</div><!-- feature-item -->
 					</div>
-					<div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="2000ms">
+					<div class="col-md-4 wow slideInUp animated animated" style="visibility: visible; animation-name: slideInUp;">
 						<div class="feature-one__item text-center">
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
@@ -1215,7 +1216,7 @@ setTimeout(function() {
 							</div>
 						</div><!-- feature-item -->
 					</div>
-					<div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="2000ms">
+					<div class="col-md-4 wow slideInUp animated animated" style="visibility: visible; animation-name: slideInUp;">
 						<div class="feature-one__item text-center">
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
@@ -1247,7 +1248,7 @@ setTimeout(function() {
 					<!-- /.sec-title__title -->
 				</div><!-- /.sec-title -->
 				<div class="row mt-5">
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="500ms" style="margin-bottom: 40px;">
+					<div class="col-lg-4 col-md-6 wow slideInUp animated" style="visibility: visible; animation-name: slideInUp; margin-bottom: 40px;" style="">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-1'] }}')" id="">
 								<img src="{{ $best_service[0]['best-service-img-path-1'] }}" alt="tolak">
@@ -1319,7 +1320,7 @@ setTimeout(function() {
 							</div>
 						</div><!-- /.service-card-one -->
 					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="150ms" style="margin-bottom: 40px;">
+					<div class="col-lg-4 col-md-6 wow slideInUp animated" style="visibility: visible; animation-name: slideInUp; margin-bottom: 40px;" style="">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-2'] }}')" >
 								<img src="{{ $best_service[0]['best-service-img-path-2'] }}" alt="tolak">
@@ -1391,7 +1392,7 @@ setTimeout(function() {
 							</div>
 						</div><!-- /.service-card-one -->
 					</div>
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" style="margin-bottom: 40px;">
+					<div class="col-lg-4 col-md-6 wow slideInUp animated" style="visibility: visible; animation-name: slideInUp; margin-bottom: 40px;" style="">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-3'] }}')" >
 								<img src="{{ $best_service[0]['best-service-img-path-3'] }}" alt="tolak">
@@ -1464,8 +1465,7 @@ setTimeout(function() {
 							</div>
 						</div><!-- /.service-card-one -->
 					</div>
-
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" style="margin-bottom: 40px;">
+					<div class="col-lg-4 col-md-6 wow slideInUp animated" style="visibility: visible; animation-name: slideInUp; margin-bottom: 40px;" style="">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-4'] }}')" >
 								<img src="{{ $best_service[0]['best-service-img-path-4'] }}" alt="tolak">
@@ -1537,8 +1537,7 @@ setTimeout(function() {
 							</div>
 						</div><!-- /.service-card-one -->
 					</div>
-
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" style="margin-bottom: 40px;">
+					<div class="col-lg-4 col-md-6 wow slideInUp animated" style="visibility: visible; animation-name: slideInUp; margin-bottom: 40px;" style="">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-5'] }}')" >
 								<img src="{{ $best_service[0]['best-service-img-path-5'] }}" alt="tolak">
@@ -1610,8 +1609,7 @@ setTimeout(function() {
 							</div>
 						</div><!-- /.service-card-one -->
 					</div>
-
-					<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms" style="margin-bottom: 40px;">
+					<div class="col-lg-4 col-md-6 wow slideInUp animated" style="visibility: visible; animation-name: slideInUp; margin-bottom: 40px;" style="">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-6'] }}')" >
 								<img src="{{ $best_service[0]['best-service-img-path-6'] }}" alt="tolak">
@@ -1685,7 +1683,7 @@ setTimeout(function() {
 						</div><!-- /.service-card-one -->
 					</div>
 
-					 <div class="col-lg-12 col-md-12 text-center text-white mt-5" style="max-width:250px;margin-left:auto;margin-right:auto;">
+					<div class="col-lg-12 col-md-12 text-center text-white mt-5" style="max-width:250px;margin-left:auto;margin-right:auto;">
 						<a type="button" href="servicos" class="btn btn-primary">
 							<b>VER MAIS</b>
 						</a>
