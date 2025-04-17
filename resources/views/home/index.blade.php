@@ -1185,7 +1185,7 @@ setTimeout(function() {
 					<!-- /.sec-title__title -->
 				</div><!-- /.sec-title -->
 				<div class="row gutter-y-30 mt-5">
-					<div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="00ms">
+					<div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="2000ms">
 						<div class="feature-one__item text-center">
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
@@ -1200,7 +1200,7 @@ setTimeout(function() {
 							</div>
 						</div><!-- feature-item -->
 					</div>
-					<div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="500ms">
+					<div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="2000ms">
 						<div class="feature-one__item text-center">
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
@@ -1215,7 +1215,7 @@ setTimeout(function() {
 							</div>
 						</div><!-- feature-item -->
 					</div>
-					<div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="200ms">
+					<div class="col-md-4 wow fadeInUp mt-5" data-wow-delay="2000ms">
 						<div class="feature-one__item text-center">
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">

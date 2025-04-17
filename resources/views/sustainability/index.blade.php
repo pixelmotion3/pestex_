@@ -223,7 +223,7 @@
 	<!-- Service Start -->
     <section>
         <div class="container">
-            <div class="row">
+            <div class="row  wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;">
                 <div class="col-md-12" style="margin-bottom: 150px">
                     <h1 class="h1 mt-5 text-center text-body">{{ $main[0]['h1'] }}</h1>
                     <p class="p mt-3 text-center" style="font-size: large;">{!! $main[0]['p'] !!}</p>
@@ -244,7 +244,7 @@
                 <h3 class="sec-title-four__title">{{ $main[0]['h3'] }}</h3><!-- /.sec-title-four__title -->
             </div><!-- /.sec-title-four -->
             <ul class="list-unstyled tab-buttons tab-one__tab-title">
-                <li data-tab="#technological-solutions" class="tab-btn active-btn technological-solutions">
+                <li data-tab="#technological-solutions" class="tab-btn active-btn technological-solutions wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;">
                     <div class="tab-one__tab-title__trinagle"></div>
                     <div class="tab-one__tab-title__icon"><i class="tolak-icons-two-solutions-three"></i></div>
                     <h3 class="tab-one__tab-title__text">{{ $main[0]['h3-1'] }}</h3>
@@ -258,7 +258,7 @@
 
                     </div>
                 </li>
-                <li data-tab="#competitor-research" class="tab-btn competitor-research">
+                <li data-tab="#competitor-research" class="tab-btn competitor-research wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;">
                     <div class="tab-one__tab-title__trinagle"></div>
                     <div class="tab-one__tab-title__icon"><i class=" tolak-icons-two-lightbulb-dollar"></i></div>
                     <h3 class="tab-one__tab-title__text">{{ $main[0]['h3-2'] }}</h3>
@@ -271,7 +271,7 @@
                     <div class="tab-one__tab-title__shape" style="background-image: url({{ $main[0]['img-1'] }});">
                     </div>
                 </li>
-                <li data-tab="#consulting-planning" class="tab-btn consulting-planning">
+                <li data-tab="#consulting-planning" class="tab-btn consulting-planning wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;">
                     <div class="tab-one__tab-title__trinagle"></div>
                     <div class="tab-one__tab-title__icon"><i class="tolak-icons-two-solution-1"></i></div>
                     <h3 class="tab-one__tab-title__text">{{ $main[0]['h3-3'] }}</h3>
@@ -284,7 +284,7 @@
                     <div class="tab-one__tab-title__shape" style="background-image: url({{ $main[0]['img-2'] }});">
                     </div>
                 </li>
-                <li data-tab="#management-solutions" class="tab-btn management-solutions">
+                <li data-tab="#management-solutions" class="tab-btn management-solutions wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;">
                     <div class="tab-one__tab-title__trinagle"></div>
                     <div class="tab-one__tab-title__icon"><i class=" tolak-icons-two-cybersecurity"></i></div>
                     <h3 class="tab-one__tab-title__text">{{ $main[0]['h3-4'] }}</h3>
@@ -449,7 +449,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab slideInLeft animated" style="visibility: visible; animation-name: slideInLeft;" id="management-solutions" style="border:none;">
+                <div class="tab slideInLeft animated" style="visibility: visible; animation-name: slideInLeft;border:none;" id="management-solutions">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="tab-one__thumb">
