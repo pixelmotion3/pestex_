@@ -30,7 +30,7 @@ class DashboardController extends Controller
 		// print_r($page_views);
 		// echo "</pre>";
 		// die();
-		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		$contactos_news = contact_forms::where('viewed', null)->orderBy('created_at', 'desc')->get()->toArray();
 		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
 		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
 		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
