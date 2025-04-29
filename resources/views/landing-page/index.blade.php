@@ -212,11 +212,11 @@
 							</a>
 						</li>
 
-						<li class="menu-item">
+						{{-- <li class="menu-item">
 							<a href="/hardware-page" class="menu-link">
 								<div data-i18n="Equipamentos">Equipamentos</div>
 							</a>
-						</li>
+						</li> --}}
 
 						<li class="menu-item">
 							<a href="/forms-page" class="menu-link">

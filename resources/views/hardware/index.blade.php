@@ -544,7 +544,7 @@
 					<li class=""><a href="/sobre">Sobre</a></li>
 					<li class=""><a href="/servicos">Serviços</a></li>
 					<li class=""><a href="/sustentabilidade">Sustentabilidade</a></li>
-					<li class=""><a href="/equipamentos">Equipamentos</a></li>
+					{{-- <li class=""><a href="/equipamentos">Equipamentos</a></li> --}}
 					<li class=""><a href="/contactos">Contactos</a></li>
 					<li class=""><a href="/contato">Contacta-nos</a></li>
 				</ul>
