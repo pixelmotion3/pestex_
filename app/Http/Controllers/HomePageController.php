@@ -1354,6 +1354,14 @@ class HomePageController extends Controller
 					'phone' => $request->input('phone'),
 					'confirmed' => true
 				]);
+				$data = [
+					'name' => $request->input('name'),
+					'email' => $request->input('email'),
+					'phone' => $request->input('phone'),
+					'local' => '',
+					'type' => ''
+				];
+				Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
 			}
 			$contact_info = ContactInfo::where('id',1)->get()->toArray();
 			$main = SustainabilityPage::where('id', 1)->get()->toArray();
@@ -1405,16 +1413,13 @@ class HomePageController extends Controller
 			// Verifica se a verificação foi bem-sucedida
 			$success = $responseJson['success'];
 
-			if ($success) {
-				$data = [
-					'name' => $request->input('name'),
-					'email' => $request->input('email'),
-					'phone' => $request->input('phone'),
-					'local' => $request->input('locality'),
-					'type' => $request->input('customer_type')
-				];
-
-			}
+			$data = [
+				'name' => $request->input('name'),
+				'email' => $request->input('email'),
+				'phone' => $request->input('phone'),
+				'local' => $request->input('locality'),
+				'type' => $request->input('customer_type')
+			];
 			Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
 			$contact_info = ContactInfo::where('id',1)->get()->toArray();
 			$main = SustainabilityPage::where('id', 1)->get()->toArray();
@@ -1463,6 +1468,14 @@ class HomePageController extends Controller
 				]);
 
 			}
+			$data = [
+				'name' => $request->input('name'),
+				'email' => $request->input('email'),
+				'phone' => $request->input('phone'),
+				'local' => '',
+				'type' => ''
+			];
+			Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
 			$contact_info = ContactInfo::where('id',1)->get()->toArray();
 			$main = SustainabilityPage::where('id', 1)->get()->toArray();
 			return view('thank-you.tkhome', [
@@ -1511,6 +1524,14 @@ class HomePageController extends Controller
 
 
 			}
+			$data = [
+				'name' => $request->input('name'),
+				'email' => $request->input('email'),
+				'phone' => $request->input('phone'),
+				'local' => '',
+				'type' => ''
+			];
+			Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
 			$contact_info = ContactInfo::where('id',1)->get()->toArray();
 			$main = SustainabilityPage::where('id', 1)->get()->toArray();
 			return view('thank-you.tkhome', [
@@ -1559,6 +1580,14 @@ class HomePageController extends Controller
 
 
 			}
+			$data = [
+				'name' => $request->input('name'),
+				'email' => $request->input('email'),
+				'phone' => $request->input('phone'),
+				'local' => '',
+				'type' => ''
+			];
+			Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
 			$contact_info = ContactInfo::where('id',1)->get()->toArray();
 			$main = SustainabilityPage::where('id', 1)->get()->toArray();
 			return view('thank-you.tkhome', [
