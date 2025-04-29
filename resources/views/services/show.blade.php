@@ -959,6 +959,27 @@ setTimeout(function() {
             });
         });
     </script>
+
+	<!-- chart js -->
+	<script src="{{ asset('assets/vendors/chart/chart.js') }}"></script>
+	<script src="{{ asset('assets/vendors/chart/custome-chart.js') }}"></script>
+
+	<!-- template js -->
+	<script src="{{ asset('assets/js/tolak.js') }}"></script>
+
+	<!-- sanito -->
+
+	<script src="{{ asset('assets/js/jquery.js') }}"></script>
+	<script src="{{ asset('assets/js/popper.min.js') }}"></script>
+	<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+	<script src="{{ asset('assets/js/owl.js') }}"></script>
+	<script src="{{ asset('assets/js/wow.js') }}"></script>
+	<script src="{{ asset('assets/js/validation.js') }}"></script>
+	<script src="{{ asset('assets/js/jquery.fancybox.js') }}"></script>
+	<script src="{{ asset('assets/js/appear.js') }}"></script>
+	<script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
+	<script src="{{ asset('assets/js/scrollbar.js') }}"></script>
+	<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
 	<script>
 		$(".form-contacts").on('submit', (e) => {
 		   // e.target é o formulário que disparou o evento
