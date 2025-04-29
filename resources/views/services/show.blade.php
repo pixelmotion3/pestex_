@@ -258,7 +258,13 @@ setTimeout(function() {
                             </div>
                             <div class="form-inner" style="text-align: center;">
                                 <h3>{{ $service_detail_show['h3-2'] }}</h3>
-                                <form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
+								<script>
+									function onSubmit(token) {
+										document.getElementById('form1').submit();
+									}
+
+								</script>
+                                <form class="form-contacts" id="form1" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
 									@csrf
 									@method('post')
 									<input type="hidden" name="type_form" value="ContactForm">
