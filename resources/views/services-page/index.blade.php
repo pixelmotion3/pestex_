@@ -1949,18 +1949,18 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-12 mt-5">
+
+ 													<div class="col-12 mt-5">
                                                         <label for="validationCustom01"
                                                             class="form-label"
-                                                            style="float:left;">H1</label>
+                                                            style="float:left;">Title</label>
                                                         <input
-                                                            value="{{ '${element.title1}' }}"
+                                                            value="{{ '${element.title2}' }}"
                                                             type="text"
                                                             class="form-control"
                                                             id="validationCustom01"
-                                                            name="title-1" required>
+                                                            name="title-2" >
                                                     </div>
-
                                                     <div class="col-12 mt-5">
                                                         <label for="validationCustom01"
                                                             class="form-label"
@@ -1970,41 +1970,21 @@
                                                             type="text"
                                                             class="form-control"
                                                             id="validationCustom01"
-                                                            name="p" required>
+                                                            name="p" >
                                                     </div>
-                                                    <div class="col-12 mt-5">
-                                                        <label for="validationCustom01"
-                                                            class="form-label"
-                                                            style="float:left;">Title</label>
-                                                        <input
-                                                            value="{{ '${element.title2}' }}"
-                                                            type="text"
-                                                            class="form-control"
-                                                            id="validationCustom01"
-                                                            name="title-2" required>
-                                                    </div>
-                                                    <div class="col-12 mt-5">
-                                                        <label for="validationCustom01"
-                                                            class="form-label"
-                                                            style="float:left;">P-1</label>
-                                                        <input
-                                                            value="{{ '${element.p1}' }}"
-                                                            type="text"
-                                                            class="form-control"
-                                                            id="validationCustom01"
-                                                            name="p-1" required>
-                                                    </div>
+
+
                                                     <div class="col-12 mt-5">
                                                         <input type="hidden"
                                                             class="form-control"
                                                             id="validationCustom01"
                                                             value="{{ '${element.service_id}' }}"
-                                                            name="service_id" required>
+                                                            name="service_id" >
                                                         <input type="hidden"
                                                             class="form-control"
                                                             id="validationCustom01"
                                                             value="{{ '${element.id}' }}"
-                                                            name="method_id" required>
+                                                            name="method_id">
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button"

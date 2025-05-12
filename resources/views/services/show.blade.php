@@ -326,7 +326,7 @@ setTimeout(function() {
 								<p>{{ $service_detail['p-3'] }}</p>
 							</div>
 						</div>
-						@if ($service_detail['id'] != 13 && $service_detail['id'] != 17 && $service_detail['id'] != 20 && $service_detail['id'] != 18 && $service_detail['id'] != 21)
+						{{-- @if ($service_detail['id'] != 13 && $service_detail['id'] != 17 && $service_detail['id'] != 20 && $service_detail['id'] != 18 && $service_detail['id'] != 21)
 							<h3 class="h3" style="color:black;"><b>Métodos</b></h3>
 							<div class="feature-three__carousel tolak-owl__carousel tolak-owl__carousel--basic-nav owl-theme row"
 								data-owl-options='{
@@ -355,21 +355,58 @@ setTimeout(function() {
 										<div class="feature-three__item wow fadeInUp" data-wow-delay="500ms">
 											<div class="feature-three__item__image rounded-box">
 												<img src="../{{ $method['img'] }}" alt="tolak">
-												{{-- <a href="about.html" class="feature-three__item__link"><i
-														class="icon-right-arrow"></i></a> --}}
+												<a href="about.html" class="feature-three__item__link"><i
+														class="icon-right-arrow"></i></a>
 											</div>
 											<div class="feature-three__item__normal">
 												<h4 class="feature-three__item__normal__title">{{ $method['title1'] }}</h4>
-												{{-- <p class="feature-three__item__normal__text">{{ $method['p'] }}</p> --}}
+												<p class="feature-three__item__normal__text">{{ $method['p'] }}</p>
 											</div>
 											<div class="feature-three__item__hover">
 												<div class="feature-three__item__icon">
 													<span class="icon-cooperation"></span>
 												</div>
 												<h4 class="feature-three__item__title">{{ $method['title2'] }}</h4>
-												{{-- <p class="feature-three__item__text">{{ $method['p1'] }}</p> --}}
+												<p class="feature-three__item__text">{{ $method['p1'] }}</p>
 											</div>
-										</div><!-- feature-item -->
+										</div>
+									</div>
+								@endforeach
+							</div>
+						@endif --}}
+
+						@if ($service_detail['id'] != 13 && $service_detail['id'] != 17 && $service_detail['id'] != 20 && $service_detail['id'] != 18 && $service_detail['id'] != 21)
+							<h3 class="h3" style="color:black;"><b>Métodos</b></h3>
+							<div class="row">
+								@foreach ($methods as $method)
+									<div class="item col-12">
+										<div class="feature-three__item wow fadeInUp" data-wow-delay="500ms">
+											<div class="row">
+												<div class="col-3">
+													<div style="background-image: url('../{{ $method['img'] }}');width: 100%;height: 9rem;background-size: cover;border-radius: 20px;"></div>
+													{{-- <img src="../{{ $method['img'] }}" alt="tolak"> --}}
+												</div>
+												<div class=" rounded-box col-7">
+													<h4 class="feature-three__item__title">{{ $method['title2'] }}</h4>
+													<p class="feature-three__item__text">{{ $method['p'] }}</p>
+												</div>
+											</div>
+										</div>
+										{{-- <div class="feature-three__item wow fadeInUp" data-wow-delay="500ms">
+											<div class="feature-three__item__image rounded-box">
+												<img src="../{{ $method['img'] }}" alt="tolak">
+											</div>
+											<div class="feature-three__item__normal">
+												<h4 class="feature-three__item__normal__title">{{ $method['title1'] }}</h4>
+											</div>
+											<div class="feature-three__item__hover">
+												<div class="feature-three__item__icon">
+													<span class="icon-cooperation"></span>
+												</div>
+												<h4 class="feature-three__item__title">{{ $method['title2'] }}</h4>
+
+											</div>
+										</div> --}}
 									</div>
 								@endforeach
 							</div>
@@ -959,50 +996,50 @@ setTimeout(function() {
             });
         });
     </script>
-<script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}"></script>
-<script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}"></script>
-<script src="{{ asset('assets/vendors/jarallax/jarallax.min.js') }}"></script>
-<script src="{{ asset('assets/vendors/jquery-ui/jquery-ui.js') }}"></script>
-<script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
-<script src="{{ asset('assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
-<script src="{{ asset('assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js') }}"></script>
-<script src="{{ asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}"></script>
-<script src="{{ asset('assets/vendors/jquery-validate/jquery.validate.min.js') }}"></script>
-<script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script>
-<script src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}"></script>
-<script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}"></script>
-{{-- <script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script> --}}
-<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
-<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
-<script src="{{ asset('assets/vendors/simpleParallax/simpleParallax.min.js') }}"></script>
-<script src="{{ asset('assets/vendors/imagesloaded/imagesloaded.min.js') }}"></script>
-<script src="{{ asset('assets/vendors/isotope/isotope.js') }}"></script>
-<script src="{{ asset('assets/vendors/countdown/countdown.min.js') }}"></script>
-<script src="{{ asset('assets/vendors/jquery-circleType/jquery.circleType.js') }}"></script>
-{{-- <script src="{{ asset('assets/vendors/jquery-lettering/jquery.lettering.min.js') }}"></script> --}}
-{{-- <script src="{{ asset('assets/vendors/progress-bar/knob.js') }}"></script> --}}
+	<script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jarallax/jarallax.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-ui/jquery-ui.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-validate/jquery.validate.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}"></script>
+	<script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}"></script>
+	{{-- <script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script> --}}
+	<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
+	<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
+	<script src="{{ asset('assets/vendors/simpleParallax/simpleParallax.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/imagesloaded/imagesloaded.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/isotope/isotope.js') }}"></script>
+	<script src="{{ asset('assets/vendors/countdown/countdown.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-circleType/jquery.circleType.js') }}"></script>
+	{{-- <script src="{{ asset('assets/vendors/jquery-lettering/jquery.lettering.min.js') }}"></script> --}}
+	{{-- <script src="{{ asset('assets/vendors/progress-bar/knob.js') }}"></script> --}}
 
-<!-- chart js -->
-<script src="{{ asset('assets/vendors/chart/chart.js') }}"></script>
-<script src="{{ asset('assets/vendors/chart/custome-chart.js') }}"></script>
+	<!-- chart js -->
+	<script src="{{ asset('assets/vendors/chart/chart.js') }}"></script>
+	<script src="{{ asset('assets/vendors/chart/custome-chart.js') }}"></script>
 
-<!-- template js -->
-<script src="{{ asset('assets/js/tolak.js') }}"></script>
+	<!-- template js -->
+	<script src="{{ asset('assets/js/tolak.js') }}"></script>
 
-<!-- sanito -->
+	<!-- sanito -->
 
-<script src="{{ asset('assets/js/jquery.js') }}"></script>
-<script src="{{ asset('assets/js/popper.min.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('assets/js/owl.js') }}"></script>
-<script src="{{ asset('assets/js/wow.js') }}"></script>
-<script src="{{ asset('assets/js/validation.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.fancybox.js') }}"></script>
-<script src="{{ asset('assets/js/appear.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
-<script src="{{ asset('assets/js/scrollbar.js') }}"></script>
-<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
+	<script src="{{ asset('assets/js/jquery.js') }}"></script>
+	<script src="{{ asset('assets/js/popper.min.js') }}"></script>
+	<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+	<script src="{{ asset('assets/js/owl.js') }}"></script>
+	<script src="{{ asset('assets/js/wow.js') }}"></script>
+	<script src="{{ asset('assets/js/validation.js') }}"></script>
+	<script src="{{ asset('assets/js/jquery.fancybox.js') }}"></script>
+	<script src="{{ asset('assets/js/appear.js') }}"></script>
+	<script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
+	<script src="{{ asset('assets/js/scrollbar.js') }}"></script>
+	<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
 	<script>
 		$(".form-contacts").on('submit', (e) => {
 		   // e.target é o formulário que disparou o evento
