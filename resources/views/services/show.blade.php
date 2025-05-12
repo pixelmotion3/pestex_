@@ -381,12 +381,11 @@ setTimeout(function() {
 								@foreach ($methods as $method)
 									<div class="item col-12">
 										<div class="feature-three__item wow fadeInUp" data-wow-delay="500ms">
-											<div class="row">
-												<div class="col-3">
-													<div style="background-image: url('../{{ $method['img'] }}');width: 100%;height: 9rem;background-size: cover;border-radius: 20px;"></div>
-													{{-- <img src="../{{ $method['img'] }}" alt="tolak"> --}}
+											<div class="row flex-column flex-md-row">
+												<div class="col-12 col-md-3 mb-3 mb-md-0">
+													<div style="background-image: url('../{{ $method['img'] }}'); width: 100%; height: 9rem; background-size: cover; border-radius: 20px;"></div>
 												</div>
-												<div class=" rounded-box col-7">
+												<div class="col-12 col-md-7">
 													<h4 class="feature-three__item__title">{{ $method['title2'] }}</h4>
 													<p class="feature-three__item__text">{{ $method['p'] }}</p>
 												</div>
@@ -445,7 +444,8 @@ setTimeout(function() {
             </div><!-- /.sec-title-four -->
             <div class="row" style="display: flex;justify-content: center;">
                 <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; ">
-                    <div class="work-process-two__item text-center wow fadeInUp" data-wow-delay="500ms" style="display: flex;flex-direction: column;align-items: center;width: 260px;">
+                     <div class="work-process-two__item work-process-two__item--reverse text-center wow fadeInUp"
+                        data-wow-delay="500ms" style="display: flex;flex-direction: column;align-items: center;width: 260px;">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
                         <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-1'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text">
@@ -470,7 +470,8 @@ setTimeout(function() {
                     </div><!-- /.work-process-item -->
                 </div>
                 <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; ">
-                    <div class="work-process-two__item text-center wow fadeInUp" data-wow-delay="500ms" style="display: flex;flex-direction: column;align-items: center;width: 260px;">
+                     <div class="work-process-two__item work-process-two__item--reverse text-center wow fadeInUp"
+                        data-wow-delay="500ms" style="display: flex;flex-direction: column;align-items: center;width: 260px;">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
                         <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-3'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text" style="width: 80%;">
