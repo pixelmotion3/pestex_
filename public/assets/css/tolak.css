@@ -25039,7 +25039,7 @@ body.boxed-wrapper .main-slider-one__floating-text {
 .work-process-two__item--reverse {
   display: flex;
   flex-direction: column;
-  border-radius: 50% 50% 0 0;
+  border-radius: 0 0 0 0;
   margin-top: 0;
   margin-bottom: 23px;
   padding: 0 0 47px;

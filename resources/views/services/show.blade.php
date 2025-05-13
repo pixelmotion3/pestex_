@@ -443,9 +443,9 @@ setTimeout(function() {
                 <!-- /.sec-title-four__title -->
             </div><!-- /.sec-title-four -->
             <div class="row" style="display: flex;justify-content: center;">
-                <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; ">
+                <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; flex: 0 0 20%;">
                      <div class="work-process-two__item work-process-two__item--reverse text-center wow fadeInUp"
-                        data-wow-delay="500ms" style="display: flex;flex-direction: column;align-items: center;width: 260px;">
+                        data-wow-delay="500ms" style="display: flex;flex-direction: column;align-items: center;width: 270px;">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
                         <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-1'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text">
@@ -456,9 +456,9 @@ setTimeout(function() {
                         </div><!-- /.work-process-image -->
                     </div><!-- /.work-process-item -->
                 </div>
-                <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; ">
+                <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; flex: 0 0 20%;">
                     <div class="work-process-two__item work-process-two__item--reverse text-center wow fadeInUp"
-                        data-wow-delay="500ms" style="display: flex;flex-direction: column;align-items: center;width: 260px;">
+                        data-wow-delay="500ms" style="display: flex;flex-direction: column;align-items: center;width: 270px;">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
                         <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-2'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text">
@@ -469,9 +469,9 @@ setTimeout(function() {
                         </div><!-- /.work-process-image -->
                     </div><!-- /.work-process-item -->
                 </div>
-                <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; ">
+                <div class="col-xl-3 col-md-6" style="display: flex;justify-content: center; flex: 0 0 20%;">
                      <div class="work-process-two__item work-process-two__item--reverse text-center wow fadeInUp"
-                        data-wow-delay="500ms" style="display: flex;flex-direction: column;align-items: center;width: 260px;">
+                        data-wow-delay="500ms" style="display: flex;flex-direction: column;align-items: center;width: 270px;">
                         <div class="work-process-two__item__number"></div><!-- /.work-process-number -->
                         <h4 class="work-process-two__item__title">{{ $service_detail_show['h4-3'] }}</h4><!-- /.work-process-title -->
                         <p class="work-process-two__item__text" style="width: 80%;">
