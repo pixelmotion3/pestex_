@@ -338,7 +338,11 @@ setTimeout(function() {
                         <div class="tab-pane fade show active" id="modal-quote" role="tabpanel"
                             aria-labelledby="modal-quote-tab">
                             <div class="container bg-white">
-                                <form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormRequestQuote', [], false) }}">
+								@php
+									$domain = request()->getHost();
+									$baseUrl = $domain === 'sospragas.pt' ? 'https://sospragas.pt' : 'https://desinfestacoes.sospragas.pt';
+								@endphp
+                                <form class="form-contacts" method="POST" action="{{ $baseUrl . route('HomePage.thankYouFormRequestQuote', [], false) }}">
                                     @csrf
                                     @method('post')
 									<input class="input-field rounded" type="hidden" value="QuoteForm" placeholder="type_form" name="type_form">
@@ -461,7 +465,11 @@ setTimeout(function() {
                             <div class="tab-pane fade show active quote_border_inbox" id="modal-home" role="tabpanel"
                                 aria-labelledby="home-tab">
                                 <div class="container">
-                                    <form class="form-contacts" method="post" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormRequestQuote', [], false) }}">
+									@php
+										$domain = request()->getHost();
+										$baseUrl = $domain === 'sospragas.pt' ? 'https://sospragas.pt' : 'https://desinfestacoes.sospragas.pt';
+									@endphp
+                                    <form class="form-contacts" method="post" action="{{ $baseUrl . route('HomePage.thankYouFormRequestQuote', [], false) }}">
                                         @csrf
                                         @method('POST')
                                         <div class="row text-center">
@@ -765,7 +773,11 @@ setTimeout(function() {
 				<div class="tab-content p-2 bg-white mb-5" id="myTabContent" style="border-radius:30px;">
 					<div class="tab-pane fade show active" id="quote" role="tabpanel" aria-labelledby="quote-tab">
 						<div class="container-fluid bg-white">
-							<form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormRequestQuote', [], false) }}">
+							@php
+								$domain = request()->getHost();
+								$baseUrl = $domain === 'sospragas.pt' ? 'https://sospragas.pt' : 'https://desinfestacoes.sospragas.pt';
+							@endphp
+							<form class="form-contacts" method="POST" action="{{ $baseUrl . route('HomePage.thankYouFormRequestQuote', [], false) }}">
 								@csrf
 								@method('post')
 								<div class="row" style="border-radius:50%;">
@@ -900,7 +912,11 @@ setTimeout(function() {
 						<div class="tab-pane fade show active quote_border_inbox" id="home" role="tabpanel"
 							aria-labelledby="home-tab">
 							<div class="container-fluid">
-								<form class="form-contacts" method="post" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
+								@php
+									$domain = request()->getHost();
+									$baseUrl = $domain === 'sospragas.pt' ? 'https://sospragas.pt' : 'https://desinfestacoes.sospragas.pt';
+								@endphp
+								<form class="form-contacts" method="post" action="{{ $baseUrl . route('HomePage.thankYouFormContactForm', [], false) }}">
 									@csrf
 									@method('POST')
 									<input class="input-field rounded" type="hidden" value="ContactForm" placeholder="type_form" name="type_form">
@@ -983,7 +999,11 @@ setTimeout(function() {
 				<div class="tab-content p-2 bg-white mb-5" id="myTabContent" style="border-radius:30px;">
 					<div class="tab-pane fade show active" id="quote2" role="tabpanel" aria-labelledby="quote-tab">
 						<div class="container-fluid bg-white">
-							<form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormRequestQuote', [], false) }}">
+							@php
+								$domain = request()->getHost();
+								$baseUrl = $domain === 'sospragas.pt' ? 'https://sospragas.pt' : 'https://desinfestacoes.sospragas.pt';
+							@endphp
+							<form class="form-contacts" method="POST" action="{{ $baseUrl . route('HomePage.thankYouFormRequestQuote', [], false) }}">
 								@csrf
 								@method('post')
 								<input class="input-field rounded" type="hidden" value="QuoteForm" placeholder="type_form" name="type_form">
@@ -1113,7 +1133,11 @@ setTimeout(function() {
 						<div class="tab-pane fade show active quote_border_inbox" id="home" role="tabpanel"
 							aria-labelledby="home-tab">
 							<div class="container-fluid">
-								<form class="form-contacts" method="post" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
+								@php
+									$domain = request()->getHost();
+									$baseUrl = $domain === 'sospragas.pt' ? 'https://sospragas.pt' : 'https://desinfestacoes.sospragas.pt';
+								@endphp
+								<form class="form-contacts" method="post" action="{{ $baseUrl . route('HomePage.thankYouFormContactForm', [], false) }}">
 									@csrf
 									@method('POST')
 									<div class="row">
@@ -2300,8 +2324,12 @@ setTimeout(function() {
 									</br>{{ $video_contact[0]['contact-us-h2-part-2'] }}</h3>
 								<!-- /.sec-title-four__title -->
 							</div><!-- /.sec-title-four -->
+							@php
+								$domain = request()->getHost();
+								$baseUrl = $domain === 'sospragas.pt' ? 'https://sospragas.pt' : 'https://desinfestacoes.sospragas.pt';
+							@endphp
 							<form class="contact-three__form form-one form-contacts" method="POST"
-								action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
+								action="{{ $baseUrl . route('HomePage.thankYouFormContactForm', [], false) }}">
 								@csrf
 								@method('POST')
 								<input class="input-field rounded" type="hidden" value="ContactForm" placeholder="type_form" name="type_form">
@@ -2371,7 +2399,11 @@ setTimeout(function() {
                             </div>
                         </div>
                         <div class="col-md-7 col-lg-5">
-                            <form class="form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('NewsLatterPage.NewsletterForm', [], false) }}">
+							@php
+								$domain = request()->getHost();
+								$baseUrl = $domain === 'sospragas.pt' ? 'https://sospragas.pt' : 'https://desinfestacoes.sospragas.pt';
+							@endphp
+                            <form class="form-contacts" method="POST" action="{{ $baseUrl . route('NewsLatterPage.NewsletterForm', [], false) }}">
 								@csrf
 								@method('post')
                                 <input type="text" name="email" placeholder="Insira o seu email">

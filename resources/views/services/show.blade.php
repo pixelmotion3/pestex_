@@ -734,8 +734,12 @@ setTimeout(function() {
 							<p class="mail-section__content__text">Fique a par de todas as novidades!</p>
 						</div>
 					</div>
+					@php
+						$domain = request()->getHost();
+						$baseUrl = $domain === 'sospragas.pt' ? 'https://sospragas.pt' : 'https://desinfestacoes.sospragas.pt';
+					@endphp
 					<div class="col-md-7 col-lg-5">
-							<form method="POST" action="{{ 'https://sospragas.pt' . route('NewsLatterPage.NewsletterForm', [], false) }}">
+							<form method="POST" action="{{ $baseUrl . route('NewsLatterPage.NewsletterForm', [], false) }}">
 							@csrf
 							@method('post')
 							<input type="text" name="EMAIL" placeholder="Insira o seu email">

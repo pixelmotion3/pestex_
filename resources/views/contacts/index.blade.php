@@ -326,7 +326,11 @@ setTimeout(function() {
                                 <p class="contact-two__content__text">
                                     {{ $contact_info[0]['p-3'] }}
                                 </p>
-                                <form class="contact-two__form form-one form-contacts" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
+								@php
+									$domain = request()->getHost();
+									$baseUrl = $domain === 'sospragas.pt' ? 'https://sospragas.pt' : 'https://desinfestacoes.sospragas.pt';
+								@endphp
+                                <form class="contact-two__form form-one form-contacts" method="POST" action="{{ $baseUrl . route('HomePage.thankYouFormContactForm', [], false) }}">
 									@csrf
 									@method('post')
                                     <div class="form-one__group">
@@ -365,7 +369,11 @@ setTimeout(function() {
                             </div>
                         </div>
                         <div class="col-md-7 col-lg-5">
-                            <form  method="POST" action="{{ 'https://sospragas.pt' . route('NewsLatterPage.NewsletterForm', [], false) }}">
+							@php
+								$domain = request()->getHost();
+								$baseUrl = $domain === 'sospragas.pt' ? 'https://sospragas.pt' : 'https://desinfestacoes.sospragas.pt';
+							@endphp
+                            <form  method="POST" action="{{ $baseUrl . route('NewsLatterPage.NewsletterForm', [], false) }}">
 								@csrf
 								@method('post')
                                 <input type="text" name="EMAIL" placeholder="Insira o seu email">
