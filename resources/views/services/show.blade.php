@@ -264,7 +264,11 @@ setTimeout(function() {
 									}
 
 								</script>
-                                <form class="form-contacts" id="form1" method="POST" action="{{ 'https://sospragas.pt' . route('HomePage.thankYouFormContactForm', [], false) }}">
+								@php
+									$domain = request()->getHost();
+									$baseUrl = $domain === 'sospragas.pt' ? 'https://sospragas.pt' : 'https://desinfestacoes.sospragas.pt';
+								@endphp
+                                <form class="form-contacts" id="form1" method="POST" action="{{ $baseUrl . route('HomePage.thankYouFormContactForm', [], false) }}">
 									@csrf
 									@method('post')
 									<input type="hidden" name="type_form" value="ContactForm">
