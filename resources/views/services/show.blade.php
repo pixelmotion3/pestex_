@@ -548,7 +548,6 @@ setTimeout(function() {
 										<div class="accrodion active">
 											<div class="accrodion-title" id="accordion-{{$i+1}}">
 												<h4 id="accordion-icon-{{$i+1}}">
-													<i class="fa fa-check-circle"></i>
 													{{ $faq['question'] }}
 													<span class="accrodion-title__icon" style="color: #002255"></span><!-- /.accrodion-title__icon -->
 												</h4>
@@ -565,8 +564,7 @@ setTimeout(function() {
 										@if(($faq['service'] == "" || $faq['service'] == null || $faq['service'] == $service_detail['slug']))
 											<div class="accrodion">
 												<div class="accrodion-title" id="accordion-{{$i+1}}">
-													<h4>
-														<i class="fa fa-check-circle" id="accordion-icon-{{$i+1}}"></i>
+													<h4 id="accordion-icon-{{$i+1}}">
 														{{ $faq['question'] }}
 														<span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
 													</h4>
