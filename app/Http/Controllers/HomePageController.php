@@ -1292,6 +1292,9 @@ class HomePageController extends Controller
 
 		if($request->input('type_form') == 'QuoteForm'){
 			//dd($request->all());
+
+			$isBot = $request->input('user_email_check');
+			if($isBot != "") die();
 			$query = quote_forms::create([
 				'customer_type' => $request->input('customer_type'),
 				'products' => "",//$request->input('products'),

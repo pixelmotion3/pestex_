@@ -354,6 +354,9 @@ class FrontPageController extends Controller
 
     public function QuoteForm(Request $request, quote_forms $quote_form)
     {
+
+		$isBot = $request->input('user_email_check');
+		if($isBot != "") die();
         //dd($request->all());
         $query = quote_forms::create([
             'customer_type' => $request->input('customer_type'),
@@ -493,6 +496,8 @@ class FrontPageController extends Controller
 
 		if($request->input('type_form') == 'QuoteForm'){
 			//dd($request->all());
+			$isBot = $request->input('user_email_check');
+			if($isBot != "") die();
 			$query = quote_forms::create([
 				'customer_type' => $request->input('customer_type'),
 				'products' => "",//$request->input('products'),

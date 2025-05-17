@@ -773,6 +773,7 @@
                                         </svg>
                                         <p>Empresa</p>
                                     </div>
+									<input class="input-field rounded" type="hidden" value="" placeholder="type_form" name="user_email_check" id="user_email_check">
                                     <input class="input-field rounded" type="hidden" name="customer_type"
                                         id="customer_type" value="home" required>
                                     {{-- <div class="input-container mt-3" style="width: 92%;" required>

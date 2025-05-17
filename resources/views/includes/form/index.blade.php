@@ -19,6 +19,7 @@
             <form method="POST" action="{{ route('FrontPage.QuoteForm') }}">
                 @csrf
                 @method('post')
+				<input class="input-field rounded" type="hidden" value="" placeholder="type_form" name="user_email_check" id="user_email_check">
                 <div class="row text-center" style="border-radius:50%;">
                     <div class="col mt-3 border" style="margin-left:30px;margin-right:15px;" id="home">
                         <i class="fa fa-home mt-3" aria-hidden="true" style="font-size:4rem;"></i>
