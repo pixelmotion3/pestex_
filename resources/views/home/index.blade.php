@@ -2107,14 +2107,56 @@ setTimeout(function() {
 					</div>
 					<div class="col-lg-6">
 						<div class="funfact-one__accordion tolak-accrodion" data-grp-name="tolak-accrodion">
-							<div class="accrodion active">
+							@isset($faqs)
+								@foreach ($faqs as $index => $faq)
+									@if($index == 0 && ($faq['service'] == "" || $faq['service'] == null) || ($faq['screen'] == "" || $faq['screen'] == null || $faq['screen'] == 0 || $faq['screen'] == 1))
+										<div class="accrodion active">
+											<div class="accrodion-title" id="accordion-1">
+												<h4 id="accordion-icon-1">
+													<i class="fa fa-check-circle"></i>
+													{{ $faq['question'] }}
+													<span class="accrodion-title__icon" style="color: #002255"></span><!-- /.accrodion-title__icon -->
+												</h4>
+											</div><!-- /.accordian-title -->
+											<div class="accrodion-content">
+												<div class="inner">
+													<p>
+														{!! $faq['response'] !!}
+													</p>
+												</div><!-- /.accordian-content -->
+											</div>
+										</div><!-- /.accordian-item -->
+									@else
+										@if(($faq['service'] == "" || $faq['service'] == null) || ($faq['screen'] == "" || $faq['screen'] == null || $faq['screen'] == 0 || $faq['screen'] == 1))
+											<div class="accrodion">
+												<div class="accrodion-title" id="accordion-2">
+													<h4>
+														<i class="fa fa-check-circle" id="accordion-icon-2"></i>
+														{{ $faq['question'] }}
+														<span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+													</h4>
+												</div><!-- /.accordian-title -->
+												<div class="accrodion-content">
+													<div class="inner">
+														<p>
+															{!! $faq['response'] !!}
+														</p>
+													</div><!-- /.accordian-content -->
+												</div>
+											</div>
+										@endif
+									@endif
+
+								@endforeach
+							@endisset
+							{{-- <div class="accrodion active">
 								<div class="accrodion-title" id="accordion-1">
 									<h4 id="accordion-icon-1">
 										<i class="fa fa-check-circle"></i>
 										{{ $collapse[0]['collapse-h4-1'] }}
 										<span class="accrodion-title__icon" style="color: #002255"></span><!-- /.accrodion-title__icon -->
 									</h4>
-								</div><!-- /.accordian-title -->
+								</div>
 								<div class="accrodion-content">
 									<div class="inner">
 										<p>
@@ -2126,17 +2168,17 @@ setTimeout(function() {
 										<p>
 											{{ $collapse[0]['collapse-div-p-1-2'] }}
 										</p>
-									</div><!-- /.accordian-content -->
+									</div>
 								</div>
-							</div><!-- /.accordian-item -->
+							</div>
 							<div class="accrodion">
 								<div class="accrodion-title" id="accordion-2">
 									<h4>
 										<i class="fa fa-check-circle" id="accordion-icon-2"></i>
 										{{ $collapse[0]['collapse-h4-2'] }}
-										<span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+										<span class="accrodion-title__icon"></span>
 									</h4>
-								</div><!-- /.accordian-title -->
+								</div>
 								<div class="accrodion-content">
 									<div class="inner">
 										<p>
@@ -2148,17 +2190,17 @@ setTimeout(function() {
 										<p>
 											{{ $collapse[0]['collapse-div-p-2-2'] }}
 										</p>
-									</div><!-- /.accordian-content -->
+									</div>
 								</div>
-							</div><!-- /.accordian-item -->
+							</div>
 							<div class="accrodion">
 								<div class="accrodion-title" id="accordion-3">
 									<h4>
 										<i class="fa fa-check-circle" id="accordion-icon-3"></i>
 										{{ $collapse[0]['collapse-h4-3'] }}
-										<span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+										<span class="accrodion-title__icon"></span>
 									</h4>
-								</div><!-- /.accordian-title -->
+								</div>
 								<div class="accrodion-content">
 									<div class="inner">
 										<p>
@@ -2170,17 +2212,17 @@ setTimeout(function() {
 										<p>
 											{{ $collapse[0]['collapse-div-p-3-2'] }}
 										</p>
-									</div><!-- /.accordian-content -->
+									</div>
 								</div>
-							</div><!-- /.accordian-item -->
+							</div>
 							<div class="accrodion">
 								<div class="accrodion-title" id="accordion-4">
 									<h4>
 										<i class="fa fa-check-circle" id="accordion-icon-4"></i>
 										{{ $collapse[0]['collapse-h4-4'] }}
-										<span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+										<span class="accrodion-title__icon"></span>
 									</h4>
-								</div><!-- /.accordian-title -->
+								</div>
 								<div class="accrodion-content">
 									<div class="inner">
 										<p>
@@ -2192,17 +2234,17 @@ setTimeout(function() {
 										<p>
 											{{ $collapse[0]['collapse-div-p-4-2'] }}
 										</p>
-									</div><!-- /.accordian-content -->
+									</div>
 								</div>
-							</div><!-- /.accordian-item -->
+							</div>
 							<div class="accrodion">
 								<div class="accrodion-title" id="accordion-5">
 									<h4>
 										<i class="fa fa-check-circle"></i>
 										{{ $collapse[0]['collapse-h4-5'] }}
-										<span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+										<span class="accrodion-title__icon"></span>
 									</h4>
-								</div><!-- /.accordian-title -->
+								</div>
 								<div class="accrodion-content">
 									<div class="inner">
 										<p>
@@ -2211,11 +2253,11 @@ setTimeout(function() {
 										<p>
 											{{ $collapse[0]['collapse-div-p-5-1'] }}
 										</p>
-									</div><!-- /.accordian-content -->
+									</div>
 								</div>
-							</div><!-- /.accordian-item -->
+							</div> --}}
 						</div>
-					</div><!-- /.col-lg-6 -->
+					</div>
 				</div>
 			</div><!-- /.container -->
 		</section><!-- /.funfact-one -->

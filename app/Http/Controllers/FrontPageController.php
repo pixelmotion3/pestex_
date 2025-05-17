@@ -24,6 +24,7 @@ use Illuminate\Http\Request;
 use App\Models\quote_forms;
 use App\Models\contact_forms;
 use App\Models\ContactInfo;
+use App\Models\faq;
 use App\Models\News_letter;
 use App\Models\PageView;
 use App\Models\schedule_inspection;
@@ -112,6 +113,7 @@ class FrontPageController extends Controller
         $landing_11page = landing_11page::where('id',2)->get()->toArray();
 		$services = ServiceDetails::all();
 		$reviews = Review::all();
+		$faqs = faq::all();
 		$showCookieBanner = 0;
 		if(isset($_COOKIE['cookie_consent_sosp'])){
 			$showCookieBanner = $_COOKIE['cookie_consent_sosp'] == true ? 1 : 0;
@@ -150,7 +152,8 @@ class FrontPageController extends Controller
 			'contact_forms_news' => $contact_forms_news,
 			'news_letters_news' => $news_letters_news,
 			'quote_forms_news' => $quote_forms_news,
-			'showCookieBanner' => !$showCookieBanner
+			'showCookieBanner' => !$showCookieBanner,
+			'faqs' => $faqs
         ]);
     }
 

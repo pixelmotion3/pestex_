@@ -12,6 +12,7 @@ use App\Models\ServiceDetailsShow;
 use App\Models\Method;
 use App\Models\About_video;
 use App\Models\contact_forms;
+use App\Models\faq;
 use App\Models\PageView;
 use Illuminate\Http\Request;
 
@@ -58,6 +59,7 @@ class ServiceController extends Controller
         $service_detail_show = ServiceDetailsShow::findOrFail(1)->toArray();
         $methods = Method::where('service_id',$service_detail[0]['id'])->get();
         $services = ServiceDetails::all();
+		$faqs = faq::all();
         //dd($service_detail);
 
 		$routeName = 'servicos - '.$slug; // Nome da rota ou página que será monitorada
@@ -71,7 +73,8 @@ class ServiceController extends Controller
             'services' => $services,
             'service_detail' => $service_detail[0],
             'methods' => $methods,
-            'service_detail_show'=> $service_detail_show
+            'service_detail_show'=> $service_detail_show,
+			'faqs' => $faqs
         ]);
     }
 

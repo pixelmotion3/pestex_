@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateLandingPageRequest;
 use App\Mail\ContactMail;
 use App\Models\contact_forms;
 use App\Models\ContactInfo;
+use App\Models\faq;
 use App\Models\LandingPage;
 use App\Models\landing_2page;
 use App\Models\landing_3page;
@@ -49,6 +50,7 @@ class HomePageController extends Controller
 		$landing_12page = landing_12page::where('id', 2)->get()->toArray();
 		$landing_13page = landing_13page::where('id', 2)->get()->toArray();
 		$reviews = Review::all();
+		$faqs = faq::all();
 		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
 		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
 		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
@@ -75,7 +77,8 @@ class HomePageController extends Controller
 			'news_forms' => $news_forms,
 			'contact_forms_news' => $contact_forms_news,
 			'news_letters_news' => $news_letters_news,
-			'quote_forms_news' => $quote_forms_news
+			'quote_forms_news' => $quote_forms_news,
+			'faqs' => $faqs
 		]);
 	}
 
@@ -339,6 +342,7 @@ class HomePageController extends Controller
 		$landing_12page = landing_12page::where('id', 2)->get()->toArray();
 		$landing_13page = landing_13page::where('id', 2)->get()->toArray();
 		$reviews = Review::all();
+		$faqs = faq::all();
 		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
 		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
 		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
@@ -366,7 +370,8 @@ class HomePageController extends Controller
 			'news_forms' => $news_forms,
 			'contact_forms_news' => $contact_forms_news,
 			'news_letters_news' => $news_letters_news,
-			'quote_forms_news' => $quote_forms_news
+			'quote_forms_news' => $quote_forms_news,
+			'faqs' => $faqs
 		]);
 	}
 
@@ -1246,6 +1251,37 @@ class HomePageController extends Controller
 			return redirect()->route('home.admin.index');
 		}
 		return back();
+	}
+
+	public function newFaq(Request $request)
+	{
+		$query = faq::create([
+			'question' => $request->input('question'),
+			'response' => $request->input('response'),
+			'service' => $request->input('service'),
+			'screen' => $request->input('screen'),
+		]);
+		return redirect()->back();
+	}
+
+	public function updateFaq(Request $request, $id)
+	{
+		$query = faq::where('id', $id)->update([
+			'question' => $request->input('question'),
+			'response' => $request->input('response'),
+			'service' => $request->input('service'),
+			'screen' => $request->input('screen'),
+		]);
+		return redirect()->back();
+	}
+
+	public function deleteFaq(Request $request, $id)
+	{
+
+		$query = faq::findOrFail($id);
+
+        $query->delete();
+		return redirect()->back();
 	}
 
 	public function thankYouForm(Request $request){

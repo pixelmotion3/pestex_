@@ -108,6 +108,14 @@ Route::domain('127.0.0.1')->group(function () {
 		Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
 		Route::post('/formshandle/{contact_form_id}/{type_form}', [FormsHandleController::class, 'destroy'])->name('formshandle.destroy');
+
+		Route::post( '/newfaq', [HomePageController::class, 'newFaq'])->name('HomePage.NewFaq');
+		Route::post( '/updatefaq/{id}', [HomePageController::class, 'updateFaq'])->name('HomePage.UpdateFaq');
+		Route::delete( '/deletefaq/{id}', [HomePageController::class, 'deleteFaq'])->name('HomePage.DeleteFaq');
+
+		Route::post( '/newfaqlp', [HomePageController::class, 'newFaq'])->name('LandingPage.NewFaq');
+		Route::post( '/updatefaqlp/{id}', [HomePageController::class, 'updateFaq'])->name('LandingPage.UpdateFaq');
+		Route::delete( '/deletefaqlp/{id}', [HomePageController::class, 'deleteFaq'])->name('LandingPage.DeleteFaq');
 		#   Route::resource('/dashboard', DashboardController::class);
 		Route::resource( '/home-page', HomePageController::class);
 		Route::resource('/landing-page', LandingPageController::class);
@@ -223,6 +231,15 @@ Route::domain('sospragas.pt')->group(function () {
 
 		Route::post('/formshandle/{contact_form_id}/{type_form}', [FormsHandleController::class, 'destroy'])->name('formshandle.destroy');
 		#   Route::resource('/dashboard', DashboardController::class);
+		Route::post( '/newfaq', [HomePageController::class, 'newFaq'])->name('HomePage.NewFaq');
+		Route::post( '/updatefaq/{id}', [HomePageController::class, 'updateFaq'])->name('HomePage.UpdateFaq');
+		Route::delete( '/deletefaq/{id}', [HomePageController::class, 'deleteFaq'])->name('HomePage.DeleteFaq');
+
+		Route::post( '/newfaqlp', [HomePageController::class, 'newFaq'])->name('LandingPage.NewFaq');
+		Route::post( '/updatefaqlp/{id}', [HomePageController::class, 'updateFaq'])->name('LandingPage.UpdateFaq');
+		Route::delete( '/deletefaqlp/{id}', [HomePageController::class, 'deleteFaq'])->name('LandingPage.DeleteFaq');
+
+
 		Route::resource( '/home-page', HomePageController::class);
 		Route::resource('/landing-page', LandingPageController::class);
 		Route::resource('/about-page', AboutPageController::class);
@@ -338,6 +355,14 @@ Route::domain('desinfestacoes.sospragas.pt')->group(function () {
 
 		Route::post('/formshandle/{contact_form_id}/{type_form}', [FormsHandleController::class, 'destroy'])->name('formshandle.destroy');
 		#   Route::resource('/dashboard', DashboardController::class);
+		Route::post( '/newfaq', [HomePageController::class, 'newFaq'])->name('HomePage.NewFaq');
+		Route::post( '/updatefaq/{id}', [HomePageController::class, 'updateFaq'])->name('HomePage.UpdateFaq');
+		Route::delete( '/deletefaq/{id}', [HomePageController::class, 'deleteFaq'])->name('HomePage.DeleteFaq');
+
+		Route::post( '/newfaqlp', [HomePageController::class, 'newFaq'])->name('LandingPage.NewFaq');
+		Route::post( '/updatefaqlp/{id}', [HomePageController::class, 'updateFaq'])->name('LandingPage.UpdateFaq');
+		Route::delete( '/deletefaqlp/{id}', [HomePageController::class, 'deleteFaq'])->name('LandingPage.DeleteFaq');
+
 		Route::resource( '/home-page', HomePageController::class);
 		Route::resource('/landing-page', LandingPageController::class);
 		Route::resource('/about-page', AboutPageController::class);

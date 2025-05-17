@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreLandingPageRequest;
 use App\Http\Requests\UpdateLandingPageRequest;
 use App\Models\contact_forms;
+use App\Models\faq;
 use App\Models\LandingPage;
 use App\Models\landing_2page;
 use App\Models\landing_3page;
@@ -335,6 +336,7 @@ class LandingPageController extends Controller
 		$landing_12page = landing_12page::where('id',1)->get()->toArray();
 		$landing_13page = landing_13page::where('id',1)->get()->toArray();
         $reviews = Review::all();
+		$faqs = faq::all();
 		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
 		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
 		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
@@ -362,7 +364,8 @@ class LandingPageController extends Controller
 			'news_forms' => $news_forms,
 			'contact_forms_news' => $contact_forms_news,
 			'news_letters_news' => $news_letters_news,
-			'quote_forms_news' => $quote_forms_news
+			'quote_forms_news' => $quote_forms_news,
+			'faqs' => $faqs
         ]);
     }
 
@@ -1112,6 +1115,16 @@ class LandingPageController extends Controller
                 'collapse-div-p-5' => $request->input('collapse-div-p-5'),
                 'collapse-div-p-5-1' => $request->input('collapse-div-p-5-1'),
                 'collapse-div-p-5-2' => $request->input('collapse-div-p-5-2'),
+
+				'collapse-h4-6' => $request->input('collapse-h4-6'),
+				'collapse-div-p-6' => $request->input('collapse-div-p-6'),
+                'collapse-div-p-6-1' => $request->input('collapse-div-p-6-1'),
+                'collapse-div-p-6-2' => $request->input('collapse-div-p-6-2'),
+
+				'collapse-h4-7' => $request->input('collapse-h4-7'),
+				'collapse-div-p-7' => $request->input('collapse-div-p-7'),
+                'collapse-div-p-7-1' => $request->input('collapse-div-p-7-1'),
+                'collapse-div-p-7-2' => $request->input('collapse-div-p-7-2'),
             ]);
             if ($request->hasFile('collapse-bg-img')) {
                 $path = $request->file('collapse-bg-img')->store('assets/images');

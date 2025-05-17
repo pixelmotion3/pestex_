@@ -540,7 +540,49 @@ setTimeout(function() {
                 </div>
                 <div class="col-lg-12">
                     <div class="faq-one__accordion tolak-accrodion" data-grp-name="tolak-accrodion">
-                        <div class="accrodion active collapse-1">
+						@isset($faqs)
+							@foreach ($faqs as $index => $faq)
+								@if($index == 0 && ($faq['service'] == "" || $faq['service'] == null) || ($faq['screen'] == "" || $faq['screen'] == null || $faq['screen'] == 2))
+									<div class="accrodion active">
+										<div class="accrodion-title" id="accordion-1">
+											<h4 id="accordion-icon-1">
+												<i class="fa fa-check-circle"></i>
+												{{ $faq['question'] }}
+												<span class="accrodion-title__icon" style="color: #002255"></span><!-- /.accrodion-title__icon -->
+											</h4>
+										</div><!-- /.accordian-title -->
+										<div class="accrodion-content">
+											<div class="inner">
+												<p>
+													{!! $faq['response'] !!}
+												</p>
+											</div><!-- /.accordian-content -->
+										</div>
+									</div><!-- /.accordian-item -->
+								@else
+									@if(($faq['service'] == "" || $faq['service'] == null) || ($faq['screen'] == "" || $faq['screen'] == null || $faq['screen'] == 2))
+										<div class="accrodion">
+											<div class="accrodion-title" id="accordion-2">
+												<h4>
+													<i class="fa fa-check-circle" id="accordion-icon-2"></i>
+													{{ $faq['question'] }}
+													<span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+												</h4>
+											</div><!-- /.accordian-title -->
+											<div class="accrodion-content">
+												<div class="inner">
+													<p>
+														{!! $faq['response'] !!}
+													</p>
+												</div><!-- /.accordian-content -->
+											</div>
+										</div>
+									@endif
+								@endif
+
+							@endforeach
+						@endisset
+                        {{-- <div class="accrodion active collapse-1">
                             <div class="accrodion-title">
                                 <h4>
                                     {{ $service_detail_show['h4-5'] }}
@@ -599,7 +641,7 @@ setTimeout(function() {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div><!-- /.col-lg-6 -->
             </div>

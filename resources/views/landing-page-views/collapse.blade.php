@@ -196,8 +196,8 @@
 								  <button class="nav-link" id="three-images+six-icons+three-paragraphs-tab" data-bs-toggle="tab" data-bs-target="#three-images+six-icons+three-paragraphs" type="button" role="tab" aria-controls="three-images+six-icons+three-paragraphs" aria-selected="false"><small>Sustentabilidade</small></button>
 								  <button class="nav-link" id="three-dark-bg-boxes-tab" data-bs-toggle="tab" data-bs-target="#three-dark-bg-boxes" type="button" role="tab" aria-controls="three-dark-bg-boxes" aria-selected="false"><small>Testemunhos</small></button> --}}
 								  <button class="nav-link active" id="four-images+collapse-box-tab" data-bs-toggle="tab" data-bs-target="#four-images+collapse-box" type="button" role="tab" aria-controls="four-images+collapse-box" aria-selected="false"><small>FAQ</small></button>
-								  {{-- <button class="nav-link" id="call-now-image-box-tab" data-bs-toggle="tab" data-bs-target="#call-now-image-box" type="button" role="tab" aria-controls="call-now-image-box" aria-selected="false"><small>Contacto</small></button>
-								  <button class="nav-link" id="watch-video+background-image-tab" data-bs-toggle="tab" data-bs-target="#watch-video+background-image" type="button" role="tab" aria-controls="watch-video+background-image" aria-selected="false"><small>Área Cliente</small></button>
+								  <button class="nav-link" id="call-now-image-box-tab" data-bs-toggle="tab" data-bs-target="#call-now-image-box" type="button" role="tab" aria-controls="call-now-image-box" aria-selected="false"><small>Criar FAQ</small></button>
+								  {{-- <button class="nav-link" id="watch-video+background-image-tab" data-bs-toggle="tab" data-bs-target="#watch-video+background-image" type="button" role="tab" aria-controls="watch-video+background-image" aria-selected="false"><small>Área Cliente</small></button>
 								  <button class="nav-link" id="terms-service-tab" data-bs-toggle="tab" data-bs-target="#terms-service" type="button" role="tab" aria-controls="terms-service" aria-selected="false"><small>Termos de Serviço</small></button>
 								  <button class="nav-link" id="policy-privacy-tab" data-bs-toggle="tab" data-bs-target="#policy-privacy" type="button" role="tab" aria-controls="policy-privacy" aria-selected="false"><small>Política de Privacidade</small></button>
 								  <button class="nav-link" id="background-image+form-tab" data-bs-toggle="tab" data-bs-target="#background-image+form" type="button" role="tab" aria-controls="background-image+form" aria-selected="false"><small>Contact Us</small></button> --}}
@@ -1097,8 +1097,9 @@
 										</div> --}}
 								  </div>
 								  <!-- four-images+collapse-box -->
-								  <h2>Estatísticas</h2>
+
 								  <div class="tab-pane fade show active" id="four-images+collapse-box" role="tabpanel" aria-labelledby="four-images+collapse-box-tab">
+									<h2>Estatísticas</h2>
 									  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
 										@csrf
 										@method('PUT')
@@ -1141,7 +1142,128 @@
 										<hr/>
 										<h2>FAQs</h2>
 										<hr>
-										<div class="col-12 mt-5">
+										<div class="row">
+											@isset($faqs)
+												@foreach ($faqs as $index => $faq)
+													<div class="col-md-12 mt-5" >
+														<div class="card" style="height: 20rem">
+															<div class="p-3">
+																<h5 class="">
+																	{{ $faq['question'] }}
+																</h5><!-- /.service-title -->
+																<p class="">
+																	{{ $faq['response'] }}
+																</p><!-- /.service-text -->
+																<p class="">
+																	Telas: <?php echo $faq['screen'] == '0' ? 'Qualquer página' : ($faq['screen'] == '1' ? 'Página inicial' : ($faq['screen'] == '2' ? 'Página de serviços' : '-')); ?>
+																</p><!-- /.service-text -->
+																<div class="btn-group" role="group"
+																	aria-label="Basic mixed styles example">
+																	<a data-bs-toggle="modal"
+																		data-bs-target="#exampleModal{{ $index + 1 }}"
+																		class="btn btn-danger text-white">Edit</a>
+																	<a href="#"
+																		class="btn btn-danger p-2"
+																		onclick="
+																		let result = confirm('Tem a certeza que quer apagar o faq ?');
+																		if(result){
+																			event.preventDefault();
+																			document.getElementById('delete-form').submit();
+																		}
+																		">
+																		Apagar faq
+																	</a>
+																	<form id="delete-form"
+																		action="{{ route('LandingPage.DeleteFaq', [$faq->id]) }}"
+																		method="post" style="display: none">
+																		<input type="hidden" name="_method"
+																			value="delete" />
+																		@csrf
+																	</form>
+																</div>
+															</div>
+														</div><!-- /.service-card-one -->
+													</div>
+													<!-- Modal  edit-->
+													<div class="modal fade"
+														id="exampleModal{{ $index + 1 }}" tabindex="-1"
+														aria-labelledby="exampleModalLabel"
+														aria-hidden="true">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<h5 class="modal-title"
+																		id="exampleModalLabel">Editar Faq
+																		{{ $faq['id'] }}
+																	</h5>
+																	<button type="button" class="btn-close"
+																		data-bs-dismiss="modal"
+																		aria-label="Close"></button>
+																</div>
+																<div class="modal-body">
+																	<form class="row g-3 needs-validation"
+																		action="{{ route('LandingPage.UpdateFaq', [$faq['id']]) }}"
+																		method="post"
+																		enctype="multipart/form-data">
+																		@csrf
+																		@method('put')
+
+																		<div class="col-12 mt-5">
+																			<label for="validationCustom01"
+																				class="form-label"
+																				style="float:left;">Pergunta</label>
+																			<input type="text"
+																				class="form-control"
+																				id="validationCustom01"
+																				value="{{ $faq['question'] }}"
+																				name="question" required>
+																		</div>
+																		<div class="col-12 mt-5">
+																			<label for="validationCustom01"
+																				class="form-label"
+																				style="float:left;">Resposta</label>
+																			<textarea class="form-control"
+																				id="validationCustom01"
+																				name="response" required>{{ $faq['response'] }}</textarea>
+																		</div>
+																		<div class="col-12 mt-5">
+																			<label for="validationCustom01"
+																				class="form-label"
+																				style="float:left;">Serviço ( Se esse campo for preenchido, ficará visível apenas no item escolhido. Caso contrário, será visível nas telas selecionadas abaixo )</label>
+																			<input type="text"
+																				class="form-control"
+																				id="validationCustom01"
+																				value="{{ $faq['service'] }}"
+																				name="service">
+																		</div>
+																		<div class="col-12 mt-5">
+																			<label for="screen" class="form-label"
+																				style="float:left;">Tela</label>
+																			<select class="form-control" placeholder="" id="screen" name="screen" value="{{ $faq['screen'] }}">
+																				<option value="0">Qualquer página</option>
+																				<option value="1">Página inicial</option>
+																				<option value="2">Página de serviços</option>
+																			</select>
+																		</div>
+																		<div class="modal-footer">
+																			<button type="button"
+																				class="btn btn-secondary"
+																				data-bs-dismiss="modal">Close</button>
+																			<button type="submit"
+																				class="btn btn-primary"
+																				name="form0">Save
+																				changes</button>
+																		</div>
+																	</form>
+																</div>
+															</div>
+														</div>
+													</div>
+
+												@endforeach
+											@endisset
+										</div>
+										{{-- <div class="col-12 mt-5">
 											<label for="validationCustom01" class="form-label" style="float:left;">H4 1</label>
 											<input type="text" class="form-control" id="validationCustom01" value="{{ $collapse[0]['collapse-h4-1'] }}" name="collapse-h4-1" required>
 										</div>
@@ -1192,12 +1314,12 @@
 										  <label for="validationCustom01" class="form-label" style="float:left;">DIV P3</label>
 										  <input type="text" class="form-control" id="validationCustom01" value="{{ $collapse[0]['collapse-div-p-3-2'] }}" name="collapse-div-p-3-2" required>
 										</div>
-										<hr>
+										<hr> --}}
 										{{-- <div class="col-12 mt-5">
 										  <label for="validationCustom01" class="form-label" style="float:left;">DIV P3</label>
 										  <input type="text" class="form-control" id="validationCustom01" value="{{ $collapse[0]['collapse-h4-3'] }}" name="collapse-h4-3" required>
 										</div> --}}
-										<div class="col-12 mt-5">
+										{{-- <div class="col-12 mt-5">
 										  <label for="validationCustom01" class="form-label" style="float:left;">H4 4</label>
 										  <input type="text" class="form-control" id="validationCustom01" value="{{ $collapse[0]['collapse-h4-4'] }}" name="collapse-h4-4" required>
 										</div>
@@ -1230,8 +1352,48 @@
 										  <label for="validationCustom01" class="form-label" style="float:left;">DIV P5</label>
 										  <input type="text" class="form-control" id="validationCustom01" value="{{ $collapse[0]['collapse-div-p-5-2'] }}" name="collapse-div-p-5-2" required>
 										</div>
-										<div class="col-md-12">
-										  <button class="btn btn-primary w-100" type="submit" name="form9">Submit</button>
+
+
+
+										<hr>
+										<div class="col-12 mt-5">
+										  <label for="validationCustom01" class="form-label" style="float:left;">H4 6</label>
+										  <input type="text" class="form-control" id="validationCustom01" value="{{ $collapse[0]['collapse-h4-6'] }}" name="collapse-h4-6" required>
+										</div>
+										<div class="col-12 mt-5">
+										  <label for="validationCustom01" class="form-label" style="float:left;">DIV P6</label>
+										  <input type="text" class="form-control" id="validationCustom01" value="{{ $collapse[0]['collapse-div-p-6'] }}" name="collapse-div-p-6" required>
+										</div>
+										<div class="col-12 mt-5">
+										  <label for="validationCustom01" class="form-label" style="float:left;">DIV P6</label>
+										  <input type="text" class="form-control" id="validationCustom01" value="{{ $collapse[0]['collapse-div-p-6-1'] }}" name="collapse-div-p-6-1" required>
+										</div>
+										<div class="col-12 mt-5">
+										  <label for="validationCustom01" class="form-label" style="float:left;">DIV P6</label>
+										  <input type="text" class="form-control" id="validationCustom01" value="{{ $collapse[0]['collapse-div-p-6-2'] }}" name="collapse-div-p-6-2" required>
+										</div>
+
+										<hr>
+										<div class="col-12 mt-5">
+										  <label for="validationCustom01" class="form-label" style="float:left;">H4 7</label>
+										  <input type="text" class="form-control" id="validationCustom01" value="{{ $collapse[0]['collapse-h4-7'] }}" name="collapse-h4-7" required>
+										</div>
+										<div class="col-12 mt-5">
+										  <label for="validationCustom01" class="form-label" style="float:left;">DIV P7</label>
+										  <input type="text" class="form-control" id="validationCustom01" value="{{ $collapse[0]['collapse-div-p-7'] }}" name="collapse-div-p-7" required>
+										</div>
+										<div class="col-12 mt-5">
+										  <label for="validationCustom01" class="form-label" style="float:left;">DIV P7</label>
+										  <input type="text" class="form-control" id="validationCustom01" value="{{ $collapse[0]['collapse-div-p-7-1'] }}" name="collapse-div-p-7-1" required>
+										</div>
+										<div class="col-12 mt-5">
+										  <label for="validationCustom01" class="form-label" style="float:left;">DIV P7</label>
+										  <input type="text" class="form-control" id="validationCustom01" value="{{ $collapse[0]['collapse-div-p-7-2'] }}" name="collapse-div-p-7-2" required>
+										</div> --}}
+										<div class="row mt-4">
+											<div class="col-md-12">
+											<button class="btn btn-primary w-100" type="submit" name="form9">Submit</button>
+											</div>
 										</div>
 									  </form>
 
@@ -1239,7 +1401,7 @@
 								   <!-- CALL US -->
 								  <div class="tab-pane fade" id="call-now-image-box" role="tabpanel" aria-labelledby="call-now-image-box-tab">
 
-									  <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
+									  {{-- <form class="row g-3 needs-validation" novalidate action="{{ route('landing-page.update', 1) }}" method="post" enctype="multipart/form-data">
 										@csrf
 										@method('PUT')
 										<div class="col-12 mt-5 form-group">
@@ -1341,7 +1503,45 @@
 										<div class="col-12">
 										  <button class="btn btn-primary w-100" type="submit" name="form10">Submit</button>
 										</div>
-									  </form>
+									  </form> --}}
+									  <h2>Novo FAQ</h2>
+									  <form class="row g-3 needs-validation"
+											action="{{ route('LandingPage.NewFaq') }}" method="post"
+											enctype="multipart/form-data">
+											@csrf
+											@method('POST')
+											<div class="col-12 mt-5">
+												<label for="question" class="form-label"
+													style="float:left;">Pergunta</label>
+												<input type="text" class="form-control"
+													id="question" name="question" required>
+											</div>
+
+											<div class="col-12 mt-5">
+												<label for="response" class="form-label"
+													style="float:left;">Resposta</label>
+												<textarea class="form-control" placeholder="" id="response" name="response" rows="3"></textarea>
+											</div>
+											<div class="col-12 mt-5">
+												<label for="service" class="form-label"
+													style="float:left;">Serviço ( Se esse campo for preenchido, ficará visível apenas no item escolhido. Caso contrário, será visível nas telas selecionadas abaixo )</label>
+												<input type="text" class="form-control"
+													id="service" name="service">
+											</div>
+											<div class="col-12 mt-5">
+												<label for="screen" class="form-label"
+													style="float:left;">Tela</label>
+												<select class="form-control" placeholder="" id="screen" name="screen">
+													<option value="0">Qualquer página</option>
+													<option value="1">Página inicial</option>
+													<option value="2">Página de serviços</option>
+												</select>
+											</div>
+											<div class="col-12">
+												<button class="btn btn-primary w-100" type="submit"
+													name="form16">Submit</button>
+											</div>
+										</form>
 
 								  </div>
 
