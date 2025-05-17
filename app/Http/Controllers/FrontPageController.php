@@ -50,6 +50,7 @@ class FrontPageController extends Controller
         $landing_11page = landing_11page::where('id',1)->get()->toArray();
 		$services = ServiceDetails::all();
         $reviews = Review::all();
+		$faqs = faq::all();
 		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
 		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
 		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
