@@ -2110,8 +2110,8 @@ setTimeout(function() {
 							@isset($faqs)
 								<?php $i = 0; ?>
 								@foreach ($faqs as $index => $faq)
-									@if(($faq['service'] == "" || $faq['service'] == null))
-										@if($index == 0 && ($faq['screen'] == "" || $faq['screen'] == null || $faq['screen'] == 0 || $faq['screen'] == 1))
+									@if(($faq['screen'] == "" || $faq['screen'] == null || $faq['screen'] == 0 || $faq['screen'] == 1))
+										@if($index == 0 && ($faq['service'] == "" || $faq['service'] == null))
 											<div class="accrodion active">
 												<div class="accrodion-title" id="accordion-{{$i+1}}">
 													<h4 id="accordion-icon-{{$i+1}}">
@@ -2129,7 +2129,7 @@ setTimeout(function() {
 												</div>
 											</div><!-- /.accordian-item -->
 										@else
-											@if(($faq['screen'] == "" || $faq['screen'] == null || $faq['screen'] == 0 || $faq['screen'] == 1))
+											@if(($faq['service'] == "" || $faq['service'] == null))
 												<div class="accrodion">
 													<div class="accrodion-title" id="accordion-{{$i+1}}">
 														<h4>
