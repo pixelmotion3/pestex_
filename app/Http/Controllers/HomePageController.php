@@ -1280,7 +1280,9 @@ class HomePageController extends Controller
 
 		$query = faq::findOrFail($id);
 
-        $query->delete();
+        if ($query->delete()) {
+            return redirect()->back();
+        }
 		return redirect()->back();
 	}
 
