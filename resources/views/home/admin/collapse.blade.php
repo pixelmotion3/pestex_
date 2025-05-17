@@ -1536,12 +1536,12 @@
 																		let result = confirm('Tem a certeza que quer apagar o faq ?');
 																		if(result){
 																			event.preventDefault();
-																			document.getElementById('delete-form').submit();
+																			document.getElementById('delete-form-{{ $index + 1 }}').submit();
 																		}
 																		">
 																		Apagar faq
 																	</a>
-																	<form id="delete-form"
+																	<form id="delete-form-{{ $index + 1 }}"
 																		action="{{ route('LandingPage.DeleteFaq', [$faq->id]) }}"
 																		method="post" style="display: none">
 																		<input type="hidden" name="_method"
@@ -1608,9 +1608,9 @@
 																			<label for="screen" class="form-label"
 																				style="float:left;">Tela</label>
 																			<select class="form-control" placeholder="" id="screen" name="screen" value="{{ $faq['screen'] }}">
-																				<option value="0">Qualquer página</option>
-																				<option value="1">Página inicial</option>
-																				<option value="2">Página de serviços</option>
+																				<option value="0" {{ $faq['screen'] == "0" ? 'selected' : '' }}>Qualquer página</option>
+																				<option value="1" {{ $faq['screen'] == "1" ? 'selected' : '' }}>Página inicial</option>
+																				<option value="2" {{ $faq['screen'] == "2" ? 'selected' : '' }}>Página de serviços</option>
 																			</select>
 																		</div>
 																		<div class="modal-footer">
