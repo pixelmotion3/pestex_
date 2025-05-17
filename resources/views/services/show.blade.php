@@ -541,32 +541,16 @@ setTimeout(function() {
                 <div class="col-lg-12">
                     <div class="faq-one__accordion tolak-accrodion" data-grp-name="tolak-accrodion">
 						@isset($faqs)
+							<?php $i = 0; ?>
 							@foreach ($faqs as $index => $faq)
-								@if($index == 0 && ($faq['service'] == "" || $faq['service'] == null) || ($faq['screen'] == "" || $faq['screen'] == null || $faq['screen'] == 2))
-									<div class="accrodion active">
-										<div class="accrodion-title" id="accordion-1">
-											<h4 id="accordion-icon-1">
-												<i class="fa fa-check-circle"></i>
-												{{ $faq['question'] }}
-												<span class="accrodion-title__icon" style="color: #002255"></span><!-- /.accrodion-title__icon -->
-											</h4>
-										</div><!-- /.accordian-title -->
-										<div class="accrodion-content">
-											<div class="inner">
-												<p>
-													{!! $faq['response'] !!}
-												</p>
-											</div><!-- /.accordian-content -->
-										</div>
-									</div><!-- /.accordian-item -->
-								@else
-									@if(($faq['service'] == "" || $faq['service'] == null) || ($faq['screen'] == "" || $faq['screen'] == null || $faq['screen'] == 2))
-										<div class="accrodion">
-											<div class="accrodion-title" id="accordion-2">
-												<h4>
-													<i class="fa fa-check-circle" id="accordion-icon-2"></i>
+								@if(($faq['screen'] == "" || $faq['screen'] == null || $faq['screen'] == 0 || $faq['screen'] == 2))
+									@if($index == 0 && ($faq['service'] == "" || $faq['service'] == null  || $faq['service'] == $service_detail['slug']))
+										<div class="accrodion active">
+											<div class="accrodion-title" id="accordion-{{$i+1}}">
+												<h4 id="accordion-icon-{{$i+1}}">
+													<i class="fa fa-check-circle"></i>
 													{{ $faq['question'] }}
-													<span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+													<span class="accrodion-title__icon" style="color: #002255"></span><!-- /.accrodion-title__icon -->
 												</h4>
 											</div><!-- /.accordian-title -->
 											<div class="accrodion-content">
@@ -576,10 +560,28 @@ setTimeout(function() {
 													</p>
 												</div><!-- /.accordian-content -->
 											</div>
-										</div>
+										</div><!-- /.accordian-item -->
+									@else
+										@if(($faq['service'] == "" || $faq['service'] == null || $faq['service'] == $service_detail['slug']))
+											<div class="accrodion">
+												<div class="accrodion-title" id="accordion-{{$i+1}}">
+													<h4>
+														<i class="fa fa-check-circle" id="accordion-icon-{{$i+1}}"></i>
+														{{ $faq['question'] }}
+														<span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+													</h4>
+												</div><!-- /.accordian-title -->
+												<div class="accrodion-content">
+													<div class="inner">
+														<p>
+															{!! $faq['response'] !!}
+														</p>
+													</div><!-- /.accordian-content -->
+												</div>
+											</div>
+										@endif
 									@endif
 								@endif
-
 							@endforeach
 						@endisset
                         {{-- <div class="accrodion active collapse-1">
