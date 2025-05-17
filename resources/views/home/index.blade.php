@@ -2108,11 +2108,12 @@ setTimeout(function() {
 					<div class="col-lg-6">
 						<div class="funfact-one__accordion tolak-accrodion" data-grp-name="tolak-accrodion">
 							@isset($faqs)
+								<?php $i = 0; ?>
 								@foreach ($faqs as $index => $faq)
 									@if($index == 0 && ($faq['service'] == "" || $faq['service'] == null) || ($faq['screen'] == "" || $faq['screen'] == null || $faq['screen'] == 0 || $faq['screen'] == 1))
 										<div class="accrodion active">
-											<div class="accrodion-title" id="accordion-{{$index+1}}">
-												<h4 id="accordion-icon-{{$index+1}}">
+											<div class="accrodion-title" id="accordion-{{$i+1}}">
+												<h4 id="accordion-icon-{{$i+1}}">
 													<i class="fa fa-check-circle"></i>
 													{{ $faq['question'] }}
 													<span class="accrodion-title__icon" style="color: #002255"></span><!-- /.accrodion-title__icon -->
@@ -2129,9 +2130,9 @@ setTimeout(function() {
 									@else
 										@if(($faq['service'] == "" || $faq['service'] == null) || ($faq['screen'] == "" || $faq['screen'] == null || $faq['screen'] == 0 || $faq['screen'] == 1))
 											<div class="accrodion">
-												<div class="accrodion-title" id="accordion-{{$index+1}}">
+												<div class="accrodion-title" id="accordion-{{$i+1}}">
 													<h4>
-														<i class="fa fa-check-circle" id="accordion-icon-{{$index+1}}"></i>
+														<i class="fa fa-check-circle" id="accordion-icon-{{$i+1}}"></i>
 														{{ $faq['question'] }}
 														<span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
 													</h4>
