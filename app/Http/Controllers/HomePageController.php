@@ -1294,7 +1294,14 @@ class HomePageController extends Controller
 			//dd($request->all());
 
 			$isBot = $request->input('user_email_check');
-			if($isBot != "") die();
+			if($isBot != "") {
+				abort(403, 'Ops...');
+			}
+
+			$tempo = now()->timestamp - intval($request->input('form_start'));
+			if ($tempo < 3) {
+				abort(403, 'Ops...');
+			}
 			$query = quote_forms::create([
 				'customer_type' => $request->input('customer_type'),
 				'products' => "",//$request->input('products'),
@@ -1359,6 +1366,16 @@ class HomePageController extends Controller
 		}
 
 		if($request->input('type_form') == 'ContactForm'){
+			$isBot = $request->input('user_email_check');
+			if($isBot != "") {
+				abort(403, 'Ops...');
+			}
+
+			$tempo = now()->timestamp - intval($request->input('form_start'));
+			if ($tempo < 3) {
+				abort(403, 'Ops...');
+			}
+
 			$secretKey = 'ES_8cf3c7f61ea84e6ebb4446cb84cfa8e4'; // Substitua pela sua chave secreta
 			$verifyUrl = 'https://api.hcaptcha.com/siteverify';
 

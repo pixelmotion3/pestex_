@@ -346,6 +346,7 @@ setTimeout(function() {
                                     @csrf
                                     @method('post')
 									<input class="input-field rounded" type="hidden" value="QuoteForm" placeholder="type_form" name="type_form">
+									<input type="hidden" name="form_start" value="{{ now()->timestamp }}">
 									<input class="input-field rounded" type="hidden" value="" placeholder="type_form" name="user_email_check" id="user_email_check">
                                     <div class="row text-center" style="border-radius:50%;">
                                         <div class="col mt-3 border" style="margin-left:30px;margin-right:15px;"
@@ -474,6 +475,7 @@ setTimeout(function() {
                                         @csrf
                                         @method('POST')
                                         <div class="row text-center">
+											<input type="hidden" name="form_start" value="{{ now()->timestamp }}">
 											<input class="input-field rounded" type="hidden" value="QuoteForm" placeholder="type_form" name="type_form">
 											<input class="input-field rounded" type="hidden" value="" placeholder="type_form" name="user_email_check" id="user_email_check">
                                             <h2 class="h2 mt-5 text-muted">{{ $main_screen[0]['quote-form-tab-2-h2'] }}</h2>
@@ -783,6 +785,7 @@ setTimeout(function() {
 								@csrf
 								@method('post')
 								<div class="row" style="border-radius:50%;">
+									<input type="hidden" name="form_start" value="{{ now()->timestamp }}">
 									<input class="input-field rounded" type="hidden" value="QuoteForm" placeholder="type_form" name="type_form">
 									<input class="input-field rounded" type="hidden" value="" placeholder="type_form" name="user_email_check" id="user_email_check">
 									<div class="col mt-3 border change-customer" style="margin-left:30px;margin-right:15px;"
@@ -1009,6 +1012,7 @@ setTimeout(function() {
 							<form class="form-contacts" method="POST" action="{{ $baseUrl . route('HomePage.thankYouFormRequestQuote', [], false) }}">
 								@csrf
 								@method('post')
+								<input type="hidden" name="form_start" value="{{ now()->timestamp }}">
 								<input class="input-field rounded" type="hidden" value="QuoteForm" placeholder="type_form" name="type_form">
 								<input class="input-field rounded" type="hidden" value="" placeholder="type_form" name="user_email_check" id="user_email_check">
 								<div class="row" style="border-radius:50%;">
@@ -2381,6 +2385,7 @@ setTimeout(function() {
 								@csrf
 								@method('POST')
 								<input class="input-field rounded" type="hidden" value="ContactForm" placeholder="type_form" name="type_form">
+								<input type="hidden" name="form_start" value="{{ now()->timestamp }}">
 								<input class="input-field rounded" type="hidden" value="" placeholder="type_form" name="user_email_check" id="user_email_check">
 								<div class="form-one__group">
 									<div class="form-one__control form-one__control--full">
