@@ -14,6 +14,7 @@ class quote_forms extends Model
         'email',
         'phone',
         'confirmed',
-		'viewed'
+		'viewed',
+		'ip'
     ];
 }

@@ -354,7 +354,7 @@ class FrontPageController extends Controller
 
     public function QuoteForm(Request $request, quote_forms $quote_form)
     {
-
+		$userIp = $request->ip();
 		$isBot = $request->input('user_email_check');
 		if($isBot != "") {
 			abort(403, 'Ops...');
@@ -372,7 +372,8 @@ class FrontPageController extends Controller
             'name' => $request->input('name'),
             'email' => $request->input('email'),
             'phone' => $request->input('phone'),
-            'confirmed' => true
+            'confirmed' => true,
+			'ip' => $userIp
         ]);
 		// <b>Nome:</b> {{ $data['name'] }}<br/>
 		// <b>Email:</b> {{ $data['email'] }}<br/>
@@ -500,6 +501,7 @@ class FrontPageController extends Controller
 	public function thankYouForm(Request $request){
 
 
+		$userIp = $request->ip();
 
 		if($request->input('type_form') == 'QuoteForm'){
 			//dd($request->all());
@@ -519,7 +521,8 @@ class FrontPageController extends Controller
 				'name' => $request->input('name'),
 				'email' => $request->input('email'),
 				'phone' => $request->input('phone'),
-				'confirmed' => true
+				'confirmed' => true,
+				'ip' => $userIp
 			]);
 			// <b>Nome:</b> {{ $data['name'] }}<br/>
 			// <b>Email:</b> {{ $data['email'] }}<br/>
