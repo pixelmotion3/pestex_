@@ -582,6 +582,7 @@
 														<p><b>Nome:</b> {{$quote_form["name"]}}</p>
 														<p><b>Email:</b> {{$quote_form["email"]}}</p>
 														<p><b>Telefone:</b> {{$quote_form["phone"]?? "Não informado"}}</p>
+														<p><b>IP:</b> {{$quote_form["ip"]?? "- - -"}}</p>
 														<p><b>Status:</b> <?php echo $quote_form["viewed"] == null ? "<span class='text-danger'>Não visualizazdo</span>" : "<span class='text-success'>Visualizado</span>"?></p>
 														<p><b>Data/hora:</b>
 															<?php
