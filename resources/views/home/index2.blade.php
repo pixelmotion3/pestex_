@@ -77,7 +77,7 @@
          <!-- jequery plugins -->
 
         <script src="{{ asset('assets/js/popper.min.js') }}"></script>
-        <script src="{{ asset('assets/js/jquery.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.js') }}" defer></script>
         <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 
         <script src="{{ asset('assets/js/owl.js') }}"></script>
@@ -1851,7 +1851,7 @@
 
         <!-- sanito -->
 
-        <script src="{{ asset('assets/js/jquery.js') }}"></script>
+        <script src="{{ asset('assets/js/jquery.js') }}" defer></script>
         <script src="{{ asset('assets/js/popper.min.js') }}"></script>
         <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('assets/js/owl.js') }}"></script>
