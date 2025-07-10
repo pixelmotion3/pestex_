@@ -29,7 +29,7 @@ setTimeout(function() {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+	{{-- <script src="https://js.hcaptcha.com/1/api.js" async defer></script> --}}
 	<title>{{ $main_screen[0]['meta-title'] }}</title>
 <!-- Meta Pixel Code -->
 
@@ -904,15 +904,53 @@ setTimeout(function() {
 											Autorizo tratamento de dados pessoais para marketing de produtos e serviços
 										</label>
 									</div> --}}
-									<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
-									<div class="ml-4 mb-5" style="max-width: 92%">
-										<button class="btn mt-2 theme-btn-three thm-btn" type="submit" name="quote_form">Obter
-											Orçamento Grátis</button>
+									 <!-- Captcha aparece aqui após clicar no botão -->
+    								<div id="captcha-container" class="my-3" style="display: flex; justify-content: center;"></div>
+									{{-- <div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div> --}}
+									<div class="ml-4" style="max-width: 92%">
+										<!-- Botão que carrega o hCaptcha -->
+										<button type="button" onclick="loadCaptcha()" class="btn mt-2 theme-btn-three thm-btn">
+											Validar Captcha
+										</button>
+
+										<!-- Botão de envio final -->
+										<button id="submit-btn" type="submit" class="btn mt-2 theme-btn-three thm-btn" disabled>
+											Enviar Formulário
+										</button>
+										{{-- <button class="btn mt-2 theme-btn-three thm-btn" type="submit" name="quote_form">Obter
+											Orçamento Grátis</button> --}}
 									</div>
 								</div>
 							</form>
 						</div>
 					</div>
+					<script>
+						let captchaRendered = false;
+
+						function loadCaptcha() {
+							if (captchaRendered) return;
+
+							const script = document.createElement('script');
+							script.src = 'https://js.hcaptcha.com/1/api.js?onload=onCaptchaLoad&render=explicit';
+							script.async = true;
+							script.defer = true;
+							document.body.appendChild(script);
+
+							captchaRendered = true;
+						}
+
+						function onCaptchaLoad() {
+							hcaptcha.render('captcha-container', {
+								sitekey: 'f27e3306-f27a-4bc0-a162-3678fc648a4e',
+								callback: onCaptchaSuccess
+							});
+						}
+
+						function onCaptchaSuccess(token) {
+							// Libera o botão de envio se o captcha foi resolvido
+							document.getElementById('submit-btn').disabled = false;
+						}
+					</script>
 					<div class="tab-pane fade p-2  quote_border_inbox" id="contact" role="tabpanel"
 						aria-labelledby="contact-tab">
 						<div class="tab-pane fade show active quote_border_inbox" id="home" role="tabpanel"
@@ -2418,13 +2456,28 @@ setTimeout(function() {
 											</div>
 										</div>
 									</div>
-									<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div>
+									{{-- <div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div> --}}
 									<div class="form-one__control form-one__control--full">
-										<button type="submit" class="tolak-btn-two tolak-btn-two--home-six pull-left" style="border-radius: 5px;">
+										<div id="captcha-container2" class="my-3" style="display: flex; justify-content: center;"></div>
+										{{-- <div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e" style="display: flex;justify-content: center;"></div> --}}
+										<div class="ml-4" style="max-width: 92%">
+											<!-- Botão que carrega o hCaptcha -->
+											<button type="button" onclick="loadCaptcha2()" class="btn mt-2 theme-btn-three thm-btn">
+												Validar Captcha
+											</button>
+
+											<!-- Botão de envio final -->
+											<button id="submit-btn2" type="submit" class="btn mt-2 theme-btn-three thm-btn" disabled>
+												ENVIAR MENSAGEM
+											</button>
+											{{-- <button class="btn mt-2 theme-btn-three thm-btn" type="submit" name="quote_form">Obter
+												Orçamento Grátis</button> --}}
+										</div>
+										{{-- <button type="submit" class="tolak-btn-two tolak-btn-two--home-six pull-left" style="border-radius: 5px;">
 											<span class="tolak-btn-two__left-star"></span>
 											<span><b>ENVIAR MENSAGEM</b></span>
 											<span class="tolak-btn-two__right-star"></span>
-										</button>
+										</button> --}}
 									</div><!-- /.form-one__control -->
 								</div><!-- /.form-one__group -->
 							</form>
@@ -2440,6 +2493,33 @@ setTimeout(function() {
 				</div>
 			</div>
 		</section>
+		<script>
+			let captchaRendered2 = false;
+
+			function loadCaptcha2() {
+				if (captchaRendered2) return;
+
+				const script = document.createElement('script');
+				script.src = 'https://js.hcaptcha.com/1/api.js?onload=onCaptchaLoad2&render=explicit';
+				script.async = true;
+				script.defer = true;
+				document.body.appendChild(script);
+
+				captchaRendered2 = true;
+			}
+
+			function onCaptchaLoad2() {
+				hcaptcha.render('captcha-container2', {
+					sitekey: 'f27e3306-f27a-4bc0-a162-3678fc648a4e',
+					callback: onCaptchaSuccess2
+				});
+			}
+
+			function onCaptchaSuccess2(token) {
+				// Libera o botão de envio se o captcha foi resolvido
+				document.getElementById('submit-btn2').disabled = false;
+			}
+		</script>
 		<!-- footer -->
 		<section class="mail-section">
             <div class="container">
