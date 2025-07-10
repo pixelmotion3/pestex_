@@ -138,10 +138,10 @@
     <link href="{{ asset('assets/css/animate.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/nice-select.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/color.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
     <!-- template styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/tolak.min.css') }}" />
 
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -2526,7 +2526,7 @@
     <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jarallax/jarallax.min.js') }}"></script>
-    <script src="{{ asset('assets/vendors/jquery-ui/jquery-ui.js') }}"></script>
+    <script src="{{ asset('assets/vendors/jquery-ui/jquery-ui.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js') }}"></script>
@@ -2547,7 +2547,7 @@
     <script src="{{ asset('assets/vendors/progress-bar/knob.js') }}"></script>
 
     <!-- chart js -->
-    <script src="{{ asset('assets/vendors/chart/chart.js') }}"></script>
+    <script src="{{ asset('assets/vendors/chart/chart.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/chart/custome-chart.js') }}"></script>
 
     <!-- template js -->

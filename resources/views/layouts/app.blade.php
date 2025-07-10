@@ -54,7 +54,7 @@
     <link rel="stylesheet" href="{{ asset('assets/vendor/css/pages/cards-advance.css') }}" />
 
      <!-- template styles -->
-     <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
+     <link rel="stylesheet" href="{{ asset('assets/css/tolak.min.css') }}" />
 
     <!-- Helpers -->
     <script src="{{ asset('assets/vendor/js/helpers.js') }}"></script>

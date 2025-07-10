@@ -38,14 +38,14 @@
     <link href="{{ asset('assets/css/animate.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/nice-select.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/color.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
     <!-- template styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/tolak.min.css') }}" />
 
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/tolak.min.css') }}" />
 
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
