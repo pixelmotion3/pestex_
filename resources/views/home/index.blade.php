@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="pt-PT">
 @if(session('success'))
     <div id="success-alert" class="alert alert-success">
         {{ session('success') }}
@@ -76,14 +76,14 @@ setTimeout(function() {
 
     <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/vendors/animate/animate.min.css') }}" />
+    {{-- <link rel="stylesheet" href="{{ asset('assets/vendors/animate/animate.min.css') }}" /> --}}
 
-    <link rel="stylesheet" href="{{ asset('assets/vendors/fontawesome/css/all.min.css') }}" />
+    {{-- <link rel="stylesheet" href="{{ asset('assets/vendors/fontawesome/css/all.min.css') }}" /> --}}
 
-    <link rel="stylesheet" href="{{ asset('assets/vendors/icofont/icofont.min.css') }}" />
+    {{-- <link rel="stylesheet" href="{{ asset('assets/vendors/icofont/icofont.min.css') }}" /> --}}
     <link rel="stylesheet" href="{{ asset('assets/vendors/jquery-ui/jquery-ui.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/jarallax/jarallax.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css') }}" />
+    {{-- <link rel="stylesheet" href="{{ asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css') }}" /> --}}
     <link rel="stylesheet" href="{{ asset('assets/vendors/nouislider/nouislider.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/nouislider/nouislider.pips.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/tiny-slider/tiny-slider.css') }}" />
@@ -102,7 +102,7 @@ setTimeout(function() {
     <link href="{{ asset('assets/css/animate.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/nice-select.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/color.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/style.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
     <!-- template styles -->
     <link rel="stylesheet" href="{{ asset('assets/css/tolak.min.css') }}"  media="print" onload="this.onload=null;this.media='all';"/>
@@ -246,7 +246,7 @@ setTimeout(function() {
 
     </style>
     <!-- jequery plugins -->
-
+	<script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}"></script>
     <script src="{{ asset('assets/js/popper.min.js') }}" defer></script>
     <script src="{{ asset('assets/js/jquery.js') }}" defer></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
@@ -423,7 +423,7 @@ setTimeout(function() {
 
                                         <div class="input-container" style="width: 92%;">
                                             <i class="icon">
-                                                <img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"/>
+                                                <img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;" alt="Telefone"/>
                                             </i>
                                             <input class="input-field rounded" type="number" placeholder="Telefone"
                                                 name="phone">
@@ -502,7 +502,7 @@ setTimeout(function() {
                                             </div>
                                             <div class="input-container" style="width: 92%;">
                                                 <i class="icon">
-                                                    <img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"/>
+                                                    <img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;" alt="Telefone"/>
                                                 </i>
                                                 <input class="input-field rounded" type="text"
                                                     placeholder="Telefone" name="phone">
@@ -866,7 +866,7 @@ setTimeout(function() {
 									</div>
 									<div class="input-container" style="width: 92%;">
 										<i class="icon" style="color:black;">
-											<img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"/>
+											<img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;" alt="Telefone"/>
 										</i>
 										<input class="input-field rounded" type="number" placeholder="Telefone"
 											name="phone" required>
@@ -981,7 +981,7 @@ setTimeout(function() {
 
 										<div class="input-container" style="width: 92%;">
 											<i class="icon">
-												<img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"/>
+												<img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;" alt="Telefone"/>
 											</i>
 											<input class="input-field rounded" type="text" placeholder="Telefone"
 												name="phone" required>
@@ -1127,7 +1127,7 @@ setTimeout(function() {
 									</div>
 									<div class="input-container" style="width: 92%;">
 										<i class="icon" style="color:black;">
-											<img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"/>
+											<img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"  alt="Telefone"/>
 										</i>
 										<input class="input-field rounded" type="number" placeholder="Telefone"
 											name="phone" required>
@@ -1204,7 +1204,7 @@ setTimeout(function() {
 
 										<div class="input-container" style="width: 92%;">
 											<i class="icon">
-												<img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"/>
+												<img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"  alt="Telefone"/>
 											</i>
 											<input class="input-field rounded" type="text" placeholder="Telefone"
 												name="phone" required>
@@ -1261,7 +1261,7 @@ setTimeout(function() {
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
 								<span>
-								<img src="assets/images/DiagnosticoPreciso.png" />
+								<img src="assets/images/DiagnosticoPreciso.png" alt="Lupa"/>
 								</span>
 							</div>
 							<h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-1h4'] }}</b></h4>
@@ -1276,7 +1276,7 @@ setTimeout(function() {
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
 								<span>
-									<img src="assets/images/MetodosSegurosEficazes.png" />
+									<img src="assets/images/MetodosSegurosEficazes.png" alt="Escudo"/>
 								</span>
 							</div>
 							<h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-2h4'] }}</b></h4>
@@ -1291,7 +1291,7 @@ setTimeout(function() {
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
 								<span>
-									<img src="assets/images/PrevencaoContinua.png" />
+									<img src="assets/images/PrevencaoContinua.png" alt="recarregar"/>
 								</span>
 							</div>
 							<h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-3h4'] }}</b></h4>
@@ -2631,7 +2631,7 @@ setTimeout(function() {
                         </div><!-- /.footer-widget -->
                     </div><!-- /.col-md-6 -->
 					<div class="col-md-6 col-lg-2" style="display: flex;align-items: center;justify-content: center;">
-						<a href="https://www.zaask.pt/user/geral3663" target="_blank">
+						<a href="https://www.zaask.pt/user/geral3663" aria-label="Link Zaask" target="_blank">
 							<svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" width="656" height="256" style="max-width: 217px;" data-name="Layer 2" viewBox="0 0 43.28 45.13">
 								<defs>
 								  <style>
@@ -2975,7 +2975,7 @@ setTimeout(function() {
     </script>
 
 
-    <script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}"></script>
+
     <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script>
     <script nomodule src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jarallax/jarallax.min.js') }}"></script>
