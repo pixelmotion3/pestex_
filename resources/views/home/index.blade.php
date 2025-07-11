@@ -246,7 +246,7 @@ setTimeout(function() {
 
     </style>
     <!-- jequery plugins -->
-	<script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}" defer></script>
     <script src="{{ asset('assets/js/popper.min.js') }}" defer></script>
     <script src="{{ asset('assets/js/jquery.js') }}" defer></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
