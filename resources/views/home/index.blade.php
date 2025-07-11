@@ -254,7 +254,7 @@ setTimeout(function() {
     {{-- <script src="{{ asset('assets/js/owl.js') }}" defer></script>
     <script src="{{ asset('assets/js/wow.js') }}" defer></script> --}}
     <script src="{{ asset('assets/js/validation.js') }}" defer></script>
-    <script src="{{ asset('assets/js/jquery.fancybox.js') }}" defer ></script>
+    {{-- <script src="{{ asset('assets/js/jquery.fancybox.js') }}" defer ></script> --}}
     <script src="{{ asset('assets/js/appear.js') }}" defer></script>
     <script src="{{ asset('assets/js/jquery.countTo.js') }}" defer></script>
     <script src="{{ asset('assets/js/scrollbar.js') }}" defer></script>
@@ -2979,7 +2979,7 @@ setTimeout(function() {
     <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script>
     <script nomodule src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}" defer></script>
     <script src="{{ asset('assets/vendors/jarallax/jarallax.min.js') }}"></script>
-    <script src="{{ asset('assets/vendors/jquery-ui/jquery-ui.min.js') }}" defer></script>
+    {{-- <script src="{{ asset('assets/vendors/jquery-ui/jquery-ui.min.js') }}" defer></script> --}}
     <script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js') }}"></script>
@@ -3014,7 +3014,7 @@ setTimeout(function() {
     <script src="{{ asset('assets/js/owl.js') }}"></script>
     <script src="{{ asset('assets/js/wow.js') }}"></script>
     <script src="{{ asset('assets/js/validation.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.fancybox.js') }}" defer ></script>
+    {{-- <script src="{{ asset('assets/js/jquery.fancybox.js') }}" defer ></script> --}}
     <script src="{{ asset('assets/js/appear.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
     <script src="{{ asset('assets/js/scrollbar.js') }}"></script>
