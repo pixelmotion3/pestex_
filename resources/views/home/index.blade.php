@@ -1321,7 +1321,7 @@ setTimeout(function() {
 					<div class="col-lg-4 col-md-6 wow slideInUp animated" style="visibility: visible; animation-name: slideInUp; margin-bottom: 40px;" style="">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-1'] }}')" id="">
-								<img src="{{ $best_service[0]['best-service-img-path-1'] }}" alt="tolak" style="width: 300px;">
+								<img src="{{ $best_service[0]['best-service-img-path-1'] }}" alt="tolak" style="width: 600px;" sizes="(max-width: 600px) 100vw, 382px">
 							</div>
 							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
@@ -1393,7 +1393,7 @@ setTimeout(function() {
 					<div class="col-lg-4 col-md-6 wow slideInUp animated" style="visibility: visible; animation-name: slideInUp; margin-bottom: 40px;" style="">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-2'] }}')" >
-								<img src="{{ $best_service[0]['best-service-img-path-2'] }}" alt="tolak" style="width: 300px;">
+								<img src="{{ $best_service[0]['best-service-img-path-2'] }}" alt="tolak" style="width: 600px;" sizes="(max-width: 600px) 100vw, 382px">
 							</div>
 							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
@@ -1465,7 +1465,7 @@ setTimeout(function() {
 					<div class="col-lg-4 col-md-6 wow slideInUp animated" style="visibility: visible; animation-name: slideInUp; margin-bottom: 40px;" style="">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-3'] }}')" >
-								<img src="{{ $best_service[0]['best-service-img-path-3'] }}" alt="tolak" style="width: 300px;">
+								<img src="{{ $best_service[0]['best-service-img-path-3'] }}" alt="tolak" style="width: 600px;" sizes="(max-width: 600px) 100vw, 382px">
 							</div>
 							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
@@ -1538,7 +1538,7 @@ setTimeout(function() {
 					<div class="col-lg-4 col-md-6 wow slideInUp animated" style="visibility: visible; animation-name: slideInUp; margin-bottom: 40px;" style="">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-4'] }}')" >
-								<img src="{{ $best_service[0]['best-service-img-path-4'] }}" alt="tolak" style="width: 300px;">
+								<img src="{{ $best_service[0]['best-service-img-path-4'] }}" alt="tolak" style="width: 600px;" sizes="(max-width: 600px) 100vw, 382px">
 							</div>
 							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
@@ -1610,7 +1610,7 @@ setTimeout(function() {
 					<div class="col-lg-4 col-md-6 wow slideInUp animated" style="visibility: visible; animation-name: slideInUp; margin-bottom: 40px;" style="">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-5'] }}')" >
-								<img src="{{ $best_service[0]['best-service-img-path-5'] }}" alt="tolak" style="width: 300px;">
+								<img src="{{ $best_service[0]['best-service-img-path-5'] }}" alt="tolak" style="width: 600px;" sizes="(max-width: 600px) 100vw, 382px">
 							</div>
 							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
@@ -1682,7 +1682,7 @@ setTimeout(function() {
 					<div class="col-lg-4 col-md-6 wow slideInUp animated" style="visibility: visible; animation-name: slideInUp; margin-bottom: 40px;" style="">
 						<div class="service-one__item text-center">
 							<div class="service-one__item__image" onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-6'] }}')" >
-								<img src="{{ $best_service[0]['best-service-img-path-6'] }}" alt="tolak" style="width: 300px;">
+								<img src="{{ $best_service[0]['best-service-img-path-6'] }}" alt="tolak" style="width: 600px;" sizes="(max-width: 600px) 100vw, 382px">
 							</div>
 							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
