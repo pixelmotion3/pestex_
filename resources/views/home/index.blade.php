@@ -73,7 +73,7 @@ setTimeout(function() {
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-
+	<script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}" defer></script>
     <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.css') }}" />
     {{-- <link rel="stylesheet" href="{{ asset('assets/vendors/animate/animate.min.css') }}" /> --}}
@@ -246,7 +246,7 @@ setTimeout(function() {
 
     </style>
     <!-- jequery plugins -->
-	<script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}" defer></script>
+
     <script src="{{ asset('assets/js/popper.min.js') }}" defer></script>
     <script src="{{ asset('assets/js/jquery.js') }}" defer></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
