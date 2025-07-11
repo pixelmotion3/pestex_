@@ -13,11 +13,17 @@
 @endif
 
 <script>
-	document.getElementById('acceptCookies').addEventListener('click', function() {
-		// Define o cookie no navegador com validade de 1 ano
-		document.cookie = "cookie_consent_sosp=true; path=/; max-age=" + (365 * 24 * 60 * 60);
+	$(document).ready(function() {
+		if(document.getElementById('acceptCookies')){
+			document.getElementById('acceptCookies').addEventListener('click', function() {
+				// Define o cookie no navegador com validade de 1 ano
+				document.cookie = "cookie_consent_sosp=true; path=/; max-age=" + (365 * 24 * 60 * 60);
 
-		// Esconde o banner
-		document.querySelector('[id="acceptCookies"]').parentElement.parentElement.remove();
-	});
+				// Esconde o banner
+				document.querySelector('[id="acceptCookies"]').parentElement.parentElement.remove();
+			});
+		}
+
+	})
+
 </script>
