@@ -3285,7 +3285,7 @@
 	<script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
 	<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
 	<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
-	<script src="{{ asset('assets/vendors/simpleParallax/simpleParallax.min.js') }}"></script>
+	{{-- <script src="{{ asset('assets/vendors/simpleParallax/simpleParallax.min.js') }}"></script> --}}
 	{{-- <script src="{{ asset('assets/vendors/imagesloaded/imagesloaded.min.js') }}"></script> --}}
 	{{-- <script src="{{ asset('assets/vendors/isotope/isotope.js') }}"></script> --}}
 	{{-- <script src="{{ asset('assets/vendors/countdown/countdown.min.js') }}"></script> --}}
@@ -3306,9 +3306,9 @@
 	<script src="{{ asset('assets/js/jquery.js') }}" defer></script>
 	<script src="{{ asset('assets/js/popper.min.js') }}"></script>
 	<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-	<script src="{{ asset('assets/js/owl.js') }}"></script>
+	{{-- <script src="{{ asset('assets/js/owl.js') }}"></script>
 	<script src="{{ asset('assets/js/wow.js') }}"></script>
-	<script src="{{ asset('assets/js/validation.js') }}"></script>
+	<script src="{{ asset('assets/js/validation.js') }}"></script> --}}
 	{{--
 	<script src="{{ asset('assets/js/jquery.fancybox.js') }}" defer></script> --}}
 	<script src="{{ asset('assets/js/appear.js') }}"></script>
