@@ -1358,9 +1358,9 @@
 		<section class="feature-one space_between" id="#">
 			<div class="container">
 				<div class="text-center">
-					<h6 class="sec-title__tagline text-titles mt-5"><span
+					<h5 class="sec-title__tagline text-titles mt-5"><span
 							class="sec-title__tagline__left"></span><b>{{ $company_status[0]['company-status-h6'] }}</b><span
-							class="sec-title__tagline__right"></span></h6><!-- /.sec-title__tagline -->
+							class="sec-title__tagline__right"></span></h5><!-- /.sec-title__tagline -->
 					<h3 class="sec-title__title mt-5"><b>{{ $company_status[0]['company-status-h3'] }}</b></h3>
 					<!-- /.sec-title__title -->
 				</div><!-- /.sec-title -->
@@ -1427,9 +1427,9 @@
 		<section class="service-one" id="servicos">
 			<div class="container">
 				<div class="text-center">
-					<h6 class="sec-title__tagline text-titles"><span
+					<h5 class="sec-title__tagline text-titles"><span
 							class="sec-title__tagline__left"></span><b>{{ $best_service[0]['best-service-h6-1'] }}</b><span
-							class="sec-title__tagline__right"></span></h6><!-- /.sec-title__tagline -->
+							class="sec-title__tagline__right"></span></h5><!-- /.sec-title__tagline -->
 					<h3 class="sec-title__title mt-5"><b>{{ $best_service[0]['best-service-h3-1'] }}</b></h3>
 					<!-- /.sec-title__title -->
 				</div><!-- /.sec-title -->
@@ -2038,7 +2038,7 @@
 													style="visibility: visible; animation-name: slideInRight;"><img
 														src="{{ $our_service_2[0]['img-2'] }}" alt=""></figure>
 												<div class="image-content" style="background-color: #002255">
-													<h6>VISITA GRÁTIS</h6>
+													<h5>VISITA GRÁTIS</h5>
 												</div>
 											</div>
 										</div>
@@ -2064,7 +2064,7 @@
 					<div class="col-xl-6 wow fadeInLeft" data-wow-delay="1000ms">
 						<div class="about-one__content">
 							<div class="text-titles mb-5">
-								<h6 class="sec-title__tagline text-titles">{{ $about_now[0]['about-now-h6'] }}</h6>
+								<h5 class="sec-title__tagline text-titles">{{ $about_now[0]['about-now-h6'] }}</h5>
 								<!-- /.sec-title__tagline -->
 								<h3 class="sec-title__title">{{ $about_now[0]['about-now-h3'] }}</h3>
 								<!-- /.sec-title__title -->
@@ -2137,9 +2137,9 @@
 					<div class="col-lg-5">
 						<div class="why-choose-two__content">
 							<div class="sec-title-two text-left">
-								<h6 class="sec-title-two__tagline text-titles"><span
+								<h5 class="sec-title-two__tagline text-titles"><span
 										class="sec-title__tagline__left"></span><i><b>{{ $choose_us[0]['choose-us-p-1'] }}</b></i><span
-										class="sec-title__tagline__right"></span></h6>
+										class="sec-title__tagline__right"></span></h5>
 								<!-- /.sec-title-two__tagline -->
 								<h3 class="sec-title-two__title"><b>{{ $choose_us[0]['choose-us-h3'] }}</b></h3>
 								<!-- /.sec-title-two__title -->
