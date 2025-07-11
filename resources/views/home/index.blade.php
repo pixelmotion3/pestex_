@@ -315,7 +315,7 @@
 	<div class="custom-cursor__cursor-two"></div>
 
 	<div class="preloader">
-		<div class="preloader__image" style="background-image: url(/assets/images/logo-dark.png);"></div>
+		<div class="preloader__image" style="background-image: url(/assets/images/logo-dark.png);" loading="lazy"></div>
 	</div>
 	<!-- Modal -->
 	<div class="modal fade rounded-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -648,7 +648,7 @@
 							data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
 						</div>
 						<div class="main-slider-one__bg"
-							style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path'] }});"></div>
+							style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path'] }});" loading="lazy"></div>
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12">
@@ -700,7 +700,7 @@
 							data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
 						</div>
 						<div class="main-slider-one__bg"
-							style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path-1'] }});"></div>
+							style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path-1'] }});" loading="lazy"></div>
 
 						<div class="container">
 							<div class="row">
@@ -757,7 +757,7 @@
 									-->
 						</div>
 						<div class="main-slider-one__bg"
-							style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path-2'] }});"></div>
+							style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path-2'] }});" loading="lazy"></div>
 
 						<div class="container">
 							<div class="row">
@@ -1445,55 +1445,55 @@
 							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
 									@if ($best_service[0]['best-service-a-1'] == "Roedores" || $best_service[0]['best-service-a-1'] == "roedores")
-										<img src="../assets/svg/icons/new-white/rato.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/rato.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-1'] == "Baratas" || $best_service[0]['best-service-a-1'] == "baratas")
-										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-1'] == "Percevejos" || $best_service[0]['best-service-a-1'] == "percevejos")
-										<img src="../assets/svg/icons/new-white/percevejo.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/percevejo.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-1'] == "Formigas" || $best_service[0]['best-service-a-1'] == "formigas")
-										<img src="../assets/svg/icons/new-white/formiga.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/formiga.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-1'] == "Processionária do Pinheiro" || $best_service[0]['best-service-a-1'] == "processionária do pinheiro")
 										<img src="../assets/svg/icons/new-white/processionario-pinheiro.svg" width="60"
-											alt="tolak">
+											alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-1'] == "Mosquitos" || $best_service[0]['best-service-a-1'] == "mosquitos")
-										<img src="../assets/svg/icons/new-white/mosquito.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/mosquito.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-1'] == "Ácaros" || $best_service[0]['best-service-a-1'] == "ácaros")
-										<img src="../assets/svg/icons/new-white/acaros.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/acaros.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-1'] == "Vespas" || $best_service[0]['best-service-a-1'] == "vespas")
-										<img src="../assets/svg/icons/new-white/vespas.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/vespas.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-1'] == "Moscas" || $best_service[0]['best-service-a-1'] == "moscas")
-										<img src="../assets/svg/icons/new-white/mosca.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/mosca.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-1'] == "Traças" || $best_service[0]['best-service-a-1'] == "traças")
-										<img src="../assets/svg/icons/new-white/traca.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/traca.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-1'] == "Pulgas" || $best_service[0]['best-service-a-1'] == "pulgas")
-										<img src="../assets/svg/icons/new-white/pulga.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/pulga.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 
 									@if ($best_service[0]['best-service-a-1'] == "Gorgulho das Farinhas" || $best_service[0]['best-service-a-1'] == "gorgulho das farinhas")
 										<img src="../assets/svg/icons/new-white/gorgulho-farinhas.svg" width="60"
-											alt="tolak">
+											alt="tolak" loading="lazy">
 									@endif
 
 									@if ($best_service[0]['best-service-a-1'] == "Traça de Cereais" || $best_service[0]['best-service-a-1'] == "traça de cereais")
-										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 
 									@if ($best_service[0]['best-service-a-1'] == "Peixinho-de-Prata" || $best_service[0]['best-service-a-1'] == "peixinho-de-prata")
-										<img src="../assets/svg/icons/new-white/peixinho-prata.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/peixinho-prata.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 
 									@if ($best_service[0]['best-service-a-1'] == "Térmitas" || $best_service[0]['best-service-a-1'] == "térmitas")
-										<img src="../assets/svg/icons/new-white/termita.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/termita.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 								</div><!-- /.service-icon -->
 								<h3 class="service-one__item__title">
@@ -1523,55 +1523,55 @@
 							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
 									@if ($best_service[0]['best-service-a-2'] == "Roedores" || $best_service[0]['best-service-a-2'] == "roedores")
-										<img src="../assets/svg/icons/new-white/rato.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/rato.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-2'] == "Baratas" || $best_service[0]['best-service-a-2'] == "baratas")
-										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-2'] == "Percevejos" || $best_service[0]['best-service-a-2'] == "percevejos")
-										<img src="../assets/svg/icons/new-white/percevejo.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/percevejo.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-2'] == "Formigas" || $best_service[0]['best-service-a-2'] == "formigas")
-										<img src="../assets/svg/icons/new-white/formiga.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/formiga.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-2'] == "Processionária do Pinheiro" || $best_service[0]['best-service-a-2'] == "processionária do pinheiro")
 										<img src="../assets/svg/icons/new-white/processionario-pinheiro.svg" width="60"
-											alt="tolak">
+											alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-2'] == "Mosquitos" || $best_service[0]['best-service-a-2'] == "mosquitos")
-										<img src="../assets/svg/icons/new-white/mosquito.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/mosquito.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-2'] == "Ácaros" || $best_service[0]['best-service-a-2'] == "ácaros")
-										<img src="../assets/svg/icons/new-white/acaros.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/acaros.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-2'] == "Vespas" || $best_service[0]['best-service-a-2'] == "vespas")
-										<img src="../assets/svg/icons/new-white/vespas.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/vespas.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-2'] == "Moscas" || $best_service[0]['best-service-a-2'] == "moscas")
-										<img src="../assets/svg/icons/new-white/mosca.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/mosca.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-2'] == "Traças" || $best_service[0]['best-service-a-2'] == "traças")
-										<img src="../assets/svg/icons/new-white/traca.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/traca.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-2'] == "Pulgas" || $best_service[0]['best-service-a-2'] == "pulgas")
-										<img src="../assets/svg/icons/new-white/pulga.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/pulga.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 
 									@if ($best_service[0]['best-service-a-2'] == "Gorgulho das Farinhas" || $best_service[0]['best-service-a-2'] == "gorgulho das farinhas")
 										<img src="../assets/svg/icons/new-white/gorgulho-farinhas.svg" width="60"
-											alt="tolak">
+											alt="tolak" loading="lazy">
 									@endif
 
 									@if ($best_service[0]['best-service-a-2'] == "Traça de Cereais" || $best_service[0]['best-service-a-2'] == "traça de cereais")
-										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 
 									@if ($best_service[0]['best-service-a-2'] == "Peixinho-de-Prata" || $best_service[0]['best-service-a-2'] == "peixinho-de-prata")
-										<img src="../assets/svg/icons/new-white/peixinho-prata.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/peixinho-prata.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 
 									@if ($best_service[0]['best-service-a-2'] == "Térmitas" || $best_service[0]['best-service-a-2'] == "térmitas")
-										<img src="../assets/svg/icons/new-white/termita.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/termita.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 								</div><!-- /.service-icon -->
 								<h3 class="service-one__item__title">
@@ -1982,7 +1982,7 @@
 											<div class="image-box">
 												<figure class="image wow slideInRight animated"
 													style="visibility: visible; animation-name: slideInRight;"><img
-														src="{{ $our_service_1[0]['img-1'] }}" alt=""></figure>
+														src="{{ $our_service_1[0]['img-1'] }}" alt=""  loading="lazy"></figure>
 												<div class="image-content" style="background-color: #002255">
 													<h6>VISITA GRÁTIS</h6>
 												</div>
@@ -2036,9 +2036,9 @@
 											<div class="image-box">
 												<figure class="image wow slideInRight animated"
 													style="visibility: visible; animation-name: slideInRight;"><img
-														src="{{ $our_service_2[0]['img-2'] }}" alt=""></figure>
+														src="{{ $our_service_2[0]['img-2'] }}" alt="" loading="lazy"></figure>
 												<div class="image-content" style="background-color: #002255">
-													<h5>VISITA GRÁTIS</h5>
+													<h6>VISITA GRÁTIS</h6>
 												</div>
 											</div>
 										</div>
@@ -2122,7 +2122,7 @@
 					<div class="col-xl-6">
 						<div class="tolak-stretch-element-inside-column">
 							<div class="about-one__image wow slideInRight">
-								<img src="{{ $about_now[0]['about-now-img-path'] }}" alt="tolak">
+								<img src="{{ $about_now[0]['about-now-img-path'] }}" alt="tolak" loading="lazy">
 							</div><!-- /.about__image -->
 						</div><!-- /.tolak-stretch-element-inside-column  -->
 					</div><!-- /.col-lg-6 -->
@@ -2152,7 +2152,7 @@
 							<div class="why-choose-two__item wow fadeInUp rounded-lg" data-wow-delay="00ms">
 								<div class="why-choose-two__item__icon rounded-lg">
 									<img src="assets/images/produtos_ecologicos_seguros.png"
-										alt="Produtos ecologicos seguros">
+										alt="Produtos ecologicos seguros" loading="lazy">
 								</div>
 								<h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-1'] }}</h4>
 								<a href="/sustentabilidade" class="why-choose-two__item__rm"><span
@@ -2161,7 +2161,7 @@
 							<div class="why-choose-two__item why-choose-two__item--reverse wow fadeInUp rounded-lg"
 								data-wow-delay="500ms">
 								<div class="why-choose-two__item__icon rounded-lg">
-									<img src="assets/images/metodos_preventivos.png" alt="metodos preventivos">
+									<img src="assets/images/metodos_preventivos.png" alt="metodos preventivos" loading="lazy">
 								</div>
 								<h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-2'] }}</h4>
 								<a href="/sustentabilidade" class="why-choose-two__item__rm"><span
@@ -2170,7 +2170,7 @@
 							<div class="why-choose-two__item wow fadeInUp rounded-lg" data-wow-delay="200ms">
 								<div class="why-choose-two__item__icon rounded-lg">
 									<img src="assets/images/compromisso_meio_ambiente.png"
-										alt="compromisso com o meio ambiente">
+										alt="compromisso com o meio ambiente" loading="lazy">
 								</div>
 								<h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-3'] }}</h4>
 								<a href="/sustentabilidade" class="why-choose-two__item__rm"><span
@@ -2180,15 +2180,15 @@
 					</div><!-- /.col-lg-5 -->
 					<div class="col-lg-7">
 						<div class="why-choose-two__image">
-							<img src="{{ $choose_us[0]['choose-us-img'] }}" alt="tolak">
+							<img src="{{ $choose_us[0]['choose-us-img'] }}" alt="tolak" loading="lazy">
 							<div class="why-choose-two__image__two wow fadeInUp" data-wow-delay="200ms">
-								<img src="{{ $choose_us[0]['choose-us-img-1'] }}" alt="tolak">
+								<img src="{{ $choose_us[0]['choose-us-img-1'] }}" alt="tolak" loading="lazy">
 							</div>
 							<div class="why-choose-two__image__three wow fadeInUp" data-wow-delay="300ms">
-								<img src="{{ $choose_us[0]['choose-us-img-2'] }}" alt="tolak">
+								<img src="{{ $choose_us[0]['choose-us-img-2'] }}" alt="tolak" loading="lazy">
 							</div>
 							<div class="why-choose-two__image__four wow fadeInUp" data-wow-delay="400ms">
-								<img src="{{ $choose_us[0]['choose-us-img-3'] }}" alt="tolak">
+								<img src="{{ $choose_us[0]['choose-us-img-3'] }}" alt="tolak" loading="lazy">
 							</div>
 						</div><!-- /.why-choose-two__image -->
 					</div><!-- /.col-lg-7 -->
@@ -2301,9 +2301,9 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="funfact-one__image">
-							<img src="{{ $collapse[0]['collapse-bg-img'] }}" alt="tolak">
+							<img src="{{ $collapse[0]['collapse-bg-img'] }}" alt="tolak" loading="lazy">
 							<img class="funfact-one__image__shape" src="assets/images/shapes/counter-border-1.png"
-								alt="tolak">
+								alt="tolak" loading="lazy">
 							<div class="funfact-one__item count-box tolak-tilt"
 								data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 9, "speed": 700, "scale": 1 }'
 								style="background-color: #002255;">
@@ -2505,7 +2505,7 @@
 								style="background-image: url({{ $call_now[0]['call-now-bg-image-3-path'] }});">
 								<div class="cta-two__info__icon">
 									{{-- <span class="icon-phone-call"></span> --}}
-									<img src="assets/images/call_now.png" alt="Produtos ecologicos seguros">
+									<img src="assets/images/call_now.png" alt="Produtos ecologicos seguros" loading="lazy">
 								</div>
 								<h4 class="cta-two__info__title">{{ $call_now[0]['call-now-h4-1'] }}</h4>
 								<p class="cta-two__info__text">
@@ -2529,7 +2529,7 @@
 						</div>
 						<div class="col-lg-4 wow fadeInUp" data-wow-delay="200ms">
 							<div class="cta-two__image">
-								<img src="{{ $call_now[0]['call-now-bg-image-4-path'] }}" alt="tolak">
+								<img src="{{ $call_now[0]['call-now-bg-image-4-path'] }}" alt="tolak" loading="lazy">
 							</div>
 							<a href="tel:025461556695" class="cta-two__call-text">{{ $call_now[0]['call-now-a-3'] }}</a>
 						</div>
@@ -2573,7 +2573,7 @@
 						</div>
 						<div class="col-lg-6 wow fadeInUp" data-wow-delay="200ms">
 							<div class="cta-four__image">
-								<img src="{{ $video_contact[0]['watch-video-bg-img-1'] }}" alt="tolak">
+								<img src="{{ $video_contact[0]['watch-video-bg-img-1'] }}" alt="tolak" loading="lazy">
 							</div>
 						</div>
 					</div>
@@ -2585,7 +2585,7 @@
 			<div class="container mt-3 mb-5">
 				<div class="row wow slideInRight animated" style="visibility: visible; animation-name: slideInRight;">
 					<div class="col-md-6 services-background-image w-100 h-75"
-						style="background-image: url({{ $video_contact[0]['contact-us-bg-img'] }});border-radius:30px;">
+						style="background-image: url({{ $video_contact[0]['contact-us-bg-img'] }});border-radius:30px;" loading="lazy">
 
 					</div>
 					<div class="col-md-6 pb-5 text-center apointement-box" style="z-index:10;">
