@@ -2977,7 +2977,7 @@ setTimeout(function() {
 
     <script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}"></script>
+    <script nomodule src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jarallax/jarallax.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jquery-ui/jquery-ui.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
@@ -2986,7 +2986,7 @@ setTimeout(function() {
     <script src="{{ asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jquery-validate/jquery.validate.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script>
-    <script src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}"></script>
+    <script nomodule src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}"></script>
     <script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
