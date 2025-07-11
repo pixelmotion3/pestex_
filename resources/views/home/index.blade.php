@@ -115,7 +115,7 @@
 	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 	<link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
 	<!-- template styles -->
-	<link rel="stylesheet" href="{{ asset('assets/css/tolak.min.css') }}" media="print"
+	<link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" media="print"
 		onload="this.onload=null;this.media='all';" />
 
 
