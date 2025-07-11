@@ -73,8 +73,7 @@ setTimeout(function() {
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-	<script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}" defer></script>
-	<script src="{{ asset('assets/js/jquery.js') }}" defer></script>
+
     <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/animate/animate.min.css') }}" />
@@ -99,14 +98,14 @@ setTimeout(function() {
     <link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/owl.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
-    {{-- <link href="{{ asset('assets/css/jquery.fancybox.min.css') }}" rel="stylesheet"> --}}
+    <link href="{{ asset('assets/css/jquery.fancybox.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/animate.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/nice-select.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/color.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/style.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
     <!-- template styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}"  media="print" onload="this.onload=null;this.media='all';"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/tolak.min.css') }}"  media="print" onload="this.onload=null;this.media='all';"/>
 
 
 	<!-- Google tag (gtag.js) --> <script async src=https://www.googletagmanager.com/gtag/js?id=G-973E1T9CZV></script>
@@ -250,12 +249,12 @@ setTimeout(function() {
 
     <script src="{{ asset('assets/js/popper.min.js') }}" defer></script>
     <script src="{{ asset('assets/js/jquery.js') }}" defer></script>
-    {{-- <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script> --}}
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 
     <script src="{{ asset('assets/js/owl.js') }}" defer></script>
     <script src="{{ asset('assets/js/wow.js') }}" defer></script>
     <script src="{{ asset('assets/js/validation.js') }}" defer></script>
-    {{-- <script src="{{ asset('assets/js/jquery.fancybox.js') }}" defer ></script> --}}
+    <script src="{{ asset('assets/js/jquery.fancybox.js') }}" defer ></script>
     <script src="{{ asset('assets/js/appear.js') }}" defer></script>
     <script src="{{ asset('assets/js/jquery.countTo.js') }}" defer></script>
     <script src="{{ asset('assets/js/scrollbar.js') }}" defer></script>
@@ -267,9 +266,6 @@ setTimeout(function() {
 
 <body class="custom-cursor" style="overflow-x: hidden;">
 	<style>
-		.border {
-			border-width: 1px;
-		}
 		.whatsapp-float {
 			position: fixed;
 			width: 60px;
@@ -2979,17 +2975,17 @@ setTimeout(function() {
     </script>
 
 
-
+    <script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script>
     <script nomodule src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jarallax/jarallax.min.js') }}"></script>
-    {{-- <script src="{{ asset('assets/vendors/jquery-ui/jquery-ui.min.js') }}" defer></script> --}}
+    <script src="{{ asset('assets/vendors/jquery-ui/jquery-ui.min.js') }}" defer></script>
     <script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jquery-validate/jquery.validate.min.js') }}"></script>
-    {{-- <script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script> --}}
+    <script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script>
     <script nomodule src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}"></script>
     <script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
@@ -2997,28 +2993,28 @@ setTimeout(function() {
     <script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
     <script src="{{ asset('assets/vendors/simpleParallax/simpleParallax.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/imagesloaded/imagesloaded.min.js') }}"></script>
-    {{-- <script src="{{ asset('assets/vendors/isotope/isotope.js') }}"></script> --}}
+    <script src="{{ asset('assets/vendors/isotope/isotope.js') }}"></script>
     <script src="{{ asset('assets/vendors/countdown/countdown.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/jquery-circleType/jquery.circleType.js') }}"></script>
     <script src="{{ asset('assets/vendors/jquery-lettering/jquery.lettering.min.js') }}"></script>
-    {{-- <script src="{{ asset('assets/vendors/progress-bar/knob.js') }}"></script> --}}
+    <script src="{{ asset('assets/vendors/progress-bar/knob.js') }}"></script>
 
     <!-- chart js -->
-    {{-- <script src="{{ asset('assets/vendors/chart/chart.min.js') }}" defer></script> --}}
-    {{-- <script src="{{ asset('assets/vendors/chart/custome-chart.js') }}"></script> --}}
+    <script src="{{ asset('assets/vendors/chart/chart.min.js') }}" defer></script>
+    <script src="{{ asset('assets/vendors/chart/custome-chart.js') }}"></script>
 
     <!-- template js -->
     <script src="{{ asset('assets/js/tolak.js') }}"></script>
 
     <!-- sanito -->
 
-
+    <script src="{{ asset('assets/js/jquery.js') }}" defer></script>
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('assets/js/owl.js') }}"></script>
     <script src="{{ asset('assets/js/wow.js') }}"></script>
     <script src="{{ asset('assets/js/validation.js') }}"></script>
-    {{-- <script src="{{ asset('assets/js/jquery.fancybox.js') }}" defer ></script> --}}
+    <script src="{{ asset('assets/js/jquery.fancybox.js') }}" defer ></script>
     <script src="{{ asset('assets/js/appear.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
     <script src="{{ asset('assets/js/scrollbar.js') }}"></script>
