@@ -64,8 +64,7 @@
 		fbq('track', 'PageView');
 	</script>
 
-	<noscript><img height="1" width="1" style="display:none"
-			src=https://www.facebook.com/tr?id=1312432023376979&ev=PageView&noscript=1 /></noscript>
+	<noscript><img height="1" width="1" style="display:none" src=https://www.facebook.com/tr?id=1312432023376979&ev=PageView&noscript=1 /></noscript>
 
 	<!-- End Meta Pixel Code -->
 
@@ -73,7 +72,7 @@
 	<meta name="keywords" content="{{ $main_screen[0]['meta-keywords'] }}">
 	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon01.png">
 	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.bunny.net">
+	{{-- <link rel="preconnect" href="https://fonts.bunny.net"> --}}
 
 	{{-- <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap/css/bootstrap.min.css') }}" /> --}}
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -250,12 +249,10 @@
 	</style>
 	<!-- jequery plugins -->
 	{{-- <script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}"></script> --}}
-	{{-- <script src="{{ asset('assets/js/popper.min.js') }}" defer></script> --}}
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js" integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="{{ asset('assets/js/popper.min.js') }}" defer></script>
 	{{-- <script src="{{ asset('assets/js/jquery.js') }}" defer></script> --}}
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	{{-- <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script> --}}
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+	<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 	<script src="{{ asset('assets/js/validation.js') }}" defer></script>
 	<script src="{{ asset('assets/js/appear.js') }}" defer></script>
 	<script src="{{ asset('assets/js/scrollbar.js') }}" defer></script>
@@ -263,7 +260,7 @@
 
 	<!-- main-js -->
 	<script src="{{ asset('assets/js/script.js') }}" defer></script>
-		<style>
+	<style>
 		.whatsapp-float {
 			position: fixed;
 			width: 60px;
@@ -291,6 +288,28 @@
 			height: 100%;
 		}
 	</style>
+	{{-- <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script> --}}
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script nomodule src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}" defer></script>
+	<script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
+	{{-- <script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script> --}}
+	<script nomodule src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}" defer></script>
+	<script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
+	<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
+
+	<!-- template js -->
+	<script src="{{ asset('assets/js/tolak.js') }}"></script>
+
+	<!-- sanito -->
+
+	{{-- <script src="{{ asset('assets/js/jquery.js') }}" defer></script> --}}
+	<script src="{{ asset('assets/js/popper.min.js') }}"></script>
+	<script src="{{ asset('assets/js/appear.js') }}"></script>
+	<script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
+	<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
 </head>
 
 <body class="custom-cursor" style="overflow-x: hidden;">
@@ -3083,29 +3102,7 @@
 
 
 
-	{{-- <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script> --}}
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	{{-- <script nomodule src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}" defer></script> --}}
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js" integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
-	<script src="{{ asset('assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
-	{{-- <script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script> --}}
-	{{-- <script nomodule src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}" defer></script> --}}
-	<script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}"></script>
-	<script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
-	<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
-	<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
 
-	<!-- template js -->
-	<script src="{{ asset('assets/js/tolak.js') }}"></script>
-
-	<!-- sanito -->
-
-	{{-- <script src="{{ asset('assets/js/jquery.js') }}" defer></script> --}}
-	{{-- <script src="{{ asset('assets/js/popper.min.js') }}"></script> --}}
-	<script src="{{ asset('assets/js/appear.js') }}"></script>
-	<script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
-	<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
 	<script>
 		$(".form-contacts").on('submit', (e) => {
 			// e.target é o formulário que disparou o evento
