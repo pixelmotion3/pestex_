@@ -31,10 +31,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Soluções personalizadas para cada problema. Desfrute de um Ambiente Saudável">
-	{{--
-	<script src="https://js.hcaptcha.com/1/api.js" async defer></script> --}}
 	<title>SOS Pragas</title>
-	<!-- Meta Pixel Code -->
 
 	<script>
 
@@ -119,10 +116,25 @@
 
 
 	<!-- Google tag (gtag.js) -->
-	<script async src=https://www.googletagmanager.com/gtag/js?id=G-973E1T9CZV></script>
+	{{-- <script async src=https://www.googletagmanager.com/gtag/js?id=G-973E1T9CZV></script>
 
 	<script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-973E1T9CZV'); </script>
-	<!-- Styles -->
+	<!-- Styles --> --}}
+	<script>
+		setTimeout(() => {
+			const script = document.createElement('script');
+			script.src = "https://www.googletagmanager.com/gtag/js?id=G-973E1T9CZV";
+			script.async = true;
+			document.head.appendChild(script);
+
+			script.onload = () => {
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-973E1T9CZV');
+			};
+		}, 4000); // adia 4 segundos após carregamento inicial
+	</script>
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
 
 	<style>
@@ -3007,7 +3019,7 @@
 	<script src="{{ asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}"></script> --}}
 	{{-- <script src="{{ asset('assets/vendors/jquery-validate/jquery.validate.min.js') }}"></script> --}}
 	<script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script>
-	<script nomodule src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}"></script>
+	<script nomodule src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}" defer></script>
 	<script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}"></script>
 	<script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
 	<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
