@@ -300,7 +300,7 @@
 	<div class="custom-cursor__cursor-two"></div>
 
 	<div class="preloader">
-		<div class="preloader__image" style="background-image: url(/assets/images/logo-dark.png);" loading="lazy"></div>
+		<div class="preloader__image" style="background-image: url(/assets/images/logo-dark.webp);"></div>
 	</div>
 	<!-- Modal -->
 	<div class="modal fade rounded-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
