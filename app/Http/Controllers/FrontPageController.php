@@ -116,19 +116,19 @@ class FrontPageController extends Controller
 		$services = ServiceDetails::all();
 		$reviews = Review::all();
 		$faqs = faq::all();
-		$showCookieBanner = 0;
-		if(isset($_COOKIE['cookie_consent_sosp'])){
-			$showCookieBanner = $_COOKIE['cookie_consent_sosp'] == true ? 1 : 0;
-		}else{
-		 	$showCookieBanner = 0;
-		}
+		// $showCookieBanner = 0;
+		// if(isset($_COOKIE['cookie_consent_sosp'])){
+		// 	$showCookieBanner = $_COOKIE['cookie_consent_sosp'] == true ? 1 : 0;
+		// }else{
+		//  	$showCookieBanner = 0;
+		// }
 
 
-		$contactos_news = contact_forms::where('viewed', null)->get()->toArray();
-		$contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
-		$news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
-		$quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
-		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
+		// $contactos_news = contact_forms::where('viewed', null)->get()->toArray();
+		// $contact_forms_news = count(contact_forms::where('viewed', null)->get()->toArray());
+		// $news_letters_news = count(News_letter::where('viewed', null)->get()->toArray());
+		// $quote_forms_news = count(quote_forms::where('viewed', null)->get()->toArray());
+		// $news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
 		$routeName = 'home'; // Nome da rota ou página que será monitorada
         $today = now()->toDateString(); // Data atual (YYYY-MM-DD)
 		// Incrementa ou cria um registro para a contagem de visitas
@@ -150,11 +150,13 @@ class FrontPageController extends Controller
             'video_contact' => $landing_11page,
 			'services' => $services,
 			'reviews' =>  $reviews,
-			'contactos_news' => $contactos_news,
-			'contact_forms_news' => $contact_forms_news,
-			'news_letters_news' => $news_letters_news,
-			'quote_forms_news' => $quote_forms_news,
-			'showCookieBanner' => !$showCookieBanner,
+
+
+			// 'contactos_news' => $contactos_news,
+			// 'contact_forms_news' => $contact_forms_news,
+			// 'news_letters_news' => $news_letters_news,
+			// 'quote_forms_news' => $quote_forms_news,
+			// 'showCookieBanner' => !$showCookieBanner,
 			'faqs' => $faqs
         ]);
     }
