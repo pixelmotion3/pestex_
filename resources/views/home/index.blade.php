@@ -1056,7 +1056,7 @@
 			</div>
 		</section>
 		<section>
-			<div class="main-slider-one__project2 fadeInUp text-center shadow-lg bg-light" style="display: none;"
+			<div class="main-slider-one__project2 text-center shadow-lg bg-light" style="display: none;"
 				data-wow-delay="200ms" style="min-width: 400px;z-index:1;border-radius:30px;">
 				<ul class="nav nav-tabs " id="myTab" role="tablist">
 					<li class="nav-item w-50 rounded-top-lg" role="presentation">
@@ -2187,7 +2187,7 @@
 										alt="Produtos ecologicos seguros" loading="lazy">
 								</div>
 								<h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-1'] }}</h4>
-								<a href="/sustentabilidade" class="why-choose-two__item__rm"><span
+								<a href="/sustentabilidade?item={{ $choose_us[0]['choose-us-h4-1'] }}" name="sustentabilidade" alt="sustentabilidade" class="why-choose-two__item__rm"><span
 										class="icon-right-arrow"></span></a>
 							</div><!-- why-choose-two__item -->
 							<div class="why-choose-two__item why-choose-two__item--reverse wow fadeInUp rounded-lg"
@@ -2197,7 +2197,7 @@
 										loading="lazy">
 								</div>
 								<h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-2'] }}</h4>
-								<a href="/sustentabilidade" class="why-choose-two__item__rm"><span
+								<a href="/sustentabilidade?item={{ $choose_us[0]['choose-us-h4-2'] }}" class="why-choose-two__item__rm"><span
 										class="icon-right-arrow"></span></a>
 							</div><!-- why-choose-two__item -->
 							<div class="why-choose-two__item wow fadeInUp rounded-lg" data-wow-delay="200ms">
@@ -2206,7 +2206,7 @@
 										alt="compromisso com o meio ambiente" loading="lazy">
 								</div>
 								<h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-3'] }}</h4>
-								<a href="/sustentabilidade" class="why-choose-two__item__rm"><span
+								<a href="/sustentabilidade?item={{ $choose_us[0]['choose-us-h4-3'] }}" class="why-choose-two__item__rm"><span
 										class="icon-right-arrow"></span></a>
 							</div><!-- why-choose-two__item -->
 						</div><!-- /.why-choose-two__content -->
