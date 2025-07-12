@@ -250,10 +250,12 @@
 	</style>
 	<!-- jequery plugins -->
 	{{-- <script src="{{ asset('assets/vendors/jquery/jquery-3.7.0.min.js') }}"></script> --}}
-	<script src="{{ asset('assets/js/popper.min.js') }}" defer></script>
+	{{-- <script src="{{ asset('assets/js/popper.min.js') }}" defer></script> --}}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js" integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	{{-- <script src="{{ asset('assets/js/jquery.js') }}" defer></script> --}}
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+	{{-- <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script> --}}
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
 	<script src="{{ asset('assets/js/validation.js') }}" defer></script>
 	<script src="{{ asset('assets/js/appear.js') }}" defer></script>
 	<script src="{{ asset('assets/js/scrollbar.js') }}" defer></script>
@@ -299,9 +301,9 @@
 	<div class="custom-cursor__cursor"></div>
 	<div class="custom-cursor__cursor-two"></div>
 
-	{{-- <div class="preloader">
+	<div class="preloader">
 		<div class="preloader__image" style="background-image: url(/assets/images/logo-dark.webp);"></div>
-	</div> --}}
+	</div>
 	<!-- Modal -->
 	<div class="modal fade rounded-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
 		aria-hidden="true">
@@ -587,7 +589,7 @@
 				<div class="main-header__inner">
 					<div class="main-header__logo">
 						<a href="/">
-							<img src="/assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
+							<img src="/assets/images/logo-dark.webp" alt="logo SOSPRAGAS" width="284">
 						</a>
 
 					</div><!-- /.main-header__logo -->
@@ -3081,12 +3083,14 @@
 
 
 
-	<script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script>
-	<script nomodule src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}" defer></script>
+	{{-- <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script> --}}
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	{{-- <script nomodule src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}" defer></script> --}}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js" integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
 	<script src="{{ asset('assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
-	<script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script>
-	<script nomodule src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}" defer></script>
+	{{-- <script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script> --}}
+	{{-- <script nomodule src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}" defer></script> --}}
 	<script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}"></script>
 	<script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
 	<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
@@ -3098,7 +3102,7 @@
 	<!-- sanito -->
 
 	{{-- <script src="{{ asset('assets/js/jquery.js') }}" defer></script> --}}
-	<script src="{{ asset('assets/js/popper.min.js') }}"></script>
+	{{-- <script src="{{ asset('assets/js/popper.min.js') }}"></script> --}}
 	<script src="{{ asset('assets/js/appear.js') }}"></script>
 	<script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
 	<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
