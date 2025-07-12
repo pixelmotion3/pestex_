@@ -663,7 +663,7 @@
 						</div>
 						<div class="main-slider-one__bg"
 							style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path'] }});"
-							loading="lazy"></div>
+							></div>
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12">
@@ -700,7 +700,7 @@
 						</div>
 						<div class="main-slider-one__bg"
 							style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path-1'] }});"
-							loading="lazy"></div>
+							></div>
 
 						<div class="container">
 							<div class="row">
@@ -741,7 +741,7 @@
 						</div>
 						<div class="main-slider-one__bg"
 							style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path-2'] }});"
-							loading="lazy"></div>
+							></div>
 
 						<div class="container">
 							<div class="row">
