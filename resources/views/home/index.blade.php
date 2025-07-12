@@ -98,17 +98,17 @@
 	<!-- Google tag (gtag.js) -->
 	<script>
 	document.addEventListener('DOMContentLoaded', function () {
-	setTimeout(function () {
-		const gtagScript = document.createElement('script');
-		gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-973E1T9CZV';
-		gtagScript.async = true;
-		document.head.appendChild(gtagScript);
+		setTimeout(function () {
+			const gtagScript = document.createElement('script');
+			gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-973E1T9CZV';
+			gtagScript.async = true;
+			document.head.appendChild(gtagScript);
 
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-		gtag('config', 'G-973E1T9CZV');
-	}, 3000);
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-973E1T9CZV');
+		}, 3000);
 	});
 	</script>
 
@@ -260,6 +260,29 @@
 
 	<!-- main-js -->
 	<script src="{{ asset('assets/js/script.js') }}" defer></script>
+
+	{{-- <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script> --}}
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script nomodule src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}" defer></script>
+	<script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
+	{{-- <script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script> --}}
+	<script nomodule src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}" defer></script>
+	<script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
+	<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
+
+	<!-- template js -->
+	<script src="{{ asset('assets/js/tolak.js') }}"></script>
+
+	<!-- sanito -->
+
+	{{-- <script src="{{ asset('assets/js/jquery.js') }}" defer></script> --}}
+	<script src="{{ asset('assets/js/popper.min.js') }}"></script>
+	<script src="{{ asset('assets/js/appear.js') }}"></script>
+	{{-- <script src="{{ asset('assets/js/jquery.countTo.js') }}"></script> --}}
+	<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
 	<style>
 		.whatsapp-float {
 			position: fixed;
@@ -288,28 +311,6 @@
 			height: 100%;
 		}
 	</style>
-	{{-- <script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script> --}}
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script nomodule src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}" defer></script>
-	<script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
-	<script src="{{ asset('assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
-	{{-- <script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script> --}}
-	<script nomodule src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}" defer></script>
-	<script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}"></script>
-	<script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
-	<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
-	<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
-
-	<!-- template js -->
-	<script src="{{ asset('assets/js/tolak.js') }}"></script>
-
-	<!-- sanito -->
-
-	{{-- <script src="{{ asset('assets/js/jquery.js') }}" defer></script> --}}
-	<script src="{{ asset('assets/js/popper.min.js') }}"></script>
-	<script src="{{ asset('assets/js/appear.js') }}"></script>
-	<script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
-	<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
 </head>
 
 <body class="custom-cursor" style="overflow-x: hidden;">
@@ -317,8 +318,8 @@
 	<a href="https://wa.me/+351937824676" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
 		<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" loading="lazy" />
 	</a>
-	<div class="custom-cursor__cursor"></div>
-	<div class="custom-cursor__cursor-two"></div>
+	{{-- <div class="custom-cursor__cursor"></div>
+	<div class="custom-cursor__cursor-two"></div> --}}
 
 	<div class="preloader">
 		<div class="preloader__image" style="background-image: url(/assets/images/logo-dark.webp);"></div>
