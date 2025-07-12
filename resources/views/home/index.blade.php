@@ -81,12 +81,12 @@
 	{{--
 	<link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.css') }}" /> --}}
 
-	{{-- <link rel="stylesheet" href="{{ asset('assets/vendors/animate/animate.min.css') }}" />
+	{{-- <link rel="stylesheet" href="{{ asset('assets/vendors/animate/animate.min.css') }}" /> --}}
 
 
-	<link rel="stylesheet" href="{{ asset('assets/vendors/fontawesome/css/all.min.css') }}" /> --}}
+	{{-- <link rel="stylesheet" href="{{ asset('assets/vendors/fontawesome/css/all.min.css') }}" /> --}}
 
-	{{--
+{{--
 	<link rel="stylesheet" href="{{ asset('assets/vendors/icofont/icofont.min.css') }}" /> --}}
 	{{--
 	<link rel="stylesheet" href="{{ asset('assets/vendors/jquery-ui/jquery-ui.css') }}" /> --}}
@@ -96,16 +96,16 @@
 	<link rel="stylesheet" href="{{ asset('assets/vendors/nouislider/nouislider.min.css') }}" />
 	{{-- <link rel="stylesheet" href="{{ asset('assets/vendors/nouislider/nouislider.pips.css') }}" /> --}}
 	<link rel="stylesheet" href="{{ asset('assets/vendors/tiny-slider/tiny-slider.css') }}" />
-	{{-- <link rel="stylesheet" href="{{ asset('assets/vendors/tolak-icons/style.css') }}" /> --}}
-	<link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel/css/owl.carousel.min.css') }}" />
-	<link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel/css/owl.theme.default.min.css') }}" />
+	<link rel="stylesheet" href="{{ asset('assets/vendors/tolak-icons/style.css') }}" />
+	{{-- <link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel/css/owl.carousel.min.css') }}" />
+	<link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel/css/owl.theme.default.min.css') }}" /> --}}
 
 	<!--sanito -->
 	<!-- Stylesheets -->
 
 	<link href="{{ asset('assets/css/font-awesome-all.css') }}" rel="stylesheet">
 
-	{{-- <link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet"> --}}
+	<link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet">
 	<link href="{{ asset('assets/css/owl.css') }}" rel="stylesheet">
 	<link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
 	{{-- <link href="{{ asset('assets/css/jquery.fancybox.min.css') }}" rel="stylesheet"> --}}
@@ -115,8 +115,7 @@
 	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 	<link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
 	<!-- template styles -->
-	<link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" media="print"
-		onload="this.onload=null;this.media='all';" />
+	<link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
 
 
 	<!-- Google tag (gtag.js) -->
@@ -667,25 +666,6 @@
 												<a href="tel:00351219747353"
 													class="btn1 theme-btn-three1 thm-btn1"><b>{{ $main_screen[0]['carrousel-a-1'] }}</b><span></span></a><!-- slider-btn -->
 											</div>
-											<!--
-												<div class="main-slider-one__social">
-													<a href="https://facebook.com">
-														<i class="fab fa-facebook-f" aria-hidden="true"></i>
-														<span class="sr-only">Facebook</span>
-													</a>
-													<a href="https://pinterest.com">
-														<i class="fab fa-pinterest-p" aria-hidden="true"></i>
-														<span class="sr-only">Pinterest</span>
-													</a>
-													<a href="https://twitter.com">
-														<i class="fab fa-twitter" aria-hidden="true"></i>
-														<span class="sr-only">Twitter</span>
-													</a>
-													<a href="https://instagram.com">
-														<i class="fab fa-instagram" aria-hidden="true"></i>
-														<span class="sr-only">Instagram</span>
-													</a>
-												</div><!-- slider-social -->
 										</div>
 									</div>
 								</div>
@@ -721,25 +701,6 @@
 												<a href="tel:00351219747353"
 													class="btn1 theme-btn-three1 thm-btn1"><b>{{ $main_screen[0]['carrousel-a-1-1'] }}</b><span></span></a><!-- slider-btn -->
 											</div>
-											<!--
-													<div class="main-slider-one__social">
-														<a href="https://facebook.com">
-															<i class="fab fa-facebook-f" aria-hidden="true"></i>
-															<span class="sr-only">Facebook</span>
-														</a>
-														<a href="https://pinterest.com">
-															<i class="fab fa-pinterest-p" aria-hidden="true"></i>
-															<span class="sr-only">Pinterest</span>
-														</a>
-														<a href="https://twitter.com">
-															<i class="fab fa-twitter" aria-hidden="true"></i>
-															<span class="sr-only">Twitter</span>
-														</a>
-														<a href="https://instagram.com">
-															<i class="fab fa-instagram" aria-hidden="true"></i>
-															<span class="sr-only">Instagram</span>
-														</a>
-													</div><!-- slider-social -->
 										</div>
 									</div>
 								</div>
@@ -777,25 +738,6 @@
 												<a href="tel:00351219747353"
 													class="btn1 theme-btn-three1 thm-btn1"><b>{{ $main_screen[0]['carrousel-a-1-2'] }}</b><span></span></a><!-- slider-btn -->
 											</div>
-											<!--
-													<div class="main-slider-one__social">
-														<a href="https://facebook.com">
-															<i class="fab fa-facebook-f" aria-hidden="true"></i>
-															<span class="sr-only">Facebook</span>
-														</a>
-														<a href="https://pinterest.com">
-															<i class="fab fa-pinterest-p" aria-hidden="true"></i>
-															<span class="sr-only">Pinterest</span>
-														</a>
-														<a href="https://twitter.com">
-															<i class="fab fa-twitter" aria-hidden="true"></i>
-															<span class="sr-only">Twitter</span>
-														</a>
-														<a href="https://instagram.com">
-															<i class="fab fa-instagram" aria-hidden="true"></i>
-															<span class="sr-only">Instagram</span>
-														</a>
-													</div><!-- slider-social -->
 										</div>
 									</div>
 								</div>
@@ -886,19 +828,6 @@
 									</div>
 									<input class="input-field rounded" type="hidden" name="customer_type"
 										id="customer_type" value="home" required>
-									{{-- <div class="input-container mt-3" style="width: 92%;" required>
-										<select name="products">
-
-											@isset($services)
-											@foreach ($services as $service)
-											<option value="{{ $service['a'] }}" selected class="text-muted">{{
-												$service['a'] }}</option>
-											<option value="baratas" class="text-muted">Baratas</option>
-											<option value="percevejos" class="text-muted">Percevejos</option>
-											@endforeach
-											@endisset
-										</select>
-									</div> --}}
 									<div class="input-container mt-3" style="width: 92%;">
 										<i class="far fa-map-marker-alt icon" aria-hidden="true"></i>
 										<input class="input-field rounded" type="text" placeholder="Localidade"
@@ -967,18 +896,9 @@
 												target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 										</label>
 									</div>
-									{{-- <div class="form-check">
-										<input class="form-check-input" type="checkbox" id="flexCheckDefault" required>
-										<label class="form-check-label text-left" for="flexCheckDefault"
-											style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-											Autorizo tratamento de dados pessoais para marketing de produtos e serviços
-										</label>
-									</div> --}}
 									<!-- Captcha aparece aqui após clicar no botão -->
 									<div id="captcha-container" class="my-3"
 										style="display: flex; justify-content: center;"></div>
-									{{-- <div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e"
-										style="display: flex;justify-content: center;"></div> --}}
 									<div class="ml-4" style="max-width: 92%">
 										<!-- Botão que carrega o hCaptcha -->
 										<button type="button" onclick="loadCaptcha()"
@@ -1182,13 +1102,6 @@
 									</div>
 									<input class="input-field rounded" type="hidden" name="customer_type"
 										id="customer_type" value="home" required>
-									{{-- <div class="input-container mt-3" style="width: 92%;" required>
-										<select name="products">
-											<option value="ratos" selected class="text-muted">Ratos</option>
-											<option value="baratas" class="text-muted">Baratas</option>
-											<option value="percevejos" class="text-muted">Percevejos</option>
-										</select>
-									</div> --}}
 									<div class="input-container mt-3" style="width: 92%;">
 										<i class="far fa-map-marker-alt icon" aria-hidden="true"></i>
 										<input class="input-field rounded" type="text" placeholder="Localidade"
@@ -1257,13 +1170,6 @@
 												target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
 										</label>
 									</div>
-									{{-- <div class="form-check">
-										<input class="form-check-input" type="checkbox" id="flexCheckDefault" required>
-										<label class="form-check-label text-left" for="flexCheckDefault"
-											style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
-											Autorizo tratamento de dados pessoais para marketing de produtos e serviços
-										</label>
-									</div> --}}
 									<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e"
 										style="display: flex;justify-content: center;"></div>
 									<div class="ml-4 mb-5" style="max-width: 92%">
@@ -2097,23 +2003,6 @@
 								style="max-width: 200px;">
 								<b>SAIBA MAIS</b>
 							</a>
-							<!--
-									<div class="about-one__content__btn">
-										<a href="about.html" class="tolak-btn"><b>Contact</b><span></span></a>
-
-										<h5 class="about-one__content__btn__text">Watching video</h5>
-										<img class="about-one__content__btn__arrow" src="assets/images/shapes/arrow.png" alt="tolak">
-
-									</div>
-									-->
-							<!--
-									<div class="about-one__video-btn">
-										<a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-											<i class="fa fa-play"></i>
-											<span class="video-popup__btn-ripple"></span>
-										</a>
-									</div>
-									-->
 						</div><!-- /.about__content -->
 					</div><!-- /.col-xl-6 -->
 					<div class="col-xl-1 bg-primary rounded" style="margin-right: -100px;z-index:2;">
@@ -2271,26 +2160,6 @@
 								<div class="testimonials-card__image">
 								</div><!-- /.testimonials-card__image -->
 							</div><!-- /.testimonials-card -->
-							{{-- <div class="col-sm-12 col-md-4 testimonial-boxes text-center text-primary w-100">
-								<i class="fa fa-quote-left mt-5" aria-hidden="true" style="font-size:50px;color:#ff6600;"></i>
-								<blockquote>
-									<p class="text-center text-white-50 mt-3">
-										<i>
-											{{ $review['p'] }}
-										</i>
-									</p>
-									<h3 class="h3 text-white mt-2"><strong>{{ $review['name'] }}</strong></h3>
-									<div class="d-flex justify-content-around m-5">
-										@for ($i = 0; $i < 5; $i++) @if ($i < $review['rating']) <i
-											class="fa fa-star text-primary" aria-hidden="true"></i>
-											@else
-											<i class="fa fa-star text-white" aria-hidden="true"></i>
-											@endif
-											@endfor
-									</div>
-								</blockquote>
-
-							</div> --}}
 						@endforeach
 					@endisset
 				</div>
@@ -2380,114 +2249,6 @@
 									@endif
 								@endforeach
 							@endisset
-							{{-- <div class="accrodion active">
-								<div class="accrodion-title" id="accordion-1">
-									<h4 id="accordion-icon-1">
-										<i class="fa fa-check-circle"></i>
-										{{ $collapse[0]['collapse-h4-1'] }}
-										<span class="accrodion-title__icon"
-											style="color: #002255"></span><!-- /.accrodion-title__icon -->
-									</h4>
-								</div>
-								<div class="accrodion-content">
-									<div class="inner">
-										<p>
-											{{ $collapse[0]['collapse-div-p-1'] }}
-										</p>
-										<p>
-											{{ $collapse[0]['collapse-div-p-1-1'] }}
-										</p>
-										<p>
-											{{ $collapse[0]['collapse-div-p-1-2'] }}
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="accrodion">
-								<div class="accrodion-title" id="accordion-2">
-									<h4>
-										<i class="fa fa-check-circle" id="accordion-icon-2"></i>
-										{{ $collapse[0]['collapse-h4-2'] }}
-										<span class="accrodion-title__icon"></span>
-									</h4>
-								</div>
-								<div class="accrodion-content">
-									<div class="inner">
-										<p>
-											{{ $collapse[0]['collapse-div-p-2'] }}
-										</p>
-										<p>
-											{{ $collapse[0]['collapse-div-p-2-1'] }}
-										</p>
-										<p>
-											{{ $collapse[0]['collapse-div-p-2-2'] }}
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="accrodion">
-								<div class="accrodion-title" id="accordion-3">
-									<h4>
-										<i class="fa fa-check-circle" id="accordion-icon-3"></i>
-										{{ $collapse[0]['collapse-h4-3'] }}
-										<span class="accrodion-title__icon"></span>
-									</h4>
-								</div>
-								<div class="accrodion-content">
-									<div class="inner">
-										<p>
-											{{ $collapse[0]['collapse-div-p-3'] }}
-										</p>
-										<p>
-											{{ $collapse[0]['collapse-div-p-3-1'] }}
-										</p>
-										<p>
-											{{ $collapse[0]['collapse-div-p-3-2'] }}
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="accrodion">
-								<div class="accrodion-title" id="accordion-4">
-									<h4>
-										<i class="fa fa-check-circle" id="accordion-icon-4"></i>
-										{{ $collapse[0]['collapse-h4-4'] }}
-										<span class="accrodion-title__icon"></span>
-									</h4>
-								</div>
-								<div class="accrodion-content">
-									<div class="inner">
-										<p>
-											{{ $collapse[0]['collapse-div-p-4'] }}
-										</p>
-										<p>
-											{{ $collapse[0]['collapse-div-p-4-1'] }}
-										</p>
-										<p>
-											{{ $collapse[0]['collapse-div-p-4-2'] }}
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="accrodion">
-								<div class="accrodion-title" id="accordion-5">
-									<h4>
-										<i class="fa fa-check-circle"></i>
-										{{ $collapse[0]['collapse-h4-5'] }}
-										<span class="accrodion-title__icon"></span>
-									</h4>
-								</div>
-								<div class="accrodion-content">
-									<div class="inner">
-										<p>
-											{{ $collapse[0]['collapse-div-p-5'] }}
-										</p>
-										<p>
-											{{ $collapse[0]['collapse-div-p-5-1'] }}
-										</p>
-									</div>
-								</div>
-							</div> --}}
 						</div>
 					</div>
 				</div>
@@ -3066,35 +2827,6 @@
 				</ul>
 			</div>
 			<!-- /.mobile-nav__container -->
-
-			{{-- <ul class="mobile-nav__contact list-unstyled">
-				<li>
-					<i class="fa fa-envelope"></i>
-					<a href="mailto:needhelp@tolak.com">needhelp@tolak.com</a>
-				</li>
-				<li>
-					<i class="fa fa-phone-alt"></i>
-					<a href="tel:666-888-0000">666 888 0000</a>
-				</li>
-			</ul><!-- /.mobile-nav__contact --> --}}
-			{{-- <div class="mobile-nav__social">
-				<a href="https://facebook.com">
-					<i class="fab fa-facebook-f" aria-hidden="true"></i>
-					<span class="sr-only">Facebook</span>
-				</a>
-				<a href="https://pinterest.com">
-					<i class="fab fa-pinterest-p" aria-hidden="true"></i>
-					<span class="sr-only">Pinterest</span>
-				</a>
-				<a href="https://twitter.com">
-					<i class="fab fa-twitter" aria-hidden="true"></i>
-					<span class="sr-only">Twitter</span>
-				</a>
-				<a href="https://instagram.com">
-					<i class="fab fa-instagram" aria-hidden="true"></i>
-					<span class="sr-only">Instagram</span>
-				</a>
-			</div> --}}
 		</div>
 		<!-- /.mobile-nav__content -->
 	</div>
@@ -3112,11 +2844,6 @@
 				var time = $(this).attr("id");
 				console.log(time)
 			})
-			// $(".service-one__item__image").on("click", () =>{
-			// 	var service_id = $(this).attr("id");
-			// 	console.log(service_id)
-			// 	window.open("/servicos/"+service_id)
-			// })
 			const currentYear = new Date().getFullYear();
 			$('#year').text(currentYear);
 
@@ -3305,7 +3032,7 @@
 
 	<script src="{{ asset('assets/js/jquery.js') }}" defer></script>
 	<script src="{{ asset('assets/js/popper.min.js') }}"></script>
-	<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+	{{-- <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script> --}}
 	{{-- <script src="{{ asset('assets/js/owl.js') }}"></script>
 	<script src="{{ asset('assets/js/wow.js') }}"></script>
 	<script src="{{ asset('assets/js/validation.js') }}"></script> --}}
@@ -3313,7 +3040,7 @@
 	<script src="{{ asset('assets/js/jquery.fancybox.js') }}" defer></script> --}}
 	<script src="{{ asset('assets/js/appear.js') }}"></script>
 	<script src="{{ asset('assets/js/jquery.countTo.js') }}"></script>
-	<script src="{{ asset('assets/js/scrollbar.js') }}"></script>
+	{{-- <script src="{{ asset('assets/js/scrollbar.js') }}"></script> --}}
 	<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
 	<script>
 		$(".form-contacts").on('submit', (e) => {
