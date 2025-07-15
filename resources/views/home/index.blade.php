@@ -92,17 +92,21 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<link rel="stylesheet" href="{{ asset('assets/vendors/tolak-icons/style.css') }}" />
 
-	<link href="{{ asset('assets/css/font-awesome-all.css') }}" rel="stylesheet">
+	{{-- <link href="{{ asset('assets/css/font-awesome-all.css') }}" rel="stylesheet"> --}}
 
-	<link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet">
-	<link href="{{ asset('assets/css/owl.css') }}" rel="stylesheet">
-	<link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
-	<link href="{{ asset('assets/css/animate.css') }}" rel="stylesheet">
-	<link href="{{ asset('assets/css/nice-select.css') }}" rel="stylesheet">
-	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-	<link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
+
+	<link href="{{ asset('assets/css/allcss.css') }}" rel="stylesheet">
+
+
+	{{-- <link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet"> --}}
+	{{-- <link href="{{ asset('assets/css/owl.css') }}" rel="stylesheet"> --}}
+	{{-- <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet"> --}}
+	{{-- <link href="{{ asset('assets/css/animate.css') }}" rel="stylesheet"> --}}
+	{{-- <link href="{{ asset('assets/css/nice-select.css') }}" rel="stylesheet"> --}}
+	{{-- <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet"> --}}
+	{{-- <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet"> --}}
 	<!-- template styles -->
-	<link rel="stylesheet" href="{{ asset('assets/css/tolak-min.css') }}" />
+	<link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
 
 
 	<!-- Google tag (gtag.js) -->
@@ -335,6 +339,10 @@
 			background-size: cover;
 			background-position: center;
 			min-height: 300px; /* ou altura necessária */
+		}
+		.input-field::placeholder {
+			color: #000 !important; Cor do placeholder com melhor contraste
+			/* opacity: 1 !important; Garante que o placeholder não fique muito claro */
 		}
 	</style>
 </head>
@@ -728,9 +736,9 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="main-slider-one__content">
-										<h5 class="main-slider-one__sub-title text-titles">
+										<h2 class="main-slider-one__sub-title text-titles">
 											{{ $main_screen[0]['carrousel-h5-1'] }}
-										</h5><!-- slider-sub-title -->
+										</h2><!-- slider-sub-title -->
 										<h2 class="main-slider-one__title">
 											{{ $main_screen[0]['carrousel-h2-1'] }}<br />
 											{{ $main_screen[0]['carrousel-h2-b'] }}
@@ -1402,9 +1410,9 @@
 		<section class="service-one" id="servicos">
 			<div class="container">
 				<div class="text-center">
-					<h5 class="sec-title__tagline text-titles"><span
+					<h2 class="sec-title__tagline text-titles"><span
 							class="sec-title__tagline__left"></span><b>{{ $best_service[0]['best-service-h6-1'] }}</b><span
-							class="sec-title__tagline__right"></span></h5><!-- /.sec-title__tagline -->
+							class="sec-title__tagline__right"></span></h2><!-- /.sec-title__tagline -->
 					<h3 class="sec-title__title mt-5"><b>{{ $best_service[0]['best-service-h3-1'] }}</b></h3>
 					<!-- /.sec-title__title -->
 				</div><!-- /.sec-title -->
