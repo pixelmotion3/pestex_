@@ -1813,25 +1813,25 @@
 											$best_service[0]['best-service-a-5'] == 'gorgulho das farinhas'
 										)
 										<img src="../assets/svg/icons/new-white/gorgulho-farinhas.svg" width="60"
-											alt="tolak">
+											alt="tolak" loading="lazy">
 									@endif
 
 									@if (
 											$best_service[0]['best-service-a-5'] == 'Traça de Cereais' ||
 											$best_service[0]['best-service-a-5'] == 'traça de cereais'
 										)
-										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 
 									@if (
 											$best_service[0]['best-service-a-5'] == 'Peixinho-de-Prata' ||
 											$best_service[0]['best-service-a-5'] == 'peixinho-de-prata'
 										)
-										<img src="../assets/svg/icons/new-white/peixinho-prata.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/peixinho-prata.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 
 									@if ($best_service[0]['best-service-a-5'] == 'Térmitas' || $best_service[0]['best-service-a-5'] == 'térmitas')
-										<img src="../assets/svg/icons/new-white/termita.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/termita.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 								</div><!-- /.service-icon -->
 								<h3 class="service-one__item__title">
@@ -1856,46 +1856,46 @@
 							<div class="service-one__item__image"
 								onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-6'] }}')">
 								<img src="{{ $best_service[0]['best-service-img-path-6'] }}" alt="tolak"
-									style="width: 600px;" sizes="(max-width: 600px) 100vw, 382px" loading="lazy">
+									style="width: 600px;" sizes="(max-width: 600px) 100vw, 382px" loading="lazy" loading="lazy">
 							</div>
 							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
 									@if ($best_service[0]['best-service-a-6'] == 'Roedores' || $best_service[0]['best-service-a-6'] == 'roedores')
-										<img src="../assets/svg/icons/new-white/rato.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/rato.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-6'] == 'Baratas' || $best_service[0]['best-service-a-6'] == 'baratas')
-										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-6'] == 'Percevejos' || $best_service[0]['best-service-a-6'] == 'percevejos')
-										<img src="../assets/svg/icons/new-white/percevejo.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/percevejo.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-6'] == 'Formigas' || $best_service[0]['best-service-a-6'] == 'formigas')
-										<img src="../assets/svg/icons/new-white/formiga.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/formiga.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if (
 											$best_service[0]['best-service-a-6'] == 'Processionária do Pinheiro' ||
 											$best_service[0]['best-service-a-6'] == 'processionária do pinheiro'
 										)
 										<img src="../assets/svg/icons/new-white/processionario-pinheiro.svg" width="60"
-											alt="tolak">
+											alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-6'] == 'Mosquitos' || $best_service[0]['best-service-a-6'] == 'mosquitos')
-										<img src="../assets/svg/icons/new-white/mosquito.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/mosquito.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-6'] == 'Ácaros' || $best_service[0]['best-service-a-6'] == 'ácaros')
-										<img src="../assets/svg/icons/new-white/acaros.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/acaros.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-6'] == 'Vespas' || $best_service[0]['best-service-a-6'] == 'vespas')
-										<img src="../assets/svg/icons/new-white/vespas.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/vespas.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-6'] == 'Moscas' || $best_service[0]['best-service-a-6'] == 'moscas')
-										<img src="../assets/svg/icons/new-white/mosca.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/mosca.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-6'] == 'Traças' || $best_service[0]['best-service-a-6'] == 'traças')
-										<img src="../assets/svg/icons/new-white/traca.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/traca.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 									@if ($best_service[0]['best-service-a-6'] == 'Pulgas' || $best_service[0]['best-service-a-6'] == 'pulgas')
-										<img src="../assets/svg/icons/new-white/pulga.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/pulga.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 
 									@if (
@@ -1903,25 +1903,25 @@
 											$best_service[0]['best-service-a-6'] == 'gorgulho das farinhas'
 										)
 										<img src="../assets/svg/icons/new-white/gorgulho-farinhas.svg" width="60"
-											alt="tolak">
+											alt="tolak" loading="lazy">
 									@endif
 
 									@if (
 											$best_service[0]['best-service-a-6'] == 'Traça de Cereais' ||
 											$best_service[0]['best-service-a-6'] == 'traça de cereais'
 										)
-										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/traca-cereiais.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 
 									@if (
 											$best_service[0]['best-service-a-6'] == 'Peixinho-de-Prata' ||
 											$best_service[0]['best-service-a-6'] == 'peixinho-de-prata'
 										)
-										<img src="../assets/svg/icons/new-white/peixinho-prata.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/peixinho-prata.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 
 									@if ($best_service[0]['best-service-a-6'] == 'Térmitas' || $best_service[0]['best-service-a-6'] == 'térmitas')
-										<img src="../assets/svg/icons/new-white/termita.svg" width="60" alt="tolak">
+										<img src="../assets/svg/icons/new-white/termita.svg" width="60" alt="tolak" loading="lazy">
 									@endif
 								</div><!-- /.service-icon -->
 								<h3 class="service-one__item__title">
@@ -1954,7 +1954,7 @@
 
 		<!-- services -->
 		<section class="service-section" id="#servicos">
-			<div class="image-layer lazy-background" data-bg="{{ $our_service_1[0]['our-services-bg-img-path-1'] }}"></div>
+			<div class="image-layer lazy-background" style="background-image: url({{ $our_service_1[0]['our-services-bg-img-path-1'] }});"></div>
 			<div class="container">
 				<div class="text-center light text-white">
 					<h6 class="sec-title__tagline text-white"><span
