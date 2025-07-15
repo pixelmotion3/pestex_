@@ -1390,6 +1390,15 @@
 		</section>
 		<!-- Feature End -->
 		<!-- Service Start -->
+		<style>
+			@media (max-width: 767px) {
+				.service-one__item__image img{
+					width: 382px !important;
+					height: 247px !important;
+				}
+			}
+
+		</style>
 		<section class="service-one" id="servicos">
 			<div class="container">
 				<div class="text-center">
@@ -1406,7 +1415,7 @@
 							<div class="service-one__item__image"
 								onclick="window.open('/servicos/{{ $best_service[0]['best-service-id-1'] }}')" id="">
 								<img src="{{ $best_service[0]['best-service-img-path-1'] }}" alt="tolak"
-									style="width: 600px;" sizes="(max-width: 600px) 100vw, 382px" loading="lazy">
+									style="width: 600px;" loading="lazy">
 							</div>
 							<div class="service-one__item__content" style="height: 300px;">
 								<div class="service-one__item__icon">
