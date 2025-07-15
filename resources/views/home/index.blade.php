@@ -98,15 +98,16 @@
 	<link href="{{ asset('assets/css/allcss.css') }}" rel="stylesheet">
 
 
-	{{-- <link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet"> --}}
-	{{-- <link href="{{ asset('assets/css/owl.css') }}" rel="stylesheet"> --}}
-	{{-- <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet"> --}}
-	{{-- <link href="{{ asset('assets/css/animate.css') }}" rel="stylesheet"> --}}
-	{{-- <link href="{{ asset('assets/css/nice-select.css') }}" rel="stylesheet"> --}}
-	{{-- <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet"> --}}
-	{{-- <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet"> --}}
+	{{-- <link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/css/owl.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/css/animate.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/css/nice-select.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet"> --}}
 	<!-- template styles -->
-	<link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
+	{{-- <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" /> --}}
+
 
 
 	<!-- Google tag (gtag.js) -->
@@ -295,8 +296,7 @@
 	<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
 	<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
 
-	<!-- template js -->
-	<script src="{{ asset('assets/js/tolak.js') }}"></script>
+
 
 	<!-- sanito -->
 
@@ -352,8 +352,8 @@
 	<a href="https://wa.me/+351937824676" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
 		<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" loading="lazy" />
 	</a>
-	{{-- <div class="custom-cursor__cursor"></div>
-	<div class="custom-cursor__cursor-two"></div> --}}
+	<div class="custom-cursor__cursor"></div>
+	<div class="custom-cursor__cursor-two"></div>
 
 	<div class="preloader">
 		<div class="preloader__image" style="background-image: url(/assets/images/logo-dark.webp);"></div>
@@ -2968,6 +2968,8 @@
 		<span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
 	</a>
 	@include('includes.cookies')
+	<!-- template js -->
+	<script src="{{ asset('assets/js/tolak.js') }}"></script>
 	<script>
 		$(document).ready(function () {
 
