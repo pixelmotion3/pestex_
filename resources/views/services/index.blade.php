@@ -77,7 +77,7 @@ setTimeout(function() {
     <link href="{{ asset('assets/css/style.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
     <!-- template styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/tolak.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
 
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])

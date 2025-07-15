@@ -73,7 +73,7 @@ setTimeout(function() {
     <link href="{{ asset('assets/css/style.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
     <!-- template styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/tolak.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
 
 
 	<!-- Google tag (gtag.js) --> <script async src=https://www.googletagmanager.com/gtag/js?id=G-973E1T9CZV></script>
