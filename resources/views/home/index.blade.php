@@ -500,7 +500,7 @@
 											<label class="form-check-label text-left" for="flexCheckDefault"
 												style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
 												Aceito os <a href="/termos-servico" target="_blank"
-													style="color:#3d72fc;">Termos de Utilização</a>
+													>Termos de Utilização</a>
 											</label>
 											@error('confirmed')
 												<span class="invalid-feedback" role="alert">
@@ -515,7 +515,7 @@
 											<label class="form-check-label text-left" for="flexCheckDefault"
 												style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
 												Tenho conhecimento e aceito a <a href="/politica-privacidade"
-													target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
+													target="_blank">Política de Privacidade</a>
 											</label>
 										</div>
 										<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e"
@@ -593,7 +593,7 @@
 												<label class="form-check-label text-left" for="flexCheckDefault"
 													style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
 													Aceito os <a href="/termos-servico" target="_blank"
-														style="color:#3d72fc;">Termos de Utilização</a>
+														>Termos de Utilização</a>
 												</label>
 												@error('confirmed')
 													<span class="invalid-feedback" role="alert">
@@ -608,7 +608,7 @@
 												<label class="form-check-label text-left" for="flexCheckDefault"
 													style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
 													Tenho conhecimento e aceito a <a href="/politica-privacidade"
-														target="_blank" style="color:#3d72fc;">Política de
+														target="_blank" >Política de
 														Privacidade</a>
 												</label>
 											</div>
@@ -687,15 +687,14 @@
 						<div class="main-slider-one__shape tolak-tilt"
 							data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
 						</div>
-						<div class="main-slider-one__bg"
-							style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path'] }});"></div>
+						<div class="main-slider-one__bg lazy-bg" data-bg="url({{ $main_screen[0]['carrousel-bg-img-path'] }})"></div>
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12">
 									<div class="main-slider-one__content">
-										<h5 class="main-slider-one__sub-title text-titles">
+										<h2 class="main-slider-one__sub-title text-titles">
 											{{ $main_screen[0]['carrousel-h5'] }}
-										</h5>
+										</h2>
 										<!-- slider-sub-title -->
 										<h2 class="main-slider-one__title">{{ $main_screen[0]['carrousel-h2'] }}
 											<br />
@@ -723,8 +722,7 @@
 						<div class="main-slider-one__shape tolak-tilt"
 							data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
 						</div>
-						<div class="main-slider-one__bg"
-							style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path-1'] }});"></div>
+						<div class="main-slider-one__bg lazy-bg" data-bg="url({{ $main_screen[0]['carrousel-bg-img-path-1'] }})"></div>
 
 						<div class="container">
 							<div class="row">
@@ -763,8 +761,7 @@
          <img src="assets/images/shapes/slider-1-shape-1.png" alt="tolak">
          -->
 						</div>
-						<div class="main-slider-one__bg"
-							style="background-image: url({{ $main_screen[0]['carrousel-bg-img-path-2'] }});"></div>
+						<div class="main-slider-one__bg lazy-bg" data-bg="url({{ $main_screen[0]['carrousel-bg-img-path-2'] }})"></div>
 
 						<div class="container">
 							<div class="row">
@@ -931,7 +928,7 @@
 										<label class="form-check-label text-left" for="flexCheckDefault"
 											style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
 											Aceito os <a href="/termos-servico" target="_blank"
-												style="color:#3d72fc;">Termos de Utilização</a>
+												>Termos de Utilização</a>
 										</label>
 										@error('confirmed')
 											<span class="invalid-feedback" role="alert">
@@ -945,7 +942,7 @@
 										<label class="form-check-label text-left" for="flexCheckDefault"
 											style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
 											Tenho conhecimento e aceito a <a href="/politica-privacidade"
-												target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
+												target="_blank" >Política de Privacidade</a>
 										</label>
 									</div>
 									<!-- Captcha aparece aqui após clicar no botão -->
@@ -1046,7 +1043,7 @@
 											<label class="form-check-label text-left" for="flexCheckDefault"
 												style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
 												Aceito os <a href="/termos-servico" target="_blank"
-													style="color:#3d72fc;">Termos de Utilização</a>
+													>Termos de Utilização</a>
 											</label>
 											@error('confirmed')
 												<span class="invalid-feedback" role="alert">
@@ -1061,7 +1058,7 @@
 											<label class="form-check-label text-left" for="flexCheckDefault"
 												style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
 												Tenho conhecimento e aceito a <a href="/politica-privacidade"
-													target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
+													target="_blank" >Política de Privacidade</a>
 											</label>
 										</div>
 										<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e"
@@ -1212,7 +1209,7 @@
 										<label class="form-check-label text-left" for="flexCheckDefault6"
 											style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
 											Aceito os <a href="/termos-servico" target="_blank"
-												style="color:#3d72fc;">Termos de Utilização</a>
+												>Termos de Utilização</a>
 										</label>
 										@error('confirmed')
 											<span class="invalid-feedback" role="alert">
@@ -1226,7 +1223,7 @@
 										<label class="form-check-label text-left" for="flexCheckDefault5"
 											style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
 											Tenho conhecimento e aceito a <a href="/politica-privacidade"
-												target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
+												target="_blank" >Política de Privacidade</a>
 										</label>
 									</div>
 									<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e"
@@ -1289,7 +1286,7 @@
 											<label class="form-check-label text-left" for="flexCheckDefault4"
 												style="min-width: 280px;max-width:280px; color:grey;font-size:12px;">
 												Aceito os <a href="/termos-servico" target="_blank"
-													style="color:#3d72fc;">Termos de Utilização</a>
+													>Termos de Utilização</a>
 											</label>
 											@error('confirmed')
 												<span class="invalid-feedback" role="alert">
@@ -1304,7 +1301,7 @@
 											<label class="form-check-label text-left" for="flexCheckDefault3"
 												style="min-width: 280px;max-width:280px;color:grey;font-size:12px;">
 												Tenho conhecimento e aceito a <a href="/politica-privacidade"
-													target="_blank" style="color:#3d72fc;">Política de Privacidade</a>
+													target="_blank" >Política de Privacidade</a>
 											</label>
 										</div>
 										<div class="h-captcha" data-sitekey="f27e3306-f27a-4bc0-a162-3678fc648a4e"
@@ -1327,9 +1324,9 @@
 		<section class="feature-one space_between" id="#">
 			<div class="container">
 				<div class="text-center">
-					<h5 class="sec-title__tagline text-titles mt-5"><span
+					<h2 class="sec-title__tagline text-titles mt-5"><span
 							class="sec-title__tagline__left"></span><b>{{ $company_status[0]['company-status-h6'] }}</b><span
-							class="sec-title__tagline__right"></span></h5><!-- /.sec-title__tagline -->
+							class="sec-title__tagline__right"></span></h2><!-- /.sec-title__tagline -->
 					<h3 class="sec-title__title mt-5"><b>{{ $company_status[0]['company-status-h3'] }}</b></h3>
 					<!-- /.sec-title__title -->
 				</div><!-- /.sec-title -->
@@ -1954,12 +1951,12 @@
 
 		<!-- services -->
 		<section class="service-section" id="#servicos">
-			<div class="image-layer lazy-background" style="background-image: url({{ $our_service_1[0]['our-services-bg-img-path-1'] }});"></div>
+			<div class="image-layer lazy-background lazy-bg" data-bg="url({{ $our_service_1[0]['our-services-bg-img-path-1'] }})"></div>
 			<div class="container">
 				<div class="text-center light text-white">
-					<h6 class="sec-title__tagline text-white"><span
+					<h2 class="sec-title__tagline text-white"><span
 							class="sec-title__tagline__left1"></span><b>{{ $our_service_1[0]['our-services-h6-1'] }}</b><span
-							class="sec-title__tagline__right1"></span></h6>
+							class="sec-title__tagline__right1"></span></h2>
 					<h2 class="h2 text-white"><b>{{ $our_service_1[0]['our-services-h2-1'] }}</b></h2>
 					<p class="text-white mt-3">{{ $our_service_1[0]['our-services-h2-2'] }}</p>
 				</div>
@@ -2023,7 +2020,7 @@
 														src="{{ $our_service_1[0]['img-1'] }}" alt="" loading="lazy">
 												</figure>
 												<div class="image-content" style="background-color: #002255">
-													<h6>VISITA GRÁTIS</h6>
+													<span style="font-size: 20px;font-weight: 500;color: white;">VISITA GRÁTIS</span>
 												</div>
 											</div>
 										</div>
@@ -2079,7 +2076,7 @@
 														src="{{ $our_service_2[0]['img-2'] }}" alt="" loading="lazy">
 												</figure>
 												<div class="image-content" style="background-color: #002255">
-													<h6>VISITA GRÁTIS</h6>
+													<span style="font-size: 20px;font-weight: 500;color: white;">VISITA GRÁTIS</span>
 												</div>
 											</div>
 										</div>
@@ -2161,9 +2158,9 @@
 					<div class="col-lg-5">
 						<div class="why-choose-two__content">
 							<div class="sec-title-two text-left">
-								<h5 class="sec-title-two__tagline text-titles"><span
+								<h2 class="sec-title-two__tagline text-titles"><span
 										class="sec-title__tagline__left"></span><i><b>{{ $choose_us[0]['choose-us-p-1'] }}</b></i><span
-										class="sec-title__tagline__right"></span></h5>
+										class="sec-title__tagline__right"></span></h2>
 								<!-- /.sec-title-two__tagline -->
 								<h3 class="sec-title-two__title"><b>{{ $choose_us[0]['choose-us-h3'] }}</b></h3>
 								<!-- /.sec-title-two__title -->
@@ -2181,7 +2178,7 @@
 								<h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-1'] }}</h4>
 								<a href="/sustentabilidade?item={{ $choose_us[0]['choose-us-h4-1'] }}"
 									name="sustentabilidade" alt="sustentabilidade"
-									class="why-choose-two__item__rm"><span class="icon-right-arrow"></span></a>
+									class="why-choose-two__item__rm"  aria-label="Redirecionamento para sustentabilidade"><span class="icon-right-arrow"></span></a>
 							</div><!-- why-choose-two__item -->
 							<div class="why-choose-two__item why-choose-two__item--reverse wow fadeInUp rounded-lg"
 								data-wow-delay="500ms">
@@ -2191,7 +2188,7 @@
 								</div>
 								<h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-2'] }}</h4>
 								<a href="/sustentabilidade?item={{ $choose_us[0]['choose-us-h4-2'] }}"
-									class="why-choose-two__item__rm"><span class="icon-right-arrow"></span></a>
+									class="why-choose-two__item__rm"  aria-label="Redirecionamento para sustentabilidade"><span class="icon-right-arrow"></span></a>
 							</div><!-- why-choose-two__item -->
 							<div class="why-choose-two__item wow fadeInUp rounded-lg" data-wow-delay="200ms">
 								<div class="why-choose-two__item__icon rounded-lg">
@@ -2200,7 +2197,7 @@
 								</div>
 								<h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-3'] }}</h4>
 								<a href="/sustentabilidade?item={{ $choose_us[0]['choose-us-h4-3'] }}"
-									class="why-choose-two__item__rm"><span class="icon-right-arrow"></span></a>
+									class="why-choose-two__item__rm"  aria-label="Redirecionamento para sustentabilidade"><span class="icon-right-arrow"></span></a>
 							</div><!-- why-choose-two__item -->
 						</div><!-- /.why-choose-two__content -->
 					</div><!-- /.col-lg-5 -->
@@ -2225,9 +2222,9 @@
 		<section class="testimonials-one testimonials-one--page">
 			<div class="container">
 				<div class="sec-title-two text-center">
-					<h6 class="sec-title-two__tagline text-titles"><span
+					<h2 class="sec-title-two__tagline text-titles"><span
 							class="sec-title__tagline__left"></span><i><b>{{ $testimonial_say[0]['testimonial-say-p-strong'] }}</b></i><span
-							class="sec-title__tagline__right"></span></h6>
+							class="sec-title__tagline__right"></span></h2>
 					<!-- /.sec-title-two__tagline -->
 					<h3 class="sec-title-two__title"><b>{{ $testimonial_say[0]['testimonial-say-h2'] }}</b></h3>
 					<!-- /.sec-title-two__title -->
@@ -2448,11 +2445,11 @@
 						<div class="col-lg-6 wow fadeInUp" data-wow-delay="00ms">
 							<div class="cta-four__content">
 								<div class="sec-title-two text-left">
-									<h6 class="sec-title-two__tagline"><span class="sec-title__tagline__left"
+									<h2 class="sec-title-two__tagline"><span class="sec-title__tagline__left"
 											style="color:#ff6600;"></span><i
 											style="color:#ff6600;">{{ $video_contact[0]['watch-video-p-strong-1'] }}</i><span
 											class="sec-title__tagline__right" style="color:#ff6600;"></span>
-									</h6>
+									</h2>
 									<h3 class="sec-title-two__title">{{ $video_contact[0]['watch-video-h2'] }}</h3>
 
 								</div>
@@ -2485,19 +2482,19 @@
 		<section id="contact-us">
 			<div class="container mt-3 mb-5">
 				<div class="row wow slideInRight animated" style="visibility: visible; animation-name: slideInRight;">
-					<div class="col-md-6 services-background-image w-100 h-75"
-						style="background-image: url({{ $video_contact[0]['contact-us-bg-img'] }});border-radius:30px;"
-						loading="lazy">
-
+					<div class="col-md-6 services-background-image w-100 h-75 lazy-bg"
+						data-bg=" url({{ $video_contact[0]['contact-us-bg-img'] }})"
+						style="border-radius:30px;">
 					</div>
+
 					<div class="col-md-6 pb-5 text-center apointement-box" style="z-index:10;">
 						<div class="contact-three__content">
 							<div class="sec-title-four text-center">
 
-								<h6 class="sec-title-four__tagline"><span
+								<h2 class="sec-title-four__tagline"><span
 										class="sec-title-four__tagline__left-border"></span><b><i>FALE
 											CONNOSCO</i></b><span class="sec-title-four__tagline__right-border"></span>
-								</h6>
+								</h2>
 								<!-- /.sec-title-four__tagline -->
 
 								<h3 class="sec-title-four__title">{{ $video_contact[0]['contact-us-h2-part-1'] }}
@@ -2541,7 +2538,7 @@
 												<label class="form-check-label text-left" for="flexCheckDefault1"
 													style="min-width: 280px;width: 320px;max-width:580px; color:grey;font-size:12px;">
 													Aceito os <a href="/termos-servico" target="_blank"
-														style="color:#3d72fc;">Termos de Utilização</a>
+														>Termos de Utilização</a>
 												</label>
 											</div>
 										</div>
@@ -2552,7 +2549,7 @@
 												<label class="form-check-label text-left" for="flexCheckDefault2"
 													style="min-width: 280px;width: 320px;max-width:580px;color:grey;font-size:12px;">
 													Tenho conhecimento e aceito a <a href="/politica-privacidade"
-														target="_blank" style="color:#3d72fc;">Política de
+														target="_blank" >Política de
 														Privacidade</a>
 												</label>
 											</div>
@@ -2582,6 +2579,24 @@
 				</div>
 			</div>
 		</section>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const lazyBgElements = document.querySelectorAll(".lazy-bg");
+
+				const observer = new IntersectionObserver((entries, obs) => {
+					entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						const el = entry.target;
+						const bg = el.getAttribute("data-bg");
+						if (bg) el.style.backgroundImage = bg;
+						obs.unobserve(el);
+					}
+					});
+				});
+
+				lazyBgElements.forEach(el => observer.observe(el));
+			});
+		</script>
 		<script>
 			let captchaRendered2 = false;
 
