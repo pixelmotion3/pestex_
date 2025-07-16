@@ -2069,15 +2069,12 @@
 														<li>{{ $our_service_2[0]['our-services-tab-2-li-8'] }}</li>
 													</ul>
 													<div class="btn-box mr-5">
-														<a data-toggle="modal" data-target="#exampleModal"
-															class="btn2 theme-btn-three thm-btn">CONTACTE-NOS</a>
+														<a data-toggle="modal" data-target="#exampleModal" class="btn2 theme-btn-three thm-btn" aria-label="Contate-nos">CONTACTE-NOS</a>
 													</div>
 												</div>
 												<div class="other-text">
 													<p>{{ $our_service_2[0]['our-services-tab-2-p-2'] }} <a
-															data-toggle="modal" data-target="#exampleModal">Agende
-															uma
-															visita grátis!</a></p>
+															data-toggle="modal" data-target="#exampleModal" aria-label="Agende uma visita grátis!">Agende uma visita grátis!</a></p>
 													<div class="arrow"
 														style="background-image: url(assets/images/icons/arrow-1.png);">
 													</div>
