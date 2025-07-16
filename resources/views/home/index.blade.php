@@ -35,7 +35,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
 		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script>
+	{{-- <script>
 		! function (f, b, e, v, n, t, s) {
 			if (f.fbq) return;
 			n = f.fbq = function () {
@@ -66,8 +66,7 @@
 		fbq('track', 'PageView');
 	</script>
 
-	<noscript><img height="1" width="1" style="display:none"
-			src=https://www.facebook.com/tr?id=1312432023376979&ev=PageView&noscript=1 /></noscript>
+	<noscript><img height="1" width="1" style="display:none" src=https://www.facebook.com/tr?id=1312432023376979&ev=PageView&noscript=1 /></noscript> --}}
 
 	<!-- End Meta Pixel Code -->
 
@@ -113,7 +112,7 @@
 
 
 	<!-- Google tag (gtag.js) -->
-	<script>
+	{{-- <script>
 		document.addEventListener('DOMContentLoaded', function () {
 			setTimeout(function () {
 				const gtagScript = document.createElement('script');
@@ -127,7 +126,7 @@
 				gtag('config', 'G-973E1T9CZV');
 			}, 3000);
 		});
-	</script>
+	</script> --}}
 
 	<!-- Styles -->
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -291,10 +290,10 @@
 	{{--
 	<script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script> --}}
 	<script nomodule src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}" defer></script>
-	<script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}"></script>
-	<script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
-	<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
-	<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}" ></script>
+	<script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}" defer></script>
+	<script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}" defer></script>
+	<script src="{{ asset('assets/vendors/wow/wow.js') }}" ></script>
+	<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
 
 
 
@@ -303,10 +302,10 @@
 	{{--
 	<script src="{{ asset('assets/js/jquery.js') }}" defer></script> --}}
 	<script src="{{ asset('assets/js/popper.min.js') }}"></script>
-	<script src="{{ asset('assets/js/appear.js') }}"></script>
+	<script src="{{ asset('assets/js/appear.js') }}" defer></script>
 	{{--
 	<script src="{{ asset('assets/js/jquery.countTo.js') }}"></script> --}}
-	<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
+	<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}" defer></script>
 	<style>
 		.whatsapp-float {
 			position: fixed;
