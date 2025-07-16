@@ -130,7 +130,7 @@
 	</script>
 
 	<!-- Styles -->
-	@vite(['resources/css/app.css', 'resources/js/app.js'])
+	@vite(['resources/css/app.css'])
 
 	<style>
 		.input-container {
@@ -278,8 +278,9 @@
 	<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}" defer></script>
 
 	<!-- main-js -->
-	<script src="{{ asset('assets/js/script.min.js') }}" defer></script>
-
+	@once
+		<script src="{{ asset('assets/js/script.min.js') }}" defer></script>
+	@endonce
 	{{--
 	<script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script> --}}
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -291,10 +292,24 @@
 	{{--
 	<script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script> --}}
 	<script nomodule src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}" defer></script>
-	<script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}" defer></script>
-	<script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}" defer></script>
-	<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
-	<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
+
+
+
+
+
+
+
+	{{-- <script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}" defer></script> --}}
+	{{-- <script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}" defer></script> --}}
+	{{-- <script src="{{ asset('assets/vendors/wow/wow.js') }}"></script> --}}
+	{{-- <script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script> --}}
+	<script src="{{ asset('assets/vendors/alljstest.min.js') }}"></script>
+
+
+
+
+
+
 
 
 
@@ -302,8 +317,15 @@
 
 	{{--
 	<script src="{{ asset('assets/js/jquery.js') }}" defer></script> --}}
+
+
+
+{{--
 	<script src="{{ asset('assets/js/popper.min.js') }}"></script>
-	<script src="{{ asset('assets/js/appear.js') }}" defer></script>
+	<script src="{{ asset('assets/js/appear.js') }}" defer></script> --}}
+
+
+
 	{{--
 	<script src="{{ asset('assets/js/jquery.countTo.js') }}"></script> --}}
 	<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}" defer></script>
@@ -3011,7 +3033,9 @@
 	</a>
 	@include('includes.cookies')
 	<!-- template js -->
-	<script src="{{ asset('assets/js/tolak.min.js') }}"></script>
+	@once
+		<script src="{{ asset('assets/js/tolak.min.js') }}"></script>
+	@endonce
 	<script>
 		$(document).ready(function () {
 
