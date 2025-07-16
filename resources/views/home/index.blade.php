@@ -278,7 +278,7 @@
 	<script src="{{ asset('assets/js/jquery.nice-select.min.js') }}" defer></script>
 
 	<!-- main-js -->
-	<script src="{{ asset('assets/js/script.js') }}" defer></script>
+	<script src="{{ asset('assets/js/script.min.js') }}" defer></script>
 
 	{{--
 	<script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script> --}}
@@ -3011,7 +3011,7 @@
 	</a>
 	@include('includes.cookies')
 	<!-- template js -->
-	<script src="{{ asset('assets/js/tolak.js') }}"></script>
+	<script src="{{ asset('assets/js/tolak.min.js') }}"></script>
 	<script>
 		$(document).ready(function () {
 
