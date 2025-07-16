@@ -32,7 +32,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Soluções personalizadas para cada problema. Desfrute de um Ambiente Saudável">
 	<title>SOS Pragas</title>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script>
 		! function (f, b, e, v, n, t, s) {
 			if (f.fbq) return;
@@ -268,9 +270,7 @@
 	<script src="{{ asset('assets/js/popper.min.js') }}" defer></script>
 	{{--
 	<script src="{{ asset('assets/js/jquery.js') }}" defer></script> --}}
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 	<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 	<script src="{{ asset('assets/js/validation.js') }}" defer></script>
 	<script src="{{ asset('assets/js/appear.js') }}" defer></script>
@@ -775,9 +775,9 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="main-slider-one__content">
-										<h5 class="main-slider-one__sub-title text-titles">
+										<h2 class="main-slider-one__sub-title text-titles">
 											{{ $main_screen[0]['carrousel-h5-2'] }}
-										</h5><!-- slider-sub-title -->
+										</h2><!-- slider-sub-title -->
 										<h2 class="main-slider-one__title">
 											{{ $main_screen[0]['carrousel-h2-2'] }}<br />
 											{{ $main_screen[0]['carrousel-h2-c'] }}
