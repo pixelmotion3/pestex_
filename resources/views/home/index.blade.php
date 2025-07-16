@@ -345,6 +345,51 @@
 			/* opacity: 1 !important; Garante que o placeholder não fique muito claro */
 		}
 	</style>
+	<script type="application/ld+json">
+		{
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "SOS Pragas",
+		"image": "https://sospragas.pt/assets/images/logo-dark.webp",
+		"url": "https://sospragas.pt",
+		"telephone": "+351 219 747 353",
+		"priceRange": "€€",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "Rua de Entremuros 54",
+			"addressLocality": "Fração BB",
+			"addressRegion": "São Julião do Tojal",
+			"postalCode": "2660-533",
+			"addressCountry": "PT"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": "38.85585061580261",
+			"longitude": "-9.118817642591889"
+		},
+		"openingHoursSpecification": [
+			{
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday"
+			],
+			"opens": "08:00",
+			"closes": "18:00"
+			}
+		],
+		"sameAs": [
+			"https://www.facebook.com/profile.php?id=61564657894807&locale=ky_KG",
+			"https://www.facebook.com/profile.php?id=61564657894807&locale=ky_KG"
+		],
+		"description": "Empresa especializada em desinfestação de insetos e controlo de pragas em Portugal. Atendimento rápido, profissional e seguro.",
+		"logo": "https://sospragas.pt/assets/images/logo-dark.webp"
+		}
+	</script>
+
 </head>
 
 <body class="custom-cursor" style="overflow-x: hidden;">
