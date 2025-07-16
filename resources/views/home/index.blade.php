@@ -81,17 +81,17 @@
 	{{--
 	<link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap/css/bootstrap.min.css') }}" /> --}}
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+		integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" >
 	{{--
 	<link rel="stylesheet" href="{{ asset('assets/vendors/nouislider/nouislider.min.css') }}" /> --}}
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.js"
 		integrity="sha512-g/feAizmeiVKSwvfW0Xk3ZHZqv5Zs8PEXEBKzL15pM0SevEvoX8eJ4yFWbqakvRj7vtw1Q97bLzEpG2IVWX0Mg=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 	{{--
 	<link rel="stylesheet" href="{{ asset('assets/vendors/tiny-slider/tiny-slider.css') }}" /> --}}
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
 		integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 	<link rel="stylesheet" href="{{ asset('assets/vendors/tolak-icons/style.css') }}" />
 
 	{{-- <link href="{{ asset('assets/css/font-awesome-all.css') }}" rel="stylesheet"> --}}
@@ -284,16 +284,16 @@
 	<script src="{{ asset('assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script> --}}
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-		crossorigin="anonymous"></script>
+		crossorigin="anonymous" defer></script>
 	<script nomodule src="{{ asset('assets/vendors/bootstrap-select/bootstrap-select.min.js') }}" defer></script>
-	<script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
+	<script src="{{ asset('assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}" defer></script>
 	<script src="{{ asset('assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
 	{{--
 	<script src="{{ asset('assets/vendors/nouislider/nouislider.min.js') }}"></script> --}}
 	<script nomodule src="{{ asset('assets/vendors/tiny-slider/tiny-slider.js') }}" defer></script>
 	<script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}" defer></script>
 	<script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}" defer></script>
-	<script src="{{ asset('assets/vendors/wow/wow.js') }}" ></script>
+	<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
 	<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
 
 
