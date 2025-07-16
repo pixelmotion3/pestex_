@@ -294,7 +294,7 @@
 	<script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}"></script>
 	<script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
 	<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
-	<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
+	<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}" ></script>
 
 
 
@@ -2069,7 +2069,7 @@
 														<li>{{ $our_service_2[0]['our-services-tab-2-li-8'] }}</li>
 													</ul>
 													<div class="btn-box mr-5">
-														<a data-toggle="modal" data-target="#exampleModal" class="btn2 theme-btn-three thm-btn" aria-label="Contate-nos">CONTACTE-NOS</a>
+														<a data-toggle="modal" href="#" data-target="#exampleModal" class="btn2 theme-btn-three thm-btn" aria-label="Contate-nos">CONTACTE-NOS</a>
 													</div>
 												</div>
 												<div class="other-text">
