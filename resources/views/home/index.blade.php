@@ -125,7 +125,7 @@
 				function gtag() { dataLayer.push(arguments); }
 				gtag('js', new Date());
 				gtag('config', 'G-973E1T9CZV');
-			}, 3000);
+			}, 5000);
 		});
 	</script>
 
@@ -271,7 +271,7 @@
 	{{--
 	<script src="{{ asset('assets/js/jquery.js') }}" defer></script> --}}
 
-	<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+	<script src="{{ asset('assets/js/bootstrap.min.js') }}" defer></script>
 	<script src="{{ asset('assets/js/validation.js') }}" defer></script>
 	<script src="{{ asset('assets/js/appear.js') }}" defer></script>
 	<script src="{{ asset('assets/js/scrollbar.js') }}" defer></script>
