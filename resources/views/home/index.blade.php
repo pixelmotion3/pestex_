@@ -306,7 +306,7 @@
 	{{-- <script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}" defer></script> --}}
 	{{-- <script src="{{ asset('assets/vendors/wow/wow.js') }}"></script> --}}
 	{{-- <script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script> --}}
-	<script src="{{ asset('assets/vendors/alljstest.min.js') }}"></script>
+	<script rel="preload" src="{{ asset('assets/vendors/alljstest.min.js') }}" ></script>
 
 
 
