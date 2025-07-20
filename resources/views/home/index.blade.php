@@ -2151,7 +2151,7 @@
 									<div class="col-lg-6 col-md-12 col-sm-12 image-column">
 										<div class="image_block_2">
 											<div class="image-box">
-												<figure class="image wow slideInRight animated" style="visibility: visible; animation-name: slideInRight;"><img src="{{ $our_service_1[0]['img-1'] }}" alt="" loading="lazy">
+												<figure class="image wow slideInRight animated" style="visibility: visible; animation-name: slideInRight;"><img src="{{ $our_service_1[0]['img-1'] }}" width="624" height="488" alt="" loading="lazy">
 												</figure>
 												<div class="image-content" style="background-color: #002255">
 													<span style="font-size: 20px;font-weight: 500;color: white;">VISITA GRÁTIS</span>
@@ -2204,7 +2204,7 @@
 											<div class="image-box">
 												<figure class="image wow slideInRight animated"
 													style="visibility: visible; animation-name: slideInRight;"><img
-														src="{{ $our_service_2[0]['img-2'] }}" alt="" loading="lazy">
+														src="{{ $our_service_2[0]['img-2'] }}" width="624" height="488" alt="" loading="lazy">
 												</figure>
 												<div class="image-content" style="background-color: #002255">
 													<span style="font-size: 20px;font-weight: 500;color: white;">VISITA GRÁTIS</span>
