@@ -6233,11 +6233,11 @@ Creation date: 24/12/2020 15:12
 @font-face {
   font-family: "Flaticon";
   src: url("../fonts/Flaticon.eot");
-  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+  /* src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
        url("../fonts/Flaticon.woff2") format("woff2"),
        url("../fonts/Flaticon.woff") format("woff"),
        url("../fonts/Flaticon.ttf") format("truetype"),
-       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+       url("../fonts/Flaticon.svg#Flaticon") format("svg"); */
   font-weight: normal;
   font-display: swap;
   font-style: normal;
