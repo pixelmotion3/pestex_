@@ -31,7 +31,9 @@ setTimeout(function() {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
     <title>{{ $main_screen[0]['meta-title'] }}</title>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<!-- Meta Description -->
     <meta name="description" content="{{ $main_screen[0]['meta-desctiption'] }}">
 
@@ -80,10 +82,7 @@ setTimeout(function() {
     <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
 
     <!-- Styles -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-    <!-- Styles -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css'])
     <style>
         .input-container {
             display: flex;

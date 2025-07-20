@@ -31,6 +31,9 @@ setTimeout(function() {
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
         <title>{{ config('app.name') }}</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon01.png">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">

@@ -34,7 +34,9 @@ setTimeout(function() {
 	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 	<!-- Meta Description -->
     <meta name="description" content="{{ $main[0]['meta-desctiption'] }}">
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Meta Keywords (opcional, com pouco uso atualmente) -->
     <meta name="keywords" content="{{ $main[0]['meta-keywords'] }}">
 	<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon01.png">
