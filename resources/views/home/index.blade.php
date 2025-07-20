@@ -878,7 +878,7 @@
 			</div>
 			<!-- formulario -->
 			<div class="main-slider-one__project wow slideInRight animated text-center shadow-lg bg-light"
-				data-wow-delay="600ms"
+				data-wow-delay="100ms"
 				style="min-width: 400px;z-index:1;border-radius:30px;">
 				<ul class="nav nav-tabs " id="myTab" role="tablist">
 					<li class="nav-item w-50 rounded-top-lg" role="presentation">
