@@ -1155,60 +1155,60 @@
 			</div>
 		</section>
 		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				// Configuração do Intersection Observer para lazy loading
-				const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
-					entries.forEach(entry => {
-						if (entry.isIntersecting) {
-							const lazyElement = entry.target;
+			// document.addEventListener("DOMContentLoaded", function() {
+			// 	// Configuração do Intersection Observer para lazy loading
+			// 	const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
+			// 		entries.forEach(entry => {
+			// 			if (entry.isIntersecting) {
+			// 				const lazyElement = entry.target;
 
-							// Carrega imagens de fundo
-							if (lazyElement.classList.contains('lazy-bg') && lazyElement.dataset.bg) {
-								lazyElement.style.backgroundImage = lazyElement.dataset.bg;
-								lazyElement.classList.remove('lazy-bg');
-							}
+			// 				// Carrega imagens de fundo
+			// 				if (lazyElement.classList.contains('lazy-bg') && lazyElement.dataset.bg) {
+			// 					lazyElement.style.backgroundImage = lazyElement.dataset.bg;
+			// 					lazyElement.classList.remove('lazy-bg');
+			// 				}
 
-							observer.unobserve(lazyElement);
-						}
-					});
-				}, {
-					rootMargin: '300px 0px', // Carrega 300px antes do elemento entrar na viewport
-					threshold: 0.1
-				});
+			// 				observer.unobserve(lazyElement);
+			// 			}
+			// 		});
+			// 	}, {
+			// 		rootMargin: '300px 0px', // Carrega 300px antes do elemento entrar na viewport
+			// 		threshold: 0.1
+			// 	});
 
-				// Observar elementos com lazy loading
-				const lazyBackgrounds = document.querySelectorAll('.lazy-bg[data-bg]');
-				lazyBackgrounds.forEach(el => lazyLoadObserver.observe(el));
+			// 	// Observar elementos com lazy loading
+			// 	const lazyBackgrounds = document.querySelectorAll('.lazy-bg[data-bg]');
+			// 	lazyBackgrounds.forEach(el => lazyLoadObserver.observe(el));
 
-				// Inicializar carrossel somente após o conteúdo principal estar carregado
-				const initCarousel = () => {
-					if (typeof $.fn.owlCarousel === 'function') {
-						$('.main-slider-one__carousel').owlCarousel({
-							loop: false,
-							// animateOut: 'fadeOut',
-							// animateIn: 'fadeIn',
-							items: 1,
-							autoplay: false,
-							autoplayTimeout: 7000,
-							smartSpeed: 0,
-							nav: false,
-							navText: ['<span class="icon-left-arrow"></span>','<span class="icon-right-arrow"></span>'],
-							dots: true,
-							margin: 0
-						});
-					}
-				};
+			// 	// Inicializar carrossel somente após o conteúdo principal estar carregado
+			// 	const initCarousel = () => {
+			// 		if (typeof $.fn.owlCarousel === 'function') {
+			// 			$('.main-slider-one__carousel').owlCarousel({
+			// 				loop: false,
+			// 				// animateOut: 'fadeOut',
+			// 				// animateIn: 'fadeIn',
+			// 				items: 1,
+			// 				autoplay: false,
+			// 				autoplayTimeout: 7000,
+			// 				smartSpeed: 0,
+			// 				nav: false,
+			// 				navText: ['<span class="icon-left-arrow"></span>','<span class="icon-right-arrow"></span>'],
+			// 				dots: true,
+			// 				margin: 0
+			// 			});
+			// 		}
+			// 	};
 
-				// Verifica se o DOM está completamente carregado
-				if (document.readyState === 'complete') {
-					initCarousel();
-				} else {
-					window.addEventListener('load', initCarousel);
-				}
-				// setTimeout(function () {
-				// 	document.getElementById('slider-home').style.display = "block";
-				// },5000);
-			});
+			// 	// Verifica se o DOM está completamente carregado
+			// 	if (document.readyState === 'complete') {
+			// 		initCarousel();
+			// 	} else {
+			// 		window.addEventListener('load', initCarousel);
+			// 	}
+			// 	// setTimeout(function () {
+			// 	// 	document.getElementById('slider-home').style.display = "block";
+			// 	// },5000);
+			// });
 		</script>
 		<section>
 			<div class="main-slider-one__project2 text-center shadow-lg bg-light" style="display: none;"
