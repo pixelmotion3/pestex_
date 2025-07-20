@@ -1459,20 +1459,21 @@
 		<section class="feature-one space_between" id="#">
 			<div class="container">
 				<div class="text-center">
-					<h2 class="sec-title__tagline text-titles mt-5"><span
-							class="sec-title__tagline__left"></span><b>{{ $company_status[0]['company-status-h6'] }}</b><span
-							class="sec-title__tagline__right"></span></h2><!-- /.sec-title__tagline -->
+					<h2 class="sec-title__tagline text-titles mt-5">
+						<span class="sec-title__tagline__left"></span>
+						<b>{{ $company_status[0]['company-status-h6'] }}</b>
+						<span class="sec-title__tagline__right"></span>
+					</h2><!-- /.sec-title__tagline -->
 					<h3 class="sec-title__title mt-5"><b>{{ $company_status[0]['company-status-h3'] }}</b></h3>
 					<!-- /.sec-title__title -->
 				</div><!-- /.sec-title -->
 				<div class="row gutter-y-30 mt-5 wow slideInUp animated2">
-					<div class="col-md-4"
-						style="visibility: visible; animation-name: slideInUp;">
+					<div class="col-md-4" style="visibility: visible;">
 						<div class="feature-one__item text-center">
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
 								<span>
-									<img src="assets/images/DiagnosticoPreciso.png" alt="Lupa" />
+									<img src="assets/images/DiagnosticoPreciso.webp" alt="Lupa" />
 								</span>
 							</div>
 							<h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-1h4'] }}</b>
@@ -1483,13 +1484,12 @@
 							</div>
 						</div><!-- feature-item -->
 					</div>
-					<div class="col-md-4"
-						style="visibility: visible; animation-name: slideInUp;">
+					<div class="col-md-4" style="visibility: visible;">
 						<div class="feature-one__item text-center">
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
 								<span>
-									<img src="assets/images/MetodosSegurosEficazes.png" alt="Escudo" />
+									<img src="assets/images/MetodosSegurosEficazes.webp" alt="Escudo" />
 								</span>
 							</div>
 							<h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-2h4'] }}</b>
@@ -1500,13 +1500,12 @@
 							</div>
 						</div><!-- feature-item -->
 					</div>
-					<div class="col-md-4"
-						style="visibility: visible; animation-name: slideInUp;">
+					<div class="col-md-4" style="visibility: visible;">
 						<div class="feature-one__item text-center">
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
 								<span>
-									<img src="assets/images/PrevencaoContinua.png" alt="recarregar" />
+									<img src="assets/images/PrevencaoContinua.webp" alt="recarregar" />
 								</span>
 							</div>
 							<h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-3h4'] }}</b>
