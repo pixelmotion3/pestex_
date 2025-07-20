@@ -1209,7 +1209,9 @@
 						window.addEventListener('load', initCarousel);
 					},5000);
 				}
-				document.getElementById('slider-home').style.display = "block";
+				setTimeout(function () {
+					document.getElementById('slider-home').style.display = "block";
+				},5000);
 			});
 		</script>
 		<section>
