@@ -743,8 +743,8 @@
 			</div>
 		</header><!-- /.main-header -->
 		<!-- main-slider-start -->
-		<section class="main-slider-one" id="home">
-			{{-- <div class="main-slider-one__carousel tolak-owl__carousel owl-carousel" data-owl-options='{
+		<section class="main-slider-one"  style="display: none;" id="home">
+			<div class="main-slider-one__carousel tolak-owl__carousel owl-carousel" data-owl-options='{
 						"loop": false,
 						"animateOut": "fadeOut",
 						"animateIn": "fadeIn",
@@ -875,7 +875,7 @@
 						<div class="main-slider-one__floating-text">SOS PRAGAS</div>
 					</div>
 				</div>
-			</div> --}}
+			</div>
 			<!-- formulario -->
 			<div class="main-slider-one__project wow slideInRight animated text-center shadow-lg bg-light"
 				data-wow-delay="600ms"
