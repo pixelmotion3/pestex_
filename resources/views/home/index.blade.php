@@ -130,7 +130,7 @@
 	</script>
 
 	<!-- Styles -->
-	@vite(['resources/css/app.css'])
+	{{-- @vite(['resources/css/app.css']) --}}
 
 	<style>
 		.input-container {
