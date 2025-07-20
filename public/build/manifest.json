@@ -9,7 +9,7 @@
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app-Dos8wReX.css",
+    "file": "assets/app-BY1pZRbX.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -24,6 +24,18 @@
   "resources/css/vendors/tolak-icons/fonts/icomoon.eot": {
     "file": "assets/icomoon-DFjfftKd.eot",
     "src": "resources/css/vendors/tolak-icons/fonts/icomoon.eot"
+  },
+  "resources/css/vendors/tolak-icons/fonts/icomoon.svg": {
+    "file": "assets/icomoon-ikzKycWX.svg",
+    "src": "resources/css/vendors/tolak-icons/fonts/icomoon.svg"
+  },
+  "resources/css/vendors/tolak-icons/fonts/icomoon.ttf": {
+    "file": "assets/icomoon-AsAEprLi.ttf",
+    "src": "resources/css/vendors/tolak-icons/fonts/icomoon.ttf"
+  },
+  "resources/css/vendors/tolak-icons/fonts/icomoon.woff": {
+    "file": "assets/icomoon-DmfJbflm.woff",
+    "src": "resources/css/vendors/tolak-icons/fonts/icomoon.woff"
   },
   "resources/js/admin/app.js": {
     "file": "assets/app-CUIGJTUh.js",
