@@ -757,12 +757,16 @@
 						"dots": true,
 						"margin": 0
 						}'>
+				<!-- Slide 1 -->
 				<div class="item">
 					<div class="main-slider-one__item">
 						<div class="main-slider-one__shape tolak-tilt"
 							data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
 						</div>
-						<div defer class="main-slider-one__bg lazy-bg" data-bg=""></div>
+						<div class="main-slider-one__bg lazy-bg"
+							data-bg="url({{ $main_screen[0]['carrousel-bg-img-path'] }})"
+							style="background-size: cover; background-position: center; background-repeat: no-repeat;">
+						</div>
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12">
@@ -770,19 +774,18 @@
 										<h2 class="main-slider-one__sub-title text-titles">
 											{{ $main_screen[0]['carrousel-h5'] }}
 										</h2>
-										<!-- slider-sub-title -->
 										<h2 class="main-slider-one__title">{{ $main_screen[0]['carrousel-h2'] }}
 											<br />
 											{{ $main_screen[0]['carrousel-h2-a'] }}
-										</h2><!-- slider-title -->
+										</h2>
 										<div class="main-slider-one__text">
 											<p class="main-slider-one__text__one">{{ $main_screen[0]['carrousel-p'] }}
 											</p>
-										</div><!-- slider-text -->
+										</div>
 										<div class="main-slider-one__bottom">
 											<div class="main-slider-one__btn">
 												<a href="tel:00351219747353"
-													class="btn1 theme-btn-three1 thm-btn1"><b>{{ $main_screen[0]['carrousel-a-1'] }}</b><span></span></a><!-- slider-btn -->
+													class="btn1 theme-btn-three1 thm-btn1"><b>{{ $main_screen[0]['carrousel-a-1'] }}</b><span></span></a>
 											</div>
 										</div>
 									</div>
@@ -791,34 +794,38 @@
 						</div>
 						<div class="main-slider-one__floating-text">SOS PRAGAS</div>
 					</div>
-				</div><!-- item -->
+				</div>
+
+				<!-- Slide 2 -->
 				<div class="item">
 					<div class="main-slider-one__item">
 						<div class="main-slider-one__shape tolak-tilt"
 							data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
 						</div>
-						<div defer class="main-slider-one__bg lazy-bg" data-bg=""></div>
-
+						<div class="main-slider-one__bg lazy-bg"
+							data-bg="url({{ $main_screen[0]['carrousel-bg-img-path-1'] }})"
+							style="background-size: cover; background-position: center; background-repeat: no-repeat;">
+						</div>
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12">
 									<div class="main-slider-one__content">
 										<h2 class="main-slider-one__sub-title text-titles">
 											{{ $main_screen[0]['carrousel-h5-1'] }}
-										</h2><!-- slider-sub-title -->
+										</h2>
 										<h2 class="main-slider-one__title">
 											{{ $main_screen[0]['carrousel-h2-1'] }}<br />
 											{{ $main_screen[0]['carrousel-h2-b'] }}
-										</h2><!-- slider-title -->
+										</h2>
 										<div class="main-slider-one__text">
 											<p class="main-slider-one__text__one">
 												{{ $main_screen[0]['carrousel-p-1'] }}.
 											</p>
-										</div><!-- slider-text -->
+										</div>
 										<div class="main-slider-one__bottom">
 											<div class="main-slider-one__btn">
 												<a href="tel:00351219747353"
-													class="btn1 theme-btn-three1 thm-btn1"><b>{{ $main_screen[0]['carrousel-a-1-1'] }}</b><span></span></a><!-- slider-btn -->
+													class="btn1 theme-btn-three1 thm-btn1"><b>{{ $main_screen[0]['carrousel-a-1-1'] }}</b><span></span></a>
 											</div>
 										</div>
 									</div>
@@ -827,37 +834,38 @@
 						</div>
 						<div class="main-slider-one__floating-text">SOS PRAGAS</div>
 					</div>
-				</div><!-- item -->
+				</div>
+
+				<!-- Slide 3 -->
 				<div class="item">
 					<div class="main-slider-one__item">
 						<div class="main-slider-one__shape tolak-tilt"
 							data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
-							<!--
-         <img src="assets/images/shapes/slider-1-shape-1.png" alt="tolak">
-         -->
 						</div>
-						<div defer class="main-slider-one__bg lazy-bg" data-bg=""></div>
-
+						<div class="main-slider-one__bg lazy-bg"
+							data-bg="url({{ $main_screen[0]['carrousel-bg-img-path-2'] }})"
+							style="background-size: cover; background-position: center; background-repeat: no-repeat;">
+						</div>
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12">
 									<div class="main-slider-one__content">
 										<h2 class="main-slider-one__sub-title text-titles">
 											{{ $main_screen[0]['carrousel-h5-2'] }}
-										</h2><!-- slider-sub-title -->
+										</h2>
 										<h2 class="main-slider-one__title">
 											{{ $main_screen[0]['carrousel-h2-2'] }}<br />
 											{{ $main_screen[0]['carrousel-h2-c'] }}
-										</h2><!-- slider-title -->
+										</h2>
 										<div class="main-slider-one__text">
 											<p class="main-slider-one__text__one">
 												{{ $main_screen[0]['carrousel-p-2'] }}
 											</p>
-										</div><!-- slider-text -->
+										</div>
 										<div class="main-slider-one__bottom">
 											<div class="main-slider-one__btn">
 												<a href="tel:00351219747353"
-													class="btn1 theme-btn-three1 thm-btn1"><b>{{ $main_screen[0]['carrousel-a-1-2'] }}</b><span></span></a><!-- slider-btn -->
+													class="btn1 theme-btn-three1 thm-btn1"><b>{{ $main_screen[0]['carrousel-a-1-2'] }}</b><span></span></a>
 											</div>
 										</div>
 									</div>
@@ -866,7 +874,7 @@
 						</div>
 						<div class="main-slider-one__floating-text">SOS PRAGAS</div>
 					</div>
-				</div><!-- item -->
+				</div>
 			</div>
 			<!-- formulario -->
 			<div class="main-slider-one__project wow slideInRight animated text-center shadow-lg bg-light"
@@ -1150,6 +1158,59 @@
 				</div>
 			</div>
 		</section>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				// Configuração do Intersection Observer para lazy loading
+				const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							const lazyElement = entry.target;
+
+							// Carrega imagens de fundo
+							if (lazyElement.classList.contains('lazy-bg') && lazyElement.dataset.bg) {
+								lazyElement.style.backgroundImage = lazyElement.dataset.bg;
+								lazyElement.classList.remove('lazy-bg');
+							}
+
+							observer.unobserve(lazyElement);
+						}
+					});
+				}, {
+					rootMargin: '300px 0px', // Carrega 300px antes do elemento entrar na viewport
+					threshold: 0.1
+				});
+
+				// Observar elementos com lazy loading
+				const lazyBackgrounds = document.querySelectorAll('.lazy-bg[data-bg]');
+				lazyBackgrounds.forEach(el => lazyLoadObserver.observe(el));
+
+				// Inicializar carrossel somente após o conteúdo principal estar carregado
+				const initCarousel = () => {
+					if (typeof $.fn.owlCarousel === 'function') {
+						$('.main-slider-one__carousel').owlCarousel({
+							loop: false,
+							animateOut: 'fadeOut',
+							animateIn: 'fadeIn',
+							items: 1,
+							autoplay: true,
+							autoplayTimeout: 7000,
+							smartSpeed: 1000,
+							nav: false,
+							navText: ['<span class="icon-left-arrow"></span>','<span class="icon-right-arrow"></span>'],
+							dots: true,
+							margin: 0
+						});
+					}
+				};
+
+				// Verifica se o DOM está completamente carregado
+				if (document.readyState === 'complete') {
+					initCarousel();
+				} else {
+					window.addEventListener('load', initCarousel);
+				}
+			});
+		</script>
 		<section>
 			<div class="main-slider-one__project2 text-center shadow-lg bg-light" style="display: none;"
 				style="min-width: 400px;z-index:1;border-radius:30px;">
