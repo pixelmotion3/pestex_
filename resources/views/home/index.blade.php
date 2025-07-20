@@ -743,11 +743,11 @@
 			</div>
 		</header><!-- /.main-header -->
 		<!-- main-slider-start -->
-		<section class="main-slider-one"  style="display: none;" id="slider-home">
+		<section class="main-slider-one" id="slider-home">
 			<div class="main-slider-one__carousel tolak-owl__carousel owl-carousel" data-owl-options='{
 						"loop": false,
-						"animateOut": "fadeOut",
-						"animateIn": "fadeIn",
+						{{-- "animateOut": "fadeOut",
+						"animateIn": "fadeIn", --}}
 						"items": 1,
 						"autoplay": true,
 						"autoplayTimeout": 7000,
@@ -760,8 +760,8 @@
 				<!-- Slide 1 -->
 				<div class="item">
 					<div class="main-slider-one__item">
-						<div class="main-slider-one__shape tolak-tilt"
-							data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
+						<div class="main-slider-one__shape"
+							>
 						</div>
 						<div class="main-slider-one__bg lazy-bg"
 							data-bg="url({{ $main_screen[0]['carrousel-bg-img-path'] }})"
@@ -799,8 +799,8 @@
 				<!-- Slide 2 -->
 				<div class="item">
 					<div class="main-slider-one__item">
-						<div class="main-slider-one__shape tolak-tilt"
-							data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
+						<div class="main-slider-one__shape"
+							>
 						</div>
 						<div class="main-slider-one__bg lazy-bg"
 							data-bg="url({{ $main_screen[0]['carrousel-bg-img-path-1'] }})"
@@ -839,8 +839,8 @@
 				<!-- Slide 3 -->
 				<div class="item">
 					<div class="main-slider-one__item">
-						<div class="main-slider-one__shape tolak-tilt"
-							data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
+						<div class="main-slider-one__shape"
+							>
 						</div>
 						<div class="main-slider-one__bg lazy-bg"
 							data-bg="url({{ $main_screen[0]['carrousel-bg-img-path-2'] }})"
