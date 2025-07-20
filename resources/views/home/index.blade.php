@@ -92,12 +92,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
 		integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-	<link rel="stylesheet" href="{{ asset('assets/vendors/tolak-icons/style.css') }}" />
+	{{-- <link rel="stylesheet" href="{{ asset('assets/vendors/tolak-icons/style.css') }}" /> --}}
 
 	{{-- <link href="{{ asset('assets/css/font-awesome-all.css') }}" rel="stylesheet"> --}}
 
 
-	<link href="{{ asset('assets/css/allcss.css') }}" rel="stylesheet">
+	{{-- <link href="{{ asset('assets/css/allcss.css') }}" rel="stylesheet"> --}}
 
 
 	{{-- <link href="{{ asset('assets/css/flaticon.css') }}" rel="stylesheet">
@@ -108,7 +108,7 @@
 	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 	<link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet"> --}}
 	<!-- template styles -->
-	<link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" />
+	{{-- <link rel="stylesheet" href="{{ asset('assets/css/tolak.css') }}" /> --}}
 
 
 
@@ -762,7 +762,7 @@
 						<div class="main-slider-one__shape tolak-tilt"
 							data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
 						</div>
-						<div class="main-slider-one__bg lazy-bg" data-bg="url({{ $main_screen[0]['carrousel-bg-img-path'] }})"></div>
+						<div defer class="main-slider-one__bg lazy-bg" data-bg="url({{ $main_screen[0]['carrousel-bg-img-path'] }})"></div>
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12">
@@ -797,7 +797,7 @@
 						<div class="main-slider-one__shape tolak-tilt"
 							data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
 						</div>
-						<div class="main-slider-one__bg lazy-bg" data-bg="url({{ $main_screen[0]['carrousel-bg-img-path-1'] }})"></div>
+						<div defer class="main-slider-one__bg lazy-bg" data-bg="url({{ $main_screen[0]['carrousel-bg-img-path-1'] }})"></div>
 
 						<div class="container">
 							<div class="row">
@@ -836,7 +836,7 @@
          <img src="assets/images/shapes/slider-1-shape-1.png" alt="tolak">
          -->
 						</div>
-						<div class="main-slider-one__bg lazy-bg" data-bg="url({{ $main_screen[0]['carrousel-bg-img-path-2'] }})"></div>
+						<div defer class="main-slider-one__bg lazy-bg" data-bg="url({{ $main_screen[0]['carrousel-bg-img-path-2'] }})"></div>
 
 						<div class="container">
 							<div class="row">
@@ -2474,7 +2474,7 @@
 		</section><!-- /.funfact-one -->
 		<!-- CTA Start -->
 		<section class="cta-two" style="margin-top: 200px;">
-			<div class="cta-two__shape" style="background-image: url({{ $call_now[0]['call-now-bg-image-1-path'] }});">
+			<div defer class="cta-two__shape" style="background-image: url({{ $call_now[0]['call-now-bg-image-1-path'] }});">
 			</div>
 			<div class="container">
 				<div class="cta-two__bg" style="background-image: url({{ $call_now[0]['call-now-bg-image-2-path'] }});">
@@ -2519,7 +2519,7 @@
 
 		<section class="cta-four mt-5">
 			<div class="container" style="margin-top:100px;">
-				<div class="cta-four__bg" style="background-image: url({{ $video_contact[0]['watch-video-bg-img'] }});">
+				<div defer class="cta-four__bg" style="background-image: url({{ $video_contact[0]['watch-video-bg-img'] }});">
 					<div class="cta-four__shape" style="background-image: url(assets/images/shapes/cta-4-border.png);">
 					</div>
 					<div class="row">
