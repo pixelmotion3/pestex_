@@ -49203,7 +49203,7 @@ body.megamenu-popup-active .mobile-nav__content {
 	overflow: hidden;
 	margin: 0 0 11px;
 	opacity: 0;
-	transition: transform 3200ms ease, opacity 3200ms ease;
+	transition: transform 1200ms ease, opacity 1200ms ease;
 	transform: translateX(200px);
 	width: 50%;
 }

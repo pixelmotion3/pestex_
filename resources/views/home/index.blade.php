@@ -877,7 +877,7 @@
 				</div>
 			</div>
 			<!-- formulario -->
-			<div class="main-slider-one__project slideInRight animated2 text-center shadow-lg bg-light"
+			<div class="main-slider-one__project text-center shadow-lg bg-light"
 				data-wow-delay="10ms"
 				style="min-width: 400px;z-index:1;border-radius:30px;">
 				<ul class="nav nav-tabs " id="myTab" role="tablist">
