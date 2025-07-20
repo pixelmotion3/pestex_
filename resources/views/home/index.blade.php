@@ -1467,14 +1467,15 @@
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
 								<span>
-									<img src="assets/images/DiagnosticoPreciso.webp" alt="Lupa" width="45" height="45" />
+									{{-- <img src="assets/images/DiagnosticoPreciso.webp" alt="Lupa" width="45" height="45" /> --}}
+									<div style="width: 45px; height: 45px;background: url('assets/images/css_sprites_icons_eficaz.png') -10px -205px"></div>
 								</span>
 							</div>
 							<h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-1h4'] }}</b>
 							</h4>
 							<p class="feature-one__item__text">{{ $company_status[0]['company-status-1p'] }}</p>
 							<div class="feature-one__item__arrow"
-								style="background-image: url(assets/images/shapes/feature-1-shape-1.webp);margin-top:-40px;">
+								style="width: 96px; height: 29px;background: url('assets/images/css_sprites_shapes.png') -10px -10px;">
 							</div>
 						</div><!-- feature-item -->
 					</div>
@@ -1483,14 +1484,14 @@
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
 								<span>
-									<img src="assets/images/MetodosSegurosEficazes.webp" alt="Escudo" width="45" height="45" />
+									{{-- <img src="assets/images/MetodosSegurosEficazes.webp" alt="Escudo" width="45" height="45" /> --}}
+									<div style="width: 45px; height: 45px;background: url('assets/images/css_sprites_icons_eficaz.png') -75px -10px"></div>
 								</span>
 							</div>
 							<h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-2h4'] }}</b>
 							</h4>
 							<p class="feature-one__item__text">{{ $company_status[0]['company-status-2p'] }}</p>
-							<div class="feature-one__item__arrow feature-one__item__arrow--sm-hide"
-								style="background-image: url(assets/images/shapes/feature-1-shape-2.webp);margin-top:-40px;">
+							<div class="feature-one__item__arrow feature-one__item__arrow--sm-hide" style="width: 96px; height: 29px;background: url('assets/images/css_sprites_shapes.png') -10px -59px;">
 							</div>
 						</div><!-- feature-item -->
 					</div>
@@ -1499,7 +1500,8 @@
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
 								<span>
-									<img src="assets/images/PrevencaoContinua.webp" alt="recarregar" width="45" height="45" />
+									{{-- <img src="assets/images/PrevencaoContinua.webp" alt="recarregar" width="45" height="45" /> --}}
+									<div style="width: 45px; height: 45px;background: url('assets/images/css_sprites_icons_eficaz.png') -10px -10px"></div>
 								</span>
 							</div>
 							<h4 class="feature-one__item__title"><b>{{ $company_status[0]['company-status-3h4'] }}</b>
