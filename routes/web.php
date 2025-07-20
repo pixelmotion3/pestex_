@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\Route;
 
 // Rota padrão para o domínio principal
 Route::domain('127.0.0.1')->group(function () {
-    Route::get('/', [FrontPageController::class, 'Home'])->name('FrontPage.Home');
+    Route::get('/', [FrontPageController::class, 'Home'])->name('FrontPage.Home1');
 
 
 	Route::resource('/sustentabilidade', SustainabilityController::class);
@@ -145,7 +145,7 @@ Route::domain('127.0.0.1')->group(function () {
 
 // Rota padrão para o domínio principal
 Route::domain('sospragas.pt')->group(function () {
-	Route::get('/', [FrontPageController::class, 'Home'])->name('FrontPage.Home');
+	Route::get('/', [FrontPageController::class, 'Home'])->name('FrontPage.Home2');
 
 
 	Route::resource('/sustentabilidade', SustainabilityController::class);
@@ -267,7 +267,7 @@ Route::domain('sospragas.pt')->group(function () {
 
 // Rota padrão para o subdomínio
 Route::domain('desinfestacoes.sospragas.pt')->group(function () {
-    Route::get('/', [FrontPageController::class, 'index'])->name('FrontPage.Home');
+    Route::get('/', [FrontPageController::class, 'index'])->name('FrontPage.Home3');
 
 
 	Route::resource('/sustentabilidade', SustainabilityController::class);
