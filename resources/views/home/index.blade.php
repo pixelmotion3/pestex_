@@ -1201,13 +1201,9 @@
 
 				// Verifica se o DOM está completamente carregado
 				if (document.readyState === 'complete') {
-					setTimeout(function () {
-						initCarousel();
-					},5000);
+					initCarousel();
 				} else {
-					setTimeout(function () {
-						window.addEventListener('load', initCarousel);
-					},5000);
+					window.addEventListener('load', initCarousel);
 				}
 				// setTimeout(function () {
 				// 	document.getElementById('slider-home').style.display = "block";
