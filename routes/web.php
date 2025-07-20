@@ -98,7 +98,7 @@ Route::domain('127.0.0.1')->group(function () {
 		Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 
 
-		Route::get('/termsservice', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex');
+		Route::get('/termsservice', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex1');
 		Route::get('/privacypolicy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex');
 
 		Route::get('/forms/newsletter', [FormsPageController::class, 'newsletter'])->name('FormsPage.newsletter');
@@ -212,7 +212,7 @@ Route::domain('sospragas.pt')->group(function () {
 		Route::get('/home-page/privacy-policy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex');
 		Route::get('/home-page/quote-forms', [HomePageController::class, 'QuoteFormsIndex'])->name('HomePage.QuoteFormsIndex');
 		Route::get('/home-page/status', [HomePageController::class, 'StatusIndex'])->name('HomePage.StatusIndex');
-		Route::get('/home-page/terms-service', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex');
+		Route::get('/home-page/terms-service', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex6');
 		Route::get('/home-page/testimonial', [HomePageController::class, 'TestimonialIndex'])->name('HomePage.TestimonialIndex');
 
 
@@ -220,7 +220,7 @@ Route::domain('sospragas.pt')->group(function () {
 		Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 
 
-		Route::get('/termsservice', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex');
+		Route::get('/termsservice', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex2');
 		Route::get('/privacypolicy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex');
 
 		Route::get('/forms/newsletter', [FormsPageController::class, 'newsletter'])->name('FormsPage.newsletter');
@@ -336,7 +336,7 @@ Route::domain('desinfestacoes.sospragas.pt')->group(function () {
 		Route::get('/home-page/privacy-policy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex');
 		Route::get('/home-page/quote-forms', [HomePageController::class, 'QuoteFormsIndex'])->name('HomePage.QuoteFormsIndex');
 		Route::get('/home-page/status', [HomePageController::class, 'StatusIndex'])->name('HomePage.StatusIndex');
-		Route::get('/home-page/terms-service', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex');
+		Route::get('/home-page/terms-service', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex5');
 		Route::get('/home-page/testimonial', [HomePageController::class, 'TestimonialIndex'])->name('HomePage.TestimonialIndex');
 
 
@@ -344,7 +344,7 @@ Route::domain('desinfestacoes.sospragas.pt')->group(function () {
 		Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 
 
-		Route::get('/termsservice', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex');
+		Route::get('/termsservice', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex3');
 		Route::get('/privacypolicy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex');
 
 		Route::get('/forms/newsletter', [FormsPageController::class, 'newsletter'])->name('FormsPage.newsletter');
