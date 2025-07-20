@@ -762,7 +762,7 @@
 						<div class="main-slider-one__shape tolak-tilt"
 							data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
 						</div>
-						<div defer class="main-slider-one__bg lazy-bg" data-bg="url({{ $main_screen[0]['carrousel-bg-img-path'] }})"></div>
+						<div defer class="main-slider-one__bg lazy-bg" data-bg=""></div>
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12">
@@ -797,7 +797,7 @@
 						<div class="main-slider-one__shape tolak-tilt"
 							data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
 						</div>
-						<div defer class="main-slider-one__bg lazy-bg" data-bg="url({{ $main_screen[0]['carrousel-bg-img-path-1'] }})"></div>
+						<div defer class="main-slider-one__bg lazy-bg" data-bg=""></div>
 
 						<div class="container">
 							<div class="row">
@@ -836,7 +836,7 @@
          <img src="assets/images/shapes/slider-1-shape-1.png" alt="tolak">
          -->
 						</div>
-						<div defer class="main-slider-one__bg lazy-bg" data-bg="url({{ $main_screen[0]['carrousel-bg-img-path-2'] }})"></div>
+						<div defer class="main-slider-one__bg lazy-bg" data-bg=""></div>
 
 						<div class="container">
 							<div class="row">
