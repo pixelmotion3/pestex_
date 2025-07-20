@@ -1205,9 +1205,13 @@
 
 				// Verifica se o DOM está completamente carregado
 				if (document.readyState === 'complete') {
-					initCarousel();
+					setTimeout(function () {
+						initCarousel();
+					},5000);
 				} else {
-					window.addEventListener('load', initCarousel);
+					setTimeout(function () {
+						window.addEventListener('load', initCarousel);
+					},5000);
 				}
 			});
 		</script>
