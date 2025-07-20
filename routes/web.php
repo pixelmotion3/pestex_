@@ -87,7 +87,7 @@ Route::domain('127.0.0.1')->group(function () {
 		Route::get('/home-page/customer-area', [HomePageController::class, 'CustomerAreaIndex'])->name('HomePage.CustomerAreaIndex');
 		Route::get('/home-page/main-carrousel', [HomePageController::class, 'MainCarrouselIndex'])->name('HomePage.MainCarrouselIndex');
 		Route::get('/home-page/our-services', [HomePageController::class, 'OurServicesIndex'])->name('HomePage.OurServicesIndex');
-		Route::get('/home-page/privacy-policy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex');
+		Route::get('/home-page/privacy-policy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex1');
 		Route::get('/home-page/quote-forms', [HomePageController::class, 'QuoteFormsIndex'])->name('HomePage.QuoteFormsIndex');
 		Route::get('/home-page/status', [HomePageController::class, 'StatusIndex'])->name('HomePage.StatusIndex');
 		Route::get('/home-page/terms-service', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex');
@@ -99,7 +99,7 @@ Route::domain('127.0.0.1')->group(function () {
 
 
 		Route::get('/termsservice', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex1');
-		Route::get('/privacypolicy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex');
+		Route::get('/privacypolicy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex2');
 
 		Route::get('/forms/newsletter', [FormsPageController::class, 'newsletter'])->name('FormsPage.newsletter');
 		Route::get('/forms/quote', [FormsPageController::class, 'quote'])->name('FormsPage.quote');
@@ -209,7 +209,7 @@ Route::domain('sospragas.pt')->group(function () {
 		Route::get('/home-page/customer-area', [HomePageController::class, 'CustomerAreaIndex'])->name('HomePage.CustomerAreaIndex');
 		Route::get('/home-page/main-carrousel', [HomePageController::class, 'MainCarrouselIndex'])->name('HomePage.MainCarrouselIndex');
 		Route::get('/home-page/our-services', [HomePageController::class, 'OurServicesIndex'])->name('HomePage.OurServicesIndex');
-		Route::get('/home-page/privacy-policy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex');
+		Route::get('/home-page/privacy-policy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex3');
 		Route::get('/home-page/quote-forms', [HomePageController::class, 'QuoteFormsIndex'])->name('HomePage.QuoteFormsIndex');
 		Route::get('/home-page/status', [HomePageController::class, 'StatusIndex'])->name('HomePage.StatusIndex');
 		Route::get('/home-page/terms-service', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex6');
@@ -221,7 +221,7 @@ Route::domain('sospragas.pt')->group(function () {
 
 
 		Route::get('/termsservice', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex2');
-		Route::get('/privacypolicy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex');
+		Route::get('/privacypolicy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex4');
 
 		Route::get('/forms/newsletter', [FormsPageController::class, 'newsletter'])->name('FormsPage.newsletter');
 		Route::get('/forms/quote', [FormsPageController::class, 'quote'])->name('FormsPage.quote');
@@ -333,7 +333,7 @@ Route::domain('desinfestacoes.sospragas.pt')->group(function () {
 		Route::get('/home-page/customer-area', [HomePageController::class, 'CustomerAreaIndex'])->name('HomePage.CustomerAreaIndex');
 		Route::get('/home-page/main-carrousel', [HomePageController::class, 'MainCarrouselIndex'])->name('HomePage.MainCarrouselIndex');
 		Route::get('/home-page/our-services', [HomePageController::class, 'OurServicesIndex'])->name('HomePage.OurServicesIndex');
-		Route::get('/home-page/privacy-policy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex');
+		Route::get('/home-page/privacy-policy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex5');
 		Route::get('/home-page/quote-forms', [HomePageController::class, 'QuoteFormsIndex'])->name('HomePage.QuoteFormsIndex');
 		Route::get('/home-page/status', [HomePageController::class, 'StatusIndex'])->name('HomePage.StatusIndex');
 		Route::get('/home-page/terms-service', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex5');
@@ -345,7 +345,7 @@ Route::domain('desinfestacoes.sospragas.pt')->group(function () {
 
 
 		Route::get('/termsservice', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex3');
-		Route::get('/privacypolicy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex');
+		Route::get('/privacypolicy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex6');
 
 		Route::get('/forms/newsletter', [FormsPageController::class, 'newsletter'])->name('FormsPage.newsletter');
 		Route::get('/forms/quote', [FormsPageController::class, 'quote'])->name('FormsPage.quote');
