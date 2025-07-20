@@ -744,7 +744,7 @@
 		</header><!-- /.main-header -->
 		<!-- main-slider-start -->
 		<section class="main-slider-one" id="home">
-			<div class="main-slider-one__carousel tolak-owl__carousel owl-carousel" data-owl-options='{
+			{{-- <div class="main-slider-one__carousel tolak-owl__carousel owl-carousel" data-owl-options='{
 						"loop": false,
 						"animateOut": "fadeOut",
 						"animateIn": "fadeIn",
@@ -875,11 +875,10 @@
 						<div class="main-slider-one__floating-text">SOS PRAGAS</div>
 					</div>
 				</div>
-			</div>
+			</div> --}}
 			<!-- formulario -->
 			<div class="main-slider-one__project wow slideInRight animated text-center shadow-lg bg-light"
-				data-wow-delay="600ms" {{-- wow slideInRight animated"
-				style="visibility: visible; animation-name: slideInRight;" --}}
+				data-wow-delay="600ms"
 				style="min-width: 400px;z-index:1;border-radius:30px;">
 				<ul class="nav nav-tabs " id="myTab" role="tablist">
 					<li class="nav-item w-50 rounded-top-lg" role="presentation">
@@ -932,8 +931,7 @@
 									</div>
 									<div class="col border mt-3 change-customer"
 										style="margin-right:30px;margin-left:15px;" id="company_desktop">
-										{{-- <i class="far fa-building mt-3" aria-hidden="true"
-											style="font-size:4rem;"></i> --}}
+
 										<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1"
 											viewBox="0 0 63.2 64">
 											<!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
@@ -1043,9 +1041,7 @@
 											disabled>
 											Enviar Formulário
 										</button>
-										{{-- <button class="btn mt-2 theme-btn-three thm-btn" type="submit"
-											name="quote_form">Obter
-											Orçamento Grátis</button> --}}
+
 									</div>
 								</div>
 							</form>
