@@ -1456,7 +1456,7 @@
 		<!-- main-slider-end -->
 
 		<!-- Feature Start -->
-		<section class="feature-one space_between" id="#">
+		<section class="feature-one space_between">
 			<div class="container">
 				<div class="text-center">
 					<h2 class="sec-title__tagline text-titles mt-5">
@@ -1468,7 +1468,7 @@
 					<!-- /.sec-title__title -->
 				</div><!-- /.sec-title -->
 				<div class="row gutter-y-30 mt-5 wow slideInUp animated2">
-					<div class="col-md-4" style="visibility: visible;">
+					<div class="col-md-4">
 						<div class="feature-one__item text-center">
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
@@ -1480,11 +1480,11 @@
 							</h4>
 							<p class="feature-one__item__text">{{ $company_status[0]['company-status-1p'] }}</p>
 							<div class="feature-one__item__arrow"
-								style="background-image: url(assets/images/shapes/feature-1-shape-1.png);margin-top:-40px;">
+								style="background-image: url(assets/images/shapes/feature-1-shape-1.webp);margin-top:-40px;">
 							</div>
 						</div><!-- feature-item -->
 					</div>
-					<div class="col-md-4" style="visibility: visible;">
+					<div class="col-md-4">
 						<div class="feature-one__item text-center">
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
@@ -1496,11 +1496,11 @@
 							</h4>
 							<p class="feature-one__item__text">{{ $company_status[0]['company-status-2p'] }}</p>
 							<div class="feature-one__item__arrow feature-one__item__arrow--sm-hide"
-								style="background-image: url(assets/images/shapes/feature-1-shape-2.png);margin-top:-40px;">
+								style="background-image: url(assets/images/shapes/feature-1-shape-2.webp);margin-top:-40px;">
 							</div>
 						</div><!-- feature-item -->
 					</div>
-					<div class="col-md-4" style="visibility: visible;">
+					<div class="col-md-4">
 						<div class="feature-one__item text-center">
 							<div class="feature-one__item__number" style="-webkit-text-stroke: 1px black;"></div>
 							<div class="service-one__item__icon">
