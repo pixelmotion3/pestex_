@@ -8,7 +8,7 @@
   pointer-events: none;
 }
 .ql-container.ql-disabled .ql-tooltip {
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
 }
 
 .ql-clipboard {
@@ -59,7 +59,7 @@
 .ql-snow .ql-out-top,
 .ql-bubble .ql-out-bottom,
 .ql-bubble .ql-out-top {
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
 }
 .ql-snow .ql-hidden,
 .ql-bubble .ql-hidden {
@@ -724,7 +724,7 @@
   display: block;
 }
 .ql-bubble .ql-tooltip.ql-editing .ql-formats {
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
 }
 .ql-bubble .ql-tooltip-editor {
   display: none;
@@ -762,7 +762,7 @@
 .ql-bubble.ql-container:not(.ql-disabled) a::before, .ql-bubble.ql-container:not(.ql-disabled) a::after {
   margin-left: 50%;
   position: absolute;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
   left: 0;
   transition: visibility 0s ease 200ms;
   transform: translate(-50%, -100%);

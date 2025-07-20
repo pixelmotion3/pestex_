@@ -3390,7 +3390,7 @@ Copyright (c) 2015 Daniel Eden
     }
 
     100% {
-        visibility: hidden;
+        display: hidden; /* antigo visibility: hidden; */
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
     }
@@ -3403,7 +3403,7 @@ Copyright (c) 2015 Daniel Eden
     }
 
     100% {
-        visibility: hidden;
+        display: hidden; /* antigo visibility: hidden; */
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
     }
@@ -3421,7 +3421,7 @@ Copyright (c) 2015 Daniel Eden
     }
 
     100% {
-        visibility: hidden;
+        display: hidden; /* antigo visibility: hidden; */
         -webkit-transform: translate3d(-100%, 0, 0);
         transform: translate3d(-100%, 0, 0);
     }
@@ -3434,7 +3434,7 @@ Copyright (c) 2015 Daniel Eden
     }
 
     100% {
-        visibility: hidden;
+        display: hidden; /* antigo visibility: hidden; */
         -webkit-transform: translate3d(-100%, 0, 0);
         transform: translate3d(-100%, 0, 0);
     }
@@ -3452,7 +3452,7 @@ Copyright (c) 2015 Daniel Eden
     }
 
     100% {
-        visibility: hidden;
+        display: hidden; /* antigo visibility: hidden; */
         -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
     }
@@ -3465,7 +3465,7 @@ Copyright (c) 2015 Daniel Eden
     }
 
     100% {
-        visibility: hidden;
+        display: hidden; /* antigo visibility: hidden; */
         -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
     }
@@ -3483,7 +3483,7 @@ Copyright (c) 2015 Daniel Eden
     }
 
     100% {
-        visibility: hidden;
+        display: hidden; /* antigo visibility: hidden; */
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
     }
@@ -3496,7 +3496,7 @@ Copyright (c) 2015 Daniel Eden
     }
 
     100% {
-        visibility: hidden;
+        display: hidden; /* antigo visibility: hidden; */
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
     }

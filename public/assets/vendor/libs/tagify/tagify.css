@@ -70,7 +70,7 @@
   cursor: default;
 }
 .tagify[readonly]:not(.tagify--mix):not(.tagify--select) > .tagify__input, .tagify[disabled]:not(.tagify--mix):not(.tagify--select) > .tagify__input {
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
   width: 0;
   margin: 5px 0;
 }

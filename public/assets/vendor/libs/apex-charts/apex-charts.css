@@ -405,13 +405,13 @@
 .svg_select_boundingRect, .svg_select_points_rot {
   pointer-events: none;
   opacity: 0;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
 }
 
 .apexcharts-selection-rect + g .svg_select_boundingRect,
 .apexcharts-selection-rect + g .svg_select_points_rot {
   opacity: 0;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
 }
 
 .apexcharts-selection-rect + g .svg_select_points_l,
@@ -654,7 +654,7 @@
 }
 .resize-triggers {
   animation: 1ms resizeanim;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
   opacity: 0;
 }
 

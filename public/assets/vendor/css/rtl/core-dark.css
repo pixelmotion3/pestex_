@@ -5907,7 +5907,7 @@ textarea.form-control-lg {
   float: left;
   width: 100%;
   margin-right: -100%;
-  backface-visibility: hidden;
+  backface-display: hidden; /* antigo visibility: hidden; */
   transition: transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -6163,7 +6163,7 @@ textarea.form-control-lg {
     flex-direction: column;
     max-width: 100%;
     color: var(--bs-offcanvas-color);
-    visibility: hidden;
+    display: hidden; /* antigo visibility: hidden; */
     background-color: var(--bs-offcanvas-bg);
     background-clip: padding-box;
     outline: 0;
@@ -6241,7 +6241,7 @@ textarea.form-control-lg {
     flex-direction: column;
     max-width: 100%;
     color: var(--bs-offcanvas-color);
-    visibility: hidden;
+    display: hidden; /* antigo visibility: hidden; */
     background-color: var(--bs-offcanvas-bg);
     background-clip: padding-box;
     outline: 0;
@@ -6319,7 +6319,7 @@ textarea.form-control-lg {
     flex-direction: column;
     max-width: 100%;
     color: var(--bs-offcanvas-color);
-    visibility: hidden;
+    display: hidden; /* antigo visibility: hidden; */
     background-color: var(--bs-offcanvas-bg);
     background-clip: padding-box;
     outline: 0;
@@ -6397,7 +6397,7 @@ textarea.form-control-lg {
     flex-direction: column;
     max-width: 100%;
     color: var(--bs-offcanvas-color);
-    visibility: hidden;
+    display: hidden; /* antigo visibility: hidden; */
     background-color: var(--bs-offcanvas-bg);
     background-clip: padding-box;
     outline: 0;
@@ -6475,7 +6475,7 @@ textarea.form-control-lg {
     flex-direction: column;
     max-width: 100%;
     color: var(--bs-offcanvas-color);
-    visibility: hidden;
+    display: hidden; /* antigo visibility: hidden; */
     background-color: var(--bs-offcanvas-bg);
     background-clip: padding-box;
     outline: 0;
@@ -6552,7 +6552,7 @@ textarea.form-control-lg {
   flex-direction: column;
   max-width: 100%;
   color: var(--bs-offcanvas-color);
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
   background-color: var(--bs-offcanvas-bg);
   background-clip: padding-box;
   outline: 0;
@@ -6790,7 +6790,7 @@ textarea.form-control-lg {
   align-items: center;
   text-decoration-color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 0.5));
   text-underline-offset: 0.25em;
-  backface-visibility: hidden;
+  backface-display: hidden; /* antigo visibility: hidden; */
 }
 .icon-link > .bi {
   flex-shrink: 0;
@@ -27550,7 +27550,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
   z-index: 3;
   transition: all 0.25s ease;
 }
@@ -28839,13 +28839,13 @@ html:not([dir=rtl]) .menu-toggle::after {
 }
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item.marked-as-read .dropdown-notifications-read,
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item.marked-as-read .dropdown-notifications-archive {
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
 }
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item.marked-as-read .dropdown-notifications-read span {
   background-color: #808390;
 }
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item:not(.marked-as-read) .dropdown-notifications-archive {
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
 }
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item:hover.marked-as-read .dropdown-notifications-read,
 .layout-navbar .navbar-dropdown.dropdown-notifications .dropdown-notifications-list .dropdown-notifications-item:hover.marked-as-read .dropdown-notifications-archive {

@@ -144,7 +144,7 @@
 .bs-stepper.vertical .bs-stepper-pane:not(.fade),
 .bs-stepper.vertical .content:not(.fade) {
   display: block;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
 }
 
 .bs-stepper-pane:not(.fade),
@@ -154,7 +154,7 @@
 
 .bs-stepper .content.fade,
 .bs-stepper-pane.fade {
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
   transition-duration: 0.3s;
   transition-property: opacity;
 }
@@ -183,7 +183,7 @@
 
 .vertical .bs-stepper-pane.fade.dstepper-none,
 .vertical .content.fade.dstepper-none {
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
 }
 
 

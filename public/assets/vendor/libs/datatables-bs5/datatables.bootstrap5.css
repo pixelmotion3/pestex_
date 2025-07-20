@@ -597,7 +597,7 @@ table.dataTable thead th.sorting_disabled::before, table.dataTable thead th.sort
   display: none !important;
 }
 table.dataTable thead th.sorting:before, table.dataTable thead th.sorting:after {
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
 }
 table.dataTable thead th.sorting:hover:before, table.dataTable thead th.sorting:hover:after {
   visibility: visible;

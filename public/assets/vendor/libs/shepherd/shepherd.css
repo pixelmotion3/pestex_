@@ -118,7 +118,7 @@
   opacity: 0;
   outline: none;
   transition: opacity 0.3s, visibility 0.3s;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
   width: 100%;
   z-index: 9999;
 }
@@ -131,7 +131,7 @@
 .shepherd-element[data-popper-reference-hidden]:not(.shepherd-centered) {
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
 }
 
 .shepherd-element, .shepherd-element *, .shepherd-element :after, .shepherd-element :before {

@@ -84,7 +84,7 @@
 }
 
 .swiper-slide-invisible-blank {
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
 }
 
 /* Auto Height */
@@ -100,8 +100,8 @@
 
 .swiper-backface-hidden .swiper-slide {
   transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-display: hidden; /* antigo visibility: hidden; */
+  backface-display: hidden; /* antigo visibility: hidden; */
 }
 
 /* 3D Effects */
@@ -266,7 +266,7 @@
 }
 /* Slide styles end */
 .swiper-virtual .swiper-slide {
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-display: hidden; /* antigo visibility: hidden; */
   transform: translateZ(0);
 }
 
@@ -743,10 +743,10 @@ button.swiper-pagination-bullet {
 
 .swiper-cube .swiper-slide {
   pointer-events: none;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-display: hidden; /* antigo visibility: hidden; */
+  backface-display: hidden; /* antigo visibility: hidden; */
   z-index: 1;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
   transform-origin: 0 0;
   width: 100%;
   height: 100%;
@@ -804,8 +804,8 @@ button.swiper-pagination-bullet {
 .swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-left,
 .swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-right {
   z-index: 0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-display: hidden; /* antigo visibility: hidden; */
+  backface-display: hidden; /* antigo visibility: hidden; */
 }
 
 /* Cube slide shadows end */
@@ -815,8 +815,8 @@ button.swiper-pagination-bullet {
 
 .swiper-flip .swiper-slide {
   pointer-events: none;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-display: hidden; /* antigo visibility: hidden; */
+  backface-display: hidden; /* antigo visibility: hidden; */
   z-index: 1;
 }
 
@@ -835,14 +835,14 @@ button.swiper-pagination-bullet {
 .swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-left,
 .swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-right {
   z-index: 0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-display: hidden; /* antigo visibility: hidden; */
+  backface-display: hidden; /* antigo visibility: hidden; */
 }
 
 /* Flip slide shadows end */
 .swiper-creative .swiper-slide {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-display: hidden; /* antigo visibility: hidden; */
+  backface-display: hidden; /* antigo visibility: hidden; */
   overflow: hidden;
   transition-property: transform, opacity, height;
 }
@@ -853,8 +853,8 @@ button.swiper-pagination-bullet {
 
 .swiper-cards .swiper-slide {
   transform-origin: center bottom;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-display: hidden; /* antigo visibility: hidden; */
+  backface-display: hidden; /* antigo visibility: hidden; */
   overflow: hidden;
 }
 

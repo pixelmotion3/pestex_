@@ -97,7 +97,7 @@
   border-radius: 0.1em;
   background: #fff;
   opacity: 0;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
   transition: opacity 0.3s, visibility 0s 0.3s;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   box-shadow: 0 0.15em 1.5em 0 rgba(0, 0, 0, 0.1), 0 0 1em 0 rgba(0, 0, 0, 0.03);
@@ -496,7 +496,7 @@
   border-radius: 0.1em;
   background: #fff;
   opacity: 0;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
   transition: opacity 0.3s, visibility 0s 0.3s;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   box-shadow: 0 0.15em 1.5em 0 rgba(0, 0, 0, 0.1), 0 0 1em 0 rgba(0, 0, 0, 0.03);
@@ -896,7 +896,7 @@
   border-radius: 0.1em;
   background: #fff;
   opacity: 0;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
   transition: opacity 0.3s, visibility 0s 0.3s;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   box-shadow: 0 0.15em 1.5em 0 rgba(0, 0, 0, 0.1), 0 0 1em 0 rgba(0, 0, 0, 0.03);

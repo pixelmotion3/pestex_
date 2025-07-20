@@ -68,7 +68,7 @@
   content: ".";
   display: block;
   clear: both;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
   line-height: 0;
   height: 0;
 }
@@ -106,7 +106,7 @@
   position: relative;
   min-height: 1px;
   float: left;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-display: hidden; /* antigo visibility: hidden; */
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -178,7 +178,7 @@
   background: url("owl.video.play.png") no-repeat;
   cursor: pointer;
   z-index: 1;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-display: hidden; /* antigo visibility: hidden; */
   -webkit-transition: scale 100ms ease;
   -moz-transition: scale 100ms ease;
   -ms-transition: scale 100ms ease;

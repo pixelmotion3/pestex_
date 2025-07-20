@@ -99,7 +99,7 @@
 
 .leaflet-tile {
   filter: inherit;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
 }
 
 .leaflet-tile-loaded {
@@ -258,7 +258,7 @@ svg.leaflet-zoom-animated {
 }
 
 .leaflet-zoom-anim .leaflet-zoom-hide {
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
 }
 
 /* cursors */

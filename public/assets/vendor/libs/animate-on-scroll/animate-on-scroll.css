@@ -915,7 +915,7 @@
 }
 
 [data-aos^=flip][data-aos^=flip] {
-  backface-visibility: hidden;
+  backface-display: hidden; /* antigo visibility: hidden; */
   transition-property: transform;
 }
 

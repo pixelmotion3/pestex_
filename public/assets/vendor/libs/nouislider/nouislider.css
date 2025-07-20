@@ -71,8 +71,8 @@
 }
 
 .noUi-handle {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-display: hidden; /* antigo visibility: hidden; */
+  backface-display: hidden; /* antigo visibility: hidden; */
   position: absolute;
 }
 
@@ -396,7 +396,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 }
 
 .noUi-handle {
-  backface-visibility: hidden;
+  backface-display: hidden; /* antigo visibility: hidden; */
   outline: none !important;
   position: absolute;
   box-shadow: none;

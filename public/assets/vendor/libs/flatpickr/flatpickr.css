@@ -1,6 +1,6 @@
 .flatpickr-calendar {
   position: absolute;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
   overflow: hidden;
   box-sizing: border-box;
   padding: 0;

@@ -850,7 +850,7 @@ a.plyr__control::after, a.plyr__control::before {
 
 .plyr--playing .plyr__control--overlaid {
   opacity: 0;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
 }
 
 .plyr--full-ui.plyr--video .plyr__control--overlaid {

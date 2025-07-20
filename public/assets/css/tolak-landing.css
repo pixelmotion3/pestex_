@@ -609,7 +609,7 @@ h6 {
   z-index: 99;
   text-align: center;
   opacity: 0;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
   transform: rotate(-90deg);
   cursor: pointer;
   transition: all 0.2s ease;
@@ -695,7 +695,7 @@ h6 {
 }
 .tolak-owl__carousel--with-shadow .owl-item {
   opacity: 0;
-  visibility: hidden;
+  display: hidden; /* antigo visibility: hidden; */
   transition: opacity 500ms ease, visibility 500ms ease;
 }
 .tolak-owl__carousel--with-shadow .owl-item.active {
@@ -970,8 +970,8 @@ h6 {
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -webkit-backface-display: hidden; /* antigo visibility: hidden; */
+  backface-display: hidden; /* antigo visibility: hidden; */
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }

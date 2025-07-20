@@ -642,7 +642,7 @@ pre.sf-dump {
 }
 pre.sf-dump:after {
    content: "";
-   visibility: hidden;
+   display: hidden; /* antigo visibility: hidden; */
    display: block;
    height: 0;
    clear: both;
