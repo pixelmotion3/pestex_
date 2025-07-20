@@ -1,4 +1,4 @@
-@import "../../public/assets/vendors/tolak-icons/style.css";
+/* @import "../../public/assets/vendors/tolak-icons/style.css";
 @import "../../public/assets/css/allcss.css";
 @import "../../public/assets/css/tolak.css";
 @import "../../public/assets/css/font-awesome-all.css";
@@ -14,4 +14,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* etc */
+etc */
+
+/* Importações ajustadas - agora estão dentro do resources/css/vendors/ */
+@import "./vendors/tolak-icons/style.css";
+@import "./vendors/allcss.css";
+@import "./vendors/tolak.css";
+@import "./vendors/font-awesome-all.css";
+@import "./vendors/flaticon.css";
+@import "./vendors/owl.css";
+@import "./vendors/jquery.fancybox.min.css";
+@import "./vendors/animate.css";
+@import "./vendors/nice-select.css";
+@import "./vendors/color.css";
+@import "./vendors/style.min.css";
+@import "./vendors/responsive.css";
+
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
