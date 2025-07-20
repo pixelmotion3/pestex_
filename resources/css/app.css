@@ -29,7 +29,7 @@ etc */
 @import "./vendors/color.css";
 @import "./vendors/style.min.css";
 @import "./vendors/responsive.css";
-
+@import "./vendors/fonts/_flaticon.scss";
 /* Tailwind CSS */
 @tailwind base;
 @tailwind components;

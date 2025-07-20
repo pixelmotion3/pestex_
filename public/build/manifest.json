@@ -9,9 +9,29 @@
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app-C91AEt6r.css",
+    "file": "assets/app-BfrzZi7w.css",
     "src": "resources/css/app.css",
     "isEntry": true
+  },
+  "resources/css/vendors/fonts/Flaticon.eot": {
+    "file": "assets/Flaticon-BARdavPI.eot",
+    "src": "resources/css/vendors/fonts/Flaticon.eot"
+  },
+  "resources/css/vendors/fonts/Flaticon.svg": {
+    "file": "assets/Flaticon-CiZrqbMg.svg",
+    "src": "resources/css/vendors/fonts/Flaticon.svg"
+  },
+  "resources/css/vendors/fonts/Flaticon.ttf": {
+    "file": "assets/Flaticon-CubvgraN.ttf",
+    "src": "resources/css/vendors/fonts/Flaticon.ttf"
+  },
+  "resources/css/vendors/fonts/Flaticon.woff": {
+    "file": "assets/Flaticon-DHF_SIQ2.woff",
+    "src": "resources/css/vendors/fonts/Flaticon.woff"
+  },
+  "resources/css/vendors/fonts/Flaticon.woff2": {
+    "file": "assets/Flaticon-rEjX9vyY.woff2",
+    "src": "resources/css/vendors/fonts/Flaticon.woff2"
   },
   "resources/css/vendors/tolak-icons/fonts/icomoon.eot": {
     "file": "assets/icomoon-DFjfftKd.eot",
