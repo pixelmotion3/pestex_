@@ -749,7 +749,7 @@
 						{{-- "animateOut": "fadeOut",
 						"animateIn": "fadeIn", --}}
 						"items": 1,
-						"autoplay": true,
+						"autoplay": false,
 						"autoplayTimeout": 7000,
 						"smartSpeed": 0,
 						"nav": false,
@@ -1188,7 +1188,7 @@
 							// animateOut: 'fadeOut',
 							// animateIn: 'fadeIn',
 							items: 1,
-							autoplay: true,
+							autoplay: false,
 							autoplayTimeout: 7000,
 							smartSpeed: 0,
 							nav: false,
