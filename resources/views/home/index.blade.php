@@ -750,7 +750,7 @@
 						"animateIn": "fadeIn", --}}
 						"items": 1,
 						"autoplay": true,
-						"autoplayTimeout": 500,
+						"autoplayTimeout": 7000,
 						"smartSpeed": 0,
 						"nav": false,
 						"navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
@@ -1154,7 +1154,7 @@
 				</div>
 			</div>
 		</section>
-		{{-- <script>
+		<script>
 			document.addEventListener("DOMContentLoaded", function() {
 				// Configuração do Intersection Observer para lazy loading
 				const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
@@ -1189,7 +1189,7 @@
 							// animateIn: 'fadeIn',
 							items: 1,
 							autoplay: true,
-							autoplayTimeout: 500,
+							autoplayTimeout: 7000,
 							smartSpeed: 0,
 							nav: false,
 							navText: ['<span class="icon-left-arrow"></span>','<span class="icon-right-arrow"></span>'],
@@ -1213,7 +1213,7 @@
 				// 	document.getElementById('slider-home').style.display = "block";
 				// },5000);
 			});
-		</script> --}}
+		</script>
 		<section>
 			<div class="main-slider-one__project2 text-center shadow-lg bg-light" style="display: none;"
 				style="min-width: 400px;z-index:1;border-radius:30px;">
