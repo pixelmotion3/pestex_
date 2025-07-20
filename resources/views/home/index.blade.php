@@ -743,7 +743,7 @@
 			</div>
 		</header><!-- /.main-header -->
 		<!-- main-slider-start -->
-		<section class="main-slider-one"  style="display: none;" id="home">
+		<section class="main-slider-one"  style="display: none;" id="slider-home">
 			<div class="main-slider-one__carousel tolak-owl__carousel owl-carousel" data-owl-options='{
 						"loop": false,
 						"animateOut": "fadeOut",
@@ -1209,6 +1209,7 @@
 						window.addEventListener('load', initCarousel);
 					},5000);
 				}
+				document.getElementById('slider-home').style.display = "block";
 			});
 		</script>
 		<section>
