@@ -2310,7 +2310,7 @@
 										alt="Produtos ecologicos seguros" loading="lazy">
 								</div>
 								<h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-1'] }}</h4>
-								<a href="/sustentabilidade?item={{ $choose_us[0]['choose-us-h4-1'] }}"
+								<a href="/sustentabilidade"
 									name="sustentabilidade" alt="sustentabilidade"
 									class="why-choose-two__item__rm"  aria-label="Redirecionamento para sustentabilidade"><span class="icon-right-arrow"></span></a>
 							</div><!-- why-choose-two__item -->
@@ -2321,7 +2321,7 @@
 										loading="lazy">
 								</div>
 								<h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-2'] }}</h4>
-								<a href="/sustentabilidade?item={{ $choose_us[0]['choose-us-h4-2'] }}"
+								<a href="/sustentabilidade"
 									class="why-choose-two__item__rm"  aria-label="Redirecionamento para sustentabilidade"><span class="icon-right-arrow"></span></a>
 							</div><!-- why-choose-two__item -->
 							<div class="why-choose-two__item wow fadeInUp rounded-lg" data-wow-delay="200ms">
@@ -2330,7 +2330,7 @@
 										alt="compromisso com o meio ambiente" loading="lazy">
 								</div>
 								<h4 class="why-choose-two__item__title">{{ $choose_us[0]['choose-us-h4-3'] }}</h4>
-								<a href="/sustentabilidade?item={{ $choose_us[0]['choose-us-h4-3'] }}"
+								<a href="/sustentabilidade"
 									class="why-choose-two__item__rm"  aria-label="Redirecionamento para sustentabilidade"><span class="icon-right-arrow"></span></a>
 							</div><!-- why-choose-two__item -->
 						</div><!-- /.why-choose-two__content -->
