@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ config('app.name') }}</title>
+    <title>Termos de Serviço</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -42,7 +42,7 @@
     <link href="{{ asset('assets/css/style.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet">
     <!-- template styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/tolak.min.css') }}" />
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/tolak.min.css') }}" /> --}}
 
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -441,7 +441,7 @@
 				<div class="main-header__inner">
 					<div class="main-header__logo">
 						<a href="/">
-							<img src="..//assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
+							<img src="../assets/images/logo-dark.png" alt="logo SOSPRAGAS" width="284">
 						</a>
 
 					</div><!-- /.main-header__logo -->
