@@ -716,13 +716,13 @@
 					<nav class="main-header__nav main-menu">
 						<ul class="main-menu__list">
 							<li class="megamenu current"><a href="/" class="font-semibold">Home</a></li>
-							<li class="scrollToLink"><a href="sobre" class="font-semibold">Sobre</a></li>
-							<li class="scrollToLink"><a href="servicos" class="font-semibold">Serviços</a></li>
-							<li class="scrollToLink"><a href="sustentabilidade"
+							<li class="scrollToLink"><a href="/sobre" class="font-semibold">Sobre</a></li>
+							<li class="scrollToLink"><a href="/servicos" class="font-semibold">Serviços</a></li>
+							<li class="scrollToLink"><a href="/sustentabilidade"
 									class="font-semibold">Sustentabilidade</a></li>
 							{{-- <li class="scrollToLink"><a href="equipamentos" class="font-semibold">Equipamentos</a>
 							</li> --}}
-							<li class="scrollToLink contactenos-link2"><a href="contactos"
+							<li class="scrollToLink contactenos-link2"><a href="/contactos"
 									class="font-semibold">Contactos</a></li>
 							<li class="scrollToLink contactenos-link" style="display: none;"><a
 									href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
@@ -2080,7 +2080,7 @@
 
 					<div class="col-lg-12 col-md-12 text-center text-white mt-5"
 						style="max-width:250px;margin-left:auto;margin-right:auto;">
-						<a type="button" href="servicos" class="btn btn-primary">
+						<a type="button" href="/servicos" class="btn btn-primary">
 							<b>VER MAIS</b>
 						</a>
 					</div>
@@ -2265,7 +2265,7 @@
 								</li>
 							</ul>
 							{{-- <div class="clearfix"></div> --}}
-							<a type="button" href="sobre" class="btn btn-primary about-one__content__text mt-4"
+							<a type="button" href="/sobre" class="btn btn-primary about-one__content__text mt-4"
 								style="max-width: 200px;">
 								<b>SAIBA MAIS</b>
 							</a>
@@ -2843,10 +2843,10 @@
 							<h2 class="footer-widget__title">SOS Pragas</h2><!-- /.footer-widget__title -->
 							<ul class="list-unstyled footer-widget__links">
 								<li><a href="/">Início</a></li>
-								<li><a href="sobre">Sobre Nós</a></li>
-								<li><a href="servicos">Serviços</a></li>
+								<li><a href="/sobre">Sobre Nós</a></li>
+								<li><a href="/servicos">Serviços</a></li>
 								{{-- <li><a href="equipamentos">Equipamento</a></li> --}}
-								<li><a href="sustentabilidade">Sustentabilidade</a></li>
+								<li><a href="/sustentabilidade">Sustentabilidade</a></li>
 							</ul><!-- /.list-unstyled footer-widget__links -->
 						</div><!-- /.footer-widget -->
 					</div><!-- /.col-md-6 -->
@@ -3020,7 +3020,7 @@
 						<div class="footer-widget footer-widget--links footer-widget--last">
 							<h2 class="footer-widget__title">Links Úteis</h2><!-- /.footer-widget__title -->
 							<ul class="list-unstyled footer-widget__links">
-								<li><a href="contactos" target="_blank">Contactos</a></li>
+								<li><a href="/contactos" target="_blank">Contactos</a></li>
 								<li><a href="/termos-servico" target="_blank">Termos de Serviço</a></li>
 								<li><a href="/politica-privacidade" target="_blank">Política de Privacidade</a></li>
 								<li><a href="https://www.livroreclamacoes.pt/Inicio/ " target="_blank">Livro de
@@ -3066,12 +3066,12 @@
 			<div class="mobile-nav__container">
 				<ul class="main-menu__list one-page-scroll-menu">
 					<li class="megamenu "><a href="/">Home</a></li>
-					<li class=""><a href="sobre">Sobre</a></li>
-					<li class=""><a href="servicos">Serviços</a></li>
-					<li class=""><a href="sustentabilidade">Sustentabilidade</a></li>
+					<li class=""><a href="/sobre">Sobre</a></li>
+					<li class=""><a href="/servicos">Serviços</a></li>
+					<li class=""><a href="/sustentabilidade">Sustentabilidade</a></li>
 					{{-- <li class=""><a href="equipamentos">Equipamentos</a></li> --}}
-					<li class=""><a href="contactos">Contactos</a></li>
-					{{-- <li class=""><a href="contactos">Contacta-nos</a></li> --}}
+					<li class=""><a href="/contactos">Contactos</a></li>
+					{{-- <li class=""><a href="/contactos">Contacta-nos</a></li> --}}
 				</ul>
 			</div>
 			<!-- /.mobile-nav__container -->

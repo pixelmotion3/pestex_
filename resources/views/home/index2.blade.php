@@ -280,9 +280,9 @@
 						<nav class="main-header__nav main-menu">
 							<ul class="main-menu__list one-page-scroll-menu">
 								<li class="megamenu scrollToLink current"><a href="/" class="font-semibold">Home</a></li>
-								<li class="scrollToLink"><a href="sobre" class="font-semibold">Sobre</a></li>
-								<li class="scrollToLink"><a href="servicos" class="font-semibold">Serviços</a></li>
-								<li class="scrollToLink"><a href="sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
+								<li class="scrollToLink"><a href="/sobre" class="font-semibold">Sobre</a></li>
+								<li class="scrollToLink"><a href="/servicos" class="font-semibold">Serviços</a></li>
+								<li class="scrollToLink"><a href="/sustentabilidade" class="font-semibold">Sustentabilidade</a></li>
 								<li class="scrollToLink contactenos-link2"><a href="contact-us" class="font-semibold">Contactos</a></li>
 								<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
 							</ul>
@@ -847,7 +847,7 @@
                         </div>
 
                          <div class="col-lg-12 col-md-12 text-center text-white mt-5" style="max-width:250px;margin-left:auto;margin-right:auto;">
-                            <a type="button" href="servicos" class="btn btn-primary">
+                            <a type="button" href="/servicos" class="btn btn-primary">
                                 VER MAIS
 							</a>
                         </div>
@@ -1026,7 +1026,7 @@
 								<div class="clearfix">
 
 								</div>
-								<a type="button" href="sobre" class="btn btn-primary about-one__content__text" style="max-width: 200px;">
+								<a type="button" href="/sobre" class="btn btn-primary about-one__content__text" style="max-width: 200px;">
 									SAIBA MAIS
 								</a>
 								<!--

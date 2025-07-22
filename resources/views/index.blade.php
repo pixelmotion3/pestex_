@@ -2291,10 +2291,10 @@
             <div class="mobile-nav__container">
                 <ul class="main-menu__list one-page-scroll-menu">
                     <li class="megamenu scrollToLink"><a href="/">Home</a></li>
-                    <li class="scrollToLink"><a href="sobre">Sobre</a></li>
-                    <li class="scrollToLink"><a href="servicos">Serviços</a></li>
-                    <li class="scrollToLink"><a href="sustentabilidade">Sustentabilidade</a></li>
-                    <li class="scrollToLink"><a href="contactos">Contactos</a></li>
+                    <li class="scrollToLink"><a href="/sobre">Sobre</a></li>
+                    <li class="scrollToLink"><a href="/servicos">Serviços</a></li>
+                    <li class="scrollToLink"><a href="/sustentabilidade">Sustentabilidade</a></li>
+                    <li class="scrollToLink"><a href="/contactos">Contactos</a></li>
                     <li class="scrollToLink"><a href="#">Contacta-nos</a></li>
                 </ul>
             </div>
