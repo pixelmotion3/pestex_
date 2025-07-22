@@ -319,7 +319,7 @@
 
                                         <div class="input-container" style="width: 92%;">
                                             <i class="icon">
-                                                <img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"/>
+                                                <img src="assets/images/Telefone.png" alt="Imagem telefone" style="max-height: 25px; max-width:25px;"/>
                                             </i>
                                             <input class="input-field rounded" type="number" placeholder="Telefone"
                                                 name="phone">
@@ -390,7 +390,7 @@
                                             </div>
                                             <div class="input-container" style="width: 92%;">
                                                 <i class="icon">
-                                                    <img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"/>
+                                                    <img src="assets/images/Telefone.png" alt="Imagem telefone" style="max-height: 25px; max-width:25px;"/>
                                                 </i>
                                                 <input class="input-field rounded" type="text"
                                                     placeholder="Telefone" name="phone">
@@ -472,7 +472,7 @@
 			<div class="container">
 				<div class="text-center">
 					<h6 class="sec-title__tagline text-titles mt-5"></h6><!-- /.sec-title__tagline -->
-					<h3 class="sec-title__title mt-5"><b>{{ $privacy_policy[0]['privacy-policy-title'] }}</b></h3>
+					<h1 class="sec-title__title mt-5"><b>{{ $privacy_policy[0]['privacy-policy-title'] }}</b></h1>
 					<!-- /.sec-title__title -->
 				</div><!-- /.sec-title -->
 				<div class="row gutter-y-30 mt-5">

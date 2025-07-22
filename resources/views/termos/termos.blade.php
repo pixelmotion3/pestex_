@@ -319,7 +319,7 @@
 
                                         <div class="input-container" style="width: 92%;">
                                             <i class="icon">
-                                                <img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"/>
+                                                <img src="assets/images/Telefone.png" alt="Imagem telefone" style="max-height: 25px; max-width:25px;"/>
                                             </i>
                                             <input class="input-field rounded" type="number" placeholder="Telefone"
                                                 name="phone">
@@ -390,7 +390,7 @@
                                             </div>
                                             <div class="input-container" style="width: 92%;">
                                                 <i class="icon">
-                                                    <img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;"/>
+                                                    <img src="assets/images/Telefone.png" alt="Imagem telefone" style="max-height: 25px; max-width:25px;"/>
                                                 </i>
                                                 <input class="input-field rounded" type="text"
                                                     placeholder="Telefone" name="phone">

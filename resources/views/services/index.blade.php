@@ -239,7 +239,7 @@ setTimeout(function() {
             <div class="row">
                 <div class="col-md-7">
                     <div class="page-header__content">
-                        <h2 class="page-header__title">{{ $main_screen[0]['h2'] }}</h2>
+                        <h1 class="page-header__title">{{ $main_screen[0]['h2'] }}</h1>
                         {{-- <ul class="tolak-breadcrumb list-unstyled">
                             <li><a href="/">Home</a></li>
                             <li><span>Serviços</span></li>

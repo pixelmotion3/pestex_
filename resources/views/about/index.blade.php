@@ -294,7 +294,7 @@ setTimeout(function() {
                     <h6 class="sec-title__tagline h6 text-white"><span
                         class="sec-title__tagline__left"></span><b style="color:#ff6600;">{{ $service[0]['h6'] }}</b><span
                         class="sec-title__tagline__right"></span></h6>
-                    <h2 class="h3 text-white">{{ $service[0]['h2'] }}</h2>
+                    <h1 class="h3 text-white">{{ $service[0]['h2'] }}</h1>
                     <p class="text-white mt-5">{{ $service[0]['p'] }}</p>
                 </div>
             </div>

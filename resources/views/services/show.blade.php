@@ -345,7 +345,7 @@ setTimeout(function() {
 					<div class="service-details-content container-fluid">
 						<div class="content-one">
 							<figure class="image-box"><img src="../{{ $service_detail['img-2'] }}"
-									alt=""></figure>
+									alt="Imagem demonstrativa do serviço"></figure>
 							<h3>{{ $service_detail['title'] }}</h3>
 							<div class="text">
 								<p>{{ $service_detail['p-1'] }}</p>

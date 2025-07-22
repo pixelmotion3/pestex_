@@ -559,7 +559,7 @@
 
 										<div class="input-container" style="width: 92%;">
 											<i class="icon">
-												<img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;" width="25" height="25" alt="Telefone" />
+												<img src="assets/images/Telefone.png" alt="Imagem telefone" style="max-height: 25px; max-width:25px;" width="25" height="25" alt="Telefone" />
 											</i>
 											<input class="input-field rounded" type="number" placeholder="Telefone"
 												name="phone">
@@ -651,7 +651,7 @@
 											</div>
 											<div class="input-container" style="width: 92%;">
 												<i class="icon">
-													<img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;" width="25" height="25" alt="Telefone" />
+													<img src="assets/images/Telefone.png" alt="Imagem telefone" style="max-height: 25px; max-width:25px;" width="25" height="25" alt="Telefone" />
 												</i>
 												<input class="input-field rounded" type="text" placeholder="Telefone"
 													name="phone">
@@ -871,7 +871,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="main-slider-one__floating-text">SOS PRAGAS</div>
+						<h1 class="main-slider-one__floating-text">SOS PRAGAS</h1>
 					</div>
 				</div>
 			</div>
@@ -990,7 +990,7 @@
 									</div>
 									<div class="input-container" style="width: 92%;">
 										<i class="icon" style="color:black;">
-											<img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;" width="25" height="25" alt="Telefone" />
+											<img src="assets/images/Telefone.png" alt="Imagem telefone" style="max-height: 25px; max-width:25px;" width="25" height="25" alt="Telefone" />
 										</i>
 										<input class="input-field rounded" type="number" placeholder="Telefone"
 											name="phone" required>
@@ -1108,7 +1108,7 @@
 
 										<div class="input-container" style="width: 92%;">
 											<i class="icon">
-												<img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;" width="25" height="25" alt="Telefone" />
+												<img src="assets/images/Telefone.png" alt="Imagem telefone" style="max-height: 25px; max-width:25px;" width="25" height="25" alt="Telefone" />
 											</i>
 											<input class="input-field rounded" type="text" placeholder="Telefone"
 												name="phone" required>
@@ -1323,7 +1323,7 @@
 									</div>
 									<div class="input-container" style="width: 92%;">
 										<i class="icon" style="color:black;">
-											<img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;" width="25" height="25" alt="Telefone" />
+											<img src="assets/images/Telefone.png" alt="Imagem telefone" style="max-height: 25px; max-width:25px;" width="25" height="25" alt="Telefone" />
 										</i>
 										<input class="input-field rounded" type="number" placeholder="Telefone"
 											name="phone" required>
@@ -1404,7 +1404,7 @@
 
 										<div class="input-container" style="width: 92%;">
 											<i class="icon">
-												<img src="assets/images/Telefone.png" style="max-height: 25px; max-width:25px;" width="25" height="25" alt="Telefone" />
+												<img src="assets/images/Telefone.png" alt="Imagem telefone" style="max-height: 25px; max-width:25px;" width="25" height="25" alt="Telefone" />
 											</i>
 											<input class="input-field rounded" type="text" placeholder="Telefone"
 												name="phone" required>
@@ -2154,7 +2154,7 @@
 									<div class="col-lg-6 col-md-12 col-sm-12 image-column">
 										<div class="image_block_2">
 											<div class="image-box">
-												<figure class="image wow slideInRight animated" style="visibility: visible; animation-name: slideInRight;"><img src="{{ $our_service_1[0]['img-1'] }}" width="624" height="488" alt="" loading="lazy">
+												<figure class="image wow slideInRight animated" style="visibility: visible; animation-name: slideInRight;"><img src="{{ $our_service_1[0]['img-1'] }}" width="624" height="488" alt="Imagem demonstrativa 1" loading="lazy">
 												</figure>
 												<div class="image-content" style="background-color: #002255">
 													<span style="font-size: 20px;font-weight: 500;color: white;">VISITA GRÁTIS</span>
@@ -2207,7 +2207,7 @@
 											<div class="image-box">
 												<figure class="image wow slideInRight animated"
 													style="visibility: visible; animation-name: slideInRight;"><img
-														src="{{ $our_service_2[0]['img-2'] }}" width="624" height="488" alt="" loading="lazy">
+														src="{{ $our_service_2[0]['img-2'] }}" width="624" height="488" alt="Imagem demonstrativa 2" loading="lazy">
 												</figure>
 												<div class="image-content" style="background-color: #002255">
 													<span style="font-size: 20px;font-weight: 500;color: white;">VISITA GRÁTIS</span>
