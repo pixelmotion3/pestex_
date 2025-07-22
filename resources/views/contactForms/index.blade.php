@@ -100,7 +100,7 @@
                 <div class="container-fluid">
                     <div class="main-header__inner">
                         <div class="main-header__logo">
-                            <a href="index.html">
+                            <a href="/">
                                 <img src="/assets/images/logo-dark.png" alt="Tolak HTML" width="184">
                             </a>
                         </div><!-- /.main-header__logo -->

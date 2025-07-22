@@ -317,7 +317,7 @@ setTimeout(function() {
 				<div class="row">
 					<div class="col-md-6 col-lg-4">
 						<div class="footer-widget footer-widget--about">
-							<a href="index.html" class="footer-widget__logo">
+							<a href="/" class="footer-widget__logo">
 								<img src="/assets/images/logo-white.png" width="184" alt="Tolak HTML Template">
 							</a>
 							<ul class="footer-widget__info">

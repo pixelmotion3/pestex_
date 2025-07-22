@@ -30,10 +30,10 @@ setTimeout(function() {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-    <title>{{ $service_detail['meta-title'] }}</title>
+    <title>{{ $service_detail['meta-title']?? $service_detail['a'] }}</title>
 
 	<!-- Meta Description -->
-    <meta name="description" content="{{ $service_detail['meta-desctiption'] }}">
+    <meta name="description" content="{{ $service_detail['meta-desctiption']?? "SOS Pragas, detalhes de serviços" }}">
 
     <!-- Meta Keywords (opcional, com pouco uso atualmente) -->
     <meta name="keywords" content="{{ $service_detail['meta-keywords'] }}">
@@ -828,7 +828,7 @@ setTimeout(function() {
 			<div class="row">
 				<div class="col-md-6 col-lg-4">
 					<div class="footer-widget footer-widget--about">
-						<a href="index.html" class="footer-widget__logo">
+						<a href="/" class="footer-widget__logo">
 							<img src="/assets/images/logo-white.png" width="184" alt="Tolak HTML Template">
 						</a>
 						<ul class="footer-widget__info">

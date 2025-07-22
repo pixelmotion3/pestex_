@@ -30,7 +30,7 @@
 					<!--
 					<ul class="menu-sub">
 					  <li class="menu-item active">
-						<a href="index.html" class="menu-link">
+						<a href="/" class="menu-link">
 						  <div data-i18n="Analytics">Analytics</div>
 						</a>
 					  </li>

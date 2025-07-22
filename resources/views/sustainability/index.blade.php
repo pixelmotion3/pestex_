@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ $main[0]['meta-title'] }}</title>
+    <title>{{ $main[0]['meta-title']?? "Sustentabilidade" }}</title>
 
 	<!-- Meta Description -->
-    <meta name="description" content="{{ $main[0]['meta-desctiption'] }}">
+    <meta name="description" content="{{ $main[0]['meta-desctiption']?? "SOS Pragas, página de sustentabilidade" }}">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
 		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -750,7 +750,7 @@
 			<div class="row">
 				<div class="col-md-6 col-lg-4">
 					<div class="footer-widget footer-widget--about">
-						<a href="index.html" class="footer-widget__logo">
+						<a href="/" class="footer-widget__logo">
 							<img src="/assets/images/logo-white.png" width="184" alt="Tolak HTML Template">
 						</a>
 						<ul class="footer-widget__info">
@@ -979,7 +979,7 @@
 				<span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
 				<div class="logo-box">
-					<a href="index.html" aria-label="logo image"><img src="/assets/images/logo-dark.png" width="155" alt=""></a>
+					<a href="/" aria-label="logo image"><img src="/assets/images/logo-dark.png" width="155" alt=""></a>
 				</div>
 				<!-- /.logo-box -->
 				<div class="mobile-nav__container">
@@ -990,7 +990,7 @@
 						<li class="scrollToLink"><a href="/sustentabilidade">Sustentabilidade</a></li>
 						{{-- <li class="scrollToLink"><a href="/equipamentos">Equipamentos</a></li> --}}
 						<li class="scrollToLink"><a href="/contactos">Contactos</a></li>
-						<li class="scrollToLink"><a href="/contato">Contacta-nos</a></li>
+						<li class="scrollToLink"><a href="/contactos">Contacta-nos</a></li>
 					</ul>
 				</div>
 				<!-- /.mobile-nav__container -->

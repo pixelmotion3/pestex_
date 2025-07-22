@@ -2805,7 +2805,7 @@
 				<div class="row">
 					<div class="col-md-6 col-lg-4">
 						<div class="footer-widget footer-widget--about">
-							<a href="index.html" class="footer-widget__logo">
+							<a href="/" class="footer-widget__logo">
 								<img src="assets/images/logo-white.png" width="184" alt="Logo"  loading="lazy">
 							</a>
 							<ul class="footer-widget__info">
@@ -3059,7 +3059,7 @@
 			<span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
 			<div class="logo-box">
-				<a href="index.html" aria-label="logo image"><img src="/assets/images/logo-dark.png" width="155"
+				<a href="/" aria-label="logo image"><img src="/assets/images/logo-dark.png" width="155"
 						alt="logo"  loading="lazy"></a>
 			</div>
 			<!-- /.logo-box -->
@@ -3071,7 +3071,7 @@
 					<li class=""><a href="sustentabilidade">Sustentabilidade</a></li>
 					{{-- <li class=""><a href="equipamentos">Equipamentos</a></li> --}}
 					<li class=""><a href="contactos">Contactos</a></li>
-					<li class=""><a href="contato">Contacta-nos</a></li>
+					{{-- <li class=""><a href="contactos">Contacta-nos</a></li> --}}
 				</ul>
 			</div>
 			<!-- /.mobile-nav__container -->

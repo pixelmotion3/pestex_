@@ -104,7 +104,7 @@
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
-            <a href="index.html" class="app-brand-link">
+            <a href="/" class="app-brand-link">
 				<img src="/assets/images/logo-dark.png" alt="Logo SOS Pragas" width="184">
             </a>
 
@@ -126,7 +126,7 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item active">
-                  <a href="index.html" class="menu-link">
+                  <a href="/" class="menu-link">
                     <div data-i18n="Analytics">Analytics</div>
                   </a>
                 </li>

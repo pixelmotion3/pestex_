@@ -154,7 +154,7 @@
                                                     <i
                                                         class="ti ti-device-desktop-analytics ti-26px text-heading"></i>
                                                 </span>
-                                                <a href="index.html" class="stretched-link">Dashboard</a>
+                                                <a href="/" class="stretched-link">Dashboard</a>
                                                 <small>User Dashboard</small>
                                             </div>
                                             <div class="dropdown-shortcuts-item col">
