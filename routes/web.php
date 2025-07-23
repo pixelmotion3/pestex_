@@ -144,7 +144,7 @@ Route::domain('127.0.0.1')->group(function () {
 
 
 // Rota padrão para o domínio principal
-Route::domain('{subdomain?s}sospragas.pt')->group(function () {
+Route::domain('{domain}')->where('domain', '^(www\.)?sospragas\.pt$')->group(function () {
 	Route::get('/', [FrontPageController::class, 'Home'])->name('FrontPage.Home2');
 
 
