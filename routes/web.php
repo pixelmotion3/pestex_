@@ -383,9 +383,9 @@ use Illuminate\Support\Facades\Route;
 // 	});
 // });
 // Rota padrão para o subdomínio
-Route::domain('desinfestacoes.sospragas.pt')->group(function () {
+// Route::domain('desinfestacoes.sospragas.pt')->group(function () {
 
-});
+// });
 Route::get('/', [FrontPageController::class, 'index'])->name('FrontPage.Home3');
 
 
