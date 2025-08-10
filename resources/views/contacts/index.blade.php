@@ -128,6 +128,19 @@ setTimeout(function() {
         <!-- main-js -->
         <script src="{{ asset('assets/js/script.js') }}"></script>
     </head>
+	<div style="display: flex;justify-content: flex-end;flex-direction: row;background: #ff6600;height: 31px;align-items: center;" class="container-top-menu">
+		<div style="display: flex;color: #fff !important;gap: 17px;margin-right: 14px;font-size: 14px;" class="content-top-menu">
+			<div class="headerlinks">
+				<span class="ti ti-device-mobile me-2"></span>
+				<a href="tel:+351937824676" style="color: #fff;">Serviço de Urgência: <i class="far fa-mobile"></i> +351 937 824 676</a>
+			</div>
+
+			<span>|</span>
+			<div class="headerlinks">
+				<a href="/contactos" style="color: #fff;">Pedir Orçamento grátis</a>
+			</div>
+		</div>
+	</div>
     <body class="custom-cursor" style="overflow-x: hidden;">
 		<style>
 			.whatsapp-float {
