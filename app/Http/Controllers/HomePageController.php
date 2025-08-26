@@ -1353,7 +1353,7 @@ class HomePageController extends Controller
 					'local' => $request->input('locality'),
 					'type' => $request->input('customer_type')
 				];
-				Mail::to("lucasmaciel6690@gmail.com")->send(new ContactMail($data));
+				Mail::to("geral@sospragas.pt")->send(new ContactMail($data));
 
 			}
 			$contact_info = ContactInfo::where('id',1)->get()->toArray();
