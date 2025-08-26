@@ -1345,7 +1345,9 @@ class HomePageController extends Controller
 
 			// Verifica se a verificação foi bem-sucedida
 			$success = $responseJson['success'];
-
+			echo "teste----";
+			print_r($success);
+			die();
 			if ($success) {
 				$data = [
 					'name' => $request->input('name'),
