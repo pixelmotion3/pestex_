@@ -734,6 +734,7 @@
 									class="font-semibold">Sustentabilidade</a></li>
 							{{-- <li class="scrollToLink"><a href="equipamentos" class="font-semibold">Equipamentos</a>
 							</li> --}}
+							<li class="scrollToLink"><a href="/blogs" class="font-semibold">Blog</a></li>
 							<li class="scrollToLink contactenos-link2"><a href="/contactos"
 									class="font-semibold">Contactos</a></li>
 							<li class="scrollToLink contactenos-link" style="display: none;"><a

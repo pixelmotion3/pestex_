@@ -133,6 +133,11 @@
 					</a>
 				</li>
 				<li class="menu-item">
+					<a href="/home-page/blogs" class="menu-link">
+					<div data-i18n="Blogs">Blogs</div>
+					</a>
+				</li>
+				<li class="menu-item">
 					<a href="/home-page/quote-forms" class="menu-link">
 					<div data-i18n="Quote Form">Quote Form</div>
 					</a>

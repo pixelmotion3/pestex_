@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HardwarePageController;
 use App\Http\Controllers\FormsPageController;
 use App\Http\Controllers\ServicePageController;
@@ -24,7 +25,7 @@ use Illuminate\Support\Facades\Route;
 
 // Rota padrão para o domínio principal
 Route::domain('127.0.0.1')->group(function () {
-    Route::get('/', [FrontPageController::class, 'Home'])->name('FrontPage.Home1');
+    Route::get('/', [FrontPageController::class, 'Home'])->name('FrontPage.Home2');
 
 
 	Route::resource('/sustentabilidade', SustainabilityController::class);
@@ -50,6 +51,8 @@ Route::domain('127.0.0.1')->group(function () {
 	Route::post('/obrigado-entrar-em-contato', [HomePageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactForm');
 	Route::post('/obrigado-agenda-vistoria', [HomePageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormScheduleInspection');
 
+	Route::get('/blogs', [BlogController::class, 'Index'])->name('Blogs.Index');
+	Route::get('/blog/{slug}', [BlogController::class, 'Details'])->name('Blogs.Details');
 
 	Route::get('/servicos', [ServiceController::class, 'index'])->name('ServicePage.index');
 	Route::get('/servicos/{slug}', [ServiceController::class, 'show'])->name('ServicePage.show');
@@ -87,19 +90,43 @@ Route::domain('127.0.0.1')->group(function () {
 		Route::get('/home-page/customer-area', [HomePageController::class, 'CustomerAreaIndex'])->name('HomePage.CustomerAreaIndex');
 		Route::get('/home-page/main-carrousel', [HomePageController::class, 'MainCarrouselIndex'])->name('HomePage.MainCarrouselIndex');
 		Route::get('/home-page/our-services', [HomePageController::class, 'OurServicesIndex'])->name('HomePage.OurServicesIndex');
-		Route::get('/home-page/privacy-policy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex1');
+		Route::get('/home-page/privacy-policy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex3');
 		Route::get('/home-page/quote-forms', [HomePageController::class, 'QuoteFormsIndex'])->name('HomePage.QuoteFormsIndex');
 		Route::get('/home-page/status', [HomePageController::class, 'StatusIndex'])->name('HomePage.StatusIndex');
-		Route::get('/home-page/terms-service', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex');
+		Route::get('/home-page/terms-service', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex6');
 		Route::get('/home-page/testimonial', [HomePageController::class, 'TestimonialIndex'])->name('HomePage.TestimonialIndex');
+
+
+		// Blog
+		Route::post('/home-page/blogs/delete/{id}', [BlogController::class, 'HomePageBlogsDelete'])->name('HomePage.HomePageBlogsDelete');
+		Route::get('/home-page/blogs/edit/{id}', [BlogController::class, 'HomePageBlogsEdit'])->name('HomePage.HomePageBlogsEdit');
+		Route::get('/home-page/blogs', [BlogController::class, 'HomePageBlogsIndex'])->name('HomePage.HomePageBlogsIndex');
+		Route::post('/home-page/blogs/mainpage/create', [BlogController::class, 'HomePageBlogsMainPageCreate'])->name('HomePage.HomePageBlogsMainPageCreate');
+		Route::post('/home-page/blogs/mainpage/update', [BlogController::class, 'HomePageBlogsMainPageUpdate'])->name('HomePage.HomePageBlogsMainPageUpdate');
+		Route::post('/home-page/blogs/new', [BlogController::class, 'HomePageBlogsNew'])->name('HomePage.HomePageBlogsNew');
+		Route::post('/home-page/blogs/update', [BlogController::class, 'HomePageBlogsUpdate'])->name('HomePage.HomePageBlogsUpdate');
+
+		Route::post('/home-page/blogs/tags/vincule', [BlogController::class, 'HomePageBlogsTagsVincule'])->name('HomePage.HomePageBlogsTagsVincule');
+
+
+		Route::post('/home-page/blogs/tags/new', [BlogController::class, 'HomePageBlogsTagsNew'])->name('HomePage.HomePageBlogsTagsNew');
+		Route::post('/home-page/blogs/tags/update', [BlogController::class, 'HomePageBlogsTagsUpdate'])->name('HomePage.HomePageBlogsTagsUpdate');
+		Route::post('/home-page/blogs/tags/delete/{id}', [BlogController::class, 'HomePageBlogsTagsDelete'])->name('HomePage.HomePageBlogsTagsDelete');
+		Route::post('/home-page/blogs/tags/delete/individual/{id}', [BlogController::class, 'HomePageBlogsTagsDeleteIndividual'])->name('HomePage.HomePageBlogsTagsDeleteIndividual');
+
+		Route::post('/home-page/blogs/category/new', [BlogController::class, 'HomePageBlogsCategoryNew'])->name('HomePage.HomePageBlogsCategoryNew');
+		Route::post('/home-page/blogs/category/update', [BlogController::class, 'HomePageBlogsCategoryUpdate'])->name('HomePage.HomePageBlogsCategoryUpdate');
+		Route::post('/home-page/blogs/category/delete/{id}', [BlogController::class, 'HomePageBlogsCategoryDelete'])->name('HomePage.HomePageBlogsCategoryDelete');
+		// End blog
+
 
 
 		Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
 		Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 
 
-		Route::get('/termsservice', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex1');
-		Route::get('/privacypolicy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex2');
+		Route::get('/termsservice', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex2');
+		Route::get('/privacypolicy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex4');
 
 		Route::get('/forms/newsletter', [FormsPageController::class, 'newsletter'])->name('FormsPage.newsletter');
 		Route::get('/forms/quote', [FormsPageController::class, 'quote'])->name('FormsPage.quote');
@@ -108,7 +135,7 @@ Route::domain('127.0.0.1')->group(function () {
 		Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
 		Route::post('/formshandle/{contact_form_id}/{type_form}', [FormsHandleController::class, 'destroy'])->name('formshandle.destroy');
-
+		#   Route::resource('/dashboard', DashboardController::class);
 		Route::post( '/newfaq', [HomePageController::class, 'newFaq'])->name('HomePage.NewFaq');
 		Route::put( '/updatefaq/{id}', [HomePageController::class, 'updateFaq'])->name('HomePage.UpdateFaq');
 		Route::delete( '/deletefaq/{id}', [HomePageController::class, 'deleteFaq'])->name('HomePage.DeleteFaq');
@@ -116,7 +143,8 @@ Route::domain('127.0.0.1')->group(function () {
 		Route::post( '/newfaqlp', [HomePageController::class, 'newFaq'])->name('LandingPage.NewFaq');
 		Route::put( '/updatefaqlp/{id}', [HomePageController::class, 'updateFaq'])->name('LandingPage.UpdateFaq');
 		Route::delete( '/deletefaqlp/{id}', [HomePageController::class, 'deleteFaq'])->name('LandingPage.DeleteFaq');
-		#   Route::resource('/dashboard', DashboardController::class);
+
+
 		Route::resource( '/home-page', HomePageController::class);
 		Route::resource('/landing-page', LandingPageController::class);
 		Route::resource('/about-page', AboutPageController::class);
@@ -168,7 +196,8 @@ Route::domain('sospragas.pt')->group(function () {
 	Route::post('/obrigado-entrar-em-contato', [HomePageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactForm');
 	Route::post('/obrigado-agenda-vistoria', [HomePageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormScheduleInspection');
 
-
+	Route::get('/blogs', [BlogController::class, 'Index'])->name('Blogs.Index');
+	Route::get('/blog/{slug}', [BlogController::class, 'Details'])->name('Blogs.Details');
 
 	Route::get('/servicos', [ServiceController::class, 'index'])->name('ServicePage.index');
 	Route::get('/servicos/{slug}', [ServiceController::class, 'show'])->name('ServicePage.show');
@@ -211,6 +240,30 @@ Route::domain('sospragas.pt')->group(function () {
 		Route::get('/home-page/status', [HomePageController::class, 'StatusIndex'])->name('HomePage.StatusIndex');
 		Route::get('/home-page/terms-service', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex6');
 		Route::get('/home-page/testimonial', [HomePageController::class, 'TestimonialIndex'])->name('HomePage.TestimonialIndex');
+
+
+		// Blog
+		Route::post('/home-page/blogs/delete/{id}', [BlogController::class, 'HomePageBlogsDelete'])->name('HomePage.HomePageBlogsDelete');
+		Route::get('/home-page/blogs/edit/{id}', [BlogController::class, 'HomePageBlogsEdit'])->name('HomePage.HomePageBlogsEdit');
+		Route::get('/home-page/blogs', [BlogController::class, 'HomePageBlogsIndex'])->name('HomePage.HomePageBlogsIndex');
+		Route::post('/home-page/blogs/mainpage/create', [BlogController::class, 'HomePageBlogsMainPageCreate'])->name('HomePage.HomePageBlogsMainPageCreate');
+		Route::post('/home-page/blogs/mainpage/update', [BlogController::class, 'HomePageBlogsMainPageUpdate'])->name('HomePage.HomePageBlogsMainPageUpdate');
+		Route::post('/home-page/blogs/new', [BlogController::class, 'HomePageBlogsNew'])->name('HomePage.HomePageBlogsNew');
+		Route::post('/home-page/blogs/update', [BlogController::class, 'HomePageBlogsUpdate'])->name('HomePage.HomePageBlogsUpdate');
+
+		Route::post('/home-page/blogs/tags/vincule', [BlogController::class, 'HomePageBlogsTagsVincule'])->name('HomePage.HomePageBlogsTagsVincule');
+
+
+		Route::post('/home-page/blogs/tags/new', [BlogController::class, 'HomePageBlogsTagsNew'])->name('HomePage.HomePageBlogsTagsNew');
+		Route::post('/home-page/blogs/tags/update', [BlogController::class, 'HomePageBlogsTagsUpdate'])->name('HomePage.HomePageBlogsTagsUpdate');
+		Route::post('/home-page/blogs/tags/delete/{id}', [BlogController::class, 'HomePageBlogsTagsDelete'])->name('HomePage.HomePageBlogsTagsDelete');
+		Route::post('/home-page/blogs/tags/delete/individual/{id}', [BlogController::class, 'HomePageBlogsTagsDeleteIndividual'])->name('HomePage.HomePageBlogsTagsDeleteIndividual');
+
+		Route::post('/home-page/blogs/category/new', [BlogController::class, 'HomePageBlogsCategoryNew'])->name('HomePage.HomePageBlogsCategoryNew');
+		Route::post('/home-page/blogs/category/update', [BlogController::class, 'HomePageBlogsCategoryUpdate'])->name('HomePage.HomePageBlogsCategoryUpdate');
+		Route::post('/home-page/blogs/category/delete/{id}', [BlogController::class, 'HomePageBlogsCategoryDelete'])->name('HomePage.HomePageBlogsCategoryDelete');
+		// End blog
+
 
 
 		Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -290,7 +343,8 @@ Route::domain('desinfestacoes.sospragas.pt')->group(function () {
 
 	Route::get('/servicos', [ServiceController::class, 'index'])->name('ServicePage.index');
 
-
+	Route::get('/blogs', [BlogController::class, 'Index'])->name('Blogs.Index');
+	Route::get('/blog/{slug}', [BlogController::class, 'Details'])->name('Blogs.Details');
 
 	Route::get('/servicos/{slug}', [ServiceController::class, 'show'])->name('ServicePage.show');
 	Route::post('/quote-form/service', [ServiceController::class, 'ContactFormService'])->name('ServicePage.ContactFormService');
@@ -332,6 +386,30 @@ Route::domain('desinfestacoes.sospragas.pt')->group(function () {
 		Route::get('/home-page/status', [HomePageController::class, 'StatusIndex'])->name('HomePage.StatusIndex');
 		Route::get('/home-page/terms-service', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex5');
 		Route::get('/home-page/testimonial', [HomePageController::class, 'TestimonialIndex'])->name('HomePage.TestimonialIndex');
+
+
+
+		// Blog
+		Route::post('/home-page/blogs/delete/{id}', [BlogController::class, 'HomePageBlogsDelete'])->name('HomePage.HomePageBlogsDelete');
+		Route::get('/home-page/blogs/edit/{id}', [BlogController::class, 'HomePageBlogsEdit'])->name('HomePage.HomePageBlogsEdit');
+		Route::get('/home-page/blogs', [BlogController::class, 'HomePageBlogsIndex'])->name('HomePage.HomePageBlogsIndex');
+		Route::post('/home-page/blogs/mainpage/create', [BlogController::class, 'HomePageBlogsMainPageCreate'])->name('HomePage.HomePageBlogsMainPageCreate');
+		Route::post('/home-page/blogs/mainpage/update', [BlogController::class, 'HomePageBlogsMainPageUpdate'])->name('HomePage.HomePageBlogsMainPageUpdate');
+		Route::post('/home-page/blogs/new', [BlogController::class, 'HomePageBlogsNew'])->name('HomePage.HomePageBlogsNew');
+		Route::post('/home-page/blogs/update', [BlogController::class, 'HomePageBlogsUpdate'])->name('HomePage.HomePageBlogsUpdate');
+
+		Route::post('/home-page/blogs/tags/vincule', [BlogController::class, 'HomePageBlogsTagsVincule'])->name('HomePage.HomePageBlogsTagsVincule');
+
+
+		Route::post('/home-page/blogs/tags/new', [BlogController::class, 'HomePageBlogsTagsNew'])->name('HomePage.HomePageBlogsTagsNew');
+		Route::post('/home-page/blogs/tags/update', [BlogController::class, 'HomePageBlogsTagsUpdate'])->name('HomePage.HomePageBlogsTagsUpdate');
+		Route::post('/home-page/blogs/tags/delete/{id}', [BlogController::class, 'HomePageBlogsTagsDelete'])->name('HomePage.HomePageBlogsTagsDelete');
+		Route::post('/home-page/blogs/tags/delete/individual/{id}', [BlogController::class, 'HomePageBlogsTagsDeleteIndividual'])->name('HomePage.HomePageBlogsTagsDeleteIndividual');
+
+		Route::post('/home-page/blogs/category/new', [BlogController::class, 'HomePageBlogsCategoryNew'])->name('HomePage.HomePageBlogsCategoryNew');
+		Route::post('/home-page/blogs/category/update', [BlogController::class, 'HomePageBlogsCategoryUpdate'])->name('HomePage.HomePageBlogsCategoryUpdate');
+		Route::post('/home-page/blogs/category/delete/{id}', [BlogController::class, 'HomePageBlogsCategoryDelete'])->name('HomePage.HomePageBlogsCategoryDelete');
+		// End blog
 
 
 		Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
