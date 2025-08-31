@@ -428,7 +428,7 @@
 	</div>
 </div>
 <body class="custom-cursor" style="overflow-x: hidden;">
-
+	@include('includes.clickcease')
 	<a href="https://wa.me/+351937824676" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
 		<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" loading="lazy" />
 	</a>

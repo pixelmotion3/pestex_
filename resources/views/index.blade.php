@@ -298,7 +298,7 @@
 </head>
 
 <body class="custom-cursor" style="overflow-x: hidden;">
-
+	@include('includes.clickcease')
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
 
@@ -2370,6 +2370,7 @@
 		<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
 	</a>
     @include('includes.cookies')
+
     <script>
         $(document).ready(function() {
 

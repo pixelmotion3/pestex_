@@ -125,6 +125,7 @@ setTimeout(function() {
         <script src="{{ asset('assets/js/script.js') }}"></script>
     </head>
     <body class="custom-cursor" style="overflow-x: hidden;">
+		@include('includes.clickcease')
 		<div class="custom-cursor__cursor"></div>
 		<div class="custom-cursor__cursor-two"></div>
 

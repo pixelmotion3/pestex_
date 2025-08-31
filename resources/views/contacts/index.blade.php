@@ -142,6 +142,7 @@ setTimeout(function() {
 		</div>
 	</div>
     <body class="custom-cursor" style="overflow-x: hidden;">
+		@include('includes.clickcease')
 		<style>
 			.whatsapp-float {
 				position: fixed;
