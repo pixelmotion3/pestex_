@@ -287,8 +287,8 @@ setTimeout(function() {
                                     <div class="service-one__item__bottom">
                                         {{-- <div class="service-one__item__bottom__number"></div> --}}
 										<div style="height: 30px;"></div>
-										<a class="service-one__item__bottom__rm" href="/blog/{{ $blog['slug'] }}">SAIBA MAIS<span class="fas fa-angle-double-right"></span></a>
-
+										<a class="service-one__item__bottom__rm" style="z-index: 999999999;" href="/blog/{{ $blog['slug'] }}">SAIBA MAIS<span class="fas fa-angle-double-right"></span></a>
+										<div style="height: 30px;"></div>
                                     </div>
                                 </div>
                             </a>
