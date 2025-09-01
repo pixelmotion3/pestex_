@@ -276,7 +276,7 @@ setTimeout(function() {
                                     <div class="service-one__item__image">
 										<img src="../{{ $blog['image'] }}" alt="tolak" style="height: 250px;">
                                     </div>
-                                    <div class="service-one__item__content" style="height: 300px;">
+                                    <div class="service-one__item__content" style="height: auto;">
                                         <h3 class="service-one__item__title mt-4">
                                             <a href="/blog/{{ $blog['slug'] }}">{{ $blog['title'] }}</a>
                                         </h3>
@@ -285,7 +285,8 @@ setTimeout(function() {
                                         </p>
                                     </div>
                                     <div class="service-one__item__bottom">
-                                        <div class="service-one__item__bottom__number"></div>
+                                        {{-- <div class="service-one__item__bottom__number"></div> --}}
+										<div style="height: 30px;"></div>
 										<a class="service-one__item__bottom__rm" href="/blog/{{ $blog['slug'] }}">SAIBA MAIS<span class="fas fa-angle-double-right"></span></a>
 
                                     </div>
