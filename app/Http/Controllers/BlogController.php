@@ -67,10 +67,38 @@ class BlogController extends Controller
                 ORDER BY blogs.created_at DESC
 			");
 		$blogs = json_decode(json_encode($blogs), true);
-		$faqs = Faq::all();
+
+
+
+
+
+		$blogsRecents = Blogs::orderBy('created_at', 'desc')->limit(5)->get();
+
+
+		$categories = DB::select("
+				SELECT blogs_categories.title,blogs_categories.slug, COUNT(blogs.id) AS total
+				FROM blogs_categories
+				LEFT JOIN blogs ON blogs_categories.id = blogs.category
+				GROUP BY blogs_categories.id, blogs_categories.title, blogs_categories.slug
+			");
+
+		$categories = json_decode(json_encode($categories), true);
+
+		$tags_individual = DB::select("
+				SELECT  blog_tags.title, blog_tag_individuals.id as individual_id FROM `blog_tag_individuals`
+INNER JOIN blog_tags on blog_tag_individuals.idtag = blog_tags.id
+			");
+
+		$tags_individual = json_decode(json_encode($tags_individual), true);
+
+
+
 		return view('blogs.index', [
 			'blogs' => $blogs,
-			'main_screen' => $main_screen
+			'main_screen' => $main_screen,
+			'blogsRecents' => $blogsRecents,
+			'categories' => $categories,
+			'tags_individual' => $tags_individual
         ]);
 	}
 

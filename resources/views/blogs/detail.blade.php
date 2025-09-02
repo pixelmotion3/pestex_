@@ -268,7 +268,7 @@ setTimeout(function() {
     <section class="service-details">
         <div class="container-xl">
             <div class="row gutter-y-30">
-                <div class="col-lg-8 col-md-12 col-sm-12 content-side">
+                <div class="col-lg-12 col-md-12 col-sm-12 content-side">
                     <div class="service-details-content container-fluid">
                         <div class="content-one">
 							<div style="display: flex;align-items: center;gap: 10px;">
@@ -297,52 +297,7 @@ setTimeout(function() {
 
                     </div>
                 </div>
-				<div class="col-md-12 col-xl-4">
-                    <div style="display: flex;flex-direction: column;gap: 10px;">
-                        <div style="padding: 24px;background-color: #f5f5f5;border-radius: 4px;">
-							<h3 class="service-details__sidebar__title">Categorias</h3><!-- /.service-sidebar__title -->
-							<ul class="">
-								@foreach ($categories as $categorie)
-									<li style="background-color: #fff;padding: 8px;display: flex;justify-content: space-between;margin-block: 4px;font-size: 16px;">
-										<a href="/blogs?category={{$categorie['slug']}}">{{$categorie['title']}}</a>( {{$categorie['total']}} )
-									</li>
-								@endforeach
 
-
-							</ul>
-						</div>
-						<div style="padding: 24px;background-color: #f5f5f5;border-radius: 4px;">
-							<h3 class="service-details__sidebar__title">Artigs recentes</h3><!-- /.service-sidebar__title -->
-							<div style="display: flex;flex-direction: column;gap: 12px;">
-								@foreach ($blogs as $blog)
-									<div style="display: flex;gap: 10px;">
-										<div style="width: 127px;">
-											<img src="/{{$blog['image']}}" class="rounded"/>
-										</div>
-										<div>
-											<p style="font-size: 12px;">{{date("d M Y", strtotime($blog['created_at']))}}</p>
-											<h4 style="font-size: 18px;">
-												<a href="/blog/{{$blog['slug']}}">{{$blog['title']}}</a>
-											</h4>
-										</div>
-									</div>
-								@endforeach
-							</div>
-						</div>
-						<div style="padding: 24px;background-color: #f5f5f5;border-radius: 4px;">
-							<h3 class="service-details__sidebar__title">Tags</h3><!-- /.service-sidebar__title -->
-							<div style="display: flex;flex-direction: column; gap: 12px;">
-								@isset($tags_individual)
-									@foreach ($tags_individual as $tag)
-										<div>
-											<span style="font-size: 14px;background-color: #2b2b2b;color: #fff;padding: 7px;border-radius: 4px;">{{$tag['title']}}</span>
-										</div>
-									@endforeach
-								@endisset
-							</div>
-						</div>
-                    </div>
-                </div>
             </div><!-- /.row -->
         </div>
     </section>

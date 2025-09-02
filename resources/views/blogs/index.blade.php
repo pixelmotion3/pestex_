@@ -266,40 +266,88 @@ setTimeout(function() {
 
 	</div>
     <section class="service-one">
-        <div class="container-lg" style="margin-top:-150px;">
-            <div class="row">
-                @isset($blogs)
-                    @foreach ($blogs as $blog)
-                        <div class="col-lg-4 col-md-6 wow fadeInUp mt-5" data-wow-delay="500ms">
-                            <a href="/blog/{{ $blog['slug'] }}">
-                                <div class="service-one__item text-center">
-                                    <div class="service-one__item__image">
-										<img src="../{{ $blog['image'] }}" alt="tolak" style="height: 250px;">
-                                    </div>
-                                    <div class="service-one__item__content" style="height: auto;">
-                                        <h3 class="service-one__item__title mt-4">
-                                            <a href="/blog/{{ $blog['slug'] }}">{{ $blog['title'] }}</a>
-                                        </h3>
-                                        <p class="service-one__item__text" style="font-size: 15px;">
-                                            {{ $blog['content-prev'] }}
-                                        </p>
-                                    </div>
-                                    <div class="service-one__item__bottom">
-                                        {{-- <div class="service-one__item__bottom__number"></div> --}}
-										<div style="height: 30px;"></div>
-										<a class="service-one__item__bottom__rm" style="z-index: 999999999;" href="/blog/{{ $blog['slug'] }}">SAIBA MAIS<span class="fas fa-angle-double-right"></span></a>
-										<div style="height: 30px;"></div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    @endforeach
-                @endisset
+        <div class="container-xl" style="margin-top:-150px;">
+			<div class="row gutter-y-30">
+				<div class="col-lg-8 col-md-8 col-sm-12 content-side">
+					<div class="row">
+						@isset($blogs)
+							@foreach ($blogs as $blog)
+								<div class="col-lg-6 col-md-6 wow fadeInUp mt-5" data-wow-delay="500ms">
+									<a href="/blog/{{ $blog['slug'] }}">
+										<div class="service-one__item text-center">
+											<div class="service-one__item__image">
+												<img src="../{{ $blog['image'] }}" alt="tolak" style="height: 250px;">
+											</div>
+											<div class="service-one__item__content" style="height: auto;">
+												<h3 class="service-one__item__title mt-4">
+													<a href="/blog/{{ $blog['slug'] }}">{{ $blog['title'] }}</a>
+												</h3>
+												<p class="service-one__item__text" style="font-size: 15px;">
+													{{ $blog['content-prev'] }}
+												</p>
+											</div>
+											<div class="service-one__item__bottom">
+												{{-- <div class="service-one__item__bottom__number"></div> --}}
+												<div style="height: 30px;"></div>
+												<a class="service-one__item__bottom__rm" style="z-index: 999999999;" href="/blog/{{ $blog['slug'] }}">SAIBA MAIS<span class="fas fa-angle-double-right"></span></a>
+												<div style="height: 30px;"></div>
+											</div>
+										</div>
+									</a>
+								</div>
+							@endforeach
+						@endisset
 
-                <!-- <div class="col-lg-12 col-md-12 text-center text-white mt-5">
-                            <a class="btn btn-primary w-25" href="#myTab"><small>Abrir formulario</small></a>
-                        </div> -->
-            </div>
+						<!-- <div class="col-lg-12 col-md-12 text-center text-white mt-5">
+									<a class="btn btn-primary w-25" href="#myTab"><small>Abrir formulario</small></a>
+								</div> -->
+					</div>
+				</div>
+				<div class="col-md-12 col-xl-4">
+					<div style="display: flex;flex-direction: column;gap: 10px;">
+						<div style="padding: 24px;background-color: #f5f5f5;border-radius: 4px;">
+							<h3 class="service-details__sidebar__title">Categorias</h3><!-- /.service-sidebar__title -->
+							<ul class="">
+								@foreach ($categories as $categorie)
+									<li style="background-color: #fff;padding: 8px;display: flex;justify-content: space-between;margin-block: 4px;font-size: 16px;">
+										<a href="/blogs?category={{$categorie['slug']}}">{{$categorie['title']}}</a>( {{$categorie['total']}} )
+									</li>
+								@endforeach
+							</ul>
+						</div>
+						<div style="padding: 24px;background-color: #f5f5f5;border-radius: 4px;">
+							<h3 class="service-details__sidebar__title">Artigos recentes</h3><!-- /.service-sidebar__title -->
+							<div style="display: flex;flex-direction: column;gap: 12px;">
+								@foreach ($blogsRecents as $blog)
+									<div style="display: flex;gap: 10px;">
+										<div style="width: 127px;">
+											<img src="/{{$blog['image']}}" class="rounded"/>
+										</div>
+										<div>
+											<p style="font-size: 12px;">{{date("d M Y", strtotime($blog['created_at']))}}</p>
+											<h4 style="font-size: 18px;">
+												<a href="/blog/{{$blog['slug']}}">{{$blog['title']}}</a>
+											</h4>
+										</div>
+									</div>
+								@endforeach
+							</div>
+						</div>
+						<div style="padding: 24px;background-color: #f5f5f5;border-radius: 4px;">
+							<h3 class="service-details__sidebar__title">Tags</h3><!-- /.service-sidebar__title -->
+							<div style="display: flex;flex-direction: column; gap: 12px;">
+								@isset($tags_individual)
+									@foreach ($tags_individual as $tag)
+										<div>
+											<span style="font-size: 14px;background-color: #2b2b2b;color: #fff;padding: 7px;border-radius: 4px;">{{$tag['title']}}</span>
+										</div>
+									@endforeach
+								@endisset
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
         </div>
     </section>
 
