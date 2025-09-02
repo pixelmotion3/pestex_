@@ -335,7 +335,7 @@ setTimeout(function() {
 						</div>
 						<div style="padding: 24px;background-color: #f5f5f5;border-radius: 4px;">
 							<h3 class="service-details__sidebar__title">Tags</h3><!-- /.service-sidebar__title -->
-							<div style="display: flex;flex-direction: column; gap: 12px;">
+							<div style="display: flex;flex-direction: row;gap: 12px;flex-wrap: wrap;">
 								@isset($tags_individual)
 									@foreach ($tags_individual as $tag)
 										<div>
