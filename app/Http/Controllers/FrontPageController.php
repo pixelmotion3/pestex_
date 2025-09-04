@@ -58,12 +58,12 @@ class FrontPageController extends Controller
 		$news_forms = $contact_forms_news + $news_letters_news + $quote_forms_news;
 
 
-		$showCookieBanner = 0;
-		if(isset($_COOKIE['cookie_consent_sosp'])){
-			$showCookieBanner = $_COOKIE['cookie_consent_sosp'] == true ? 1 : 0;
-		}else{
-		 	$showCookieBanner = 0;
-		}
+		// $showCookieBanner = 0;
+		// if(isset($_COOKIE['cookie_consent_sosp_lp'])){
+		// 	$showCookieBanner = $_COOKIE['cookie_consent_sosp_lp'] == true ? 1 : 0;
+		// }else{
+		//  	$showCookieBanner = 0;
+		// }
 
 
 		$routeName = 'landing-page'; // Nome da rota ou página que será monitorada
@@ -92,7 +92,7 @@ class FrontPageController extends Controller
 			'contact_forms_news' => $contact_forms_news,
 			'news_letters_news' => $news_letters_news,
 			'quote_forms_news' => $quote_forms_news,
-			'showCookieBanner' => !$showCookieBanner,
+			// 'showCookieBanner' => !$showCookieBanner,
 			'faqs' => $faqs
         ]);
     }
