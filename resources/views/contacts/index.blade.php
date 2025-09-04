@@ -227,24 +227,6 @@ setTimeout(function() {
 
 
 
-		<script>
-		document.addEventListener('DOMContentLoaded', () => {
-			const trigger = document.getElementById('hoverphone');
-			const target = document.getElementById('icon-phone');
-
-			trigger.addEventListener('mouseenter', () => {
-				target.style.fill = 'white';
-				target.style.webkitFontSmoothing = 'antialiased';
-				target.style.transition = 'all 500ms ease';
-			});
-
-			trigger.addEventListener('mouseleave', () => {
-				target.style.fill = '#002255'; // cor original
-				target.style.webkitFontSmoothing = '';
-				target.style.transition = '';
-			});
-		});
-		</script>
 
 
         <section class="contact-two mb-8">
@@ -260,6 +242,13 @@ setTimeout(function() {
                                 </p>
 								<style>
 									.contact-two__info__box__icon:hover {
+										.svg-phone {
+											fill: white;
+											-webkit-font-smoothing:antialiased;
+											transition: all 500ms ease;
+										}
+									}
+									.contact-two__info__box:hover {
 										.svg-phone {
 											fill: white;
 											-webkit-font-smoothing:antialiased;
