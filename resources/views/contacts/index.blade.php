@@ -269,7 +269,7 @@ setTimeout(function() {
 								</style>
                                 <ul class="contact-two__info__box-wrapper">
                                     <li class="contact-two__info__box">
-                                        <div class="contact-two__info__box__icon">
+                                        <div class="contact-two__info__box__icon" id="hoverphone">
 											<svg xmlns="http://www.w3.org/2000/svg" class="svg-phone" id="icon-phone" fill="#002255" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 473.806 473.806" style="enable-background:new 0 0 473.806 473.806; width: 40px;" xml:space="preserve">
 											<g>
 												<g>
@@ -311,7 +311,7 @@ setTimeout(function() {
 											</svg>
 											{{-- <i class="icon-phone-call"></i> --}}
 										</div>
-                                        <h4 class="contact-two__info__box__title" id="hoverphone">{{ $contact_info[0]['h4-1'] }}</h4>
+                                        <h4 class="contact-two__info__box__title">{{ $contact_info[0]['h4-1'] }}</h4>
                                         <p class="contact-two__info__box__text"><a href="tel:025461556695">{{ $contact_info[0]['p-1'] }}</a></p>
                                     </li>
                                     <li class="contact-two__info__box">
