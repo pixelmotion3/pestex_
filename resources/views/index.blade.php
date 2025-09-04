@@ -5,7 +5,7 @@
         {{ session('success') }}
     </div>
 @endif
-
+@include('includes.cookies')
 @if (session('error'))
     <div id="error-alert" class="alert alert-danger">
         {{ session('error') }}
@@ -2369,7 +2369,7 @@
 	<a href="https://wa.me/+351937824676" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
 		<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
 	</a>
-    @include('includes.cookies')
+
 
     <script>
         $(document).ready(function() {
