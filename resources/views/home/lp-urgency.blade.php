@@ -465,6 +465,7 @@
 
 		.section-alert p {
 			color: #fff;
+			text-align: center;
 		}
 
 		.main-slider-three__title {
@@ -654,6 +655,105 @@
 			}
 		}
 
+		.tolak-btn {
+			width: 100%; /* volta a ocupar só o conteúdo */
+		}
+		.card-time {
+			width: 100%;
+		}
+		/* A partir de telas grandes (desktop) */
+		@media (min-width: 992px) {
+			.tolak-btn {
+				width: 50%; /* volta a ocupar só o conteúdo */
+			}
+
+			.card-time {
+				width: 60%;
+			}
+
+		}
+
+		@media (max-width: 767px) {
+			.main-slider-three__content {
+				padding-top: 90px;
+				padding-bottom: 100px;
+			}
+		}
+		/* Card principal */
+		.urgency-card {
+			background: #fff;
+			text-align: center;
+			margin: 4rem;
+			padding: 1rem;
+			border-radius: 17px;
+			visibility: visible; /* se for usar animações */
+			animation-delay: 500ms;
+			animation-name: fadeInUp;
+		}
+
+
+		/* Número grande */
+		.urgency-number {
+			font-size: 30px;
+		}
+
+		/* Título */
+		.urgency-title {
+			font-weight: 600;
+			color: #000;
+		}
+
+		/* Texto menor */
+		.urgency-text {
+			color: #000;
+			font-size: 15px;
+		}
+
+		.img-animale {
+			position: absolute;top: -19rem;z-index: 9999999999999;width: 30rem;
+		}
+
+		.card-discont {
+			visibility: visible;
+			padding-inline: 8rem;
+		}
+
+		.img-animale-2 {
+			position: absolute;
+			z-index: 9999;
+			width: 20rem;
+			height: 20rem;
+			top: -11rem;
+			left: 0;
+		}
+
+		@media (max-width: 767px) {
+			.urgency-card {
+				margin: 1rem;
+			}
+			.img-animale {
+				position: absolute;
+				top: -7rem;
+				z-index: 9999999999999;
+				width: 10rem;
+			}
+
+			.card-discont {
+				visibility: visible;
+				padding-inline: 1rem;
+			}
+
+			.img-animale-2 {
+				position: absolute;
+				z-index: 9999;
+				width: 15rem;
+				height: 20rem;
+				top: -3rem;
+				left: 0;
+			}
+
+		}
+
 	</style>
 
 </head>
@@ -686,7 +786,7 @@
 								<div class="main-slider-three__shape-two" style="background-image: url(/{{$urgency[0]['sec-2-img-5']}});"></div>
 								<div class="container">
 									<div class="row">
-										<div class="col-lg-6">
+										<div class="col-12 col-lg-6">
 											<div class="main-slider-three__content">
 												<img src="/{{$urgency[0]['sec-2-img-1']}}" alt="logo SOSPRAGAS" width="284">
 												<div style="margin-block: 30px;">
@@ -710,11 +810,11 @@
 													<h2  id="timer">{{$urgency[0]['sec-2-span-4']}}</h2>
 												</div>
 												<div class="main-slider-three__btn">
-													<b><a href="/contactos" class="tolak-btn"><b style="text-transform: uppercase;font-weight: 700;">{{$urgency[0]['sec-2-span-3']}}</b><span></span></a><!-- slider-btn --></b>
+													<a href="/contactos" class="tolak-btn"><b style="text-transform: uppercase;font-weight: 700;">{{$urgency[0]['sec-2-span-3']}}</b><span></span></a><!-- slider-btn -->
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-6">
+										<div class="col-12 col-lg-6">
 											<div class="main-slider-three__thumb">
 												<img src="/{{$urgency[0]['sec-2-img-3']}}"
 													alt="tolak">
@@ -735,22 +835,22 @@
 			<div class="container">
 				<div class="row d-flex align-items-center">
 					<div class="col-lg-4" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeInLeft;">
-						<div class="" style="position: absolute;top: -19rem;z-index: 9999999999999;width: 30rem;">
+						<div class="img-animale" style="">
 							<img src="/{{$urgency[0]['sec-3-img-1']}}" alt="tolak">
 						</div>
 					</div>
-					<div class="col-lg-4" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeInUp;">
-						<div style="background: #fff;text-align: center;margin: 4rem;padding: 1rem;border-radius: 17px;">
-							<span style="font-size: 30px;">{{$urgency[0]['sec-3-span-1']}}</span>
-							<p style="font-weight: 600;color: #000;">{{$urgency[0]['sec-3-h-1']}}</p>
-							<span style="color: #000;font-size: 15px;">{{$urgency[0]['sec-3-span-2']}}</span>
+					<div class="col-lg-4 mt-8 mt-lg-0" data-wow-delay="500ms">
+						<div class="urgency-card">
+							<span class="urgency-number">{{$urgency[0]['sec-3-span-1']}}</span>
+							<p class="urgency-title">{{$urgency[0]['sec-3-h-1']}}</p>
+							<span class="urgency-text">{{$urgency[0]['sec-3-span-2']}}</span>
 						</div>
 					</div>
-					<div class="col-lg-4" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeInUp;">
-						<div style="background: #fff;text-align: center;margin: 4rem;padding: 1rem;border-radius: 17px;">
-							<span style="font-size: 30px;">{{$urgency[0]['sec-3-span-3']}}</span>
-							<p style="font-weight: 600;color: #000;">{{$urgency[0]['sec-3-h-2']}}</p>
-							<span style="color: #000;font-size: 15px;">{{$urgency[0]['sec-3-span-4']}}</span>
+					<div class="col-lg-4" data-wow-delay="500ms">
+						<div class="urgency-card">
+							<span class="urgency-number">{{$urgency[0]['sec-3-span-3']}}</span>
+							<p class="urgency-title">{{$urgency[0]['sec-3-h-2']}}</p>
+							<span class="urgency-text">{{$urgency[0]['sec-3-span-4']}}</span>
 						</div>
 					</div>
 				</div>
@@ -856,7 +956,7 @@
 			</div>
 			<div class="" style="background: #041e1f;">
 				<div class="row justify-content-center align-items-center" style="position: relative;padding-block: 4rem;">
-					<div class="col-md-5" style="visibility: visible;padding-inline: 8rem;">
+					<div class="col-md-5 card-discont" style="">
 						<div class="pricing-one__card text-center">
 							<div class="pricing-one__card__icon">
 								<i class="icon-low-cost"></i>
@@ -916,7 +1016,7 @@
 						</div>
 						<p style="font-size: 20px;text-align: center;color: #eb6207;margin-top: 15px;">{{$urgency[0]['sec-6-span-6']}}</p>
 					</div>
-					<div style="position: absolute;z-index: 9999;width: 20rem;height: 20rem;top: -11rem;left: 0;">
+					<div class="img-animale-2">
 						<img src="/{{$urgency[0]['sec-6-img-2']}}" alt="tolak">
 					</div>
 				</div>
@@ -1121,7 +1221,7 @@
 					<span>{{$urgency[0]['sec-8-span-2']}}</span>
 					<span>{{$urgency[0]['sec-8-span-3']}}</span>
 				</div>
-				<span style="color: #fff;"> © 2025 {{$urgency[0]['sec-8-span-4']}}</span>
+				<span style="color: #fff;text-align: center;"> © 2025 {{$urgency[0]['sec-8-span-4']}}</span>
 			</div>
 		</footer>
 	</div>
