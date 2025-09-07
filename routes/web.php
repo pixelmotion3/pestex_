@@ -25,8 +25,8 @@ use Illuminate\Support\Facades\Route;
 
 // Rota padrão para o domínio principal
 Route::domain('127.0.0.1')->group(function () {
-    Route::get('/', [FrontPageController::class, 'Home'])->name('FrontPage.Home2');
-
+    Route::get('/', [FrontPageController::class, 'index'])->name('FrontPage.Home3');
+	Route::get('/lp-urgency', [FrontPageController::class, 'lpUrgency'])->name('FrontPage.LpUrgency');
 
 	Route::resource('/sustentabilidade', SustainabilityController::class);
 	Route::post('/newsletter/new', [NewsletterController::class, 'NewsletterForm'])->name('NewsLatterPage.NewsletterForm');
@@ -41,22 +41,27 @@ Route::domain('127.0.0.1')->group(function () {
 	Route::get('/politica-privacidade', [FrontPageController::class, 'HomePoliticaPrivacidade'])->name('FrontPage.PoliticaPrivacidade');
 
 
-	Route::post('/obrigado-fale-conosco', [HomePageController::class, 'thankYouForm'])->name('HomePage.thankYouFormContactUs');
-	Route::post('/obrigado-pedir-orcamento', [HomePageController::class, 'thankYouForm'])->name('HomePage.thankYouFormRequestQuote');
-	Route::post('/obrigado-entrar-em-contato', [HomePageController::class, 'thankYouForm'])->name('HomePage.thankYouFormContactForm');
-	Route::post('/obrigado-agenda-vistoria', [HomePageController::class, 'thankYouForm'])->name('HomePage.thankYouFormScheduleInspection');
+	Route::post('/obrigado-fale-conosco', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactUs');
+	Route::post('/obrigado-pedir-orcamento', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormRequestQuote');
+	Route::post('/obrigado-entrar-em-contato', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactForm');
+	Route::post('/obrigado-agenda-vistoria', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormScheduleInspection');
 
-	Route::post('/obrigado-fale-conosco', [HomePageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactUs');
-	Route::post('/obrigado-pedir-orcamento', [HomePageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormRequestQuote');
-	Route::post('/obrigado-entrar-em-contato', [HomePageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactForm');
-	Route::post('/obrigado-agenda-vistoria', [HomePageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormScheduleInspection');
+	Route::post('/obrigado-fale-conosco', [FrontPageController::class, 'thankYouForm'])->name('HomePage.thankYouFormContactUs');
+	Route::post('/obrigado-pedir-orcamento', [FrontPageController::class, 'thankYouForm'])->name('HomePage.thankYouFormRequestQuote');
+	Route::post('/obrigado-entrar-em-contato', [FrontPageController::class, 'thankYouForm'])->name('HomePage.thankYouFormContactForm');
+	Route::post('/obrigado-agenda-vistoria', [FrontPageController::class, 'thankYouForm'])->name('HomePage.thankYouFormScheduleInspection');
+
+
+	Route::get('/servicos', [ServiceController::class, 'index'])->name('ServicePage.index');
 
 	Route::get('/blogs', [BlogController::class, 'Index'])->name('Blogs.Index');
 	Route::get('/blog/{slug}', [BlogController::class, 'Details'])->name('Blogs.Details');
 
-	Route::get('/servicos', [ServiceController::class, 'index'])->name('ServicePage.index');
+
+
 	Route::get('/servicos/{slug}', [ServiceController::class, 'show'])->name('ServicePage.show');
 	Route::post('/quote-form/service', [ServiceController::class, 'ContactFormService'])->name('ServicePage.ContactFormService');
+
 
 	Route::get('/sobre', [AboutController::class, 'index'])->name('About.index');
 	Route::post('/quote-form/about', [AboutController::class, 'ContactFormAbout'])->name('About.ContactFormAbout');
@@ -90,11 +95,12 @@ Route::domain('127.0.0.1')->group(function () {
 		Route::get('/home-page/customer-area', [HomePageController::class, 'CustomerAreaIndex'])->name('HomePage.CustomerAreaIndex');
 		Route::get('/home-page/main-carrousel', [HomePageController::class, 'MainCarrouselIndex'])->name('HomePage.MainCarrouselIndex');
 		Route::get('/home-page/our-services', [HomePageController::class, 'OurServicesIndex'])->name('HomePage.OurServicesIndex');
-		Route::get('/home-page/privacy-policy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex3');
+		Route::get('/home-page/privacy-policy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex5');
 		Route::get('/home-page/quote-forms', [HomePageController::class, 'QuoteFormsIndex'])->name('HomePage.QuoteFormsIndex');
 		Route::get('/home-page/status', [HomePageController::class, 'StatusIndex'])->name('HomePage.StatusIndex');
-		Route::get('/home-page/terms-service', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex6');
+		Route::get('/home-page/terms-service', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex5');
 		Route::get('/home-page/testimonial', [HomePageController::class, 'TestimonialIndex'])->name('HomePage.TestimonialIndex');
+
 
 
 		// Blog
@@ -121,12 +127,25 @@ Route::domain('127.0.0.1')->group(function () {
 
 
 
+		Route::get('/admin/lp-urgency', [FrontPageController::class, 'adminLpUrgency'])->name('FrontPage.AdminLpUrgency');
+		Route::post('/admin/lp-urgency/update', [FrontPageController::class, 'updateLpUrgency'])->name('FrontPage.AdminLpUrgencyUpdate');
+		Route::post('/admin/lp-urgency/comment', [FrontPageController::class, 'lpUrgencyCommentsNew'])->name('FrontPage.AdminLpUrgencyNewComment');
+		Route::post('/admin/lp-urgency/comment/update', [FrontPageController::class, 'lpUrgencyCommentsUpdate'])->name('FrontPage.AdminLpUrgencyUpdateComment');
+		Route::post('/admin/lp-urgency/comment/delete/{id}', [FrontPageController::class, 'lpUrgencyCommentsDelete'])->name('FrontPage.AdminLpUrgencyDeleteComment');
+
+		Route::post('/admin/lp-urgency/card', [FrontPageController::class, 'lpUrgencyCardsNew'])->name('FrontPage.AdminLpUrgencyNewCard');
+		Route::post('/admin/lp-urgency/card/update', [FrontPageController::class, 'lpUrgencyCardsUpdate'])->name('FrontPage.AdminLpUrgencyUpdateCard');
+		Route::post('/admin/lp-urgency/card/delete/{id}', [FrontPageController::class, 'lpUrgencyCardsDelete'])->name('FrontPage.AdminLpUrgencyDeleteCard');
+
+
+
+
 		Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
 		Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 
 
-		Route::get('/termsservice', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex2');
-		Route::get('/privacypolicy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex4');
+		Route::get('/termsservice', [HomePageController::class, 'TermsServiceIndex'])->name('HomePage.TermsServiceIndex3');
+		Route::get('/privacypolicy', [HomePageController::class, 'PrivacyPolicyIndex'])->name('HomePage.PrivacyPolicyIndex6');
 
 		Route::get('/forms/newsletter', [FormsPageController::class, 'newsletter'])->name('FormsPage.newsletter');
 		Route::get('/forms/quote', [FormsPageController::class, 'quote'])->name('FormsPage.quote');
@@ -143,7 +162,6 @@ Route::domain('127.0.0.1')->group(function () {
 		Route::post( '/newfaqlp', [HomePageController::class, 'newFaq'])->name('LandingPage.NewFaq');
 		Route::put( '/updatefaqlp/{id}', [HomePageController::class, 'updateFaq'])->name('LandingPage.UpdateFaq');
 		Route::delete( '/deletefaqlp/{id}', [HomePageController::class, 'deleteFaq'])->name('LandingPage.DeleteFaq');
-
 
 		Route::resource( '/home-page', HomePageController::class);
 		Route::resource('/landing-page', LandingPageController::class);
@@ -265,6 +283,18 @@ Route::domain('sospragas.pt')->group(function () {
 		// End blog
 
 
+		Route::get('/admin/lp-urgency', [FrontPageController::class, 'adminLpUrgency'])->name('FrontPage.AdminLpUrgency');
+		Route::post('/admin/lp-urgency/update', [FrontPageController::class, 'updateLpUrgency'])->name('FrontPage.AdminLpUrgencyUpdate');
+		Route::post('/admin/lp-urgency/comment', [FrontPageController::class, 'lpUrgencyCommentsNew'])->name('FrontPage.AdminLpUrgencyNewComment');
+		Route::post('/admin/lp-urgency/comment/update', [FrontPageController::class, 'lpUrgencyCommentsUpdate'])->name('FrontPage.AdminLpUrgencyUpdateComment');
+		Route::post('/admin/lp-urgency/comment/delete/{id}', [FrontPageController::class, 'lpUrgencyCommentsDelete'])->name('FrontPage.AdminLpUrgencyDeleteComment');
+
+		Route::post('/admin/lp-urgency/card', [FrontPageController::class, 'lpUrgencyCardsNew'])->name('FrontPage.AdminLpUrgencyNewCard');
+		Route::post('/admin/lp-urgency/card/update', [FrontPageController::class, 'lpUrgencyCardsUpdate'])->name('FrontPage.AdminLpUrgencyUpdateCard');
+		Route::post('/admin/lp-urgency/card/delete/{id}', [FrontPageController::class, 'lpUrgencyCardsDelete'])->name('FrontPage.AdminLpUrgencyDeleteCard');
+
+
+
 
 		Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
 		Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -315,7 +345,7 @@ Route::domain('sospragas.pt')->group(function () {
 // Rota padrão para o subdomínio
 Route::domain('desinfestacoes.sospragas.pt')->group(function () {
     Route::get('/', [FrontPageController::class, 'index'])->name('FrontPage.Home3');
-
+	Route::get('/lp-urgency', [FrontPageController::class, 'lpUrgency'])->name('FrontPage.LpUrgency');
 
 	Route::resource('/sustentabilidade', SustainabilityController::class);
 	Route::post('/newsletter/new', [NewsletterController::class, 'NewsletterForm'])->name('NewsLatterPage.NewsletterForm');
@@ -328,6 +358,8 @@ Route::domain('desinfestacoes.sospragas.pt')->group(function () {
 	Route::post('/contact-form', [FrontPageController::class, 'ContactForm'])->name('FrontPage.ContactForm');
 	Route::get('/termos-servico', [FrontPageController::class, 'HomeTermoServicos'])->name('FrontPage.TermoServicos');
 	Route::get('/politica-privacidade', [FrontPageController::class, 'HomePoliticaPrivacidade'])->name('FrontPage.PoliticaPrivacidade');
+
+
 
 
 	Route::post('/obrigado-fale-conosco', [FrontPageController::class, 'thankYouForm'])->name('FrontPage.thankYouFormContactUs');

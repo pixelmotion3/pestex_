@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Mail\ContactMail;
+use App\Models\BlogPages;
+use App\Models\Blogs;
+use App\Models\BlogsCategories;
+use App\Models\BlogTags;
 use App\Models\FrontPage;
 use App\Models\LandingPage;
 use App\Models\landing_2page;
@@ -17,9 +21,13 @@ use App\Models\landing_10page;
 use App\Models\landing_11page;
 use App\Models\landing_12page;
 use App\Models\landing_13page;
+use App\Models\LpUrgency;
+use App\Models\LpUrgencyCards;
+use App\Models\LpUrgencyComments;
 use App\Models\ServiceDetails;
 use App\Models\contacts;
 use App\Models\Review;
+use App\Models\TestimonialAbout;
 use Illuminate\Http\Request;
 use App\Models\quote_forms;
 use App\Models\contact_forms;
@@ -159,6 +167,172 @@ class FrontPageController extends Controller
 			'showCookieBanner' => !$showCookieBanner,
 			'faqs' => $faqs
         ]);
+    }
+
+	public function lpUrgency(Request $request)
+    {
+        $urgency = LpUrgency::all();
+		$comments = LpUrgencyComments::all();
+		$cards = LpUrgencyCards::all();
+        return view('home.lp-urgency', [
+            'urgency' => $urgency,
+			'comments' => $comments,
+			'cards' => $cards
+        ]);
+    }
+
+	public function updateLpUrgency(Request $request)
+    {
+        $model = LpUrgency::findOrFail(1);
+
+		// Lista de campos que são imagens
+		$imageFields = [
+			'sec-2-img-1', 'sec-2-img-2', 'sec-2-img-3', 'sec-2-img-4', 'sec-2-img-5',
+			'sec-3-img-1',
+			'sec-4-img-1', 'sec-4-img-2',
+			'sec-6-img-1', 'sec-6-img-2',
+			'sec-7-img-1',
+			'sec-8-img-1'
+		];
+
+		foreach ($imageFields as $field) {
+			if ($request->hasFile($field)) {
+				$path = $request->file($field)->store('assets/images');
+				$model->update([
+					$field => 'storage/' . $path
+				]);
+			}
+		}
+
+		// Atualiza os textos/spans/h's
+		$textFields = [
+			'sec-1-span-1',
+			'sec-2-h-1','sec-2-h-2','sec-2-span-1','sec-2-span-2','sec-2-span-3','sec-2-span-4',
+			'sec-3-h-1','sec-3-h-2','sec-3-span-1','sec-3-span-2','sec-3-span-3','sec-3-span-4',
+			'sec-4-h-1',
+			'sec-5-h-1',
+			'sec-6-h-1','sec-6-h-2','sec-6-h-3','sec-6-h-4','sec-6-h-5',
+			'sec-6-p-1',
+			'sec-6-span-1','sec-6-span-2','sec-6-span-3','sec-6-span-4','sec-6-span-5','sec-6-span-6',
+			'sec-7-h-1',
+			'sec-7-span-1','sec-7-span-2','sec-7-span-3','sec-7-span-4','sec-7-span-5','sec-7-span-6','sec-7-span-7','sec-7-span-8','sec-7-span-9','sec-7-span-10',
+			'sec-8-span-1','sec-8-span-2','sec-8-span-3','sec-8-span-4',
+		];
+
+		$updateData = [];
+		foreach ($textFields as $field) {
+			if ($request->has($field)) {
+				$updateData[$field] = $request->input($field);
+			}
+		}
+
+		$model->update($updateData);
+
+		return back();
+    }
+
+
+	public function lpUrgencyCommentsNew(Request $request)
+	{
+        $model = LpUrgencyComments::create([
+            'name' => $request->input('name'),
+            'comment' => $request->input('comment')
+        ]);
+		return back();
+    }
+
+	public function lpUrgencyCommentsUpdate(Request $request)
+	{
+		$query = LpUrgencyComments::where('id',$request->input('id'))->update([
+			'name' => $request->input('name'),
+            'comment' => $request->input('comment')
+		]);
+
+		return back();
+    }
+
+	public function lpUrgencyCommentsDelete($id)
+	{
+		$query = LpUrgencyComments::findOrFail($id);
+
+        if ($query->delete()) {
+			return redirect()->back();
+        }
+    }
+
+
+
+	public function lpUrgencyCardsNew(Request $request)
+	{
+		$pathIcon = "";
+		$pathImage = "";
+		if ($request->hasFile($request->input('icon'))) {
+			$path = $request->file('icon')->store('assets/images');
+			$pathIcon = 'storage/' . $path;
+		}
+
+		if ($request->hasFile($request->input('img'))) {
+			$path = $request->file('img')->store('assets/images');
+			$pathImage = 'storage/' . $path;
+		}
+
+
+        $model = LpUrgencyCards::create([
+            'title' => $request->input('title'),
+            'icon' => $pathIcon,
+			'img' => $pathImage,
+			'description' => $request->input('description'),
+        ]);
+
+
+		return back();
+    }
+
+	public function lpUrgencyCardsUpdate(Request $request)
+	{
+		$query = LpUrgencyCards::where('id',$request->input('id'))->update([
+			'title' => $request->input('title'),
+            'description' => $request->input('description')
+		]);
+
+		$imageFields = [
+			'icon', 'img'
+		];
+
+		foreach ($imageFields as $field) {
+			if ($request->hasFile($field)) {
+				$path = $request->file($field)->store('assets/images');
+
+				LpUrgencyCards::where('id',$request->input('id'))->update([
+					$field => 'storage/' . $path
+				]);
+			}
+		}
+
+		return back();
+    }
+
+	public function lpUrgencyCardsDelete($id)
+	{
+		// $query = LpUrgencyCards::findOrFail($id);
+
+        // if ($query->delete()) {
+		// 	return redirect()->back();
+        // }
+    }
+
+
+
+	public function adminLpUrgency(Request $request)
+    {
+		$urgency = LpUrgency::all();
+		$comments = LpUrgencyComments::all();
+		$cards = LpUrgencyCards::all();
+		return view('home.admin.lp-urgency', [
+			'urgency' => $urgency,
+			'comments' => $comments,
+			'cards' => $cards
+		]);
     }
 
 	public function TermoServicos()
@@ -679,6 +853,8 @@ class FrontPageController extends Controller
 					'name' => $request->input('name'),
 					'email' => $request->input('email'),
 					'phone' => $request->input('phone'),
+					'phone2' => $request->input('phone2'),
+					'message' => $request->input('message'),
 					'confirmed' => true
 				]);
 				if ($query) {

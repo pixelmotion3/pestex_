@@ -309,6 +309,11 @@
 				<div data-i18n="Política de Privacidade">Política de Privacidade</div>
 
 			</a>
+			<a href="/admin/lp-urgency" class="menu-link">
+				<i class="menu-icon tf-icons ti ti-book"></i>
+				<div data-i18n="LandingPage Urgência">LandingPage Urgência</div>
+
+			</a>
 		</li>
 
 		{{-- <li class="menu-item open">

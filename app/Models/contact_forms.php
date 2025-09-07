@@ -11,6 +11,7 @@ class contact_forms extends Model
         'name',
         'email',
         'confirmed',
-		'viewed'
+		'viewed',
+		'message'
     ];
 }
