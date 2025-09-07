@@ -189,7 +189,7 @@ Route::domain('127.0.0.1')->group(function () {
 // Rota padrão para o domínio principal
 Route::domain('sospragas.pt')->group(function () {
 	Route::get('/', [FrontPageController::class, 'Home'])->name('FrontPage.Home2');
-
+	Route::get('/lp-urgency', [FrontPageController::class, 'lpUrgency'])->name('FrontPage.LpUrgency');
 
 	Route::resource('/sustentabilidade', SustainabilityController::class);
 	Route::post('/newsletter/new', [NewsletterController::class, 'NewsletterForm'])->name('NewsLatterPage.NewsletterForm');
