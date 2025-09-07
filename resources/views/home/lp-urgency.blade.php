@@ -984,7 +984,7 @@
 						<div style="display: flex;gap: 5px;">
 							<div style="width: 50%;background: red;display: flex;flex-direction: column;align-items: center;padding: 16px;border-radius: 5px;">
 								<span style="color: #f2eb0c;">{{$urgency[0]['sec-6-span-3']}}</span>
-								<span style="font-size: 30px;font-weight: 600;color: #fff;" id="timer2">{{$urgency[0]['sec-2-span-4']}}</span>
+								<span style="font-size: 30px;font-weight: 600;color: #fff;text-align: center;" id="timer2">{{$urgency[0]['sec-2-span-4']}}</span>
 							</div>
 							<div style="width: 50%;display: flex;flex-direction: column;gap: 5px;justify-content: center;">
 								<div style="background: #4db051;padding: 11px;display: flex;justify-content: center;color: #fff;border-radius: 4px;align-items: center;">
