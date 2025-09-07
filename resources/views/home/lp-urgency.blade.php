@@ -1182,7 +1182,7 @@
 	@include('includes.cookies')
 	<!-- template js -->
 	@once
-		{{-- <script src="{{ asset('assets/js/tolak.min.js') }}"></script> --}}
+		<script src="{{ asset('assets/js/tolak.min.js') }}"></script>
 	@endonce
 
 </body>
