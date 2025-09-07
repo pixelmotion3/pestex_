@@ -648,6 +648,11 @@
 			width: 100%;
 			height: auto;
 		}
+		@media (min-width: 1200px) {
+			.container, .container-sm, .container-md, .container-lg, .container-xl {
+				max-width: 1300px;
+			}
+		}
 
 	</style>
 
