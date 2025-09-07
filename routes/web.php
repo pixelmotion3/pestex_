@@ -443,6 +443,17 @@ Route::domain('desinfestacoes.sospragas.pt')->group(function () {
 		Route::post('/home-page/blogs/category/delete/{id}', [BlogController::class, 'HomePageBlogsCategoryDelete'])->name('HomePage.HomePageBlogsCategoryDelete');
 		// End blog
 
+		Route::get('/admin/lp-urgency', [FrontPageController::class, 'adminLpUrgency'])->name('FrontPage.AdminLpUrgency');
+		Route::post('/admin/lp-urgency/update', [FrontPageController::class, 'updateLpUrgency'])->name('FrontPage.AdminLpUrgencyUpdate');
+		Route::post('/admin/lp-urgency/comment', [FrontPageController::class, 'lpUrgencyCommentsNew'])->name('FrontPage.AdminLpUrgencyNewComment');
+		Route::post('/admin/lp-urgency/comment/update', [FrontPageController::class, 'lpUrgencyCommentsUpdate'])->name('FrontPage.AdminLpUrgencyUpdateComment');
+		Route::post('/admin/lp-urgency/comment/delete/{id}', [FrontPageController::class, 'lpUrgencyCommentsDelete'])->name('FrontPage.AdminLpUrgencyDeleteComment');
+
+		Route::post('/admin/lp-urgency/card', [FrontPageController::class, 'lpUrgencyCardsNew'])->name('FrontPage.AdminLpUrgencyNewCard');
+		Route::post('/admin/lp-urgency/card/update', [FrontPageController::class, 'lpUrgencyCardsUpdate'])->name('FrontPage.AdminLpUrgencyUpdateCard');
+		Route::post('/admin/lp-urgency/card/delete/{id}', [FrontPageController::class, 'lpUrgencyCardsDelete'])->name('FrontPage.AdminLpUrgencyDeleteCard');
+
+
 
 		Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
 		Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
