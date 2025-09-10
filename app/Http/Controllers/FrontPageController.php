@@ -174,10 +174,12 @@ class FrontPageController extends Controller
         $urgency = LpUrgency::all();
 		$comments = LpUrgencyComments::all();
 		$cards = LpUrgencyCards::all();
+		$services = ServiceDetails::all();
         return view('home.lp-urgency', [
             'urgency' => $urgency,
 			'comments' => $comments,
-			'cards' => $cards
+			'cards' => $cards,
+			'services' => $services
         ]);
     }
 
@@ -192,7 +194,9 @@ class FrontPageController extends Controller
 			'sec-4-img-1', 'sec-4-img-2',
 			'sec-6-img-1', 'sec-6-img-2',
 			'sec-7-img-1',
-			'sec-8-img-1'
+			'sec-8-img-1',
+			'sec-3-span-1',
+			'sec-3-span-3'
 		];
 
 		foreach ($imageFields as $field) {
@@ -208,7 +212,7 @@ class FrontPageController extends Controller
 		$textFields = [
 			'sec-1-span-1',
 			'sec-2-h-1','sec-2-h-2','sec-2-span-1','sec-2-span-2','sec-2-span-3','sec-2-span-4',
-			'sec-3-h-1','sec-3-h-2','sec-3-span-1','sec-3-span-2','sec-3-span-3','sec-3-span-4',
+			'sec-3-h-1','sec-3-h-2','sec-3-span-2','sec-3-span-4',
 			'sec-4-h-1',
 			'sec-5-h-1',
 			'sec-6-h-1','sec-6-h-2','sec-6-h-3','sec-6-h-4','sec-6-h-5',
@@ -855,6 +859,8 @@ class FrontPageController extends Controller
 					'phone' => $request->input('phone'),
 					'phone2' => $request->input('phone2'),
 					'message' => $request->input('message'),
+					'locality' => $request->input('locality'),
+					'service' => $request->input('service'),
 					'confirmed' => true
 				]);
 				if ($query) {

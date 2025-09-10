@@ -451,7 +451,23 @@
 															</div>
 															<div class="col-6 mt-5">
 																<div class="col-12 mt-5">
-																	<label
+
+																	<div class="col-12 mt-5">
+																		<div class="col-12 mt-5">
+																			<label for="sec-1-image1" class="form-label"
+																				style="float:left;">sec-3-span-1</label>
+																			<img src="/{{$urgency[0]['sec-3-span-1']}}" alt="tolak" style="height: 100px;">
+																		</div>
+																	</div>
+																	<div class="col-12 mt-5">
+																		<label class="form-label"
+																			style="float:left;">sec-3-span-1</label>
+																		<input type="file" class="form-control"
+																			id="sec-1-image1" name="sec-3-span-1" required>
+																	</div>
+
+
+																	{{-- <label
 																		class="form-label"
 																		style="float:left;">sec-3-span-1</label>
 																	<input type="text"
@@ -459,7 +475,7 @@
 																		id="validationCustom01"
 																		name="sec-3-span-1"
 																		value="{{$urgency[0]['sec-3-span-1']}}"
-																		required>
+																		required> --}}
 																</div>
 																<div class="col-12 mt-5">
 																	<label
@@ -487,7 +503,23 @@
 
 															<div class="col-6 mt-5">
 																<div class="col-12 mt-5">
-																	<label
+
+																	<div class="col-12 mt-5">
+																		<div class="col-12 mt-5">
+																			<label class="form-label"
+																				style="float:left;">sec-3-span-3</label>
+																			<img src="/{{$urgency[0]['sec-3-span-3']}}" alt="tolak" style="height: 100px;">
+																		</div>
+																	</div>
+																	<div class="col-12 mt-5">
+																		<label for="sec-1-image1" class="form-label"
+																			style="float:left;">sec-3-span-3</label>
+																		<input type="file" class="form-control"
+																			id="sec-1-image1" name="sec-3-span-3" required>
+																	</div>
+
+
+																	{{-- <label
 																		class="form-label"
 																		style="float:left;">sec-3-span-3</label>
 																	<input type="text"
@@ -495,7 +527,7 @@
 																		id="validationCustom01"
 																		name="sec-3-span-3"
 																		value="{{$urgency[0]['sec-3-span-3']}}"
-																		required>
+																		required> --}}
 																</div>
 																<div class="col-12 mt-5">
 																	<label

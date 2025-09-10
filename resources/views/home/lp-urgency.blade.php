@@ -114,6 +114,14 @@
 	@vite(['resources/css/app.css'])
 
 	<style>
+		.btn-call-now {
+			transition: transform 0.3s ease;
+			/* 0.3s = duração | ease = suavidade */
+		}
+
+		.btn-call-now:hover {
+			transform: scale(1.04);
+		}
 		.input-container {
 			display: flex;
 			width: 60%;
@@ -283,6 +291,7 @@
 
 	<script src="{{ asset('assets/vendors/wnumb/wNumb.min.js') }}" defer></script>
 	<script src="{{ asset('assets/vendors/owl-carousel/js/owl.carousel.min.js') }}" defer></script>
+	<link rel="stylesheet" href="https://sospragas.pt/assets/vendors/owl-carousel/css/owl.theme.default.min.css">
 	<script src="{{ asset('assets/vendors/wow/wow.js') }}"></script>
 	<script src="{{ asset('assets/vendors/tilt/tilt.jquery.js') }}"></script>
 	{{-- @vite(['resources/js/app.js']) --}}
@@ -353,6 +362,32 @@
 			color: #000 !important;
 			Cor do placeholder com melhor contraste
 			/* opacity: 1 !important; Garante que o placeholder não fique muito claro */
+		}
+		.pulse-cta {
+			animation: pulse 2s infinite;
+		}
+
+		@keyframes pulse {
+			0% {
+				transform: scale(1);
+				opacity: 1;
+			}
+
+			50% {
+				transform: scale(1.1);
+				/* aumenta 10% */
+				opacity: 0.7;
+				/* fica mais transparente */
+			}
+
+			100% {
+				transform: scale(1);
+				opacity: 1;
+			}
+		}
+
+		.owl-nav {
+			display: none !important;
 		}
 	</style>
 	<script type="application/ld+json">
@@ -511,7 +546,7 @@
 			position: relative;
 			z-index: 2;
 			background-color: var(--tolak-white, #fff);
-			margin: 47px 0 0 0px;
+			margin: 0px 0 0 0px;
 			padding: 70px 60px;
 			box-shadow: 0 0 117px #0c3eb914;
 		}
@@ -683,15 +718,24 @@
 		.urgency-card {
 			background: #fff;
 			text-align: center;
-			margin: 4rem;
+			margin: 5rem 1rem;
 			padding: 1rem;
 			border-radius: 17px;
-			visibility: visible; /* se for usar animações */
+			visibility: visible;
 			animation-delay: 500ms;
 			animation-name: fadeInUp;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 4px;
 		}
 
-
+		.testimonials-three__image__left {
+			position: absolute;
+			left: 440px !important;
+			top: 34px;
+			animation: topToBottom 2.5s linear 0s infinite;
+		}
 		/* Número grande */
 		.urgency-number {
 			font-size: 30px;
@@ -710,7 +754,10 @@
 		}
 
 		.img-animale {
-			position: absolute;top: -19rem;z-index: 9999999999999;width: 30rem;
+			position: absolute;
+			top: -19rem;
+			z-index: 9999999999999 !important;
+			width: 30rem;
 		}
 
 		.card-discont {
@@ -721,9 +768,9 @@
 		.img-animale-2 {
 			position: absolute;
 			z-index: 9999;
-			width: 20rem;
+			width: 37rem;
 			height: 20rem;
-			top: -11rem;
+			top: -18rem;
 			left: 0;
 		}
 
@@ -754,6 +801,20 @@
 
 		}
 
+
+		@keyframes topToBottom {
+
+			0%, 100% {
+				transform: translateY(0);
+			}
+			25%, 75% {
+				transform: translateY(8px);
+			}
+			50% {
+				transform: translateY(16px);
+			}
+		}
+
 	</style>
 
 </head>
@@ -767,11 +828,76 @@
 
 		<section class="section-alert">
 			<div>
-				<p>{{$urgency[0]['sec-1-span-1']}}</p>
+				<p class="p-2 text-white rounded-1 fw-semibold transition duration-300 transform hover:scale-105 pulse-cta">{{$urgency[0]['sec-1-span-1']}}</p>
 			</div>
 		</section>
 
 		<section class="main-slider-three">
+            <div class="main-slider-three__carousel tolak-owl__carousel owl-carousel" data-owl-options='{
+            "loop": false,
+            "animateOut": "fadeOut",
+            "animateIn": "fadeIn",
+            "items": 1,
+            "autoplay": true,
+            "autoplayTimeout": 7000,
+            "smartSpeed": 1000,
+            "nav": false,
+            "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+            "dots": false,
+            "margin": 0
+            }'>
+                <div class="item">
+                    <div class="main-slider-three__item">
+                        <div class="main-slider-three__bg" style="background-image: url(/{{$urgency[0]['sec-2-img-2']}});"></div><!-- slider-bg -->
+                        <div class="main-slider-three__shape-one" style="background-image: url(/{{$urgency[0]['sec-2-img-4']}});"></div><!-- slider-shape -->
+                        <div class="main-slider-three__shape-two" style="background-image: url(/{{$urgency[0]['sec-2-img-5']}});"></div><!-- slider-shape -->
+                        <div class="container">
+							<div class="row">
+								<div class="col-12 col-lg-6">
+									<div class="main-slider-three__content">
+										<img src="/{{$urgency[0]['sec-2-img-1']}}" alt="logo SOSPRAGAS" width="284">
+										<div style="margin-block: 30px;">
+											<h2 class="main-slider-three__title">
+												<span class="main-slider-three__title__anim">{{$urgency[0]['sec-2-h-1']}}</span>
+												<span class="main-slider-three__title__anim">{{$urgency[0]['sec-2-h-2']}}</span>
+											</h2><!-- slider-title -->
+											<ul class="custom-list">
+												@foreach(explode("\r\n", $urgency[0]['sec-2-span-1']) as $feature)
+													<div class="d-flex align-items-center gap-2">
+														<li>{{$feature}}</li>
+													</div>
+												@endforeach
+												{{-- <li>{{$urgency[0]['sec-2-span-1']}}</li>
+												<li>Baratas</li>
+												<li>Percevejos</li> --}}
+											</ul>
+										</div>
+										<div class="card-time">
+											<span>{{$urgency[0]['sec-2-span-2']}}</span>
+											<h2  id="timer">{{$urgency[0]['sec-2-span-4']}}</h2>
+										</div>
+										<div class="main-slider-three__btn">
+											<a href="tel:+351219747353" class="tolak-btn"><b style="text-transform: uppercase;font-weight: 700;">{{$urgency[0]['sec-2-span-3']}}</b><span></span></a><!-- slider-btn -->
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6">
+									<div class="main-slider-three__thumb">
+										<img src="/{{$urgency[0]['sec-2-img-3']}}"
+											alt="tolak">
+									</div>
+								</div>
+
+							</div>
+						</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+		{{-- <section class="main-slider-three">
+
 			<div class="owl-stage-outer">
 				<div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 100%;">
 					<div class="owl-item active" style="width: 100%;">
@@ -779,10 +905,10 @@
 							<div class="main-slider-three__item">
 								<div class="main-slider-three__bg"
 									style="background-image: url(/{{$urgency[0]['sec-2-img-2']}});">
-								</div><!-- slider-bg -->
+								</div>
 								<div class="main-slider-three__shape-one"
 									style="background-image: url(/{{$urgency[0]['sec-2-img-4']}});">
-								</div><!-- slider-shape -->
+								</div>
 								<div class="main-slider-three__shape-two" style="background-image: url(/{{$urgency[0]['sec-2-img-5']}});"></div>
 								<div class="container">
 									<div class="row">
@@ -793,16 +919,13 @@
 													<h2 class="main-slider-three__title">
 														<span class="main-slider-three__title__anim">{{$urgency[0]['sec-2-h-1']}}</span>
 														<span class="main-slider-three__title__anim">{{$urgency[0]['sec-2-h-2']}}</span>
-													</h2><!-- slider-title -->
+													</h2>
 													<ul class="custom-list">
 														@foreach(explode("\r\n", $urgency[0]['sec-2-span-1']) as $feature)
 															<div class="d-flex align-items-center gap-2">
 																<li>{{$feature}}</li>
 															</div>
 														@endforeach
-														{{-- <li>{{$urgency[0]['sec-2-span-1']}}</li>
-														<li>Baratas</li>
-														<li>Percevejos</li> --}}
 													</ul>
 												</div>
 												<div class="card-time">
@@ -810,7 +933,7 @@
 													<h2  id="timer">{{$urgency[0]['sec-2-span-4']}}</h2>
 												</div>
 												<div class="main-slider-three__btn">
-													<a href="/contactos" class="tolak-btn"><b style="text-transform: uppercase;font-weight: 700;">{{$urgency[0]['sec-2-span-3']}}</b><span></span></a><!-- slider-btn -->
+													<a href="tel:+351219747353" class="tolak-btn"><b style="text-transform: uppercase;font-weight: 700;">{{$urgency[0]['sec-2-span-3']}}</b><span></span></a><!-- slider-btn -->
 												</div>
 											</div>
 										</div>
@@ -828,7 +951,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> --}}
 
 		<section class="cta-one">
 			<div class="cta-one__bg"></div>
@@ -839,26 +962,32 @@
 							<img src="/{{$urgency[0]['sec-3-img-1']}}" alt="tolak">
 						</div>
 					</div>
-					<div class="col-lg-4 mt-8 mt-lg-0" data-wow-delay="500ms">
+					<div class="col-lg-8 mt-8 mt-lg-0 d-flex" data-wow-delay="500ms">
 						<div class="urgency-card">
-							<span class="urgency-number">{{$urgency[0]['sec-3-span-1']}}</span>
+							<div style="width: 49px;display: flex;">
+								<img src="/{{$urgency[0]['sec-3-span-1']}}" alt="tolak">
+							</div>
+							<span class="urgency-number"></span>
 							<p class="urgency-title">{{$urgency[0]['sec-3-h-1']}}</p>
 							<span class="urgency-text">{{$urgency[0]['sec-3-span-2']}}</span>
 						</div>
-					</div>
-					<div class="col-lg-4" data-wow-delay="500ms">
 						<div class="urgency-card">
-							<span class="urgency-number">{{$urgency[0]['sec-3-span-3']}}</span>
+							<div style="width: 49px;display: flex;">
+								<img src="/{{$urgency[0]['sec-3-span-3']}}" alt="tolak">
+							</div>
 							<p class="urgency-title">{{$urgency[0]['sec-3-h-2']}}</p>
 							<span class="urgency-text">{{$urgency[0]['sec-3-span-4']}}</span>
 						</div>
 					</div>
+					{{-- <div class="col-lg-4" data-wow-delay="500ms">
+
+					</div> --}}
 				</div>
 			</div>
 		</section>
 
 		<section class="testimonials-three">
-            <div class="testimonials-three__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%" style="background-image: url(https://sospragas.pt/assets/images/backgrounds/testimonial-bg-3.jpg);"></div>
+            <div class="testimonials-three__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%" style="background-image: url(/assets/images/backgrounds/testimonial-bg-3.jpg);"></div>
             <div class="container">
                 <div class="sec-title-two text-center">
                     <h3 class="sec-title-two__title">{{$urgency[0]['sec-4-h-1']}}</h3><!-- /.sec-title-two__title -->
@@ -903,8 +1032,9 @@
                         </div>
                     </div>
 					<div class="col-lg-6">
-                        <div class="testimonials-three__image">
-                            <img src="/{{$urgency[0]['sec-4-img-1']}}" alt="tolak" style="border-radius:30px;" style="visibility: visible; animation-name: slideInLeft;">
+                        <div class="testimonials-three__image slideInLeft">
+							<img src="/{{$urgency[0]['sec-4-img-1']}}" alt="tolak" style="border-radius: 30px; visibility: visible; animation-name: slideInLeft;" class="wow slideInLeft animated animated">
+                            {{-- <img src="/{{$urgency[0]['sec-4-img-1']}}" alt="tolak" style="border-radius:30px; visibility: visible; animation-name: slideInLeft;"> --}}
                             <img class="testimonials-three__image__left" src="/{{$urgency[0]['sec-4-img-2']}}" alt="tolak" style="border-radius:30px;">
                         </div>
                     </div>
@@ -950,7 +1080,7 @@
 
 
 		<section style="">
-			<div style="display: flex;flex-direction: column;align-items: center;padding-block: 1rem;background: #f7f8fc;">
+			<div style="display: flex;flex-direction: column;align-items: center;padding-block: 1rem;padding-bottom: 3rem;background: #f7f8fc;">
 				<span style="color: #022154;font-size: 30px;font-weight: 600;">{{$urgency[0]['sec-6-h-1']}}</span>
 				<span style="color: #ff6600;font-size: 30px;font-weight: 600;">{{$urgency[0]['sec-6-h-2']}}</span>
 			</div>
@@ -975,19 +1105,19 @@
 						</div>
 					</div>
 					<div class="col-md-5">
-						<div style="display: flex;flex-direction: column;gap: 16px;margin-block: 2rem;">
+						<div style="display: flex;flex-direction: column;gap: 16px;margin-block: -2rem 4rem;">
 							<h2 style="font-size: 35px;font-weight: 600;color: #fff;">{{$urgency[0]['sec-6-h-5']}}</h2>
 							<p style="color: #fff;font-size: 16px;">
 								{{$urgency[0]['sec-6-span-2']}}
 							</p>
 						</div>
 						<div style="display: flex;gap: 5px;">
-							<div style="width: 50%;background: red;display: flex;flex-direction: column;align-items: center;padding: 16px;border-radius: 5px;">
+							<div style="width: 50%;background: red;display: flex;flex-direction: column;align-items: center;padding: 16px;border-radius: 5px;" class="btn-call-now">
 								<span style="color: #f2eb0c;">{{$urgency[0]['sec-6-span-3']}}</span>
 								<span style="font-size: 30px;font-weight: 600;color: #fff;text-align: center;" id="timer2">{{$urgency[0]['sec-2-span-4']}}</span>
 							</div>
 							<div style="width: 50%;display: flex;flex-direction: column;gap: 5px;justify-content: center;">
-								<div style="background: #4db051;padding: 11px;display: flex;justify-content: center;color: #fff;border-radius: 4px;align-items: center;">
+								<div class="btn-call-now" style="background: #4db051;padding: 11px;display: flex;justify-content: center;color: #fff;border-radius: 4px;align-items: center;">
 									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 909 900" fill="none">
 									<g filter="url(#filter0_d_1609_353)">
 										<path d="M54 850L122.8 643.614C87.8897 584.897 67.7931 516.372 67.7931 443.103C67.7931 226 243.793 50 460.897 50C678 50 854 226 854 443.103C854 660.207 678 836.207 460.897 836.207C394.841 836.207 332.634 819.834 278 791.062L54 850Z" fill="#2CB742"></path>
@@ -1009,12 +1139,12 @@
 								</svg>
 									<span>{{$urgency[0]['sec-6-span-4']}}</span>
 								</div>
-								<div style="background: #ff6600;padding: 11px;display: flex;justify-content: center;color: #fff;border-radius: 4px;">
+								<div class="btn-call-now" style="background: #ff6600;padding: 11px;display: flex;justify-content: center;color: #fff;border-radius: 4px;">
 									<span>{{$urgency[0]['sec-6-span-5']}}</span>
 								</div>
 							</div>
 						</div>
-						<p style="font-size: 20px;text-align: center;color: #eb6207;margin-top: 15px;">{{$urgency[0]['sec-6-span-6']}}</p>
+						<p style="font-size: 20px;text-align: center;color: #eb6207;margin-top: 15px;"  class="btn-call-now">{{$urgency[0]['sec-6-span-6']}}</p>
 					</div>
 					<div class="img-animale-2">
 						<img src="/{{$urgency[0]['sec-6-img-2']}}" alt="tolak">
@@ -1064,7 +1194,7 @@
             <div class="container" style="border: 1px solid #d8d8d8;padding-block: 4rem;border-radius: 20px;">
                 <div class="row justify-content-center align-items-center">
 					<div class="col-lg-5">
-						<div class="contact-two__info">
+						<div class="contact-two__info wow slideInLeft animated animated">
 							<div class="contact-two__info__shape" style="background-image:url(/{{$urgency[0]['sec-7-img-1']}});background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
 							<h4 class="contact-two__info__title"><b>{{$urgency[0]['sec-7-h-1']}}</b></h4>
 							<p class="contact-two__info__text">
@@ -1176,22 +1306,31 @@
 								<div class="form-one__group">
 									<input class="input-field rounded" type="hidden" value="ContactFormContactos" placeholder="type_form" name="type_form">
 									<div class="form-one__control">
-										<input type="text" name="name" placeholder="Seu nome completo">
+										<input type="text" name="name" placeholder="Nome">
 									</div><!-- /.form-one__control -->
 									<div style="display: flex;justify-content: space-around;gap: 20px;">
 										<div class="form-one__control" style="width: 50%;">
-											<input type="text" name="phone" placeholder="(XX) XXXXX-XXXX">
+											<input type="email" name="email" placeholder="Email">
 										</div><!-- /.form-one__control -->
 										<div class="form-one__control" style="width: 50%;">
-											<input type="text" name="phone2" placeholder="(XX) XXXXX-XXXX">
+											<input type="text" name="phone" placeholder="Telefone">
 										</div><!-- /.form-one__control -->
+										{{-- <div class="form-one__control" style="width: 50%;">
+											<input type="text" name="phone2" placeholder="(XX) XXXXX-XXXX">
+										</div> --}}
 									</div>
+									<select class="form-select" name="service">
+										<option>Selecione a praga que esta a incomodar</option>
+										 @isset($services)
+                    						@foreach ($services as $service)
+												<option value="{{ $service['a'] }}">{{ $service['a'] }}</option>
+											@endforeach
+                						@endisset
+									</select>
+
 									<div class="form-one__control">
-										<input type="email" name="email" placeholder="Email">
-									</div><!-- /.form-one__control -->
-									<div class="form-one__control form-one__control--full">
-										<textarea name="message" placeholder="Mensagem"></textarea><!-- /# -->
-									</div><!-- /.form-one__control -->
+											<input type="text" name="locality" placeholder="Localização">
+										</div><!-- /.form-one__control -->
 									<div class="form-check">
 										<input class="form-check-input" type="checkbox" id="flexCheckDefault" required="">
 										<label class="form-check-label text-left" for="flexCheckDefault" style="color:grey;font-size:12px;">
@@ -1200,7 +1339,7 @@
 									</div>
 									<div id="captcha-container-contact-form" style="display: flex; justify-content: center;"></div>
 									<div class="form-one__control">
-										<button type="button" onclick="loadCaptchaContactForm()" class="tolak-btn2">🚨<b>QUERO FICAR LIVRE DAS PRAGAS HOJE!</b></button>
+										<button type="button" onclick="loadCaptchaContactForm()" class="tolak-btn2"><b>QUERO FICAR LIVRE DAS PRAGAS HOJE!</b></button>
 									</div><!-- /.form-one__control -->
 								</div><!-- /.form-one__group -->
 							</form>
@@ -1218,8 +1357,8 @@
 				</div>
 				<p style="font-size: 23px;color: #ff6600;">{{$urgency[0]['sec-8-span-1']}}
 				</p><div style="display: flex;gap: 23px;color: #fff;">
-					<span>{{$urgency[0]['sec-8-span-2']}}</span>
-					<span>{{$urgency[0]['sec-8-span-3']}}</span>
+					<a href="mailto:{{$urgency[0]['sec-8-span-2']}}" style="color: #fff;font-size: 18px;">{{$urgency[0]['sec-8-span-2']}}</a>
+					<a href="mailto:{{$urgency[0]['sec-8-span-3']}}" style="color: #fff;font-size: 18px;">{{$urgency[0]['sec-8-span-3']}}</a>
 				</div>
 				<span style="color: #fff;text-align: center;"> © 2025 {{$urgency[0]['sec-8-span-4']}}</span>
 			</div>
