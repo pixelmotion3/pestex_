@@ -662,7 +662,7 @@
 		.contact-two__content {
 			position: relative;
 			padding: 35px;
-			background-color: #fafbfc;
+			background-color: #f9f9f9;
 			border-radius: 10px;
 			box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 		}
@@ -744,7 +744,7 @@
 		/* Título */
 		.urgency-title {
 			font-weight: 600;
-			color: #000;
+			color: #ff6600;
 		}
 
 		/* Texto menor */
@@ -774,6 +774,18 @@
 			left: 0;
 		}
 
+		.logo-footer {
+			width: 25%;
+			padding-bottom: 2rem;
+		}
+
+		.section-six-promotion {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			margin-block: -2rem 4rem;
+		}
+
 		@media (max-width: 767px) {
 			.urgency-card {
 				margin: 1rem;
@@ -799,6 +811,32 @@
 				left: 0;
 			}
 
+			.logo-footer {
+				width: 80%;
+				padding-bottom: 2rem;
+			}
+
+			.section-six-promotion {
+				display: flex;
+				flex-direction: column;
+				gap: 16px;
+				margin-block: 4rem 4rem;
+			}
+
+			.service-five {
+				position: relative;
+				background-color: #f7f8fc;
+				padding-top: 3rem;
+				padding-bottom: 0rem;
+			}
+
+		}
+
+		.service-five__item__title {
+			font-size: 22px;
+			font-weight: 700;
+			margin: 0 0 14px;
+			color: #ff6600;
 		}
 
 
@@ -963,20 +1001,20 @@
 						</div>
 					</div>
 					<div class="col-lg-8 mt-8 mt-lg-0 d-flex" data-wow-delay="500ms">
-						<div class="urgency-card">
+						<div class="urgency-card wow slideInUp animated2 animated animated">
 							<div style="width: 49px;display: flex;">
 								<img src="/{{$urgency[0]['sec-3-span-1']}}" alt="tolak">
 							</div>
 							<span class="urgency-number"></span>
 							<p class="urgency-title">{{$urgency[0]['sec-3-h-1']}}</p>
-							<span class="urgency-text">{{$urgency[0]['sec-3-span-2']}}</span>
+							<span class="urgency-text">{!! $urgency[0]['sec-3-span-2'] !!}</span>
 						</div>
-						<div class="urgency-card">
+						<div class="urgency-card wow slideInUp animated2 animated animated">
 							<div style="width: 49px;display: flex;">
 								<img src="/{{$urgency[0]['sec-3-span-3']}}" alt="tolak">
 							</div>
 							<p class="urgency-title">{{$urgency[0]['sec-3-h-2']}}</p>
-							<span class="urgency-text">{{$urgency[0]['sec-3-span-4']}}</span>
+							<span class="urgency-text">{!! $urgency[0]['sec-3-span-4'] !!}</span>
 						</div>
 					</div>
 					{{-- <div class="col-lg-4" data-wow-delay="500ms">
@@ -989,15 +1027,18 @@
 		<section class="testimonials-three">
             <div class="testimonials-three__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%" style="background-image: url(/assets/images/backgrounds/testimonial-bg-3.jpg);"></div>
             <div class="container">
-                <div class="sec-title-two text-center">
+				<div class="sec-title-three text-center">
+                    <h3 class="sec-title-three__title" style="color: #fff;">{{$urgency[0]['sec-4-h-1']}}</h3><!-- /.sec-title-three__title -->
+                </div><!-- /.sec-title-three -->
+                {{-- <div class="sec-title-two text-center">
                     <h3 class="sec-title-two__title">{{$urgency[0]['sec-4-h-1']}}</h3><!-- /.sec-title-two__title -->
-                </div><!-- /.sec-title-two -->
+                </div><!-- /.sec-title-two --> --}}
                 <div class="row">
 
                     <div class="col-lg-6">
                         <div class="testimonials-three__content" style="border-radius:30px;">
                             <h4 class="testimonials-three__content__title">
-                                Os nossos clientes são 5 estrelas
+                                O que dizem os nossos clientes
                             </h4>
                             <div class="testimonials-three__carousel tolak-owl__carousel tolak-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
                         "items": 1,
@@ -1045,7 +1086,7 @@
 		<section class="service-five">
             <div class="container">
                 <div class="sec-title-three text-center">
-                    <h3 class="sec-title-three__title">{{$urgency[0]['sec-5-h-1']}}</h3><!-- /.sec-title-three__title -->
+                    <h3 class="sec-title-three__title" style="color: #ff6600;">{{$urgency[0]['sec-5-h-1']}}</h3><!-- /.sec-title-three__title -->
                 </div><!-- /.sec-title-three -->
 			</div>
 			<div class="container-lg">
@@ -1063,10 +1104,10 @@
 											<img src="/{{$card['icon']}}" alt="tolak">
 										</div><!-- /.service-icon -->
 										<h3 class="service-five__item__title">
-											<a href="business-marketing.html">{{$card['title']}}</a>
+											{{$card['title']}}
 										</h3><!-- /.service-title -->
 										<p class="service-five__item__text">
-											{{$card['description']}}
+											{!! $card['description'] !!}
 										</p><!-- /.service-text -->
 									</div>
 								</div>
@@ -1079,13 +1120,13 @@
 		</section>
 
 
-		<section style="">
+		<section>
 			<div style="display: flex;flex-direction: column;align-items: center;padding-block: 1rem;padding-bottom: 3rem;background: #f7f8fc;">
 				<span style="color: #022154;font-size: 30px;font-weight: 600;">{{$urgency[0]['sec-6-h-1']}}</span>
 				<span style="color: #ff6600;font-size: 30px;font-weight: 600;">{{$urgency[0]['sec-6-h-2']}}</span>
 			</div>
 			<div class="" style="background: #041e1f;">
-				<div class="row justify-content-center align-items-center" style="position: relative;padding-block: 4rem;">
+				<div class="row justify-content-center align-items-end" style="position: relative;padding-block: 4rem;">
 					<div class="col-md-5 card-discont" style="">
 						<div class="pricing-one__card text-center">
 							<div class="pricing-one__card__icon">
@@ -1105,10 +1146,10 @@
 						</div>
 					</div>
 					<div class="col-md-5">
-						<div style="display: flex;flex-direction: column;gap: 16px;margin-block: -2rem 4rem;">
-							<h2 style="font-size: 35px;font-weight: 600;color: #fff;">{{$urgency[0]['sec-6-h-5']}}</h2>
-							<p style="color: #fff;font-size: 16px;">
-								{{$urgency[0]['sec-6-span-2']}}
+						<div class="section-six-promotion">
+							<h2 style="font-size: 67px;font-weight: 600;color: #fff;">{{$urgency[0]['sec-6-h-5']}}</h2>
+							<p style="color: #fff;font-size: 24px;">
+								{!! $urgency[0]['sec-6-span-2'] !!}
 							</p>
 						</div>
 						<div style="display: flex;gap: 5px;">
@@ -1117,7 +1158,7 @@
 								<span style="font-size: 30px;font-weight: 600;color: #fff;text-align: center;" id="timer2">{{$urgency[0]['sec-2-span-4']}}</span>
 							</div>
 							<div style="width: 50%;display: flex;flex-direction: column;gap: 5px;justify-content: center;">
-								<div class="btn-call-now" style="background: #4db051;padding: 11px;display: flex;justify-content: center;color: #fff;border-radius: 4px;align-items: center;">
+								<div class="btn-call-now" style="background: #4db051;padding: 11px;display: flex;justify-content: center;color: #fff;border-radius: 4px;align-items: center;font-weight: 600;" onclick="window.open('https://wa.me/+351937824676')">
 									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 909 900" fill="none">
 									<g filter="url(#filter0_d_1609_353)">
 										<path d="M54 850L122.8 643.614C87.8897 584.897 67.7931 516.372 67.7931 443.103C67.7931 226 243.793 50 460.897 50C678 50 854 226 854 443.103C854 660.207 678 836.207 460.897 836.207C394.841 836.207 332.634 819.834 278 791.062L54 850Z" fill="#2CB742"></path>
@@ -1139,7 +1180,7 @@
 								</svg>
 									<span>{{$urgency[0]['sec-6-span-4']}}</span>
 								</div>
-								<div class="btn-call-now" style="background: #ff6600;padding: 11px;display: flex;justify-content: center;color: #fff;border-radius: 4px;">
+								<div class="btn-call-now" style="background: #ff6600;padding: 11px;display: flex;justify-content: center;color: #fff;border-radius: 4px;font-weight: 600;">
 									<span>{{$urgency[0]['sec-6-span-5']}}</span>
 								</div>
 							</div>
@@ -1271,7 +1312,7 @@
 								<li class="contact-two__info__box">
 									<div class="contact-two__info__box__icon"><i class="icon-pin"></i></div>
 									<h4 class="contact-two__info__box__title">{{$urgency[0]['sec-7-span-6']}}</h4>
-									<p class="contact-two__info__box__text">{{$urgency[0]['sec-7-span-6']}}</p>
+									<p class="contact-two__info__box__text">{{$urgency[0]['sec-7-span-7']}}</p>
 								</li>
 							</ul>
 							<div class="contact-two__info__social">
@@ -1320,7 +1361,7 @@
 										</div> --}}
 									</div>
 									<select class="form-select" name="service">
-										<option>Selecione a praga que esta a incomodar</option>
+										<option>Selecione a praga que está a causar problemas</option>
 										 @isset($services)
                     						@foreach ($services as $service)
 												<option value="{{ $service['a'] }}">{{ $service['a'] }}</option>
@@ -1339,7 +1380,7 @@
 									</div>
 									<div id="captcha-container-contact-form" style="display: flex; justify-content: center;"></div>
 									<div class="form-one__control">
-										<button type="button" onclick="loadCaptchaContactForm()" class="tolak-btn2"><b>QUERO FICAR LIVRE DAS PRAGAS HOJE!</b></button>
+										<button type="button" onclick="loadCaptchaContactForm()" class="tolak-btn2 btn-call-now"><b>Quero livrar-me das pragas hoje</b></button>
 									</div><!-- /.form-one__control -->
 								</div><!-- /.form-one__group -->
 							</form>
@@ -1352,13 +1393,13 @@
 
 		<footer class="main-footer background-black" style="padding-block: 3rem;">
 			<div style="display: flex;flex-direction: column;align-items: center;gap: 15px;">
-				<div style="width: 25rem;padding-bottom: 2rem;">
+				<div class="logo-footer">
 					<img src="/{{$urgency[0]['sec-8-img-1']}}" alt="tolak">
 				</div>
 				<p style="font-size: 23px;color: #ff6600;">{{$urgency[0]['sec-8-span-1']}}
 				</p><div style="display: flex;gap: 23px;color: #fff;">
 					<a href="mailto:{{$urgency[0]['sec-8-span-2']}}" style="color: #fff;font-size: 18px;">{{$urgency[0]['sec-8-span-2']}}</a>
-					<a href="mailto:{{$urgency[0]['sec-8-span-3']}}" style="color: #fff;font-size: 18px;">{{$urgency[0]['sec-8-span-3']}}</a>
+					<a href="tel:{{$urgency[0]['sec-8-span-3']}}" style="color: #fff;font-size: 18px;">{{$urgency[0]['sec-8-span-3']}}</a>
 				</div>
 				<span style="color: #fff;text-align: center;"> © 2025 {{$urgency[0]['sec-8-span-4']}}</span>
 			</div>

@@ -574,7 +574,7 @@
 												<div class='d-flex'>
 													<div class="col-6">
 														<p><b>Email:</b> {{$news["email"]}}</p>
-														<p><b>Status:</b> <?php echo $news["viewed"] == null ? "<span class='text-danger'>Não visualizazdo</span>" : "<span class='text-success'>Visualizado</span>"?></p>
+														<p><b>Status:</b> <?php echo $news["viewed"] == null ? "<span class='text-danger'>Não visualizado</span>" : "<span class='text-success'>Visualizado</span>"?></p>
 													</div>
 													<div class="col-6">
 														<a href="#"
