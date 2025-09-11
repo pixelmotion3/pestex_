@@ -791,6 +791,12 @@
 			margin-block: -2rem 40px;
 		}
 
+		.main-slider-three .active .main-slider-three__thumb {
+			opacity: 1;
+			transform: translateY(0);
+			transition-delay: 1s;
+		}
+
 		@media (max-width: 767px) {
 			.urgency-card {
 				margin: 1rem;
