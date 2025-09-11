@@ -567,7 +567,7 @@
 														<p><b>Email:</b> {{$contact_form["email"]}}</p>
 														<p><b>Telefone:</b> {{$contact_form["phone"]?? "Não informado"}}</p>
 														@if($contact_form["from"] != null)
-															<p><b>LandingPage:</b> {{$contact_form["from"]}}</p>
+															<p><b>Origem:</b> {{$contact_form["from"]}}</p>
 															<p><b>Localidade:</b> {{$contact_form["locality"]}}</p>
 															<p><b>Serviço:</b> {{$contact_form["service"]}}</p>
 														@endif
