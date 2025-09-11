@@ -783,7 +783,7 @@
 			display: flex;
 			flex-direction: column;
 			gap: 16px;
-			margin-block: -2rem 4rem;
+			margin-block: -2rem 40px;
 		}
 
 		@media (max-width: 767px) {
