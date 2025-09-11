@@ -13,6 +13,7 @@ class contact_forms extends Model
         'confirmed',
 		'viewed',
 		'message',
+		'from',
 		'locality',
 		'service'
     ];

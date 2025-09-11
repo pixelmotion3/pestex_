@@ -1809,6 +1809,9 @@ WHERE blog_tag_individuals.idblog = $id
 					'name' => $request->input('name'),
 					'email' => $request->input('email'),
 					'phone' => $request->input('phone'),
+					'service' => $request->input('service'),
+					'from' => $request->input('from'),
+					'locality' => $request->input('locality'),
 					'confirmed' => true
 				]);
 
