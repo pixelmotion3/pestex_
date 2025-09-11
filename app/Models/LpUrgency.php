@@ -45,6 +45,7 @@ class LpUrgency extends Model
 		'sec-6-p-1',
 		'sec-6-img-1',
 		'sec-6-img-2',
+		'sec-6-img-3',
 		'sec-6-span-1',
 		'sec-6-span-2',
 		'sec-6-span-3',

@@ -592,6 +592,11 @@
 			transition: 0.5s;
 		}
 
+		.pricing-one__card__icon img {
+			width: 5rem !important;
+			height: 5rem !important;
+		}
+
 		.pricing-one__card:before {
 			position: absolute;
 			content: "";
@@ -675,7 +680,7 @@
 
 		.testimonials-three {
 			position: relative;
-			z-index: 0 !important;
+			z-index: -9999 !important;
 			background-color: rgb(18, 36, 56);
 			padding: 50px 0px;
 		}
@@ -793,6 +798,7 @@
 			.img-animale {
 				position: absolute;
 				top: -7rem;
+				left: 7rem;
 				z-index: 9999999999999;
 				width: 10rem;
 			}
@@ -883,10 +889,10 @@
             "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
             "dots": false,
             "margin": 0
-            }'>
-                <div class="item">
-                    <div class="main-slider-three__item">
-                        <div class="main-slider-three__bg" style="background-image: url(/{{$urgency[0]['sec-2-img-2']}});"></div><!-- slider-bg -->
+            }' style="z-index: -9999;">
+                <div class="item" >
+                    <div class="main-slider-three__item" style="z-index: -100;">
+                        <div class="main-slider-three__bg" style="background-color:#031b2e;"></div><!-- slider-bg -->
                         <div class="main-slider-three__shape-one" style="background-image: url(/{{$urgency[0]['sec-2-img-4']}});"></div><!-- slider-shape -->
                         <div class="main-slider-three__shape-two" style="background-image: url(/{{$urgency[0]['sec-2-img-5']}});"></div><!-- slider-shape -->
                         <div class="container">
@@ -1000,7 +1006,7 @@
 							<img src="/{{$urgency[0]['sec-3-img-1']}}" alt="tolak">
 						</div>
 					</div>
-					<div class="col-lg-8 mt-8 mt-lg-0 d-flex" data-wow-delay="500ms">
+					<div class="col-lg-8 mt-8 mt-lg-0 d-flex flex-wrap" data-wow-delay="500ms">
 						<div class="urgency-card wow slideInUp animated2 animated animated">
 							<div style="width: 49px;display: flex;">
 								<img src="/{{$urgency[0]['sec-3-span-1']}}" alt="tolak">
@@ -1025,7 +1031,7 @@
 		</section>
 
 		<section class="testimonials-three">
-            <div class="testimonials-three__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%" style="background-image: url(/assets/images/backgrounds/testimonial-bg-3.jpg);"></div>
+            <div class="testimonials-three__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%" style="background-color: #122438;"></div>
             <div class="container">
 				<div class="sec-title-three text-center">
                     <h3 class="sec-title-three__title" style="color: #fff;">{{$urgency[0]['sec-4-h-1']}}</h3><!-- /.sec-title-three__title -->
@@ -1130,7 +1136,7 @@
 					<div class="col-md-5 card-discont" style="">
 						<div class="pricing-one__card text-center">
 							<div class="pricing-one__card__icon">
-								<i class="icon-low-cost"></i>
+								<img src="/{{$urgency[0]['sec-6-img-3']}}" alt="tolak">
 							</div>
 							<h4 class="pricing-one__card__title">{{$urgency[0]['sec-6-h-3']}}</h4>
 							<h3 class="pricing-one__card__price">{{$urgency[0]['sec-6-h-4']}}</h3>
@@ -1180,7 +1186,7 @@
 								</svg>
 									<span>{{$urgency[0]['sec-6-span-4']}}</span>
 								</div>
-								<div class="btn-call-now" style="background: #ff6600;padding: 11px;display: flex;justify-content: center;color: #fff;border-radius: 4px;font-weight: 600;">
+								<div class="btn-call-now" style="background: #ff6600;padding: 11px;display: flex;justify-content: center;color: #fff;border-radius: 4px;font-weight: 600;" onclick="window.open('tel:+351937824676')">
 									<span>{{$urgency[0]['sec-6-span-5']}}</span>
 								</div>
 							</div>
@@ -1380,7 +1386,7 @@
 									</div>
 									<div id="captcha-container-contact-form" style="display: flex; justify-content: center;"></div>
 									<div class="form-one__control">
-										<button type="button" onclick="loadCaptchaContactForm()" class="tolak-btn2 btn-call-now"><b>Quero livrar-me das pragas hoje</b></button>
+										<button type="button" onclick="loadCaptchaContactForm()" class="tolak-btn2 btn-call-now"><b>QUERO LIVRAR-ME DAS PRAGAS HOJEe</b></button>
 									</div><!-- /.form-one__control -->
 								</div><!-- /.form-one__group -->
 							</form>

@@ -192,7 +192,7 @@ class FrontPageController extends Controller
 			'sec-2-img-1', 'sec-2-img-2', 'sec-2-img-3', 'sec-2-img-4', 'sec-2-img-5',
 			'sec-3-img-1',
 			'sec-4-img-1', 'sec-4-img-2',
-			'sec-6-img-1', 'sec-6-img-2',
+			'sec-6-img-1', 'sec-6-img-2', 'sec-6-img-3',
 			'sec-7-img-1',
 			'sec-8-img-1',
 			'sec-3-span-1',

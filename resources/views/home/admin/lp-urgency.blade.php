@@ -657,6 +657,22 @@
 																		id="sec-1-image1" name="sec-6-img-2" required>
 																</div>
 															</div>
+
+															<div class="col-12 mt-5">
+																<div class="col-12 mt-5">
+																	<div class="col-12 mt-5">
+																		<label for="sec-1-image1" class="form-label"
+																			style="float:left;">sec-6-img-3</label>
+																		<img src="/{{$urgency[0]['sec-6-img-3']}}" alt="tolak" style="height: 250px;">
+																	</div>
+																</div>
+																<div class="col-12 mt-5">
+																	<label for="sec-1-image1" class="form-label"
+																		style="float:left;">sec-6-img-3</label>
+																	<input type="file" class="form-control"
+																		id="sec-1-image1" name="sec-6-img-3" required>
+																</div>
+															</div>
 															<div class="col-6 mt-5">
 																<div class="col-12 mt-5">
 																	<label
