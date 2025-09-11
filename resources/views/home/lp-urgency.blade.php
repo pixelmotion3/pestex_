@@ -593,8 +593,8 @@
 		}
 
 		.pricing-one__card__icon img {
-			width: 5rem !important;
-			height: 5rem !important;
+			width: 8rem !important;
+			height: 8rem !important;
 		}
 
 		.pricing-one__card:before {
