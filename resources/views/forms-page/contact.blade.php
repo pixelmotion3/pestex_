@@ -566,6 +566,11 @@
 														<p><b>Nome:</b> {{$contact_form["name"]}}</p>
 														<p><b>Email:</b> {{$contact_form["email"]}}</p>
 														<p><b>Telefone:</b> {{$contact_form["phone"]?? "Não informado"}}</p>
+														@if($contact_form["from"] != null)
+															<p><b>LandingPage:</b> {{$contact_form["from"]}}</p>
+															<p><b>Localidade:</b> {{$contact_form["locality"]}}</p>
+															<p><b>Serviço:</b> {{$contact_form["service"]}}</p>
+														@endif
 														<p><b>Status:</b> <?php echo $contact_form["viewed"] == null ? "<span class='text-danger'>Não visualizado</span>" : "<span class='text-success'>Visualizado</span>"?></p>
 														<p><b>Data/hora:</b>
 															<?php
@@ -575,6 +580,7 @@
 															?>
 															{{$date_new}}
 														</p>
+
 													</div>
 													<div class="col-6">
 														<a href="#"
