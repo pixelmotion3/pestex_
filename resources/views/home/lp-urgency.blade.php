@@ -869,7 +869,7 @@
 
 </head>
 
-<body class="custom-cursor" style="overflow-x: hidden;">
+<body style="overflow-x: hidden;">
 	@include('includes.clickcease')
 
 
