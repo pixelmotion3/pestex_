@@ -800,6 +800,7 @@
 		@media (max-width: 767px) {
 			.urgency-card {
 				margin: 1rem;
+				width: 100%;
 			}
 			.img-animale {
 				position: absolute;
