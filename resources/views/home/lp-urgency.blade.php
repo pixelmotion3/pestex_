@@ -459,6 +459,7 @@
 			margin: 0;
 			display: flex; /* deixa os itens na horizontal */
 			gap: 15px; /* espaço entre os itens */
+			flex-wrap: wrap;
 		}
 
 		ul.custom-list li {
