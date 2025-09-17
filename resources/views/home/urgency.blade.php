@@ -870,7 +870,7 @@
 	</style>
 
 </head>
-<div style="display: flex;justify-content: flex-end;flex-direction: row;background: #ff6600;height: 31px;align-items: center;" class="container-top-menu">
+{{-- <div style="display: flex;justify-content: flex-end;flex-direction: row;background: #ff6600;height: 31px;align-items: center;" class="container-top-menu">
 	<div style="display: flex;color: #fff !important;gap: 17px;margin-right: 14px;font-size: 14px;" class="content-top-menu">
 		<div class="headerlinks">
 			<span class="ti ti-device-mobile me-2"></span>
@@ -882,7 +882,7 @@
 			<a href="/contactos" style="color: #fff;">Pedir Orçamento grátis</a>
 		</div>
 	</div>
-</div>
+</div> --}}
 <body style="overflow-x: hidden;">
 	@include('includes.clickcease')
 
@@ -909,6 +909,8 @@
 							<li class="scrollToLink contactenos-link2"><a href="/contactos"
 									class="font-semibold">Contactos</a></li>
 							<li class="scrollToLink contactenos-link" style="display: none;"><a
+									href="/urgency" class="font-semibold">Emergência</a></li>
+							<li class="scrollToLink contactenos-link" style="display: none;"><a
 									href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
 						</ul>
 					</nav>
@@ -919,12 +921,14 @@
 							<span></span>
 							<span></span>
 						</div>
-						<button href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn"
-							type="submit" name="quote_form">CONTACTE-NOS</button>
+						<div class="d-none d-md-flex " style="display: flex;align-items: center;width: 21rem;">
+							<a href="/urgency" class="btn mt-2 theme-btn-three thm-btn contactenos-btn mr-2" type="submit" name="quote_form">Emergência</a>
+							<button href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn" type="submit" name="quote_form">CONTACTE-NOS</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</header><!-- /.main-header -->
+	</header><!-- /.main-header -->
 	<div class="">
 
 		{{-- <section class="section-alert">
