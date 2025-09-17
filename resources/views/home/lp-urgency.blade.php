@@ -913,12 +913,20 @@
 												<span class="main-slider-three__title__anim">{{$urgency[0]['sec-2-h-1']}}</span>
 												<span class="main-slider-three__title__anim">{{$urgency[0]['sec-2-h-2']}}</span>
 											</h2><!-- slider-title -->
-											<ul class="custom-list">
+											<div style="display: flex;gap: 10px;flex-wrap: wrap;margin-top: 1rem;">
 												@foreach(explode("\r\n", $urgency[0]['sec-2-span-1']) as $feature)
 													<div class="d-flex align-items-center gap-2">
-														<li>{{$feature}}</li>
+														<span style="color: #ff6600;font-weight: 800;">•</span>
+														<span>{{$feature}}</span>
+													</div>
+													<div class="d-flex align-items-center gap-2">
+														<span style="color: #ff6600;font-weight: 800;">•</span>
+														<span>{{$feature}}</span>
 													</div>
 												@endforeach
+											</div>
+											<ul class="custom-list">
+
 												{{-- <li>{{$urgency[0]['sec-2-span-1']}}</li>
 												<li>Baratas</li>
 												<li>Percevejos</li> --}}
