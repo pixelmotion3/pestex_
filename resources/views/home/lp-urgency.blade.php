@@ -773,7 +773,7 @@
 
 		.img-animale-2 {
 			position: absolute;
-			z-index: 9999;
+			z-index: 99;
 			width: 37rem;
 			height: 20rem;
 			top: -14rem;
@@ -818,7 +818,7 @@
 
 			.img-animale-2 {
 				position: absolute;
-				z-index: 9999;
+				z-index: 99;
 				width: 15rem;
 				height: 20rem;
 				top: -3rem;
