@@ -919,10 +919,6 @@
 														<span style="color: #ff6600;font-weight: 800;">•</span>
 														<span>{{$feature}}</span>
 													</div>
-													<div class="d-flex align-items-center gap-2">
-														<span style="color: #ff6600;font-weight: 800;">•</span>
-														<span>{{$feature}}</span>
-													</div>
 												@endforeach
 											</div>
 											<ul class="custom-list">
@@ -1438,51 +1434,51 @@
 	</a>
 
 	<script>
-		// Pega o elemento
+		let savedTime = localStorage.getItem('timeSOSUrgency');
+
 		let textTimerElement = document.getElementById("text-timer");
-		let timerElement = document.getElementById("timer");
 		let textTimerElement2 = document.getElementById("text-timer2");
-		let timerElement2 = document.getElementById("timer2");
 
+		// tempo inicial em segundos
+		let time = savedTime && !isNaN(savedTime) ? parseInt(savedTime) : parseInt(document.getElementById("timer").textContent) * 60;
+		let time2 = savedTime && !isNaN(savedTime) ? parseInt(savedTime) : parseInt(document.getElementById("timer2").textContent) * 60;
 
-		// Pega o valor da tela (em minutos) e converte para segundos
-		let time = parseInt(timerElement.textContent) * 60;
-		let time2 = parseInt(timerElement2.textContent) * 60;
-
-
-		// Função para formatar segundos em hh:mm:ss
 		function formatTime(seconds) {
 			let hrs = Math.floor(seconds / 3600);
 			let mins = Math.floor((seconds % 3600) / 60);
 			let secs = seconds % 60;
 
 			return (
-			String(hrs).padStart(2, "0") + ":" +
-			String(mins).padStart(2, "0") + ":" +
-			String(secs).padStart(2, "0")
+				String(hrs).padStart(2, "0") + ":" +
+				String(mins).padStart(2, "0") + ":" +
+				String(secs).padStart(2, "0")
 			);
 		}
 
-		// Exibe o valor inicial formatado
-		timerElement.textContent = formatTime(time);
-		timerElement2.textContent = formatTime(time2);
+		// Exibe valor inicial
+		document.getElementById("timer").textContent = formatTime(time);
+		document.getElementById("timer2").textContent = formatTime(time2);
 
-		// Contador regressivo
 		let countdown = setInterval(function () {
-			time--; // diminui 1 segundo
-			time2--; // diminui 1 segundo
-			timerElement.textContent = formatTime(time);
-			timerElement2.textContent = formatTime(time2);
-
-			if (time <= 0) {
-				clearInterval(countdown);
-				textTimerElement.innerHTML = "Expirado: Tente agora na mesma";
-				timerElement.innerHTML = "00:00:00";
+			if (time > 0) {
+				time--;
+				document.getElementById("timer").textContent = formatTime(time);
+				localStorage.setItem('timeSOSUrgency', time);
+			} else if (textTimerElement) {
+				textTimerElement.textContent = "Expirado: Tente agora na mesma";
+				document.getElementById("timer").textContent = "00:00:00";
 			}
-			if (time2 <= 0) {
+
+			if (time2 > 0) {
+				time2--;
+				document.getElementById("timer2").textContent = formatTime(time2);
+			} else if (textTimerElement2) {
+				textTimerElement2.textContent = "Expirado: Tente agora na mesma";
+				document.getElementById("timer2").textContent = "00:00:00";
+			}
+
+			if (time <= 0 && time2 <= 0) {
 				clearInterval(countdown);
-				textTimerElement2.innerHTML = "Expirado: Tente agora na mesma";
-				timerElement2.innerHTML = "00:00:00";
 			}
 		}, 1000);
 	</script>

@@ -183,6 +183,20 @@ class FrontPageController extends Controller
         ]);
     }
 
+	public function urgency(Request $request)
+    {
+        $urgency = LpUrgency::all();
+		$comments = LpUrgencyComments::all();
+		$cards = LpUrgencyCards::all();
+		$services = ServiceDetails::all();
+        return view('home.urgency', [
+            'urgency' => $urgency,
+			'comments' => $comments,
+			'cards' => $cards,
+			'services' => $services
+        ]);
+    }
+
 	public function updateLpUrgency(Request $request)
     {
         $model = LpUrgency::findOrFail(1);
