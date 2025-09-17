@@ -933,7 +933,7 @@
 											</ul>
 										</div>
 										<div class="card-time">
-											<span>{{$urgency[0]['sec-2-span-2']}}</span>
+											<span id="text-timer">{{$urgency[0]['sec-2-span-2']}}</span>
 											<h2  id="timer">{{$urgency[0]['sec-2-span-4']}}</h2>
 										</div>
 										<div class="main-slider-three__btn">
@@ -1176,7 +1176,7 @@
 						</div>
 						<div style="display: flex;gap: 5px;">
 							<div style="width: 50%;background: red;display: flex;flex-direction: column;align-items: center;padding: 16px;border-radius: 5px;" class="btn-call-now">
-								<span style="color: #f2eb0c;">{{$urgency[0]['sec-6-span-3']}}</span>
+								<span style="color: #f2eb0c;" id="text-timer2">{{$urgency[0]['sec-6-span-3']}}</span>
 								<span style="font-size: 30px;font-weight: 600;color: #fff;text-align: center;" id="timer2">{{$urgency[0]['sec-2-span-4']}}</span>
 							</div>
 							<div style="width: 50%;display: flex;flex-direction: column;gap: 5px;justify-content: center;">
@@ -1439,7 +1439,9 @@
 
 	<script>
 		// Pega o elemento
+		let textTimerElement = document.getElementById("text-timer");
 		let timerElement = document.getElementById("timer");
+		let textTimerElement2 = document.getElementById("text-timer2");
 		let timerElement2 = document.getElementById("timer2");
 
 
@@ -1474,11 +1476,13 @@
 
 			if (time <= 0) {
 				clearInterval(countdown);
-				timerElement.innerHTML = "<span style='font-size: 20px;'>Ligue agora, com sorte ainda lhe fazemos o desconto 😉</span>";
+				textTimerElement.innerHTML = "Expirado: Tente agora na mesma";
+				timerElement.innerHTML = "00:00:00";
 			}
 			if (time2 <= 0) {
 				clearInterval(countdown);
-				timerElement2.innerHTML = "<span style='font-size: 20px;'>Ligue agora, com sorte ainda lhe fazemos o desconto 😉</span>";
+				textTimerElement2.innerHTML = "Expirado: Tente agora na mesma";
+				timerElement2.innerHTML = "00:00:00";
 			}
 		}, 1000);
 	</script>
