@@ -1804,10 +1804,10 @@
 
 				if (time2 > 0) {
 					time2--;
-					document.getElementById("timer2").textContent = formatTime(time2);
+					if(document.getElementById("timer2")) document.getElementById("timer2").textContent = formatTime(time2);
 				} else if (textTimerElement2) {
 					textTimerElement2.textContent = "Expirado: Tente agora na mesma";
-					document.getElementById("timer2").textContent = "00:00:00";
+					if(document.getElementById("timer2")) document.getElementById("timer2").textContent = "00:00:00";
 				}
 
 				if (time <= 0 && time2 <= 0) {
