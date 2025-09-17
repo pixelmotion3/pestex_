@@ -1795,11 +1795,11 @@
 			let countdown = setInterval(function () {
 				if (time > 0) {
 					time--;
-					document.getElementById("timer").textContent = formatTime(time);
+					if(document.getElementById("timer")) document.getElementById("timer").textContent = formatTime(time);
 					localStorage.setItem('timeSOSUrgency', time);
 				} else if (textTimerElement) {
 					textTimerElement.textContent = "Expirado: Tente agora na mesma";
-					document.getElementById("timer").textContent = "00:00:00";
+					if(document.getElementById("timer")) document.getElementById("timer").textContent = "00:00:00";
 				}
 
 				if (time2 > 0) {

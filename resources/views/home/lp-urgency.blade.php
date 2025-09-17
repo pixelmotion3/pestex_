@@ -930,7 +930,7 @@
 										</div>
 										<div class="card-time">
 											<span id="text-timer">{{$urgency[0]['sec-2-span-2']}}</span>
-											<h2  id="timer">{{$urgency[0]['sec-2-span-4']}}</h2>
+											<h2 id="timer">{{$urgency[0]['sec-2-span-4']}}</h2>
 										</div>
 										<div class="main-slider-three__btn">
 											<a href="tel:+351219747353" class="tolak-btn"><b style="text-transform: uppercase;font-weight: 700;">{{$urgency[0]['sec-2-span-3']}}</b><span></span></a><!-- slider-btn -->
@@ -1463,11 +1463,11 @@
 			let countdown = setInterval(function () {
 				if (time > 0) {
 					time--;
-					document.getElementById("timer").textContent = formatTime(time);
+					if(document.getElementById("timer")) document.getElementById("timer").textContent = formatTime(time);
 					localStorage.setItem('timeSOSUrgency', time);
 				} else if (textTimerElement) {
 					textTimerElement.textContent = "Expirado: Tente agora na mesma";
-					document.getElementById("timer").textContent = "00:00:00";
+					if(document.getElementById("timer")) document.getElementById("timer").textContent = "00:00:00";
 				}
 
 				if (time2 > 0) {
