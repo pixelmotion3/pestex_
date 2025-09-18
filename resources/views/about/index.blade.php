@@ -584,7 +584,7 @@ setTimeout(function() {
 											<div class="testimonials-card-three__image">
 												<img src="assets/images/resources/testi-1-4.jpg" alt="Lataro Marsena">
 											</div><!-- /.testimonials-card-three__image -->
-											<h3 class="testimonials-card-three__name">
+											<h3 class="testimonials-card-three__name" style="margin: 0 0 0px !important;">
 												{{ $testimonial['name'] }}
 											</h3><!-- /.testimonials-card-three__name -->
 											<span style="color: #ff6600;font-size: 12px;">Cliente SOS Pragas</span>
