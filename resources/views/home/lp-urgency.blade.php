@@ -1080,6 +1080,7 @@
 											<h3 class="testimonials-card-three__name">
 												{{$comment['name']}}
 											</h3>
+											<span style="color: #ff6600;font-size: 12px;">Cliente SOS Pragas</span>
 										</div>
 									</div>
 								</div>

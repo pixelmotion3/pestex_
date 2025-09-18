@@ -587,6 +587,7 @@ setTimeout(function() {
 											<h3 class="testimonials-card-three__name">
 												{{ $testimonial['name'] }}
 											</h3><!-- /.testimonials-card-three__name -->
+											<span style="color: #ff6600;font-size: 12px;">Cliente SOS Pragas</span>
 											{{-- <p class="testimonials-card-three__designation">{{ $testimonial[0]['p'] }}</p><!-- /.testimonials-card-three__designation --> --}}
 										</div>
 									</div><!-- /.testimonials-card-three -->
