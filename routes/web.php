@@ -508,6 +508,36 @@ Route::domain('desinfestacoes.sospragas.pt')->group(function () {
 
 
 
+		Route::get('/admin/lp-maintenance', [FrontPageController::class, 'adminLpMaintenance'])->name('FrontPage.AdminLpMaintenance');
+		Route::post('/admin/lp-maintenance/update', [FrontPageController::class, 'updateLpMaintenance'])->name('FrontPage.AdminLpMaintenanceUpdate');
+		Route::post('/admin/lp-maintenance/comment', [FrontPageController::class, 'lpMaintenanceCommentsNew'])->name('FrontPage.AdminLpMaintenanceNewComment');
+		Route::post('/admin/lp-maintenance/comment/update', [FrontPageController::class, 'lpMaintenanceCommentsUpdate'])->name('FrontPage.AdminLpMaintenanceUpdateComment');
+		Route::post('/admin/lp-maintenance/comment/delete/{id}', [FrontPageController::class, 'lpMaintenanceCommentsDelete'])->name('FrontPage.AdminLpMaintenanceDeleteComment');
+
+		Route::post('/admin/lp-maintenance/card', [FrontPageController::class, 'lpMaintenanceCardsNew'])->name('FrontPage.AdminLpMaintenanceNewCard');
+		Route::post('/admin/lp-maintenance/card/update', [FrontPageController::class, 'lpMaintenanceCardsUpdate'])->name('FrontPage.AdminLpMaintenanceUpdateCard');
+		Route::post('/admin/lp-maintenance/card/delete/{id}', [FrontPageController::class, 'lpMaintenanceCardsDelete'])->name('FrontPage.AdminLpMaintenanceDeleteCard');
+
+
+		Route::post('/admin/lp-maintenance/card-benefits', [FrontPageController::class, 'lpMaintenanceCardsBenefitsNew'])->name('FrontPage.AdminLpMaintenanceNewCardBenefits');
+		Route::post('/admin/lp-maintenance/card-benefits/update', [FrontPageController::class, 'lpMaintenanceCardsBenefitsUpdate'])->name('FrontPage.AdminLpMaintenanceUpdateCardBenefits');
+		Route::post('/admin/lp-maintenance/card-benefits/delete/{id}', [FrontPageController::class, 'lpMaintenanceCardsBenefitsDelete'])->name('FrontPage.AdminLpMaintenanceDeleteCardBenefits');
+
+		Route::post('/admin/lp-maintenance/card-steps', [FrontPageController::class, 'lpMaintenanceCardsStepsNew'])->name('FrontPage.AdminLpMaintenanceNewCardSteps');
+		Route::post('/admin/lp-maintenance/card-steps/update', [FrontPageController::class, 'lpMaintenanceCardsStepsUpdate'])->name('FrontPage.AdminLpMaintenanceUpdateCardSteps');
+		Route::post('/admin/lp-maintenance/card-steps/delete/{id}', [FrontPageController::class, 'lpMaintenanceCardsStepsDelete'])->name('FrontPage.AdminLpMaintenanceDeleteCardSteps');
+
+		Route::post('/admin/lp-maintenance/card-faq', [FrontPageController::class, 'lpMaintenanceCardsFaqsNew'])->name('FrontPage.AdminLpMaintenanceNewFaqs');
+		Route::post('/admin/lp-maintenance/card-faq/update', [FrontPageController::class, 'lpMaintenanceCardsFaqsUpdate'])->name('FrontPage.AdminLpMaintenanceUpdateFaqs');
+		Route::post('/admin/lp-maintenance/card-faq/delete/{id}', [FrontPageController::class, 'lpMaintenanceCardsFaqsDelete'])->name('FrontPage.AdminLpMaintenanceDeleteFaqs');
+
+
+		Route::post('/admin/lp-maintenance/card-whyus', [FrontPageController::class, 'lpMaintenanceCardsWhyUsNew'])->name('FrontPage.AdminLpMaintenanceNewWhyUs');
+		Route::post('/admin/lp-maintenance/card-whyus/update', [FrontPageController::class, 'lpMaintenanceCardsWhyUsUpdate'])->name('FrontPage.AdminLpMaintenanceUpdateWhyUs');
+		Route::post('/admin/lp-maintenance/card-whyus/delete/{id}', [FrontPageController::class, 'lpMaintenanceCardsWhyUsDelete'])->name('FrontPage.AdminLpMaintenanceDeleteWhyUs');
+
+
+
 		Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
 		Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 
