@@ -439,6 +439,11 @@
 		.main-slider-three__content {
 			margin-block: 1rem;
 		}
+
+		.why-choose-three__content {
+			position: relative;
+			padding: 45px 0;
+		}
 		.main-slider-three__shape-one {
 			opacity: 0;
 			position: absolute;
@@ -937,12 +942,12 @@
 													<h3 class="main-slider-four__title-two" style="color: #ff6600">{{$maintenance[0]['sec_1_h_1']}}</h3>
 													<!-- slider-title -->
 													<h2 class="main-slider-four__title" style="-webkit-text-fill-color: white !important; -webkit-text-stroke-width: 0px !important; -webkit-text-stroke-color: var(--tolak-white, #fff) !important; text-transform: none !important; font-size: 56px;">
-														{{$maintenance[0]['sec_1_h_2']}}
+														{!! $maintenance[0]['sec_1_h_2'] !!}
 													</h2>
 													<!-- slider-title -->
 													<div class="main-slider-four__text">
 														<p class="main-slider-four__text__one" style="color: #fff">
-															{{$maintenance[0]['sec_1_p_3']}}
+															{!! $maintenance[0]['sec_1_p_3'] !!}
 														</p>
 													</div><!-- slider-text -->
 													<div class="main-slider-four__btn">
@@ -1057,8 +1062,8 @@
 								@isset($whyUsArray)
 									@foreach ($whyUsArray as $whyUs)
 										<div style="font-size: 16px;">
-											<span style="color: #ff6600;">{{$whyUs['text1']}}:</span>
-											<span class="text-white">{{$whyUs['response']}}:</span>
+											<span style="color: #ff6600;">{{$whyUs['text1']}}</span>
+											<span class="text-white">{{$whyUs['response']}}</span>
 										</div>
 									@endforeach
 								@endisset
@@ -1262,7 +1267,7 @@
                             <h3 class="faq-page__contact__title">{!! $maintenance[0]['sec_8_h_1'] !!}</h3><!-- /.faq-page__contact__title -->
                             <div class="faq-page__contact__text">
                                 <i class="icofont-phone">
-									<img src="assets/images/call_now.png" alt="Produtos ecologicos seguros" loading="lazy" style="width: 2rem;height: 2rem;">
+									<img src="assets/images/call_now.png" alt="Produtos ecologicos seguros" loading="lazy" style="width: 2rem !important;height: 2rem !important;">
 								</i>
                                 <p class="faq-page__contact__number">
                                     {!! $maintenance[0]['sec_8_p_1'] !!}<br>
