@@ -743,13 +743,13 @@ public function Maintenance(Request $request)
 	public function adminLpMaintenance(Request $request)
 	{
 		$maintenance = LpMaintenance::all();
-		$comments = LpMaintenanceComments::all();
 		$cards = LpMaintenanceCards::all();
 		$cardsBenefits = LpMaintenanceCardsBenefits::all();
-		$cardSteps = LpMaintenanceCardsSteps::all();
 		$faqs = LpMaintenanceCardsFaqs::all();
+		$cardSteps = LpMaintenanceCardsSteps::all();
 		$whyUsArray = LpMaintenanceCardsWhyUs::all();
-		return view('home.admin.lp-Maintenance', [
+		$comments = LpMaintenanceComments::all();
+		return view('home.admin.lp-maintenance', [
 			'maintenance' => $maintenance,
 			'cardsBenefits' => $cardsBenefits,
 			'cardSteps' => $cardSteps,
