@@ -1266,9 +1266,9 @@
                         <div class="faq-page__contact background-base">
                             <h3 class="faq-page__contact__title">{!! $maintenance[0]['sec_8_h_1'] !!}</h3><!-- /.faq-page__contact__title -->
                             <div class="faq-page__contact__text">
-                                <i class="icofont-phone">
+                                <div>
 									<img src="assets/images/call_now.png" style="width: 2rem !important;height: 2rem !important;">
-								</i>
+								</div>
                                 <p class="faq-page__contact__number">
                                     {!! $maintenance[0]['sec_8_p_1'] !!}<br>
                                     <a href="tel:{{$maintenance[0]['sec_8_p_2']}}">{!! $maintenance[0]['sec_8_p_2'] !!}</a>
