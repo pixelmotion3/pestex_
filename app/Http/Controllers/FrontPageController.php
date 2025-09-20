@@ -33,6 +33,13 @@ use App\Models\quote_forms;
 use App\Models\contact_forms;
 use App\Models\ContactInfo;
 use App\Models\faq;
+use App\Models\LpMaintenance;
+use App\Models\LpMaintenanceCards;
+use App\Models\LpMaintenanceCardsBenefits;
+use App\Models\LpMaintenanceCardsFaqs;
+use App\Models\LpMaintenanceCardsSteps;
+use App\Models\LpMaintenanceCardsWhyUs;
+use App\Models\LpMaintenanceComments;
 use App\Models\News_letter;
 use App\Models\PageView;
 use App\Models\schedule_inspection;
@@ -180,6 +187,27 @@ class FrontPageController extends Controller
 			'comments' => $comments,
 			'cards' => $cards,
 			'services' => $services
+        ]);
+    }
+
+	public function lpMaintenance(Request $request)
+    {
+
+        $maintenance = LpMaintenance::all();
+		$comments = LpMaintenanceComments::all();
+		$cards = LpMaintenanceCards::all();
+		$cardsBenefits = LpMaintenanceCardsBenefits::all();
+		$cardsSteps = LpMaintenanceCardsSteps::all();
+		$faqs = LpMaintenanceCardsFaqs::all();
+		$whyUsArray = LpMaintenanceCardsWhyUs::all();
+        return view('home.lp-maintenance', [
+            'maintenance' => $maintenance,
+			'comments' => $comments,
+			'cards' => $cards,
+			'cardsBenefits' => $cardsBenefits,
+			'faqs' => $faqs,
+			'whyUsArray' => $whyUsArray,
+			'cardsSteps' => $cardsSteps
         ]);
     }
 
@@ -341,6 +369,365 @@ class FrontPageController extends Controller
 
 
 
+	// Maintenence
+public function Maintenance(Request $request)
+    {
+        $Maintenance = LpMaintenance::all();
+		$comments = LpMaintenanceComments::all();
+		$cards = LpMaintenanceCards::all();
+		$services = ServiceDetails::all();
+        return view('home.Maintenance', [
+            'Maintenance' => $Maintenance,
+			'comments' => $comments,
+			'cards' => $cards,
+			'services' => $services
+        ]);
+    }
+
+	public function updateLpMaintenance(Request $request)
+    {
+        $model = LpMaintenance::findOrFail(1);
+
+		// Lista de campos que são imagens
+		$imageFields = [
+			'sec_1_img_1', 'sec_2_img_1', 'sec_2_img_2', 'sec_2_img_3', 'sec_6_img_1',
+			'sec_6_img_2',
+			'sec_7_img_1', 'sec_9_img_1',
+			'sec_9_img_2', 'sec_9_img_3', 'sec_9_img_4', 'sec_10_img_1',
+			'sec_1_img_2',
+			'sec_4_img_1'
+		];
+
+		foreach ($imageFields as $field) {
+			if ($request->hasFile($field)) {
+				$path = $request->file($field)->store('assets/images');
+				$model->update([
+					$field => 'storage/' . $path
+				]);
+			}
+		}
+
+		// Atualiza os textos/spans/h's
+		$textFields = [
+			'sec_1_h_1',
+			'sec_1_h_2',
+			'sec_1_p_3',
+			'sec_1_span_4',
+			'sec_1_span_5',
+			'sec_2_span_1',
+			'sec_2_span_2',
+			'sec_2_span_3',
+			'sec_2_span_4',
+			'sec_2_span_5',
+			'sec_2_span_6',
+			'sec_3_h_1',
+			'sec_3_p_1',
+			'sec_4_p_1',
+			'sec_4_h_1',
+			'sec_5_h_1',
+			'sec_6_h_1',
+			'sec_7_h_1',
+			'sec_7_p_1',
+			'sec_8_h_1',
+			'sec_8_p_1',
+			'sec_8_p_2',
+			'sec_9_h_1',
+			'sec_9_p_1',
+			'sec_9_span_1',
+			'sec_10_p_1',
+			'sec_10_span_1',
+			'sec_10_span_2',
+			'sec_10_span_3',
+			'sec_10_span_4'
+		];
+
+		$updateData = [];
+		foreach ($textFields as $field) {
+			if ($request->has($field)) {
+				$updateData[$field] = $request->input($field);
+			}
+		}
+
+		$model->update($updateData);
+
+		return back();
+    }
+
+
+	public function lpMaintenanceCommentsNew(Request $request)
+	{
+        $model = LpMaintenanceComments::create([
+            'name' => $request->input('name'),
+            'comment' => $request->input('comment')
+        ]);
+		return back();
+    }
+
+	public function lpMaintenanceCommentsUpdate(Request $request)
+	{
+		$query = LpMaintenanceComments::where('id',$request->input('id'))->update([
+			'name' => $request->input('name'),
+            'comment' => $request->input('comment')
+		]);
+
+		return back();
+    }
+
+	public function lpMaintenanceCommentsDelete($id)
+	{
+		$query = LpMaintenanceComments::findOrFail($id);
+
+        if ($query->delete()) {
+			return redirect()->back();
+        }
+    }
+
+
+
+	public function lpMaintenanceCardsNew(Request $request)
+	{
+		$pathIcon = "";
+		$pathImage = "";
+		if ($request->hasFile($request->input('icon'))) {
+			$path = $request->file('icon')->store('assets/images');
+			$pathIcon = 'storage/' . $path;
+		}
+
+		if ($request->hasFile($request->input('img'))) {
+			$path = $request->file('img')->store('assets/images');
+			$pathImage = 'storage/' . $path;
+		}
+
+
+        $model = LpMaintenanceCards::create([
+            'title' => $request->input('title'),
+            'icon' => $pathIcon,
+			'img' => $pathImage,
+			'description' => $request->input('description'),
+        ]);
+
+
+		return back();
+    }
+
+	public function lpMaintenanceCardsUpdate(Request $request)
+	{
+		$query = LpMaintenanceCards::where('id',$request->input('id'))->update([
+			'title' => $request->input('title'),
+            'description' => $request->input('description')
+		]);
+
+		$imageFields = [
+			'icon', 'img'
+		];
+
+		foreach ($imageFields as $field) {
+			if ($request->hasFile($field)) {
+				$path = $request->file($field)->store('assets/images');
+
+				LpMaintenanceCards::where('id',$request->input('id'))->update([
+					$field => 'storage/' . $path
+				]);
+			}
+		}
+
+		return back();
+    }
+
+	public function lpMaintenanceCardsDelete($id)
+	{
+		$query = LpMaintenanceCards::findOrFail($id);
+
+        if ($query->delete()) {
+			return redirect()->back();
+        }
+    }
+
+	public function lpMaintenanceCardsBenefitsNew(Request $request)
+	{
+		$pathIcon = "";
+		$pathImage = "";
+		if ($request->hasFile($request->input('icon'))) {
+			$path = $request->file('icon')->store('assets/images');
+			$pathIcon = 'storage/' . $path;
+		}
+
+		if ($request->hasFile($request->input('img'))) {
+			$path = $request->file('img')->store('assets/images');
+			$pathImage = 'storage/' . $path;
+		}
+
+
+        $model = LpMaintenanceCardsBenefits::create([
+            'title' => $request->input('title'),
+            'icon' => $pathIcon,
+			'img' => $pathImage,
+			'description' => $request->input('description'),
+        ]);
+
+
+		return back();
+    }
+
+	public function lpMaintenanceCardsBenefitsUpdate(Request $request)
+	{
+		$query = LpMaintenanceCardsBenefits::where('id',$request->input('id'))->update([
+			'title' => $request->input('title'),
+            'description' => $request->input('description')
+		]);
+
+		$imageFields = [
+			'icon', 'img'
+		];
+
+		foreach ($imageFields as $field) {
+			if ($request->hasFile($field)) {
+				$path = $request->file($field)->store('assets/images');
+
+				LpMaintenanceCardsBenefits::where('id',$request->input('id'))->update([
+					$field => 'storage/' . $path
+				]);
+			}
+		}
+
+		return back();
+    }
+
+	public function lpMaintenanceCardsBenefitsDelete($id)
+	{
+		$query = LpMaintenanceCardsBenefits::findOrFail($id);
+
+        if ($query->delete()) {
+			return redirect()->back();
+        }
+    }
+
+
+	public function lpMaintenanceCardsStepsNew(Request $request)
+	{
+		$pathIcon = "";
+		if ($request->hasFile($request->input('icon'))) {
+			$path = $request->file('icon')->store('assets/images');
+			$pathIcon = 'storage/' . $path;
+		}
+
+
+
+        $model = LpMaintenanceCardsSteps::create([
+            'title' => $request->input('title'),
+            'icon' => $pathIcon,
+			'description' => $request->input('description'),
+        ]);
+
+
+		return back();
+    }
+
+	public function lpMaintenanceCardsStepsUpdate(Request $request)
+	{
+		$query = LpMaintenanceCardsSteps::where('id',$request->input('id'))->update([
+			'title' => $request->input('title'),
+            'description' => $request->input('description')
+		]);
+
+		$imageFields = [
+			'icon'
+		];
+
+		foreach ($imageFields as $field) {
+			if ($request->hasFile($field)) {
+				$path = $request->file($field)->store('assets/images');
+
+				LpMaintenanceCardsSteps::where('id',$request->input('id'))->update([
+					$field => 'storage/' . $path
+				]);
+			}
+		}
+
+		return back();
+    }
+
+	public function lpMaintenanceCardsStepsDelete($id)
+	{
+		$query = LpMaintenanceCardsSteps::findOrFail($id);
+
+        if ($query->delete()) {
+			return redirect()->back();
+        }
+    }
+
+
+	public function lpMaintenanceCardsFaqsNew(Request $request)
+	{
+
+
+
+        $model = LpMaintenanceCardsFaqs::create([
+            'question' => $request->input('question'),
+			'response' => $request->input('response')
+        ]);
+
+
+		return back();
+    }
+
+	public function lpMaintenanceCardsFaqsUpdate(Request $request)
+	{
+		$query = LpMaintenanceCardsFaqs::where('id',$request->input('id'))->update([
+			'question' => $request->input('question'),
+			'response' => $request->input('response')
+		]);
+
+
+		return back();
+    }
+
+	public function lpMaintenanceCardsFaqsDelete($id)
+	{
+		$query = LpMaintenanceCardsFaqs::findOrFail($id);
+
+        if ($query->delete()) {
+			return redirect()->back();
+        }
+    }
+
+	public function lpMaintenanceCardsWhyUsNew(Request $request)
+	{
+
+
+
+        $model = LpMaintenanceCardsWhyUs::create([
+            'text1' => $request->input('text1'),
+			'response' => $request->input('response')
+        ]);
+
+
+		return back();
+    }
+
+	public function lpMaintenanceCardsWhyUsUpdate(Request $request)
+	{
+		$query = LpMaintenanceCardsWhyUs::where('id',$request->input('id'))->update([
+			'text1' => $request->input('text1'),
+			'response' => $request->input('response')
+		]);
+
+
+		return back();
+    }
+
+	public function lpMaintenanceCardsWhyUsDelete($id)
+	{
+		$query = LpMaintenanceCardsWhyUs::findOrFail($id);
+
+        if ($query->delete()) {
+			return redirect()->back();
+        }
+    }
+
+	// End maintenenca
+
+
 	public function adminLpUrgency(Request $request)
     {
 		$urgency = LpUrgency::all();
@@ -352,6 +739,27 @@ class FrontPageController extends Controller
 			'cards' => $cards
 		]);
     }
+
+	public function adminLpMaintenance(Request $request)
+	{
+		$maintenance = LpMaintenance::all();
+		$comments = LpMaintenanceComments::all();
+		$cards = LpMaintenanceCards::all();
+		$cardsBenefits = LpMaintenanceCardsBenefits::all();
+		$cardSteps = LpMaintenanceCardsSteps::all();
+		$faqs = LpMaintenanceCardsFaqs::all();
+		$whyUsArray = LpMaintenanceCardsWhyUs::all();
+		return view('home.admin.lp-Maintenance', [
+			'maintenance' => $maintenance,
+			'cardsBenefits' => $cardsBenefits,
+			'cardSteps' => $cardSteps,
+			'comments' => $comments,
+			'cards' => $cards,
+			'faqs' => $faqs,
+			'whyUsArray' => $whyUsArray
+		]);
+	}
+
 
 	public function TermoServicos()
     {
