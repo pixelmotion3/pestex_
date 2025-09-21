@@ -1265,7 +1265,7 @@
                     <div class="col-lg-4">
                         <div class="faq-page__contact background-base">
                             <h3 class="faq-page__contact__title">{!! $maintenance[0]['sec_8_h_1'] !!}</h3><!-- /.faq-page__contact__title -->
-                            <div class="faq-page__contact__text">
+                            <div class="faq-page__contact__text" style="gap: 1rem;">
                                 <div>
 									<img src="assets/images/call_now.png" style="width: 2rem !important;height: 2rem !important;">
 								</div>
