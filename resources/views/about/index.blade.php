@@ -232,7 +232,7 @@ setTimeout(function() {
 						<li class="scrollToLink"><a href="/blogs" class="font-semibold">Blog</a></li>
 						<li class="scrollToLink contactenos-link2"><a href="/contactos" class="font-semibold">Contactos</a></li>
 						<li class="scrollToLink contactenos-link" style="display: none;"><a
-									href="/urgency" class="font-semibold">Emergência</a></li>
+									href="/urgencia" class="font-semibold">Emergência</a></li>
 						<li class="scrollToLink contactenos-link" style="display: none;"><a href="tel:00351219747353" class="font-semibold">CONTACTE-NOS</a></li>
 					</ul>
 				</nav>
@@ -244,7 +244,7 @@ setTimeout(function() {
 						<span></span>
 					</div>
 					<div class="d-none d-md-flex " style="display: flex;align-items: center;width: 21rem;">
-						<a href="/urgency" class="btn mt-2 theme-btn-three thm-btn contactenos-btn mr-2" type="submit" name="quote_form" style="background: red;">Emergência</a>
+						<a href="/urgencia" class="btn mt-2 theme-btn-three thm-btn contactenos-btn mr-2" type="submit" name="quote_form" style="background: red;">Emergência</a>
 						<button href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn" type="submit" name="quote_form">CONTACTE-NOS</button>
 					</div>
 				</div>
