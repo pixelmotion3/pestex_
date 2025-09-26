@@ -889,6 +889,7 @@
 			}
 		}
 
+
 	</style>
 
 </head>
@@ -939,20 +940,25 @@
 														<img src="/{{$maintenance[0]['sec_1_img_1']}}" alt="tolak" style="width: 31rem;">
 													</h5>
 													<!-- slider-sub-title -->
-													<h3 class="main-slider-four__title-two" style="color: #ff6600">{{$maintenance[0]['sec_1_h_1']}}</h3>
+													<h3 class="main-slider-four__title-two" style="color: #ff6600;font-weight: 700;">{{$maintenance[0]['sec_1_h_1']}}</h3>
 													<!-- slider-title -->
-													<h2 class="main-slider-four__title" style="-webkit-text-fill-color: white !important; -webkit-text-stroke-width: 0px !important; -webkit-text-stroke-color: var(--tolak-white, #fff) !important; text-transform: none !important; font-size: 56px;">
+													<h2 class="main-slider-four__title" style="-webkit-text-fill-color: white !important; -webkit-text-stroke-width: 0px !important; -webkit-text-stroke-color: var(--tolak-white, #fff) !important; text-transform: none !important; font-size: 56px;font-weight: 700;">
 														{!! $maintenance[0]['sec_1_h_2'] !!}
 													</h2>
 													<!-- slider-title -->
 													<div class="main-slider-four__text">
-														<p class="main-slider-four__text__one" style="color: #fff">
+														<p class="main-slider-four__text__one" style="color: #fff;">
 															{!! $maintenance[0]['sec_1_p_3'] !!}
 														</p>
 													</div><!-- slider-text -->
+													<style>
+														a:hover {
+															color: #FFFF !important;
+														}
+													</style>
 													<div class="main-slider-four__btn">
-														<a href="contact.html" class="tolak-btn"><b>{{$maintenance[0]['sec_1_span_4']}}</b><span></span></a>
-														<a href="services.html" class="tolak-btn tolak-btn--one"><b>{{$maintenance[0]['sec_1_span_5']}}</b><span></span></a>
+														<a href="tel:+351219747353" class="tolak-btn" style="font-weight: 700;"><b>{{$maintenance[0]['sec_1_span_4']}}</b><span></span></a>
+														<a href="services.html" class="tolak-btn tolak-btn--one" style="font-weight: 700;"><b>{{$maintenance[0]['sec_1_span_5']}}</b><span></span></a>
 													</div><!-- slider-btn -->
 												</div>
 											</div>
@@ -974,7 +980,7 @@
 			<div class="container">
 				<div class="row d-flex align-items-center">
 
-					<div class="col-lg-12 mt-8 mt-lg-0 d-flex flex-wrap">
+					<div class="col-lg-12 mt-8 mt-lg-0 d-flex flex-wrap justify-content-center">
 						<div class="urgency-card wow slideInUp animated2 animated animated">
 							<div style="width: 49px;display: flex;">
 								<img src="/{{$maintenance[0]['sec_2_img_1']}}" alt="tolak">
@@ -1008,7 +1014,7 @@
             <div class="container">
                 <div class="sec-title-three text-center">
                     <h3 class="sec-title-three__title" style="color: #002254;">{{$maintenance[0]['sec_3_h_1']}}</h3><!-- /.sec-title-three__title -->
-					<p class="text-gray mt-3">{{$maintenance[0]['sec_3_p_1']}}</p>
+					<p class="text-gray mt-3">{!! $maintenance[0]['sec_3_p_1'] !!}</p>
                 </div><!-- /.sec-title-three -->
 			</div>
 			<div class="container-lg">
@@ -1053,17 +1059,25 @@
 					<div class="col-xl-6 wow fadeInLeft animated animated" data-wow-delay="1000ms" style="visibility: visible; animation-delay: 1000ms; animation-name: fadeInLeft;">
 						<div class="about-one__content">
 							<div class="text-titles mb-5">
-								<h5 class="sec-title__tagline text-titles">{{$maintenance[0]['sec_4_p_1']}}</h5>
+								<h5 style="color: #ff6600;">{{$maintenance[0]['sec_4_p_1']}}</h5>
 								<!-- /.sec-title__tagline -->
 								<h3 class="sec-title__title">{!! $maintenance[0]['sec_4_h_1'] !!}</h3>
 								<!-- /.sec-title__title -->
 							</div><!-- /.sec-title -->
-							<div class="about-one__content__list text-white" style="display: flex;flex-direction: column;">
+							<div class="about-one__content__list text-white" style="display: flex;flex-direction: column;gap: 20px;">
 								@isset($whyUsArray)
 									@foreach ($whyUsArray as $whyUs)
-										<div style="font-size: 16px;">
-											<span style="color: #ff6600;">{{$whyUs['text1']}}</span>
-											<span class="text-white">{{$whyUs['response']}}</span>
+										<div style="display: flex;align-items: flex-start;gap: 7px;">
+											<div>
+												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 684 675" fill="none">
+													<path d="M639 102.667L339 402.666L205.667 269.333" stroke="white" stroke-width="66.6667" stroke-linecap="round" stroke-linejoin="round"/>
+													<path d="M639 302.667V602.667C639 611.507 635.488 619.986 629.237 626.237C622.986 632.488 614.507 636 605.667 636H72.3333C63.4928 636 55.0143 632.488 48.7631 626.237C42.5119 619.986 39 611.507 39 602.667V69.3333C39 60.4928 42.5119 52.0143 48.7631 45.7631C55.0143 39.5119 63.4928 36 72.3333 36H472.333" stroke="white" stroke-width="66.6667" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</div>
+											<div style="font-size: 16px;">
+												<span style="color: #ff6600;">{{$whyUs['text1']}}</span>
+												<span class="text-white">{{$whyUs['response']}}</span>
+											</div>
 										</div>
 									@endforeach
 								@endisset
@@ -1095,8 +1109,8 @@
                 <div class="row gutter-y-30">
 					@isset($cardsBenefits)
 						@foreach ($cardsBenefits as $item)
-							<div class="col-lg-3 col-md-6 wow fadeInUp animated" data-wow-delay="00ms" style="visibility: visible; animation-delay: 0ms; animation-name: fadeInUp;">
-								<div class="featurer-six__item">
+							<div class="col-lg-4 col-md-6 wow fadeInUp animated" data-wow-delay="00ms" style="visibility: visible; animation-delay: 0ms; animation-name: fadeInUp;">
+								<div class="featurer-six__item" style="background: #f5f6fa !important;">
 									<div class="featurer-six__item__hover" style="background-image: url(/{{$item['img']}});"></div>
 									<div class="featurer-six__item__icon">
 										<img src="/{{$item['icon']}}"/>
@@ -1214,11 +1228,11 @@
                         <div class="why-choose-three__content">
                             <div class="sec-title-three text-left">
 
-                                <h3 class="sec-title-three__title">{{$maintenance[0]['sec_7_h_1']}}</h3><!-- /.sec-title-three__title -->
+                                <h3 class="sec-title-three__title">{!! $maintenance[0]['sec_7_h_1'] !!}</h3><!-- /.sec-title-three__title -->
                             </div><!-- /.sec-title-three -->
-                            <p class="why-choose-three__content__text">
+                            {{-- <p class="why-choose-three__content__text">
                                 {{$maintenance[0]['sec_7_p_1']}}
-                            </p>
+                            </p> --}}
                             <ul class="why-choose-three__content__list">
 								@isset($cardsSteps)
 									@foreach ($cardsSteps as $cardStep)
@@ -1228,9 +1242,9 @@
 											</span>
 											<div style="display: flex;flex-direction: column;">
 												<span>{{$cardStep['title']}}</span>
-												<span style="font-size: 14px;font-weight: 100;">{{$cardStep['description']}}</span>
+												<span style="font-size: 14px;font-weight: 100;">{!! $cardStep['description'] !!}</span>
 											</div>
-											<a class="why-choose-three__content__list__rm" href="team.html"><span class="tolak-icons-two-arrow-right-short"></span></a>
+											{{-- <a class="why-choose-three__content__list__rm" href="team.html"><span class="tolak-icons-two-arrow-right-short"></span></a> --}}
 										</li>
 									@endforeach
 								@endisset
@@ -1259,12 +1273,19 @@
             </div><!-- /.container -->
         </section>
 
-		<section class="faq-page">
+
+
+		<style>
+			.background-base {
+				background: #002255;
+			}
+		</style>
+		<section class="funfact-one">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="faq-page__contact background-base">
-                            <h3 class="faq-page__contact__title">{!! $maintenance[0]['sec_8_h_1'] !!}</h3><!-- /.faq-page__contact__title -->
+                            <h3 class="faq-page__contact__title" style="font-weight: 700;">{!! $maintenance[0]['sec_8_h_1'] !!}</h3><!-- /.faq-page__contact__title -->
                             <div class="faq-page__contact__text" style="gap: 1rem;">
                                 <div>
 									<img src="assets/images/call_now.png" style="width: 2rem !important;height: 2rem !important;">
@@ -1276,26 +1297,52 @@
                             </div><!-- /.faq-page__contact__text -->
                         </div><!-- /.faq-page__contact -->
                     </div><!-- /.col-lg-4 col-xl-3 -->
+
                     <div class="col-lg-8">
-                        <div class="faq-page__accordion tolak-accrodion" data-grp-name="tolak-accrodion">
+                       <div class="funfact-one__accordion tolak-accrodion" data-grp-name="tolak-accrodion">
                             @isset($faqs)
-								@foreach ($faqs as $faq)
-									<div class="accrodion">
-										<div class="accrodion-title">
-											<h4>
-												<i class="fa fa-check-circle"></i>
-												{{$faq['question']}}
-												<span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
-											</h4>
-										</div><!-- /.accordian-title -->
-										<div class="accrodion-content" style="display: none;">
-											<div class="inner">
-												<p>
-													{{$faq['response']}}
-												</p>
-											</div><!-- /.accordian-content -->
-										</div>
-									</div><!-- /.accordian-item -->
+								<?php $i = 0; ?>
+								@foreach ($faqs as $index => $faq)
+									@if ($faq['screen'] == '' || $faq['screen'] == null || $faq['screen'] == 0 || $faq['screen'] == 1)
+										@if ($index == 0 && ($faq['service'] == '' || $faq['service'] == null))
+											<div class="accrodion active">
+												<div class="accrodion-title" id="accordion-{{ $i + 1 }}">
+													<h4 id="accordion-icon-{{ $i + 1 }}">
+														<i class="fa fa-check-circle"></i>
+														{{ $faq['question'] }}
+														<span class="accrodion-title__icon"
+															style="color: #002255"></span><!-- /.accrodion-title__icon -->
+													</h4>
+												</div><!-- /.accordian-title -->
+												<div class="accrodion-content">
+													<div class="inner">
+														<p>
+															{!! $faq['response'] !!}
+														</p>
+													</div><!-- /.accordian-content -->
+												</div>
+											</div><!-- /.accordian-item -->
+										@else
+											@if ($faq['service'] == '' || $faq['service'] == null)
+												<div class="accrodion">
+													<div class="accrodion-title" id="accordion-{{ $i + 1 }}">
+														<h4>
+															<i class="fa fa-check-circle" id="accordion-icon-{{ $i + 1 }}"></i>
+															{{ $faq['question'] }}
+															<span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
+														</h4>
+													</div><!-- /.accordian-title -->
+													<div class="accrodion-content">
+														<div class="inner">
+															<p>
+																{!! $faq['response'] !!}
+															</p>
+														</div><!-- /.accordian-content -->
+													</div>
+												</div>
+											@endif
+										@endif
+									@endif
 								@endforeach
 							@endisset
 
@@ -1377,7 +1424,7 @@
 		<section class="cta-four">
             <div class="container mt-5">
                 <div class="cta-four__bg" style="background-image: url(/{{$maintenance[0]['sec_9_img_1']}});">
-                    <div class="cta-four__shape" style="background-image: url(/{{$maintenance[0]['sec_9_img_2']}});"></div>
+                    {{-- <div class="cta-four__shape" style="background-image: url(/{{$maintenance[0]['sec_9_img_2']}});"></div> --}}
                     <div class="cta-four__overlay" style="background-image: url(/{{$maintenance[0]['sec_9_img_4']}});"></div>
                     <div class="row">
                         <div class="col-lg-6 wow fadeInUp animated" data-wow-delay="00ms" style="visibility: visible; animation-delay: 0ms; animation-name: fadeInUp;">
@@ -1387,10 +1434,16 @@
 
                                     <h3 class="sec-title-two__title">{{$maintenance[0]['sec_9_h_1']}}</h3><!-- /.sec-title-two__title -->
                                 </div><!-- /.sec-title-two -->
+
                                 <p class="cta-four__content__text">
                                     {!! $maintenance[0]['sec_9_p_1'] !!}
                                 </p>
-								<a href="contact.html" class="tolak-btn"><b>{{$maintenance[0]['sec_9_span_1']}}</b><span style="top: 336.137px; left: 274.237px;"></span></a>
+								<style>
+									a:hover {
+										color: #FFFF !important;
+									}
+								</style>
+								<a href="tel:+351219747353" class="tolak-btn" style="font-weight: 600;"><b>{{$maintenance[0]['sec_9_span_1']}}</b><span style="top: 336.137px; left: 274.237px;"></span></a>
                             </div>
                         </div>
                         <div class="col-lg-6 wow fadeInUp animated" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;">
@@ -1404,13 +1457,18 @@
         </section>
 
 
+
+
 		<footer class="main-footer background-black" style="padding-block: 3rem;">
 			<div style="display: flex;flex-direction: column;align-items: center;gap: 15px;">
 				<div class="logo-footer">
 					<img src="/{{$maintenance[0]['sec_10_img_1']}}" alt="tolak">
 				</div>
 				<p style="font-size: 23px;color: #ff6600;">{{$maintenance[0]['sec_10_span_1']}}
-				</p><div style="display: flex;gap: 23px;color: #fff;">
+				</p>
+
+
+				<div style="display: flex;gap: 23px;color: #fff;">
 					<a href="mailto:{{$maintenance[0]['sec_10_span_2']}}" style="color: #fff;font-size: 18px;">{{$maintenance[0]['sec_10_span_2']}}</a>
 					<a href="tel:{{$maintenance[0]['sec_10_span_3']}}" style="color: #fff;font-size: 18px;">{{$maintenance[0]['sec_10_span_3']}}</a>
 				</div>
