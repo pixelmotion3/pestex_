@@ -63,6 +63,16 @@ class LpMaintenance extends Model
 		'sec_10_span_1',
 		'sec_10_span_2',
 		'sec_10_span_3',
-		'sec_10_span_4'
+		'sec_10_span_4',
+
+		'sec-11-img-1',
+		'sec-11-h-1',
+		'sec-11-span-3',
+		'sec-11-span-4',
+		'sec-11-span-5',
+		'sec-11-span-6',
+		'sec-11-span-7',
+		'sec-11-span-8',
+		'sec-11-span-9'
 	];
 }
