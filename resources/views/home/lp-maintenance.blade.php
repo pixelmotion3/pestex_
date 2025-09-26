@@ -1500,10 +1500,10 @@
                 <div class="row justify-content-center align-items-center">
 					<div class="col-lg-5">
 						<div class="contact-two__info wow slideInLeft animated animated">
-							<div class="contact-two__info__shape" style="background-image:url(/{{$maintenance[0]['sec-7-img-1']}});background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
-							<h4 class="contact-two__info__title"><b>{{$maintenance[0]['sec-7-h-1']}}</b></h4>
+							<div class="contact-two__info__shape" style="background-image:url(/{{$maintenance[0]['sec-11-img-1']}});background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+							<h4 class="contact-two__info__title"><b>{{$maintenance[0]['sec-11-h-1']}}</b></h4>
 							<p class="contact-two__info__text">
-								{{$maintenance[0]['sec-7-span-1']}}
+								{{$maintenance[0]['sec-11-span-1']}}
 							</p>
 							<style>
 								.contact-two__info__box__icon:hover {
@@ -1565,24 +1565,24 @@
 										</svg>
 										{{-- <i class="icon-phone-call"></i> --}}
 									</div>
-									<h4 class="contact-two__info__box__title">{{$maintenance[0]['sec-7-span-2']}}</h4>
-									<p class="contact-two__info__box__text"><a href="tel:025461556695">{{$maintenance[0]['sec-7-span-3']}}</a></p>
+									<h4 class="contact-two__info__box__title">{{$maintenance[0]['sec-11-span-2']}}</h4>
+									<p class="contact-two__info__box__text"><a href="tel:025461556695">{{$maintenance[0]['sec-11-span-3']}}</a></p>
 								</li>
 								<li class="contact-two__info__box">
 									<div class="contact-two__info__box__icon"><i class="icon-open-mail"></i></div>
-									<h4 class="contact-two__info__box__title">{{$maintenance[0]['sec-7-span-4']}}</h4>
-									<p class="contact-two__info__box__text"><a href="mailto:{{$maintenance[0]['sec-7-span-5']}}">{{$maintenance[0]['sec-7-span-5']}}</a></p>
+									<h4 class="contact-two__info__box__title">{{$maintenance[0]['sec-11-span-4']}}</h4>
+									<p class="contact-two__info__box__text"><a href="mailto:{{$maintenance[0]['sec-11-span-5']}}">{{$maintenance[0]['sec-11-span-5']}}</a></p>
 								</li>
 								<li class="contact-two__info__box">
 									<div class="contact-two__info__box__icon"><i class="icon-pin"></i></div>
-									<h4 class="contact-two__info__box__title">{{$maintenance[0]['sec-7-span-6']}}</h4>
-									<p class="contact-two__info__box__text">{{$maintenance[0]['sec-7-span-7']}}</p>
+									<h4 class="contact-two__info__box__title">{{$maintenance[0]['sec-11-span-6']}}</h4>
+									<p class="contact-two__info__box__text">{{$maintenance[0]['sec-11-span-7']}}</p>
 								</li>
 							</ul>
 							<div class="contact-two__info__social">
 								<h5 class="contact-two__info__social__title">Siga-nos:</h5>
 								<div class="contact-two__info__social__wrap">
-									<a href="{{$maintenance[0]['sec-7-span-8']}}" target="_blank">
+									<a href="{{$maintenance[0]['sec-11-span-8']}}" target="_blank">
 										<i class="fab fa-facebook-f" aria-hidden="true"></i>
 										<span class="sr-only">Facebook</span>
 									</a>
@@ -1594,7 +1594,7 @@
 										<i class="fab fa-twitter" aria-hidden="true"></i>
 										<span class="sr-only">Twitter</span>
 									</a> --}}
-									<a href="{{$maintenance[0]['sec-7-span-9']}}" target="_blank">
+									<a href="{{$maintenance[0]['sec-11-span-9']}}" target="_blank">
 										<i class="fab fa-instagram" aria-hidden="true"></i>
 										<span class="sr-only">Instagram</span>
 									</a>
