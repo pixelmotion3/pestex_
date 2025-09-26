@@ -887,6 +887,150 @@
 																</div>
 															</div>
 
+															{{-- Section 11 --}}
+															<div class="content-page-header">
+																<h5 class="mb-2">Section 11</h5>
+															</div>
+															<div class="row">
+																<div class="col-12 mt-5">
+																	<label
+																		class="form-label"
+																		style="float:left;">sec-11-h-1</label>
+																	<input type="text"
+																		class="form-control"
+																		id="validationCustom01"
+																		name="sec-11-h-1"
+																		value="{{$urgency[0]['sec-11-h-1']}}"
+																		required>
+																</div>
+																<div class="col-12 mt-5">
+																	<label
+																		class="form-label"
+																		style="float:left;">sec-11-span-1</label>
+																	<input type="text"
+																		class="form-control"
+																		id="validationCustom01"
+																		name="sec-11-span-1"
+																		value="{{$urgency[0]['sec-11-span-1']}}"
+																		required>
+																</div>
+																<div class="col-12 mt-5">
+																	<label
+																		class="form-label"
+																		style="float:left;">sec-11-span-2</label>
+																	<input type="text"
+																		class="form-control"
+																		id="validationCustom01"
+																		name="sec-11-span-2"
+																		value="{{$urgency[0]['sec-11-span-2']}}"
+																		required>
+																</div>
+																<div class="col-12 mt-5">
+																	<label
+																		class="form-label"
+																		style="float:left;">sec-11-span-3</label>
+																	<input type="text"
+																		class="form-control"
+																		id="validationCustom01"
+																		name="sec-11-span-3"
+																		value="{{$urgency[0]['sec-11-span-3']}}"
+																		required>
+																</div>
+																<div class="col-12 mt-5">
+																	<label
+																		class="form-label"
+																		style="float:left;">sec-11-span-4</label>
+																	<input type="text"
+																		class="form-control"
+																		id="validationCustom01"
+																		name="sec-11-span-4"
+																		value="{{$urgency[0]['sec-11-span-4']}}"
+																		required>
+																</div>
+																<div class="col-12 mt-5">
+																	<label
+																		class="form-label"
+																		style="float:left;">sec-11-span-5</label>
+																	<input type="text"
+																		class="form-control"
+																		id="validationCustom01"
+																		name="sec-11-span-5"
+																		value="{{$urgency[0]['sec-11-span-5']}}"
+																		required>
+																</div>
+																<div class="col-12 mt-5">
+																	<label
+																		class="form-label"
+																		style="float:left;">sec-11-span-6</label>
+																	<input type="text"
+																		class="form-control"
+																		id="validationCustom01"
+																		name="sec-11-span-6"
+																		value="{{$urgency[0]['sec-11-span-6']}}"
+																		required>
+																</div>
+																<div class="col-12 mt-5">
+																	<label
+																		class="form-label"
+																		style="float:left;">sec-11-span-7</label>
+																	<input type="text"
+																		class="form-control"
+																		id="validationCustom01"
+																		name="sec-11-span-7"
+																		value="{{$urgency[0]['sec-11-span-7']}}"
+																		required>
+																</div>
+																<div class="col-12 mt-5">
+																	<label
+																		class="form-label"
+																		style="float:left;">sec-11-span-8</label>
+																	<input type="text"
+																		class="form-control"
+																		id="validationCustom01"
+																		name="sec-11-span-8"
+																		value="{{$urgency[0]['sec-11-span-8']}}"
+																		required>
+																</div>
+																<div class="col-12 mt-5">
+																	<label
+																		class="form-label"
+																		style="float:left;">sec-11-span-9</label>
+																	<input type="text"
+																		class="form-control"
+																		id="validationCustom01"
+																		name="sec-11-span-9"
+																		value="{{$urgency[0]['sec-11-span-9']}}"
+																		required>
+																</div>
+																<div class="col-12 mt-5">
+																	<label
+																		class="form-label"
+																		style="float:left;">sec-11-span-10</label>
+																	<input type="text"
+																		class="form-control"
+																		id="validationCustom01"
+																		name="sec-11-span-10"
+																		value="{{$urgency[0]['sec-11-span-10']}}"
+																		required>
+																</div>
+																<div class="col-12 mt-5">
+																	<div class="col-12 mt-5">
+																		<div class="col-12 mt-5">
+																			<label for="sec-1-image1" class="form-label"
+																				style="float:left;">sec-11-img-1</label>
+																			<img src="/{{$urgency[0]['sec-11-img-1']}}" alt="tolak" style="height: 250px;">
+																		</div>
+																	</div>
+																	<div class="col-12 mt-5">
+																		<label for="sec-1-image1" class="form-label"
+																			style="float:left;">sec-11-img-1</label>
+																		<input type="file" class="form-control"
+																			id="sec-1-image1" name="sec-11-img-1" required>
+																	</div>
+																</div>
+															</div>
+															{{-- Section 11 --}}
+
 
 
                                                             <div class="">

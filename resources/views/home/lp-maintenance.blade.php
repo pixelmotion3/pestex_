@@ -1458,6 +1458,205 @@
 
 
 
+		@php
+			$domain = request()->getHost();
+			$baseUrl = $domain === 'sospragas.pt' ? 'https://sospragas.pt' : 'https://desinfestacoes.sospragas.pt';
+		@endphp
+		<script>
+			let captchaRendered = false;
+
+			function loadCaptchaContactForm() {
+				if (captchaRendered) return;
+
+				const script = document.createElement('script');
+				script.src = 'https://js.hcaptcha.com/1/api.js?onload=onCaptchaLoadContactForm&render=explicit';
+				script.async = true;
+				script.defer = true;
+				document.body.appendChild(script);
+
+				captchaRendered = true;
+			}
+
+			function onCaptchaLoadContactForm() {
+				hcaptcha.render('captcha-container-contact-form', {
+					sitekey: 'f27e3306-f27a-4bc0-a162-3678fc648a4e',
+					callback: onCaptchaSuccessContactForm
+				});
+			}
+
+			function onCaptchaSuccessContactForm(token) {
+				// Libera o botão de envio se o captcha foi resolvido
+
+				const form = document.getElementById("contact-form");
+				form.action = "{{ $baseUrl . route('HomePage.thankYouFormContactForm', [], false) }}";
+				form.method = "POST";
+
+				// Dar submit
+				form.submit();
+			}
+		</script>
+		<section class="contact-two mb-8">
+            <div class="container" style="border: 1px solid #d8d8d8;padding-block: 4rem;border-radius: 20px;">
+                <div class="row justify-content-center align-items-center">
+					<div class="col-lg-5">
+						<div class="contact-two__info wow slideInLeft animated animated">
+							<div class="contact-two__info__shape" style="background-image:url(/{{$maintenance[0]['sec-7-img-1']}});background-size: cover;background-repeat: no-repeat;background-position: center;"></div>
+							<h4 class="contact-two__info__title"><b>{{$maintenance[0]['sec-7-h-1']}}</b></h4>
+							<p class="contact-two__info__text">
+								{{$maintenance[0]['sec-7-span-1']}}
+							</p>
+							<style>
+								.contact-two__info__box__icon:hover {
+									.svg-phone {
+										fill: white;
+										-webkit-font-smoothing:antialiased;
+										transition: all 500ms ease;
+									}
+								}
+								.contact-two__info__box:hover {
+									.svg-phone {
+										fill: white;
+										-webkit-font-smoothing:antialiased;
+										transition: all 500ms ease;
+									}
+								}
+							</style>
+							<ul class="contact-two__info__box-wrapper">
+								<li class="contact-two__info__box" id="hoverphone">
+									<div class="contact-two__info__box__icon">
+										<svg xmlns="http://www.w3.org/2000/svg" class="svg-phone" id="icon-phone" fill="#002255" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 473.806 473.806" style="enable-background:new 0 0 473.806 473.806; width: 40px;" xml:space="preserve">
+										<g>
+											<g>
+												<path d="M374.456,293.506c-9.7-10.1-21.4-15.5-33.8-15.5c-12.3,0-24.1,5.3-34.2,15.4l-31.6,31.5c-2.6-1.4-5.2-2.7-7.7-4    c-3.6-1.8-7-3.5-9.9-5.3c-29.6-18.8-56.5-43.3-82.3-75c-12.5-15.8-20.9-29.1-27-42.6c8.2-7.5,15.8-15.3,23.2-22.8    c2.8-2.8,5.6-5.7,8.4-8.5c21-21,21-48.2,0-69.2l-27.3-27.3c-3.1-3.1-6.3-6.3-9.3-9.5c-6-6.2-12.3-12.6-18.8-18.6    c-9.7-9.6-21.3-14.7-33.5-14.7s-24,5.1-34,14.7c-0.1,0.1-0.1,0.1-0.2,0.2l-34,34.3c-12.8,12.8-20.1,28.4-21.7,46.5    c-2.4,29.2,6.2,56.4,12.8,74.2c16.2,43.7,40.4,84.2,76.5,127.6c43.8,52.3,96.5,93.6,156.7,122.7c23,10.9,53.7,23.8,88,26    c2.1,0.1,4.3,0.2,6.3,0.2c23.1,0,42.5-8.3,57.7-24.8c0.1-0.2,0.3-0.3,0.4-0.5c5.2-6.3,11.2-12,17.5-18.1c4.3-4.1,8.7-8.4,13-12.9    c9.9-10.3,15.1-22.3,15.1-34.6c0-12.4-5.3-24.3-15.4-34.3L374.456,293.506z M410.256,398.806    C410.156,398.806,410.156,398.906,410.256,398.806c-3.9,4.2-7.9,8-12.2,12.2c-6.5,6.2-13.1,12.7-19.3,20    c-10.1,10.8-22,15.9-37.6,15.9c-1.5,0-3.1,0-4.6-0.1c-29.7-1.9-57.3-13.5-78-23.4c-56.6-27.4-106.3-66.3-147.6-115.6    c-34.1-41.1-56.9-79.1-72-119.9c-9.3-24.9-12.7-44.3-11.2-62.6c1-11.7,5.5-21.4,13.8-29.7l34.1-34.1c4.9-4.6,10.1-7.1,15.2-7.1    c6.3,0,11.4,3.8,14.6,7c0.1,0.1,0.2,0.2,0.3,0.3c6.1,5.7,11.9,11.6,18,17.9c3.1,3.2,6.3,6.4,9.5,9.7l27.3,27.3    c10.6,10.6,10.6,20.4,0,31c-2.9,2.9-5.7,5.8-8.6,8.6c-8.4,8.6-16.4,16.6-25.1,24.4c-0.2,0.2-0.4,0.3-0.5,0.5    c-8.6,8.6-7,17-5.2,22.7c0.1,0.3,0.2,0.6,0.3,0.9c7.1,17.2,17.1,33.4,32.3,52.7l0.1,0.1c27.6,34,56.7,60.5,88.8,80.8    c4.1,2.6,8.3,4.7,12.3,6.7c3.6,1.8,7,3.5,9.9,5.3c0.4,0.2,0.8,0.5,1.2,0.7c3.4,1.7,6.6,2.5,9.9,2.5c8.3,0,13.5-5.2,15.2-6.9    l34.2-34.2c3.4-3.4,8.8-7.5,15.1-7.5c6.2,0,11.3,3.9,14.4,7.3c0.1,0.1,0.1,0.1,0.2,0.2l55.1,55.1    C420.456,377.706,420.456,388.206,410.256,398.806z"/>
+												<path d="M256.056,112.706c26.2,4.4,50,16.8,69,35.8s31.3,42.8,35.8,69c1.1,6.6,6.8,11.2,13.3,11.2c0.8,0,1.5-0.1,2.3-0.2    c7.4-1.2,12.3-8.2,11.1-15.6c-5.4-31.7-20.4-60.6-43.3-83.5s-51.8-37.9-83.5-43.3c-7.4-1.2-14.3,3.7-15.6,11    S248.656,111.506,256.056,112.706z"/>
+												<path d="M473.256,209.006c-8.9-52.2-33.5-99.7-71.3-137.5s-85.3-62.4-137.5-71.3c-7.3-1.3-14.2,3.7-15.5,11    c-1.2,7.4,3.7,14.3,11.1,15.6c46.6,7.9,89.1,30,122.9,63.7c33.8,33.8,55.8,76.3,63.7,122.9c1.1,6.6,6.8,11.2,13.3,11.2    c0.8,0,1.5-0.1,2.3-0.2C469.556,223.306,474.556,216.306,473.256,209.006z"/>
+											</g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										<g>
+										</g>
+										</svg>
+										{{-- <i class="icon-phone-call"></i> --}}
+									</div>
+									<h4 class="contact-two__info__box__title">{{$maintenance[0]['sec-7-span-2']}}</h4>
+									<p class="contact-two__info__box__text"><a href="tel:025461556695">{{$maintenance[0]['sec-7-span-3']}}</a></p>
+								</li>
+								<li class="contact-two__info__box">
+									<div class="contact-two__info__box__icon"><i class="icon-open-mail"></i></div>
+									<h4 class="contact-two__info__box__title">{{$maintenance[0]['sec-7-span-4']}}</h4>
+									<p class="contact-two__info__box__text"><a href="mailto:{{$maintenance[0]['sec-7-span-5']}}">{{$maintenance[0]['sec-7-span-5']}}</a></p>
+								</li>
+								<li class="contact-two__info__box">
+									<div class="contact-two__info__box__icon"><i class="icon-pin"></i></div>
+									<h4 class="contact-two__info__box__title">{{$maintenance[0]['sec-7-span-6']}}</h4>
+									<p class="contact-two__info__box__text">{{$maintenance[0]['sec-7-span-7']}}</p>
+								</li>
+							</ul>
+							<div class="contact-two__info__social">
+								<h5 class="contact-two__info__social__title">Siga-nos:</h5>
+								<div class="contact-two__info__social__wrap">
+									<a href="{{$maintenance[0]['sec-7-span-8']}}" target="_blank">
+										<i class="fab fa-facebook-f" aria-hidden="true"></i>
+										<span class="sr-only">Facebook</span>
+									</a>
+									{{-- <a href="https://pinterest.com">
+										<i class="fab fa-pinterest-p" aria-hidden="true"></i>
+										<span class="sr-only">Pinterest</span>
+									</a>
+									<a href="https://twitter.com">
+										<i class="fab fa-twitter" aria-hidden="true"></i>
+										<span class="sr-only">Twitter</span>
+									</a> --}}
+									<a href="{{$maintenance[0]['sec-7-span-9']}}" target="_blank">
+										<i class="fab fa-instagram" aria-hidden="true"></i>
+										<span class="sr-only">Instagram</span>
+									</a>
+								</div>
+							</div><!-- contact-social -->
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="contact-two__content">
+
+							<form class="contact-two__form form-one form-contacts" id="contact-form" method="POST">
+								@csrf
+								@method('post')
+								<div class="form-one__group">
+									<input class="input-field rounded" type="hidden" value="ContactFormContactos" placeholder="type_form" name="type_form">
+									<div class="form-one__control">
+										<input type="text" name="name" placeholder="Nome">
+									</div><!-- /.form-one__control -->
+									<input type="hidden" name="from" placeholder="" value="LandingPage Urgência">
+									<div style="display: flex;justify-content: space-around;gap: 20px;">
+										<div class="form-one__control" style="width: 50%;">
+											<input type="email" name="email" placeholder="Email">
+										</div><!-- /.form-one__control -->
+										<div class="form-one__control" style="width: 50%;">
+											<input type="text" name="phone" placeholder="Telefone">
+										</div><!-- /.form-one__control -->
+										{{-- <div class="form-one__control" style="width: 50%;">
+											<input type="text" name="phone2" placeholder="(XX) XXXXX-XXXX">
+										</div> --}}
+									</div>
+									<select class="form-select" name="service">
+										<option>Selecione a praga que está a causar problemas</option>
+										 @isset($services)
+                    						@foreach ($services as $service)
+												<option value="{{ $service['a'] }}">{{ $service['a'] }}</option>
+											@endforeach
+                						@endisset
+									</select>
+
+									<div class="form-one__control">
+											<input type="text" name="locality" placeholder="Localização">
+										</div><!-- /.form-one__control -->
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="flexCheckDefault" required="">
+										<label class="form-check-label text-left" for="flexCheckDefault" style="color:grey;font-size:12px;">
+											Tenho conhecimento e aceito a <a href="/politica-privacidade" target="_blank">Política de Privacidade</a>
+										</label>
+									</div>
+									<div id="captcha-container-contact-form" style="display: flex; justify-content: center;"></div>
+									<div class="form-one__control">
+										<button type="button" onclick="loadCaptchaContactForm()" class="tolak-btn2 btn-call-now"><b>QUERO LIVRAR-ME DAS PRAGAS HOJE</b></button>
+									</div><!-- /.form-one__control -->
+								</div><!-- /.form-one__group -->
+							</form>
+						</div>
+					</div>
+				</div>
+            </div><!-- /.container -->
+        </section><!-- /.contact -->
+
+
+
 
 		<footer class="main-footer background-black" style="padding-block: 3rem;">
 			<div style="display: flex;flex-direction: column;align-items: center;gap: 15px;">
