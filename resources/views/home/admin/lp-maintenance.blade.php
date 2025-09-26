@@ -900,7 +900,7 @@
 																		class="form-control"
 																		id="validationCustom01"
 																		name="sec-11-h-1"
-																		value="{{$urgency[0]['sec-11-h-1']}}"
+																		value="{{$maintenance[0]['sec-11-h-1']}}"
 																		required>
 																</div>
 																<div class="col-12 mt-5">
@@ -911,7 +911,7 @@
 																		class="form-control"
 																		id="validationCustom01"
 																		name="sec-11-span-1"
-																		value="{{$urgency[0]['sec-11-span-1']}}"
+																		value="{{$maintenance[0]['sec-11-span-1']}}"
 																		required>
 																</div>
 																<div class="col-12 mt-5">
@@ -922,7 +922,7 @@
 																		class="form-control"
 																		id="validationCustom01"
 																		name="sec-11-span-2"
-																		value="{{$urgency[0]['sec-11-span-2']}}"
+																		value="{{$maintenance[0]['sec-11-span-2']}}"
 																		required>
 																</div>
 																<div class="col-12 mt-5">
@@ -933,7 +933,7 @@
 																		class="form-control"
 																		id="validationCustom01"
 																		name="sec-11-span-3"
-																		value="{{$urgency[0]['sec-11-span-3']}}"
+																		value="{{$maintenance[0]['sec-11-span-3']}}"
 																		required>
 																</div>
 																<div class="col-12 mt-5">
@@ -944,7 +944,7 @@
 																		class="form-control"
 																		id="validationCustom01"
 																		name="sec-11-span-4"
-																		value="{{$urgency[0]['sec-11-span-4']}}"
+																		value="{{$maintenance[0]['sec-11-span-4']}}"
 																		required>
 																</div>
 																<div class="col-12 mt-5">
@@ -955,7 +955,7 @@
 																		class="form-control"
 																		id="validationCustom01"
 																		name="sec-11-span-5"
-																		value="{{$urgency[0]['sec-11-span-5']}}"
+																		value="{{$maintenance[0]['sec-11-span-5']}}"
 																		required>
 																</div>
 																<div class="col-12 mt-5">
@@ -966,7 +966,7 @@
 																		class="form-control"
 																		id="validationCustom01"
 																		name="sec-11-span-6"
-																		value="{{$urgency[0]['sec-11-span-6']}}"
+																		value="{{$maintenance[0]['sec-11-span-6']}}"
 																		required>
 																</div>
 																<div class="col-12 mt-5">
@@ -977,7 +977,7 @@
 																		class="form-control"
 																		id="validationCustom01"
 																		name="sec-11-span-7"
-																		value="{{$urgency[0]['sec-11-span-7']}}"
+																		value="{{$maintenance[0]['sec-11-span-7']}}"
 																		required>
 																</div>
 																<div class="col-12 mt-5">
@@ -988,7 +988,7 @@
 																		class="form-control"
 																		id="validationCustom01"
 																		name="sec-11-span-8"
-																		value="{{$urgency[0]['sec-11-span-8']}}"
+																		value="{{$maintenance[0]['sec-11-span-8']}}"
 																		required>
 																</div>
 																<div class="col-12 mt-5">
@@ -999,7 +999,7 @@
 																		class="form-control"
 																		id="validationCustom01"
 																		name="sec-11-span-9"
-																		value="{{$urgency[0]['sec-11-span-9']}}"
+																		value="{{$maintenance[0]['sec-11-span-9']}}"
 																		required>
 																</div>
 																<div class="col-12 mt-5">
@@ -1010,7 +1010,7 @@
 																		class="form-control"
 																		id="validationCustom01"
 																		name="sec-11-span-10"
-																		value="{{$urgency[0]['sec-11-span-10']}}"
+																		value="{{$maintenance[0]['sec-11-span-10']}}"
 																		required>
 																</div>
 																<div class="col-12 mt-5">
@@ -1018,7 +1018,7 @@
 																		<div class="col-12 mt-5">
 																			<label for="sec-1-image1" class="form-label"
 																				style="float:left;">sec-11-img-1</label>
-																			<img src="/{{$urgency[0]['sec-11-img-1']}}" alt="tolak" style="height: 250px;">
+																			<img src="/{{$maintenance[0]['sec-11-img-1']}}" alt="tolak" style="height: 250px;">
 																		</div>
 																	</div>
 																	<div class="col-12 mt-5">
