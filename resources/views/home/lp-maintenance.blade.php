@@ -29,9 +29,17 @@
 
 <head>
 	<meta charset="utf-8">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Soluções personalizadas para cada problema. Desfrute de um Ambiente Saudável">
 	<title>SOS Pragas</title>
+						<script src="
+		https://cdn.jsdelivr.net/npm/icofont@1.0.0/main.min.js
+		"></script>
+		<link href="
+		https://cdn.jsdelivr.net/npm/icofont@1.0.0/dist/icofont.min.css
+		" rel="stylesheet">
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
 		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -317,7 +325,7 @@
 	<script src="{{ asset('assets/js/popper.min.js') }}"></script>
 	<script src="{{ asset('assets/js/appear.js') }}" defer></script> --}}
 
-	<script src="{{ asset('assets/vendors/icofont/icofont.min.css') }}" ></script>
+	{{-- <script src="{{ asset('assets/vendors/icofont/icofont.min.css') }}" ></script> --}}
 
 	{{--
 	<script src="{{ asset('assets/js/jquery.countTo.js') }}"></script> --}}
@@ -1298,6 +1306,27 @@
                         </div><!-- /.faq-page__contact -->
                     </div><!-- /.col-lg-4 col-xl-3 -->
 
+
+
+					<style>
+						.funfact-one__accordion .accrodion-title__icon:before {
+							width: 100% !important;
+							height: 100% !important;
+							position: absolute !important;
+							top: 50% !important;
+							left: 50% !important;
+							font-size: 20px !important;
+							color: #025 !important;
+							content: "\ea86" !important;
+							font-family: IcoFont !important;
+							transform: translate(-50%, -50%) !important;
+							transition: all .5s ease !important;
+						}
+						.funfact-one__accordion .active .accrodion-title__icon::before {
+							color: var(--tolak-white, #fff) !important;
+							content: "\ea89" !important;
+						}
+					</style>
                     <div class="col-lg-8">
                        <div class="funfact-one__accordion tolak-accrodion" data-grp-name="tolak-accrodion">
                             @isset($faqs)
