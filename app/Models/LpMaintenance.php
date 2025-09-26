@@ -67,6 +67,8 @@ class LpMaintenance extends Model
 
 		'sec-11-img-1',
 		'sec-11-h-1',
+		'sec-11-span-1',
+		'sec-11-span-2',
 		'sec-11-span-3',
 		'sec-11-span-4',
 		'sec-11-span-5',
