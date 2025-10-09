@@ -923,7 +923,7 @@
 						</div>
 						<div class="d-none d-md-flex " style="display: flex;align-items: center;width: 21rem;">
 							<a href="/urgencia" class="btn mt-2 theme-btn-three thm-btn contactenos-btn mr-2" type="submit" name="quote_form" style="background: red;">Emergência</a>
-							<button href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn" type="submit" name="quote_form">CONTACTE-NOS</button>
+							<a href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn" type="submit" name="quote_form">CONTACTE-NOS</a>
 						</div>
 					</div>
 				</div>
