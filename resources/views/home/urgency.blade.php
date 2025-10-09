@@ -986,8 +986,9 @@
 											<h2  id="timer">{{$urgency[0]['sec-2-span-4']}}</h2>
 										</div>
 										<div class="main-slider-three__btn">
-											<a href="tel:+351219747353" class="tolak-btn"><b style="text-transform: uppercase;font-weight: 700;">{{$urgency[0]['sec-2-span-3']}}</b><span></span></a><!-- slider-btn -->
+											<a href="tel:+351937824676" class="tolak-btn"><b style="text-transform: uppercase;font-weight: 700;">{{$urgency[0]['sec-2-span-3']}}</b><span></span></a><!-- slider-btn -->
 										</div>
+										<span style="font-size: 14px;">Ligue agora e mencione este desconto</span>
 									</div>
 								</div>
 								<div class="col-12 col-lg-6">
@@ -1767,6 +1768,38 @@
 	<a href="#" data-target="html" class="scroll-to-target scroll-to-top">
 		<span class="scroll-to-top__text">back top</span>
 		<span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
+	</a>
+	<style>
+		.whatsapp-float {
+			position: fixed;
+			width: 60px;
+			height: 60px;
+			bottom: 20px;
+			right: 20px;
+			/* background-color: #25d366; */
+			color: #fff;
+			border-radius: 50%;
+			text-align: center;
+			box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+			z-index: 1000;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: transform 0.3s ease;
+		}
+
+		.whatsapp-float:hover {
+			transform: scale(1.1);
+		}
+
+		.whatsapp-float img {
+			width: 100%;
+			height: 100%;
+		}
+
+	</style>
+	<a href="https://wa.me/+351937824676" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
+		<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
 	</a>
 
 	<script>

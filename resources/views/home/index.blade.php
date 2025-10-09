@@ -758,7 +758,7 @@ https://cdn.jsdelivr.net/npm/icofont@1.0.0/dist/icofont.min.css
 						</div>
 						<div class="d-none d-md-flex " style="display: flex;align-items: center;width: 21rem;">
 							<a href="/urgencia" class="btn mt-2 theme-btn-three thm-btn contactenos-btn mr-2" type="submit" style="background: red;">Emergência</a>
-							<button href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn" type="submit" name="quote_form">CONTACTE-NOS</button>
+							<a href="tel:00351219747353" class="btn mt-2 theme-btn-three thm-btn contactenos-btn" type="submit" name="quote_form">CONTACTE-NOS</a>
 						</div>
 					</div>
 				</div>
