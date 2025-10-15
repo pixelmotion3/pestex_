@@ -164,6 +164,13 @@ setTimeout(function() {
 
     <!-- main-js -->
     <script src="{{ asset('assets/js/script.js') }}"></script>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TH5LZNRJ');</script>
+	<!-- End Google Tag Manager -->
 </head>
 <div style="display: flex;justify-content: flex-end;flex-direction: row;background: #ff6600;height: 31px;align-items: center;" class="container-top-menu">
 	<div style="display: flex;color: #fff !important;gap: 17px;margin-right: 14px;font-size: 14px;" class="content-top-menu">
@@ -179,6 +186,10 @@ setTimeout(function() {
 	</div>
 </div>
 <body class="custom-cursor" style="overflow-x: hidden;">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TH5LZNRJ"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 	@include('includes.clickcease')
 	<style>
 		.whatsapp-float {

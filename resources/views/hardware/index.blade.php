@@ -126,9 +126,20 @@
 
     <!-- main-js -->
     <script src="{{ asset('assets/js/script.js') }}"></script>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TH5LZNRJ');</script>
+<!-- End Google Tag Manager -->
 </head>
 
 <body class="custom-cursor" style="overflow-x: hidden;">
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TH5LZNRJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 	<div class="custom-cursor__cursor"></div>
 	<div class="custom-cursor__cursor-two"></div>
 	<header class="main-header sticky-header sticky-header--one-page">
