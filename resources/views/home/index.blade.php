@@ -118,22 +118,13 @@ https://cdn.jsdelivr.net/npm/icofont@1.0.0/dist/icofont.min.css
 
 
 
-	<!-- Google tag (gtag.js) -->
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			setTimeout(function () {
-				const gtagScript = document.createElement('script');
-				gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-973E1T9CZV';
-				gtagScript.async = true;
-				document.head.appendChild(gtagScript);
-
-				window.dataLayer = window.dataLayer || [];
-				function gtag() { dataLayer.push(arguments); }
-				gtag('js', new Date());
-				gtag('config', 'G-973E1T9CZV');
-			}, 5000);
-		});
-	</script>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TH5LZNRJ');</script>
+	<!-- End Google Tag Manager -->
 
 	<!-- Styles -->
 	@vite(['resources/css/app.css'])
@@ -434,6 +425,10 @@ https://cdn.jsdelivr.net/npm/icofont@1.0.0/dist/icofont.min.css
 	</div>
 </div>
 <body class="custom-cursor" style="overflow-x: hidden;">
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TH5LZNRJ"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 	@include('includes.clickcease')
 	<a href="https://wa.me/+351937824676" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
 		<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" loading="lazy" />
