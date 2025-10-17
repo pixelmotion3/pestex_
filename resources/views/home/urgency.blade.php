@@ -988,7 +988,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<div class="main-slider-three__btn" style="cursor: pointer;">
 											<a href="tel:+351937824676" class="tolak-btn" style="padding: 13px 0px 0px 0px !important;">
 												<b style="text-transform: uppercase;font-weight: 700;">{{$urgency[0]['sec-2-span-3']}}</b>
-												<div> 937 824 676</div>
+												<div style="color: #fff !important;"> 937 824 676</div>
 												<span></span>
 											</a><!-- slider-btn -->
 										</div>
