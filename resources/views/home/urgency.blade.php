@@ -951,7 +951,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             "margin": 0
             }'>
                 <div class="item" >
-                    <div class="main-slider-three__item" style="z-index: 1;">
+                    <div class="main-slider-three__item" style="z-index: -100;">
                         <div class="main-slider-three__bg" style="background-color:#031b2e;"></div><!-- slider-bg -->
                         <div class="main-slider-three__shape-one" style="background-image: url(/{{$urgency[0]['sec-2-img-4']}});"></div><!-- slider-shape -->
                         <div class="main-slider-three__shape-two" style="background-image: url(/{{$urgency[0]['sec-2-img-5']}});"></div><!-- slider-shape -->
