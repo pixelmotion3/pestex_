@@ -951,7 +951,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             "margin": 0
             }'>
                 <div class="item" >
-                    <div class="main-slider-three__item" style="z-index: -100;">
+                    <div class="main-slider-three__item" style="z-index: 0;">
                         <div class="main-slider-three__bg" style="background-color:#031b2e;"></div><!-- slider-bg -->
                         <div class="main-slider-three__shape-one" style="background-image: url(/{{$urgency[0]['sec-2-img-4']}});"></div><!-- slider-shape -->
                         <div class="main-slider-three__shape-two" style="background-image: url(/{{$urgency[0]['sec-2-img-5']}});"></div><!-- slider-shape -->
@@ -1072,7 +1072,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="container">
 				<div class="row d-flex align-items-center">
 					<div class="col-lg-4" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeInLeft;">
-						<div class="img-animale" style="">
+						<div class="img-animale" style="z-index: 999999999 !important;">
 							<img src="/{{$urgency[0]['sec-3-img-1']}}" alt="tolak">
 						</div>
 					</div>
