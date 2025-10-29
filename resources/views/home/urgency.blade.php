@@ -1071,8 +1071,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="cta-one__bg"></div>
 			<div class="container">
 				<div class="row d-flex align-items-center">
-					<div class="col-lg-4" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeInLeft;">
-						<div class="img-animale" style="z-index: 999999999 !important;">
+					<div class="col-lg-4" data-wow-delay="500ms" style="visibility: visible; animation-delay: 500ms; animation-name: fadeInLeft;z-index: 999999999999 !important;"">
+						<div class="img-animale" style="z-index: 999999999999 !important;">
 							<img src="/{{$urgency[0]['sec-3-img-1']}}" alt="tolak">
 						</div>
 					</div>
